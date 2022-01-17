@@ -27,7 +27,7 @@
     "gatsby-remark-autolink-headers": "^5.5.0",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-source-filesystem": "^4.5.2",
-    "gatsby-transformer-asciidoc": "^3.4.0",
+    "gatsby-transformer-asciidoc": "^3.5.0",
     "gatsby-transformer-remark": "^5.5.2",
     "gatsby-transformer-sharp": "^4.5.0",
     "highlight.js": "^11.4.0",
