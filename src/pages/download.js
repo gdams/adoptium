@@ -8,13 +8,13 @@ import Seo from "../components/Seo"
 const DownloadPage = ({ location }) => {
 	const { link } = queryString.parse(location.search);
 	let vendor
-	if (link.includes("github.com/adoptium")) {
+	if (link && link.includes("github.com/adoptium")) {
 		vendor = "Temurin"
-	} else if (link.includes("cdn.azul.com")) {
+	} else if (link && link.includes("cdn.azul.com")) {
 		vendor = "Azul"
-	} else if (link.includes("aka.ms")) {
+	} else if (link && link.includes("aka.ms")) {
 		vendor = "Microsoft"
-	} else if (link.includes("github.com/ibmruntimes")) {
+	} else if (link && link.includes("github.com/ibmruntimes")) {
 		vendor = "IBM"
 	}
 	return (
