@@ -10,7 +10,7 @@ import { defaultVersion } from '../util/defaults'
 let userOSName
 let userOSAPIName
 
-const LatestTemurin = (): JSX.Element => {
+const LatestTemurin = (props): JSX.Element => {
 
   const userOS = detectOS();
   switch (userOS) {
@@ -35,14 +35,22 @@ const LatestTemurin = (): JSX.Element => {
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
   const binary = fetchLatestForOS(isVisible, defaultVersion, userOSAPIName);
 
+  let buttonClass = "col-6"
+  let textClass = ""
+
+  if (props.page === "home") {
+    buttonClass = "col-12"
+    textClass = "text-white medium"
+  }
+
     return (
         <div ref={ref} className="container">
             {binary ? (
-              <h2 className="fw-light mt-3">Download Temurin for {userOSName} x64</h2>
+              <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin for {userOSName} x64</h2>
             ) :
-              <h2 className="fw-light mt-3">Download Temurin</h2>
+              <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin</h2>
             }
-            <div className="btn-group-vertical col-6 mx-auto">
+            <div className={`btn-group-vertical mx-auto ${buttonClass}`}>
                 {binary ? (
                   <>
                     <a href={`/download?link=${binary.link}`} className="btn btn-lg btn-primary mt-3 py-3">

@@ -19,18 +19,18 @@ const ExactNavLink = props => (
 
 const Navbar = ({siteTitle}): JSX.Element => {
 
-  const handleThemeOnClick = (
-    toggleTheme: Function,
-    currentTheme: string,
-    isKeyPress = false
-  ): void => {
-    if (isKeyPress) {
-      return;
-    }
+  // const handleThemeOnClick = (
+  //   toggleTheme: Function,
+  //   currentTheme: string,
+  //   isKeyPress = false
+  // ): void => {
+  //   if (isKeyPress) {
+  //     return;
+  //   }
 
-    const toggle = currentTheme === 'light' ? 'dark' : 'light';
-    toggleTheme(toggle);
-  };
+  //   const toggle = currentTheme === 'light' ? 'dark' : 'light';
+  //   toggleTheme(toggle);
+  // };
 
   return (
     <nav className="navbar navbar-expand-xl navbar-dark bg-transparent" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
@@ -87,6 +87,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
               <ul className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                 <li><ExactNavLink className="dropdown-item" to="/temurin">Eclipse Temurin</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/jmc">Eclipse Mission Control</ExactNavLink></li>
+                <li><ExactNavLink className="dropdown-item" to="/aqavit">Eclipse AQAvit</ExactNavLink></li>
               </ul>
             </li>
             <li className="nav-item dropdown">
@@ -105,7 +106,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
             </li>
           </ul>
         </div>
-        <ThemeToggler>
+        {/* <ThemeToggler>
           {({
             theme,
             toggleTheme,
@@ -135,7 +136,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
               />
             );
           }}
-        </ThemeToggler>
+        </ThemeToggler> */}
       </div>
     </nav>
   )
