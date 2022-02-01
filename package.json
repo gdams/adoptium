@@ -9,7 +9,7 @@
     "@popperjs/core": "^2.9.2",
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.0.1",
-    "gatsby": "^4.6.0",
+    "gatsby": "^4.6.1",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-gatsby-cloud": "^4.6.0",
     "gatsby-plugin-google-tagmanager": "^4.5.0",
