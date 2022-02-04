@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "George Adams <gadams@microsoft.com>",
   "dependencies": {
-    "@asciidoctor/core": "^2.2.5",
+    "@asciidoctor/core": "^2.2.6",
     "@popperjs/core": "^2.9.2",
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.0.1",
