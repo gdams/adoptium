@@ -14,8 +14,9 @@ export default function Template({ data }) {
     asciidocFormatter()
     highlightCode()
   })
-  const { asciidoc } = data // data.asciidoc holds our data
+  const { asciidoc, file } = data // data.asciidoc holds our data
   const { document, fields, html, pageAttributes } = asciidoc
+  const { relativePath } = file
   return (
     <Layout>
     <Seo title={document.title} />
@@ -37,7 +38,7 @@ export default function Template({ data }) {
       </div>
     </div>
     <AuthorsList authors={pageAttributes.authors.split(',')} />
-    <EditLink relativePath={fields.slug} />
+    <EditLink relativePath={relativePath} />
     </section>
     </Layout>
   )
@@ -57,6 +58,9 @@ export const pageQuery = graphql`
       pageAttributes {
         authors
       }
+    }
+    file(childAsciidoc: {id: {eq: $id }}) {
+      relativePath
     }
   }
 `

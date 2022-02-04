@@ -7,14 +7,8 @@ type Props = {
 };
 
 const EditLink = ({ relativePath }: Props) => {
-  if (!relativePath) {
-    return null;
-  } else {
-    // Trim trainling slash
-    relativePath = relativePath.replace(/\/$/, "");
-  }
 
-  const href = `https://github.com/adoptium/website-v2/edit/main/src/asciidoc-pages${relativePath}.adoc`;
+  const href = `https://github.com/adoptium/website-v2/edit/main/src/asciidoc-pages/${relativePath}`;
 
   return (
     <div className="mx-auto">
