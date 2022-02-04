@@ -29,4 +29,4 @@ https://www.eclipse.org/legal/logo_guidelines.php[Eclipse Foundation Guidelines 
 As such, the use of Eclipse’s marks or any similar description is not permitted in conjunction with any software or related services. You may only use the term “AQAvit” and use the AQAvit project logo with permission of the Eclipse Foundation.
 
 Changes to this policy are made by the
-link:/members[Adoptium Working Group Steering Committee^].
+link:/members[Adoptium Working Group Steering Committee].
