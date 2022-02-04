@@ -1,4 +1,8 @@
 = Adoptium Software Products Marketplace
+:description: Adoptium Marketplace Policy
+:keywords: adoptium marketplace policy
+:orgname: Eclipse Adoptium
+:lang: en
 :page-authors: tellison
 
 == Overview
