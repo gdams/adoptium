@@ -1,31 +1,21 @@
-:copyright: Apache-2.0 License
-:description: Adoptium Marketplace Policy
-:keywords: adoptium marketpalce policy
-:orgname: Eclipse Adoptium
-:lang: en
+= Adoptium Software Products Marketplace
 :page-authors: tellison
 
-Adoptium Software Products Marketplace
---------------------------------------
-
-Overview
-~~~~~~~~
+== Overview
 
 The Adoptium Marketplace provides users easy access to a wide variety of high-quality OpenJDK Java binaries, and the organizations producing those binaries a mechanism to broaden the distribution of their Java runtimes.
 
-User Benefits
-^^^^^^^^^^^^^
+== User Benefits
 
 Every binary available via the Adoptium marketplace
-https://www.adoptium.net/marketplace[website^]
+link:/marketplace[website]
 and API has demonstrated that it is ready for production use in a wide variety of environment by passing the
 https://projects.eclipse.org/projects/adoptium.aqavit[AQAvit^]
 quality verification suite.
 
 The AQAvit suite evaluates Java runtimes for functional correctness, performance, resilience, security, and the ability to pass a wide variety of application test suites. As a result, enterprises can be confident in the OpenJDK binaries they’re bringing into their companies and incorporating into their software supply chains.
 
-Producer Benefits
-^^^^^^^^^^^^^^^^^
+== Producer Benefits
 
 The following benefits are enjoyed by all products listed in the Adoptium marketplace.
 
@@ -35,8 +25,7 @@ The following benefits are enjoyed by all products listed in the Adoptium market
  * Inclusion in the marketplace is open to all strategic and enterprise members at no additional cost to the provider, is non-exclusive, and preserves the opportunity to supply paid services alongside the offering.
  * Listed products benefit from Adoptium Working Group sponsored marketing and promotion initiatives across the industry with support of the Eclipse Foundation.
 
-AQAvit Software Product Verification
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== AQAvit Software Product Verification
 
 Only those products that pass the AQAVit software product verification test suite and comply with the obligations of the QVSL may be included in the Adoptium Marketplace.
 
@@ -44,9 +33,7 @@ NOTE: It is necessary to verify every binary that wishes to be included in the A
 
 It is not necessary to be an Adoptium working group member to produce an AQAvit verified software product.
 
-
-Java SE Compatibility
-~~~~~~~~~~~~~~~~~~~~~
+== Java SE Compatibility
 
 Compliance with the Java SE Specification is determined exclusively through the use of Oracle’s
 https://en.wikipedia.org/wiki/Technology_Compatibility_Kit[Technology Compatibility Kit^]
@@ -54,9 +41,7 @@ https://en.wikipedia.org/wiki/Technology_Compatibility_Kit[Technology Compatibil
 
 The JCK test kit is the property of Oracle, and is not available under an open source license. Eclipse does not test third-party software products for Java compatibility. Developers should approach Oracle to secure their own license to use the JCK for such purposes.
 
-
-Listing in the Adoptium Marketplace
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== Listing in the Adoptium Marketplace
 
 The Adoptium Marketplace is an opportunity for Adoptium Working Group Members (“Producers”) to showcase software products and open source projects (“Products”) that have demonstrated they are of high-quality and are enterprise ready.
 
@@ -72,4 +57,4 @@ https://github.com/adoptium/adoptium/issues/new[open a request with the Adoptium
 seeking inclusion as a Producer in the marketplace.
 
 Changes to this policy are made by the
-https://adoptium.net/members.html[Adoptium Working Group Steering Committee^].
+link:/members[Adoptium Working Group Steering Committee].
