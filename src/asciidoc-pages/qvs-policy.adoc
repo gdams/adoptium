@@ -2,7 +2,8 @@
 :description: Adoptium QVS Policy
 :keywords: adoptium AQAvit quality policy
 :orgname: Eclipse Adoptium
-:lang: en 
+:lang: en
+:page-authors: tellison
 
 
 AQAvit Quality Verification Suite
