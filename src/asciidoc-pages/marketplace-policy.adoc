@@ -3,6 +3,7 @@
 :keywords: adoptium marketpalce policy
 :orgname: Eclipse Adoptium
 :lang: en
+:page-authors: tellison
 
 Adoptium Software Products Marketplace
 --------------------------------------
