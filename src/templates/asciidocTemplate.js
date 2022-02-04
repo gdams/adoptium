@@ -22,7 +22,7 @@ export default function Template({ data }) {
     <section className="py-5 container">
     <div className="markdown-container container-md">
       <div className="markdown">
-        <h1 className="pb-4">{document.title}</h1>
+        <h1 className="pb-4 fw-light text-center">{document.title}</h1>
         {fields.slug === "/installation/" && (
           <section className="adopt-demo-container my-5">
             <div className="adopt-demo mx-auto">
