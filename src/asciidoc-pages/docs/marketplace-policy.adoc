@@ -3,7 +3,7 @@
 :keywords: Adoptium marketplace policy
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: tellison
+:page-authors: tellison, gdams
 
 == Overview
 
