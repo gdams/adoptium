@@ -3,7 +3,7 @@
 :keywords: Adoptium marketplace policy
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: tellison, gdams
+:page-authors: tellison, gdams, eclipse-temurin-bot
 
 == Overview
 
