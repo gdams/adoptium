@@ -3,7 +3,7 @@
 :keywords: adoptium AQAvit quality policy
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: tellison
+:page-authors: tellison, gdams
 
 == Overview
 
