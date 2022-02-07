@@ -7,10 +7,16 @@
 
 == Overview
 
-This document provides guidance for Java SE runtime publishers who are eligible to participate in the
-link:/marketplace[Adoptium Marketplace].
+This document provides guidance for Java SE runtime publishers who are eligible to participate in the Adoptium Marketplace.
+
 Publishers may be vendors, not-for-profit entities, user groups, and so on who share the values embodied in the marketplace quality criteria. In particular, publishers may offer open source or commercially licensed offerings, usable at no cost or at a fee to the end user. The marketplace does not require specific usage or license terms, and the binaries available through the marketplace may be available elsewhere. All binaires must meet the compatibility and quality criteria defined in the 
 link:/marketplace-policy[marketplace policy].
+
+The marketplace is available to end users as both a
+link:/marketplace[website]
+and an
+https://api.adoptium.net/[application programming interface^]
+(API) hosted by the Adoptium project.
 
 Publishers are encouraged to discuss their participation in the marketplace with the
 link:/members[Adoptium Working Group]
@@ -27,51 +33,85 @@ Working group members who wish to publish a product in the marketplace must agre
 
 == Publishing Principles
 
-The Adoptium marketplace website and API are driven by metadata that you provide about your eligible products. The metadata is made available by you in JSON machine-readable format either statically or dynamically, together with a secure signature to ensure the information is immutable and attributable.
+The Adoptium marketplace website and API are driven by metadata that you provide about your eligible products. The metadata is made available by you in
+https://www.json.org/[JSON^]
+machine-readable format either statically or dynamically, together with a secure signature to ensure the authenticity, integrity, and non-repudiation of the information you publish.
 
-Each product described in the metadata must meet the criteria described in the
-link:/marketplace-policy[Marketplace Policy],
-and as a publisher you are responsible for self-certifying that each product description is accurate and adheres to your obligations.
+As a publisher you are responsible for self-certifying that the information for each product described in the metadata is accurate and adheres to your obligations in the
+link:/marketplace-policy[Marketplace Policy].
 
-As a publisher you control your products' metadata and the frequency at which it is updated. The Adoptium marketplace application will draw upon that information to market your products, and direct users to download your product directly from a site under your control. Adoptium does not host your binaries. When a download is initiated from the Adoptium website users will be directed to a post-download page where you can provide additional information about your product, organization, services, and so on.
+You control your products' metadata and the frequency at which it is updated. The Adoptium marketplace application will draw upon that information to market your products, and direct users to download your product directly from a site under your control.
 
-== Providing Immutable Information
+Adoptium does not host your binaries. When a download is initiated from the Adoptium marketplace users will be directed to a post-download page where you can provide additional information about your product, organization, services, and so on.
 
-To be included in the marketplace Publishers should provide the following information.
 
- * Publisher name : how you would like to be known in the marketplace.
+== Providing Publisher Information
+
+Publishers should provide the following information in order to be included in the marketplace.
+
+ * Publisher name : how you would like to be known in the marketplace website and API.
  * Logo image : a visual representation of you as a publisher for use on the website.
  * Listing data location : the URL that Adoptium will use to retrieve your marketplace listing metadata.
  * Signature location : the URL that Adoptium will use to retrieve your listing metadata detached signature.
- * Signature public key : the public key we will use to verify your signature using "gpg --verify".
- * POst-download page : the webpage we should direct website users towards when downloading your product.
+ * Signature public key : the public key we will use to verify your signature using "Base64 encoded, RSA with SHA-256".
+// TODO: discuss appropriate signature algorithms
+ * Post-download page : the webpage we should direct website users towards when downloading your product.
  
 Each of these should be stable as Adoptium will be adding these into the marketplace application configuration. We don't expect you to change these frequently.
 
-The data is provided by opening a
+The published data is provided by opening a
 https://github.com/adoptium/adoptium/issues/new/choose[new publisher request issue^]
-in the Adoptium repository.
+in the Adoptium repository. You can raise a new issue in the same repository if you do subsequently need to change it.
 
-== Passing the Oracle TCK
+
+== Passing the Oracle TCK tests
 
 Every binary you publish via the Adoptium marketplace must fully satisfy all requirements of the then-current TCK for the Java Platform. You are responsible for ensuring this has happened before you publish the binary. Adoptium will not check this on your behalf.
 
-Adoptium projects develop and use tools that make running and analysing the TCK easier. Publishers are welcome to participate in the technical project and use these tools to help with the task of running the TCK on their own products.
+Adoptium projects
+https://projects.eclipse.org/projects/adoptium.temurin-compliance[develop and use tools^]
+that make running and analysing the TCK easier. Publishers are welcome to participate in the technical project and use these tools to help with the task of running the TCK on their own products.
 
-== Passing the AQAvit verification
+
+== Passing the AQAvit verification tests
 
 Every binary you publish via the Adoptium marketplace must fully satisfy all requirements of the then-current AQAvit test suite. You are responsible for ensuring this has happened before you publish the binary. Adoptium will not check this on your behalf.
 
-The AQAvit verification process is described here...TODO
+The AQAvit verification process is described here...
+
+TODO: blurb and link to the AQAvit process.
 
 AQAvit is an open source test suite managed at the Adoptium project. Publishers are welcome to participate in the AQAvit project to get help with the task of running AQAvit on their own products.
 
+
 == Listing Metadata Format
 
-Your product metadata made available via the listing data URL must adhere to the
-https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace[marketplace product JSON schema^].
+Your products listing for the marketplace can be hosted anywhere that supports
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol[HTTP^]
+requests and responses, including your own website property, GitHub, and so on under your direct control. While Adoptium will check that the information is provided by you by using a secure signature, you are responsible for the information provided to the marketplace via the listing data location URL.
 
-The Adoptium marketplace will access the listing data and check it was received successfully by checking the signature.
+// TODO: fix up URL when schema moves to main branch
+Your products' metadata must adhere to the
+https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace[marketplace product JSON schema^], and Adoptium provides
+https://github.com/adoptium/api.adoptium.net/blob/marketplace/marketplace/adoptium-marketplace-schema-tests/src/test/resources/net/adoptium/marketplace/schema/[examples^]
+and
+https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace/adoptium-marketplace-schema[code^]
+to help produce listing data in the correct format.
+
+// TODO discuss allowing a Signature: HTTP header approach too/instead.
+To ensure that the listing data has been received correctly from you, and has not been modified en route, Adoptium will check the associated signature. The signature must be a Base64-encoded, RSA encrypted, SHA-256 hash of your entire schema file and will be checked using the public key provided in your publisher information.
+
+The product listing file will be rejected if the signature does not verify the content successfully. We will contact you if the listing file is repeatedly failing these sigature checks.
+
+// TODO discuss default and minimum frequency of refresh.
+Adoptium may consider 
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control[cache-control http headers^]
+to guide the frequency of fetching the product listing. Adoptium typically retrieves the product listing information daily, but this may be extended by specifying max-age. In turn the Adoptium request may specify a
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Conditional_requests[conditional request^]
+such as
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since[If-Modified-Since^].
+
+The Adoptium marketplace will access your listing data and check it was received successfully by checking the signature.
 TODO: failure path
 TODO: show how to generate armoured detached sig 
 TODO: talk about cache update frequency, guided by cache-control http headers
