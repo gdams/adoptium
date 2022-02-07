@@ -5,11 +5,12 @@
 :lang: en
 :page-authors: tellison
 
-== Overview
+== Introduction
 
-This document provides guidance for Java SE runtime publishers who are eligible to participate in the Adoptium Marketplace.
+This document provides guidance for publishers that are eligible to participate in the
+link:/marketplace[Adoptium Marketplace].
 
-Publishers may be vendors, not-for-profit entities, user groups, and so on who share the values embodied in the marketplace quality criteria. In particular, publishers may offer open source or commercially licensed offerings, usable at no cost or at a fee to the end user. The marketplace does not require specific usage or license terms, and the binaries available through the marketplace may be available elsewhere. All binaires must meet the compatibility and quality criteria defined in the 
+Publishers may be vendors, not-for-profit entities, user groups, and so on who share the values embodied in the Adoptium marketplace criteria. Publishers may offer open source or commercially licensed offerings, each usable at no cost or at a fee to the end user. The marketplace does not require specific version, platform, usage or license terms, and the binaries available through the marketplace may be available elsewhere. All binaires must meet the compatibility and quality criteria defined in the 
 link:/marketplace-policy[marketplace policy].
 
 The marketplace is available to end users as both a
@@ -20,7 +21,7 @@ https://api.adoptium.net/[application programming interface^]
 
 Publishers are encouraged to discuss their participation in the marketplace with the
 link:/members[Adoptium Working Group]
-who will provide guidance and assistance with the steps described below. In case of any contraditions, the formal policies and agreements referenced below take precedence over this publisher guide.
+who will provide guidance and assistance with the steps described below. In case of any contraditions between the formal policies and agreements referenced below and this publisher guide, the formal policies and agreements will take precedence.
 
 
 == Preparatory Steps
@@ -31,11 +32,11 @@ link:/marketplace-policy[Adoptium Marketplace Policy]. These criteria include be
 Working group members who wish to publish a product in the marketplace must agree to the Adoptium Marketplace Publisher Agreement. This agreement sets out the terms and conditions under which the Eclipse Foundation accepts your product promotion. Products will benefit from marketing initiatives intended to promote the value of the binaries in this context when accepted into the marketplace.
 
 
-== Publishing Principles
+== Publishing Overview
 
 The Adoptium marketplace website and API are driven by metadata that you provide about your eligible products. The metadata is made available by you in
 https://www.json.org/[JSON^]
-machine-readable format either statically or dynamically, together with a secure signature to ensure the authenticity, integrity, and non-repudiation of the information you publish.
+machine-readable format, together with a secure signature to ensure the authenticity, integrity, and non-repudiation of the information you publish.
 
 As a publisher you are responsible for self-certifying that the information for each product described in the metadata is accurate and adheres to your obligations in the
 link:/marketplace-policy[Marketplace Policy].
@@ -47,7 +48,7 @@ Adoptium does not host your binaries. When a download is initiated from the Adop
 
 == Providing Publisher Information
 
-Publishers should provide the following information in order to be included in the marketplace.
+Publishers must provide the following information in order to be included in the marketplace.
 
  * Publisher name : how you would like to be known in the marketplace website and API.
  * Logo image : a visual representation of you as a publisher for use on the website.
@@ -57,9 +58,9 @@ Publishers should provide the following information in order to be included in t
 // TODO: discuss appropriate signature algorithms
  * Post-download page : the webpage we should direct website users towards when downloading your product.
  
-Each of these should be stable as Adoptium will be adding these into the marketplace application configuration. We don't expect you to change these frequently.
+Each of these pieces of information should be stable as Adoptium will be adding these into the marketplace application configuration. We don't expect you to change these frequently.
 
-The published data is provided by opening a
+The publisher information is provided by opening a
 https://github.com/adoptium/adoptium/issues/new/choose[new publisher request issue^]
 in the Adoptium repository. You can raise a new issue in the same repository if you do subsequently need to change it.
 
@@ -86,9 +87,9 @@ AQAvit is an open source test suite managed at the Adoptium project. Publishers 
 
 == Listing Metadata Format
 
-Your products listing for the marketplace can be hosted anywhere that supports
+Your products listing for the marketplace can be hosted anywhere under your direct control that supports
 https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol[HTTP^]
-requests and responses, including your own website property, GitHub, and so on under your direct control. While Adoptium will check that the information is provided by you by using a secure signature, you are responsible for the information provided to the marketplace via the listing data location URL.
+requests and responses, including your own website property, GitHub, and so on. While Adoptium will check that the information is provided by you by using a secure signature based upon verified publisher information, you are responsible for the information provided to the marketplace via the listing data location URL.
 
 // TODO: fix up URL when schema moves to main branch
 Your products' metadata must adhere to the
@@ -96,25 +97,23 @@ https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace[market
 https://github.com/adoptium/api.adoptium.net/blob/marketplace/marketplace/adoptium-marketplace-schema-tests/src/test/resources/net/adoptium/marketplace/schema/[examples^]
 and
 https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace/adoptium-marketplace-schema[code^]
-to help produce listing data in the correct format.
+to help produce product listing data in the correct format.
 
 // TODO discuss allowing a Signature: HTTP header approach too/instead.
-To ensure that the listing data has been received correctly from you, and has not been modified en route, Adoptium will check the associated signature. The signature must be a Base64-encoded, RSA encrypted, SHA-256 hash of your entire schema file and will be checked using the public key provided in your publisher information.
+To ensure that the listing data has been received correctly from you, and has not been modified en route, Adoptium will check the associated signature. The signature must be a Base64-encoded, RSA encrypted, SHA-256 hash of your entire schema file. The signature will be verified using the public key provided in your publisher information. There are a number of
+https://opensource.com/article/19/6/cryptography-basics-openssl-part-2[tools^]
+and
+https://www.baeldung.com/java-digital-signature[code examples^] available to help produce such signatures.
 
-The product listing file will be rejected if the signature does not verify the content successfully. We will contact you if the listing file is repeatedly failing these sigature checks.
+The product listing file will be rejected if it does not adhere to the schema, or the signature does not verify the content successfully. We will contact you if the listing file is repeatedly failing these validation checks.
 
 // TODO discuss default and minimum frequency of refresh.
-Adoptium may consider 
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control[cache-control http headers^]
-to guide the frequency of fetching the product listing. Adoptium typically retrieves the product listing information daily, but this may be extended by specifying max-age. In turn the Adoptium request may specify a
+Adoptium typically retrieves the product listing information daily, but may consider your HTTP response
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control[cache-control http headers^] such as ``max-age`` to guide the frequency of fetching the product listing. In turn the Adoptium request may specify a
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Conditional_requests[conditional request^]
 such as
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since[If-Modified-Since^].
 
-The Adoptium marketplace will access your listing data and check it was received successfully by checking the signature.
-TODO: failure path
-TODO: show how to generate armoured detached sig 
-TODO: talk about cache update frequency, guided by cache-control http headers
 
 == Post-download page
 
