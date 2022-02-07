@@ -43,7 +43,7 @@ link:/marketplace-policy[Marketplace Policy].
 
 You control your products' metadata and the frequency at which it is updated. The Adoptium marketplace application will draw upon that information to market your products, and direct users to download your product directly from a site under your control.
 
-Adoptium does not host your binaries. When a download is initiated from the Adoptium marketplace users will be directed to a post-download page where you can provide additional information about your product, organization, services, and so on.
+Adoptium does not host your binaries. When a download is initiated from the Adoptium marketplace users will be directed to a post-download page where you can provide a link to additional information about your product, organization, services, and so on.
 
 
 == Providing Publisher Information
@@ -99,7 +99,7 @@ and
 https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace/adoptium-marketplace-schema[code^]
 to help produce product listing data in the correct format.
 
-// TODO discuss allowing a Signature: HTTP header approach too/instead.
+// TODO: discuss allowing a Signature: HTTP header approach too/instead.
 To ensure that the listing data has been received correctly from you, and has not been modified en route, Adoptium will check the associated signature. The signature must be a Base64-encoded, RSA encrypted, SHA-256 hash of your entire schema file. The signature will be verified using the public key provided in your publisher information. There are a number of
 https://opensource.com/article/19/6/cryptography-basics-openssl-part-2[tools^]
 and
@@ -107,7 +107,7 @@ https://www.baeldung.com/java-digital-signature[code examples^] available to hel
 
 The product listing file will be rejected if it does not adhere to the schema, or the signature does not verify the content successfully. We will contact you if the listing file is repeatedly failing these validation checks.
 
-// TODO discuss default and minimum frequency of refresh.
+// TODO: discuss default and minimum frequency of refresh.
 Adoptium typically retrieves the product listing information daily, but may consider your HTTP response
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control[cache-control http headers^] such as ``max-age`` to guide the frequency of fetching the product listing. In turn the Adoptium request may specify a
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Conditional_requests[conditional request^]
@@ -117,4 +117,9 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since[If-M
 
 == Post-download page
 
-TODO: how we use the publishers post download info
+// TODO: Should the post-download be per-publisher or per-product (i.e. embedded in the metadata).
+When a user chooses to download your product via the marketplace website they will be directed to a post-download page as the download progresses. The post-download page will thank the user and identify the publisher, including a link to a webpage of your choice. We envisage this webpage will lead the user to information about your product, organization, services, and so on.
+
+// TODO: unless we include it in the metadata...
+The post-download page link is not used by the Adoptium marketplace API.
+
