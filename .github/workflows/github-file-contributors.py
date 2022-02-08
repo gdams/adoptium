@@ -7,6 +7,8 @@ import requests
 org = "adoptium"
 repo = "website-v2"
 branch = "main"
+# This is where we define users that should be skipped
+excludedUsers = "eclipse-temurin-bot"
 
 parser = argparse.ArgumentParser(description="List GitHub contributor usernames for a given file")
 parser.add_argument(
@@ -24,4 +26,5 @@ contributors = soup.findAll("a")
 
 for contributor in contributors:
     username = contributor.find("href")
-    print(contributor.text.strip())
+    if not contributor.text.strip() in excludedUsers:
+        print(contributor.text.strip())
