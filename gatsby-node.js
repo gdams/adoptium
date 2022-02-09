@@ -1,40 +1,47 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const createMultilingualRedirects = require(`./i18n-redirects`)
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   // Create Asciidoc pages.
   const asciidocTemplate = path.resolve(`./src/templates/asciidocTemplate.js`)
 
-  return graphql(`
-      {
-        allAsciidoc {
-          edges {
-            node {
-              id
-              fields {
-                slug
+  const asciidocResults = await graphql(`
+    {
+      allAsciidoc {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            parent {
+              ... on File {
+                relativePath
+                absolutePath
               }
             }
           }
         }
       }
-    `).then(result => {
-    if (result.errors) {
-      return Promise.reject(result.errors)
     }
+  `)
+  
+   asciidocResults.data.allAsciidoc.edges.forEach(({ node }) => {
 
-    return result.data.allAsciidoc.edges.forEach(({ node }) => {
+      const articleNodes = asciidocResults.data.allAsciidoc.edges
+      createMultilingualRedirects(actions, articleNodes, node)
+      // Create page for each asciidoc file
       createPage({
         path: node.fields.slug,
         component: asciidocTemplate,
         context: {
-          id: node.id,
+          id: node.id
         },
       })
     })
-  })
 }
 
 exports.onCreateNode = async ({ node, actions, getNode, loadNodeContent }) => {
