@@ -6,3 +6,15 @@ command = "npm run build"
 NODE_VERSION = "16"
 GATSBY_CONCURRENT_DOWNLOAD = "15"
 GATSBY_CPU_COUNT = "1"
+
+[[redirects]]
+  from = "/marketplace-policy"
+  to = "/docs/marketplace-policy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/qvs-policy"
+  to = "/docs/qvs-policy"
+  status = 301
+  force = true
