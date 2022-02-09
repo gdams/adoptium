@@ -18,6 +18,21 @@ module.exports = {
         path: `${__dirname}/src/asciidoc-pages`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locales`,
+        name: `locale`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-react-i18next`,
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`en`, `es`, `de`],
+        defaultLanguage: `en`,
+      }
+    },
     `gatsby-transformer-asciidoc`,
     {
       resolve: "gatsby-plugin-google-tagmanager",

@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import {Link, useI18next} from 'gatsby-plugin-react-i18next';
 // import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 // import Switch from "react-switch";
 
@@ -18,6 +18,7 @@ const ExactNavLink = props => (
 )
 
 const Navbar = ({siteTitle}): JSX.Element => {
+  const {languages, changeLanguage} = useI18next();
 
   // const handleThemeOnClick = (
   //   toggleTheme: Function,
@@ -106,6 +107,20 @@ const Navbar = ({siteTitle}): JSX.Element => {
             </li>
           </ul>
         </div>
+        <ul className="languages">
+          {languages.map((lng) => (
+            <li key={lng}>
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  changeLanguage(lng);
+                }}>
+                {lng}
+              </a>
+            </li>
+          ))}
+        </ul>
         {/* <ThemeToggler>
           {({
             theme,
