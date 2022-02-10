@@ -26,14 +26,14 @@ e.g temurin-17-jdk or temurin-8-jdk
 +
 [source, bash]
 ----
-apt-get install -y wget apt-transport-https gnupg
+sudo apt-get install -y wget apt-transport-https gnupg
 ----
 +
 . Download the Eclipse Adoptium GPG key:
 +
 [source, bash]
 ----
-wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | apt-key add -
+wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
 ----
 +
 . Configure the Eclipse Adoptium apt repository by replacing the values
@@ -41,15 +41,15 @@ in angle brackets:
 +
 [source, bash]
 ----
-echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | sudo tee /etc/apt/sources.list.d/adoptium.list
 ----
 +
 . Install the Temurin version you require:
 +
 [source, bash]
 ----
-apt-get update # update if you haven't already
-apt-get install temurin-17-jdk
+sudo apt-get update # update if you haven't already
+sudo apt-get install temurin-17-jdk
 ----
 
 == CentOS/RHEL/Fedora Instructions
