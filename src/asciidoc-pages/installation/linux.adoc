@@ -1,9 +1,15 @@
 = Linux (RPM/DEB) installer packages
 :page-authors: gdams
 :toc:
+:icons: font
 
 Eclipse Temurin RPM and DEB packages are now available for installing on
 your favourite Linux distribution.
+
+[NOTE]
+====
+See link:/supported-platforms[Supported Platforms] for a list of our officially supported installers by Linux distribution / version. Other Linux distributions / versions are supported on a best effort basis.
+====
 
 == Eclipse Temurin Package Names
 

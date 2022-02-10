@@ -37,7 +37,7 @@ Next.
 
 A silent installation allows you to install the Windows package with
 pre-selected features without user interaction, which can be useful for
-widescale deployment. Follow these steps:
+wide scale deployment. Follow these steps:
 
 . link:/download[Download] the `.msi` file.
 . Choose the features that you want to install, which are shown in the
