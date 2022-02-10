@@ -79,7 +79,7 @@ module.exports = function createMultilingualRedirects (
           toPath: translatedNode.fields.slug,
           isPermanent: true,
           force: true,
-          redirectInBrowser: true,
+          redirectInBrowser: true
         }
 
         console.log('Adding Redirect: ', newRedirect)
