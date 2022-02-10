@@ -35,7 +35,7 @@ function getTranslatedUrlPath(
   const baseUrlPathRegex = new RegExp(`(?:/${sourceLang})?(/.*)`)
   let baseUrlPath = slug.match(baseUrlPathRegex)?.[1] || `/`
   if (baseUrlPath.includes('index')) {
-      baseUrlPath = baseUrlPath.split("/index")[0]
+      baseUrlPath = baseUrlPath.split("index")[0]
   }
   return omitDefaultLang && destLang === defaultLang
     ? `${baseUrlPath}`
