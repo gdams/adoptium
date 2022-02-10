@@ -15,4 +15,13 @@ export default function asciidocFormatter() {
       span.replaceWith(archiveTypeIcon)
     }
   })
+  const tds = document.querySelectorAll('td')
+  tds.forEach(td => {
+    if (td.className === "icon") {
+      let archiveTypeIcon = document.createElement('i');
+      archiveTypeIcon.className = 'fa fa-circle-info fa-xl';
+      archiveTypeIcon.ariaHidden = true;
+      td.appendChild(archiveTypeIcon)
+    }
+  })
 }
