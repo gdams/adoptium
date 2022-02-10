@@ -1,12 +1,12 @@
 import * as React from "react"
 import { Link } from 'gatsby';
-import * as queryString from "query-string";
+import { useQueryParam, StringParam } from "use-query-params";
 
 import Layout from "../components/Layout"
 import Seo from "../components/Seo"
 
-const DownloadPage = ({ location }) => {
-	const { link } = queryString.parse(location.search);
+const DownloadPage = () => {
+	const [link, setLink] = useQueryParam("link", StringParam);
 	let vendor
 	if (link && link.includes("github.com/adoptium")) {
 		vendor = "Temurin"

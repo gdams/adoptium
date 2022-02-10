@@ -25,6 +25,7 @@
     "gatsby-plugin-remove-fingerprints": "^0.0.2",
     "gatsby-plugin-sass": "^5.7.0",
     "gatsby-plugin-sharp": "^4.7.0",
+    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-remark-autolink-headers": "^5.7.0",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-source-filesystem": "^4.7.0",
@@ -35,7 +36,6 @@
     "i18next": "^21.6.11",
     "moment": "^2.29.1",
     "prop-types": "^15.7.2",
-    "query-string": "^7.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
@@ -44,7 +44,8 @@
     "react-icons": "^4.3.1",
     "react-switch": "^6.0.0",
     "react-tabs": "^3.2.3",
-    "sass": "1.49.7"
+    "sass": "1.49.7",
+    "use-query-params": "^1.2.3"
   },
   "devDependencies": {
     "prettier": "2.5.1"
