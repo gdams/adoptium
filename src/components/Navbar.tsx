@@ -1,13 +1,10 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import {Link, Trans, useTranslation, useI18next} from 'gatsby-plugin-react-i18next';
-// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-// import Switch from "react-switch";
+import { useLocation } from '@reach/router';
 
 import LogoLight from '../images/adoptium-logo-light.svg';
 import LogoDark from '../images/adoptium-logo-dark.svg';
-// import { IoMdMoon } from "@react-icons/all-files/io/IoMdMoon";
-// import { IoMdSunny } from "@react-icons/all-files/io/IoMdSunny";
 
 const isActive = ({ isCurrent }) => {
   return isCurrent ? { className: "nav-link active" } : {className: "nav-link"}
@@ -20,6 +17,8 @@ const ExactNavLink = props => (
 const Navbar = ({siteTitle}): JSX.Element => {
   const {languages, changeLanguage} = useI18next();
   const {t} = useTranslation();
+
+  const location = useLocation();
 
   // const handleThemeOnClick = (
   //   toggleTheme: Function,
@@ -112,10 +111,15 @@ const Navbar = ({siteTitle}): JSX.Element => {
           {languages.map((lng) => (
             <li key={lng}>
               <a
-                href="#"
+                href=""
                 onClick={(e) => {
                   e.preventDefault();
-                  changeLanguage(lng);
+                  if (location.pathname.includes('index')) {
+                    let newPath = location.pathname.split("/index")[0].slice(3)
+                    changeLanguage(lng, newPath);
+                  } else {
+                    changeLanguage(lng);
+                  }
                 }}>
                 {lng}
               </a>

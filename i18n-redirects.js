@@ -37,6 +37,8 @@ function getTranslatedUrlPath (
   if (baseUrlPath.includes('index')) {
     baseUrlPath = baseUrlPath.split('/index')[0]
   }
+  // Trim trailing slash
+  baseUrlPath = baseUrlPath.replace(/\/$/, '');
   return omitDefaultLang && destLang === defaultLang
     ? `${baseUrlPath}`
     : `/${destLang}${baseUrlPath}`
@@ -66,20 +68,22 @@ module.exports = function createMultilingualRedirects (
         relativePath === translatedNodeRelativePath
     )
     .forEach(({ translatedNode, translatedNodeLangCode }) => {
-      const newRedirect = {
-        fromPath: getTranslatedUrlPath(
-          slug,
-          langCode,
-          translatedNodeLangCode,
-          true
-        ),
-        toPath: translatedNode.fields.slug,
-        isPermanent: true,
-        force: true,
-        redirectInBrowser: true
-      }
+      if (translatedNode.fields.slug.includes('index')) {
+        const newRedirect = {
+          fromPath: getTranslatedUrlPath(
+            slug,
+            langCode,
+            translatedNodeLangCode,
+            true
+          ),
+          toPath: translatedNode.fields.slug,
+          isPermanent: true,
+          force: true,
+          redirectInBrowser: true,
+        }
 
-      console.log('Adding Redirect: ', newRedirect)
-      createRedirect(newRedirect)
+        console.log('Adding Redirect: ', newRedirect)
+        createRedirect(newRedirect)
+      }
     })
 }
