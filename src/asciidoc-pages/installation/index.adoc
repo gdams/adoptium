@@ -7,7 +7,7 @@ the following types of installation package:
 * Package managers (shown above)
 * link:#_installers[Installers]
 * link:/installation/archives[Archive files]
-* link:https://hub.docker.com/_/eclipse-temurin[Container Images]
+* link:https://hub.docker.com/_/eclipse-temurin[Container Images] (External documentation at DockerHub)
 
 The binaries are supported on the architectures and operating systems
 listed in link:/supported-platforms[Supported Platforms]. If you’re
