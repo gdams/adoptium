@@ -1,5 +1,5 @@
 = Häufig gestellte Fragen
-:page-authors: gdams
+:page-authors: gdams, HanSolo
 
 Wir haben unsere ersten Veröffentlichungen von Eclipse Temurin abgeschlossen und werden
 diese FAQ aktualisieren, sobald die Dinge fertiggestellt und verfügbar sind. Falls Ihre
