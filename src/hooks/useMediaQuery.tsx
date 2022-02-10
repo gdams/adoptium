@@ -19,7 +19,7 @@ const mediaQueryChangeUnsubscribe = (
   }
 };
 
-// eslint-disable-next-line import/prefer-default-export
+// eslint-disable-next-line
 export function useMediaQuery(query: string): boolean | undefined {
   const [matches, setMatches] = useState<boolean>();
 

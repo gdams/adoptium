@@ -21,16 +21,17 @@ jobs:
     - run: pip3 install bs4
 
     - run: |
+        # shellcheck disable=2043
         for changed_file in ${{ steps.files.outputs.all }}; do
           if [[ ${changed_file} =~ ^src/asciidoc.*.adoc ]]; then
-            current_authors=$(grep ':page-authors:' ${changed_file} | sed -n -e 's/^.*page-authors: //p')
-            contibutors=$(python3 .github/workflows/github-file-contributors.py --file ${changed_file})
+            current_authors=$(grep ':page-authors:' "${changed_file}" | sed -n -e 's/^.*page-authors: //p')
+            contibutors=$(python3 .github/workflows/github-file-contributors.py --file "${changed_file}")
             for contibutor in ${contibutors}; do
-              if ! echo ${current_authors} | grep ${contibutor}; then
+              if ! echo "${current_authors}" | grep "${contibutor}"; then
                 echo "adding ${contibutor}"
                 current_authors_replacement="${current_authors}, ${contibutor}"
-                echo ${current_authors_replacement}
-                sed -i "s/${current_authors}/${current_authors_replacement}/g" ${changed_file}
+                echo "${current_authors_replacement}"
+                sed -i "s/${current_authors}/${current_authors_replacement}/g" "${changed_file}"
               fi
             done
           fi

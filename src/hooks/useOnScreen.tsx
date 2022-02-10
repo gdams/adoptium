@@ -6,7 +6,7 @@ import { MutableRefObject, useEffect, useState } from 'react';
  * @param ref
  * @param observeOnce
  */
-// eslint-disable-next-line import/prefer-default-export
+// eslint-disable-next-line
 export function useOnScreen(
   ref: MutableRefObject<Element>,
   observeOnce: boolean

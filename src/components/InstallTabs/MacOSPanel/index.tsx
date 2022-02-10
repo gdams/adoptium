@@ -10,20 +10,20 @@ const MacOSPanel = (): JSX.Element => {
         <span className="install__text__no-select"># Install the latest LTS version</span>
         <br />
         <span className="install__text__no-select">$</span>
-        <span className="install__text__command">brew install --cask </span>temurin
+        <span className="install-text-command">brew install --cask </span>temurin
       </ShellBox>
       <br />
       <ShellBox>
         <span className="install__text__no-select"># Install a specific version</span>
         <br />
         <span className="install__text__no-select">$</span>
-        <span className="install__text__command">brew tap </span>homebrew/cask-versions
+        <span className="install-text-command">brew tap </span>homebrew/cask-versions
         <br />
         <span className="install__text__no-select">$</span>
-        <span className="install__text__command">brew install --cask </span>temurin8
+        <span className="install-text-command">brew install --cask </span>temurin8
        <br />
         <span className="install__text__no-select">$</span>
-        <span className="install__text__command">brew install --cask </span>temurin11
+        <span className="install-text-command">brew install --cask </span>temurin11
       </ShellBox>
       <br />
       <br />
@@ -32,7 +32,7 @@ const MacOSPanel = (): JSX.Element => {
         <span className="install__text__no-select"># Uninstall a specific version</span>
         <br />
         <span className="install__text__no-select">$</span>
-        <span className="install__text__command">brew uninstall --cask </span>temurin
+        <span className="install-text-command">brew uninstall --cask </span>temurin
       </ShellBox>
       <a
         className="install__docs-button"

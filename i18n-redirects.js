@@ -1,41 +1,41 @@
 /**
  * Returns relative file path of given node under given `basePath` (optionally omitting file-extension)
  */
-function getNodeRelativePath(
+function getNodeRelativePath (
   { parent },
   omitFileExt,
-  basePath = `/src/asciidoc-pages`
+  basePath = '/src/asciidoc-pages'
 ) {
-  fileAbsolutePath = parent.absolutePath
-  const relativePath = (fileAbsolutePath || ``).split(basePath)?.[1]
+  const fileAbsolutePath = parent.absolutePath
+  const relativePath = (fileAbsolutePath || '').split(basePath)?.[1]
   if (!relativePath || !omitFileExt) return relativePath
-  return relativePath.split(`.`)?.[0]
+  return relativePath.split('.')?.[0]
 }
 
 /**
  * Returns language code from file path of given node. As a fallback `defaultLang` is returned.
  */
-function getNodeLangCode({ parent }, defaultLang = `en`) {
-  fileAbsolutePath = parent.absolutePath
+function getNodeLangCode ({ parent }, defaultLang = 'en') {
+  const fileAbsolutePath = parent.absolutePath
   const langCodeRegex = /(?:[^/]*\.)(.*)(?:\.adoc)/
-  return (fileAbsolutePath || ``).match(langCodeRegex)?.[1] || defaultLang
+  return (fileAbsolutePath || '').match(langCodeRegex)?.[1] || defaultLang
 }
 
 /**
  * Creates and returns the theoretically translated url with the original slug.
  * If `omitDefaultLang` is true, the given `defaultLang` will not be included in paths for this language.
  */
-function getTranslatedUrlPath(
+function getTranslatedUrlPath (
   slug,
   sourceLang,
   destLang,
   omitDefaultLang,
-  defaultLang = `en`
+  defaultLang = 'en'
 ) {
   const baseUrlPathRegex = new RegExp(`(?:/${sourceLang})?(/.*)`)
-  let baseUrlPath = slug.match(baseUrlPathRegex)?.[1] || `/`
+  let baseUrlPath = slug.match(baseUrlPathRegex)?.[1] || '/'
   if (baseUrlPath.includes('index')) {
-      baseUrlPath = baseUrlPath.split("/index")[0]
+    baseUrlPath = baseUrlPath.split('/index')[0]
   }
   return omitDefaultLang && destLang === defaultLang
     ? `${baseUrlPath}`
@@ -46,19 +46,19 @@ function getTranslatedUrlPath(
  * Determines equally named asciidoc-files with a different language,
  * and creates redirects from the theoretically translated url to the actual slug.
  */
-module.exports = function createMultilingualRedirects(
+module.exports = function createMultilingualRedirects (
   { createRedirect },
   allNodes,
   node
 ) {
-  let { slug } = node.fields
+  const { slug } = node.fields
   const relativePath = getNodeRelativePath(node, true)
   const langCode = getNodeLangCode(node)
   allNodes
     .map(({ node: translatedNode }) => ({
       translatedNode,
       translatedNodeLangCode: getNodeLangCode(translatedNode),
-      translatedNodeRelativePath: getNodeRelativePath(translatedNode, true),
+      translatedNodeRelativePath: getNodeRelativePath(translatedNode, true)
     }))
     .filter(
       ({ translatedNodeLangCode, translatedNodeRelativePath }) =>
@@ -76,10 +76,10 @@ module.exports = function createMultilingualRedirects(
         toPath: translatedNode.fields.slug,
         isPermanent: true,
         force: true,
-        redirectInBrowser: true,
+        redirectInBrowser: true
       }
 
-      console.log(`Adding Redirect: `, newRedirect)
+      console.log('Adding Redirect: ', newRedirect)
       createRedirect(newRedirect)
     })
 }

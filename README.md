@@ -1,18 +1,18 @@
-# Adoptium Website
+# Adoptium Site
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/359195e4-6832-4457-b67c-e79ddaf8c549/deploy-status)](https://app.netlify.com/sites/eclipsefdn-adoptium-v2/deploys)
 
 This repository contains the source code for [https://adoptium.net](https://adoptium.net).
 
-The main branch contains the source code necessary for development. The production website is hosted on Netlify which also supports pull request staging.
+The main branch contains the source code necessary for development. The production site is hosted on Netlify which also supports pull request staging.
 
 ## Tech Stack
 
-This is is a NodeJS / NPM driven stack with AsciiDoc used for static content and Gatsby as the rendering engine etc.
+This is is a Node.js / npm driven stack with AsciiDoc used for static content and Gatsby as the rendering engine etc.
 
 ## How to develop locally
 
-This assumes you already have Node.js and NPM installed. At time of writing we use Node.js 16.14.0 and NPM 8.3.1. We recommend using nvm to manage your versions.
+This assumes you already have Node.js and npm installed. At time of writing we use Node.js 16.14.0 and npm 8.3.1. We recommend using nvm to manage your versions.
 
 1. Install your dependencies
 

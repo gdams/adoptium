@@ -1,10 +1,10 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Navbar from "./Navbar"
-import Footer from "./Footer"
-import "./layout.scss"
+import Navbar from './Navbar'
+import Footer from './Footer'
+import './layout.scss'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,15 +18,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="container-fluid p-0"
+    <div
+      className='container-fluid p-0'
       style={{
         backgroundColor: 'var(--bg)',
-        color: 'var(--textNormal)',
-        transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        color: 'var(--text-normal)',
+        transition: 'color 0.2s ease-out, background 0.2s ease-out'
       }}
     >
-      <Navbar siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <main >
+      <Navbar siteTitle={data.site.siteMetadata?.title || 'Title'} />
+      <main>
         <main>{children}</main>
       </main>
       <Footer />
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 }
 
 export default Layout

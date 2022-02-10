@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
 import argparse
-from bs4 import BeautifulSoup
+
 import requests
+from bs4 import BeautifulSoup
 
 org = "adoptium"
 repo = "website-v2"
@@ -10,7 +11,9 @@ branch = "main"
 # This is where we define users that should be skipped
 excludedUsers = "eclipse-temurin-bot"
 
-parser = argparse.ArgumentParser(description="List GitHub contributor usernames for a given file")
+parser = argparse.ArgumentParser(
+    description="List GitHub contributor usernames for a given file"
+)
 parser.add_argument(
     "--file",
     nargs="?",
@@ -19,7 +22,11 @@ parser.add_argument(
 )
 args = parser.parse_args()
 
-page = requests.get("https://github.com/{org}/{repo}/contributors-list/{branch}/{args.file}".format(**locals()))
+page = requests.get(
+    "https://github.com/{org}/{repo}/contributors-list/{branch}/{args.file}".format(
+        **locals()
+    )
+)
 soup = BeautifulSoup(page.content, "html.parser")
 
 contributors = soup.findAll("a")

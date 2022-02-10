@@ -8,13 +8,13 @@ const LinuxPanel = (): JSX.Element => {
     <div>
       <ShellBox textToCopy="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash">
         <span className="install__text__no-select">$</span>
-        <span className="install__text__command"> curl -o- </span>
+        <span className="install-text-command"> curl -o- </span>
         https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh
-        <span className="install__text__command"> | bash</span>
+        <span className="install-text-command"> | bash</span>
       </ShellBox>
       <ShellBox textToCopy="nvm install --lts">
         <span className="install__text__no-select">$</span>
-        <span className="install__text__command"> nvm</span> install --lts
+        <span className="install-text-command"> nvm</span> install --lts
       </ShellBox>
       <Link
         className="install__docs-button"

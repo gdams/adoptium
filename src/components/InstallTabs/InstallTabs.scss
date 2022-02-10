@@ -1,107 +1,112 @@
 .install {
-    .react-tabs {
-      -webkit-tap-highlight-color: transparent;
-  
-      &__tab-list {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-      }
-  
-      &__tab {
-        background: #515c62;
-        border: 1px solid transparent;
-        border-bottom: none;
-        bottom: -1px;
-        color: #cbd4d9;
-        cursor: pointer;
-        display: inline-block;
-        list-style: none;
-        padding: 10px 12px;
-        position: relative;
-        text-align: center;
-        width: 100%;
-  
-        &--selected {
-          background: #1f272a;
-          border-radius: 5px 5px 0 0;
-          color: #fff;
-        }
-  
-        &:focus {
-          border-bottom: none;
-          border-color: #ed5393;
-          box-shadow: 0 0 5px #ed5393;
-          outline: none;
-  
-          &:after {
-            background: #1f272a;
-            bottom: -5px;
-            content: '';
-            height: 5px;
-            left: 0;
-            position: absolute;
-            right: 0;
-          }
-        }
-      }
-  
-      &__tab-panel {
-        display: none;
-        padding: 20px;
-  
-        &--selected {
-          display: block;
-        }
-      }
-    }
-    &__header {
-      height: 30px;
-      margin: 0 5px;
-      &-circles {
-        float: left;
-        height: 100%;
-      }
-      &-grey-circle {
-        background-color: #556066;
-        border-radius: 50%;
-        display: inline-block;
-        height: 10px;
-        margin: 10px 5px;
-        width: 10px;
-      }
-      &-text {
-        line-height: 30px;
-        text-align: center;
-        width: calc(100% - 60px);
-      }
-    }
-    &__text {
-      color: #ed5393;
-      &__line {
-        margin: 1.2rem 0;
-      }
-      &__no-select {
-        margin-right: 1.2rem;
-        user-select: none;
-      }
-    }
-    &__docs-button,
-    &__docs-button:hover {
-      border: 1px solid #d9e1e4;
-      border-radius: 0.4rem;
-      bottom: 2rem;
-      box-sizing: border-box;
-      color: #d9e1e4;
-      height: 2.8rem;
-      padding: .8rem;
-      position: absolute;
-      right: 2rem;
-      text-decoration: none;
-    }
-}
+  .react-tabs {
+    -webkit-tap-highlight-color: transparent;
 
-.install__docs-button {
+    &__tab-list {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    &__tab {
+      background: #515c62;
+      border: 1px solid transparent;
+      border-bottom: none;
+      bottom: -1px;
+      color: #cbd4d9;
+      cursor: pointer;
+      display: inline-block;
+      list-style: none;
+      padding: 10px 12px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+
+      &--selected {
+        background: #1f272a;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+      }
+
+      &:focus {
+        border-bottom: none;
+        border-color: #ed5393;
+        box-shadow: 0 0 5px #ed5393;
+        outline: none;
+
+        &::after {
+          background: #1f272a;
+          bottom: -5px;
+          content: "";
+          height: 5px;
+          left: 0;
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+
+    &__tab-panel {
+      display: none;
+      padding: 20px;
+
+      &--selected {
+        display: block;
+      }
+    }
+  }
+
+  &__header {
+    height: 30px;
+    margin: 0 5px;
+
+    &-circles {
+      float: left;
+      height: 100%;
+    }
+
+    &-grey-circle {
+      background-color: #556066;
+      border-radius: 50%;
+      display: inline-block;
+      height: 10px;
+      margin: 10px 5px;
+      width: 10px;
+    }
+
+    &-text {
+      line-height: 30px;
+      text-align: center;
+      width: calc(100% - 60px);
+    }
+  }
+
+  &__text {
+    color: #ed5393;
+
+    &__line {
+      margin: 1.2rem 0;
+    }
+
+    &__no-select {
+      margin-right: 1.2rem;
+      user-select: none;
+    }
+  }
+
+  &__docs-button,
+  &__docs-button:hover {
+    border: 1px solid #d9e1e4;
+    border-radius: 0.4rem;
+    bottom: 2rem;
+    box-sizing: border-box;
+    color: #d9e1e4;
+    height: 2.8rem;
+    padding: .8rem;
+    position: absolute;
+    right: 2rem;
+    text-decoration: none;
     margin-right: 2em;
+  }
 }
