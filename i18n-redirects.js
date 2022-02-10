@@ -38,7 +38,7 @@ function getTranslatedUrlPath (
     baseUrlPath = baseUrlPath.split('/index')[0]
   }
   // Trim trailing slash
-  baseUrlPath = baseUrlPath.replace(/\/$/, '');
+  baseUrlPath = baseUrlPath.replace(/\/$/, '')
   return omitDefaultLang && destLang === defaultLang
     ? `${baseUrlPath}`
     : `/${destLang}${baseUrlPath}`
