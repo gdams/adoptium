@@ -9,8 +9,12 @@ export default function asciidocFormatter () {
   spans.forEach(span => {
     if (span.className === 'icon') {
       const iconName = span.innerHTML.substring(1, span.innerHTML.length - 1)
+      let iconClass = 'fa'
+      if (iconName === 'docker') {
+        iconClass = 'fab'
+      }
       const archiveTypeIcon = document.createElement('i')
-      archiveTypeIcon.className = `fa fa-${iconName}`
+      archiveTypeIcon.className = `${iconClass} fa-${iconName}`
       archiveTypeIcon.ariaHidden = true
       span.replaceWith(archiveTypeIcon)
     }

@@ -15,8 +15,8 @@ This section lists the operating systems that are supported with the latest rele
 
 {nbsp} 8 h|11 h|16 h|17
 5+h| Windows (x64/x86)
-| Windows Server 2022 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
-| Windows Server 2019 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
+| Windows Server 2022 |  icon:check[] icon:docker[]  |  icon:check[] icon:docker[]  |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] 
+| Windows Server 2019 |  icon:check[] icon:docker[]  |  icon:check[] icon:docker[]  |  icon:check[] icon:docker[]  |  icon:check[] icon:docker[] 
 | Windows Server 2016 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
 | Windows Server 2012 R2 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
 | Windows 11 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
@@ -27,28 +27,28 @@ This section lists the operating systems that are supported with the latest rele
 5+h| Linux (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (x64) builds should work on any distribution with glibc version 2.12 or higher."]#^[1]^#
 | SUSE Linux Enterprise Server (SLES) 12 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
 | RHEL / Rocky 8.x |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
-| RHEL / CentOS 7.x |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
-| Ubuntu 20.04 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
+| RHEL / CentOS 7.x |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[]
+| Ubuntu 20.04 |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[]icon:docker[] |  icon:check[] icon:docker[]
 | Ubuntu 18.04 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
-| Alpine Linux 3.5 or later (Headless) | n/a |  icon:check[] |  icon:check[] |  icon:check[]
+| Alpine Linux 3.5 or later (Headless) | n/a |  icon:check[] icon:docker[] | icon:check[] icon:docker[] |  icon:check[] icon:docker[]
 
 5+h| Linux (ARM 64-bit) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 64-bit) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
 | RHEL / Rocky 8.x |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
-| RHEL / CentOS 7.x |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
-| Ubuntu 20.04 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
+| RHEL / CentOS 7.x |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[]
+| Ubuntu 20.04 |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[]
 
 5+h| Linux (ARM 32-bit Hard-Float) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 32-bit Hard-Float) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
-| Ubuntu 20.04 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
+| Ubuntu 20.04 |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] | icon:check[] icon:docker[] |  icon:check[] icon:docker[]
 
 5+h| Linux (PowerPC 64-bit Little Endian) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (PowerPC 64-bit Little Endian) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
 | RHEL / Rocky 8.x |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
 | RHEL / CentOS 7.x |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
-| Ubuntu 20.04 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
+| Ubuntu 20.04 |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[]
 
 5+h| Linux (s390x) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (s390x) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
 | RHEL 8.x | n/a ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# |  icon:check[] |  icon:check[] |  icon:check[]
 | RHEL 7.x | n/a ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# |  icon:check[] |  icon:check[] |  icon:check[]
-| Ubuntu 20.04 | n/a ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# |  icon:check[] |  icon:check[] |  icon:check[]
+| Ubuntu 20.04 | n/a ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# |  icon:check[] icon:docker[]  |  icon:check[] icon:docker[]  |  icon:check[] icon:docker[] 
 
 5+h| macOS (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (macOS builds should work on 10.12 or above."]#^[4]^#
 | macOS 11 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
@@ -68,3 +68,12 @@ This section lists the operating systems that are supported with the latest rele
 | AIX 7.1 TL4 | icon:check[] |  icon:check[]|  icon:check[] |  icon:check[]
 |===
 --
+
+++++
+<div class="text-center">
+    <div class="btn-group">
+        <a class="btn btn-primary m-3" href="/support">Support <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+        <a class="btn btn-secondary m-3" href="https://github.com/adoptium/adoptium-support/issues">Submit an Issue <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+    </div>
+</div>
+++++
