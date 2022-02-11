@@ -1,9 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import {Link, Trans, useTranslation, useI18next} from 'gatsby-plugin-react-i18next';
-import { useLocation } from '@reach/router';
+import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 
-import LogoLight from '../images/adoptium-logo-light.svg';
 import LogoDark from '../images/adoptium-logo-dark.svg';
 
 const isActive = ({ isCurrent }) => {
@@ -15,23 +13,7 @@ const ExactNavLink = props => (
 )
 
 const Navbar = ({siteTitle}): JSX.Element => {
-  const {languages, changeLanguage} = useI18next();
   const {t} = useTranslation();
-
-  const location = useLocation();
-
-  // const handleThemeOnClick = (
-  //   toggleTheme: Function,
-  //   currentTheme: string,
-  //   isKeyPress = false
-  // ): void => {
-  //   if (isKeyPress) {
-  //     return;
-  //   }
-
-  //   const toggle = currentTheme === 'light' ? 'dark' : 'light';
-  //   toggleTheme(toggle);
-  // };
 
   return (
     <nav className="navbar navbar-expand-xl navbar-dark bg-transparent" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
@@ -107,56 +89,6 @@ const Navbar = ({siteTitle}): JSX.Element => {
             </li>
           </ul>
         </div>
-        <ul className="languages">
-          {languages.map((lng) => (
-            <li key={lng}>
-              <a
-                href=""
-                onClick={(e) => {
-                  e.preventDefault();
-                  if (location.pathname.includes('index')) {
-                    let newPath = location.pathname.split("/index")[0].slice(3)
-                    changeLanguage(lng, newPath);
-                  } else {
-                    changeLanguage(lng);
-                  }
-                }}>
-                {lng}
-              </a>
-            </li>
-          ))}
-        </ul>
-        {/* <ThemeToggler>
-          {({
-            theme,
-            toggleTheme,
-          }: {
-            theme: string | null;
-            // eslint-disable-next-line @typescript-eslint/ban-types
-            toggleTheme: Function;
-          }): JSX.Element | null => {
-            if (theme === null) {
-              return null;
-            }
-            const changeTheme = () => {
-              handleThemeOnClick(toggleTheme, theme)
-            }
-            return (
-              <Switch
-                checked={theme === "light" ? true : false}
-                offColor="#1d1f2f"
-                onColor="#FDB813"
-                checkedIcon={
-                  <IoMdSunny size="1.5em" color="white" style={{paddingLeft: '.5em'}} className="light" />
-                }
-                uncheckedIcon={
-                  <IoMdMoon size="1.5em" color="white" style={{paddingLeft: '.5em'}} className="dark" />
-                }
-                onChange={changeTheme}
-              />
-            );
-          }}
-        </ThemeToggler> */}
       </div>
     </nav>
   )

@@ -48,7 +48,7 @@ export default function Template ({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($id: String!) {
+  query($id: String!, $language: String!) {
     asciidoc(id: { eq: $id }) {
       html
       document {
@@ -64,6 +64,15 @@ export const pageQuery = graphql`
     }
     file(childAsciidoc: {id: {eq: $id }}) {
       relativePath
+    }
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
     }
   }
 `

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { useQueryParam, StringParam } from 'use-query-params'
 
 import Layout from '../components/Layout'
@@ -50,3 +50,17 @@ const DownloadPage = () => {
 }
 
 export default DownloadPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

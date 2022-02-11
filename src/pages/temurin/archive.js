@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import { FaArrowCircleRight } from 'react-icons/fa'
 
@@ -44,3 +44,17 @@ const TemurinReleases = () => (
 )
 
 export default TemurinReleases
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

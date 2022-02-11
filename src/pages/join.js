@@ -1,5 +1,6 @@
 import * as React from 'react'
 import HubspotForm from 'react-hubspot-form'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
@@ -22,3 +23,17 @@ const JoinPage = () => (
 )
 
 export default JoinPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`
