@@ -1,0 +1,41 @@
+= Sign the Eclipse Contributor Agreement
+:page-authors: MBoegers, gdams
+
+== Sign the Eclipse Contributor Agreement
+To contribute to this project the https://www.eclipse.org/legal/ECA.php[Eclipse Contributor Agreement (ECA)] must be signed.
+This document will walk you through this process.
+
+First, you need to create an Eclipse Foundation account.
+
+1. Go to the https://accounts.eclipse.org/user/register[Eclipse Registration page]
+2. Fill all Required fields and submit
+** Eclipse expects you to use the entered E-Mail address for every contribution, e.q. user.email for git
+3. Activate your account via the activation link in your mailbox
+** The sender should be *webmaster@eclipse.org* with the subject *Eclipse Account Registration*
+
+You are one step away from becoming an Eclipse Contributor, we just need to sign the ECA.
+
+=== Sign the ECA
+Signing the ECA is straightforward and is done online.
+
+. Navigate to the https://accounts.eclipse.org/user/login[login page] of Eclipse Accounts page
+. Login with your E-Mail address and password
+. Eclipse Accounts navigates you directly to the sign page
+** Read the https://www.eclipse.org/legal/ECA.php[ECA]
+** Enter the requested information
+** Submit via *Accept* button
+
+Now the Status panel in the upper right corner should show that you signed the Eclipse Contributor Agreement. It should look like this:
+
+image:Status_signed_ECA.png[one green dot at Eclipse Contributor Agreement]
+
+=== ECA Sign check failed, but why?
+For every pull request, a GitHub Action verifies that the author signed the Eclipse Contributor Agreement.
+This can fail if:
+
+* You have not got an Eclipse Account
+* You have not signed the Eclipse Contributor Agreement
+* You have configured git to use a different E-Mail address than you used to sign the ECA
+** `user.email` setting for git must equal to that used for your Eclipse Foundation account. See https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address[Setting your commit email address] for more information
+
+If none of the above is the case, feel free to reach out to the maintainers.
