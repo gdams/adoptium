@@ -6,19 +6,29 @@ import '../InstallTabs.scss';
 const LinuxPanel = (): JSX.Element => {
   return (
     <div>
-      <ShellBox textToCopy="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash">
+      <ShellBox>
+        <span className="install__text__no-select"># Install the latest LTS version (Debian or Ubuntu)</span>
+        <br />
         <span className="install__text__no-select">$</span>
-        <span className="install-text-command"> curl -o- </span>
-        https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh
-        <span className="install-text-command"> | bash</span>
+        <span className="install-text-command">apt-get install </span>temurin-17-jdk
       </ShellBox>
-      <ShellBox textToCopy="nvm install --lts">
+      <br />
+      <ShellBox>
+        <span className="install__text__no-select"># Install the latest LTS version (CentOS/RHEL/Fedora)</span>
+        <br />
         <span className="install__text__no-select">$</span>
-        <span className="install-text-command"> nvm</span> install --lts
+        <span className="install-text-command">yum install </span>temurin-17-jdk
+      </ShellBox>
+      <br />
+      <ShellBox>
+        <span className="install__text__no-select"># Install the latest LTS version (openSUSE/SLES)</span>
+        <br />
+        <span className="install__text__no-select">$</span>
+        <span className="install-text-command">zypper install </span>temurin-17-jdk
       </ShellBox>
       <Link
         className="install__docs-button"
-        to="/download/package-manager/#nvm"
+        to="/installation/linux"
       >
       Read documentation
       </Link>
