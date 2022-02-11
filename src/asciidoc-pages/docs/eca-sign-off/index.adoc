@@ -7,10 +7,10 @@ This document will walk you through this process.
 
 First, you need to create an Eclipse Foundation account.
 
-1. Go to the https://accounts.eclipse.org/user/register[Eclipse Registration page]
-2. Fill all Required fields and submit
+. Go to the https://accounts.eclipse.org/user/register[Eclipse Registration page]
+. Fill all Required fields and submit
 ** Eclipse expects you to use the entered E-Mail address for every contribution, e.q. user.email for git
-3. Activate your account via the activation link in your mailbox
+. Activate your account via the activation link in your mailbox
 ** The sender should be *webmaster@eclipse.org* with the subject *Eclipse Account Registration*
 
 You are one step away from becoming an Eclipse Contributor, we just need to sign the ECA.
