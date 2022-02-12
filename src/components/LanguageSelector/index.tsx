@@ -21,6 +21,7 @@ const LanguageSelector = (): JSX.Element => {
             {languages.map((lng) => (
               <a
                 href=""
+                key={lng}
                 onClick={(e) => {
                   e.preventDefault();
                   if (location.pathname.includes('index')) {

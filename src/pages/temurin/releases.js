@@ -1,12 +1,12 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
-
 import { FaArrowCircleRight } from 'react-icons/fa'
 
 import Layout from '../../components/Layout'
 import Seo from '../../components/Seo'
 import DownloadDropdowns from '../../components/DownloadDropdowns'
 import DownloadTable from '../../components/TemurinDownloadTable'
+import ChecksumModal from '../../components/ChecksumModal'
 import { loadLatestAssets } from '../../hooks'
 
 const TemurinReleases = () => (
@@ -27,6 +27,7 @@ const TemurinReleases = () => (
       </div>
       <DownloadDropdowns updaterAction={loadLatestAssets} />
       <DownloadTable />
+      <ChecksumModal />
     </section>
   </Layout>
 )

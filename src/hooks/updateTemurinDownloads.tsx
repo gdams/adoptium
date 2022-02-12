@@ -187,7 +187,10 @@ function updateTable(releases) {
                 var individualDownloadCell = individualDownloadRow.insertCell();
                 var checksumElement = document.createElement('span');
                 var checksumA = document.createElement('a');
-                checksumA.href = "https://google.com"
+                checksumA.href = "";
+                checksumA.setAttribute('data-bs-toggle', 'modal')
+                checksumA.setAttribute('data-bs-target', '#checksumModal')
+                checksumA.setAttribute('data-bs-checksum', binary.installer_checksum)
                 var checksumText = document.createTextNode('Checksum (SHA256)');
                 checksumA.appendChild(checksumText)
                 checksumElement.appendChild(checksumA)
@@ -230,7 +233,10 @@ function updateTable(releases) {
             var individualDownloadCell = individualDownloadRow.insertCell();
             var checksumElement = document.createElement('span');
             var checksumA = document.createElement('a');
-            checksumA.href = "https://google.com"
+            checksumA.href = ""
+            checksumA.setAttribute('data-bs-toggle', 'modal')
+            checksumA.setAttribute('data-bs-target', '#checksumModal')
+            checksumA.setAttribute('data-bs-checksum', binary.checksum)
             var checksumText = document.createTextNode('Checksum (SHA256)');
             checksumA.appendChild(checksumText)
             checksumElement.appendChild(checksumA)
