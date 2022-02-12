@@ -13,12 +13,14 @@ const ChecksumModal = () => {
     setCopySuccess('Copied!');
   };
 
-  window.addEventListener('show.bs.modal', (event) => {
-    let button = event.relatedTarget;
-    let checksum = button.getAttribute('data-bs-checksum')
-    setChecksum(checksum)
-    setCopySuccess('Copy')
-  });
+  if (typeof window !== `undefined`) {
+    window.addEventListener('show.bs.modal', (event) => {
+      let button = event.relatedTarget;
+      let checksum = button.getAttribute('data-bs-checksum')
+      setChecksum(checksum)
+      setCopySuccess('Copy')
+    });
+  }
 
   return (
     <>
