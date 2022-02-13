@@ -15,8 +15,8 @@ const DocumentationHeader = () => {
                     <input type="text" placeholder="Search the docs..." name="search" className="form-control search-input text-start"/>
                     <button type="submit" className="btn search-btn" value="Search"><FaSearch size={16} /></button>
 		        </form>
-             </div>
-	    </div>
+            </div>
+        </div>
     </div>
   );
 };

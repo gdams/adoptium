@@ -1,36 +1,38 @@
 .docs-overview .card-icon-holder {
-    width: 2.5em;
-    height: 2.5em;
-    font-size: 1.5rem;
-    padding-top: 1rem;
-    display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  display: inline-block;
 }
 
 .docs-overview .card-link-mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .theme-icon-holder {
-    display: inline-block;
-    background: #fcf4f6;
-    color: var(--brand4);
-    font-size: 1rem;
-    text-align: center;
-    border-radius: 50%;
+  display: inline-block;
+  background: #fcf4f6;
+  color: var(--brand4);
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 50%;
 }
 
 .docs-overview .card {
-    border-color: #e7e9ed;
-    position: relative;
-    height: 100%;
-    &:hover {
-        background: #fcf4f6;
-        .card-icon-holder {
-            background: #fff;
-        }
+  border-color: #e7e9ed;
+  position: relative;
+  height: 100%;
+
+  &:hover {
+    background: #fcf4f6;
+
+    .card-icon-holder {
+      background: #fff;
     }
+  }
 }
