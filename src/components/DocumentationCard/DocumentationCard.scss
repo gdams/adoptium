@@ -16,7 +16,7 @@
 
 .theme-icon-holder {
   display: inline-block;
-  background: #fcf4f6;
+  background: var(--page-pink);
   color: var(--brand4);
   font-size: 1rem;
   text-align: center;
@@ -29,7 +29,16 @@
   height: 100%;
 
   &:hover {
-    background: #fcf4f6;
+    background: var(--page-pink);
+
+    .list-group-item {
+      background: var(--page-pink);
+
+      &:hover {
+        background: var(--brand4);
+        color: white;
+      }
+    }
 
     .card-icon-holder {
       background: #fff;
