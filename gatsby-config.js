@@ -44,6 +44,40 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-local-search',
+      options: {
+        name: 'docs',
+        engine: 'flexsearch',
+        query: `
+          {
+            allAsciidoc {
+              edges {
+                node {
+                  id
+                  document {
+                    title
+                  }
+                  fields {
+                    slug
+                  }
+                  html
+                }
+              }
+            }
+          }
+        `,
+        index: ['title', 'body'],
+        store: ['id', 'path', 'title'],
+        normalizer: ({ data }) =>
+          data.allAsciidoc.edges.map((result) => ({
+            id: result.node.id,
+            path: result.node.fields.slug,
+            title: result.node.document.title,
+            body: result.node.html
+          }))
+      }
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -53,7 +87,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-netlify',
-    // `gatsby-plugin-dark-mode`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
     'gatsby-plugin-use-query-params',

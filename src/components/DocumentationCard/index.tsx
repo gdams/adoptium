@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-react-i18next';
 
 import { FaSearch } from 'react-icons/fa';
 import './DocumentationCard.scss';

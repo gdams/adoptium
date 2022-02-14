@@ -7,10 +7,10 @@ import Seo from '../components/Seo'
 import DocumentationHeader from '../components/DocumentationHeader'
 import DocumentationCard from '../components/DocumentationCard'
 
-const DocumentationPage = () => (
+const DocumentationPage = ({ data }) => (
   <Layout>
     <Seo title='Documentation' />
-    <DocumentationHeader />
+    <DocumentationHeader data={data} />
 
     <div className='page-content'>
       <div className='container'>
@@ -64,6 +64,10 @@ export default DocumentationPage
 
 export const query = graphql`
   query ($language: String!) {
+    localSearchDocs {
+      index
+      store
+    }
     locales: allLocale(filter: {language: {eq: $language}}) {
       edges {
         node {

@@ -2,42 +2,23 @@
   background: var(--brand4);
 }
 
-.form-control {
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-  height: 2.75rem;
-  border-color: #e0f7e6;
-}
-
 .search-form {
   position: relative;
   width: 100%;
 }
 
-.search-form .search-btn {
-  color: #828d9f;
-  background: none;
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 0.15rem;
-  margin-right: 0;
-}
-
-.search-input {
-  font-size: 0.875rem;
-  border-radius: 1.5rem;
-  padding-right: 3rem;
-  padding-left: 1.5rem;
-}
-
-.search-form .search-input {
-  font-size: 0.875rem;
-  border-radius: 1.5rem;
-  padding-right: 3rem;
-  padding-left: 1.5rem;
-}
-
 .main-search-box {
   max-width: 600px;
+}
+
+.MuiAutocomplete-root {
+  background-color: white;
+}
+
+.MuiInputLabel-shrink {
+  display: none !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
 }
