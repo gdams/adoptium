@@ -6,6 +6,7 @@
         "declaration-empty-line-before": null,
         "number-leading-zero": null,
         "color-function-notation": null,
-        "no-descending-specificity": null
+        "no-descending-specificity": null,
+        "selector-class-pattern": null
     }
 }
