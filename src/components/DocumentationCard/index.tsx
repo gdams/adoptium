@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from 'gatsby-plugin-react-i18next';
 
-import { FaSearch } from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import './DocumentationCard.scss';
+import { keys } from "@mui/system";
 
 const DocumentationCard = ({
-  link,
+  links,
   title,
-  description,
   Icon
 }) => {
-
   return (
   <div className="col-12 col-lg-4 py-3">
     <div className="card shadow-sm">
@@ -22,9 +21,15 @@ const DocumentationCard = ({
             <span className="card-title-text">{title}</span>
         </h5>
         <div className="card-text">
-          {description}
+          <div className="list-group list-group-flush">
+            {links.map((link) => (
+              // Check if internal or external
+              link.link.includes('http')
+              ? <a href={link.link} key={link.link} target="_blank" className="list-group-item list-group-item-action">{link.name} <FaExternalLinkAlt size={13} /></a>
+              : <Link to={link.link} key={link.link} className="list-group-item list-group-item-action">{link.name}</Link>
+            ))}
+          </div>
         </div>
-        <Link className="card-link-mask" to={link}></Link>
       </div>
     </div>
   </div>

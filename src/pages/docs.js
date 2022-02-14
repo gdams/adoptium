@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { FaMapSigns, FaArrowDown, FaBox, FaCogs, FaTools, FaLaptopCode } from 'react-icons/fa'
+import { FaDownload, FaQuestion, FaGithub, FaBox, FaInfoCircle, FaGlobe } from 'react-icons/fa'
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
@@ -17,40 +17,59 @@ const DocumentationPage = ({ data }) => (
         <div className='docs-overview py-5'>
           <div className='row justify-content-center'>
             <DocumentationCard
-              title='Introduction'
-              link='#'
-              description='Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
-              Icon={FaMapSigns}
+              title='Download Temurin'
+              Icon={FaDownload}
+              links={[
+                { name: 'Download Eclipse Temurin', link: '/temurin/releases' },
+                { name: 'Install Eclipse Temurin', link: '/installation' },
+                { name: 'Container Images', link: 'https://hub.docker.com/_/eclipse-temurin' }
+              ]}
             />
             <DocumentationCard
-              title='Installation'
-              link='#'
-              description='Section overview goes here. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.'
-              Icon={FaArrowDown}
+              title='Temurin Support'
+              Icon={FaQuestion}
+              links={[
+                { name: 'Support', link: '/support' },
+                { name: 'Migration Guide', link: '/docs/migration' },
+                { name: 'Supported Platforms', link: '/supported-platforms' },
+                { name: 'Submit a Issue', link: 'https://github.com/adoptium/adoptium-support/issues' }
+              ]}
             />
             <DocumentationCard
-              title='APIs'
-              link='#'
-              description='Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.'
+              title='Marketplace'
+              links={[
+                { name: 'Marketplace Downloads', link: '/marketplace' },
+                { name: 'Marketplace Policy', link: '/docs/marketplace-policy' },
+                { name: 'Quality Verification Suite Policy', link: '/docs/qvs-policy' }
+              ]}
               Icon={FaBox}
             />
             <DocumentationCard
-              title='Integrations'
-              link='#'
-              description='Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.'
-              Icon={FaCogs}
+              title='Contributing'
+              Icon={FaGithub}
+              links={[
+                { name: 'First Timer Support', link: '/docs/first-timer-support' },
+                { name: 'Sign the ECA', link: '/docs/eca-sign-off' },
+                { name: 'Join our Slack Channel', link: '/slack' }
+              ]}
             />
             <DocumentationCard
-              title='Utilities'
-              link='#'
-              description='Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.'
-              Icon={FaTools}
+              title='Eclipse Adoptium'
+              Icon={FaGlobe}
+              links={[
+                { name: 'About', link: '/about' },
+                { name: 'Join the Working Group', link: '/join' },
+                { name: 'Sponsor the Working Group', link: 'https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' }
+              ]}
             />
             <DocumentationCard
-              title='Web'
-              link='#'
-              description='Section overview goes here. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.'
-              Icon={FaLaptopCode}
+              title='Other Resources'
+              Icon={FaInfoCircle}
+              links={[
+                { name: 'Frequently Asked Questions', link: '/docs/faq' },
+                { name: 'Adoptium API', link: 'https://api.adoptium.net' },
+                { name: 'Adoptium Blog', link: 'https://blog.adoptium.net' }
+              ]}
             />
           </div>
         </div>

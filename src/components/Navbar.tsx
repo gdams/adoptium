@@ -44,16 +44,9 @@ const Navbar = ({siteTitle}): JSX.Element => {
             </li>
             <li className="nav-item">
               <ExactNavLink
-                to="/installation"
+                to="/docs"
               >
-                Installation
-              </ExactNavLink>
-            </li>
-            <li className="nav-item">
-              <ExactNavLink
-                to="/docs/migration"
-              >
-                Migration Guide
+                Documentation
               </ExactNavLink>
             </li>
             <li className="nav-item">
@@ -79,12 +72,10 @@ const Navbar = ({siteTitle}): JSX.Element => {
               </ExactNavLink>
               <ul className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                 <li><ExactNavLink className="dropdown-item" to="/about">About</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/support">Support</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/members">Members</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/sponsors">Sponsors</ExactNavLink></li>
                 <li><a className="dropdown-item nav-link" href="https://api.adoptium.net">API</a></li>
                 <li><a className="dropdown-item nav-link" href="https://blog.adoptium.net">Blog</a></li>
-                <li><ExactNavLink className="dropdown-item" to="/supported-platforms">Supported Platforms</ExactNavLink></li>
               </ul>
             </li>
           </ul>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "gatsby";
 import { FaPen } from 'react-icons/fa';
 
 type Props = {
