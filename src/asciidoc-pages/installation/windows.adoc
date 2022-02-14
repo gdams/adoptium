@@ -1,5 +1,5 @@
 = Windows MSI installer packages
-:page-authors: gdams
+:page-authors: gdams, karianna
 :toc:
 
 Eclipse Temurin Windows installer packages are available as standard
