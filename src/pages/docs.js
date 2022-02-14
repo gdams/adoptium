@@ -50,7 +50,8 @@ const DocumentationPage = ({ data }) => (
               links={[
                 { name: 'First Timer Support', link: '/docs/first-timer-support' },
                 { name: 'Sign the ECA', link: '/docs/eca-sign-off' },
-                { name: 'Join our Slack Channel', link: '/slack' }
+                { name: 'Join our Slack Channel', link: '/slack' },
+                { name: 'Code of Conduct', link: 'https://github.com/adoptium/.github/blob/main/CODE_OF_CONDUCT.md' }
               ]}
             />
             <DocumentationCard
