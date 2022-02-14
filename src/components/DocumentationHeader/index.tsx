@@ -31,10 +31,10 @@ const DocumentationHeader = ({
   unflattenResults(results);
 
   return (
-    <div className="docs-header pb-5 text-center position-relative">
+    <div className="docs-header p-5 text-center position-relative">
 	    <div className="container">
-		    <h1 className="text-white">Documentation</h1>
-		    <div className="lead text-white">Everything you need to get started with Adoptium technology</div>
+		    <h1>Documentation</h1>
+		    <div className="lead">Everything you need to get started with Adoptium technology</div>
 		      <div className="main-search-box pt-3 d-block mx-auto">
             <Autocomplete
               disablePortal
