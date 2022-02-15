@@ -120,7 +120,9 @@ body:not(.dark) .dark-mode-only,
   border: 0;
   padding: 0.1em 0.5rem;
 
-  .table td, .table th, .table a {
+  .table td,
+  .table th,
+  .table a {
     font-size: 0.9rem;
   }
 }
