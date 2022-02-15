@@ -5,6 +5,7 @@
         "at-rule-no-unknown": null,
         "declaration-empty-line-before": null,
         "number-leading-zero": null,
-        "color-function-notation": null
+        "color-function-notation": null,
+        "no-descending-specificity": null
     }
 }
