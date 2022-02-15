@@ -4,9 +4,7 @@ import { capitalize } from '../util/capitalize';
 const baseUrl = 'https://api.adoptopenjdk.net/v3';
 
 let pkgs = [];
-let selectedPkgs = [];
-let releases = [];
-let source;
+let source: any;
 
 export function loadLatestAssets(handler, version, os, architecture) {
     pkgs = []
