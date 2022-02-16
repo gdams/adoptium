@@ -1,9 +1,7 @@
 import moment from 'moment';
-import { capitalize } from '../util/capitalize';
 
 const baseUrl = 'https://api.adoptopenjdk.net/v3';
 
-let pkgs = [];
 let source: any;
 
 export async function loadLatestAssets(version, os, architecture) {
@@ -37,7 +35,7 @@ function renderReleases(pkgs) {
         // Skip this asset if it's not a binary type we're interested in displaying
         const binary_type = releaseAsset.binary.image_type.toUpperCase();
         if (binary_type == 'SOURCES') {
-            source = releaseAsset;
+            releases['source'] = releaseAsset;
         }
         if (!['INSTALLER', 'JDK', 'JRE'].includes(binary_type)) {
             return;
