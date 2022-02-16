@@ -9,7 +9,7 @@ import { MutableRefObject, useEffect, useState } from 'react';
 // eslint-disable-next-line
 export function useOnScreen(
   ref: MutableRefObject<Element>,
-  observeOnce: boolean
+  observeOnce: boolean,
 ): boolean {
   const [isIntersecting, setIntersecting] = useState(false);
 

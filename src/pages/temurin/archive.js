@@ -6,9 +6,7 @@ import { FaArrowCircleRight } from 'react-icons/fa'
 import Layout from '../../components/Layout'
 import Seo from '../../components/Seo'
 import VersionSelector from '../../components/VersionSelector'
-import TemurinArchiveTable from '../../components/TemurinArchiveTable'
 import ChecksumModal from '../../components/ChecksumModal'
-import { loadArchiveAssets } from '../../hooks'
 
 const TemurinReleases = () => (
   <Layout>
@@ -40,8 +38,7 @@ const TemurinReleases = () => (
           </div>
         </div>
       </div>
-      <VersionSelector updaterAction={loadArchiveAssets} />
-      <TemurinArchiveTable />
+      <VersionSelector />
       <ChecksumModal />
     </section>
   </Layout>
