@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useRef, useState, useCallback, useEffect } from 'react';
+import React, { useRef, useState, useCallback, useEffect } from 'react';
 import { ChoiceGroup } from "office-ui-fabric-react";
 
 import { versions, defaultVersion } from '../util/defaults'

@@ -1,5 +1,3 @@
-import moment from 'moment';
-
 const baseUrl = 'https://api.adoptopenjdk.net/v3';
 
 let releases = []
@@ -25,13 +23,10 @@ async function makeRequest(method: string, url: RequestInfo): Promise<apiData> {
 
 function renderReleases(pkgs) {
   pkgs.forEach((aRelease) => {
-    const publishedAt = moment(aRelease.timestamp);
     const release = {
         release_name: aRelease.release_name,
         release_link: aRelease.release_link,
-        release_day: publishedAt.format('D'),
-        release_month: publishedAt.format('MMMM'),
-        release_year: publishedAt.format('YYYY'),
+        timestamp: aRelease.timestamp,
         platforms: {},
     };
 
