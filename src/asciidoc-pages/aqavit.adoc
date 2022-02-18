@@ -17,11 +17,14 @@ image::aqavit_logo.jpg[AQAvit]
 
 == AQAvit Certification
 
-image::aqacert_basic_steps.png
-+
+.AQAvit Certification Basic Steps
+|===
+| | 
+
+|image::aqacert_basic_steps.png
+a|
 [NOTE]
-.Basic Steps
-=====================================================================
+====
 git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git + 
 
 export TEST_JDK_HOME=<path to binary> + 
@@ -36,7 +39,8 @@ make _extended.system +
 Collect *.tap file and metadata file + 
 Archive <results>.zip + 
 Publish <results>.zip + 
+====
 
-=====================================================================
+|===
 
 
