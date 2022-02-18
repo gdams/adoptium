@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaPen } from 'react-icons/fa';
 import { IoMdGitPullRequest } from 'react-icons/io';
 
 type Props = {

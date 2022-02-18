@@ -40,7 +40,7 @@ export default function Template ({ data }) {
             />
           </div>
         </div>
-        <hr className='m-5'/>
+        <hr className='m-5' />
         <AuthorsList authors={pageAttributes.authors.split(',')} />
         <EditLink relativePath={relativePath} />
       </section>
