@@ -24,8 +24,8 @@ export default function Template ({ data }) {
     <Layout>
       <Seo title={document.title} />
       <section className='py-5 container'>
-        <div className='markdown-container container-md'>
-          <div className='markdown'>
+        <div className='asciidoc-container container-adoc' id='asciidoc-container'>
+          <div className='asciidoc'>
             <h1 className='pb-4 fw-light text-center'>{document.title}</h1>
             {fields.slug === '/installation/' && (
               <section className='adopt-demo-container my-5'>
