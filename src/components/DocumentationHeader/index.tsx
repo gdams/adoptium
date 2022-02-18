@@ -31,7 +31,7 @@ const DocumentationHeader = ({
   unflattenResults(results);
 
   return (
-    <div className="docs-header p-5 text-center position-relative">
+    <div className="docs-header p-5 text-center">
 	    <div className="container">
 		    <h1>Documentation</h1>
 		    <div className="lead">Everything you need to get started with Adoptium technology</div>
