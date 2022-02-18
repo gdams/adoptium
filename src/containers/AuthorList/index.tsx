@@ -8,7 +8,7 @@ interface Props {
 
 const AuthorsList = ({ authors }: Props): null | JSX.Element => {
   return (
-    <ul className="list">
+    <ul className="list m-0">
       <h5>Contributors</h5>
       {authors.map(
         (author, i): string | JSX.Element =>
