@@ -10,7 +10,7 @@ export default function asciidocFormatter () {
     if (!link.href.includes(location.host) && !link.className.includes('btn')) {
       const anchorIcon = document.createElement('i')
       anchorIcon.className = 'fa fa-external-link fa-xs p-1'
-      link.target = "_blank"
+      link.target = '_blank'
       link.append(anchorIcon)
     }
   })
