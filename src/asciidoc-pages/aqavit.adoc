@@ -20,7 +20,7 @@ AQAvit certification is one of the criteria for listing in the Adoptium Marketpl
 |===
 | | 
 
-|image::aqacert_basic_steps.png
+|image:aqacert_basic_steps.png[Basic Steps]
 a|
 ```
 git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git 
