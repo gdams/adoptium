@@ -3,7 +3,7 @@
 Version 0.1, 17.02.2022                     
 :description: AQAvit documentation                            
 :keywords: AQAvit verification                                                 
-:imagesdir: ./static/images                                                   
+:imagesdir: ../../static/images                                                   
 
 image:aqavit-light.png[AQAvit]
 AQAvit (TM) is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.  During a release it takes a functionally complete Java runtime and ensures that all the additional qualities are present that make it suitable for production use.  These quality criteria include good performance, exceptional security, resilience and endurance, and the ability to pass a wide variety of application test suites.  In addition to verifying that functionally complete runtimes are release ready, the AQA tests may also serve to verify new functionality during runtime development.
