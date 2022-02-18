@@ -22,20 +22,20 @@ image::aqacert_basic_steps.png
 [NOTE]
 .Basic Steps
 =====================================================================
-git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git
+git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git + 
 
-export TEST_JDK_HOME=<path to binary>
-export USE_TESTENV_PROPERTIES=true
-export JDK_VERSION=17
-export JDK_IMPL=hotspot
+export TEST_JDK_HOME=<path to binary> + 
+export USE_TESTENV_PROPERTIES=true + 
+export JDK_VERSION=17 + 
+export JDK_IMPL=hotspot + 
 
-make _sanity.functional
-…
-make _extended.system
+make _sanity.functional + 
+… + 
+make _extended.system + 
 
-Collect *.tap file and metadata file
-Archive <results>.zip
-Publish <results>.zip
+Collect *.tap file and metadata file + 
+Archive <results>.zip + 
+Publish <results>.zip + 
 
 =====================================================================
 
