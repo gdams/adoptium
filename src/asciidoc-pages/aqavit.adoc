@@ -1,14 +1,20 @@
 = Eclipse AQAvit
-:page-authors: gdams ; smlambert                                
+:page-authors: gdams, smlambert                                
 Version 0.1, 17.02.2022                     
 :description: AQAvit documentation                            
 :keywords: AQAvit verification                                                 
-:imagesdir: ./images                                                   
+:imagesdir: ./static/images                                                   
 
 image:aqavit_logo.jpg[AQAvit]
-AQAvit is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.  During a release it takes a functionally complete Java runtime and ensures that all the additional qualities are present that make it suitable for production use.  These quality criteria include good performance, exceptional security, resilience and endurance, and the ability to pass a wide variety of application test suites.  In addition to verifying that functionally complete runtimes are release ready, the AQA tests may also serve to verify new functionality during runtime development.
+AQAvit (TM) is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.  During a release it takes a functionally complete Java runtime and ensures that all the additional qualities are present that make it suitable for production use.  These quality criteria include good performance, exceptional security, resilience and endurance, and the ability to pass a wide variety of application test suites.  In addition to verifying that functionally complete runtimes are release ready, the AQA tests may also serve to verify new functionality during runtime development.
+
+The AQAvit project gets its name from Adoptium Quality Assurance ‘AQA’ and ‘vit’ for vitality and speed. As the project engages with vendors and enterprise consumers, the test suite is expanded and improved to keep pace with the latest Java releases and to continuously raise the quality bar through collaboration and rigour.
 
 == AQAvit Certification
+
+The AQAvit project was created to “make quality certain to happen.” AQAvit certification is achieved through the process of running and passing a prescribed and versioned set of tests in the AQAvit test suite. As per the Eclipse Foundation Quality Verification Software License (QVSL) section 5b, a distributor who wants to certify their distributions then shares a summary of the test results by which certification was achieved.
+
+AQAvit certification is one of the criteria for listing in the Adoptium Marketplace. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
 
 .AQAvit Certification Basic Steps
 |===
