@@ -4,6 +4,7 @@ Version 0.1, 17.02.2022
 :description: AQAvit documentation                            
 :keywords: AQAvit verification                                
 
+[cols="30%,70%"]
 |===
 | | 
 a|image:aqavit-light.png[200,200]
