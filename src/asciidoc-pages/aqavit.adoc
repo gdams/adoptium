@@ -4,8 +4,7 @@ Version 0.1, 17.02.2022
 :description: AQAvit documentation                            
 :keywords: AQAvit verification                                
 
-image:aqavit-light.png[height=60]
-
+image:aqavit-light.png[height=160]
 AQAvit (TM) is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.  During a release it takes a functionally complete Java runtime and ensures that all the additional qualities are present that make it suitable for production use.  These quality criteria include good performance, exceptional security, resilience and endurance, and the ability to pass a wide variety of application test suites.  In addition to verifying that functionally complete runtimes are release ready, the AQA tests may also serve to verify new functionality during runtime development.
 
 The AQAvit project gets its name from Adoptium Quality Assurance ‘AQA’ and ‘vit’ for vitality and speed. As the project engages with vendors and enterprise consumers, the test suite is expanded and improved to keep pace with the latest Java releases and to continuously raise the quality bar through collaboration and rigour.
@@ -18,7 +17,9 @@ AQAvit certification is one of the criteria for listing in the Adoptium Marketpl
 
 .AQAvit Certification Basic Steps
 |===
-a|image:aqacert_basic_steps.png
+| | 
+a|
+image:aqacert_basic_steps.png
 a|
 ```
 git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git 
