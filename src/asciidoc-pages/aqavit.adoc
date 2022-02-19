@@ -6,8 +6,7 @@ Version 0.1, 17.02.2022
 
 |===
 a|image:aqavit-light.png[200,200]
-
-|AQAvit (TM) is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.  During a release it takes a functionally complete Java runtime and ensures that all the additional qualities are present that make it suitable for production use.  These quality criteria include good performance, exceptional security, resilience and endurance, and the ability to pass a wide variety of application test suites.  In addition to verifying that functionally complete runtimes are release ready, the AQA tests may also serve to verify new functionality during runtime development.
+a|AQAvit (TM) is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.  During a release it takes a functionally complete Java runtime and ensures that all the additional qualities are present that make it suitable for production use.  These quality criteria include good performance, exceptional security, resilience and endurance, and the ability to pass a wide variety of application test suites.  In addition to verifying that functionally complete runtimes are release ready, the AQA tests may also serve to verify new functionality during runtime development.
 
 |===
 
@@ -23,8 +22,6 @@ AQAvit certification is one of the criteria for listing in the link:/marketplace
 |===
 a|image::aqacert_basic_steps.png["basic steps",400,400]
 a|
-<br/>
-<br/>
 ```
 git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git 
 
