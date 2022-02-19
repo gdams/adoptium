@@ -14,13 +14,13 @@ The AQAvit project gets its name from Adoptium Quality Assurance ‘AQA’ and �
 
 The AQAvit project was created to “make quality certain to happen.” AQAvit certification is achieved through the process of running and passing a prescribed and versioned set of tests in the AQAvit test suite. As per the Eclipse Foundation Quality Verification Software License (QVSL) section 5b, a distributor who wants to certify their distributions then shares a summary of the test results by which certification was achieved.
 
-AQAvit certification is one of the criteria for listing in the Adoptium Marketplace. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
+AQAvit certification is one of the criteria for listing in the link:/marketplace[Adoptium Marketplace]. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
 
 .AQAvit Certification Basic Steps
 |===
 | | 
-a|
-image::aqacert_basic_steps.png
+
+a|image::aqacert_basic_steps.png["basic steps",400,400]
 a|
 ```
 git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git 
@@ -43,5 +43,5 @@ Publish <results>.zip
 .Supplemental Information 
 [%collapsible]
 ====
-video::https://www.youtube.com/watch?v=9Adwk2qkL1A[]
+video::9Adwk2qkL1A[youtube]
 ====
