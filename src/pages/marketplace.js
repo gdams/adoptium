@@ -6,10 +6,11 @@ import Seo from '../components/Seo'
 import DownloadDropdowns from '../components/DownloadDropdowns'
 import DownloadTable from '../components/MarketplaceDownloadTable'
 import { getAllPkgsForVersion } from '../hooks'
+import ChecksumModal from '../components/ChecksumModal'
 
 const DownloadPage = () => (
   <Layout>
-    {/* <Seo title='Marketplace' />
+    <Seo title='Marketplace' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
@@ -37,7 +38,7 @@ const DownloadPage = () => (
         </div>
       </div>
       <DownloadDropdowns updaterAction={getAllPkgsForVersion} marketplace Table={DownloadTable} />
-    </section> */}
+    </section>
   </Layout>
 )
 
