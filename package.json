@@ -30,7 +30,7 @@
     "gatsby-plugin-sass": "^5.7.0",
     "gatsby-plugin-sharp": "^4.8.0",
     "gatsby-plugin-use-query-params": "^1.0.1",
-    "gatsby-remark-autolink-headers": "^5.7.0",
+    "gatsby-remark-autolink-headers": "^5.8.0",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-source-filesystem": "^4.7.0",
     "gatsby-transformer-asciidoc": "^3.8.0",
