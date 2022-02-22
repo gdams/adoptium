@@ -27,9 +27,9 @@ export async function getAllPkgsForVersion(version, os, architecture, package_ty
         params += '&vendor=adoptium'
     }
 
-    // if (microsoftSelected) {
-    //     params += ('&vendor=microsoft')
-    // }
+    if (microsoftSelected) {
+        params += ('&vendor=microsoft')
+    }
 
     // if (zuluSelected) {
     //     params += ('&vendor=azul')

@@ -43,39 +43,9 @@ const DownloadTable = ({results}) => {
                                     <table className="table parent mb-0 w-auto">
                                         <tbody className="table-light">
                                             {pkg.binary.installer && (
-                                                <tr key={pkg.binary.installer.checksum}>
-                                                    <td className="align-middle text-center">
-                                                        <table><tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={pkg.binary.installer.checksum}>Checksum (SHA256)</a>
-                                                            </td>
-                                                        </tr>
-                                                        </tbody></table>
-                                                    </td>
-                                                    <td className="align-middle">
-                                                        <a href={`/download?link=${pkg.binary.installer.link}`} className="btn btn-primary" style={{width: "6em"}}>
-                                                            <FaDownload /> {fetchExtension(pkg.binary.installer.link)}
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                                <BinaryTable checksum={pkg.binary.installer.checksum} link={pkg.binary.installer.link} />
                                             )}
-                                            <tr key={pkg.binary.checksum}>
-                                                <td className="align-middle text-center">
-                                                    <table><tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={pkg.binary.package.checksum}>Checksum (SHA256)</a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody></table>
-                                                </td>
-                                                <td className="align-middle">
-                                                    <a href={`/download?link=${pkg.binary.package.link}`} className="btn btn-primary" style={{width: "6em"}}>
-                                                        <FaDownload /> {fetchExtension(pkg.binary.package.link)}
-                                                    </a>
-                                                </td>
-                                            </tr>
+                                            <BinaryTable checksum={pkg.binary.package.checksum} link={pkg.binary.package.link} />
                                         </tbody>
                                     </table>
                                 </td>
@@ -90,3 +60,24 @@ const DownloadTable = ({results}) => {
 };
 
 export default DownloadTable;
+
+const BinaryTable = ({ checksum, link }) => {
+    return (
+        <tr key={checksum}>
+            <td className="align-middle text-center">
+                <table><tbody>
+                <tr>
+                    <td>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}>Checksum (SHA256)</a>
+                    </td>
+                </tr>
+                </tbody></table>
+            </td>
+            <td className="align-middle">
+                <a href={`/download?link=${link}`} className="btn btn-primary" style={{width: "6em"}}>
+                    <FaDownload /> {fetchExtension(link)}
+                </a>
+            </td>
+        </tr>
+    )
+}

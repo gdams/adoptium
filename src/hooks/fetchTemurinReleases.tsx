@@ -1,4 +1,5 @@
 import moment from 'moment';
+import { fetchExtension } from '../util/fetchExtension';
 
 import { fetchExtension } from '../util/fetchExtension';
 
