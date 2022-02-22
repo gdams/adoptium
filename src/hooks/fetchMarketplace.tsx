@@ -1,4 +1,4 @@
-const baseUrl = 'http://staging-marketplace-api.adoptium.net';
+const baseUrl = 'https://staging-marketplace-api.adoptium.net';
     
 export async function getAllPkgsForVersion(version, os, architecture, package_type, checkboxRef) {
     let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
@@ -39,7 +39,7 @@ export async function getAllPkgsForVersion(version, os, architecture, package_ty
         params += ('&vendor=ibm')
     }
 
-    let url = baseUrl + '/v3/assets/latestForVendors' + params;
+    let url = baseUrl + '/v1/assets/latestForVendors' + params;
     let json = await getPkgs(url);
     const data = JSON.parse(json);
     return data
