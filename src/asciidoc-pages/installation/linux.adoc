@@ -36,8 +36,7 @@ sudo apt-get install -y wget apt-transport-https gnupg
 wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
 ----
 +
-. Configure the Eclipse Adoptium apt repository by replacing the values
-in angle brackets:
+. Configure the Eclipse Adoptium apt repository:
 +
 [source, bash]
 ----
