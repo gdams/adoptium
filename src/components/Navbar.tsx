@@ -16,7 +16,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
   const {t} = useTranslation();
 
   return (
-    <nav className="navbar navbar-expand-xl navbar-dark bg-transparent" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
+    <nav className="navbar navbar-expand-xl navbar-dark bg-pink" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           <LogoDark style={{ paddingLeft: '.2em', paddingRight: '.2em', height: '1.9em' }} />
@@ -27,7 +27,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
         </button>
 
         <div className="collapse navbar-collapse" id="main-navbar">
-          <ul className="navbar-nav bg-transparent me-auto mb-2 mb-md-0">
+          <ul className="navbar-nav bg-pink me-auto mb-2 mb-md-0">
             <li className="nav-item">
               <ExactNavLink
                 to="/"
@@ -44,16 +44,9 @@ const Navbar = ({siteTitle}): JSX.Element => {
             </li>
             <li className="nav-item">
               <ExactNavLink
-                to="/installation"
+                to="/docs"
               >
-                Installation
-              </ExactNavLink>
-            </li>
-            <li className="nav-item">
-              <ExactNavLink
-                to="/docs/migration"
-              >
-                Migration Guide
+                Documentation
               </ExactNavLink>
             </li>
             <li className="nav-item">
@@ -79,12 +72,10 @@ const Navbar = ({siteTitle}): JSX.Element => {
               </ExactNavLink>
               <ul className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                 <li><ExactNavLink className="dropdown-item" to="/about">About</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/support">Support</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/members">Members</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/sponsors">Sponsors</ExactNavLink></li>
                 <li><a className="dropdown-item nav-link" href="https://api.adoptium.net">API</a></li>
                 <li><a className="dropdown-item nav-link" href="https://blog.adoptium.net">Blog</a></li>
-                <li><ExactNavLink className="dropdown-item" to="/supported-platforms">Supported Platforms</ExactNavLink></li>
               </ul>
             </li>
           </ul>

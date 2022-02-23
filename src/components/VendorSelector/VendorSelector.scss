@@ -1,84 +1,86 @@
-ul.vendor-list {
-  list-style-type: none;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  padding-inline-start: 40px;
-}
+.vendor-list {
+  ul.vendor-list {
+    list-style-type: none;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+  }
 
-li.vendor-li {
-  display: inline-block;
-  text-align: -webkit-match-parent;
-}
+  li.vendor-li {
+    display: inline-block;
+    text-align: -webkit-match-parent;
+  }
 
-input[type="checkbox"][id^="vendor-"] {
-  display: none;
-}
+  input[type="checkbox"][id^="vendor"] {
+    display: none;
+  }
 
-label.vendor-label {
-  border: transparent;
-  padding: 10px;
-  display: block;
-  position: relative;
-  margin: 10px;
-  cursor: pointer;
-}
+  label.vendor-label {
+    border: transparent;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  }
 
-label::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  line-height: 28px;
-  transition-duration: 0.4s;
-  transform: scale(0);
-}
+  label::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
 
-label img {
-  background-color: rgb(236, 236, 236);
-  height: 128px;
-  width: 128px;
-  padding: 0.2em;
-  transition-duration: 0.2s;
-  transform-origin: 50% 50%;
-  border-radius: 28%;
-}
+  label img {
+    background-color: rgb(236, 236, 236);
+    height: 128px;
+    width: 128px;
+    padding: 0.2em;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+    border-radius: 28%;
+  }
 
-:checked + label {
-  border-color: transparent;
-}
+  :checked + label {
+    border-color: transparent;
+  }
 
-:checked + label::before {
-  color: #14003c;
-  content: "✔";
-  transform: scale(1);
-}
+  :checked + label::before {
+    color: #14003c;
+    content: "✔";
+    transform: scale(1);
+  }
 
-:checked + label img {
-  transform: scale(0.9);
-  box-shadow: 0 0 5px #333;
-  z-index: -1;
-}
+  :checked + label img {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+  }
 
-input {
-  padding: 0.5rem;
-  min-width: 12rem;
-  margin-top: 1rem;
-  text-align: center;
-}
+  input {
+    padding: 0.5rem;
+    min-width: 12rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
 
-input[type="checkbox" i] {
-  background-color: initial;
-  cursor: default;
-  appearance: auto;
-  box-sizing: border-box;
-  margin: 3px 3px 3px 4px;
-  padding: initial;
-  border: initial;
+  input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+  }
 }

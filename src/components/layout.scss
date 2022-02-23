@@ -15,6 +15,7 @@ body {
   --black4: #cbd4d9;
   --black9: #2c3437;
   --brand4: #ee1a6d;
+  --page-pink: #fcf4f6;
   --bg: white;
   --text-normal: #222;
   --color-fill-banner: #9992;
@@ -36,7 +37,7 @@ body {
   vertical-align: middle;
 }
 
-.navbar {
+.bg-pink {
   background-color: var(--brand4) !important;
 }
 
@@ -113,4 +114,20 @@ body:not(.dark) .dark-mode-only,
 
 .w-20 {
   width: 20% !important;
+}
+
+.table-borderless td,
+.table-borderless th {
+  border: 0;
+  padding: 0.1em 0.5rem;
+
+  .table td,
+  .table th,
+  .table a {
+    font-size: 0.9rem;
+  }
+}
+
+.cc-color-override-1434350510.cc-window {
+  background-color: var(--brand4) !important;
 }

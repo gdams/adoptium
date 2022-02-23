@@ -3,7 +3,17 @@ export default function asciidocFormatter () {
   tables.forEach(table => {
     table.className = 'table table-hover py-2'
   })
-
+  // Mark external links appropriately
+  const asciidocContent = document.getElementById('asciidoc-container')
+  const links = asciidocContent.querySelectorAll('a')
+  links.forEach(link => {
+    if (!link.href.includes(location.host) && !link.className.includes('btn')) {
+      const anchorIcon = document.createElement('i')
+      anchorIcon.className = 'fa fa-external-link fa-xs p-1'
+      link.target = '_blank'
+      link.append(anchorIcon)
+    }
+  })
   // Hack to get fontawesome to render correctly
   const spans = document.querySelectorAll('span')
   spans.forEach(span => {

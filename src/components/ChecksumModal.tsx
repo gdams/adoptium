@@ -14,7 +14,7 @@ const ChecksumModal = () => {
   };
 
   if (typeof window !== `undefined`) {
-    window.addEventListener('show.bs.modal', (event) => {
+    window.addEventListener('show.bs.modal', (event: Event) => {
       let button = event.relatedTarget;
       let checksum = button.getAttribute('data-bs-checksum')
       setChecksum(checksum)

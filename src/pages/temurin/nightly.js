@@ -11,11 +11,11 @@ import { getAssetsForVersion } from '../../hooks'
 
 const TemurinReleases = () => (
   <Layout>
-    <Seo title='Archive' />
+    <Seo title='Nightly builds' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-10 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Archive</h1>
+          <h1 className='fw-light'>Nightly builds</h1>
           <div className='row align-items-center pt-2'>
             <div className='callout callout-default text-start'>
               Please be aware that this archive contains old releases and intermediate builds created as a development step towards a <Link to='/temurin/releases'>full release</Link>.
@@ -32,14 +32,14 @@ const TemurinReleases = () => (
               <Link to='/temurin/releases' className='btn btn-primary m-3'>
                 Latest release <FaArrowCircleRight />
               </Link>
-              <Link to='/temurin/nightly' className='btn btn-secondary m-3'>
-                Nightly builds <FaArrowCircleRight />
+              <Link to='/temurin/archive' className='btn btn-secondary m-3'>
+                Release archive <FaArrowCircleRight />
               </Link>
             </div>
           </div>
         </div>
       </div>
-      <VersionSelector updater={getAssetsForVersion} releaseType='ga' Table={TemurinArchiveTable} />
+      <VersionSelector updater={getAssetsForVersion} releaseType='ea' Table={TemurinArchiveTable} />
       <ChecksumModal />
     </section>
   </Layout>

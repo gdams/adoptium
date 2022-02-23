@@ -1,5 +1,5 @@
 = macOS PKG installer packages
-:page-authors: gdams
+:page-authors: gdams, SueChaplain, karianna
 :toc:
 
 Eclipse Temurin macOS installer packages are available as standard .pkg
@@ -11,7 +11,7 @@ silently from the Terminal command line.
 Instructions for running an interactive installation using the macOS PKG
 installer:
 
-. link:/download[Download] the `.pkg` file.
+. link:/temurin/releases[Download] the `.pkg` file.
 . Navigate to the folder that contains the file and open it to launch
 the installation program or drag the icon to your Application folder.
 . The Introduction screen indicates the target location for the
@@ -28,7 +28,7 @@ A silent installation allows you to install the macOS package without
 user interaction, which can be useful for widescale deployment. You must
 have administrator privileges. Follow these steps:
 
-. link:/download[Download] the `.pkg` file.
+. link:/temurin/releases[Download] the `.pkg` file.
 . Launch the Terminal app (`terminal.app`).
 . Run the following command:
 +

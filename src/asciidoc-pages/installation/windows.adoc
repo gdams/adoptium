@@ -1,5 +1,5 @@
 = Windows MSI installer packages
-:page-authors: gdams, karianna
+:page-authors: gdams, karianna, SueChaplain, ParkerM, KalyanJoseph
 :toc:
 
 Eclipse Temurin Windows installer packages are available as standard
@@ -39,7 +39,7 @@ A silent installation allows you to install the Windows package with
 pre-selected features without user interaction, which can be useful for
 wide scale deployment. Follow these steps:
 
-. link:/download[Download] the `.msi` file.
+. link:/temurin/releases[Download] the `.msi` file.
 . Choose the features that you want to install, which are shown in the
 following table:
 +

@@ -3,10 +3,9 @@ import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
-import VendorSelector from '../components/VendorSelector'
 import DownloadDropdowns from '../components/DownloadDropdowns'
-import DownloadTable from '../components/DownloadTable'
-import { updateTable } from '../hooks'
+import DownloadTable from '../components/MarketplaceDownloadTable'
+import { getAllPkgsForVersion } from '../hooks'
 
 const DownloadPage = () => (
   <Layout>
@@ -43,9 +42,8 @@ const DownloadPage = () => (
           </div>
         </div>
       </div>
-      <VendorSelector />
-      <DownloadDropdowns updaterAction={updateTable} />
-      <DownloadTable />
+      {/* <VendorSelector /> */}
+      <DownloadDropdowns updaterAction={getAllPkgsForVersion} marketplace Table={DownloadTable} />
     </section>
   </Layout>
 )
