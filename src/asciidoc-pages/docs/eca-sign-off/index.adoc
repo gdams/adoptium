@@ -1,5 +1,6 @@
 = Sign the Eclipse Contributor Agreement
 :page-authors: MBoegers, gdams
+:toc:
 
 == Sign the Eclipse Contributor Agreement
 To contribute to this project the https://www.eclipse.org/legal/ECA.php[Eclipse Contributor Agreement (ECA)] must be signed.
@@ -39,3 +40,20 @@ This can fail if:
 ** `user.email` setting for git must equal to that used for your Eclipse Foundation account. See https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address[Setting your commit email address] for more information
 
 If none of the above is the case, feel free to reach out to the maintainers.
+
+=== How to change the author E-Mail address for existing commits
+In order for the ECA check to pass, all commits in the pull request must have been authored with the E-Mail address used to sign the ECA.
+
+To change the author for the last commit:
+
+[source, bash]
+----
+git commit --amend --author 'Author Name <author.name@mail.com>' --no-edit
+----
+
+To change the author for the last N commits:
+
+[source, bash]
+----
+git rebase -i HEAD~4 -x "git commit --amend --author 'Author Name <author.name@mail.com>' --no-edit"
+----
