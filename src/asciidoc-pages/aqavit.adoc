@@ -13,13 +13,13 @@ a|AQAvit (TM) is the quality and runtime branding evaluation project for Java SE
 
 The AQAvit project gets its name from Adoptium Quality Assurance ‘AQA’ and ‘vit’ for vitality and speed. As the project engages with vendors and enterprise consumers, the test suite is expanded and improved to keep pace with the latest Java releases and to continuously raise the quality bar through collaboration and rigour.
 
-== AQAvit Certification
+== AQAvit Verification
 
-The AQAvit project was created to “make quality certain to happen.” AQAvit certification is achieved through the process of running and passing a prescribed and versioned set of tests in the AQAvit test suite. As per the Eclipse Foundation Quality Verification Software License (QVSL) section 5b, a distributor who wants to certify their distributions then shares a summary of the test results by which certification was achieved.
+The AQAvit project was created to “make quality certain to happen.” AQAvit verification is achieved through the process of running and passing a prescribed and versioned set of tests in the AQAvit test suite. As per the Eclipse Foundation Quality Verification Software License (QVSL) section 5b, a distributor who wants to certify their distributions then shares a summary of the test results by which verification was achieved.
 
-AQAvit certification is one of the criteria for listing in the link:/marketplace[Adoptium Marketplace]. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
+AQAvit verification is one of the criteria for listing in the link:/marketplace[Adoptium Marketplace]. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
 
-.AQAvit Certification Basic Steps
+.AQAvit Verification Basic Steps
 |===
 | | 
 a|image::aqacert_basic_steps.png["basic steps",350,350]
@@ -30,8 +30,13 @@ git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.
 export TEST_JDK_HOME=<path to binary> 
 export USE_TESTENV_PROPERTIES=true 
 export JDK_VERSION=17 
-export JDK_IMPL=hotspot 
+export JDK_IMPL=hotspot
+export BUILD_LIST=functional 
 
+cd aqa-tests
+./get.sh
+./compile.sh
+cd TKG
 make _sanity.functional 
 … 
 make _extended.system 
@@ -45,5 +50,5 @@ Publish <results>.zip
 .Supplemental Information 
 [%collapsible]
 ====
-video::9Adwk2qkL1A[youtube]
+video::1EUi3iTZSzg[youtube]
 ====
