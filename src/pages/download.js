@@ -26,11 +26,11 @@ const DownloadPage = () => {
           <div className='col-lg-10 col-md-8 mx-auto'>
             <h1 className='fw-light'>Thank you for your download!</h1>
             {link && (
-            vendor === 'Temurin'
-              ? <p className='py-2'>You are downloading an Eclipse Temurin build, the open-source community build from the Eclipse Adoptium Working Group.</p>
-              : <p className='py-2'>You are downloading a build from <strong>{vendor}</strong>, a member of the Eclipse Adoptium Working Group.</p>
+              vendor === 'Temurin'
+                ? <p className='py-2'>You are downloading an Eclipse Temurin build, the open-source community build from the Eclipse Adoptium Working Group.</p>
+                : <p className='py-2'>You are downloading a build from <strong>{vendor}</strong>, a member of the Eclipse Adoptium Working Group.</p>
             )}
-            
+
             {link && <meta http-equiv='refresh' content={`0; url=${link}`} />}
             {link
               ? <p className='text-muted py-3'>If the download doesn't start in a few seconds, please <a href={link}>click here</a> to start the download.</p>
@@ -40,7 +40,7 @@ const DownloadPage = () => {
             <p>Here are three easy ways you can contribute towards the future development of Eclipse Adoptium projects and technologies.</p>
             <h2 className='fw-light py-3'>Donate to the Eclipse Adoptium Working Group</h2>
             <p>You can help power the Adoptium Community with a donation</p>
-            <a href='https://eclipse.org/donate/adoptium' target='_blank' className='btn btn-primary btn-lg'>Donate <BiDonateHeart /></a>
+            <a href='https://eclipse.org/donate/adoptium' target='_blank' className='btn btn-primary btn-lg' rel='noreferrer'>Donate <BiDonateHeart /></a>
             <h2 className='fw-light py-3'>Get involved</h2>
             <p>Whether you choose to report bugs, request features, or become a committer, you can help improve the technology for yourself and the rest of the community.</p>
             <h2 className='fw-light py-3'>Join the Working Group</h2>
