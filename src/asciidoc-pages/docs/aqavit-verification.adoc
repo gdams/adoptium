@@ -1,0 +1,41 @@
+= AQAvit Verification
+:page-authors: gdams, smlambert, llxia
+Version 0.1, 17.02.2022
+
+The AQAvit project was created to “make quality certain to happen.” AQAvit verification is achieved through the process of running and passing a prescribed and versioned set of tests in the AQAvit test suite. As per the Eclipse Foundation Quality Verification Software License (QVSL) section 5b, a distributor who wants to certify their distributions then shares a summary of the test results by which verification was achieved.
+
+AQAvit verification is one of the criteria for listing in the link:/marketplace[Adoptium Marketplace]. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
+
+.AQAvit Verification Basic Steps
+|===
+| | 
+a|image::aqacert_basic_steps.png["basic steps",350,350]
+a|
+```
+git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git 
+
+export TEST_JDK_HOME=<path to binary> 
+export USE_TESTENV_PROPERTIES=true 
+export JDK_VERSION=17 
+export JDK_IMPL=hotspot
+export BUILD_LIST=functional 
+
+cd aqa-tests
+./get.sh
+./compile.sh
+cd TKG
+make _sanity.functional 
+… 
+make _extended.system 
+
+Collect *.tap file and metadata file 
+Archive <results>.zip 
+Publish <results>.zip
+```
+|===
+
+.Supplemental Information 
+[%collapsible]
+====
+video::1EUi3iTZSzg[youtube]
+====

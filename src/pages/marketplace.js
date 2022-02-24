@@ -24,13 +24,7 @@ const DownloadPage = () => (
                 src='../images/aqavit-light.png'
                 width={150}
                 alt='AQAvit logo'
-                className='img-fluid light-mode-only'
-              />
-              <img
-                src='../images/aqavit-dark.png'
-                width={150}
-                alt='AQAvit logo'
-                className='img-fluid dark-mode-only'
+                className='img-fluid'
               />
             </div>
             <div className='col-12 col-sm-6 col-md-8 '>
