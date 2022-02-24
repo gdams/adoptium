@@ -36,7 +36,9 @@ Inclusion in the marketplace is open to all strategic and enterprise members at 
 
 == AQAvit Software Product Verification
 
-Only those products that pass the AQAVit software product verification test suite and comply with the obligations of the QVSL may be included in the Adoptium Marketplace.
+Only those products that pass the AQAVit software product verification test suite and comply with the obligations of the
+https://www.eclipse.org/legal/documents/eclipse-foundation-quality-verification-suite-license.php[Eclipse Quality Verification Suite License^]
+may be included in the Adoptium Marketplace.
 
 It is necessary to
 link:/aqavit[verify every binary]
@@ -56,10 +58,13 @@ The Adoptium Marketplace is an opportunity for Adoptium Working Group Members (â
 
 Products listed in the marketplace *MUST* adhere to the following criteria.
 
-. The Product must pass the relevant Eclipse AQAvit quality verification suite (QVS) and comply with the Eclipse Foundation Quality Verification Suite License (QVSL).
+. The Product must pass the relevant Eclipse AQAvit quality verification suite (QVS) and comply with the
+https://www.eclipse.org/legal/documents/eclipse-foundation-quality-verification-suite-license.php[Eclipse Foundation Quality Verification Suite License^].
 . The Producer must declare to the satisfaction of the Adoptium Working Group that the Product has passed the applicable Java SE Technology Compatibility Kit.
 . The Producer must be a Participant, Enterprise or Strategic Member of the Adoptium Working Group.
-. The Producer must be covered by the Eclipse Adoptium Marketplace Publisher Agreement and comply with all the obligations thereof.
+. The Producer must be covered by the
+https://www.eclipse.org/legal/documents/eclipse-adoptium-marketplace-publisher-agreement.pdf[Eclipse Adoptium Marketplace Publisher Agreement^]
+and comply with all the obligations thereof.
 
 Products that meet these requirements are eligible to be listed in the marketplace. To be listed, the Producer should
 https://github.com/adoptium/adoptium/issues/new[open a request with the Adoptium Working Group^]
