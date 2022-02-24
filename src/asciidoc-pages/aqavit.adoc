@@ -1,5 +1,5 @@
 = Eclipse AQAvit
-:page-authors: gdams, smlambert                                
+:page-authors: gdams, smlambert, llxia                                
 Version 0.1, 17.02.2022                     
 :description: AQAvit documentation                            
 :keywords: AQAvit verification                                
@@ -11,7 +11,13 @@ a|image:aqavit-light.png[200,200]
 a|AQAvit (TM) is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.  During a release it takes a functionally complete Java runtime and ensures that all the additional qualities are present that make it suitable for production use.  These quality criteria include good performance, exceptional security, resilience and endurance, and the ability to pass a wide variety of application test suites.  In addition to verifying that functionally complete runtimes are release ready, the AQA tests may also serve to verify new functionality during runtime development.
 |===
 
-The AQAvit project gets its name from Adoptium Quality Assurance ‘AQA’ and ‘vit’ for vitality and speed. As the project engages with vendors and enterprise consumers, the test suite is expanded and improved to keep pace with the latest Java releases and to continuously raise the quality bar through collaboration and rigour.
+== The AQAvit Name
+
+The AQAvit project gets its name from Adoptium Quality Assurance ‘AQA’ and ‘vit’ for vitality and speed. As the project engages with vendors and enterprise consumers, the test suite is expanded and improved to keep pace with the latest Java releases and to continuously raise the quality bar through collaboration and rigour.  
+
+== AQAvit Project Central
+
+As listed in the https://projects.eclipse.org/projects/adoptium.aqavit/developer[Developer Resources^] section of the Eclipse Foundation https://projects.eclipse.org/projects/adoptium.aqavit[AQAvit project^] page, AQAvit is comprised of many repositories.  The central one is the https://github.com/adoptium/aqa-tests[aqa-tests^] repository which houses the project's test definition files, much of the project's documentation and is the base for running the AQAvit test suite.  To participate in the project, people are invited to join the https://adoptium.net/slack.html[Adoptium Slack workspace^] and ask questions in the `#testing-aqavit` channel.
 
 == AQAvit Verification
 
