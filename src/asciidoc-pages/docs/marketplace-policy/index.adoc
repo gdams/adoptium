@@ -21,7 +21,7 @@ quality verification suite.
 
 The
 https://projects.eclipse.org/projects/adoptium.aqavit[AQAvit verification suite^]
-evaluates Java runtimes for functional correctness, performance, resilience, security, and the ability to pass a wide variety of application test suites. As a result, enterprises can be confident in the OpenJDK binaries they’re bringing into their companies and incorporating into their software supply chains.
+evaluates Java runtimes for functional correctness, performance, resilience, security, and the ability to pass a wide variety of application test suites. As a result, enterprises can be confident in the binaries they’re bringing into their companies and incorporating into their software supply chains.
 
 === Producer Benefits
 
