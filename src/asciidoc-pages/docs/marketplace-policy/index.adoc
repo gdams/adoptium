@@ -13,11 +13,15 @@ The Adoptium Marketplace provides users easy access to a wide variety of high-qu
 
 Every binary available via the Adoptium marketplace
 link:/marketplace[website]
-and API has demonstrated that it is ready for production use in a wide variety of environments by passing the
-https://projects.eclipse.org/projects/adoptium.aqavit[AQAvit^]
+and
+https://marketplace-api.adoptium.net/q/swagger-ui/[API^]
+has demonstrated that it is ready for production use in a wide variety of environments by passing the
+link:/aqavit[AQAvit^]
 quality verification suite.
 
-The AQAvit suite evaluates Java runtimes for functional correctness, performance, resilience, security, and the ability to pass a wide variety of application test suites. As a result, enterprises can be confident in the OpenJDK binaries they’re bringing into their companies and incorporating into their software supply chains.
+The
+https://projects.eclipse.org/projects/adoptium.aqavit[AQAvit verification suite^]
+evaluates Java runtimes for functional correctness, performance, resilience, security, and the ability to pass a wide variety of application test suites. As a result, enterprises can be confident in the OpenJDK binaries they’re bringing into their companies and incorporating into their software supply chains.
 
 === Producer Benefits
 
@@ -34,7 +38,9 @@ Inclusion in the marketplace is open to all strategic and enterprise members at 
 
 Only those products that pass the AQAVit software product verification test suite and comply with the obligations of the QVSL may be included in the Adoptium Marketplace.
 
-It is necessary to verify every binary that wishes to be included in the Adoptium Marketplace. It is not necessary to be an Adoptium working group member to produce an AQAvit verified software product.
+It is necessary to
+link:/aqavit[verify every binary]
+that wishes to be included in the Adoptium Marketplace. It is not necessary to be an Adoptium working group member to produce an AQAvit verified software product.
 
 == Java SE Compatibility
 
