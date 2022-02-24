@@ -200,7 +200,7 @@ Signature files are base64 encoded SHA256 signatures.
 
 Example of generating, validating and encoding signature
 
-```shell
+```bash
 # Generate signature
 openssl dgst -sha256 -sign private.pem -out index.json.sig index.json
 # Verify
