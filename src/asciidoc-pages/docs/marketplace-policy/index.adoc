@@ -37,7 +37,7 @@ Inclusion in the marketplace is open to all strategic and enterprise members at 
 == AQAvit Software Product Verification
 
 Only those products that pass the AQAVit software product verification test suite and comply with the obligations of the
-https://www.eclipse.org/legal/documents/eclipse-foundation-quality-verification-suite-license.php[Eclipse Quality Verification Suite License^]
+https://www.eclipse.org/legal/documents/eclipse-foundation-quality-verification-suite-license.php[Eclipse Foundation Quality Verification Suite License^]
 may be included in the Adoptium Marketplace.
 
 It is necessary to
