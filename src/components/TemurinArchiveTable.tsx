@@ -1,6 +1,7 @@
 import * as React from "react"
 import moment from 'moment';
 import { FaDownload } from 'react-icons/fa';
+import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../util/capitalize';
 
 const TemurinArchiveTable = ({results}) => {
@@ -19,7 +20,7 @@ const TemurinArchiveTable = ({results}) => {
                                             <td className="text-white" style={{backgroundColor: "#14003c"}}>
                                                 <div>
                                                     <a href={release.release_link} className="link-light">
-                                                        <h2 className = "pt-5" style={{fontSize: "1.5rem"}}>{release.release_name}</h2>
+                                                        <h2 className = "pt-5" style={{fontSize: "1.5rem"}}>{release.release_name} <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={30} style={{ color: '#537FB9' }}/></h2>
                                                     </a>
                                                     <h4 className="pt-3 pb-3" style={{fontSize: ".8rem"}}>{moment(release.timestamp).format('D MMMM YYYY')}</h4>
                                                     {release.source_url &&
