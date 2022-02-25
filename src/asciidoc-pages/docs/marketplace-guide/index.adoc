@@ -99,7 +99,7 @@ documentation.
 
 // TODO: How does a publisher check the logs of successful/failed pulls and schema validation?
 The product listing information will be rejected if it does not adhere to the 
-link:/marketplace-listing[product listing structure],
+link:/docs/marketplace-listing[product listing structure],
 marketplace file schema, or the signature does not verify the content successfully. We will contact you if the listing file is repeatedly failing these validation checks.
 
 // TODO: discuss default and minimum frequency of refresh.
