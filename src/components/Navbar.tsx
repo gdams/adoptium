@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 
-import LogoDark from '../images/adoptium-logo-dark.svg';
+import Logo from '../images/adoptium-logo-dark.svg';
 
 const isActive = ({ isCurrent }) => {
   return isCurrent ? { className: "nav-link active" } : {className: "nav-link"}
@@ -16,10 +16,10 @@ const Navbar = ({siteTitle}): JSX.Element => {
   const {t} = useTranslation();
 
   return (
-    <nav className="navbar navbar-expand-xl navbar-dark bg-pink" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-pink" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
       <div className="container-fluid">
-        <Link to="/" className="navbar-brand">
-          <LogoDark style={{ paddingLeft: '.2em', paddingRight: '.2em', height: '1.9em' }} />
+        <Link to="/" className="navbar-brand ms-5">
+          <Logo style={{ paddingLeft: '.2em', paddingRight: '.2em', height: '1.9em' }} />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar"
                 aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,6 +76,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
                 <li><ExactNavLink className="dropdown-item" to="/sponsors">Sponsors</ExactNavLink></li>
                 <li><a className="dropdown-item nav-link" href="https://api.adoptium.net">API</a></li>
                 <li><a className="dropdown-item nav-link" href="https://blog.adoptium.net">Blog</a></li>
+                <li><a className="dropdown-item nav-link" href="https://status.adoptium.net">Status</a></li>
               </ul>
             </li>
           </ul>

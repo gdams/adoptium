@@ -40,38 +40,38 @@ const LatestTemurin = (props): JSX.Element => {
 
   if (props.page === "home") {
     buttonClass = "col-12"
-    textClass = "text-white medium"
+    textClass = "text-pink medium"
   }
 
     return (
-        <div ref={ref} className="container">
+      <div ref={ref} className="container">
+        {binary ? (
+          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin for {userOSName} x64</h2>
+        ) :
+          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin</h2>
+        }
+        <div className={`btn-group-vertical mx-auto ${buttonClass}`}>
             {binary ? (
-              <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin for {userOSName} x64</h2>
-            ) :
-              <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin</h2>
-            }
-            <div className={`btn-group-vertical mx-auto ${buttonClass}`}>
-                {binary ? (
-                  <>
-                    <a href={`/download?link=${binary.link}`} className="btn btn-lg btn-primary mt-3 py-3">
-                        <FaDownload /> Latest release
-                        <br/>
-                        <span style={{ fontSize: '.6em'}} className="font-weight-light">{binary.release_name}</span>
-                    </a>
-                    <Link to="/temurin/releases" className="btn btn-secondary mt-3">
-                        Other platforms <FaArrowCircleRight />
-                    </Link>
-                  </>
-                ) :
-                  <Link to="/temurin/releases" className="btn btn-lg btn-primary mt-3 py-3">
-                      <FaDownload /> Latest releases
-                  </Link>
-                }
-                <Link to="/temurin/archive" className="btn btn-secondary mt-3">
-                    Release archive <FaArchive />
+              <>
+                <a href={`/download?link=${binary.link}`} className="btn btn-lg btn-primary mt-3 py-3 text-white">
+                    <FaDownload /> Latest release
+                    <br/>
+                    <span style={{ fontSize: '.6em'}} className="font-weight-light">{binary.release_name}</span>
+                </a>
+                <Link to="/temurin/releases" className="btn btn-outline-dark mt-3">
+                    Other platforms <FaArrowCircleRight />
                 </Link>
-            </div>
+              </>
+            ) :
+              <Link to="/temurin/releases" className="btn btn-lg btn-primary mt-3 py-3 text-white">
+                  <FaDownload /> Latest releases
+              </Link>
+            }
+            <Link to="/temurin/archive" className="btn btn-outline-dark mt-3">
+                Release archive <FaArchive />
+            </Link>
         </div>
+      </div>
     );
 };
 

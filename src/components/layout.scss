@@ -1,5 +1,5 @@
 // Here you can customize bootstrap
-$primary: #14003c;
+$primary: #c52158;
 $secondary: #dadada;
 
 @import "~bootstrap/scss/bootstrap";
@@ -14,7 +14,7 @@ $secondary: #dadada;
 body {
   --black4: #cbd4d9;
   --black9: #2c3437;
-  --brand4: #ee1a6d;
+  --brand4: #c52158;
   --page-pink: #fcf4f6;
   --bg: white;
   --text-normal: #222;
@@ -27,6 +27,10 @@ body {
   .support-matrix th {
     background-color: #aeadad97;
   }
+}
+
+.text-pink {
+  color: var(--brand4);
 }
 
 .halign-center {
@@ -45,16 +49,6 @@ body {
   --bs-table-bg: #333;
 }
 
-.home {
-  background-repeat-y: no-repeat;
-  background-position: 0 -150px;
-  height: 40em;
-
-  @media (max-width: 991px) {
-    padding-top: 71px;
-  }
-}
-
 body:not(.dark) .dark-mode-only,
 .dark .light-mode-only {
   display: none;
@@ -62,6 +56,10 @@ body:not(.dark) .dark-mode-only,
 
 .adopt-demo-container {
   position: relative;
+
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
 }
 
 .adopt-demo {

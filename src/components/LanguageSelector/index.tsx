@@ -14,7 +14,7 @@ const LanguageSelector = (): JSX.Element => {
     <div className="App lngg">
       <Form>
         <Dropdown>
-          <Dropdown.Toggle id="dropdown-flags" className="text-left">
+          <Dropdown.Toggle id="dropdown-flags" className="text-left text-white">
             <Trans>Change Language</Trans>
           </Dropdown.Toggle>
           <Dropdown.Menu>
