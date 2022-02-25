@@ -3,7 +3,7 @@
 :keywords: adoptium marketplace publisher listing guide
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: johno, tellison
+:page-authors: johnoliver, tellison
 
 
 == Overview
@@ -51,7 +51,8 @@ openssl dgst -sha256 -verify public.pem -signature index.json.sig index.json
 cat index.json.sig | base64 -w 0 > index.json.sha256.sign
 ----
 ====
- 
+
+
 == Simple Product Listing Repository
 
 The simplest product listing repository comprises one index file and one release file, with associated digital signatures.
@@ -60,6 +61,8 @@ The top-level index file must appear at the root of the repository location, and
 
 Here's a simple listing repository example.
 
+.Simple Repository Layout
+====
 [source]
 ----
 /index.json // <1>
@@ -68,9 +71,10 @@ Here's a simple listing repository example.
 /release.json.sha256.sign // <4>
 ----
 <1> Main product repository index file.
-<2> Digital signature for index file <1>.
+<2> Digital signature for index file.
 <3> Product release listing file.
-<4> Digital signature for release listing file <2>.
+<4> Digital signature for release listing file.
+====
 
 The simplest `index.json` file only contains a reference to a single `releases.json` file.
 
@@ -105,7 +109,7 @@ As a further more complex example, the following repository shows a release file
 ----
 ====
 
-In this repository the root `index.json` would contain
+In this repository the root `/index.json` would contain
 
 [source, json]
 {
@@ -209,6 +213,7 @@ to help produce product listing data in the correct format.
   ]
 }
 ====
+
 
 == Repository Read and Marketplace Update Process
 
