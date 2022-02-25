@@ -3,7 +3,7 @@
 :keywords: adoptium marketplace publisher listing guide
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: johnoliver, tellison
+:page-authors: johnoliver, tellison, gdams
 
 
 == Overview
