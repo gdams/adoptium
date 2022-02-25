@@ -25,10 +25,6 @@ const VersionSelector = ({updater, releaseType, Table}) => {
     udateNumBuilds({number: number});
   }, []);
 
-  // const setBuildDate= useCallback(() => {
-  //   updateBuildDate();
-  // }, []);
-
   let dropdownOptions = [];
   for (let version of versions) {
     let option = {
