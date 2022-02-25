@@ -38,49 +38,21 @@ const TemurinDownloadTable = ({results}) => {
                                                 binary && (
                                                     <>
                                                     {binary.installer_link && (
-                                                        <tr key={binary.installer_checksum}>
-                                                            <td className="align-middle text-center">
-                                                                <table><tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={binary.installer_checksum}>Checksum (SHA256)</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        {`${binary.type} - ${binary.installer_size} MB`}
-                                                                    </td>
-                                                                </tr>
-                                                                </tbody></table>
-                                                            </td>
-                                                            <td className="align-middle">
-                                                                <a href={`/download?link=${binary.installer_link}`} className="btn btn-primary" style={{width: "6em"}}>
-                                                                    <FaDownload /> {binary.installer_extension}
-                                                                </a>
-                                                            </td>
-                                                        </tr>
+                                                        <BinaryTable
+                                                            checksum={binary.installer_checksum}
+                                                            link={binary.installer_link}
+                                                            extension={binary.installer_extension}
+                                                            type={binary.type}
+                                                            size={binary.installer_size}
+                                                        />
                                                     )}
-                                                <tr key={binary.checksum}>
-                                                    <td className="align-middle text-center">
-                                                        <table><tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={binary.checksum}>Checksum (SHA256)</a>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                {`${binary.type} - ${binary.size} MB`}
-                                                            </td>
-                                                        </tr>
-                                                        </tbody></table>
-                                                    </td>
-                                                    <td className="align-middle">
-                                                        <a href={`/download?link=${binary.link}`} className="btn btn-primary" style={{width: "6em"}}>
-                                                            <FaDownload /> {binary.extension}
-                                                        </a>
-                                                    </td>
-                                                </tr>
+                                                    <BinaryTable
+                                                        checksum={binary.checksum}
+                                                        link={binary.link}
+                                                        extension={binary.extension}
+                                                        type={binary.type}
+                                                        size={binary.size}
+                                                    />
                                                 </>
                                             )
                                         )}
@@ -100,3 +72,29 @@ const TemurinDownloadTable = ({results}) => {
 };
 
 export default TemurinDownloadTable;
+
+const BinaryTable = ({ checksum, link, extension, type, size }) => {
+    return (
+        <tr key={checksum}>
+            <td className="align-middle text-center">
+                <table><tbody>
+                <tr>
+                    <td>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}>Checksum (SHA256)</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {`${type} - ${size} MB`}
+                    </td>
+                </tr>
+                </tbody></table>
+            </td>
+            <td className="align-middle">
+                <a href={`/download?link=${link}`} className="btn btn-primary" style={{width: "6em"}}>
+                    <FaDownload /> {extension}
+                </a>
+            </td>
+        </tr>
+    )
+}

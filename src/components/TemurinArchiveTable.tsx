@@ -8,7 +8,7 @@ const TemurinArchiveTable = ({results}) => {
     let os: string
     let arch: string
     return (
-        <div id="archive-list" className="hide">
+        <div id="archive-list">
             <div id="pagination-container">
                 <table id='archive-table' className='table table-borderless table-condensed archive-container' style={{ borderSpacing: '0 20px', borderCollapse: 'separate'}}>
                     <tbody className="table-light">
@@ -17,7 +17,7 @@ const TemurinArchiveTable = ({results}) => {
                                 (release, i): string | JSX.Element =>
                                     release && (
                                         <tr key={release.release_name} className="release-row">
-                                            <td className="text-white" style={{backgroundColor: "#14003c"}}>
+                                            <td className="text-white" style={{backgroundColor: "#333"}}>
                                                 <div>
                                                     <a href={release.release_link} className="link-light">
                                                         <h2 className = "pt-5" style={{fontSize: "1.5rem"}}>{release.release_name} <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={30} style={{ color: '#537FB9' }}/></h2>

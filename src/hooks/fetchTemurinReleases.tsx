@@ -1,8 +1,8 @@
 import moment from 'moment';
 
-const baseUrl = 'https://api.adoptopenjdk.net/v3';
+import { fetchExtension } from '../util/fetchExtension';
 
-let source: any;
+const baseUrl = 'https://api.adoptopenjdk.net/v3';
 
 export async function loadLatestAssets(version, os, architecture) {
     let   url       = `${baseUrl}/assets/latest/${version}/hotspot`;
@@ -83,15 +83,6 @@ function renderReleases(pkgs) {
         });
     })
     return releases
-}
-
-function fetchExtension (filename) {
-    let extension = `.${filename.split('.').pop()}`;
-    // Workaround to prevent extension returning as .gz
-    if (extension == '.gz') {
-      extension = 'tar.gz';
-    }
-    return extension;
 }
 
 function orderPlatforms (input, attr = 'thisPlatformOrder') {
