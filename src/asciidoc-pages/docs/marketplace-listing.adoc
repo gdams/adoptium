@@ -14,9 +14,7 @@ Each publisher manages a location containing structured information about their 
 
 In the description and examples below we will refer to "files" and "directories" as the implementation of the repository to keep it simple.
 
-== Product Listing Repositories
-
-=== Nomenclature
+== Nomenclature
 
 A repository consists of three types of files, namely *index* files, *release* files and *signature* files.
 
@@ -26,7 +24,7 @@ A repository consists of three types of files, namely *index* files, *release* f
  
 All files are read assuming UTF-8 encoding.
  
-=== Signature Files
+== Signature Files
 
 // TODO: Figuure out how to link to the marketplace guide publisher information anchor
 Signature files are used to ensure that the index and release file data has been received correctly, and has not been modified en route. The Adoptium marketplace agent will read the file and check the associated file signature. The file's signature is stored in a file with the same name as the file it is signing, with the suffix `.sha256.sign`.
@@ -53,7 +51,7 @@ cat index.json.sig | base64 -w 0 > index.json.sha256.sign
 ----
 ====
  
-=== Simple Product Listing Repository
+== Simple Product Listing Repository
 
 The simplest product listing repository comprises one index file and one release file, with associated digital signatures.
 
@@ -77,6 +75,7 @@ The simplest `index.json` file only contains a reference to the single `releases
 
 [source, json]
 { "releases": [ "releases.json" ] }
+
 
 == Structured Repository Layout
 
@@ -210,22 +209,17 @@ to help produce product listing data in the correct format.
 }
 ====
 
-== Typical Repository Read Process
+== Repository Read and Marketpalce Update Process
 
-1. A URL and public key is provided to the updater (i.e "https://release.adoptium.net/repo")
-2. The updater first looks at `index.json` and its signature file.
-   - Updater pulls https://release.adoptium.net/repo/index.json
-   - Updater pulls https://release.adoptium.net/repo/index.json.sha256.sign
-   - `index.json` is validated against `index.json.sha256.sign` and the public key provided. 
-3. Further indexes are extracted from `index.json` and step 2 is repeated until all index files have been read
-4. Location of release files are then extracted from all indexes.
-   - Updater pulls release file
-     - https://release.adoptium.net/repo/17/jdk_17_0_2_8.json
-   - Updater pulls signature file
-     - https://release.adoptium.net/repo/17/jdk_17_0_2_8.json.sha256.sign
-   - Release is validated against signature and public key.
-   - Release is parsed according to schema and placed into the marketplace
-   
+Adoptium typically reads vendor repositories and updates the marketplace hourly, though this period is not guaranteed and may vary. A product listing file will be rejected if it does not adhere to the schema, or the signature does not verify the content successfully. We will contact you if the listing file is repeatedly failing these validation checks.
 
+The marketplace information replaces any previous information held for this vendor.
 
+//TODO: link to the product listing info anchor in the guide
 
+The update process proceeds as follows:
+. The updater pulls the root index and verifies it against the signature.
+. Further indexes, if any, are extracted from the index recursively until all indexes have been read and verified.
+. The location of all release files are extracted from all the indexes.
+. Each release file is pulled and validated against the corresponding signature.
+. Release file information is parsed according to the schema and product information is replaced in the marketplace for this vendor.
