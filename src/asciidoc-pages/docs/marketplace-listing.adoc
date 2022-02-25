@@ -26,10 +26,9 @@ All files are read assuming UTF-8 encoding.
  
 == Signature Files
 
-// TODO: Figuure out how to link to the marketplace guide publisher information anchor
 Signature files are used to ensure that the index and release file data has been received correctly, and has not been modified en route. The Adoptium marketplace agent will read a file and check the associated file signature. The file's signature is stored in a file with the same name as the file it is signing, with the suffix `.sha256.sign`.
 
-The signature must be a Base64-encoded, RSA encrypted, SHA-256 hash of your entire file content. The signature will be verified using the public key provided in your publisher information.
+The signature must be a Base64-encoded, RSA encrypted, SHA-256 hash of your entire file content. The signature will be verified using the public key provided in your xref:marketplace-guide#Providing-Publisher-Information[publisher information].
 
 There are a number of
 https://opensource.com/article/19/6/cryptography-basics-openssl-part-2[tools^]
@@ -219,9 +218,7 @@ to help produce product listing data in the correct format.
 
 Adoptium typically reads vendor repositories and updates the marketplace hourly, though this period is not guaranteed and may vary. A product listing file will be rejected if it does not adhere to the schema, or the signature does not verify the content successfully. We will contact you if the listing file is repeatedly failing these validation checks.
 
-The marketplace information replaces any previous information held for this vendor.
-
-//TODO: link to the product listing info anchor in the guide
+The marketplace information replaces any previous information held for xref:marketplace-guide#Providing-Publisher-Information[this vendor].
 
 The update process proceeds as follows:
 
