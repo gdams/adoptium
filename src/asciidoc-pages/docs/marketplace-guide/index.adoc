@@ -93,9 +93,9 @@ Your products listing for the marketplace can be hosted anywhere under your dire
 https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol[HTTP^]
 requests and responses, including your own website property, GitHub, and so on. While Adoptium will check that the information is received from you securely by using a digital signature based upon verified information, you are ultimately responsible for the information provided to the marketplace via the listing data location URL.
 
-The
-link:/marketplace-listing[product listing information^]
-comprises structured JSON format files, with flexibility to allow for multiple builds and versions. The product listing information is rooted at the listing data location provided in the <<Providing-Publisher-Information,publisher information>>.
+The product listing information comprises structured JSON format files, with flexibility to allow for multiple builds and versions. The information is rooted at the listing data location provided in the <<Providing-Publisher-Information,publisher information>> in the format described in the
+link:/marketplace-listing[Adoptium Marketplace Publisher Product Listing Repository^]
+documentation.
 
 // TODO: How does a publisher check the logs of successful/failed pulls and schema validation?
 The product listing information will be rejected if it does not adhere to the 
