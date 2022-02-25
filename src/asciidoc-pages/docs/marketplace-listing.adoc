@@ -1,4 +1,4 @@
-= Adoptium Marketplace Product Listing
+= Adoptium Marketplace Publisher Product Listing Repository
 :description: Adoptium Marketplace Publisher Product Listing Guide
 :keywords: adoptium marketplace publisher listing guide
 :orgname: Eclipse Adoptium
@@ -8,41 +8,60 @@
 
 == Overview
 
-Adoptium promotes products listed in the marketplace. Each publisher manages a location containing strucutred information about their products. Adoptium regularly updates the marketplace with the information from your product listing.
+Adoptium promotes products listed in the
+link:/marketplace[marketplace].
+Each publisher manages a location containing structured information about their products. Adoptium regularly updates the marketplace with the information from your product listing. The location refers to a "respository" of data resources. Such a respository may be implemented as a simple file system, dynamically created data stream, version controlled store, database, or other facility that responds to HTTP requests for individual URIs with the information described below.
 
-
-== Product Listing Schema
-
-// TODO: fix up URL when schema moves to main branch
-Your products' listing must adhere to the
-https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace[marketplace product JSON schema^], and Adoptium provides
-https://github.com/adoptium/api.adoptium.net/blob/marketplace/marketplace/adoptium-marketplace-schema-tests/src/test/resources/net/adoptium/marketplace/schema/[examples^]
-and
-https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace/adoptium-marketplace-schema[code^]
-to help produce product listing data in the correct format.
-
-// TODO: discuss allowing a Signature: HTTP header approach too/instead.
-To ensure that the listing data has been received correctly from you, and has not been modified en route, Adoptium will check the associated signature. The signature must be a Base64-encoded, RSA encrypted, SHA-256 hash of your entire schema file. The signature will be verified using the public key provided in your publisher information. There are a number of
-https://opensource.com/article/19/6/cryptography-basics-openssl-part-2[tools^]
-and
-https://www.baeldung.com/java-digital-signature[code examples^] available to help produce such signatures.
-
+In the description and examples below we will refer to "files" and "directories" as the implementation of the repository to keep it simple.
 
 == Product Listing Repositories
 
 === Nomenclature
 
-A repository consists of three types of files, namely index files, release files and signature files.
+A repository consists of three types of files, namely *index* files, *release* files and *signature* files.
 
  * Index files : describe the location of release files and index files.
  * Release files : contain a list of marketplace products.
- * Signature files : contain a digital signature associated with an Index or Release file
+ * Signature files : contain a digital signature associated with an Index or Release file.
+ 
+All files are read assuming UTF-8 encoding.
+ 
+=== Signature Files
+
+// TODO: Figuure out how to link to the marketplace guide publisher information anchor
+Signature files are used to ensure that the index and release file data has been received correctly, and has not been modified en route. The Adoptium marketplace agent will read the file and check the associated file signature. The file's signature is stored in a file with the same name as the file it is signing, with the suffix `.sha256.sign`.
+
+The signature must be a Base64-encoded, RSA encrypted, SHA-256 hash of your entire file content. The signature will be verified using the public key provided in your publisher information.
+
+There are a number of
+https://opensource.com/article/19/6/cryptography-basics-openssl-part-2[tools^]
+and
+https://www.baeldung.com/java-digital-signature[code examples^] available to help produce such signatures.
+
+.Generating, verifying, and encoding a signature usings OpenSSL
+====
+[source, shell]
+----
+# Generate signature
+openssl dgst -sha256 -sign private.pem -out index.json.sig index.json
+
+# Verify
+openssl dgst -sha256 -verify public.pem -signature index.json.sig index.json
+
+#Base64 encode for publishing
+cat index.json.sig | base64 -w 0 > index.json.sha256.sign
+----
+====
  
 === Simple Product Listing Repository
 
-The simplest product listing repository comprises one index file and one reelase file with associated digital signatures, as follows:
+The simplest product listing repository comprises one index file and one release file, with associated digital signatures.
 
-[source, json]
+The top-level index file must appear at the root of the repository location, and be called `index.json`.
+
+Here's a simple listing repository example.
+
+[source]
 ----
 /index.json // <1>
 /index.json.sha256.sign // <2>
@@ -54,86 +73,83 @@ The simplest product listing repository comprises one index file and one reelase
 <3> Product release listing file.
 <4> Digital signature for release listing file <2>.
 
+The simplest `index.json` file only contains a reference to the single `releases.json` file.
 
-//TODO : Fix up here down
+[source, json]
+{ "releases": [ "releases.json" ] }
 
-== Example repository layout
+== Structured Repository Layout
 
-```json
-/17/jdk_17_0_2_8.json
-/17/jdk_17_0_2_8.json.sha256.sign
-/17/jdk_17_0_1_12.json
-/17/jdk_17_0_1_12.json.sha256.sign
-/17/index.json
-/17/index.json.sha256.sign
-/8/jdk8u312_b07.json
-/8/jdk8u312_b07.json.sha256.sign
+The product listing repository may be structured with multiple index files and release files to suit each vendor's publishing preferences.  For example, a publisher may choose to generate a releases file per Java version, per platform, per calendar release, and so on. The Adoptium marketplace will start at the root `index.json` and transitively walk each index and release file exhaustively.
+
+As a further example, the following repository shows a structure organized by Java version and release identifier.
+
+.Structured Repository Layout
+====
+[source]
+----
+/index.json
+/index.json.sha256.sign
+
 /8/index.json
 /8/index.json.sha256.sign
-/index.json
-/index.json.sha256.sign
-```
+/8/jdk8u312_b07.json
+/8/jdk8u312_b07.json.sha256.sign
 
-Note that although in this example we have created 1 "Release file" for each release, this is not a requirement, a "Release file" may contain multiple releases, and multiple major verions if desired.
-i.e if you wished to only have a single Release file you could have:
+/17/index.json
+/17/index.json.sha256.sign
+/17/jdk_17_0_1_12.json
+/17/jdk_17_0_1_12.json.sha256.sign
+/17/jdk_17_0_2_8.json
+/17/jdk_17_0_2_8.json.sha256.sign
+----
+====
 
-```json
-/release.json
-/release.json.sha256.sign
-/index.json
-/index.json.sha256.sign
-```
+In this repository the root `index.json` would contain
 
-## Typical Repository read process
-
-1. A URL and public key is provided to the updater (i.e "https://release.adoptium.net/repo")
-2. The updater first looks at `index.json` and its signature file.
-   - Updater pulls https://release.adoptium.net/repo/index.json
-   - Updater pulls https://release.adoptium.net/repo/index.json.sha256.sign
-   - `index.json` is validated against `index.json.sha256.sign` and the public key provided. 
-3. Further indexes are extracted from `index.json` and step 2 is repeated until all index files have been read
-4. Location of release files are then extracted from all indexes.
-   - Updater pulls release file
-     - https://release.adoptium.net/repo/17/jdk_17_0_2_8.json
-   - Updater pulls signature file
-     - https://release.adoptium.net/repo/17/jdk_17_0_2_8.json.sha256.sign
-   - Release is validated against signature and public key.
-   - Release is parsed according to schema and placed into the marketplace
-   
-## Index Files
-Each `release` is considered a relative path from the index files path, i.e if https://release.adoptium.net/repo/17/index.json contained a release of `jdk_17_0_2_8.json`, the path of https://release.adoptium.net/repo/17/jdk_17_0_2_8.json will be examined.
-
-Schema at `<todo>`
-
-```json
+[source, json]
 {
   "indexes": [
     "8/index.json",
-    "11/index.json"
+    "17/index.json"
   ],
   "releases": [
-      "17/jdk_17_35.json"
   ]
 }
-```
 
-```json
+and the `17/index.json` would contain
+
+[source, json]
 {
-    "indexes": [],
-    "releases": [
-        "jdk_17_0_2_8.json",
-        "jdk_17_0_1_12.json",
-        "jdk_17_35.json"
-    ]
+  "indexes": [
+  ],
+  "releases": [
+    "jdk_17_0_1_12.json",
+    "jdk_17_0_2_8.json"
+  ]
 }
-```
 
-## Release Files
-May have any arbitrary name as they are linked to from .
+Note that although in this example we have created one index file per major Java version and one release file for each Java release, this is not a requirement. An index may contain multiple indices and releases, and a release file may contain multiple version releases if desired.
 
-Schema at `<todo>`
+Each index and release file reference is considered relative to the index file path, i.e if `https://release.adoptium.net/repo/17/index.json` contained a release of `jdk_17_0_2_8.json`, the path of `https://release.adoptium.net/repo/17/jdk_17_0_2_8.json` will be examined.
 
-```json
+
+== Release File
+
+The release file contains details about your products, including the Java version, target machine architcture, download location, test result location, and more. The name of the release file is not relevant to the Adoptium marketplace beyond being referenced from ann index file as described above.
+
+// TODO: fix up URL when schema moves to main branch
+Your products' release file listing must adhere to the
+https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace[marketplace product JSON schema^], and Adoptium provides
+https://github.com/adoptium/api.adoptium.net/blob/marketplace/marketplace/adoptium-marketplace-schema-tests/src/test/resources/net/adoptium/marketplace/schema/[examples^]
+and
+https://github.com/adoptium/api.adoptium.net/tree/marketplace/marketplace/adoptium-marketplace-schema[code^]
+to help produce product listing data in the correct format.
+
+.Example Release file content
+[example%collapsible]
+====
+[source,json]
 {
   "releases": [
     {
@@ -192,19 +208,24 @@ Schema at `<todo>`
     }
   ]
 }
-```
+====
 
-### Signature file
+== Typical Repository Read Process
 
-Signature files are base64 encoded SHA256 signatures. 
+1. A URL and public key is provided to the updater (i.e "https://release.adoptium.net/repo")
+2. The updater first looks at `index.json` and its signature file.
+   - Updater pulls https://release.adoptium.net/repo/index.json
+   - Updater pulls https://release.adoptium.net/repo/index.json.sha256.sign
+   - `index.json` is validated against `index.json.sha256.sign` and the public key provided. 
+3. Further indexes are extracted from `index.json` and step 2 is repeated until all index files have been read
+4. Location of release files are then extracted from all indexes.
+   - Updater pulls release file
+     - https://release.adoptium.net/repo/17/jdk_17_0_2_8.json
+   - Updater pulls signature file
+     - https://release.adoptium.net/repo/17/jdk_17_0_2_8.json.sha256.sign
+   - Release is validated against signature and public key.
+   - Release is parsed according to schema and placed into the marketplace
+   
 
-Example of generating, validating and encoding signature
 
-```bash
-# Generate signature
-openssl dgst -sha256 -sign private.pem -out index.json.sig index.json
-# Verify
-openssl dgst -sha256 -verify public.pem -signature index.json.sig index.json
-#Base64 encode for publishing
-cat index.json.sig | base64 -w 0 > index.json.sha256.sign
-```
+
