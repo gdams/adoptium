@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { FaDownload, FaQuestion, FaGithub, FaBox, FaInfoCircle, FaGlobe } from 'react-icons/fa'
+import { FaDownload, FaQuestion, FaGithub, FaBox, FaInfoCircle, FaGlobe, FaGem } from 'react-icons/fa'
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
@@ -37,12 +37,19 @@ const DocumentationPage = ({ data }) => (
               ]}
             />
             <DocumentationCard
+              title='AQAvit Quality'
+              links={[
+                { name: 'AQAvit Quality Verification', link: '/docs/qvs-policy' },
+                { name: 'AQAvit Verification Guide', link: '/docs/aqavit-verification' }
+              ]}
+              Icon={FaGem}
+            />
+            <DocumentationCard
               title='Marketplace'
               links={[
                 { name: 'Marketplace Downloads', link: '/marketplace' },
                 { name: 'Marketplace Publisher Guide', link: '/docs/marketplace-guide' },
-                { name: 'Marketplace Policy', link: '/docs/marketplace-policy' },
-                { name: 'Quality Verification Suite Policy', link: '/docs/qvs-policy' }
+                { name: 'Marketplace Policy', link: '/docs/marketplace-policy' }
               ]}
               Icon={FaBox}
             />
