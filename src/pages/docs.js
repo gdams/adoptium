@@ -48,8 +48,8 @@ const DocumentationPage = ({ data }) => (
               title='Marketplace'
               links={[
                 { name: 'Marketplace Downloads', link: '/marketplace' },
-                { name: 'Marketplace Publisher Guide', link: '/docs/marketplace-guide' },
-                { name: 'Marketplace Policy', link: '/docs/marketplace-policy' }
+                { name: 'Marketplace Listing Information', link: '/docs/marketplace-policy' },
+                { name: 'Marketplace Publisher Guide', link: '/docs/marketplace-guide' }
               ]}
               Icon={FaBox}
             />
