@@ -39,6 +39,7 @@ const DocumentationPage = ({ data }) => (
             <DocumentationCard
               title='AQAvit Quality'
               links={[
+                { name: 'About Eclipse AQAvit', link: '/aqavit' },
                 { name: 'AQAvit Quality Verification', link: '/docs/qvs-policy' },
                 { name: 'AQAvit Verification Guide', link: '/docs/aqavit-verification' }
               ]}
@@ -67,7 +68,7 @@ const DocumentationPage = ({ data }) => (
               title='Eclipse Adoptium'
               Icon={FaGlobe}
               links={[
-                { name: 'About the Project', link: '/about' },
+                { name: 'About Eclipse Adoptium', link: '/about' },
                 { name: 'Join the Working Group', link: '/join' },
                 { name: 'Sponsor the Working Group', link: 'https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' }
               ]}
