@@ -82,7 +82,7 @@ Every binary you publish via the Adoptium marketplace must fully satisfy all req
 
 The
 link:/aqavit[AQAvit verification process]
-must be satisfied at the point the binary is initially offered through the marketplace. Publishers are not required to verify the binary to later releases of the AQAvit verification suite. Once a binary meets the criteria it may continue to being offered through the marketplace.
+must be satisfied at the point the binary is initially offered through the marketplace. Publishers are not required to verify the binary to later releases of the AQAvit verification suite. Once a binary meets the criteria it may continue to be offered through the marketplace.
 
 AQAvit is an open source test suite managed at the Adoptium project. Publishers are welcome to participate in the AQAvit project to get help with the task of running AQAvit on their own products.
 
