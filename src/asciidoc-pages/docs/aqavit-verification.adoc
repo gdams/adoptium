@@ -6,10 +6,17 @@ The AQAvit project was created to “make quality certain to happen.” AQAvit v
 
 AQAvit verification is one of the criteria for listing in the link:/marketplace[Adoptium Marketplace]. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
 
-.AQAvit Test Targets to 
+.AQAvit Test Targets to Run
+The AQAvit test suite is a large set of tests many contributed to the AQAvit project and some pulled from a variety of open-source projects.  The tests are divided into different groups and those groups are split into 3 levels.  This logical categorization of the tests provides flexibility and granularity and can be visually represented in a grid.  
 
+image::gridview.png["grid view",120,60]
 
-.AQAvit Verification Basic Steps
+For the initial releases of AQAvit, the required set of top-level test targets to run are [sanity.functional, extended.functional, special.functional, sanity.openjdk, extended.openjdk, sanity.system, extended.system, sanity.perf, extended.perf].  In subsequent AQAvit releases, targets will be added to raise quality bar even higher.
+
+.Verifying Results
+The AQAvit test suite produces test result files and metadata files at the end of the test execution. Upon running and passing each of the nine required test targets, the result files and metadata files are to be gathered and shared.  For test targets that contain failures, the root cause of the failure should be addressed and the target can be rerun and an updated test result file produced and shared.
+
+.Basic Steps to Run AQAvit Test Targets via Command-line
 [%collapsible]
 |===
 | | 
@@ -38,7 +45,11 @@ Publish <results>.zip
 ```
 |===
 
-.Supplemental Information 
+.Basic Steps to Run AQAvit Test Targets via Github Workflow
+
+.Basic Steps to Run AQAvit Test Targets via Jenkins
+
+.AQAvit Verification Demonstration 
 [%collapsible]
 ====
 video::1EUi3iTZSzg[youtube]
