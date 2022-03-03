@@ -3,7 +3,7 @@
 :keywords: adoptium marketplace
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: tellison, gdams
+:page-authors: tellison, gdams, jiekang
 
 == Introduction
 
