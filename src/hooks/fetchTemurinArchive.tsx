@@ -1,10 +1,20 @@
+import moment from "moment";
+
+import { fetchExtension } from '../util/fetchExtension';
+
 const baseUrl = 'https://api.adoptopenjdk.net/v3';
 
 let releases = []
 
-export async function getAssetsForVersion(version: any, releaseType: any) {
+export async function getAssetsForVersion(version: any, releaseType: any, numBuilds: any, buildDate: Date) {
+  let url = `${baseUrl}/assets/feature_releases/${version}/${releaseType}?vendor=eclipse`;
+  if (numBuilds) {
+    url += `&page_size=${numBuilds}`
+  }
+  if (buildDate) {
+    url += `&before=${moment(buildDate).format('Y-MM-DD')}`
+  }
   releases = []
-  let   url       = `${baseUrl}/assets/feature_releases/${version}/${releaseType}?vendor=eclipse`;
   let   json      = await makeRequest('GET', url);
   const response  = JSON.parse(json);
   const data      = response;
@@ -58,12 +68,14 @@ function renderReleases(pkgs) {
           link: aReleaseAsset.package.link,
           checksum: aReleaseAsset.package.checksum,
           size: Math.floor(aReleaseAsset.package.size / 1000 / 1000),
+          extension: fetchExtension(aReleaseAsset.package.link)
         };
   
         if (aReleaseAsset.installer) {
           binary_constructor.installer_link = aReleaseAsset.installer.link;
           binary_constructor.installer_checksum = aReleaseAsset.installer.checksum;
           binary_constructor.installer_size =  Math.floor(aReleaseAsset.installer.size / 1000 / 1000);
+          binary_constructor.installer_extension = fetchExtension(aReleaseAsset.installer.link)
         }
   
         // Add the new binary to the release asset

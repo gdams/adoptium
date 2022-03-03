@@ -18,13 +18,7 @@ const TemurinHome = () => (
                 src='../../images/temurin-light.png'
                 width={150}
                 alt='Temurin logo'
-                className='img-fluid light-mode-only'
-              />
-              <img
-                src='../../images/temurin-dark.png'
-                width={150}
-                alt='Temurin logo'
-                className='img-fluid dark-mode-only'
+                className='img-fluid'
               />
             </div>
             <div className='col-12 col-sm-6 col-md-8'>

@@ -21,7 +21,7 @@ installation program.
 . Read and accept the license if you are happy with the terms.
 . On the Custom Setup screen you can choose the features that you want
 to install and optionally change the default installation directory. By
-default, Temurin installs to `c:\Program Files\Temurin\<package>` with
+default, Temurin installs to `c:\Program Files\Eclipse Adoptium\<package>` with
 the following features, which you can deselect, if necessary:
 * Add the installation to the PATH environment variable
 * Associate `.jar` files with Java applications Additional features can

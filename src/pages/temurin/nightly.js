@@ -6,7 +6,7 @@ import Layout from '../../components/Layout'
 import Seo from '../../components/Seo'
 import VersionSelector from '../../components/VersionSelector'
 import ChecksumModal from '../../components/ChecksumModal'
-import TemurinArchiveTable from '../../components/TemurinArchiveTable'
+import TemurinNightlyTable from '../../components/TemurinNightlyTable'
 import { getAssetsForVersion } from '../../hooks'
 
 const TemurinReleases = () => (
@@ -39,7 +39,7 @@ const TemurinReleases = () => (
           </div>
         </div>
       </div>
-      <VersionSelector updater={getAssetsForVersion} releaseType='ea' Table={TemurinArchiveTable} />
+      <VersionSelector updater={getAssetsForVersion} releaseType='ea' Table={TemurinNightlyTable} />
       <ChecksumModal />
     </section>
   </Layout>

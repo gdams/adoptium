@@ -39,6 +39,7 @@ const DocumentationPage = ({ data }) => (
               title='Marketplace'
               links={[
                 { name: 'Marketplace Downloads', link: '/marketplace' },
+                { name: 'Marketplace Publisher Guide', link: '/docs/marketplace-guide' },
                 { name: 'Marketplace Policy', link: '/docs/marketplace-policy' },
                 { name: 'Quality Verification Suite Policy', link: '/docs/qvs-policy' }
               ]}

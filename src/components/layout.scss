@@ -37,7 +37,7 @@ body {
   vertical-align: middle;
 }
 
-.navbar {
+.bg-pink {
   background-color: var(--brand4) !important;
 }
 
@@ -126,4 +126,13 @@ body:not(.dark) .dark-mode-only,
   .table a {
     font-size: 0.9rem;
   }
+}
+
+.cc-color-override-1434350510.cc-window {
+  background-color: var(--brand4) !important;
+}
+
+iframe {
+  width: 100%;
+  height: 25em;
 }
