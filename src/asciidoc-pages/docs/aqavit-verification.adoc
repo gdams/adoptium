@@ -48,11 +48,13 @@ Publish <results>.zip
 ====
 
 .Basic Steps to Run AQAvit Test Targets via Github Workflow
+[%collapsible]
 ====
 image::aqacert_basic_steps.png["basic steps",350,350]
 ====
 
 .Basic Steps to Run AQAvit Test Targets via Jenkins
+[%collapsible]
 ====
 image::aqacert_basic_steps.png["basic steps",350,350]
 ====
