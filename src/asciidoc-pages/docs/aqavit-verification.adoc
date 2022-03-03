@@ -1,22 +1,25 @@
 = AQAvit Verification
 :page-authors: gdams, smlambert, llxia
-Version 0.1, 17.02.2022
+Version 0.2, 02.03.2022
 
 The AQAvit project was created to “make quality certain to happen.” AQAvit verification is achieved through the process of running and passing a prescribed and versioned set of tests in the AQAvit test suite. As per the Eclipse Foundation Quality Verification Software License (QVSL) section 5b, a distributor who wants to certify their distributions then shares a summary of the test results by which verification was achieved.
 
-AQAvit verification is one of the criteria for listing in the link:/marketplace[Adoptium Marketplace]. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
+AQAvit verification is one of the criteria for listing in the link:/marketplace[Adoptium Marketplace^]. Leveraging the AQAvit test suite to ensure the quality of the binaries listed in the Adoptium Marketplace not only communicates to consumers how serious we are about quality, but also consolidates the good verification practices of the Adoptium Working Group members under a centralized effort. AQAvit aligns its test suite standards with the ever-changing requirements of the user base.
+
+== Overview
+The AQAvit test suite is a large set of tests many contributed to the AQAvit project and some pulled from a variety of open-source projects that serve to verify the quality of OpenJDK binaries.  The suite is suitable for testing Java 8 or higher versions on all link:/supported-platforms[supported platforms^].  To verify that binaries can be listed in the marketplace, vendors will clone a specified release of the aqa-tests github repository, configure their test environment, execute and pass the required test targets against each binary they plan to list in the marketplace and make the results of those test runs available as per the QVSL.
 
 == AQAvit Test Targets to Run
-The AQAvit test suite is a large set of tests many contributed to the AQAvit project and some pulled from a variety of open-source projects.  The tests are divided into different groups and those groups are split into 3 levels.  This logical categorization of the tests provides flexibility and granularity and can be visually represented in a grid.  
+The tests are divided into different groups and those groups are split into 3 levels.  This logical categorization of the tests provides flexibility and granularity and can be visually represented in a grid.  
 
-image::gridview.png["grid view",700,364]
+image::gridview.png["grid view",350,182]
 
 For the initial releases of AQAvit, the required set of top-level test targets to run are [sanity.functional, extended.functional, special.functional, sanity.openjdk, extended.openjdk, sanity.system, extended.system, sanity.perf, extended.perf].  In subsequent AQAvit releases, targets will be added to raise quality bar even higher.
 
-== Verifying Results
-The AQAvit test suite produces test result files and metadata files at the end of the test execution. Upon running and passing each of the nine required test targets, the result files and metadata files are to be gathered and shared.  For test targets that contain failures, the root cause of the failure should be addressed and the target can be rerun and an updated test result file produced and shared.
+== Details Regarding Test Execution
+AQAvit can be run in various CI/CD environments as well as directly via command-line in a container or on a test machine that has the link:/https://github.com/adoptium/aqa-tests/blob/master/doc/Prerequisites.md[test prerequisites^] installed.  The basic steps are the same in any environment.  
 
-.Basic Steps to Run AQAvit Test Targets via Command-line
+.Steps to Run AQAvit Test Targets via Command-line
 [%collapsible]
 ====
 |===
@@ -50,15 +53,93 @@ Publish <results>.zip
 .Basic Steps to Run AQAvit Test Targets via Github Workflow
 [%collapsible]
 ====
-image::aqacert_basic_steps.png["basic steps",350,350]
+The AQAvit project created a Github action that allows for running the AQAvit test suite from workflow files.  The run-aqa action in the link:/https://github.com/adoptium/run-aqa[run-aqa repository^] allows users to pass in custom OpenJDK binaries for verification.  Here is an example workflow file that can run sanity level targets on the 3 supported platforms available as github runners: 
+```
+name: "nightly sanity test"
+on:
+  schedule:
+    - cron:  '30 20 * * 1-5'
+
+jobs:
+  sanity:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-2016]
+        version: [8, 11, 17]
+        impl: [hotspot, openj9]
+        buildlist: [openjdk, system, functional, perf]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: AdoptOpenJDK/install-jdk@v1
+      with:
+        version: ${{ matrix.version }}
+        targets: JDK_${{ matrix.version }}
+        impl: ${{ matrix.impl }}
+        source: 'nightly'
+    - name: AQA
+      uses: ./
+      with: 
+        version: ${{ matrix.version }}
+        jdksource: 'install-jdk'
+        build_list: ${{ matrix.buildlist}}
+        target: '_sanity'
+```
 ====
 
 .Basic Steps to Run AQAvit Test Targets via Jenkins
 [%collapsible]
 ====
-image::aqacert_basic_steps.png["basic steps",350,350]
+```
+# Set Jenkins job parameters
+ADOPTOPENJDK_REPO=https://github.com/adoptium/aqa-tests.git
+ADOPTOPENJDK_BRANCH=v0.8.0-release
+USE_TESTENV_PROPERTIES=true
+
+# Execute test targets
+TARGET=sanity.functional and subsequently [extended.functional|special.functional|sanity.openjdk|extended.openjdk|sanity.system|extended.system|sanity.perf|extended.perf]
+
+# Collect and publish results
+Collect *.tap file and metadata file
+Archive <results>.zip
+
+Publish <results>.zip
+```
 ====
 
+== Verifying Results
+The AQAvit test suite produces test result files and metadata files at the end of the test execution. Upon running and passing each of the nine required test targets, the result files and metadata files are to be gathered and shared.  For test targets that contain failures, the root cause of the failure should be addressed and the target can be rerun and an updated test result file produced and shared.
+
+Test result files that are produced follow a certain naming convention and use a simple TAP (Test Anything Protocol).  When top-level targets are run serially, a single .tap file is produced, for example: 
+
+Test_openjdk11_hs_sanity.system_aarch64_linux.tap
+
+contains version, impl/distribution, test target and platform information in the name, and its contents look like: 
+
+```
+# Timestamp: Wed Mar  2 10:51:55 2022 UTC 
+1..168
+ok 1 - MachineInfo_0
+  ---
+    duration_ms: 581
+  ...
+ok 2 - ClassLoadingTest_5m_0
+  ---
+    duration_ms: 304339
+  ...
+ok 3 - ClassLoadingTest_5m_1  
+  ---
+    duration_ms: 303883
+  ...
+etc.
+  ...
+ok 168 - MauveMultiThrdLoad_5m_1
+  ---
+    duration_ms: 304296
+  ...
+```
+One can see in this example that the top-level target sanity.system contains 168 sub-targets.  Of the set of expected subtargets, some may be 'skipped' due to being filtered out as not applicable for a particular version or platform, but there must be none that failed.  Within the tap file, they will show as 'not ok' if they have failed.  Failing subtargets can be rerun individually and the tap file produced for that individual run can be included in the <results>.zip file to indicate that the binary under test was able to pass all expected targets.
 
 .AQAvit Verification Demonstration 
 [%collapsible]
