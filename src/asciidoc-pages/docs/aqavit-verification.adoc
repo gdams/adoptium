@@ -106,6 +106,8 @@ Archive <results>.zip
 
 Publish <results>.zip
 ```
+The tap files and metadata files contain timestamps and information about the binary under test.  This information is collected from java -version output, release file information and querying some system properties during the test run.  The information should match with the binary listed in the marketplace.
+
 ====
 
 == Verifying Results
@@ -113,7 +115,7 @@ The AQAvit test suite produces test result files and metadata files at the end o
 
 Test result files that are produced follow a certain naming convention and use a simple TAP (Test Anything Protocol).  When top-level targets are run serially, a single .tap file is produced, for example: 
 
-Test_openjdk11_hs_sanity.system_aarch64_linux.tap
+*Test_openjdk11_hs_sanity.system_aarch64_linux.tap*
 
 contains version, impl/distribution, test target and platform information in the name, and its contents look like: 
 
@@ -139,6 +141,7 @@ ok 168 - MauveMultiThrdLoad_5m_1
     duration_ms: 304296
   ...
 ```
+
 One can see in this example that the top-level target sanity.system contains 168 sub-targets.  Of the set of expected subtargets, some may be 'skipped' due to being filtered out as not applicable for a particular version or platform, but there must be none that failed.  Within the tap file, they will show as 'not ok' if they have failed.  Failing subtargets can be rerun individually and the tap file produced for that individual run can be included in the <results>.zip file to indicate that the binary under test was able to pass all expected targets.
 
 .AQAvit Verification Demonstration 
