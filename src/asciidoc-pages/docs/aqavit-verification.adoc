@@ -106,9 +106,9 @@ Archive <results>.zip
 
 Publish <results>.zip
 ```
-The tap files and metadata files contain timestamps and information about the binary under test.  This information is collected from java -version output, release file information and querying some system properties during the test run.  The information should match with the binary listed in the marketplace.
-
 ====
+
+The tap files and metadata files contain timestamps and information about the binary under test.  This information is collected from java -version output, release file information and querying some system properties during the test run.  The information should match with the binary listed in the marketplace.
 
 == Verifying Results
 The AQAvit test suite produces test result files and metadata files at the end of the test execution. Upon running and passing each of the nine required test targets, the result files and metadata files are to be gathered and shared.  For test targets that contain failures, the root cause of the failure should be addressed and the target can be rerun and an updated test result file produced and shared.
