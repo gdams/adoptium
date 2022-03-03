@@ -42,7 +42,7 @@ const DownloadPage = () => {
             <p>You can help power the Adoptium Community with a donation</p>
             <a href='https://eclipse.org/donate/adoptium' target='_blank' className='btn btn-primary btn-lg' rel='noreferrer'>Donate <BiDonateHeart /></a>
             <h2 className='fw-light py-3'>Get involved</h2>
-            <p>Whether you choose to <a href='https://github.com/adoptium/adoptium-support/issues' target='_blank'>report bugs</a>, request features, or <a href='/docs/first-timer-support' target='_blank'>become a committer</a>, you can help improve the technology for yourself and the rest of the community.</p>
+            <p>Whether you choose to <a href='https://github.com/adoptium/adoptium-support/issues' target='_blank'>report bugs</a>, request features, or <Link to='/docs/first-timer-support'>become a committer</Link>, you can help improve the technology for yourself and the rest of the community.</p>
             <h2 className='fw-light py-3'>Join the Working Group</h2>
             <Link to='/join' className='btn btn-lg btn-primary m-2'>Join the Working group</Link>
             <Link to='/members' className='btn btn-lg btn-primary m-2'>View our Members</Link>
