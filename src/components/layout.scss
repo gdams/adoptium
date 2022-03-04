@@ -1,5 +1,5 @@
 // Here you can customize bootstrap
-$primary: #c52158;
+$primary: #14003c;
 $secondary: #dadada;
 
 @import "~bootstrap/scss/bootstrap";
@@ -15,6 +15,7 @@ body {
   --black4: #cbd4d9;
   --black9: #2c3437;
   --brand4: #c52158;
+  --brand1: #14003c;
   --page-pink: #fcf4f6;
   --bg: white;
   --text-normal: #222;
@@ -43,6 +44,10 @@ body {
 
 .bg-pink {
   background-color: var(--brand4) !important;
+}
+
+.bg-purple {
+  background-color: var(--brand1) !important;
 }
 
 .table-secondary {

@@ -16,7 +16,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
   const {t} = useTranslation();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-pink" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-purple" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
       <div className="container-fluid">
         <Link to="/" className="navbar-brand ms-5">
           <Logo style={{ paddingLeft: '.2em', paddingRight: '.2em', height: '1.9em' }} />
@@ -27,7 +27,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
         </button>
 
         <div className="collapse navbar-collapse" id="main-navbar">
-          <ul className="navbar-nav bg-pink me-auto mb-2 mb-md-0">
+          <ul className="navbar-nav bg-purple me-auto mb-2 mb-md-0">
             <li className="nav-item">
               <ExactNavLink
                 to="/"

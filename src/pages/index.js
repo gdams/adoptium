@@ -31,7 +31,12 @@ const IndexPage = () => {
               </div>
             </div>
             <div className='col-md-6'>
-              <StaticImage src="../images/servers.png" width={1200} alt="Image showing server, cloud and laptop" />
+              <StaticImage 
+                src="../images/servers.png"
+                width={1000}
+                alt="Image showing server, cloud and laptop"
+                style={{ opacity: '0.999', mixBlendMode: 'luminosity' }}
+              />
             </div>
           </div>
         </div>
