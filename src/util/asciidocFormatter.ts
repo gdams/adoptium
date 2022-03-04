@@ -3,6 +3,10 @@ export default function asciidocFormatter () {
   tables.forEach(table => {
     table.className = 'table table-hover py-2'
   })
+  const theads = document.querySelectorAll('thead')
+  theads.forEach(thead => {
+    thead.className = 'table-dark'
+  })
   // Mark external links appropriately
   const asciidocContent = document.getElementById('asciidoc-container')
   const links = asciidocContent.querySelectorAll('a')
