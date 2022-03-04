@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next'
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
@@ -31,10 +31,10 @@ const IndexPage = () => {
               </div>
             </div>
             <div className='col-md-6'>
-              <StaticImage 
-                src="../images/servers.png"
+              <StaticImage
+                src='../images/servers.png'
                 width={1000}
-                alt="Image showing server, cloud and laptop"
+                alt='Image showing server, cloud and laptop'
                 style={{ opacity: '0.999', mixBlendMode: 'luminosity' }}
               />
             </div>
