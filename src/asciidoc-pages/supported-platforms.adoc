@@ -30,7 +30,7 @@ This section lists the operating systems that are supported with the latest rele
 | RHEL / CentOS 7.x |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[] icon:docker[]
 | Ubuntu 20.04 |  icon:check[] icon:docker[] |  icon:check[] icon:docker[] |  icon:check[]icon:docker[] |  icon:check[] icon:docker[]
 | Ubuntu 18.04 |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
-| Alpine Linux 3.5 or later (Headless) | n/a |  icon:check[] icon:docker[] | icon:check[] icon:docker[] |  icon:check[] icon:docker[]
+| Alpine Linux 3.5 or later (Headless) | icon:check[] icon:docker[] |  icon:check[] icon:docker[] | icon:check[] icon:docker[] |  icon:check[] icon:docker[]
 
 5+h| Linux (ARM 64-bit) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 64-bit) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
 | RHEL / Rocky 8.x |  icon:check[] |  icon:check[] |  icon:check[] |  icon:check[]
