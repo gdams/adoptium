@@ -1,5 +1,5 @@
 = First Timers Support
-:page-authors: MBoegers, hendrikebbers
+:page-authors: MBoegers, hendrikebbers, gdams
 :description: Support with first time contributions
 :keywords: adoptium documentation contribute first-time
 :icons: font
