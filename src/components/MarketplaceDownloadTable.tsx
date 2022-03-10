@@ -39,7 +39,7 @@ const DownloadTable = ({results}) => {
                                     <span>{pkg.package_type == 'jdk' ? 'JDK' : 'JRE'}</span>
                                 </td>
                                 <td className="fw-bold align-middle">
-                                    {pkg.distribution == 'semeru_certified' ? 'Semuru CE' : capitalize(pkg.distribution)}
+                                    {pkg.distribution == 'semeru_certified' ? 'IBM Semeru Runtimes' : capitalize(pkg.distribution)}
                                 </td>
                                 <td className="align-middle">
                                     <img width="100px" src={getImageForVendor(getVendorForDistribution(pkg.distribution))}/>
