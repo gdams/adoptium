@@ -7,7 +7,7 @@
 
 == Overview
 
-The Adoptium Marketplace provides users easy access to a wide variety of high-quality OpenJDK Java binaries, and provides the organizations producing those binaries a mechanism to broaden the distribution of their Java runtimes.
+The Adoptium Marketplace provides users easy access to a wide variety of high-quality fully compatible OpenJDK Java binaries, and provides the organizations producing those binaries a mechanism to broaden the distribution of their Java runtimes.
 
 === User Benefits
 
@@ -15,13 +15,13 @@ Every binary available via the Adoptium marketplace
 link:/marketplace[website]
 and
 https://marketplace-api.adoptium.net/q/swagger-ui/[API^]
-has demonstrated that it is ready for production use in a wide variety of environments by passing the
+is Java SE compatible and has demonstrated that it is ready for production use in a wide variety of environments by passing the
 link:/aqavit[AQAvit^]
 quality verification suite.
 
 The
 https://projects.eclipse.org/projects/adoptium.aqavit[AQAvit verification suite^]
-evaluates Java runtimes for functional correctness, performance, resilience, security, and the ability to pass a wide variety of application test suites. As a result, enterprises can be confident in the binaries they’re bringing into their companies and incorporating into their software supply chains.
+evaluates Java runtimes for functional correctness, performance, resilience, security, and the ability to pass a wide variety of application test suites. As a result, enterprises are provided with a higher degree of confidence in the binaries they’re bringing into their companies and incorporating into their software supply chains.
 
 === Producer Benefits
 
@@ -30,9 +30,9 @@ The following benefits are enjoyed by all producers listed in the Adoptium marke
  * Demonstrates that their product is a high quality offering, ready for enterprise usage, having passed the required Java-compatibility and AQAvit quality inclusion criteria.
  * Shows their product meets all the Eclipse Adoptium Working Group requirements for security, scalability, durability, and functional correctness at a specific version and build.
  * Declares the provider is a participant in the Adoptium community and supports the definition and scope of the AQAvit quality criteria across the industry.
- * Listed products benefit from Adoptium Working Group sponsored marketing and promotion initiatives across the industry with support of the Eclipse Foundation.
+ * Listed products benefit from Adoptium Working Group sponsored marketing and promotion initiatives across the industry with the support of the Eclipse Foundation.
  
-Inclusion in the marketplace is open to all strategic and enterprise members at no additional cost to the provider, is non-exclusive, and preserves the opportunity to supply paid services alongside the offering.
+Inclusion in the marketplace is open to all strategic and enterprise members of the Adoptium working group at no additional cost to the provider, is non-exclusive, and preserves the opportunity to supply paid services alongside the offering.
 
 == AQAvit Software Product Verification
 
@@ -62,7 +62,7 @@ Products listed in the marketplace *MUST* adhere to the following criteria.
 https://www.eclipse.org/legal/documents/eclipse-foundation-quality-verification-suite-license.php[Eclipse Foundation Quality Verification Suite License^].
 . The Producer must declare to the satisfaction of the Adoptium Working Group that the Product has passed the applicable Java SE Technology Compatibility Kit.
 . The Producer must be a Participant, Enterprise or Strategic Member of the Adoptium Working Group.
-. The Producer must be covered by the
+. The Producer must execute the
 https://www.eclipse.org/legal/documents/eclipse-adoptium-marketplace-publisher-agreement.pdf[Eclipse Adoptium Marketplace Publisher Agreement^]
 and comply with all the obligations thereof.
 
