@@ -7,7 +7,7 @@
 
 == Introduction
 
-This document provides guidance for publishers that are eligible to participate in the
+This document provides guidance for publishers that are eligible to market and promote OpenJDK runtimes via the
 link:/marketplace[Adoptium Marketplace].
 
 Publishers may be vendors, not-for-profit entities, user groups, and others who share the values embodied in the 
@@ -22,10 +22,10 @@ https://api.adoptium.net/[application programming interface^]
 
 Publishers are encouraged to discuss their participation in the marketplace with the
 link:/members[Adoptium Working Group]
-who will provide guidance and assistance with the steps described below. In case of any contraditions between the formal policies and agreements referenced below and this publisher guide, the formal policies and agreements will take precedence.
+who will provide guidance and assistance with the steps described below. In case of any contradictions between the formal policies and agreements referenced below and this publisher guide, the formal policies and agreements will take precedence.
 
 
-== Preparatory Steps
+== Preparatory Non-technical Steps
 
 Potential publishers and their products must meet the criteria described in the
 link:/marketplace-policy[Adoptium Marketplace Policy]. These criteria include becoming a member of the Adoptium working group at an appropriate level, granting you a voice in the policy and operation of the marketplace. Not every member of the working group will be a publisher. End users are also encouraged to join the working group to help guide the products and requirements of the marketplace products.
@@ -45,9 +45,9 @@ to ensure the authenticity, integrity, and non-repudiation of the information yo
 As a publisher you are responsible for self-certifying that the information for each product described in the metadata is accurate and adheres to your obligations in the
 link:/marketplace-policy[Marketplace Policy].
 
-You control your products' metadata and the frequency at which it is updated. The Adoptium marketplace application will draw upon that information to market your products, and direct users to download your product directly from a site under your control.
+You control your products' metadata and the frequency at which it is updated. The Adoptium marketplace application will draw upon that information to market your products, and direct users to download your product directly from a site under your control. Adoptium does not host or distribute your binaries.
 
-Adoptium does not host your binaries. When a download is initiated from the Adoptium marketplace users will be directed to a post-download page where you can provide a link to additional information about your product, organization, services, and so on.
+When a download is initiated via the Adoptium marketplace users will be directed to a post-download page where you can provide a link to additional information about your product, organization, services, and so on.
 
 
 == Providing Publisher Information
@@ -69,7 +69,7 @@ in the Adoptium repository. You can raise a new issue in the same repository if 
 
 == Passing the Oracle TCK tests
 
-Every binary you publish via the Adoptium marketplace must fully satisfy all requirements of the then-current TCK for the Java Platform. You are responsible for ensuring this has happened before you publish the binary. Adoptium will not check this on your behalf.
+Every binary you publish via the Adoptium marketplace must fully satisfy all requirements of the then-current TCK for the Java Platform version you are promoting via the Adoptium marketplace. You are responsible for ensuring this has happened before you publish the binary. Adoptium will not check this on your behalf.
 
 Adoptium projects
 https://projects.eclipse.org/projects/adoptium.temurin-compliance[develop and use tools^]
@@ -78,7 +78,7 @@ that make running and analysing the TCK easier. Publishers are welcome to partic
 
 == Passing the AQAvit verification tests
 
-Every binary you publish via the Adoptium marketplace must fully satisfy all requirements of the then-current AQAvit test suite. You are responsible for ensuring this has happened before you publish the binary. Adoptium will not check this on your behalf.
+Every binary you publish via the Adoptium marketplace must fully satisfy all requirements of the then-current AQAvit test suite for the version you are promoting via the Adoptium marketplace. You are responsible for ensuring this has happened before you publish the binary. Adoptium will not check this on your behalf.
 
 The
 link:/aqavit[AQAvit verification process]
@@ -113,7 +113,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since[If-M
 == Post-download page
 
 // TODO: Should the post-download be per-publisher or per-product (i.e. embedded in the metadata).
-When a user chooses to download your product via the marketplace website they will be directed to a post-download page as the download progresses. The post-download page will thank the user and identify the publisher, including a link to a webpage of your choice. We envisage this webpage will lead the user to information about your product, organization, services, and so on.
+When a user chooses to download your product via the marketplace website they will be directed to a post-download page as the download is initiated from your distribution server. The post-download page will thank the user and identify the publisher, including a link to a webpage of your choice. We envisage this webpage will lead the user to information about your product, organization, services, and so on.
 
 // TODO: unless we include it in the metadata...
 The post-download page link is not used by the Adoptium marketplace API.
