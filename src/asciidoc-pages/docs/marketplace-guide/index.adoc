@@ -102,14 +102,6 @@ The product listing information will be rejected if it does not adhere to the
 link:/docs/marketplace-listing[product listing structure],
 marketplace file schema, or the signature does not verify the content successfully. We will contact you if the listing file is repeatedly failing these validation checks.
 
-// TODO: discuss default and minimum frequency of refresh.
-Adoptium typically retrieves the product listing information hourly, but may consider your HTTP response
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control[cache-control http headers^] such as ``max-age`` to guide the frequency of fetching the product listing. In turn the Adoptium request may specify a
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Conditional_requests[conditional request^]
-such as
-https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since[If-Modified-Since^].
-
-
 == Post-download page
 
 // TODO: Should the post-download be per-publisher or per-product (i.e. embedded in the metadata).
