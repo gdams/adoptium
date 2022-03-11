@@ -16,7 +16,7 @@ const DownloadPage = () => (
           <h1 className='fw-light'>Adoptium Marketplace</h1>
           <p className='pt-3'>
             Java™ is the world's leading programming language and platform.
-            The Adoptium Marketplace offers high-quality, TCK certified runtimes and associated technology for use across the Java™ ecosystem.
+            The Adoptium Marketplace promotes high-quality, TCK certified runtimes and associated technology for use across the Java™ ecosystem.
           </p>
           <div className='row align-items-center pt-3'>
             <div className='col-6 col-md-4'>
