@@ -16,9 +16,9 @@ for (const member of Members) {
     case 'sponsor':
       sponsors.push(member)
       break
-      case 'infra':
-        infra.push(member)
-        break
+    case 'infra':
+      infra.push(member)
+      break
     default:
       break
   }
