@@ -9,12 +9,16 @@ import { shuffle } from '../util/shuffle'
 import Members from '../json/members.json'
 
 const sponsors = []
+const infra = []
 
 for (const member of Members) {
   switch (member.tier) {
     case 'sponsor':
       sponsors.push(member)
       break
+      case 'infra':
+        infra.push(member)
+        break
     default:
       break
   }
@@ -22,6 +26,7 @@ for (const member of Members) {
 
 // Randomly mix up members logos
 shuffle(sponsors)
+shuffle(infra)
 
 const SponsorsPage = () => (
   <Layout>
@@ -33,6 +38,10 @@ const SponsorsPage = () => (
           <p className='lead text-muted'>Additionally to our Working Group Members Adoptium is proud to receive financial donations (both one-off and regularly) from the following companies.</p>
           <MembersGrid
             members={sponsors}
+          />
+          <p className='lead text-muted pt-5'>The Adoptium Working Group collaborates with the following companies who contribute various kinds of cloud and physical hardware.</p>
+          <MembersGrid
+            members={infra}
           />
           <a target='_blank' rel='noreferrer' href='https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' className='btn btn-lg btn-primary mt-5'>Want to become a Sponsor?</a>
         </div>
