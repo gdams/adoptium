@@ -173,14 +173,14 @@ to help produce product listing data in the correct format.
                         "name": "OpenJDK17-debugimage_x64_linux_hotspot_17_35.tar.gz",
                         "link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_linux_hotspot_17_35.tar.gz",
                         "sha265sum": "3ab5b4f5c121ff3098bad1939cddb12e746eed4a90043e72d9b1459e4518ef96",
-                        "sha256sum_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_linux_hotspot_17_35.tar.gz.sha256.txt",
-                        "aqavit_results_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_linux_hotspot_17_35.aqavit_results.zip",
-                        "tck_affidavit_link": "https://adoptium.net/tck_affidavit.html"
+                        "sha256sum_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_linux_hotspot_17_35.tar.gz.sha256.txt"
                     },
                     "timestamp": "2021-09-22T07:47:36Z",
                     "scm_ref": "jdk-17+35_adopt",
                     "openjdk_scm_ref": "unknown",
-                    "distribution": "temurin"
+                    "distribution": "temurin",
+                    "aqavit_results_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_linux_hotspot_17_35.aqavit_results.zip",
+                    "tck_affidavit_link": "https://adoptium.net/tck_affidavit.html"
                 },
                 {
                     "os": "mac",
@@ -191,14 +191,14 @@ to help produce product listing data in the correct format.
                         "name": "OpenJDK17-debugimage_x64_mac_hotspot_17_35.tar.gz",
                         "link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_mac_hotspot_17_35.tar.gz",
                         "sha265sum": "1c3ebf45e62f0e031ae3177296bc6c49c8e9cc7f75defd9587cb2e4a54b2e3c8",
-                        "sha256sum_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_mac_hotspot_17_35.tar.gz.sha256.txt",
-                        "aqavit_results_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_mac_hotspot_17_35.aqavit_results.zip",
-                        "tck_affidavit_link": "https://adoptium.net/tck_affidavit.html"
+                        "sha256sum_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_mac_hotspot_17_35.tar.gz.sha256.txt"
                     },
                     "timestamp": "2021-09-22T07:47:44Z",
                     "scm_ref": "jdk-17+35_adopt",
                     "openjdk_scm_ref": "unknown",
-                    "distribution": "temurin"
+                    "distribution": "temurin",
+                    "aqavit_results_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_mac_hotspot_17_35.aqavit_results.zip",
+                    "tck_affidavit_link": "https://adoptium.net/tck_affidavit.html"
                 },
                 {
                     "os": "windows",
@@ -209,14 +209,14 @@ to help produce product listing data in the correct format.
                         "name": "OpenJDK17-debugimage_x64_windows_hotspot_17_35.zip",
                         "link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_windows_hotspot_17_35.zip",
                         "sha265sum": "162001b5e91d81e9605b888c1b99326af170241ed6d78e60119f9dab176abf01",
-                        "sha256sum_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_windows_hotspot_17_35.zip.sha256.txt",
-                        "aqavit_results_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_windows_hotspot_17_35.aqavit_results.zip",
-                        "tck_affidavit_link": "https://adoptium.net/tck_affidavit.html"
+                        "sha256sum_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_windows_hotspot_17_35.zip.sha256.txt"
                     },
                     "timestamp": "2021-09-22T07:47:48Z",
                     "scm_ref": "jdk-17+35_adopt",
                     "openjdk_scm_ref": "unknown",
-                    "distribution": "temurin"
+                    "distribution": "temurin",
+                    "aqavit_results_link": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_x64_windows_hotspot_17_35.aqavit_results.zip",
+                    "tck_affidavit_link": "https://adoptium.net/tck_affidavit.html"
                 }
             ],
             "vendor": "adoptium",
