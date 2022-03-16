@@ -1,5 +1,4 @@
 = TCK Affidavit
 :page-authors: gdams
 
-Eclipse Adoptium certifies that all Eclipse Temurin binaries available from adoptium.net (except for those clearly marked as "intermediate builds") have passed all required Java SE compatibility tests,
-and are compliant and compatible implementations.
+Eclipse Adoptium certifies that all Eclipse Temurin binaries available from adoptium.net (except for those clearly marked as "intermediate builds") have passed all required Java SE compatibility tests, and are compliant and compatible implementations.
