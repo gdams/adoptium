@@ -1,5 +1,5 @@
 = Install Eclipse Temurin
-:page-authors: gdams
+:page-authors: gdams, karianna
 
 Eclipse Temurin binaries are available for link:/temurin/releases[download] in
 the following types of installation package:
