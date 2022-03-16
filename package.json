@@ -58,7 +58,7 @@
     "use-query-params": "^1.2.3"
   },
   "devDependencies": {
-    "prettier": "2.5.1"
+    "prettier": "2.6.0"
   },
   "keywords": [
     "adoptium",
