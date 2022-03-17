@@ -35,7 +35,7 @@
     "gatsby-source-filesystem": "^4.9.1",
     "gatsby-transformer-asciidoc": "^3.9.0",
     "gatsby-transformer-remark": "^5.9.1",
-    "gatsby-transformer-sharp": "^4.9.0",
+    "gatsby-transformer-sharp": "^4.10.0",
     "highlight.js": "^11.4.0",
     "i18next": "^21.6.14",
     "moment": "^2.29.1",
