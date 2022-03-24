@@ -5,7 +5,8 @@ const baseUrl = 'https://api.adoptopenjdk.net/v3';
 export function fetchLatestForOS(
     isVisible: boolean,
     version: number,
-    os: string
+    os: string,
+    arch: string
 ): Binary | null {
     if (!os) {
         return null
@@ -14,7 +15,7 @@ export function fetchLatestForOS(
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            setBinary(await fetchLatestForOSRequest(version, os));
+            setBinary(await fetchLatestForOSRequest(version, os, arch));
         })();
         }
     }, [isVisible]);
@@ -22,8 +23,8 @@ export function fetchLatestForOS(
     return binary;
 }
 
-async function fetchLatestForOSRequest(version, os) {
-    const url = `${baseUrl}/assets/feature_releases/${version}/ga?os=${os}&architecture=x64&image_type=jdk&jvm_impl=hotspot&page_size=1&vendor=eclipse`;
+async function fetchLatestForOSRequest(version, os, arch) {
+    const url = `${baseUrl}/assets/feature_releases/${version}/ga?os=${os}&architecture=${arch}&image_type=jdk&jvm_impl=hotspot&page_size=1&vendor=eclipse`;
     const response = await fetch(url);
     const json = (await response.json())[0];
     let binary_link = json.binaries[0].package.link

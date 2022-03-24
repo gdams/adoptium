@@ -9,6 +9,7 @@ import { defaultVersion } from '../util/defaults'
 
 let userOSName
 let userOSAPIName
+let arch = 'x64'
 
 const LatestTemurin = (props): JSX.Element => {
 
@@ -17,6 +18,14 @@ const LatestTemurin = (props): JSX.Element => {
     case UserOS.MAC:
       userOSName = 'macOS'
       userOSAPIName = 'mac'
+      if (typeof document !== 'undefined') {
+        let w = document.createElement("canvas").getContext("webgl");
+        let d = w.getExtension('WEBGL_debug_renderer_info');
+        let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
+        if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+          arch = 'aarch64'
+        }
+      }
       break;
     case UserOS.LINUX:
     case UserOS.UNIX:
@@ -33,7 +42,7 @@ const LatestTemurin = (props): JSX.Element => {
   
   const ref = useRef<HTMLDivElement | null>(null);
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
-  const binary = fetchLatestForOS(isVisible, defaultVersion, userOSAPIName);
+  const binary = fetchLatestForOS(isVisible, defaultVersion, userOSAPIName, arch);
 
   let buttonClass = "col-6"
   let textClass = ""
@@ -46,7 +55,7 @@ const LatestTemurin = (props): JSX.Element => {
     return (
       <div ref={ref} className="container hide-on-mobile">
         {binary ? (
-          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin for {userOSName} x64</h2>
+          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin for {userOSName} {arch}</h2>
         ) :
           <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin</h2>
         }
