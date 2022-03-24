@@ -102,15 +102,27 @@
       "tier": "infra"
     },
     {
-      "name": "Nine",
-      "logo": "nine.png",
-      "url": "https://www.nine.ch",
-      "tier": "infra"
-    },
-    {
       "name": "Equinix Metal",
       "logo": "equinix.png",
       "url": "https://metal.equinix.com",
+      "tier": "infra"
+    },
+    {
+      "name": "OSUOSL",
+      "logo": "osuosl.png",
+      "url": "https://osuosl.org",
+      "tier": "infra"
+    },
+    {
+      "name": "Marist College",
+      "logo": "marist.png",
+      "url": "https://www.marist.edu",
+      "tier": "infra"
+    },
+    {
+      "name": "Macincloud",
+      "logo": "macincloud.png",
+      "url": "https://macincloud.com",
       "tier": "infra"
     },
     {
