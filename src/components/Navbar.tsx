@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
+import { FaTwitter, FaYoutube, FaGithub, FaSlack } from 'react-icons/fa';
 
 import Logo from '../images/adoptium-logo-dark.svg';
 
@@ -16,7 +17,9 @@ const Navbar = ({siteTitle}): JSX.Element => {
   const {t} = useTranslation();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-purple" style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em' }}>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-purple"
+      style={{ height: '7rem', paddingTop: '1.25em', paddingBottom: '1.25em', position: 'relative', zIndex: '10000' }}
+    >
       <div className="container-fluid">
         <Link to="/" className="navbar-brand ms-5">
           <Logo style={{ paddingLeft: '.2em', paddingRight: '.2em', height: '1.9em' }} />
@@ -81,10 +84,20 @@ const Navbar = ({siteTitle}): JSX.Element => {
             </li>
           </ul>
         </div>
+        <ul className="nav col-md-5 col-9 pb-4 justify-content-end list-unstyled d-flex hide-on-mobile p-3">
+          <li className="ms-3"><a style={navbarIcon} target="_blank" rel="noopener noreferrer" href="https://twitter.com/adoptium"><FaTwitter size={25} /></a></li>
+          <li className="ms-3"><a style={navbarIcon} target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/c/EclipseAdoptium"><FaYoutube size={25} /></a></li>
+          <li className="ms-3"><a style={navbarIcon} target="_blank" rel="noopener noreferrer" href="https://github.com/adoptium"><FaGithub size={25} /></a></li>
+          <li className="ms-3"><Link style={navbarIcon} target="_blank" rel="noopener noreferrer" to="/slack"><FaSlack size={25} /></Link></li>
+        </ul>
       </div>
     </nav>
   )
 }
+
+const navbarIcon = ({
+  color: 'rgba(255, 255, 255, 0.55)'
+});
 
 Navbar.propTypes = {
   siteTitle: PropTypes.string,
