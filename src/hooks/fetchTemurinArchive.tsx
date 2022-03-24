@@ -2,7 +2,7 @@ import moment from "moment";
 
 import { fetchExtension } from '../util/fetchExtension';
 
-const baseUrl = 'https://api.adoptopenjdk.net/v3';
+const baseUrl = 'https://api.adoptium.net/v3';
 
 let releases = []
 

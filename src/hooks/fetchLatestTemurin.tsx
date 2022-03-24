@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const baseUrl = 'https://api.adoptopenjdk.net/v3';
+const baseUrl = 'https://api.adoptium.net/v3';
 
 export function fetchLatestForOS(
     isVisible: boolean,
