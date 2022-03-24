@@ -50,6 +50,14 @@ body {
   background-color: var(--brand1) !important;
 }
 
+.bg-grey {
+  background-color: rgb(237, 234, 234) !important;
+}
+
+.table-secondary {
+  --bs-table-bg: #333;
+}
+
 .table-secondary {
   --bs-table-bg: #333;
 }

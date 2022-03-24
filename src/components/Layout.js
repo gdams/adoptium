@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Navbar from './Navbar'
+import Banner from './banner';
 import Footer from './Footer'
 import './layout.scss'
 
@@ -27,6 +28,7 @@ const Layout = ({ children }) => {
       }}
     >
       <Navbar siteTitle={data.site.siteMetadata?.title || 'Title'} />
+      <Banner />
       <main>
         <main>{children}</main>
       </main>
