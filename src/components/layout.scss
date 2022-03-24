@@ -58,10 +58,6 @@ body {
   --bs-table-bg: #333;
 }
 
-.table-secondary {
-  --bs-table-bg: #333;
-}
-
 body:not(.dark) .dark-mode-only,
 .dark .light-mode-only {
   display: none;
