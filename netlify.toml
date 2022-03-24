@@ -8,6 +8,48 @@ GATSBY_CONCURRENT_DOWNLOAD = "15"
 GATSBY_CPU_COUNT = "1"
 
 [[redirects]]
+  from = "/releases.html"
+  to = "/temurin/releases"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/archive.html"
+  to = "/temurin/archive"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/nightly.html"
+  to = "/temurin/nightly"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/faq.html"
+  to = "/docs/faq"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/migration.html"
+  to = "/docs/migration"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/support.html"
+  to = "/support"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/supported_platforms.html"
+  to = "/supported-platforms"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/marketplace-policy"
   to = "/docs/marketplace-policy"
   status = 301

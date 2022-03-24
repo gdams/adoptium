@@ -67,12 +67,14 @@ body:not(.dark) .dark-mode-only,
   display: none;
 }
 
-.adopt-demo-container {
-  position: relative;
-
+.hide-on-mobile {
   @media only screen and (max-width: 500px) {
     display: none;
   }
+}
+
+.adopt-demo-container {
+  position: relative;
 }
 
 .adopt-demo {

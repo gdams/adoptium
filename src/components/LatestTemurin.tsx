@@ -44,7 +44,7 @@ const LatestTemurin = (props): JSX.Element => {
   }
 
     return (
-      <div ref={ref} className="container">
+      <div ref={ref} className="container hide-on-mobile">
         {binary ? (
           <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin for {userOSName} x64</h2>
         ) :

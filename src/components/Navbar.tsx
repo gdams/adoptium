@@ -35,13 +35,13 @@ const Navbar = ({siteTitle}): JSX.Element => {
                 {t('Home')}
               </ExactNavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <ExactNavLink
                 to="/marketplace"
               >
                 Marketplace
               </ExactNavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <ExactNavLink
                 to="/docs"

@@ -15,17 +15,17 @@ const IndexPage = () => {
       <section id='home' className='home'>
         <div className='container-flex'>
           <div className='main-banner row justify-content-center align-items-center'>
-            <div className='col-md-6 p-5'>
+            <div className='col-md-6 p-md-5'>
               <div className='w-75 m-auto'>
                 <div data-aos='zoom-in-up' className='aos-init aos-animate'>
-                  <div className='my-5 banner-title'>
+                  <div className='my-3 my-md-5 text-center text-md-start banner-title'>
                     <h1 className='display-4'>
                       <Trans>Prebuilt OpenJDK</Trans>
                       <br />
                       <Trans>Binaries for Free!</Trans>
                     </h1>
                   </div>
-                  <p className='mt-3'>{t('Intro')}</p>
+                  <p className='mt-3 text-center text-md-start'>{t('Intro')}</p>
                 </div>
                 <LatestTemurin page='home' />
               </div>

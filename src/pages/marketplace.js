@@ -9,7 +9,7 @@ import { getAllPkgsForVersion } from '../hooks'
 
 const DownloadPage = () => (
   <Layout>
-    <Seo title='Marketplace' />
+    {/* <Seo title='Marketplace' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
@@ -36,9 +36,8 @@ const DownloadPage = () => (
           </div>
         </div>
       </div>
-      {/* <VendorSelector /> */}
       <DownloadDropdowns updaterAction={getAllPkgsForVersion} marketplace Table={DownloadTable} />
-    </section>
+    </section> */}
   </Layout>
 )
 

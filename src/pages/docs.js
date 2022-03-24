@@ -45,7 +45,7 @@ const DocumentationPage = ({ data }) => (
               ]}
               Icon={FaGem}
             />
-            <DocumentationCard
+            {/* <DocumentationCard
               title='Marketplace'
               links={[
                 { name: 'Marketplace Downloads', link: '/marketplace' },
@@ -53,7 +53,7 @@ const DocumentationPage = ({ data }) => (
                 { name: 'Marketplace Publisher Guide', link: '/docs/marketplace-guide' }
               ]}
               Icon={FaBox}
-            />
+            /> */}
             <DocumentationCard
               title='Contributing'
               Icon={FaGithub}

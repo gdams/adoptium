@@ -28,7 +28,7 @@ export default function Template ({ data }) {
           <div className='asciidoc'>
             <h1 className='pb-4 fw-light text-center'>{document.title}</h1>
             {fields.slug === '/installation/' && (
-              <section className='adopt-demo-container my-5'>
+              <section className='adopt-demo-container hide-on-mobile my-5'>
                 <div className='adopt-demo mx-auto'>
                   <InstallTabs />
                 </div>
