@@ -70,16 +70,16 @@ const Navbar = ({siteTitle}): JSX.Element => {
               </ul>
             </li>
             <li className="nav-item dropdown">
-              <ExactNavLink className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Further Information
-              </ExactNavLink>
+              </Link>
               <ul className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                 <li><ExactNavLink className="dropdown-item" to="/about">About</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/members">Members</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/sponsors">Sponsors</ExactNavLink></li>
-                <li><a className="dropdown-item nav-link" href="https://api.adoptium.net">API</a></li>
-                <li><a className="dropdown-item nav-link" href="https://blog.adoptium.net">Blog</a></li>
-                <li><a className="dropdown-item nav-link" href="https://status.adoptium.net">Status</a></li>
+                <li><a className="nav-link" href="https://api.adoptium.net">API</a></li>
+                <li><a className="nav-link" href="https://blog.adoptium.net">Blog</a></li>
+                <li><a className="nav-link" href="https://status.adoptium.net">Status</a></li>
               </ul>
             </li>
           </ul>
