@@ -3,6 +3,7 @@ import React, { useRef, useState, useCallback, useEffect } from 'react';
 import VendorSelector from './VendorSelector'
 
 import { detectOS, UserOS } from '../util/detectOS';
+import { capitalize } from '../util/capitalize';
 import { oses, arches, packageTypes, versions, defaultVersion, defaultArchitecture, defaultPackageType} from '../util/defaults'
 
 let defaultOS = ''
@@ -12,7 +13,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     const userOS = detectOS();
     switch (userOS) {
       case UserOS.MAC:
-        defaultOS = 'macos'
+        defaultOS = 'mac'
         break;
       case UserOS.LINUX:
       case UserOS.UNIX:
@@ -69,7 +70,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     <option key="any" value="any">Any</option>
                     {oses.map(
                         (os, i): string | JSX.Element => os && (
-                            <option key={os.toLowerCase()} value={os.toLowerCase()}>{os}</option>
+                            <option key={os.toLowerCase()} value={os.toLowerCase()}>{capitalize(os)}</option>
                         )
                     )}
                 </select>

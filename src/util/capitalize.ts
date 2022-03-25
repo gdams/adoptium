@@ -3,7 +3,7 @@ export function capitalize (text) {
   if (text === 'alpine-linux') {
     return 'Alpine Linux'
   } else if (text === 'mac') {
-    return 'MacOS'
+    return 'macOS'
   } else {
     return text[0].toUpperCase() + text.slice(1)
   }

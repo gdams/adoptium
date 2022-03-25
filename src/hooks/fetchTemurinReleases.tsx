@@ -4,8 +4,17 @@ import { fetchExtension } from '../util/fetchExtension';
 
 const baseUrl = 'https://api.adoptium.net/v3';
 
-export async function loadLatestAssets(version, os, architecture) {
-    let   url       = `${baseUrl}/assets/latest/${version}/hotspot`;
+export async function loadLatestAssets(version: number, os: string, architecture: string, packageType: string) {
+    let url = `${baseUrl}/assets/latest/${version}/hotspot?`;
+    if (os !== 'any') {
+        url += `os=${os}&`
+    }
+    if (architecture !== 'any') {
+        url += `architecture=${architecture}&`
+    }
+    if (packageType !== 'any') {
+        url += `image_type=${packageType}&`
+    }
     let   json      = await makeRequest('GET', url);
     const response  = JSON.parse(json);
     const data      = response;
@@ -86,7 +95,7 @@ function renderReleases(pkgs) {
 }
 
 function orderPlatforms (input, attr = 'thisPlatformOrder') {
-  return sortByProperty(input, attr);
+  return sortByProperty(input, attr, false);
 };
 
 function sortByProperty (input, property, descending) {
