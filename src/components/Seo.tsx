@@ -53,8 +53,20 @@ function Seo ({ description, lang, meta, title }) {
           content: 'website'
         },
         {
+          name: 'og:image',
+          content: 'https://adoptium.net/images/social-image.png'
+        },
+        {
           name: 'twitter:card',
-          content: 'summary'
+          content: 'summary_large_image'
+        },
+        {
+          name: 'twitter:site',
+          content: '@adoptium'
+        },
+        {
+          name: 'twitter:image',
+          content: 'https://adoptium.net/images/social-image.png'
         },
         {
           name: 'twitter:creator',
