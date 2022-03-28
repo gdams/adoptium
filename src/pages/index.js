@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title={t('Home')} />
-      <section id='home' className='home'>
+      <section id='home' className='home' style={{ overflowX: 'hidden' }}>
         <div className='container-flex'>
           <div className='main-banner row justify-content-center align-items-center'>
             <div className='col-md-6 p-md-5'>
@@ -43,8 +43,9 @@ const IndexPage = () => {
         <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
           <div className='container py-5'>
             <h2 className='text-pink'>The Adoptium Working Group</h2>
-            <p>The AQAvit project gets its name from Adoptium Quality Assurance ‘AQA’ and ‘vit’ for vitality and speed.
-              As the project engages with vendors and enterprise consumers, the test suite is expanded and improved to keep pace with the latest Java releases and to continuously raise the quality bar through collaboration and rigour.
+            <p>The Adoptium Working Group promotes and supports high-quality runtimes and associated technology for use across the Java ecosystem.
+              Our vision is to meet the needs of Eclipse and the broader Java community by providing runtimes for Java-based applications.
+              We embrace existing standards and a wide variety of hardware and cloud platforms.
             </p>
             <div className='btn-group'>
               <Link to='/join' className='btn btn-lg btn-primary m-3 text-white'>Join the Working group</Link>
