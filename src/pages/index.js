@@ -11,7 +11,7 @@ const IndexPage = () => {
   const { t } = useTranslation()
   return (
     <Layout>
-      <Seo title={t('Home')} />
+      <Seo title='Home' />
       <section id='home' className='home' style={{ overflowX: 'hidden' }}>
         <div className='container-flex'>
           <div className='main-banner row justify-content-center align-items-center'>
