@@ -6,33 +6,37 @@ import { detectOS, UserOS } from '../util/detectOS';
 import { capitalize } from '../util/capitalize';
 import { oses, arches, packageTypes, versions, defaultVersion, defaultArchitecture, defaultPackageType} from '../util/defaults'
 
-let defaultOS = ''
+let defaultOS = 'any'
+let defaultArch = 'any'
 
 const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
 
-    const userOS = detectOS();
-    switch (userOS) {
-      case UserOS.MAC:
-        defaultOS = 'mac'
-        break;
-      case UserOS.LINUX:
-      case UserOS.UNIX:
-        defaultOS = 'linux'
-        break;
-      default:
-        defaultOS = 'windows'
-        break;
+    if (marketplace) {
+        defaultArch = defaultArchitecture;
+        const userOS = detectOS();
+        switch (userOS) {
+          case UserOS.MAC:
+            defaultOS = 'mac'
+            break;
+          case UserOS.LINUX:
+          case UserOS.UNIX:
+            defaultOS = 'linux'
+            break;
+          default:
+            defaultOS = 'windows'
+            break;
+        }
     }
 
     const [os, updateOS] = useState({os: defaultOS});
-    const [arch, updateArch] = useState({arch: defaultArchitecture});
+    const [arch, updateArch] = useState({arch: defaultArch});
     const [packageType, updatePackageType] = useState({packageType: defaultPackageType});
     const [version, udateVersion] = useState({version: defaultVersion});
     
     // Marketplace vendor selector only
     const checkboxRef = useRef({});
     const [checkbox, updateCheckbox] = useState({checkboxRef});
-  
+
     const [releases, setReleases] = useState(null);
 
     useEffect(() => {
@@ -75,7 +79,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     )}
                 </select>
                 <label className="px-2 fw-bold" htmlFor="arch">Architecture</label>
-                <select id="arch-filter" onChange={(e) => setArch(e.target.value)} defaultValue={defaultArchitecture} className="form-select form-select-sm">
+                <select id="arch-filter" onChange={(e) => setArch(e.target.value)} defaultValue={defaultArch} className="form-select form-select-sm">
                     <option key="any" value="any">Any</option>
                     {arches.map(
                         (arch, i): string | JSX.Element => arch && (
