@@ -68,42 +68,50 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     return (
         <>
             {marketplace && <VendorSelector checkboxRef={checkboxRef} setCheckbox={setCheckbox} />}
-            <div className="input-group mb-5">
-                <label className="px-2 fw-bold" htmlFor="os">Operating System</label>
-                <select id="os-filter" onChange={(e) => setOS(e.target.value)} defaultValue={defaultOS} className="form-select form-select-sm">
-                    <option key="any" value="any">Any</option>
-                    {oses.map(
-                        (os, i): string | JSX.Element => os && (
-                            <option key={os.toLowerCase()} value={os.toLowerCase()}>{capitalize(os)}</option>
-                        )
-                    )}
-                </select>
-                <label className="px-2 fw-bold" htmlFor="arch">Architecture</label>
-                <select id="arch-filter" onChange={(e) => setArch(e.target.value)} defaultValue={defaultArch} className="form-select form-select-sm">
-                    <option key="any" value="any">Any</option>
-                    {arches.map(
-                        (arch, i): string | JSX.Element => arch && (
-                            <option key={arch.toLowerCase()} value={arch.toLowerCase()}>{arch}</option>
-                        )
-                    )}
-                </select>
-                <label className="px-2 fw-bold" htmlFor="package-type">Package Type</label>
-                <select id="package-type-filter" onChange={(e) => setPackageType(e.target.value)} defaultValue={defaultPackageType} className="form-select form-select-sm">
-                    <option key="any" value="any">Any</option>
-                    {packageTypes.map(
-                        (packageType, i): string | JSX.Element => packageType && (
-                            <option key={packageType.toLowerCase()} value={packageType.toLowerCase()}>{packageType}</option>
-                        )
-                    )}
-                </select>
-                <label className="px-2 fw-bold" htmlFor="version">Version</label>
-                <select id="version-filter" onChange={(e) => setVersion(e.target.value)} defaultValue={defaultVersion} className="form-select form-select-sm">
-                    {versions.map(
-                        (version, i): string | JSX.Element => version && (
-                            <option key={version} value={version}>{version}</option>
-                        )
-                    )}
-                </select>
+            <div className="input-group mb-5 row g-2">
+                <div className="input-group-prepend flex-colunm col-12 col-md-3">
+                    <label className="px-2 fw-bold" htmlFor="os">Operating System</label>
+                    <select id="os-filter" onChange={(e) => setOS(e.target.value)} defaultValue={defaultOS} className="form-select form-select-sm">
+                        <option key="any" value="any">Any</option>
+                        {oses.map(
+                            (os, i): string | JSX.Element => os && (
+                                <option key={os.toLowerCase()} value={os.toLowerCase()}>{capitalize(os)}</option>
+                            )
+                        )}
+                    </select>
+                </div>
+                <div className="input-group-prepend flex-colunm col-12 col-md-3">
+                    <label className="px-2 fw-bold" htmlFor="arch">Architecture</label>
+                    <select id="arch-filter" onChange={(e) => setArch(e.target.value)} defaultValue={defaultArch} className="form-select form-select-sm">
+                        <option key="any" value="any">Any</option>
+                        {arches.map(
+                            (arch, i): string | JSX.Element => arch && (
+                                <option key={arch.toLowerCase()} value={arch.toLowerCase()}>{arch}</option>
+                            )
+                        )}
+                    </select>
+                </div>
+                <div className="input-group-prepend flex-colunm col-12 col-md-3">
+                    <label className="px-2 fw-bold" htmlFor="package-type">Package Type</label>
+                    <select id="package-type-filter" onChange={(e) => setPackageType(e.target.value)} defaultValue={defaultPackageType} className="form-select form-select-sm">
+                        <option key="any" value="any">Any</option>
+                        {packageTypes.map(
+                            (packageType, i): string | JSX.Element => packageType && (
+                                <option key={packageType.toLowerCase()} value={packageType.toLowerCase()}>{packageType}</option>
+                            )
+                        )}
+                    </select>
+                </div>
+                <div className="input-group-prepend flex-colunm col-12 col-md-3">
+                    <label className="px-2 fw-bold" htmlFor="version">Version</label>
+                    <select id="version-filter" onChange={(e) => setVersion(e.target.value)} defaultValue={defaultVersion} className="form-select form-select-sm">
+                        {versions.map(
+                            (version, i): string | JSX.Element => version && (
+                                <option key={version} value={version}>{version}</option>
+                            )
+                        )}
+                    </select>
+                </div>
             </div>
             <Table results={releases}/>
         </>
