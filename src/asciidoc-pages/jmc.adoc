@@ -1,92 +1,109 @@
 = Eclipse Mission Control
 :page-authors: reinhapa, thegreystone, gdams, karianna, jiekang, hendrikebbers, ggam
+:stable: 8.2.0
+:snapshot: 8.3.0
 
-Eclipse Mission Control is a low-overhead profiling and diagostics tools
+Eclipse Mission Control is a low-overhead profiling and diagnostics tools
 suite for the JVM.
 
-For a Eclipse Mission Control introduction, have a look at
+For an Eclipse Mission Control introduction, have a look at
 https://github.com/thegreystone/jmc-tutorial[Marcus Hirt’s tutorial].
 
-== Final Eclipse Mission Control 8.1.1 (latest stable)
+== Final Eclipse Mission Control {stable} (latest stable)
 
-[width="100%",cols="15%,25%,70%",options="header",]
+[width="100%",cols="15%,25%,70%",options="header"]
 |=======================================================================
 |System |Version | Download
-|Windows |8.1.1
-|https://github.com/adoptium/jmc-overrides/releases/download/8.1.1/org.openjdk.jmc-8.1.1-win32.win32.x86_64.zip[org.openjdk.jmc-8.1.1-win32.win32.x86_64.zip]
+|Windows |{stable}
+|https://github.com/adoptium/jmc-build/releases/download/{stable}/org.openjdk.jmc-{stable}-win32.win32.x86_64.zip[org.openjdk.jmc-{stable}-win32.win32.x86_64.zip]
 
-|macOS |8.1.1
-|https://github.com/adoptium/jmc-overrides/releases/download/8.1.1/org.openjdk.jmc-8.1.1-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-8.1.1-macosx.cocoa.x86_64.tar.gz]
+|macOS |{stable}
+|https://github.com/adoptium/jmc-build/releases/download/{stable}/org.openjdk.jmc-{stable}-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-{stable}-macosx.cocoa.x86_64.tar.gz]
 
-|Linux |8.1.1
-|https://github.com/adoptium/jmc-overrides/releases/download/8.1.1/org.openjdk.jmc-8.1.1-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-8.1.1-linux.gtk.x86_64.tar.gz]
+|Linux |{stable}
+|https://github.com/adoptium/jmc-build/releases/download/{stable}/org.openjdk.jmc-{stable}-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-{stable}-linux.gtk.x86_64.tar.gz]
 |=======================================================================
 
-== Preview Eclipse Mission Control 8.2.0 (early access)
+== Preview Eclipse Mission Control {snapshot} (early access)
 
-[width="100%",cols="15%,25%,70%",options="header",]
+[width="100%",cols="15%,25%,70%",options="header"]
 |=======================================================================
 |System |Version |Download
-|Windows |8.2.0-SNAPSHOT
-|https://github.com/adoptium/jmc-overrides/releases/download/8.2.0-SNAPSHOT/org.openjdk.jmc-8.2.0-SNAPSHOT-win32.win32.x86_64.zip[org.openjdk.jmc-8.2.0-SNAPSHOT-win32.win32.x86_64.zip]
+|Windows |{snapshot}-SNAPSHOT
+|https://github.com/adoptium/jmc-build/releases/download/{snapshot}-SNAPSHOT/org.openjdk.jmc-{snapshot}-SNAPSHOT-win32.win32.x86_64.zip[org.openjdk.jmc-{snapshot}-SNAPSHOT-win32.win32.x86_64.zip]
 
-|macOS |8.2.0-SNAPSHOT
-|https://github.com/adoptium/jmc-overrides/releases/download/8.2.0-SNAPSHOT/org.openjdk.jmc-8.2.0-SNAPSHOT-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-8.2.0-SNAPSHOT-macosx.cocoa.x86_64.tar.gz]
+|macOS |{snapshot}-SNAPSHOT
+|https://github.com/adoptium/jmc-build/releases/download/{snapshot}-SNAPSHOT/org.openjdk.jmc-{snapshot}-SNAPSHOT-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-{snapshot}-SNAPSHOT-macosx.cocoa.x86_64.tar.gz]
 
-|Linux |8.2.0-SNAPSHOT
-|https://github.com/adoptium/jmc-overrides/releases/download/8.2.0-SNAPSHOT/org.openjdk.jmc-8.2.0-SNAPSHOT-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-8.2.0-SNAPSHOT-linux.gtk.x86_64.tar.gz]
+|Linux |{snapshot}-SNAPSHOT
+|https://github.com/adoptium/jmc-build/releases/download/{snapshot}-SNAPSHOT/org.openjdk.jmc-{snapshot}-SNAPSHOT-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-{snapshot}-SNAPSHOT-linux.gtk.x86_64.tar.gz]
 |=======================================================================
 
 == Note (MacOS X)
 
 Please unpack the archive using:
 
-[source,bash]
+[source,bash,subs="attributes"]
 ----
-cat org.openjdk.jmc-8.1.1-macosx.cocoa.x86_64.tar.gz | tar xv -
+cat org.openjdk.jmc-{stable}-macosx.cocoa.x86_64.tar.gz | tar xv -
 ----
 
 We also provide an Eclipse update site archive for installing JMC into
 the Eclipse IDE:
 
-[width="100%",cols="30%,70%",options="header",]
+[width="100%",cols="30%,70%",options="header"]
 |=======================================================================
 |Version |Download
-|8.1.1
-|https://github.com/adoptium/jmc-overrides/releases/download/8.1.1/org.openjdk.jmc.updatesite.ide-8.1.1.zip[org.openjdk.jmc.updatesite.ide-8.1.1.zip]
+|{stable}
+|https://github.com/adoptium/jmc-build/releases/download/{stable}/org.openjdk.jmc.updatesite.ide-{stable}.zip[org.openjdk.jmc.updatesite.ide-{stable}.zip]
 
-|8.2.0-SNAPSHOT
-|https://github.com/adoptium/jmc-overrides/releases/download/8.2.0-SNAPSHOT/org.openjdk.jmc.updatesite.ide-8.2.0-SNAPSHOT.zip[org.openjdk.jmc.updatesite.ide-8.2.0-SNAPSHOT.zip]
+|{snapshot}-SNAPSHOT
+|https://github.com/adoptium/jmc-build/releases/download/{snapshot}-SNAPSHOT/org.openjdk.jmc.updatesite.ide-{snapshot}-SNAPSHOT.zip[org.openjdk.jmc.updatesite.ide-{snapshot}-SNAPSHOT.zip]
 |=======================================================================
 
 == Older Releases
 
+=== Final Eclipse Mission Control 8.1.1
+
+[cols="20%,20%,70%",options="header"]
+|=======================================================================
+|System |Version |Download
+|Windows |8.1.1
+|https://github.com/adoptium/jmc-build/releases/download/8.1.1/org.openjdk.jmc-8.1.1-win32.win32.x86_64.zip[org.openjdk.jmc-8.1.1-win32.win32.x86_64.zip]
+
+|macOS |8.1.1
+|https://github.com/adoptium/jmc-build/releases/download/8.1.1/org.openjdk.jmc-8.1.1-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-8.1.1-macosx.cocoa.x86_64.tar.gz]
+
+|Linux |8.1.1
+|https://github.com/adoptium/jmc-build/releases/download/8.1.1/org.openjdk.jmc-8.1.1-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-8.1.1-linux.gtk.x86_64.tar.gz]
+|=======================================================================
+
 === Final Eclipse Mission Control 8.1.0
 
-[cols="20%,20%,70%",options="header",]
+[cols="20%,20%,70%",options="header"]
 |=======================================================================
 |System |Version |Download
 |Windows |8.1.0
-|https://github.com/adoptium/jmc-overrides/releases/download/8.1.0/org.openjdk.jmc-8.1.0-win32.win32.x86_64.zip[org.openjdk.jmc-8.1.0-win32.win32.x86_64.zip]
+|https://github.com/adoptium/jmc-build/releases/download/8.1.0/org.openjdk.jmc-8.1.0-win32.win32.x86_64.zip[org.openjdk.jmc-8.1.0-win32.win32.x86_64.zip]
 
 |macOS |8.1.0
-|https://github.com/adoptium/jmc-overrides/releases/download/8.1.0/org.openjdk.jmc-8.1.0-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-8.1.0-macosx.cocoa.x86_64.tar.gz]
+|https://github.com/adoptium/jmc-build/releases/download/8.1.0/org.openjdk.jmc-8.1.0-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-8.1.0-macosx.cocoa.x86_64.tar.gz]
 
 |Linux |8.1.0
-|https://github.com/adoptium/jmc-overrides/releases/download/8.1.0/org.openjdk.jmc-8.1.0-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-8.1.0-linux.gtk.x86_64.tar.gz]
+|https://github.com/adoptium/jmc-build/releases/download/8.1.0/org.openjdk.jmc-8.1.0-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-8.1.0-linux.gtk.x86_64.tar.gz]
 |=======================================================================
 
 === Final Eclipse Mission Control 8.0.0
 
-[cols="20%,20%,70%",options="header",]
+[cols="20%,20%,70%",options="header"]
 |=======================================================================
 |System |Version |Download
 |Windows |8.0.0
-|https://github.com/adoptium/jmc-overrides/releases/download/8.0.0/org.openjdk.jmc-8.0.0-win32.win32.x86_64.zip[org.openjdk.jmc-8.0.0-win32.win32.x86_64.zip]
+|https://github.com/adoptium/jmc-build/releases/download/8.0.0/org.openjdk.jmc-8.0.0-win32.win32.x86_64.zip[org.openjdk.jmc-8.0.0-win32.win32.x86_64.zip]
 
 |macOS |8.0.0
-|https://github.com/adoptium/jmc-overrides/releases/download/8.0.0/org.openjdk.jmc-8.0.0-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-8.0.0-macosx.cocoa.x86_64.tar.gz]
+|https://github.com/adoptium/jmc-build/releases/download/8.0.0/org.openjdk.jmc-8.0.0-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-8.0.0-macosx.cocoa.x86_64.tar.gz]
 
 |Linux |8.0.0
-|https://github.com/adoptium/jmc-overrides/releases/download/8.0.0/org.openjdk.jmc-8.0.0-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-8.0.0-linux.gtk.x86_64.tar.gz]
+|https://github.com/adoptium/jmc-build/releases/download/8.0.0/org.openjdk.jmc-8.0.0-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-8.0.0-linux.gtk.x86_64.tar.gz]
 |=======================================================================
