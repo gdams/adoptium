@@ -28,14 +28,14 @@ Allerdings sind jetzt link:/members[mehr größere Unternehmen] an der Arbeitsgr
 
 Aus folgenden zwei Gründen, erstens: Da noch immer Benutzer in der Umstellungsphase sind, haben wir die alte Seite so belassen, wie sie war, mit dem gleichen Layout und Buttons.
 Über die Links auf der alten Website erhalten Sie die neuesten Temurin builds. Allerdings sollte man sich nicht darauf verlassen sondern lieber auf die Adoptium-API und -Webseite
-umsteigen um Temurin Binaries herunterzuladen. Es gibt einige Varianten, welche noch nicht auf der Adoptium-Webseite verfügbar sind. Diese lassen sich jedoch über link:#will-the-migration-break-my-api-links[weiterhin] über die alte Website beziehen,
+umsteigen um Temurin Binaries herunterzuladen. Es gibt einige Varianten, welche noch nicht auf der Adoptium-Webseite verfügbar sind. Diese lassen sich jedoch link:#will-the-migration-break-my-api-links[weiterhin] über die alte Website beziehen,
 weshalb wir diese nicht entfernen, da dieses dazu führen würde, dass einige Funktionen ohne Vorwarnung verschwinden würden.
 Dieses ist nicht optimal und führt zu einer gewissen SEO-Verwirrung, aber wir denken, dass es im MOment die richtige Option ist.
 In Zukunft wird die Adoptium-Webseite mehr als nur Temurin anbieten, weswegen eine reine Weiterleitung zwischen den Domains nicht angemessen wäre.
 
 Zweitens: Wie bereits im vorigen Absatz erwähnt, sind einige Dinge nicht auf Adoptium.net verfügbar und aus diesem Grund wird die alte Webseite ohne explizite Weiterleitung
 beibehalten, um diese Dinge weiterhin zur Verfügung zu stellen. Dazu gehören Sachen wie https://adoptopenjdk.net/upstream.html[Upstream builds] und https://adoptopenjdk.net/icedtea-web.html[IcedTea-WEB].
-Würden diese Sachen einfach verschwinden, so wäre das für unsere Kunden nicht beste Option und wir würden eine Menge Beschwerden erwarten.
+Würden diese Sachen einfach verschwinden, so wäre das für unsere Kunden nicht die beste Option und wir würden eine Menge Beschwerden erwarten.
 
 == Was bedeutet der Name "Eclipse Temurin"?
 
@@ -46,7 +46,7 @@ Wir verstehen, dass die Aufteilung des Namens in Adoptium/Temurin verwirrender i
 z.B. Amazon mit Corretto, Azul mit Zulu und andere. Das "Adoptium"-Projekt und die Arbeitsgruppe werden sich mit mehr als nur Temurin befassen weswegen es wichtig ist, diese
 Unterscheidung beizubehalten.
 
-== Wo sind ei OpenJ9 builds?
+== Wo sind die OpenJ9 builds?
 
 Der Übergang zu Adoptium bedeutet leider, dass wir nicht mehr in der Lage sind die Builds von Eclipse OpenJ9 anzubieten.
 Dieses hat nun IBM übernommen und dort sind sie nun verfügbar als "https://developer.ibm.com/languages/java/semeru-runtimes/[IBM Semeru]".
