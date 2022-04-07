@@ -1,8 +1,6 @@
 import moment from 'moment';
 import { fetchExtension } from '../util/fetchExtension';
 
-import { fetchExtension } from '../util/fetchExtension';
-
 const baseUrl = 'https://api.adoptium.net/v3';
 
 export async function loadLatestAssets(version: number, os: string, architecture: string, packageType: string) {

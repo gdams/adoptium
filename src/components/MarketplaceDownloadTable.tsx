@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby";
 import { FaDownload } from 'react-icons/fa';
 import { capitalize } from '../util/capitalize';
 import { getImageForVendor, getVendorForDistribution } from '../hooks'
@@ -43,9 +44,9 @@ const DownloadTable = ({results}) => {
                                     <table className="table parent mb-0 w-auto">
                                         <tbody className="table-light">
                                             {pkg.binary.installer && (
-                                                <BinaryTable checksum={pkg.binary.installer.checksum} link={pkg.binary.installer.link} />
+                                                <BinaryTable checksum={pkg.binary.installer[0].sha265sum} link={pkg.binary.installer[0].link} />
                                             )}
-                                            <BinaryTable checksum={pkg.binary.package.checksum} link={pkg.binary.package.link} />
+                                            <BinaryTable checksum={pkg.binary.package.sha265sum} link={pkg.binary.package.link} />
                                         </tbody>
                                     </table>
                                 </td>
@@ -74,9 +75,9 @@ const BinaryTable = ({ checksum, link }) => {
                 </tbody></table>
             </td>
             <td className="align-middle">
-                <a href={`/download?link=${link}`} className="btn btn-primary" style={{width: "6em"}}>
+                <Link to="/download" state={{ link: link }} className="btn btn-primary" style={{width: "6em"}}>
                     <FaDownload /> {fetchExtension(link)}
-                </a>
+                </Link>
             </td>
         </tr>
     )
