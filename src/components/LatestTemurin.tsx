@@ -1,5 +1,5 @@
 import React, { MutableRefObject, useRef } from 'react';
-import { Link } from "gatsby";
+import { Link } from 'gatsby-plugin-react-i18next';
 
 import { FaArrowCircleRight, FaArchive, FaDownload } from 'react-icons/fa';
 
