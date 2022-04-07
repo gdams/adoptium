@@ -7,7 +7,6 @@ import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
 const DownloadPage = ({ location }) => {
-  // const [link] = useQueryParam('link', StringParam)
   const link = location.state.link
   let vendor
   if (link && link.includes('github.com/adoptium')) {
