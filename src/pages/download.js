@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
-import { useQueryParam, StringParam } from 'use-query-params'
 import { BiDonateHeart } from 'react-icons/bi'
 
 import Layout from '../components/Layout'
