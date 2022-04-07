@@ -46,7 +46,7 @@ Wir verstehen, dass die Aufteilung des Namens in Adoptium/Temurin verwirrender i
 z.B. Amazon mit Corretto, Azul mit Zulu und andere. Das "Adoptium"-Projekt und die Arbeitsgruppe werden sich mit mehr als nur Temurin befassen weswegen es wichtig ist, diese
 Unterscheidung beizubehalten.
 
-== Wo sind ei OpenJ9 builds?
+== Wo sind die OpenJ9 builds?
 
 Der Übergang zu Adoptium bedeutet leider, dass wir nicht mehr in der Lage sind die Builds von Eclipse OpenJ9 anzubieten.
 Dieses hat nun IBM übernommen und dort sind sie nun verfügbar als "https://developer.ibm.com/languages/java/semeru-runtimes/[IBM Semeru]".
