@@ -3,8 +3,8 @@ import React from 'react';
 const Banner = () => {
   return (
     <div className="alert text-white alert-dismissible fade show mb-0 text-center" style={{ backgroundColor: '#ff1464' }} role="alert">
-        <strong className='p-1'>April 7, 2022:</strong>
-            Eclipse Temurin binaries for JDK18 GA (jdk-18_36) for 10 platforms are available 
+        <strong className='p-1'>7th April 2022:</strong>
+            Eclipse Temurin binaries for JDK18 GA for 10 platforms are available 
             via the 
             <a href="https://adoptium.net/temurin/releases"
             className="alert-link p-1 text-white"
