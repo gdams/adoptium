@@ -29,7 +29,6 @@
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sass": "^5.11.1",
     "gatsby-plugin-sharp": "^4.11.1",
-    "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-remark-autolink-headers": "^5.11.1",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-source-filesystem": "^4.11.1",
@@ -54,8 +53,7 @@
     "react-tabs": "^4.2.0",
     "react-use-flexsearch": "^0.1.1",
     "react-world-flags": "^1.4.0",
-    "sass": "1.49.11",
-    "use-query-params": "^1.2.3"
+    "sass": "1.49.11"
   },
   "devDependencies": {
     "prettier": "2.6.2"
