@@ -37,7 +37,7 @@ const DownloadPage = () => (
           </div>
         </div>
       </div>
-      <DownloadDropdowns updaterAction={getAllPkgsForVersion} marketplace={true} Table={DownloadTable} />
+      <DownloadDropdowns updaterAction={getAllPkgsForVersion} marketplace Table={DownloadTable} />
       <ChecksumModal />
     </section>
   </Layout>
