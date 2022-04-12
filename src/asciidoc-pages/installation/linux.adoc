@@ -1,5 +1,5 @@
 = Linux (RPM/DEB) installer packages
-:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX
+:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie
 :toc:
 :icons: font
 
