@@ -36,7 +36,7 @@
     "gatsby-transformer-remark": "^5.11.1",
     "gatsby-transformer-sharp": "^4.11.0",
     "highlight.js": "^11.4.0",
-    "i18next": "^21.6.15",
+    "i18next": "^21.6.16",
     "moment": "^2.29.2",
     "office-ui-fabric-react": "^7.184.0",
     "prop-types": "^15.8.1",
