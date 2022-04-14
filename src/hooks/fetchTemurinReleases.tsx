@@ -58,7 +58,7 @@ function renderReleases(pkgs) {
                 architecture: releaseAsset.binary.architecture,
                 release_name: releaseAsset.release_name,
                 release_link: releaseAsset.release_link,
-                release_date: moment(releaseAsset.timestamp).format('YYYY-MM-DD'),
+                release_date: moment(releaseAsset.timestamp).format('D MMMM YYYY'),
                 release_datetime: moment(releaseAsset.timestamp).format('YYYY-MM-DD hh:mm:ss'),
                 binaries: []
             };
