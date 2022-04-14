@@ -27,6 +27,7 @@ const TemurinDownloadTable = ({results}) => {
                                     <span className="text-white d-block m-2">
                                         Temurin <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={25} style={{ color: '#537FB9' }}/>
                                     </span>
+                                    <span className="text-white">{pkg.release_date}</span>
                                 </td>
                                 <td className="align-middle w-20">{capitalize(pkg.os)}</td>
                                 <td className="align-middle w-20">{pkg.architecture}</td>
