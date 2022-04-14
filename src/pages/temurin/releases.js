@@ -33,7 +33,7 @@ const TemurinReleases = () => (
                 <a href="/support">updated and supported</a> by the Adoptium community.
                 <a href="/migration">Migration</a> and <a href="/installation">installation</a> help is
                 available in the <a href="/docs">documentation section</a>.
-                <br>
+                <br/>
                 Use the drop down boxes to filter the list of current releases.
               </p>
             </div>
