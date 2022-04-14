@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
+import { GrCertificate } from 'react-icons/gr';
 import { capitalize } from '../util/capitalize';
 
 const TemurinDownloadTable = ({results}) => {
@@ -27,6 +28,7 @@ const TemurinDownloadTable = ({results}) => {
                                     <span className="text-white">{pkg.release_name}</span>
                                     <span className="text-white d-block m-2">
                                         Temurin <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={25} style={{ color: '#537FB9' }}/>
+                                        <GrCertificate data-toggle="tooltip" data-placement="bottom" title="This build is AQAVit Verified" size={25} style={{ color: '#537FB9' }}/>
                                     </span>
                                 </td>
                                 <td className="align-middle w-20">{capitalize(pkg.os)}</td>
