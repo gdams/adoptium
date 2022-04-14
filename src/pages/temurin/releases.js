@@ -46,7 +46,7 @@ const TemurinReleases = () => (
       <DownloadDropdowns updaterAction={loadLatestAssets} marketplace={false} Table={DownloadTable} />
       <ChecksumModal />
       <div className='row align-items-center pt-3'>
-        <p className='text-start'>
+        <p className='text-center'>
           Previous releases are available in the Temurin archive.
         </p>
         <div className='btn-group-vertical col-6 mx-auto'>
