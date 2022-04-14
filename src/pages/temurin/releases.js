@@ -29,7 +29,7 @@ const TemurinReleases = () => (
               <p className='text-start'>
                 Eclipse Temurin is the open source Java SE build based upon OpenJDK.
                 Temurin is available for a <a href='/supported-platforms'>wide range of platforms</a> and Java SE versions.
-                The latest releases recommended for use in production are listed below, and are regularly <a href='/support'>updated and supported</a> by the Adoptium community. <a href='/migration'>Migration</a> and <a href='/installation'>installation</a> help is available in the <a href='/docs'>documentation section</a>.
+                The latest releases recommended for use in production are listed below, and are regularly <a href='/support'>updated and supported</a> by the Adoptium community. Migration help, container images and package installation guides are available in the <a href='/docs'>documentation section</a>.
               </p>
             </div>
           </div>
