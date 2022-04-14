@@ -31,7 +31,7 @@ const TemurinReleases = () => (
                 <a href="./supported-platforms">wide range of platforms</a> and Java SE versions. The latest
                 releases recommended for use in production are listed below, and are regularly
                 <a href="./support">updated and supported</a> by the Adoptium community.
-                <a href="./migration">Migration and <a href=""./installation">installation</a> help is
+                <a href="./migration">Migration and <a href="./installation">installation</a> help is
                 available in the <a href="./docs">documentation section</a>.
                 <br/>
                 Use the drop down boxes to filter the list of current releases.
