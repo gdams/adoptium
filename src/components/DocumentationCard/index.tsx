@@ -9,6 +9,15 @@ const DocumentationCard = ({
   title,
   Icon
 }) => {
+  if (!title) {
+    return null;
+  }
+  if (!Icon) {
+    return null;
+  }
+  if (!links || typeof links !== 'object') {
+    return null;
+  }
   return (
   <div className='col-12 col-lg-4 py-3'>
     <div className='card shadow-sm'>
