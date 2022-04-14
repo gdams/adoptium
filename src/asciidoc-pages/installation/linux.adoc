@@ -1,5 +1,5 @@
 = Linux (RPM/DEB) installer packages
-:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX
+:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie
 :toc:
 :icons: font
 
@@ -54,19 +54,17 @@ sudo apt-get install temurin-17-jdk
 == CentOS/RHEL/Fedora Instructions
 
 . Add the RPM repo to `/etc/yum.repos.d/adoptium.repo` making sure to
-change the CentOS version if you are not using CentOS 8, and if you are
-on a 32-bit ARM system, replace `$(uname -m)` with `armv7hl`. RPMs are
+change the distribution name if you are not using CentOS. RPMs are
 also available for RHEL and Fedora. To check the full list of versions
 supported take a look at the list in the tree at
-https://packages.adoptium.net/ui/repos/tree/General after clicking the
-"Artifacts" link on the left.
+https://packages.adoptium.net/ui/native/rpm/.
 +
 [source, bash]
 ----
 cat <<EOF > /etc/yum.repos.d/adoptium.repo
 [Adoptium]
 name=Adoptium
-baseurl=https://packages.adoptium.net/artifactory/rpm/centos/8/$(uname -m)
+baseurl=https://packages.adoptium.net/artifactory/rpm/centos/\$releasever/\$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
@@ -85,7 +83,7 @@ yum install temurin-17-jdk
 
 . Import the RPM repo making sure to change the openSUSE version if you
 are not using OpenSUSE 15.2. RPM’s are also available for SLES 12 and 15. To check the full list of versions supported take a look at
-https://packages.adoptium.net/ui/repos/tree/General/rpm.
+https://packages.adoptium.net/ui/native/rpm/.
 +
 [source, bash]
 ----

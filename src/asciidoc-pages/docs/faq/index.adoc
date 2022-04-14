@@ -17,7 +17,7 @@ and jdk-17.0.2+8 are now available on this site.
 
 Short answer: The project got so big that we chose to
 https://projects.eclipse.org/projects/adoptium[move under the Eclipse Foundation] as
-https://blog.adoptopenjdk.net/2020/06/adoptopenjdk-to-join-the-eclipse-foundation/[announced last year] to provide us some additional stability for the future!
+https://blog.adoptopenjdk.net/2020/06/adoptopenjdk-to-join-the-eclipse-foundation/[announced in June 2020] to provide us some additional stability for the future!
 
 Longer answer: The builds you know as AdoptOpenJDK are now "Eclipse
 Temurin by Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[release blog post]) Don’t worry though - despite the branding changes it is the
@@ -65,7 +65,7 @@ over and they are now available as
 "https://developer.ibm.com/languages/java/semeru-runtimes/[IBM Semeru]".
 There is no need to be concerned about the change - it is still free.
 
-== Where are the docker images?
+== Where are the Docker images?
 
 Due to the limited amount of people we have working on the project,
 maintaining the wide variety of docker images that we provided from

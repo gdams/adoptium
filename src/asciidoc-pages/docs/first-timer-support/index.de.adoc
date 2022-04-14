@@ -1,5 +1,5 @@
 = First Timers Support (DRAFT)
-:page-authors: gdams, HanSolo
+:page-authors: gdams, HanSolo, hendrikebbers
 :description: Support with first time contributions
 :keywords: adoptium documentation contribute first-time
 :lang: en 
@@ -11,7 +11,7 @@ Deshalb ist es für uns wichtig, Menschen, die mit OpenSource arbeiten wollen, z
 
 [NOTE]
 ====
-Diese Dokumentation is noch in Arbeit und einige Punkte, welche erwähnt werden, sind Ideen für die Zukunft und sind noch nicht festgelegt.
+Diese Dokumentation is noch in Arbeit und einige Punkte, welche erwähnt werden, sind Ideen für die Zukunft und heute noch nicht final definiert.
 ====
 
 Adoptium bietet mehrere Issues an, welche als **`good first issue`** markiert sind.

@@ -30,7 +30,7 @@ const TemurinReleases = () => (
             </div>
             <div className='btn-group'>
               <Link to='/temurin/releases' className='btn btn-primary m-3'>
-                Latest release <FaArrowCircleRight />
+                Latest releases <FaArrowCircleRight />
               </Link>
               <Link to='/temurin/archive' className='btn btn-secondary m-3'>
                 Release archive <FaArrowCircleRight />

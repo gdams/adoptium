@@ -1,13 +1,15 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
-import { useQueryParam, StringParam } from 'use-query-params'
 import { BiDonateHeart } from 'react-icons/bi'
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
-const DownloadPage = () => {
-  const [link] = useQueryParam('link', StringParam)
+const DownloadPage = ({ location }) => {
+  let link
+  if (location.state && location.state.link) {
+    link = location.state.link
+  }
   let vendor
   if (link && link.includes('github.com/adoptium')) {
     vendor = 'Temurin'

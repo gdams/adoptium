@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../util/capitalize';
@@ -92,9 +93,9 @@ const BinaryTable = ({ checksum, link, extension, type, size }) => {
                 </tbody></table>
             </td>
             <td className="align-middle">
-                <a href={`/download?link=${link}`} className="btn btn-primary" style={{width: "6em"}}>
+                <Link to="/download" state={{ link: link }} className="btn btn-primary" style={{width: "6em"}}>
                     <FaDownload /> {extension}
-                </a>
+                </Link>
             </td>
         </tr>
     )

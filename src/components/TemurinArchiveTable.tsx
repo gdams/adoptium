@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from 'gatsby-plugin-react-i18next';
 import moment from 'moment';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
@@ -51,9 +52,9 @@ const TemurinArchiveTable = ({results}) => {
                                                                                 </td>
                                                                                 <td>
                                                                                     {asset.installer_link ? (
-                                                                                        <a href={`/download?link=${asset.installer_link}`} className="btn btn-primary" style={{width: "9em"}}>
+                                                                                        <Link to="/download" state={{ link: asset.installer_link }} className="btn btn-primary" style={{width: "9em"}}>
                                                                                             {asset.type}
-                                                                                        </a>
+                                                                                        </Link>
                                                                                     ) :
                                                                                         <a className="btn" style={{width: "9em", backgroundColor: "#D7DEE9"}}>
                                                                                             Not Available
@@ -61,9 +62,9 @@ const TemurinArchiveTable = ({results}) => {
                                                                                     }
                                                                                 </td>
                                                                                 <td>
-                                                                                    <a href={`/download?link=${asset.link}`} className="btn btn-secondary" style={{width: "9em"}}>
+                                                                                    <Link to="/download" state={{ link: asset.link }} className="btn btn-secondary" style={{width: "9em"}}>
                                                                                         {asset.type} {asset.size} MB
-                                                                                    </a>
+                                                                                    </Link>
                                                                                 </td>
                                                                                 <td>
                                                                                     <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}>Checksum</a>

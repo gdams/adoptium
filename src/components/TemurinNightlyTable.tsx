@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby";
 import moment from 'moment';
 import { capitalize } from '../util/capitalize';
 
@@ -33,9 +34,9 @@ const TemurinNightlyTable = ({results}) => {
                                                             <td>{capitalize(key.split("-")[0])} {key.split("-")[1]}</td>
                                                             <td>{asset.type}</td>
                                                             <td>{moment(release.timestamp).format('D MMMM YYYY')}</td>
-                                                            <td><a href={`/download?link=${asset.link}`}>{`${asset.extension} (${asset.size} MB)`}</a></td>
+                                                            <td><Link to="/download" state={{ link: asset.link }}>{`${asset.extension} (${asset.size} MB)`}</Link></td>
                                                             {asset.installer_link ? (
-                                                                <td><a href={`/download?link=${asset.installer_link}`}>{asset.installer_extension}</a></td>
+                                                                <td><Link to="/download" state={{ link: asset.installer_link }}>{asset.installer_extension}</Link></td>
                                                             ) :
                                                                 <td>Not Available</td>
                                                             }
