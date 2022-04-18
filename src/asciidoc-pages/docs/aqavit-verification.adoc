@@ -17,7 +17,7 @@ image::gridview.png["grid view",350,182]
 For the current release of AQAvit, the required set of top-level test targets to run are [sanity.functional, extended.functional, special.functional, sanity.openjdk, extended.openjdk, sanity.system, extended.system, sanity.perf, extended.perf].  In subsequent AQAvit releases, targets will be added to raise quality bar even higher.
 
 == Details Regarding Test Execution
-AQAvit can be run in various CI/CD environments as well as directly via command-line in a container or on a test machine that has the link:/https://github.com/adoptium/aqa-tests/blob/master/doc/Prerequisites.md[test prerequisites^] installed.  The basic steps are the same in any environment.  
+AQAvit can be run in various CI/CD environments as well as directly via command-line in a container or on a test machine that has the https://github.com/adoptium/aqa-tests/blob/master/doc/Prerequisites.md[test prerequisites^] installed.  The basic steps are the same in any environment.  
 
 .Run AQAvit via Command-line
 [%collapsible]
