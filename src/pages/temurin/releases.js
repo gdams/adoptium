@@ -37,7 +37,7 @@ const TemurinReleases = () => (
       </div>
       <div className='row align-items-center pt-3'>
         <p className='text-center'>
-          Use the drop down boxes to filter the list of current releases.
+          Use the drop-down boxes below to filter the list of current releases.
         </p>
       </div>
       <DownloadDropdowns updaterAction={loadLatestAssets} marketplace={false} Table={DownloadTable} />
