@@ -32,7 +32,7 @@ const TemurinDownloadTable = ({results}) => {
                                           <GrCertificate
                                             data-toggle="tooltip"
                                             data-placement="bottom"
-                                            title="This build is AQAVit Verified"
+                                            title="This build is AQAvit Verified"
                                             size={25}
                                             style={{ color: '#cc1452' }}/>
                                         </a>
