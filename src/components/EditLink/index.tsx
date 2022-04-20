@@ -7,6 +7,10 @@ type Props = {
 
 const EditLink = ({ relativePath }: Props) => {
 
+  if (!relativePath) {
+    return null;
+  }
+
   const href = `https://github.com/adoptium/website-v2/edit/main/src/asciidoc-pages/${relativePath}`;
 
   return (

@@ -1,0 +1,1027 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for InstallTabs component renders correctly 1`] = `
+<div>
+  <div
+    class="install"
+  >
+    <div
+      class="react-tabs"
+      data-rttabs="true"
+    >
+      <div
+        class="install__header"
+      >
+        <div
+          class="install__header-circles"
+        >
+          <div
+            class="install__header-grey-circle red"
+          />
+          <div
+            class="install__header-grey-circle yellow"
+          />
+          <div
+            class="install__header-grey-circle green"
+          />
+        </div>
+        <div
+          class="install__header-text"
+        >
+          bash
+        </div>
+      </div>
+      <ul
+        class="react-tabs__tab-list"
+        role="tablist"
+      >
+        <li
+          aria-controls="react-tabs-1"
+          aria-disabled="false"
+          aria-selected="true"
+          class="react-tabs__tab react-tabs__tab--selected"
+          data-rttab="true"
+          id="react-tabs-0"
+          role="tab"
+          tabindex="0"
+        >
+          Windows (Winget)
+        </li>
+        <li
+          aria-controls="react-tabs-3"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-2"
+          role="tab"
+        >
+          macOS (Homebrew)
+        </li>
+        <li
+          aria-controls="react-tabs-5"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-4"
+          role="tab"
+        >
+          Linux (RPM/DEB)
+        </li>
+      </ul>
+      <div
+        aria-labelledby="react-tabs-0"
+        class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+        id="react-tabs-1"
+        role="tabpanel"
+      >
+        <div>
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest version
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                winget install 
+              </span>
+              EclipseAdoptium.Temurin.17
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install a different version
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                winget install 
+              </span>
+              EclipseAdoptium.Temurin.11
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Upgrade the Winget package
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                winget upgrade 
+              </span>
+              EclipseAdoptium.Temurin.17
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Uninstall the Winget package
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                winget uninstall 
+              </span>
+              EclipseAdoptium.Temurin.17
+            </code>
+          </pre>
+          <a
+            class="install__docs-button"
+            href="https://docs.microsoft.com/en-us/windows/package-manager/winget/"
+          >
+            Read documentation
+          </a>
+        </div>
+      </div>
+      <div
+        aria-labelledby="react-tabs-2"
+        class="react-tabs__tab-panel"
+        id="react-tabs-3"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-4"
+        class="react-tabs__tab-panel"
+        id="react-tabs-5"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tests for InstallTabs component renders correctly for Linux 1`] = `
+<div>
+  <div
+    class="install"
+  >
+    <div
+      class="react-tabs"
+      data-rttabs="true"
+    >
+      <div
+        class="install__header"
+      >
+        <div
+          class="install__header-circles"
+        >
+          <div
+            class="install__header-grey-circle red"
+          />
+          <div
+            class="install__header-grey-circle yellow"
+          />
+          <div
+            class="install__header-grey-circle green"
+          />
+        </div>
+        <div
+          class="install__header-text"
+        >
+          bash
+        </div>
+      </div>
+      <ul
+        class="react-tabs__tab-list"
+        role="tablist"
+      >
+        <li
+          aria-controls="react-tabs-13"
+          aria-disabled="false"
+          aria-selected="true"
+          class="react-tabs__tab react-tabs__tab--selected"
+          data-rttab="true"
+          id="react-tabs-12"
+          role="tab"
+          tabindex="0"
+        >
+          Linux (RPM/DEB)
+        </li>
+        <li
+          aria-controls="react-tabs-15"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-14"
+          role="tab"
+        >
+          macOS (Homebrew)
+        </li>
+        <li
+          aria-controls="react-tabs-17"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-16"
+          role="tab"
+        >
+          Windows (Winget)
+        </li>
+      </ul>
+      <div
+        aria-labelledby="react-tabs-12"
+        class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+        id="react-tabs-13"
+        role="tabpanel"
+      >
+        <div>
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest LTS version (Debian or Ubuntu)
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                apt-get install 
+              </span>
+              temurin-17-jdk
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest LTS version (CentOS/RHEL/Fedora)
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                yum install 
+              </span>
+              temurin-17-jdk
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest LTS version (openSUSE/SLES)
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                zypper install 
+              </span>
+              temurin-17-jdk
+            </code>
+          </pre>
+          <a
+            class="install__docs-button"
+            href="/installation/linux"
+          >
+            Read documentation
+          </a>
+        </div>
+      </div>
+      <div
+        aria-labelledby="react-tabs-14"
+        class="react-tabs__tab-panel"
+        id="react-tabs-15"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-16"
+        class="react-tabs__tab-panel"
+        id="react-tabs-17"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tests for InstallTabs component renders correctly for Unix 1`] = `
+<div>
+  <div
+    class="install"
+  >
+    <div
+      class="react-tabs"
+      data-rttabs="true"
+    >
+      <div
+        class="install__header"
+      >
+        <div
+          class="install__header-circles"
+        >
+          <div
+            class="install__header-grey-circle red"
+          />
+          <div
+            class="install__header-grey-circle yellow"
+          />
+          <div
+            class="install__header-grey-circle green"
+          />
+        </div>
+        <div
+          class="install__header-text"
+        >
+          bash
+        </div>
+      </div>
+      <ul
+        class="react-tabs__tab-list"
+        role="tablist"
+      >
+        <li
+          aria-controls="react-tabs-19"
+          aria-disabled="false"
+          aria-selected="true"
+          class="react-tabs__tab react-tabs__tab--selected"
+          data-rttab="true"
+          id="react-tabs-18"
+          role="tab"
+          tabindex="0"
+        >
+          Linux (RPM/DEB)
+        </li>
+        <li
+          aria-controls="react-tabs-21"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-20"
+          role="tab"
+        >
+          macOS (Homebrew)
+        </li>
+        <li
+          aria-controls="react-tabs-23"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-22"
+          role="tab"
+        >
+          Windows (Winget)
+        </li>
+      </ul>
+      <div
+        aria-labelledby="react-tabs-18"
+        class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+        id="react-tabs-19"
+        role="tabpanel"
+      >
+        <div>
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest LTS version (Debian or Ubuntu)
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                apt-get install 
+              </span>
+              temurin-17-jdk
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest LTS version (CentOS/RHEL/Fedora)
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                yum install 
+              </span>
+              temurin-17-jdk
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest LTS version (openSUSE/SLES)
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                zypper install 
+              </span>
+              temurin-17-jdk
+            </code>
+          </pre>
+          <a
+            class="install__docs-button"
+            href="/installation/linux"
+          >
+            Read documentation
+          </a>
+        </div>
+      </div>
+      <div
+        aria-labelledby="react-tabs-20"
+        class="react-tabs__tab-panel"
+        id="react-tabs-21"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-22"
+        class="react-tabs__tab-panel"
+        id="react-tabs-23"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tests for InstallTabs component renders correctly for macOS 1`] = `
+<div>
+  <div
+    class="install"
+  >
+    <div
+      class="react-tabs"
+      data-rttabs="true"
+    >
+      <div
+        class="install__header"
+      >
+        <div
+          class="install__header-circles"
+        >
+          <div
+            class="install__header-grey-circle red"
+          />
+          <div
+            class="install__header-grey-circle yellow"
+          />
+          <div
+            class="install__header-grey-circle green"
+          />
+        </div>
+        <div
+          class="install__header-text"
+        >
+          zsh
+        </div>
+      </div>
+      <ul
+        class="react-tabs__tab-list"
+        role="tablist"
+      >
+        <li
+          aria-controls="react-tabs-7"
+          aria-disabled="false"
+          aria-selected="true"
+          class="react-tabs__tab react-tabs__tab--selected"
+          data-rttab="true"
+          id="react-tabs-6"
+          role="tab"
+          tabindex="0"
+        >
+          macOS (Homebrew)
+        </li>
+        <li
+          aria-controls="react-tabs-9"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-8"
+          role="tab"
+        >
+          Windows (Winget)
+        </li>
+        <li
+          aria-controls="react-tabs-11"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-10"
+          role="tab"
+        >
+          Linux (RPM/DEB)
+        </li>
+      </ul>
+      <div
+        aria-labelledby="react-tabs-6"
+        class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+        id="react-tabs-7"
+        role="tabpanel"
+      >
+        <div>
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest LTS version
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                brew install --cask 
+              </span>
+              temurin
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install a specific version
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                brew tap 
+              </span>
+              homebrew/cask-versions
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                brew install --cask 
+              </span>
+              temurin8
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                brew install --cask 
+              </span>
+              temurin11
+            </code>
+          </pre>
+          <br />
+          <br />
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Uninstall a specific version
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                brew uninstall --cask 
+              </span>
+              temurin
+            </code>
+          </pre>
+          <a
+            class="install__docs-button"
+            href="https://docs.brew.sh/Manpage"
+          >
+            Read documentation
+          </a>
+        </div>
+      </div>
+      <div
+        aria-labelledby="react-tabs-8"
+        class="react-tabs__tab-panel"
+        id="react-tabs-9"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-10"
+        class="react-tabs__tab-panel"
+        id="react-tabs-11"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Tests for InstallTabs component renders correctly for mobile 1`] = `<div />`;
+
+exports[`Tests for InstallTabs component renders correctly for other 1`] = `
+<div>
+  <div
+    class="install"
+  >
+    <div
+      class="react-tabs"
+      data-rttabs="true"
+    >
+      <div
+        class="install__header"
+      >
+        <div
+          class="install__header-circles"
+        >
+          <div
+            class="install__header-grey-circle red"
+          />
+          <div
+            class="install__header-grey-circle yellow"
+          />
+          <div
+            class="install__header-grey-circle green"
+          />
+        </div>
+        <div
+          class="install__header-text"
+        >
+          bash
+        </div>
+      </div>
+      <ul
+        class="react-tabs__tab-list"
+        role="tablist"
+      >
+        <li
+          aria-controls="react-tabs-25"
+          aria-disabled="false"
+          aria-selected="true"
+          class="react-tabs__tab react-tabs__tab--selected"
+          data-rttab="true"
+          id="react-tabs-24"
+          role="tab"
+          tabindex="0"
+        >
+          Windows (Winget)
+        </li>
+        <li
+          aria-controls="react-tabs-27"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-26"
+          role="tab"
+        >
+          macOS (Homebrew)
+        </li>
+        <li
+          aria-controls="react-tabs-29"
+          aria-disabled="false"
+          aria-selected="false"
+          class="react-tabs__tab"
+          data-rttab="true"
+          id="react-tabs-28"
+          role="tab"
+        >
+          Linux (RPM/DEB)
+        </li>
+      </ul>
+      <div
+        aria-labelledby="react-tabs-24"
+        class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+        id="react-tabs-25"
+        role="tabpanel"
+      >
+        <div>
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install the latest version
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                winget install 
+              </span>
+              EclipseAdoptium.Temurin.17
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Install a different version
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                winget install 
+              </span>
+              EclipseAdoptium.Temurin.11
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Upgrade the Winget package
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                winget upgrade 
+              </span>
+              EclipseAdoptium.Temurin.17
+            </code>
+          </pre>
+          <br />
+          <pre
+            class="shell-box no-highlight"
+          >
+            <div
+              class="shell-box-top"
+            />
+            <code
+              class="shell-box-code"
+            >
+              <span
+                class="install__text__no-select"
+              >
+                # Uninstall the Winget package
+              </span>
+              <br />
+              <span
+                class="install__text__no-select"
+              >
+                $
+              </span>
+              <span
+                class="install-text-command"
+              >
+                winget uninstall 
+              </span>
+              EclipseAdoptium.Temurin.17
+            </code>
+          </pre>
+          <a
+            class="install__docs-button"
+            href="https://docs.microsoft.com/en-us/windows/package-manager/winget/"
+          >
+            Read documentation
+          </a>
+        </div>
+      </div>
+      <div
+        aria-labelledby="react-tabs-26"
+        class="react-tabs__tab-panel"
+        id="react-tabs-27"
+        role="tabpanel"
+      />
+      <div
+        aria-labelledby="react-tabs-28"
+        class="react-tabs__tab-panel"
+        id="react-tabs-29"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</div>
+`;

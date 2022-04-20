@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DocumentationCard component renders correctly 1`] = `
+<div>
+  <div
+    class="App lngg"
+  >
+    <form
+      class=""
+    >
+      <div
+        class="dropdown"
+      >
+        <button
+          aria-expanded="false"
+          class="text-left text-white dropdown-toggle btn btn-primary"
+          id="dropdown-flags"
+          type="button"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;
