@@ -13,5 +13,3 @@ global.IntersectionObserver = class IntersectionObserver {
     return null;
   }
 };
-
-// window.IntersectionObserver = jest.fn().mockImplementation(intersectionObserverMock);
