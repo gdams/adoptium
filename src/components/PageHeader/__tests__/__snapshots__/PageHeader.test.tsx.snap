@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader component does not render without a subtitle 1`] = `<div />`;
+
+exports[`PageHeader component does not render without a title 1`] = `<div />`;
+
+exports[`PageHeader component should render correctly 1`] = `
+<div>
+  <div
+    class="docs-header p-5 text-center"
+  >
+    <div
+      class="container"
+    >
+      <h1>
+        test-title
+      </h1>
+      <div
+        class="lead"
+      >
+        test-subtitle
+      </div>
+      <div
+        class="main-search-box pt-3 d-block mx-auto"
+      />
+    </div>
+  </div>
+</div>
+`;

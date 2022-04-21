@@ -74,6 +74,7 @@ const Navbar = ({siteTitle}): JSX.Element => {
                 Further Information
               </Link>
               <ul className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                <li><ExactNavLink className="dropdown-item" to="/news">News & Events</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/about">About</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/members">Members</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/sponsors">Sponsors</ExactNavLink></li>
