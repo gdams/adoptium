@@ -19,7 +19,7 @@ export const createRandomContributorApiData = (): ContributorApiResponse => ({
   received_events_url: 'received_events_url_mock',
   type: 'type_mock',
   site_admin: false,
-  contributions: 0,
+  contributions: 3,
 });
 
 export const createRandomContributorViewData = (): Contributor => ({
@@ -28,4 +28,14 @@ export const createRandomContributorViewData = (): Contributor => ({
   login: 'login_mock',
   contributionsCount: 0,
   commitsListUri: 'commitsListUri_mock',
+  repo: 'reponame_mock',
+});
+
+export const createRandomContributorViewData1Contribution = (): Contributor => ({
+  avatarUri: 'avatarUri_mock',
+  profileUri: 'profileUri_mock',
+  login: 'login_mock',
+  contributionsCount: 1,
+  commitsListUri: 'commitsListUri_mock',
+  repo: 'reponame_mock',
 });

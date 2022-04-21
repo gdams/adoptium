@@ -40,7 +40,9 @@ const RandomContributor = (): JSX.Element => {
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <span>{contributor.contributionsCount} contributions</span>
+              <span>{contributor.contributionsCount}
+                {contributor.contributionsCount === 1 ? ' contribution' : ' contributions'}
+              </span>
             </a>{' '}
             to{' '}
             <a

@@ -1,5 +1,66 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`RandomContributor component 1 contribution should render as contribution (not contributions) 1`] = `
+<div>
+  <div
+    class="random-contributor"
+  >
+    <div
+      class="random-contributor__avatar"
+    >
+      <a
+        href="profileUri_mock"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          alt="Avatar of an Adoptium contributor"
+          src="avatarUri_mock"
+        />
+      </a>
+    </div>
+    <div
+      class="random-contributor__thank"
+    >
+      Thank you
+       
+      <a
+        href="profileUri_mock"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        login_mock
+      </a>
+       
+      for making
+       
+      <a
+        href="commitsListUri_mock"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        <span>
+          1
+           contribution
+        </span>
+      </a>
+       
+      to
+       
+      <a
+        href="https://github.com/adoptium/reponame_mock"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        <span>
+          reponame_mock
+        </span>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`RandomContributor component should render correctly 1`] = `
 <div>
   <div
@@ -48,11 +109,13 @@ exports[`RandomContributor component should render correctly 1`] = `
       to
        
       <a
-        href="https://github.com/adoptium/undefined"
+        href="https://github.com/adoptium/reponame_mock"
         rel="nofollow noopener noreferrer"
         target="_blank"
       >
-        <span />
+        <span>
+          reponame_mock
+        </span>
       </a>
     </div>
   </div>
