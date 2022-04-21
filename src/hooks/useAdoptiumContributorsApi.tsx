@@ -175,4 +175,5 @@ export interface Contributor {
   login: string;
   contributionsCount: number;
   commitsListUri: string;
+  repo: string;
 }

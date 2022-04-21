@@ -6,7 +6,6 @@ const VendorSelector = ({
     checkboxRef,
     setCheckbox
 }) => {
-
     const handleChange = () => {
         setCheckbox(checkboxRef.current.checked)
     };

@@ -5,19 +5,28 @@ import TextField from '@mui/material/TextField';
 
 import './DocumentationHeader.scss';
 
+interface Props {
+  data: {
+    localSearchDocs: {
+      index: string;
+      store: object;
+    }
+  }
+}
+
 const DocumentationHeader = ({
   data: {
     localSearchDocs: { index, store },
   }
-}) => {
+}: Props): null | JSX.Element => {
   const [searchQuery, setSearchQuery] = useState('');
 
-  let hintArray = [];
-  const unflattenResults = (results) => {
+  let hintArray: Array<object> = [];
+  const unflattenResults = (results: object) => {
     hintArray = [];
     for (let result in results) {
       if (!results[result].path.includes('index')) {
-        let item = {
+        let item: Object = {
           id: results[result].id,
           label: results[result].title,
           link: results[result].path
