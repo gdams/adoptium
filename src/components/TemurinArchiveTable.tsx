@@ -21,8 +21,20 @@ const TemurinArchiveTable = ({results}) => {
                                             <td className="text-white" style={{backgroundColor: "#333"}}>
                                                 <div>
                                                     <a href={release.release_link} className="link-light">
-                                                        <h2 className = "pt-5" style={{fontSize: "1.5rem"}}>{release.release_name} <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={30} style={{ color: '#537FB9' }}/></h2>
+                                                        <h2 className = "pt-5" style={{fontSize: "1.5rem"}}>{release.release_name}</h2>
                                                     </a>
+                                                    <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={30} style={{ color: '#537FB9' }}/>
+                                                    <Link to='/aqavit'>
+                                                        <img
+                                                            src='../../images/aqavit-icon.png'
+                                                            width={25}
+                                                            alt='AQAvit logo'
+                                                            data-toggle="tooltip"
+                                                            data-placement="bottom"
+                                                            title="This build is AQAvit Verified"
+                                                            className='img-fluid'
+                                                        />
+                                                    </Link>
                                                     <h4 className="pt-3 pb-3" style={{fontSize: ".8rem"}}>{moment(release.timestamp).format('D MMMM YYYY')}</h4>
                                                     {release.source_url &&
                                                         <span><a href={release.source_url} className="link-light"><FaDownload /> Source Code Archive</a></span>

@@ -28,14 +28,17 @@ const TemurinDownloadTable = ({results}) => {
                                     <span className="text-white">{pkg.release_name}</span>
                                     <span className="text-white d-block m-2">
                                         Temurin <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={25} style={{ color: '#537FB9' }}/>
-                                        <a href='/aqavit'>
-                                          <GrCertificate
-                                            data-toggle="tooltip"
-                                            data-placement="bottom"
-                                            title="This build is AQAvit Verified"
-                                            size={25}
-                                            style={{ color: '#cc1452' }}/>
-                                        </a>
+                                        <Link to='/aqavit'>
+                                            <img
+                                                src='../../images/aqavit-icon.png'
+                                                width={25}
+                                                alt='AQAvit logo'
+                                                data-toggle="tooltip"
+                                                data-placement="bottom"
+                                                title="This build is AQAvit Verified"
+                                                className='img-fluid'
+                                            />
+                                        </Link>
                                     </span>
                                 </td>
                                 <td className="align-middle w-20">{capitalize(pkg.os)}</td>
