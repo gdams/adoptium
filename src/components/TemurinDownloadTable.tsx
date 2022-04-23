@@ -2,7 +2,6 @@ import * as React from "react"
 import { Link } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
-import { GrCertificate } from 'react-icons/gr';
 import { capitalize } from '../util/capitalize';
 
 const TemurinDownloadTable = ({results}) => {
