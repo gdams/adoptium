@@ -26,7 +26,7 @@ const Footer = (): JSX.Element => {
               <ul className="nav flex-column">
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/org/" className="nav-link p-0 text-muted">About Us</a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/org/foundation/contact.php" className="nav-link p-0 text-muted">Contact Us</a></li>
-                <li className="nav-item mb-2"><a href="https://www.eclipse.org/donate" className="nav-link p-0 text-muted">Donate</a></li>
+                <li className="nav-item mb-2"><a href="https://www.eclipse.org/donate/adoptium" className="nav-link p-0 text-muted">Donate</a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/membership" className="nav-link p-0 text-muted">Members</a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/org/documents/" className="nav-link p-0 text-muted">Governance</a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php" className="nav-link p-0 text-muted">Code of Conduct</a></li>

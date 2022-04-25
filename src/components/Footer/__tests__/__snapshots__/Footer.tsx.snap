@@ -52,7 +52,7 @@ exports[`DocumentationCard component renders correctly 1`] = `
             >
               <a
                 class="nav-link p-0 text-muted"
-                href="https://www.eclipse.org/donate"
+                href="https://www.eclipse.org/donate/adoptium"
               >
                 Donate
               </a>
