@@ -67,7 +67,7 @@
     "babel-preset-gatsby": "^2.13.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.0.1",
-    "jest-environment-jsdom": "^28.0.1",
+    "jest-environment-jsdom": "^28.0.2",
     "prettier": "2.6.2",
     "react-test-renderer": "^18.0.0"
   },
