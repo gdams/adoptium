@@ -63,7 +63,7 @@
     "@types/jest": "^27.4.1",
     "@types/react-test-renderer": "^18.0.0",
     "@types/react-world-flags": "^1.4.2",
-    "babel-jest": "^28.0.1",
+    "babel-jest": "^28.0.2",
     "babel-preset-gatsby": "^2.13.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.0.1",
