@@ -37,6 +37,21 @@ module.exports = {
     },
     'gatsby-transformer-asciidoc',
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-9HHPS5RX9D"
+        ],
+        gtagConfig: {
+          anonymize_ip: true, // GDPR
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+        },
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         id: 'GTM-5WLCZXC',
