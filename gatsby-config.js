@@ -40,7 +40,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [
-          'G-9HHPS5RX9D'
+          'G-9HHPS5RX9D' // Adoptium project tag
         ],
         gtagConfig: {
           anonymize_ip: true // GDPR
@@ -54,7 +54,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        id: 'GTM-5WLCZXC',
+        id: 'GTM-5WLCZXC', // Eclipse Foundation tag
         includeInDevelopment: true
       }
     },
