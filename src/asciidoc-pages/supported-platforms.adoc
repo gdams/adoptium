@@ -1,12 +1,13 @@
 = Supported Platforms
-:page-authors: gdams, karianna, SueChaplain, sxa, KalyanJoseph, sxa555, ParkerM, hendrikebbers, aahlenst
+:page-authors: gdams, karianna, SueChaplain, sxa, KalyanJoseph, sxa555, ParkerM, hendrikebbers, aahlenst, MBoegers
 :icons: font
 
 [lead text-muted]
 --
 This section lists the operating systems that are supported with the latest release of Eclipse Temurin.
---
 
+icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] - Not supported
+--
 [support-matrix]
 --
 [width="100%",cols="^.^5,^2,^2,^2,^2,^2",]
@@ -46,9 +47,9 @@ This section lists the operating systems that are supported with the latest rele
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
 6+h| Linux (s390x) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (s390x) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
-| RHEL 8.x | n/a ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| RHEL 7.x | n/a ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| Ubuntu 20.04 | n/a ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] icon:docker[]  | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] 
+| RHEL 8.x | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| RHEL 7.x | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| Ubuntu 20.04 | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] icon:docker[]  | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] 
 
 6+h| macOS (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="macOS builds should work on 10.12 or above."]#^[4]^#
 | macOS 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
@@ -56,11 +57,11 @@ This section lists the operating systems that are supported with the latest rele
 | macOS 10.14 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| macOS (Apple Silicon)
-| macOS 11 | n/a | n/a | n/a | icon:check[] | icon:check[]
+| macOS 11 | icon:times[] | icon:times[] | icon:times[] | icon:check[] | icon:check[]
 
 6+h| Solaris (x64 and Sparc)
-| Solaris 11 | icon:check[] | n/a | n/a | n/a | n/a
-| Solaris 10u11 | icon:check[] | n/a | n/a | n/a | n/a
+| Solaris 11 | icon:check[] | icon:times[] | icon:times[] | icon:times[] | icon:times[]
+| Solaris 10u11 | icon:check[] | icon:times[] | icon:times[] | icon:times[] | icon:times[]
 
 6+h| AIX (PowerPC 64-bit Big Endian)
 | AIX 7.2 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]

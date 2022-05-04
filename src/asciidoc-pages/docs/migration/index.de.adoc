@@ -1,5 +1,5 @@
 = Migration Guide
-:page-authors: gdams, HanSolo
+:page-authors: gdams, HanSolo, MBoegers
 :icons: font
 
 == Migration zu Eclipse Temurin
@@ -18,6 +18,7 @@ sind, um sie zu ersetzen.
 Klicken Sie auf die Links um mehr über die einzelnen Komponenten zu erfahren und über
 die Schritte, die nötig sind um diese zu übernehmen.
 
+icon:check[] - Supported, icon:times[] - Not Supported
 [cols="35%,25%,20%,20%",options="header",]
 |=======================================================================
 |Oracle JDK 8 proprietäre Komponente |Alternative Komponente |OpenJDK 8 |OpenJDK 11
