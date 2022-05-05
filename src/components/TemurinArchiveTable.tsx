@@ -6,8 +6,6 @@ import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../util/capitalize';
 
 const TemurinArchiveTable = ({results}) => {
-    let os: string
-    let arch: string
     return (
         <div id="archive-list">
             <div id="pagination-container">
@@ -64,9 +62,14 @@ const TemurinArchiveTable = ({results}) => {
                                                                                 </td>
                                                                                 <td>
                                                                                     {asset.installer_link ? (
-                                                                                        <Link to="/download" state={{ link: asset.installer_link, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: asset.release_name }} className="btn btn-primary" style={{width: "9em"}}>
-                                                                                            {asset.type}
-                                                                                        </Link>
+                                                                                        <DownloadButton
+                                                                                            link={asset.installer_link}
+                                                                                            platform={key}
+                                                                                            type={asset.type}
+                                                                                            version={release.release_name}
+                                                                                            size={asset.size}
+                                                                                            installer={true}
+                                                                                        />
                                                                                     ) :
                                                                                         <a className="btn" style={{width: "9em", backgroundColor: "#D7DEE9"}}>
                                                                                             Not Available
@@ -74,9 +77,14 @@ const TemurinArchiveTable = ({results}) => {
                                                                                     }
                                                                                 </td>
                                                                                 <td>
-                                                                                    <Link to="/download" state={{ link: asset.link, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: asset.release_name }} className="btn btn-secondary" style={{width: "9em"}}>
-                                                                                        {asset.type} {asset.size} MB
-                                                                                    </Link>
+                                                                                    <DownloadButton
+                                                                                        link={asset.binary_link}
+                                                                                        platform={key}
+                                                                                        type={asset.type}
+                                                                                        version={release.release_name}
+                                                                                        size={asset.size}
+                                                                                        installer={false}
+                                                                                    />
                                                                                 </td>
                                                                                 <td>
                                                                                     <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}>Checksum</a>
@@ -103,3 +111,22 @@ const TemurinArchiveTable = ({results}) => {
 };
 
 export default TemurinArchiveTable;
+
+interface DownloadProps {
+    link: URL;
+    type: string;
+    size: number;
+    platform: string;
+    version: string;
+    installer: boolean;
+}
+
+const DownloadButton = ({ link, type, size, platform, version, installer }: DownloadProps): null | JSX.Element => {
+    let os: string = capitalize(platform.split("-")[0])
+    let arch: string = platform.split("-")[1]
+    return (
+        <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: type, java_version: version }} className={installer ? `btn btn-primary` : `btn btn-secondary`} style={{width: "9em"}}>
+            {type} {!installer ? (size + " MB") : ""}
+        </Link>
+    )
+}

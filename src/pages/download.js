@@ -6,13 +6,13 @@ import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
 const DownloadPage = ({ location }) => {
-  let link, os, arch, pkg_type, java_version
+  let link, os, arch, type, version
   if (location.state && location.state.link) {
     link = location.state.link
     os = location.state.os
     arch = location.state.arch
-    pkg_type = location.state.pkg_type
-    java_version = location.state.java_version
+    type = location.state.pkg_type
+    version = location.state.java_version
   }
   let vendor
   if (link && link.includes('github.com/adoptium')) {
@@ -30,8 +30,8 @@ const DownloadPage = ({ location }) => {
     window.gtag('event', 'download', {
       event_category: 'download',
       link: link,
-      event_label: `${os}-${arch}-${pkg_type}`,
-      java_version: java_version,
+      event_label: `${os}-${arch}-${type}`,
+      java_version: version,
       vendor: vendor
     })
 
