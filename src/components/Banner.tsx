@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Banner = () => {
+  return();
 //return (
 //  <div className="alert text-white alert-dismissible fade show mb-0 text-center" style={{ backgroundColor: '#ff1464' }} role="alert">
 //      <strong className='p-1'>19th April 2022:</strong>
