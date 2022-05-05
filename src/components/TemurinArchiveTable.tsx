@@ -64,7 +64,7 @@ const TemurinArchiveTable = ({results}) => {
                                                                                 </td>
                                                                                 <td>
                                                                                     {asset.installer_link ? (
-                                                                                        <Link to="/download" state={{ link: asset.installer_link }} className="btn btn-primary" style={{width: "9em"}}>
+                                                                                        <Link to="/download" state={{ link: asset.installer_link, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: asset.release_name }} className="btn btn-primary" style={{width: "9em"}}>
                                                                                             {asset.type}
                                                                                         </Link>
                                                                                     ) :
@@ -74,7 +74,7 @@ const TemurinArchiveTable = ({results}) => {
                                                                                     }
                                                                                 </td>
                                                                                 <td>
-                                                                                    <Link to="/download" state={{ link: asset.link }} className="btn btn-secondary" style={{width: "9em"}}>
+                                                                                    <Link to="/download" state={{ link: asset.link, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: asset.release_name }} className="btn btn-secondary" style={{width: "9em"}}>
                                                                                         {asset.type} {asset.size} MB
                                                                                     </Link>
                                                                                 </td>

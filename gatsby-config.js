@@ -46,8 +46,7 @@ module.exports = {
           anonymize_ip: true // GDPR
         },
         pluginConfig: {
-          head: true,
-          respectDNT: true
+          head: true
         }
       }
     },

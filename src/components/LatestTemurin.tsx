@@ -62,7 +62,7 @@ const LatestTemurin = (props): JSX.Element => {
         <div className={`btn-group-vertical mx-auto ${buttonClass}`}>
             {binary ? (
               <>
-                <Link to="/download" state={{ link: binary.link }} className="btn btn-lg btn-primary mt-3 py-3 text-white">
+                <Link to="/download" state={{ link: binary.link, os: userOSName, arch: arch, pkg_type: 'JDK', java_version: binary.release_name }} className="btn btn-lg btn-primary mt-3 py-3 text-white">
                     <FaDownload /> Latest LTS release
                     <br/>
                     <span style={{ fontSize: '.6em'}} className="font-weight-light">{binary.release_name}</span>

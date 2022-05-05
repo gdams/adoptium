@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react';
 import { Link, graphql } from 'gatsby'
 import { BiDonateHeart } from 'react-icons/bi'
 
@@ -6,9 +6,13 @@ import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
 const DownloadPage = ({ location }) => {
-  let link
+  let link, os, arch, pkg_type, java_version
   if (location.state && location.state.link) {
     link = location.state.link
+    os = location.state.os
+    arch = location.state.arch
+    pkg_type = location.state.pkg_type
+    java_version = location.state.java_version
   }
   let vendor
   if (link && link.includes('github.com/adoptium')) {
@@ -20,6 +24,17 @@ const DownloadPage = ({ location }) => {
   } else if (link && link.includes('github.com/ibmruntimes')) {
     vendor = 'IBM'
   }
+
+  // Send a custom event to Google Analytics
+  typeof window !== 'undefined' && link && window.gtag &&
+    window.gtag('event', 'download', {
+      event_category: 'download',
+      link: link,
+      event_label: `${os}-${arch}-${pkg_type}`,
+      java_version: java_version,
+      vendor: vendor
+    })
+
   return (
     <Layout>
       <Seo title='Thank You' />
@@ -33,7 +48,7 @@ const DownloadPage = ({ location }) => {
                 : <p className='py-2'>You are downloading a build from <strong>{vendor}</strong>, a member of the Eclipse Adoptium Working Group.</p>
             )}
 
-            {link && <meta http-equiv='refresh' content={`0; url=${link}`} />}
+            {link && <meta httpEquiv='refresh' content={`0; url=${link}`} />}
             {link
               ? <p className='text-muted py-3'>If the download doesn't start in a few seconds, please <a href={link}>click here</a> to start the download.</p>
               : <p className='text-muted py-3'>Ooops - something doesn't seem quite right here. Please try again.</p>}
