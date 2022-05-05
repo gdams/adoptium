@@ -3,7 +3,6 @@ import { Link } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../util/capitalize';
-import { arches } from "../util/defaults";
 
 const TemurinDownloadTable = ({results}) => {
     let source = false
