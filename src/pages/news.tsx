@@ -71,6 +71,9 @@ const NewsPage = (): JSX.Element => {
                     )
                 )}
               </Timeline>
+              <a href="https://events.eclipse.org/" target='_blank' rel='noreferrer' className='px-2'>View all</a>
+              |
+              <a href="https://newsroom.eclipse.org/node/add/events" target='_blank' rel='noreferrer' className='px-2'>Submit an event</a>
             </div>
           </div>
         </div>
