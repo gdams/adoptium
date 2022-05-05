@@ -82,7 +82,7 @@ export async function getAllPkgsForVersion(version, os, architecture, package_ty
     for (let i = 0 ; i < data.length ; i++) {
         pkgsFound.push(data[i]);
     }
-    await filterResults(pkgsFound, os, package_type, checkboxRef)
+    filterResults(pkgsFound, os, package_type, checkboxRef)
     return selectedPkgs
 }
 
