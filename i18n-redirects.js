@@ -82,7 +82,6 @@ module.exports = function createMultilingualRedirects (
           redirectInBrowser: true
         }
 
-        console.log('Adding Redirect: ', newRedirect)
         createRedirect(newRedirect)
       }
     })
