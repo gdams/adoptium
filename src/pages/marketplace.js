@@ -2,10 +2,6 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Seo from '../components/Seo'
-import DownloadDropdowns from '../components/DownloadDropdowns'
-import DownloadTable from '../components/MarketplaceDownloadTable'
-import { getAllPkgsForVersion } from '../hooks'
 
 const DownloadPage = () => (
   <Layout>
