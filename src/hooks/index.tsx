@@ -4,3 +4,4 @@ export * from './fetchMarketplace';
 export * from './fetchTemurinReleases';
 export * from './fetchTemurinArchive';
 export * from './fetchLatestTemurin';
+export * from './fetchNews';
