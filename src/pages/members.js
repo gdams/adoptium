@@ -46,7 +46,7 @@ const MembersPage = () => (
             members={strategicMembers}
           />
           <h2 className='fw-light pt-5'>Enterprise Members</h2>
-          <p className='lead text-muted'>Enterprise Members are typically organizations that view the Adoptium working group managed technology as a critical part of their organization's business operations. These organizations want to influence the direction and support the development of a runtime technology ecosystem through Eclipse Adoptium.</p>
+          <p className='lead text-muted'>Enterprise Members are typically organizations that view the Adoptium working group managed technology as a critical part of their organization&lsquo;s business operations. These organizations want to influence the direction and support the development of a runtime technology ecosystem through Eclipse Adoptium.</p>
           <MembersGrid
             members={enterpriseMembers}
           />
