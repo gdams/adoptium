@@ -57,7 +57,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | macOS 10.14 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| macOS (Apple Silicon)
-| macOS 11 | icon:times[] | icon:times[] | icon:times[] | icon:check[] | icon:check[]
+| macOS 11 | icon:times[] | icon:check[]| icon:times[] | icon:check[] | icon:check[]
 
 6+h| Solaris (x64 and Sparc)
 | Solaris 11 | icon:check[] | icon:times[] | icon:times[] | icon:times[] | icon:times[]
