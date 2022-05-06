@@ -28,7 +28,7 @@ const JoinPage = () => (
                 required
               />
             </label>
-            <br>
+            <br />
             <button
               className='btn btn-primary mt-3'
               type='submit'
