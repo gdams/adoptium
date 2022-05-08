@@ -1,4 +1,4 @@
-## Button code examples
+# Button code examples
 
 <table style="width:100%">
   <tr>
