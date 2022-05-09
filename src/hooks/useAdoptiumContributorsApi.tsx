@@ -7,7 +7,7 @@ const repositories = [
 ];
 
 // List of users to exclude from random contributor
-const whitelistedContributors = ['dependabot-preview[bot]', 'dependabot[bot]', 'eclipse-temurin-bot'];
+const excludedContributors = ['dependabot-preview[bot]', 'dependabot[bot]', 'eclipse-temurin-bot'];
 
 const randomValue = (list) => {
     return list[Math.floor(Math.random() * list.length)];
@@ -120,7 +120,7 @@ async function fetchRandomContributor() {
     const [randomPage, lastPage] = await getMaxContributors();
 
     let contributor = await getContributor(randomPage);
-    while (whitelistedContributors.includes(contributor.login)) {
+    while (excludedContributors.includes(contributor.login)) {
       contributor = await getContributor(randomPage);
     }
 
