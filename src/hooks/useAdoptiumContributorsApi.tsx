@@ -92,7 +92,7 @@ async function getContributor(randomPage: number): Promise<Contributor> {
 async function fetchRandomContributor() {
   let maxContributors: number | null = null;
   let fetchDate: number | null = null;
-  let needToRefetch = true;
+  let needToRefetch = false;
   const ONE_MONTH_MS = 2592000000;
 
   if (window.localStorage) {
