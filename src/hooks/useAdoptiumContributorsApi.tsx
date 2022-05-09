@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react';
 
 // List of repos that will be checked for contributions
 const repositories = [
-  'temurin-build', 'ci-jenkins-pipelines', 'infrastructure', 'aqa-tests', 'adoptium.net', 'api.adoptium.net', 'blog.adoptium.net', 'containers', 'installer',
+  'temurin-build', 'ci-jenkins-pipelines', 'infrastructure', 'aqa-tests', 'website-v2', 'api.adoptium.net', 'blog.adoptium.net', 'containers', 'installer',
   'STF', 'run-aqa', 'TKG', 'aqa-test-tooks', 'aqa-systemtest', 'bumblebench', 'jenkins-helper'
+];
 
-]
+// List of users to exclude from random contributor
+const whitelistedContributors = ['dependabot-preview[bot]', 'dependabot[bot]', 'eclipse-temurin-bot'];
 
 const randomValue = (list) => {
     return list[Math.floor(Math.random() * list.length)];
@@ -46,7 +48,7 @@ function linkParser(linkHeader: string): {
 }
 
 /**
- * Retrieves max amount of contributors for Node.js main repo.
+ * Retrieves max amount of contributors for Adoptium repos.
  * Returns array with random contributor index and max contributors found.
  */
 async function getMaxContributors(): Promise<[number, number]> {
@@ -90,7 +92,7 @@ async function getContributor(randomPage: number): Promise<Contributor> {
 async function fetchRandomContributor() {
   let maxContributors: number | null = null;
   let fetchDate: number | null = null;
-  let needToRefetch = false;
+  let needToRefetch = true;
   const ONE_MONTH_MS = 2592000000;
 
   if (window.localStorage) {
@@ -117,7 +119,10 @@ async function fetchRandomContributor() {
     }
     const [randomPage, lastPage] = await getMaxContributors();
 
-    const contributor = await getContributor(randomPage);
+    let contributor = await getContributor(randomPage);
+    while (whitelistedContributors.includes(contributor.login)) {
+      contributor = await getContributor(randomPage);
+    }
 
     if (window.localStorage) {
       window.localStorage.setItem('fetch_date', String(Date.now()));
