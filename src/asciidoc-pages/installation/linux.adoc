@@ -1,5 +1,5 @@
 = Linux (RPM/DEB) installer packages
-:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie
+:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie, sxa
 :toc:
 :icons: font
 
@@ -26,29 +26,29 @@ e.g temurin-17-jdk or temurin-8-jdk
 +
 [source, bash]
 ----
-sudo apt-get install -y wget apt-transport-https
+apt-get install -y wget apt-transport-https
 ----
 +
 . Download the Eclipse Adoptium GPG key:
 +
 [source, bash]
 ----
-wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo tee /usr/share/keyrings/adoptium.asc
+wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /usr/share/keyrings/adoptium.asc
 ----
 +
 . Configure the Eclipse Adoptium apt repository:
 +
 [source, bash]
 ----
-echo "deb [signed-by=/usr/share/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | sudo tee /etc/apt/sources.list.d/adoptium.list
+echo "deb [signed-by=/usr/share/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
 ----
 +
 . Install the Temurin version you require:
 +
 [source, bash]
 ----
-sudo apt-get update # update if you haven't already
-sudo apt-get install temurin-17-jdk
+apt-get update # update if you haven't already
+apt-get install temurin-17-jdk
 ----
 
 == CentOS/RHEL/Fedora Instructions

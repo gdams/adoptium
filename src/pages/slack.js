@@ -18,15 +18,17 @@ const JoinPage = () => (
           target='_blank'
         >
           <div className='form-group'>
-            <label for='exampleInputEmail1'>Email address</label>
-            <input
-              autocomplete='email'
-              name='emailAddress'
-              placeholder='Your email'
-              type='email'
-              className='form-control'
-              required
-            />
+            <label>Email address
+              <input
+                autocomplete='email'
+                name='emailAddress'
+                placeholder='Your email'
+                type='email'
+                className='form-control'
+                required
+              />
+            </label>
+            <br />
             <button
               className='btn btn-primary mt-3'
               type='submit'
