@@ -1,4 +1,4 @@
-export default function asciidocFormatter () {
+export default function asciidocFormatter (): void {
   const tables = document.querySelectorAll('table')
   tables.forEach(table => {
     table.className = 'table table-hover py-2'
