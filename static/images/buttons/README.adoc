@@ -1,0 +1,30 @@
+= Button code examples
+
+:page-authors: tellison
+:keywords: buttons
+
+[width="100%",cols="50%,50%",options="header",]
+|===
+|Button |Code
+
+|https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_001.png[Get
+Eclipse Temurin,width=200,height=200]] a|
+....
+<a href="https://adoptium.net/temurin?utm_medium=button">
+  <img src="https://adoptium.net/images/buttons/button_img_001.png"
+     alt="Get Eclipse Temurin" width="200" height="200" />
+</a>
+      
+....
+
+|https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_002.png[Get
+Eclipse Temurin,width=200,height=200]] a|
+....
+<a href="https://adoptium.net/temurin?utm_medium=button">
+  <img src="https://adoptium.net/images/buttons/button_img_002.png"
+     alt="Get Eclipse Temurin" width="200" height="200" />
+</a>
+      
+....
+
+|===
