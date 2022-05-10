@@ -59,7 +59,7 @@ The Adoptium Marketplace is an opportunity for Adoptium Working Group Members (â
 Products listed in the marketplace *MUST* adhere to the following criteria.
 
 . The Product must pass the relevant Eclipse AQAvit quality verification suite (QVS) and comply with the
-https://www.eclipse.org/legal/documents/eclipse-foundation-quality-verification-suite-license.php[Eclipse Foundation Quality Verification Suite License^].
+https://www.eclipse.org/legal/eclipse-foundation-quality-verification-suite-license.php[Eclipse Foundation Quality Verification Suite License^].
 . The Producer must declare to the satisfaction of the Adoptium Working Group that the Product has passed the applicable Java SE Technology Compatibility Kit.
 . The Producer must be a Participant, Enterprise or Strategic Member of the Adoptium Working Group.
 . The Producer must execute the
