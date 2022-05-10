@@ -14,7 +14,7 @@ hljs.registerLanguage('powershell', powershell)
 hljs.registerLanguage('dos', dos)
 hljs.registerLanguage('json', json)
 
-export default function highlightCode () {
+export default function highlightCode: void () {
   const codeBlocks = document.querySelectorAll('pre > code')
   codeBlocks.forEach(codeBlock => {
     if (typeof codeBlock === 'object') {
