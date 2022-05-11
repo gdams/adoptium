@@ -11,8 +11,10 @@ You may modify the html code to display the button at different sizes, but don't
 |===
 |Button |Code
 
-^.^|https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_001.png[Get
-Eclipse Temurin,width=150,height=150]] a|
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_001.png[Get
+Eclipse Temurin,width=150,height=150]]
+^.^a|
 [source,html]
 ----
 <a href="https://adoptium.net/temurin?utm_medium=button">
@@ -22,8 +24,10 @@ Eclipse Temurin,width=150,height=150]] a|
 ----
 
 
-^.^|https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_002.png[Get
-Eclipse Temurin,width=120,height=120]] a|
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_002.png[Get
+Eclipse Temurin,width=120,height=120]]
+^.^a|
 [source,html]
 ----
 <a href="https://adoptium.net/temurin?utm_medium=button">
@@ -33,8 +37,10 @@ Eclipse Temurin,width=120,height=120]] a|
 ----
 
 
-^.^|https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_003.png[Get
-Eclipse Temurin,width=100,height=100]] a|
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_003.png[Get
+Eclipse Temurin,width=100,height=100]]
+^.^a|
 [source,html]
 ----
 <a href="https://adoptium.net/temurin?utm_medium=button">
@@ -44,8 +50,10 @@ Eclipse Temurin,width=100,height=100]] a|
 ----
 
 
-^.^|https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_005.png[Get
-Eclipse Temurin,width=120,height=120]] a|
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_005.png[Get
+Eclipse Temurin,width=120,height=120]]
+^.^a|
 [source,html]
 ----
 <a href="https://adoptium.net/temurin?utm_medium=button">
@@ -55,8 +63,10 @@ Eclipse Temurin,width=120,height=120]] a|
 ----
 
 
-^.^|https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_004.png[Get
-Eclipse Temurin,width=200,height=200]] a|
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_004.png[Get
+Eclipse Temurin,width=200,height=200]]
+^.^a|
 [source,html]
 ----
 <a href="https://adoptium.net/temurin?utm_medium=button">
@@ -66,8 +76,10 @@ Eclipse Temurin,width=200,height=200]] a|
 ----
 
 
-^.^|https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_006.png[Get
-Eclipse Temurin,width=200,height=200]] a|
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_006.png[Get
+Eclipse Temurin,width=200,height=200]]
+^.^a|
 [source,html]
 ----
 <a href="https://adoptium.net/temurin?utm_medium=button">
