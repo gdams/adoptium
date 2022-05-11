@@ -41,7 +41,7 @@
     "highlight.js": "^11.4.0",
     "i18next": "^21.8.0",
     "moment": "^2.29.3",
-    "office-ui-fabric-react": "^7.184.0",
+    "office-ui-fabric-react": "^7.185.5",
     "prop-types": "^15.8.1",
     "query-string": "^7.1.1",
     "react": "^17.0.2",
