@@ -9,7 +9,7 @@ You may modify the html code to display the button at different sizes, but don't
 
 [%autowidth,cols="d,l",options="header",stripes=none]
 |===
-|Button |Code
+^.^|Button ^.^|Code
 
 ^.^|
 https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_001.png[Get
