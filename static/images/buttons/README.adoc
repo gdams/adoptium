@@ -1,7 +1,11 @@
-= Button code examples
+= Eclipse Temurin download buttons
 
 :page-authors: tellison
 :keywords: buttons
+
+Button images and corresponding code are provided for you to embed in your own documentation, website, etc to promote Eclipse Temurin. These buttons link to the Temurin download page and ensure users have easy access to the latest versions.
+
+You may modify the html code to display the button at different sizes, but don't change the destination link. These buttons include Eclipse Foundation Trademarks, and as such are subject to the https://www.eclipse.org/legal/logo_guidelines.php[Eclipse Foundation Trademark Usage Policy].
 
 [%autowidth,cols="d,l",options="header",stripes=none]
 |===
