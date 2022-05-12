@@ -10,63 +10,62 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 --
 [support-matrix]
 --
-[width="100%",cols="^.^5,^2,^2,^2,^2,^2",]
+[width="100%",cols="^.^5,^2,^2,^2,^2",]
 |===
-.2+h|Operating System 5+h|Eclipse Temurin Version h|
+.2+h|Operating System 4+h|Eclipse Temurin Version h|
 
-{nbsp} 8 h|11 h|16 h|17 h|18
-6+h| Windows (x64/x86)
-| Windows Server 2022 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Windows Server 2019 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Windows Server 2016 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[] 
-| Windows Server 2012 R2 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[] 
-| Windows 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| Windows 10 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[] 
-| Windows 8.1| icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+{nbsp} 8 h|11 h|17 h|18
+5+h| Windows (x64/x86)
+| Windows Server 2022 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| Windows Server 2019 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| Windows Server 2016 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| Windows Server 2012 R2 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| Windows 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| Windows 10 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| Windows 8.1| icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
-// 5+h| Linux (x64) ^[1]^
-6+h| Linux (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (x64) builds should work on any distribution with glibc version 2.12 or higher."]#^[1]^#
-| SUSE Linux Enterprise Server (SLES) 12 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]| icon:check[]
-| RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[]icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| Alpine Linux 3.5 or later (Headless) | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+5+h| Linux (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (x64) builds should work on any distribution with glibc version 2.12 or higher."]#^[1]^#
+| SUSE Linux Enterprise Server (SLES) 12 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[]icon:docker[] | icon:check[] icon:docker[]
+| Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| Alpine Linux 3.5 or later (Headless) | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
-6+h| Linux (ARM 64-bit) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 64-bit) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
-| RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+5+h| Linux (ARM 64-bit) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 64-bit) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
+| RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
-6+h| Linux (ARM 32-bit Hard-Float) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 32-bit Hard-Float) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
-| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+5+h| Linux (ARM 32-bit Hard-Float) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 32-bit Hard-Float) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
+| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
-6+h| Linux (PowerPC 64-bit Little Endian) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (PowerPC 64-bit Little Endian) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
-| RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| RHEL / CentOS 7.x | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+5+h| Linux (PowerPC 64-bit Little Endian) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (PowerPC 64-bit Little Endian) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
+| RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| RHEL / CentOS 7.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
-6+h| Linux (s390x) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (s390x) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
-| RHEL 8.x | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| RHEL 7.x | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| Ubuntu 20.04 | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] icon:docker[]  | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] 
+5+h| Linux (s390x) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (s390x) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
+| RHEL 8.x | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[]
+| RHEL 7.x | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[]
+| Ubuntu 20.04 | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] icon:docker[]  | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
-6+h| macOS (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="macOS builds should work on 10.12 or above."]#^[4]^#
-| macOS 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| macOS 10.15 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| macOS 10.14 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+5+h| macOS (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="macOS builds should work on 10.12 or above."]#^[4]^#
+| macOS 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| macOS 10.15 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| macOS 10.14 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
-6+h| macOS (Apple Silicon)
-| macOS 11 | icon:times[] | icon:check[]| icon:times[] | icon:check[] | icon:check[]
+5+h| macOS (Apple Silicon)
+| macOS 11 | icon:times[] | icon:check[] | icon:check[] | icon:check[]
 
-6+h| Solaris (x64 and Sparc)
-| Solaris 11 | icon:check[] | icon:times[] | icon:times[] | icon:times[] | icon:times[]
-| Solaris 10u11 | icon:check[] | icon:times[] | icon:times[] | icon:times[] | icon:times[]
+5+h| Solaris (x64 and Sparc)
+| Solaris 11 | icon:check[] | icon:times[] | icon:times[] | icon:times[]
+| Solaris 10u11 | icon:check[] | icon:times[] | icon:times[] | icon:times[]
 
-6+h| AIX (PowerPC 64-bit Big Endian)
-| AIX 7.2 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| AIX 7.1 TL5 SP5 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| AIX 7.1 TL4 | icon:check[] | icon:check[]| icon:check[] | icon:check[] | icon:check[]
+5+h| AIX (PowerPC 64-bit Big Endian)
+| AIX 7.2 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| AIX 7.1 TL5 SP5 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| AIX 7.1 TL4 | icon:check[] | icon:check[]| icon:check[] | icon:check[]
 |===
 --
 
