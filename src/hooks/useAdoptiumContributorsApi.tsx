@@ -1,15 +1,13 @@
 import { useEffect, useState } from 'react';
 
 // List of repos that will be checked for contributions
-// const repositories = [
-//   'temurin-build', 'ci-jenkins-pipelines', 'infrastructure', 'aqa-tests', 'website-v2', 'api.adoptium.net', 'blog.adoptium.net', 'containers', 'installer',
-//   'STF', 'run-aqa', 'TKG', 'aqa-test-tooks', 'aqa-systemtest', 'bumblebench', 'jenkins-helper'
-// ];
-
-const repositories = ['website-v2']
+const repositories = [
+  'temurin-build', 'ci-jenkins-pipelines', 'infrastructure', 'aqa-tests', 'website-v2', 'api.adoptium.net', 'blog.adoptium.net', 'containers', 'installer',
+  'STF', 'run-aqa', 'TKG', 'aqa-test-tooks', 'aqa-systemtest', 'bumblebench', 'jenkins-helper'
+];
 
 // List of users to exclude from random contributor
-const excludedContributors = ['dependabot-preview[bot]', 'dependabot[bot]', 'eclipse-temurin-bot'];
+const excludedContributors = ['dependabot-preview[bot]', 'dependabot[bot]', 'eclipse-temurin-bot', 'adoptium-bot'];
 
 const randomValue = (list) => {
     return list[Math.floor(Math.random() * list.length)];
@@ -94,7 +92,7 @@ async function getContributor(randomPage: number): Promise<Contributor> {
 async function fetchRandomContributor() {
   let maxContributors: number | null = null;
   let fetchDate: number | null = null;
-  let needToRefetch = true;
+  let needToRefetch = false;
   const ONE_MONTH_MS = 2592000000;
 
   if (window.localStorage) {
@@ -119,13 +117,12 @@ async function fetchRandomContributor() {
         Math.floor(Math.random() * Math.floor(maxContributors)) + 1
       );
     }
-    let [randomPage, lastPage] = await getMaxContributors();
 
+    let randomPage: number, lastPage: number;
     let contributor: Contributor | null = null;
     do {
-      contributor = await getContributor(randomPage);
-      // Get a new random page incase we initially fetch a bot user
       [randomPage, lastPage] = await getMaxContributors();
+      contributor = await getContributor(randomPage);
     }
     while (excludedContributors.includes(contributor.login))
 
