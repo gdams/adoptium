@@ -1,6 +1,10 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { useQueryParam, NumberParam } from 'use-query-params'
-import { ChoiceGroup } from "office-ui-fabric-react";
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+
 import DatePicker from 'react-date-picker';
 
 import { versions, defaultVersion } from '../util/defaults'
@@ -28,6 +32,10 @@ const VersionSelector = ({updater, releaseType, Table}) => {
     udateVersion({version: version});
   }, []);
 
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setVersion((event.target as HTMLInputElement).value);
+  };
+
   const setNumBuilds= useCallback((number) => {
     udateNumBuilds({number: number});
   }, []);
@@ -45,11 +53,21 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       <div className="btn-container">
         <form id="version-selector" className="btn-form">
           <h3>Choose a Version</h3>
-          <ChoiceGroup
-            className="d-flex justify-content-center"
-            defaultSelectedKey={selectedVersion}
-            onChange={(e, selectedOption) => { setVersion(selectedOption.key); } }
-            options={dropdownOptions} />
+            <FormControl>
+              <RadioGroup
+                aria-labelledby="version-selector"
+                value={version.version}
+                onChange={handleChange}
+              >
+                {versions.map(
+                  (version, i): string | JSX.Element => version && (
+                    <FormControlLabel value={version} control={
+                      <Radio className='py-1' />
+                    } label={"OpenJDK " + version.toString()} />
+                  )
+                )}
+              </RadioGroup>
+            </FormControl>
         </form>
       </div>
       {releaseType === "ea" && (
