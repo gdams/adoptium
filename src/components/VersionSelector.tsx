@@ -1,11 +1,18 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { useQueryParam, NumberParam } from 'use-query-params'
 import { ChoiceGroup } from "office-ui-fabric-react";
 import DatePicker from 'react-date-picker';
 
 import { versions, defaultVersion } from '../util/defaults'
 
 const VersionSelector = ({updater, releaseType, Table}) => {
-  const [version, udateVersion] = useState({version: defaultVersion});
+  let selectedVersion = defaultVersion
+  let [versionParam] = useQueryParam('version', NumberParam)
+  if (versionParam) {
+      selectedVersion = versionParam;
+  }
+
+  const [version, udateVersion] = useState({version: selectedVersion});
   const [numBuilds, udateNumBuilds] = useState({number: 5});
   const [buildDate, updateBuildDate] = useState(new Date());  
 
@@ -40,7 +47,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
           <h3>Choose a Version</h3>
           <ChoiceGroup
             className="d-flex justify-content-center"
-            defaultSelectedKey={defaultVersion}
+            defaultSelectedKey={selectedVersion}
             onChange={(e, selectedOption) => { setVersion(selectedOption.key); } }
             options={dropdownOptions} />
         </form>

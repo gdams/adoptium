@@ -1,4 +1,5 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react';
+import { useQueryParam, NumberParam } from 'use-query-params'
 
 import VendorSelector from './VendorSelector'
 
@@ -10,6 +11,11 @@ let defaultOS = 'any'
 let defaultArch = 'any'
 
 const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
+    let selectedVersion = defaultVersion
+    let [versionParam] = useQueryParam('version', NumberParam)
+    if (versionParam) {
+        selectedVersion = versionParam;
+    }
 
     if (marketplace) {
         defaultArch = defaultArchitecture;
@@ -31,7 +37,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     const [os, updateOS] = useState({os: defaultOS});
     const [arch, updateArch] = useState({arch: defaultArch});
     const [packageType, updatePackageType] = useState({packageType: defaultPackageType});
-    const [version, udateVersion] = useState({version: defaultVersion});
+    const [version, udateVersion] = useState({version: selectedVersion});
     
     // Marketplace vendor selector only
     const checkboxRef = useRef({});
@@ -104,7 +110,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="version">Version</label>
-                    <select id="version-filter" onChange={(e) => setVersion(e.target.value)} defaultValue={defaultVersion} className="form-select form-select-sm">
+                    <select id="version-filter" onChange={(e) => setVersion(e.target.value)} defaultValue={selectedVersion} className="form-select form-select-sm">
                         {versions.map(
                             (version, i): string | JSX.Element => version && (
                                 <option key={version} value={version}>{version}</option>

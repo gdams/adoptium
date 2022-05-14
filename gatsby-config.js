@@ -103,6 +103,7 @@ module.exports = {
     'gatsby-plugin-netlify',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
+    'gatsby-plugin-use-query-params',
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
