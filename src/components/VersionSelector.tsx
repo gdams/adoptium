@@ -24,6 +24,8 @@ const VersionSelector = ({updater, releaseType, Table}) => {
   }, [version, numBuilds, buildDate]);
 
   const setVersion = useCallback((version) => {
+    let currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname + `?version=${version}`;    
+    window.history.pushState({ path: currentURL }, '', currentURL);
     udateVersion(version);
   }, []);
 
