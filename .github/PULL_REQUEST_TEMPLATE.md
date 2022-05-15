@@ -9,4 +9,4 @@ the requirements below.
 - [ ] `npm test` passes
 - [ ] documentation is changed or added (if applicable)
 - [ ] permission has been obtained to add new logo (if applicable)
-- [ ] contribution guidelines followed [here](https://github.com/AdoptOpenJDK/openjdk-website/blob/master/CONTRIBUTING.md)
+- [ ] contribution guidelines followed [here](https://github.com/adoptium/website-v2/blob/main/CONTRIBUTING.md)
