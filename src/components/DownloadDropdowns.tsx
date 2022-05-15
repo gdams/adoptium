@@ -34,10 +34,10 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
         }
     }
 
-    const [os, updateOS] = useState({os: defaultOS});
-    const [arch, updateArch] = useState({arch: defaultArch});
-    const [packageType, updatePackageType] = useState({packageType: defaultPackageType});
-    const [version, udateVersion] = useState({version: selectedVersion});
+    const [os, updateOS] = useState(defaultOS);
+    const [arch, updateArch] = useState(defaultArch);
+    const [packageType, updatePackageType] = useState(defaultPackageType);
+    const [version, udateVersion] = useState(selectedVersion);
     
     // Marketplace vendor selector only
     const checkboxRef = useRef({});
@@ -47,24 +47,24 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
 
     useEffect(() => {
         (async () => {
-          setReleases(await updaterAction(version.version, os.os, arch.arch, packageType.packageType, checkboxRef));
+          setReleases(await updaterAction(version, os, arch, packageType, checkboxRef));
         })();
-    }, [version.version, os.os, arch.arch, packageType.packageType, checkbox]);
+    }, [version, os, arch, packageType, checkbox]);
 
     const setOS = useCallback((os) => {
-        updateOS({os: os});
+        updateOS(os);
     }, []);
 
     const setArch = useCallback((arch) => {
-        updateArch({arch: arch});
+        updateArch(arch);
     }, []);
 
     const setPackageType = useCallback((packageType) => {
-        updatePackageType({packageType: packageType});
+        updatePackageType(packageType);
     }, []);
     
     const setVersion = useCallback((version) => {
-        udateVersion({version: version});
+        udateVersion(version);
     }, []);
 
     const setCheckbox= useCallback(() => {
@@ -77,7 +77,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
             <div className="input-group mb-5 row g-2">
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="os">Operating System</label>
-                    <select id="os-filter" onChange={(e) => setOS(e.target.value)} defaultValue={defaultOS} className="form-select form-select-sm">
+                    <select id="os-filter" onChange={(e) => setOS(e.target.value)} value={os} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {oses.map(
                             (os, i): string | JSX.Element => os && (
@@ -88,7 +88,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="arch">Architecture</label>
-                    <select id="arch-filter" onChange={(e) => setArch(e.target.value)} defaultValue={defaultArch} className="form-select form-select-sm">
+                    <select id="arch-filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {arches.map(
                             (arch, i): string | JSX.Element => arch && (
@@ -99,7 +99,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="package-type">Package Type</label>
-                    <select id="package-type-filter" onChange={(e) => setPackageType(e.target.value)} defaultValue={defaultPackageType} className="form-select form-select-sm">
+                    <select id="package-type-filter" onChange={(e) => setPackageType(e.target.value)} value={packageType} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {packageTypes.map(
                             (packageType, i): string | JSX.Element => packageType && (
@@ -110,9 +110,9 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="version">Version</label>
-                    <select id="version-filter" onChange={(e) => setVersion(e.target.value)} value={selectedVersion} className="form-select form-select-sm">
+                    <select id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm">
                         {versions.map(
-                            (version, i): string | JSX.Element => version && (
+                            (version, i): number | JSX.Element => version && (
                                 <option key={version} value={version}>{version}</option>
                             )
                         )}
