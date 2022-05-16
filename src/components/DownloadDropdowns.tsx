@@ -65,8 +65,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     
     const setVersion = useCallback((version) => {
         let currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname + `?version=${version}`;    
-        console.log(currentURL)
-        window.history.pushState({ path: currentURL }, '', currentURL);
+        window.history.replaceState({ path: currentURL }, '', currentURL);
         udateVersion(version);
     }, []);
 
