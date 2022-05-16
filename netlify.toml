@@ -9,8 +9,8 @@ GATSBY_CPU_COUNT = "1"
 
 [[redirects]]
   from = "/"
-  to = "/temurin/releases/"
   query = {variant = ":variant"}
+  to = "/temurin/releases/"
   status = 301
   force = true
 
