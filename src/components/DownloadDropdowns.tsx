@@ -1,9 +1,10 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react';
-import { useQueryParam, NumberParam } from 'use-query-params'
+import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
 
 import VendorSelector from './VendorSelector'
 
 import { detectOS, UserOS } from '../util/detectOS';
+import { setURLParam } from '../util/setURLParam';
 import { capitalize } from '../util/capitalize';
 import { oses, arches, packageTypes, versions, defaultVersion, defaultArchitecture, defaultPackageType} from '../util/defaults'
 
@@ -15,6 +16,11 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     let [versionParam] = useQueryParam('version', NumberParam)
     if (versionParam) {
         selectedVersion = versionParam;
+    }
+    let [variantParam] = useQueryParam('variant', StringParam)
+    if (variantParam) {
+        setURLParam('version', variantParam.replace(/\D/g, ''))
+        selectedVersion = parseInt(variantParam.replace(/\D/g, ''));
     }
 
     if (marketplace) {
@@ -64,8 +70,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     }, []);
     
     const setVersion = useCallback((version) => {
-        let currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname + `?version=${version}`;    
-        window.history.replaceState({ path: currentURL }, '', currentURL);
+        setURLParam('version', version);
         udateVersion(version);
     }, []);
 

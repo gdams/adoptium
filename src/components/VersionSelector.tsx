@@ -1,15 +1,21 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { useQueryParam, NumberParam } from 'use-query-params'
+import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
 
 import DatePicker from 'react-date-picker';
 
 import { versions, defaultVersion } from '../util/defaults'
+import { setURLParam } from '../util/setURLParam';
 
 const VersionSelector = ({updater, releaseType, Table}) => {
   let selectedVersion = defaultVersion
   let [versionParam] = useQueryParam('version', NumberParam)
   if (versionParam) {
       selectedVersion = versionParam;
+  }
+  let [variantParam] = useQueryParam('variant', StringParam)
+  if (variantParam) {
+      setURLParam('version', variantParam.replace(/\D/g, ''))
+      selectedVersion = parseInt(variantParam.replace(/\D/g, ''));
   }
 
   const [version, udateVersion] = useState(selectedVersion.toString());
@@ -24,8 +30,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
   }, [version, numBuilds, buildDate]);
 
   const setVersion = useCallback((version) => {
-    let currentURL = window.location.protocol + "//" + window.location.host + window.location.pathname + `?version=${version}`;    
-    window.history.replaceState({ path: currentURL }, '', currentURL);
+    setURLParam('version', version);
     udateVersion(version);
   }, []);
 
