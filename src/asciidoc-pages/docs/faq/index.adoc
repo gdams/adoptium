@@ -1,56 +1,59 @@
 = Frequently Asked Questions
 :page-authors: gdams, karianna, sxa555, aahlenst, sxa, tellison, kemitix
 
-We have completed our first releases at Eclipse Temurin and will be
-updating this FAQ as and when things are completed and available. If you
-want to talk to us or ask additional questions the best place is our
-https://adoptium.net/slack.html[slack instance] or via an issue in the
-https://github.com/adoptium/adoptium-support[support channel] if your
-question is not covered by one of the entries below.
+We have gathered together a few frequently asked questions (FAQs) into
+this document.
+If you want to talk to us about these topics, or ask additional questions
+the best place is via
+https://adoptium.net/slack.html[Slack] or by raising an issue in the
+https://github.com/adoptium/adoptium-support[support channel].
 
 == Where are the latest JDKs?
 
-Most of the Eclipse Temurin builds with HotSpot for 8u322-b06, 11.0.14+9
-and jdk-17.0.2+8 are now available on this site.
+Adoptium's JDKs are called Eclipse Temurin, and they are available on
+our https://adoptium.net/temurin/releases/[latest releases page].
+
+== Is Eclipse Temurin free to use?
+
+Yes. The Eclipse Temurin binaries are provided by Adoptium at no cost
+to you to use, forever. You may freely use, modify, and share the code
+as described in the license included in the download.
+
+== How long is Eclipse Temurin supported?
+
+Our release and support statement is available https://adoptium.net/support/[here].
 
 == What happened to AdoptOpenJDK?
 
-Short answer: The project got so big that we chose to
-https://projects.eclipse.org/projects/adoptium[move under the Eclipse Foundation] as
-https://blog.adoptopenjdk.net/2020/06/adoptopenjdk-to-join-the-eclipse-foundation/[announced in June 2020] to provide us some additional stability for the future!
+The builds you know as AdoptOpenJDK are now "Eclipse Temurin by
+Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[release blog post]) Don’t worry though - despite the branding changes it is the same open build processes, AQAvit test
+suites and primarily the same team producing them as before, but
+there are link:/members[more larger companies] bringing their expertise
+to the working group.
 
-Longer answer: The builds you know as AdoptOpenJDK are now "Eclipse
-Temurin by Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[release blog post]) Don’t worry though - despite the branding changes it is the
-same open build processes, AQAvit test suites and primarily the same
-team producing them as before, but there are link:/members[more larger companies] now involved in the working group.
+To ensure a smooth transition we have left the old site active, however,
+the links to latest builds on the old site will now bring you to the
+Temurin builds. In time the old website will be fully retired.
 
-== Why doesn’t the AdoptOpenJDK site redirect here?
+Some items, such as the https://adoptopenjdk.net/upstream.html[Upstream builds]
+and https://adoptopenjdk.net/icedtea-web.html[IcedTea-WEB] remain only available
+via AdoptOpenJDK. We would expect to get lots of complaints if this stuff
+just disappeared from view and that would not be the best option for our customers.
 
-Two reasons. Firstly: Since users are still transitioning we have left
-the old site working as it did before with the same layout and buttons
-as before. The links on the old site will give you the latest Temurin
-builds, but this should not be relied on and users should begin to
-migrate over to using the Adoptium API and website to download Temurin
-binaries. There are some variants which are not yet available at
-Adoptium, and these can link:#will-the-migration-break-my-api-links[still be obtained] through the old site, so we are not removing the old site as this would result
-in some functionality disappearing with no warning. It’s not ideal, and
-causes some SEO confusion, but we feel it is the right option for now.
-In the future the Adoptium web site will be more than just Temurin so a
-pure redirect at between the domains would not ba appropriate.
+== Can you deliver on my favorite Docker base OS image?
 
-Secondly: As alluded to at the end of the previous paragraph, some
-things are not available at Adoptium.net and so a the old web site is
-retained without an explicit redirect in order to continue hosting them
-at present. This includes things like the https://adoptopenjdk.net/upstream.html[Upstream builds] and https://adoptopenjdk.net/icedtea-web.html[IcedTea-WEB]. We would expect to get lots of complaints if this stuff just disappeared from view and
-that would not be the best option for our customers.
+We have a set list of variants in our
+https://hub.docker.com/_/eclipse-temurin[official Docker repository] to ensure we
+are responsive to the delivery of images containing Temurin. Users
+who want a containerized Linux distribution that we don’t provide can follow
+the instructions in
+https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/[this
+guide].
 
 == What is this "Eclipse Temurin" name?
 
 This is the project and brand name for the binaries that the Eclipse
-Foundation produces. You can think of these as the successor binaries to
-AdoptOpenJDK. However, it is important to note that these binaries are
-just one of many that will eventually be in the
-https://github.com/adoptium/adoptium/issues/7[Eclipse Adoptium Marketplace].
+Foundation produces.
 While we appreciate that the Adoptium/Temurin name split
 is more confusing that just "Adoptium", this is similar to how other
 vendors brand their binaries, e.g. Amazon has Corretto, Azul has Zulu
@@ -65,17 +68,6 @@ over and they are now available as
 "https://developer.ibm.com/languages/java/semeru-runtimes/[IBM Semeru]".
 There is no need to be concerned about the change - it is still free.
 
-== Where are the Docker images?
-
-Due to the limited amount of people we have working on the project,
-maintaining the wide variety of docker images that we provided from
-AdoptOpenJDK was becoming unsustainable. For that reason we are
-releasing a cut down set of docker images for Temurin. For those users
-who want a containerized Linux distribution that we don’t provide an
-image for, use
-https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/[this
-guide].
-
 == Where are the Linux RPM/DEB packages?
 
 Linux Installers are available at packages.adoptium.net. For more
@@ -89,21 +81,10 @@ However, you can still add the functionality if you require it using the
 https://blog.adoptopenjdk.net/2018/10/using-icedtea-web-browser-plug-in-with-adoptopenjdk/[instructions
 here].
 
-== Will the migration break my API links?
+== Can I automate the download of Temurin binaries?
 
-There is a https://api.adoptium.net/q/swagger-ui/[new download API]
+Yes! There is a https://api.adoptium.net/q/swagger-ui/[download API]
 provided by Adoptium for downloading Eclipse Temurin builds.
-
-The good news is that it looks very like the AdoptOpenJDK one did so
-migration isn’t too difficult for anyone currently using it. At present
-the AdoptOpenJDK API will redirect to Temurin (or Semeru) if available
-when you request the latest release builds. We have done this because we
-haven’t had time to encourage the community to fully migrate and because
-we haven’t released everything yet so there are missing builds in the
-Adoptium API. Note that this will be a temporary measure and the
-AdoptOpenJDK API is not expected to be retained forever to do this
-although the timescale for removing the redirection is still to be
-decided.
 
 == Can you give a talk on the project?
 
