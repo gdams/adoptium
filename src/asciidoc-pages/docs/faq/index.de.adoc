@@ -11,8 +11,8 @@ https://github.com/adoptium/adoptium-support[Support-Kanal].
 
 == Wo sind die neuesten JDKs?
 
-Die meisten der Eclipse Temurin builds mit HotSpot für 8u322-b06, 11.0.14+9 und
-jdk-17.0.2+8 sind nun auf dieser Seite verfügbar.
+Die meisten der Eclipse Temurin builds mit HotSpot für 8u322-b09, 11.0.15+10
+und jdk-17.0.3+7 sind nun auf dieser Seite verfügbar.
 
 == Was ist mit AdoptOpenJDK passiert?
 

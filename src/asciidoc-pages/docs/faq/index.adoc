@@ -10,8 +10,8 @@ question is not covered by one of the entries below.
 
 == Where are the latest JDKs?
 
-Most of the Eclipse Temurin builds with HotSpot for 8u322-b06, 11.0.14+9
-and jdk-17.0.2+8 are now available on this site.
+Most of the Eclipse Temurin builds with HotSpot for 8u322-b09, 11.0.15+10
+and jdk-17.0.3+7 are now available on this site.
 
 == What happened to AdoptOpenJDK?
 
