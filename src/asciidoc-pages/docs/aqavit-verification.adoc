@@ -27,7 +27,7 @@ AQAvit can be run in various CI/CD environments as well as directly via command-
 a|image::aqacert_basic_steps.png["basic steps",350,350]
 a|
 ```
-git clone -depth 1 -branch v0.8.0-release https://github.com/adoptium/aqa-tests.git 
+git clone --depth 1 --branch v0.9.1-release https://github.com/adoptium/aqa-tests.git 
 
 export TEST_JDK_HOME=<path to binary> 
 export USE_TESTENV_PROPERTIES=true 
@@ -85,7 +85,7 @@ jobs:
         version: '11'
         jdksource: 'customized'
         customizedSdkUrl: ${{ env.BINARY_SDK }} ${{ env.NATIVE_LIBS }}
-        aqa-testsRepo: 'adoptium/aqa-tests:v0.8.0-release' # Make sure this branch is set to the latest release branch
+        aqa-testsRepo: 'adoptium/aqa-tests:v0.9.1-release' # Make sure this branch is set to the latest release branch
         build_list: ${{ matrix.suite }}
         target: _${{ matrix.target }}.${{ matrix.suite }}
 
@@ -104,7 +104,7 @@ If you are using the AQAvit Jenkins test pipeline code available from the aqa-te
 ```
 # Set Jenkins job parameters
 ADOPTOPENJDK_REPO=https://github.com/adoptium/aqa-tests.git
-ADOPTOPENJDK_BRANCH=v0.8.0-release
+ADOPTOPENJDK_BRANCH=v0.9.1-release
 USE_TESTENV_PROPERTIES=true
 
 # Execute test targets
