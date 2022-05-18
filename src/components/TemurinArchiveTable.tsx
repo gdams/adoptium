@@ -78,7 +78,7 @@ const TemurinArchiveTable = ({results}) => {
                                                                                 </td>
                                                                                 <td>
                                                                                     <DownloadButton
-                                                                                        link={asset.binary_link}
+                                                                                        link={asset.link}
                                                                                         platform={key}
                                                                                         type={asset.type}
                                                                                         version={release.release_name}
