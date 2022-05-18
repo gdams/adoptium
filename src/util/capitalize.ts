@@ -1,6 +1,6 @@
 // Format text with a capital letter
 export function capitalize (text) {
-  if (text === 'alpine-linux') {
+  if (text.includes('alpine')) {
     return 'Alpine Linux'
   } else if (text === 'mac') {
     return 'macOS'

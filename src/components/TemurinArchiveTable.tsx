@@ -56,8 +56,7 @@ const TemurinArchiveTable = ({results}) => {
                                                                             <tr key={asset.checksum}>
                                                                                 <td>
                                                                                 {i === 0 &&
-                                                                                    /* Returns an "OS Arch" */
-                                                                                    `${capitalize(key.split("-")[0])} ${key.split("-")[1]}`
+                                                                                    `${capitalize(asset.os)} ${asset.architecture}`
                                                                                 }
                                                                                 </td>
                                                                                 <td>

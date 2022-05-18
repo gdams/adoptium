@@ -64,6 +64,8 @@ function renderReleases(pkgs) {
         }
   
         let binary_constructor = {
+          os: aReleaseAsset.os,
+          architecture: aReleaseAsset.architecture,
           type: binary_type,
           link: aReleaseAsset.package.link,
           checksum: aReleaseAsset.package.checksum,
