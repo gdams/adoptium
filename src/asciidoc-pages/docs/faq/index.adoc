@@ -8,26 +8,58 @@ the best place is via
 https://adoptium.net/slack.html[Slack] or by raising an issue in the
 https://github.com/adoptium/adoptium-support[support channel].
 
-== Where are the latest JDKs?
+== Where are the latest Adoptium JDKs?
 
-Adoptium's JDKs are called Eclipse Temurin, and they are available on
-our https://adoptium.net/temurin/releases/[latest releases page].
+Adoptium's JDKs are called Eclipse Temurin, and the releases we recommend for
+use are available on our https://adoptium.net/temurin/releases/[latest releases page].
 
 == Is Eclipse Temurin free to use?
 
-Yes. The Eclipse Temurin binaries are provided by Adoptium at no cost
-to you to use, forever. You may freely use, modify, and share the code
-as described in the license included in the download.
+Yes. The Eclipse Temurin binaries are provided at no cost to you
+by Adoptium to use forever under the terms of the "GNU General Public License,
+version 2 with the Classpath Exception". You may freely use, modify, and
+share the code as described in the licenses included in the download.
+
+== How can I help the project?
+
+The Adoptium team welcome help in many different ways. For example:
+
+* Anyone can contribute to the funds that keep the project running smoothy, either
+as a https://www.eclipse.org/donate/adoptium/[one-off donation] or through a
+more strucutured link:/sponsors[project sponsorship].
+
+* Organizations that depend upon Adoptium are encouraged to link:/members[join the
+Adoptium Working Group] and gain a voice in the direction of the project.
+
+* We welcome technical and creative help at the project to advance our goals through
+promoting and marketing, writing blogs about your experience with Adoptium, answering
+questions in our link:/slack[active Slack community], helping to test the
+software or diagnose problems, and link:/docs/first-timer-support[fixing some
+issues] that have been reported.
+
+* Many other ways either as a one-off adventure or longer term team member, just
+join us and tell us your ideas!
 
 == How long is Eclipse Temurin supported?
 
-Our release and support statement is available https://adoptium.net/support/[here].
+Our release frequency and support statement is available
+https://adoptium.net/support/[here].
+
+== Does Eclipse Temurin pass the JCK?
+
+Yes. Each Temurin release has passed the relevant Oracle Java Compatibility Kit (JCK)
+to demonstrate that it is a compatible implementation of the Java specification.
+In addition, Temurin releases must pass the link:/aqavit[AQAvit quality verification suite]
+to ensure they are ready for production usage. AQAvit tests check the release exhibits
+great performance, security, resilience and endurance, and the ability to pass a wide
+variety of application compatibility tests.
 
 == What happened to AdoptOpenJDK?
 
-The builds you know as AdoptOpenJDK are now "Eclipse Temurin by
-Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[release blog post]) Don’t worry though - despite the branding changes it is the same open build processes, AQAvit test
-suites and primarily the same team producing them as before, but
+The AdoptOpenJDK builds are now known as "Eclipse Temurin by
+Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[read the blog post]).
+Don’t worry though - despite the branding changes it is the same open build processes,
+AQAvit test suites and primarily the same team producing them as before, but
 there are link:/members[more larger companies] bringing their expertise
 to the working group.
 
@@ -37,18 +69,25 @@ Temurin builds. In time the old website will be fully retired.
 
 Some items, such as the https://adoptopenjdk.net/upstream.html[Upstream builds]
 and https://adoptopenjdk.net/icedtea-web.html[IcedTea-WEB] remain only available
-via AdoptOpenJDK. We would expect to get lots of complaints if this stuff
-just disappeared from view and that would not be the best option for our customers.
+via AdoptOpenJDK.
 
-== Can you deliver on my favorite Docker base OS image?
+== Can you deliver Temurin with my favorite Docker base OS image?
 
 We have a set list of variants in our
 https://hub.docker.com/_/eclipse-temurin[official Docker repository] to ensure we
-are responsive to the delivery of images containing Temurin. Users
+are responsive to the delivery of new images containing Temurin. Users
 who want a containerized Linux distribution that we don’t provide can follow
 the instructions in
 https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/[this
 guide].
+
+== Will you support my favorite architecture and operating system?
+
+Eclipse Temurin has the broadest range of platfom support across multiple Java API
+versions. Each new platform incurs further cost and demand on the project's
+resources so we constantly review the download and usage demand to ensure we
+are releasing on platforms relevant to a large set of users. The current
+set of platforms we target in our build and test process is listed link:/supported-platforms[here].
 
 == What is this "Eclipse Temurin" name?
 
@@ -83,8 +122,16 @@ here].
 
 == Can I automate the download of Temurin binaries?
 
-Yes! There is a https://api.adoptium.net/q/swagger-ui/[download API]
-provided by Adoptium for downloading Eclipse Temurin builds.
+Yes! There is a rich https://api.adoptium.net/q/swagger-ui/[download API]
+provided by Adoptium for downloading Eclipse Temurin builds. Using the API it is
+possible to get information about the latest builds of Temurin, and pull
+them down into your application.
+
+We also feature in all the notable Java installation managers such as
+https://sdkman.io/[SDKMAN], https://formulae.brew.sh/cask/temurin[Homebrew], and
+https://chocolatey.org/[Chocolatey], and you can use Temurin through the
+Github https://github.com/marketplace/actions/setup-java-jdk#basic["setup-java"]
+action, and part of cloud providers Java support.
 
 == Can you give a talk on the project?
 
