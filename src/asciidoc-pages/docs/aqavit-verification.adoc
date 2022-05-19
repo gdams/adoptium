@@ -1,5 +1,6 @@
 = AQAvit Verification
 :page-authors: gdams, smlambert, llxia, tellison
+:aqavit-branch: v0.9.1-release
 Version 0.2, 02.03.2022
 
 The AQAvit project was created to “make quality certain to happen.” AQAvit verification is achieved through the process of running and passing a prescribed and versioned set of tests in the AQAvit test suite. The https://www.eclipse.org/legal/eclipse-foundation-quality-verification-suite-license.php[Eclipse Foundation Quality Verification Software License (QVSL)^] requires those who wish to verify their product to share a summary of the test results by which verification was achieved. This document describes how to run the AQAvit verification tests, check verification has passed, and collect the required test results for publication.
@@ -26,8 +27,9 @@ AQAvit can be run in various CI/CD environments as well as directly via command-
 | | 
 a|image::aqacert_basic_steps.png["basic steps",350,350]
 a|
-```
-git clone --depth 1 --branch v0.9.1-release https://github.com/adoptium/aqa-tests.git 
+[source, subs="attributes"]
+----
+git clone --depth 1 --branch {aqavit-branch} https://github.com/adoptium/aqa-tests.git 
 
 export TEST_JDK_HOME=<path to binary> 
 export USE_TESTENV_PROPERTIES=true 
@@ -46,7 +48,7 @@ make _extended.system
 Collect *.tap file and metadata file 
 Archive <results>.zip 
 Publish <results>.zip
-```
+----
 |===
 ====
 
@@ -54,7 +56,8 @@ Publish <results>.zip
 [%collapsible]
 ====
 The AQAvit project created a Github action that allows for running the AQAvit test suite from workflow files.  The `run-aqa` action in the link:/https://github.com/adoptium/run-aqa[run-aqa repository^] allows users to pass in custom OpenJDK binaries for verification.  Here is an example workflow file that can run sanity level targets on the 3 supported platforms available as Github runners: 
-```
+[source, subs="attributes"]
+----
 name: Run AQAvit
 
 on:
@@ -85,7 +88,7 @@ jobs:
         version: '11'
         jdksource: 'customized'
         customizedSdkUrl: ${{ env.BINARY_SDK }} ${{ env.NATIVE_LIBS }}
-        aqa-testsRepo: 'adoptium/aqa-tests:v0.9.1-release' # Make sure this branch is set to the latest release branch
+        aqa-testsRepo: 'adoptium/aqa-tests:{aqavit-branch}' # Make sure this branch is set to the latest release branch
         build_list: ${{ matrix.suite }}
         target: _${{ matrix.target }}.${{ matrix.suite }}
 
@@ -94,17 +97,18 @@ jobs:
       with:
         name: test_output
         path: ./**/output_*/*.tap
-```
+----
 ====
 
 .Run AQAvit via Jenkins
 [%collapsible]
 ====
 If you are using the AQAvit Jenkins test pipeline code available from the aqa-tests repository and described in the documentation under the https://github.com/adoptium/aqa-tests/blob/master/doc/userGuide.md#jenkins-setup-and-running[Jenkins Setup and Running^] section, then these are additional parameters that you will set in order to run the required test targets.
-```
+[source, subs="attributes"]
+----
 # Set Jenkins job parameters
 ADOPTOPENJDK_REPO=https://github.com/adoptium/aqa-tests.git
-ADOPTOPENJDK_BRANCH=v0.9.1-release
+ADOPTOPENJDK_BRANCH={aqavit-branch}
 USE_TESTENV_PROPERTIES=true
 
 # Execute test targets
@@ -115,7 +119,7 @@ Collect *.tap file and metadata file
 Archive <results>.zip
 
 Publish <results>.zip
-```
+----
 ====
 
 The `.tap` files and metadata files contain timestamps and information about the binary under test.  This information is collected from `java -version` output, release file information and querying some system properties during the test run.  Where applicable, the information should match with the binary listed in the marketplace.
