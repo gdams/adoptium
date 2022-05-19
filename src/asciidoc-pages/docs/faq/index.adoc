@@ -15,7 +15,7 @@ use are available on our https://adoptium.net/temurin/releases/[latest releases 
 
 We also feature in all the notable Java installation managers such as
 https://sdkman.io/[SDKMAN], https://formulae.brew.sh/cask/temurin[Homebrew], and
-https://chocolatey.org/[Chocolatey], we appear in
+https://github.com/microsoft/winget-cli[winget], and https://chocolatey.org/[Chocolatey], we appear in
 https://hub.docker.com/_/eclipse-temurin[official Docker images], and you can
 use Temurin through the Github
 https://github.com/marketplace/actions/setup-java-jdk#basic["setup-java"]
