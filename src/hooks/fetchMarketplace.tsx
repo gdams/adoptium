@@ -1,16 +1,20 @@
 const baseUrl = 'https://marketplace-api.adoptium.net';
     
 export async function getAllPkgsForVersion(version, os, architecture, package_type, checkboxRef) {
-    let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
+    // let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
     let temurinSelected = checkboxRef.current.vendorAdoptium.checked;
-    let zuluSelected = checkboxRef.current.vendorAzul.checked;
+    // let zuluSelected = checkboxRef.current.vendorAzul.checked;
     let ibmSelected = checkboxRef.current.vendorIBM.checked;
 
     let params = '?'
     params += 'feature_version=' + version;
 
     if (os !== 'any' ) {
-        params += ('&os=' + os)
+        if (os === 'alpine-linux') {
+            params += '&os=alpine_linux'
+        } else {
+            params += ('&os=' + os)
+        }
     }
 
     if (architecture !== 'any' ) {
@@ -27,9 +31,9 @@ export async function getAllPkgsForVersion(version, os, architecture, package_ty
         params += '&vendor=adoptium'
     }
 
-    if (microsoftSelected) {
-        params += ('&vendor=microsoft')
-    }
+    // if (microsoftSelected) {
+    //     params += ('&vendor=microsoft')
+    // }
 
     // if (zuluSelected) {
     //     params += ('&vendor=azul')
