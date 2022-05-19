@@ -56,7 +56,7 @@ join us and tell us your ideas!
 Our release frequency and support statement is available
 https://adoptium.net/support/[here].
 
-== Does Eclipse Temurin pass the JCK?
+== Has Eclipse Temurin passed the JCK?
 
 Yes. Each Temurin release has passed the relevant Oracle Java Compatibility Kit (JCK)
 to demonstrate that it is a compatible implementation of the Java specification.
