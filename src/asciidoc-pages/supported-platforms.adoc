@@ -28,26 +28,31 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | SUSE Linux Enterprise Server (SLES) 12 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[]icon:docker[] | icon:check[] icon:docker[]
+| Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | Alpine Linux 3.5 or later (Headless) | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
 5+h| Linux (ARM 64-bit) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 64-bit) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
 | RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
 5+h| Linux (ARM 32-bit Hard-Float) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (ARM 32-bit Hard-Float) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
+| Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
 5+h| Linux (PowerPC 64-bit Little Endian) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (PowerPC 64-bit Little Endian) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
 | RHEL / Rocky 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | RHEL / CentOS 7.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
 5+h| Linux (s390x) ["data-bs-toggle="tooltip"data-bs-placement="right"title="Linux (s390x) builds should work on any distribution with glibc version 2.17 or higher."]#^[2]^#
 | RHEL 8.x | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[]
 | RHEL 7.x | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] | icon:check[] | icon:check[]
+| Ubuntu 22.04 | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] icon:docker[]  | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 20.04 | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] icon:docker[]  | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
 5+h| macOS (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="macOS builds should work on 10.12 or above."]#^[4]^#
