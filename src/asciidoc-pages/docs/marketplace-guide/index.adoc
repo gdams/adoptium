@@ -17,7 +17,7 @@ Publishers may offer open source or commercially licensed offerings, each usable
 The marketplace is available to end users as both a
 link:/marketplace[website]
 and an
-https://api.adoptium.net/[application programming interface^]
+https://marketplace-api.adoptium.net/[application programming interface^]
 (API) hosted and maintained by the Adoptium project.
 
 Publishers are encouraged to discuss their participation in the marketplace with the
@@ -30,8 +30,8 @@ who will provide guidance and assistance with the steps described below. In case
 Potential publishers and their products must meet the criteria described in the
 link:/marketplace-policy[Adoptium Marketplace Policy]. These criteria include becoming a member of the Adoptium working group at an appropriate level, granting you a voice in the policy and operation of the marketplace. Not every member of the working group will be a publisher. End users are also encouraged to join the working group to help guide the products and requirements of the marketplace products.
 
-// TODO: link to publisher agreement
-Working group members who wish to publish a product in the marketplace must agree to the Adoptium Marketplace Publisher Agreement. This agreement sets out the terms and conditions under which the Eclipse Foundation accepts your product promotion. Products will benefit from marketing initiatives intended to promote the value of the binaries in this context when accepted into the marketplace.
+Working group members who wish to publish a product in the marketplace must agree to the
+https://www.eclipse.org/legal/documents/eclipse-adoptium-marketplace-publisher-agreement.pdf[Adoptium Marketplace Publisher Agreement]. This agreement sets out the terms and conditions under which the Eclipse Foundation accepts your product promotion. Products will benefit from marketing initiatives intended to promote the value of the binaries in this context when accepted into the marketplace.
 
 
 == Publishing Overview
@@ -107,6 +107,6 @@ marketplace file schema, or the signature does not verify the content successful
 // TODO: Should the post-download be per-publisher or per-product (i.e. embedded in the metadata).
 When a user chooses to download your product via the marketplace website they will be directed to a post-download page as the download is initiated from your distribution server. The post-download page will thank the user and identify the publisher, including a link to a webpage of your choice. We envisage this webpage will lead the user to information about your product, organization, services, and so on.
 
-// TODO: unless we include it in the metadata...
-The post-download page link is not used by the Adoptium marketplace API.
+The post-download page link is not used by the
+https://marketplace-api.adoptium.net/[Adoptium marketplace API].
 
