@@ -27,9 +27,17 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
         defaultArch = defaultArchitecture;
         const userOS = detectOS();
         switch (userOS) {
-          case UserOS.MAC:
-            defaultOS = 'mac'
-            break;
+            case UserOS.MAC:
+                defaultOS = 'mac'
+                if (typeof document !== 'undefined') {
+                    let w = document.createElement("canvas").getContext("webgl");
+                    let d = w.getExtension('WEBGL_debug_renderer_info');
+                    let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
+                    if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+                        defaultArch = 'aarch64'
+                    }
+                }
+                break;
           case UserOS.LINUX:
           case UserOS.UNIX:
             defaultOS = 'linux'

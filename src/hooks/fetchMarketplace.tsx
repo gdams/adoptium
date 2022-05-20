@@ -3,6 +3,7 @@ const baseUrl = 'https://marketplace-api.adoptium.net';
 export async function getAllPkgsForVersion(version, os, architecture, package_type, checkboxRef) {
     // let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
     let temurinSelected = checkboxRef.current.vendorAdoptium.checked;
+    let redhatSelected = checkboxRef.current.vendorRedHat.checked;
     // let zuluSelected = checkboxRef.current.vendorAzul.checked;
     let ibmSelected = checkboxRef.current.vendorIBM.checked;
 
@@ -29,6 +30,10 @@ export async function getAllPkgsForVersion(version, os, architecture, package_ty
 
     if (temurinSelected) {
         params += '&vendor=adoptium'
+    }
+
+    if (redhatSelected) {
+        params += '&vendor=redhat'
     }
 
     // if (microsoftSelected) {
