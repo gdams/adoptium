@@ -1,7 +1,6 @@
 import * as React from "react"
 
 import vendors from '../../json/marketplace.json';
-import { shuffle } from "../../util/shuffle";
 import './VendorSelector.scss';
 
 const VendorSelector = ({
@@ -11,9 +10,6 @@ const VendorSelector = ({
     const handleChange = () => {
         setCheckbox(checkboxRef.current.checked)
     };
-
-    // Randomly suffle the order of vendors
-    shuffle(vendors);
 
     return (
         <ul className="vendor-list pt-5">
