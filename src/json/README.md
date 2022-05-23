@@ -37,4 +37,4 @@ An example entry looks like this:
 }
 ```
 
-The `name` field is the name of the vendor which can include spaces. The `icon` field is the file name of the square vendor icon located inside the `static/images/vendors/` directory.
+The `name` field is the name of the vendor which can include spaces. The `icon` field is the filename of the square vendor icon located inside the `static/images/vendors/` directory.
