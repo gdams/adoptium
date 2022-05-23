@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { capitalize } from '../util/capitalize';
-import { getImageForVendor, getVendorForDistribution } from '../hooks'
+import { getImageForDistribution } from '../hooks'
 import { fetchExtension } from '../util/fetchExtension';
 
 const DownloadTable = ({results}) => {
@@ -32,7 +32,7 @@ const DownloadTable = ({results}) => {
                                     {capitalize(pkg.binary.distribution)}
                                 </td>
                                 <td className="align-middle">
-                                    <img width="100px" src={getImageForVendor(getVendorForDistribution(pkg.binary.distribution))}/>
+                                    <img width="100px" src={getImageForDistribution(pkg.binary.distribution)}/>
                                 </td>
                                 <td className="align-middle">
                                     {capitalize(pkg.binary.os)}

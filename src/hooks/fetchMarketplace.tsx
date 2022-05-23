@@ -4,7 +4,8 @@ export async function getAllPkgsForVersion(version, os, architecture, package_ty
     // let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
     let temurinSelected = checkboxRef.current.vendorAdoptium.checked;
     let redhatSelected = checkboxRef.current.vendorRedHat.checked;
-    // let zuluSelected = checkboxRef.current.vendorAzul.checked;
+    let huaweiSelected = checkboxRef.current.vendorHuawei.checked;
+    let zuluSelected = checkboxRef.current.vendorAzul.checked;
     let ibmSelected = checkboxRef.current.vendorIBM.checked;
 
     let params = '?'
@@ -36,13 +37,17 @@ export async function getAllPkgsForVersion(version, os, architecture, package_ty
         params += '&vendor=redhat'
     }
 
+    if (huaweiSelected) {
+        params += '&vendor=huawei'
+    }
+
     // if (microsoftSelected) {
     //     params += ('&vendor=microsoft')
     // }
 
-    // if (zuluSelected) {
-    //     params += ('&vendor=azul')
-    // }
+    if (zuluSelected) {
+        params += ('&vendor=azul')
+    }
 
     if (ibmSelected) {
         params += ('&vendor=ibm')
@@ -65,22 +70,14 @@ async function makeRequest(method, url): Promise<apiData> {
     return apiResult
 };
 
-export function getVendorForDistribution(distribution) {
+export function getImageForDistribution(distribution: string) {
     switch(distribution) {
-    case 'microsoft': return 'Microsoft';
-    case 'temurin'  : return 'Eclipse Foundation';
-    case 'zulu'     : return 'Azul';
-    case 'semeru_certified' : return 'IBM';
-    default         : return '';
-    }
-}
-
-export function getImageForVendor(vendor) {
-    switch(vendor) {
-    case 'Microsoft': return '/images/microsoft-logo.png';
-    case 'Eclipse Foundation': return '/images/adoptium-logo.png';
-    case 'Azul'              : return '/images/azul-logo.png';
-    case 'IBM'              : return '/images/ibm-logo.png';
-    default                  : return '';
+    case 'microsoft': return '/images/microsoft-logo.png';
+    case 'temurin': return '/images/adoptium-logo.png';
+    case 'redhat': return '/images/redhat.svg';
+    case 'huawei': return '/images/huawei.svg';
+    case 'zulu': return '/images/azul-logo.png';
+    case 'semeru_certified': return '/images/ibm-logo.png';
+    default: return '';
     }
 }

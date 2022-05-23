@@ -32,6 +32,10 @@ const VendorSelector = ({
                 <input id="vendorIBM" ref={el => checkboxRef.current['vendorIBM'] = el} type="checkbox" defaultChecked={true} onChange={handleChange} />
                 <label className="vendor-label" htmlFor="vendorIBM" title="IBM"><img src="/images/vendors/vendor-ibm.png"/></label>
             </li>
+            <li className="vendor-li">
+                <input id="vendorHuawei" ref={el => checkboxRef.current['vendorHuawei'] = el} type="checkbox" defaultChecked={true} onChange={handleChange} />
+                <label className="vendor-label" htmlFor="vendorHuawei" title="Huawei"><img src="/images/vendors/vendor-huawei.png"/></label>
+            </li>
         </ul>
     );
 };
