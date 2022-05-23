@@ -32,7 +32,7 @@ const IndexPage = () => {
             </div>
             <div className='col-md-6'>
               <StaticImage
-                src='../images/servers.png'
+                src='../images/servers-min.png'
                 width={1000}
                 alt='Image showing server, cloud and laptop'
                 style={{ opacity: '0.999', mixBlendMode: 'luminosity' }}
