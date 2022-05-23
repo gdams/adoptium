@@ -1,134 +1,134 @@
 [
-    {
-      "name": "Alibaba",
-      "logo": "alibaba.svg",
-      "url": "https://alibabacloud.com",
-      "tier": "strategic"
-    },
-    {
-      "name": "Azul",
-      "logo": "azul.svg",
-      "url": "https://www.azul.com",
-      "tier": "strategic"
-    },
-    {
-      "name": "Huawei",
-      "logo": "huawei.svg",
-      "url": "https://huawei.com",
-      "tier": "strategic"
-    },
-    {
-      "name": "Karakun",
-      "logo": "karakun.svg",
-      "url": "https://karakun.com",
-      "tier": "strategic"
-    },
-    {
-      "name": "Microsoft",
-      "logo": "microsoft.svg",
-      "url": "https://microsoft.com",
-      "tier": "strategic"
-    },
-    {
-      "name": "Red Hat",
-      "logo": "redhat.svg",
-      "url": "https://www.redhat.com",
-      "tier": "strategic"
-    },
-    {
-      "name": "IBM",
-      "logo": "ibm-logo.png",
-      "url": "https://ibm.com",
-      "tier": "enterprise"
-    },
-    {
-      "name": "iJUG",
-      "logo": "ijug.png",
-      "url": "https://www.ijug.eu",
-      "tier": "participant"
-    },
-    {
-      "name": "Managecat",
-      "logo": "managecat.png",
-      "url": "https://managecat.com",
-      "tier": "participant"
-    },
-    {
-      "name": "New Relic",
-      "logo": "newrelic.svg",
-      "url": "https://newrelic.com",
-      "tier": "participant"
-    },
-    {
-      "name": "CarGurus",
-      "logo": "cargurus.svg",
-      "url": "https://www.cargurus.com",
-      "tier": "sponsor"
-    },
-    {
-      "name": "Delphix",
-      "logo": "delphix.svg",
-      "url": "https://www.delphix.com",
-      "tier": "sponsor"
-    },
-    {
-      "name": "Bedag",
-      "logo": "bedag.png",
-      "url": "https://bedag.ch",
-      "tier": "sponsor"
-    },
-    {
-      "name": "Microsoft Azure",
-      "logo": "azure.png",
-      "url": "https://azure.microsoft.com",
-      "tier": "infra"
-    },
-    {
-      "name": "Skytap",
-      "logo": "skytap.png",
-      "url": "https://skytap.com",
-      "tier": "infra"
-    },
-    {
-      "name": "IBM",
-      "logo": "ibm-logo.png",
-      "url": "https://ibm.com",
-      "tier": "infra"
-    },
-    {
-      "name": "MacStadium",
-      "logo": "macstadium.png",
-      "url": "https://www.macstadium.com",
-      "tier": "infra"
-    },
-    {
-      "name": "Equinix Metal",
-      "logo": "equinix.png",
-      "url": "https://metal.equinix.com",
-      "tier": "infra"
-    },
-    {
-      "name": "OSUOSL",
-      "logo": "osuosl.png",
-      "url": "https://osuosl.org",
-      "tier": "infra"
-    },
-    {
-      "name": "Marist College",
-      "logo": "marist.png",
-      "url": "https://www.marist.edu",
-      "tier": "infra"
-    },
-    {
-      "name": "Macincloud",
-      "logo": "macincloud.png",
-      "url": "https://macincloud.com",
-      "tier": "infra"
-    },
-    {
-      "name": "Spearhead",
-      "logo": "spearhead.jpg",
-      "url": "https://spearhead.systems",
-      "tier": "infra"
-    }
+  {
+    "name": "Alibaba",
+    "logo": "alibaba.svg",
+    "url": "https://alibabacloud.com",
+    "tier": "strategic"
+  },
+  {
+    "name": "Azul",
+    "logo": "azul.svg",
+    "url": "https://www.azul.com",
+    "tier": "strategic"
+  },
+  {
+    "name": "Huawei",
+    "logo": "huawei.svg",
+    "url": "https://huawei.com",
+    "tier": "strategic"
+  },
+  {
+    "name": "Karakun",
+    "logo": "karakun.svg",
+    "url": "https://karakun.com",
+    "tier": "strategic"
+  },
+  {
+    "name": "Microsoft",
+    "logo": "microsoft.svg",
+    "url": "https://microsoft.com",
+    "tier": "strategic"
+  },
+  {
+    "name": "Red Hat",
+    "logo": "redhat.svg",
+    "url": "https://www.redhat.com",
+    "tier": "strategic"
+  },
+  {
+    "name": "IBM",
+    "logo": "ibm-logo.png",
+    "url": "https://ibm.com",
+    "tier": "enterprise"
+  },
+  {
+    "name": "iJUG",
+    "logo": "ijug.png",
+    "url": "https://www.ijug.eu",
+    "tier": "participant"
+  },
+  {
+    "name": "Managecat",
+    "logo": "managecat.png",
+    "url": "https://managecat.com",
+    "tier": "participant"
+  },
+  {
+    "name": "New Relic",
+    "logo": "newrelic.svg",
+    "url": "https://newrelic.com",
+    "tier": "participant"
+  },
+  {
+    "name": "CarGurus",
+    "logo": "cargurus.svg",
+    "url": "https://www.cargurus.com",
+    "tier": "sponsor"
+  },
+  {
+    "name": "Delphix",
+    "logo": "delphix.svg",
+    "url": "https://www.delphix.com",
+    "tier": "sponsor"
+  },
+  {
+    "name": "Bedag",
+    "logo": "bedag.png",
+    "url": "https://bedag.ch",
+    "tier": "sponsor"
+  },
+  {
+    "name": "Microsoft Azure",
+    "logo": "azure.png",
+    "url": "https://azure.microsoft.com",
+    "tier": "infra"
+  },
+  {
+    "name": "Skytap",
+    "logo": "skytap.png",
+    "url": "https://skytap.com",
+    "tier": "infra"
+  },
+  {
+    "name": "IBM",
+    "logo": "ibm-logo.png",
+    "url": "https://ibm.com",
+    "tier": "infra"
+  },
+  {
+    "name": "MacStadium",
+    "logo": "macstadium.png",
+    "url": "https://www.macstadium.com",
+    "tier": "infra"
+  },
+  {
+    "name": "Equinix Metal",
+    "logo": "equinix.png",
+    "url": "https://metal.equinix.com",
+    "tier": "infra"
+  },
+  {
+    "name": "OSUOSL",
+    "logo": "osuosl.png",
+    "url": "https://osuosl.org",
+    "tier": "infra"
+  },
+  {
+    "name": "Marist College",
+    "logo": "marist.png",
+    "url": "https://www.marist.edu",
+    "tier": "infra"
+  },
+  {
+    "name": "Macincloud",
+    "logo": "macincloud.png",
+    "url": "https://macincloud.com",
+    "tier": "infra"
+  },
+  {
+    "name": "Spearhead",
+    "logo": "spearhead.jpg",
+    "url": "https://spearhead.systems",
+    "tier": "infra"
+  }
 ]

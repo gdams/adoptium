@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Adoptium",
+      "icon": "vendor-adoptium.png"
+    },
+    {
+        "name": "Red Hat",
+        "icon": "vendor-redhat.png"
+    },
+    {
+        "name": "Microsoft",
+        "icon": "vendor-microsoft.png"
+    },
+    {
+        "name": "Azul",
+        "icon": "vendor-azul.png"
+    },
+    {
+        "name": "IBM",
+        "icon": "vendor-ibm.png"
+    },
+    {
+        "name": "Huawei",
+        "icon": "vendor-huawei.png"
+    }
+]

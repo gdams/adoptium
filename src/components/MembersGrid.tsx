@@ -17,7 +17,6 @@ const array = members.members
                             </div>
                     )
                 )}
-
             </div>
         </div>
     );

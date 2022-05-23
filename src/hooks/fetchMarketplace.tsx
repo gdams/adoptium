@@ -1,7 +1,7 @@
 const baseUrl = 'https://marketplace-api.adoptium.net';
     
 export async function getAllPkgsForVersion(version, os, architecture, package_type, checkboxRef) {
-    // let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
+    let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
     let temurinSelected = checkboxRef.current.vendorAdoptium.checked;
     let redhatSelected = checkboxRef.current.vendorRedHat.checked;
     let huaweiSelected = checkboxRef.current.vendorHuawei.checked;
@@ -41,9 +41,9 @@ export async function getAllPkgsForVersion(version, os, architecture, package_ty
         params += '&vendor=huawei'
     }
 
-    // if (microsoftSelected) {
-    //     params += ('&vendor=microsoft')
-    // }
+    if (microsoftSelected) {
+        params += ('&vendor=microsoft')
+    }
 
     if (zuluSelected) {
         params += ('&vendor=azul')
