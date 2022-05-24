@@ -2,7 +2,7 @@
     {
       "name": "Adoptium",
       "icon": "vendor-adoptium.png",
-      "postDownload": "https://adoptium.net/support"
+      "postDownload": null
     },
     {
         "name": "Red Hat",
