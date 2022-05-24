@@ -2,12 +2,12 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import { BiDonateHeart } from 'react-icons/bi'
 
-import vendors from '../json/marketplace.json';
+import vendors from '../json/marketplace.json'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
 const DownloadPage = ({ location }) => {
-  let link, os, arch, type, version, vendor, postDownload;
+  let link, os, arch, type, version, vendor, postDownload
   if (location.state && location.state.link) {
     link = location.state.link
     os = location.state.os
@@ -15,7 +15,7 @@ const DownloadPage = ({ location }) => {
     type = location.state.pkg_type
     version = location.state.java_version
     vendor = location.state.vendor ? location.state.vendor : 'Adoptium'
-    for (let vendordata of vendors) {
+    for (const vendordata of vendors) {
       if (vendordata.name === vendor) {
         postDownload = vendordata.postDownload
       }
@@ -42,13 +42,16 @@ const DownloadPage = ({ location }) => {
             {link && (
               vendor === 'Temurin'
                 ? <p className='py-2'>You are downloading an Eclipse Temurin build, the open-source community build from the Eclipse Adoptium Working Group.</p>
-                : <>
+                : (
+                  <>
                     <p className='py-2'>You are downloading a build from <strong>{vendor}</strong>, a member of the Eclipse Adoptium Working Group.</p>
                     {postDownload &&
                       <p className='py-2'>For support and next steps please visit the&nbsp;
-                        <a href={`${postDownload}?utm_source=adoptium&os=${os}&arch=${arch}&type=${type}&version=${version}`} target="_blank" rel="noopener noreferrer">{vendor} Website</a>
-                      .</p>}
+                        <a href={`${postDownload}?utm_source=adoptium&os=${os}&arch=${arch}&type=${type}&version=${version}`} target='_blank' rel='noopener noreferrer'>{vendor} Website</a>
+                        .
+                      </p>}
                   </>
+                  )
             )}
 
             {link && <meta httpEquiv='refresh' content={`0; url=${link}`} />}
