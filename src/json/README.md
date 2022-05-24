@@ -34,8 +34,9 @@ An example entry looks like this:
 ```json
 {
   "name": "Adoptium",
-  "icon": "vendor-adoptium.png"
+  "icon": "vendor-adoptium.png",
+  "postDownload": "https://link.to.post.download.page"
 }
 ```
 
-The `name` field is the name of the vendor which can include spaces. The `icon` field is the filename of the square vendor icon located inside the `static/images/vendors/` directory.
+The `name` field is the name of the vendor which can include spaces. The `icon` field is the filename of the square vendor icon located inside the `static/images/vendors/` directory. The `postDownload` field is for adding a vendor specific link to be shown after a download.

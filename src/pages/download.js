@@ -2,18 +2,24 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import { BiDonateHeart } from 'react-icons/bi'
 
+import vendors from '../json/marketplace.json';
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
 const DownloadPage = ({ location }) => {
-  let link, os, arch, type, version, vendor
+  let link, os, arch, type, version, vendor, postDownload;
   if (location.state && location.state.link) {
     link = location.state.link
     os = location.state.os
     arch = location.state.arch
     type = location.state.pkg_type
     version = location.state.java_version
-    vendor = location.state.vendor ? location.state.vendor : 'Temurin'
+    vendor = location.state.vendor ? location.state.vendor : 'Adoptium'
+    for (let vendordata of vendors) {
+      if (vendordata.name === vendor) {
+        postDownload = vendordata.postDownload
+      }
+    }
   }
 
   // Send a custom event to Google Analytics
@@ -36,10 +42,16 @@ const DownloadPage = ({ location }) => {
             {link && (
               vendor === 'Temurin'
                 ? <p className='py-2'>You are downloading an Eclipse Temurin build, the open-source community build from the Eclipse Adoptium Working Group.</p>
-                : <p className='py-2'>You are downloading a build from <strong>{vendor}</strong>, a member of the Eclipse Adoptium Working Group.</p>
+                : <>
+                    <p className='py-2'>You are downloading a build from <strong>{vendor}</strong>, a member of the Eclipse Adoptium Working Group.</p>
+                    {postDownload &&
+                      <p className='py-2'>For support and next steps please visit the&nbsp;
+                        <a href={`${postDownload}?utm_source=adoptium&os=${os}&arch=${arch}&type=${type}&version=${version}`} target="_blank" rel="noopener noreferrer">{vendor} Website</a>
+                      .</p>}
+                  </>
             )}
 
-            {link && <meta httpEquiv='refresh' content={`0; url=${link}`} />}
+            {/* {link && <meta httpEquiv='refresh' content={`0; url=${link}`} />} */}
             {link
               ? <p className='text-muted py-3'>If the download doesn't start in a few seconds, please <a href={link}>click here</a> to start the download.</p>
               : <p className='text-muted py-3'>Ooops - something doesn't seem quite right here. Please try again.</p>}

@@ -1,26 +1,32 @@
 [
     {
       "name": "Adoptium",
-      "icon": "vendor-adoptium.png"
+      "icon": "vendor-adoptium.png",
+      "postDownload": "https://adoptium.net/support"
     },
     {
         "name": "Red Hat",
-        "icon": "vendor-redhat.png"
+        "icon": "vendor-redhat.png",
+        "postDownload": "https://access.redhat.com/products/openjdk"
     },
     {
         "name": "Microsoft",
-        "icon": "vendor-microsoft.png"
+        "icon": "vendor-microsoft.png",
+        "postDownload": null
     },
     {
         "name": "Azul",
-        "icon": "vendor-azul.png"
+        "icon": "vendor-azul.png",
+        "postDownload": null
     },
     {
         "name": "IBM",
-        "icon": "vendor-ibm.png"
+        "icon": "vendor-ibm.png",
+        "postDownload": null
     },
     {
         "name": "Huawei",
-        "icon": "vendor-huawei.png"
+        "icon": "vendor-huawei.png",
+        "postDownload": "https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/"
     }
 ]

@@ -50,7 +50,7 @@ const DownloadTable = ({results}) => {
                                                     os={pkg.binary.os}
                                                     arch={pkg.binary.architecture}
                                                     pkgType={pkg.binary.image_type}
-                                                    javaVersion={pkg.binary.java_version}
+                                                    javaVersion={pkg.release_name}
                                                     vendor={capitalize(pkg.binary.distribution)}
                                                 />
                                             )}
@@ -60,7 +60,7 @@ const DownloadTable = ({results}) => {
                                                 os={pkg.binary.os}
                                                 arch={pkg.binary.architecture}
                                                 pkgType={pkg.binary.image_type}
-                                                javaVersion={pkg.binary.java_version}
+                                                javaVersion={pkg.release_name}
                                                 vendor={capitalize(pkg.binary.distribution)}
                                             />
                                         </tbody>
