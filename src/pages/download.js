@@ -51,7 +51,7 @@ const DownloadPage = ({ location }) => {
                   </>
             )}
 
-            {/* {link && <meta httpEquiv='refresh' content={`0; url=${link}`} />} */}
+            {link && <meta httpEquiv='refresh' content={`0; url=${link}`} />}
             {link
               ? <p className='text-muted py-3'>If the download doesn't start in a few seconds, please <a href={link}>click here</a> to start the download.</p>
               : <p className='text-muted py-3'>Ooops - something doesn't seem quite right here. Please try again.</p>}
