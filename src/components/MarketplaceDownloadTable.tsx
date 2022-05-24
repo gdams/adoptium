@@ -51,7 +51,7 @@ const DownloadTable = ({results}) => {
                                                     arch={pkg.binary.architecture}
                                                     pkgType={pkg.binary.image_type}
                                                     javaVersion={pkg.release_name}
-                                                    vendor={capitalize(pkg.binary.distribution)}
+                                                    vendor={capitalize(pkg.vendor)}
                                                 />
                                             )}
                                             <BinaryTable
@@ -61,7 +61,7 @@ const DownloadTable = ({results}) => {
                                                 arch={pkg.binary.architecture}
                                                 pkgType={pkg.binary.image_type}
                                                 javaVersion={pkg.release_name}
-                                                vendor={capitalize(pkg.binary.distribution)}
+                                                vendor={capitalize(pkg.vendor)}
                                             />
                                         </tbody>
                                     </table>
