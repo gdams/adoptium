@@ -6,23 +6,14 @@ import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 
 const DownloadPage = ({ location }) => {
-  let link, os, arch, type, version
+  let link, os, arch, type, version, vendor
   if (location.state && location.state.link) {
     link = location.state.link
     os = location.state.os
     arch = location.state.arch
     type = location.state.pkg_type
     version = location.state.java_version
-  }
-  let vendor
-  if (link && link.includes('github.com/adoptium')) {
-    vendor = 'Temurin'
-  } else if (link && link.includes('cdn.azul.com')) {
-    vendor = 'Azul'
-  } else if (link && link.includes('aka.ms')) {
-    vendor = 'Microsoft'
-  } else if (link && link.includes('github.com/ibmruntimes')) {
-    vendor = 'IBM'
+    vendor = location.state.vendor ? location.state.vendor : 'Temurin'
   }
 
   // Send a custom event to Google Analytics

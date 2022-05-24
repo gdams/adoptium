@@ -44,9 +44,25 @@ const DownloadTable = ({results}) => {
                                     <table className="table parent mb-0 w-auto">
                                         <tbody className="table-light">
                                             {pkg.binary.installer && (
-                                                <BinaryTable checksum={pkg.binary.installer[0].sha265sum} link={pkg.binary.installer[0].link} />
+                                                <BinaryTable
+                                                    checksum={pkg.binary.installer[0].sha265sum}
+                                                    link={pkg.binary.installer[0].link}
+                                                    os={pkg.binary.os}
+                                                    arch={pkg.binary.architecture}
+                                                    pkgType={pkg.binary.image_type}
+                                                    javaVersion={pkg.binary.java_version}
+                                                    vendor={capitalize(pkg.binary.distribution)}
+                                                />
                                             )}
-                                            <BinaryTable checksum={pkg.binary.package.sha265sum} link={pkg.binary.package.link} />
+                                            <BinaryTable
+                                                checksum={pkg.binary.package.sha265sum}
+                                                link={pkg.binary.package.link}
+                                                os={pkg.binary.os}
+                                                arch={pkg.binary.architecture}
+                                                pkgType={pkg.binary.image_type}
+                                                javaVersion={pkg.binary.java_version}
+                                                vendor={capitalize(pkg.binary.distribution)}
+                                            />
                                         </tbody>
                                     </table>
                                 </td>
@@ -62,7 +78,17 @@ const DownloadTable = ({results}) => {
 
 export default DownloadTable;
 
-const BinaryTable = ({ checksum, link }) => {
+interface DownloadProps {
+    checksum: string,
+    link: URL;
+    os: string;
+    arch: string;
+    pkgType: string;
+    javaVersion: string;
+    vendor: string;
+}
+
+const BinaryTable = ({ checksum, link, os, arch, pkgType, javaVersion, vendor }: DownloadProps): null | JSX.Element => {
     return (
         <tr key={checksum}>
             <td className="align-middle text-center">
@@ -75,7 +101,7 @@ const BinaryTable = ({ checksum, link }) => {
                 </tbody></table>
             </td>
             <td className="align-middle">
-                <Link to="/download" state={{ link: link }} className="btn btn-primary" style={{width: "6em"}}>
+                <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: pkgType, java_version: javaVersion, vendor: vendor }} className="btn btn-primary" style={{width: "6em"}}>
                     <FaDownload /> {fetchExtension(link)}
                 </Link>
             </td>

@@ -1,4 +1,4 @@
-const baseUrl = 'https://marketplace-api.adoptium.net';
+const baseUrl = 'https://staging-marketplace-api.adoptium.net';
     
 export async function getAllPkgsForVersion(version, os, architecture, package_type, checkboxRef) {
     let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
