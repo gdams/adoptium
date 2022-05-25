@@ -83,7 +83,7 @@ export function getImageForDistribution(distribution: string) {
     case 'redhat': return '/images/redhat.svg';
     case 'bisheng': return '/images/huawei.svg';
     case 'zulu': return '/images/azul-logo.png';
-    case 'semeru_certified': return '/images/ibm-logo.png';
+    case 'semeru': return '/images/ibm-logo.png';
     default: return '';
     }
 }

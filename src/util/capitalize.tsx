@@ -6,6 +6,7 @@ export function capitalize (text: string) {
     case 'redhat': return 'Red Hat';
     case 'mac': return 'macOS';
     case 'bisheng': return 'BiSheng';
+    case 'semeru': return 'Semeru Runtimes';
     default: return text.charAt(0).toUpperCase() + text.slice(1);
   }
 }
