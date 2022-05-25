@@ -47,7 +47,7 @@ const DownloadPage = ({ location }) => {
                     <p className='py-2'>You are downloading a build from <strong>{vendor}</strong>, a member of the Eclipse Adoptium Working Group.</p>
                     {postDownload &&
                       <p className='py-2'>For support and next steps please visit the&nbsp;
-                        <a href={`${postDownload}?utm_source=adoptium&os=${os}&arch=${arch}&type=${type}&version=${version}`} target='_blank' rel='noopener noreferrer'>{vendor} Website</a>
+                        <a href={`${postDownload}?utm_source=adoptium&os=${os}&arch=${arch}&type=${type}&version=${version}`} target='_blank' rel='noopener noreferrer'>{vendor === 'IBM' ? "IBM Semeru Runtimes" : vendor} Website</a>
                         .
                       </p>}
                   </>

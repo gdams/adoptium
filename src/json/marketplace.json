@@ -22,7 +22,7 @@
     {
         "name": "IBM",
         "icon": "vendor-ibm.png",
-        "postDownload": null
+        "postDownload": "https://developer.ibm.com/languages/java/semeru-runtimes"
     },
     {
         "name": "Huawei",
