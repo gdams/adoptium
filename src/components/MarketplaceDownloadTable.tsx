@@ -24,7 +24,7 @@ const DownloadTable = ({results}) => {
                         (pkg, i): string | JSX.Element =>
                             <tr key={pkg.binary.package.checksum}>
                                 <td className="table-secondary py-4 text-white align-middle w-20">
-                                    <span>{pkg.release_name}</span>
+                                    <span>{pkg.version.major}.{pkg.version.minor}.{pkg.version.security}</span>
                                     <br></br>
                                     <span>{pkg.binary.image_type == 'jdk' ? 'JDK' : 'JRE'}</span>
                                 </td>
