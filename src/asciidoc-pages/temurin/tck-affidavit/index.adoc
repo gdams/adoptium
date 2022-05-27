@@ -1,4 +1,4 @@
-= Eclipse Temurin Statement of Java SE Compatibility
+= Eclipse Temurin&trade; Statement of Java SE Compatibility
 :page-authors: gdams
 
-Eclipse Adoptium certifies that all Eclipse Temurin binaries available from adoptium.net except for those clearly marked as "intermediate builds" have passed all requirements of the then-current Java SE compatibility test suite (JCK tests), and are compliant and compatible implementations.
+The Eclipse Adoptium&trade; project certifies that all Eclipse Temurin binaries available from adoptium.net except for those clearly marked as "intermediate builds" have passed all requirements of the then-current Java SE compatibility test suite (JCK tests), and are compliant and compatible implementations.
