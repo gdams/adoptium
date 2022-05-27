@@ -1,4 +1,4 @@
-= Supported Platforms
+= Eclise Temurin&trade; Supported Platforms
 :page-authors: gdams, karianna, SueChaplain, sxa, KalyanJoseph, sxa555, ParkerM, hendrikebbers, aahlenst, MBoegers
 :icons: font
 
