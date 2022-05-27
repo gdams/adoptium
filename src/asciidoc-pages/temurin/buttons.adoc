@@ -1,4 +1,4 @@
-= Eclipse Temurin Download Buttons
+= Eclipse Temurin&trade; Download Buttons
 
 :page-authors: tellison
 :keywords: buttons
