@@ -11,7 +11,7 @@ const TemurinHome = () => (
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-10 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Eclipse Temurin</h1>
+          <h1 className='fw-light'>Eclipse Temurin&trade;</h1>
           <div className='row align-items-center pt-3'>
             <div className='col-6 col-md-4'>
               <img
@@ -23,7 +23,7 @@ const TemurinHome = () => (
             </div>
             <div className='col-12 col-sm-6 col-md-8'>
               <p className='text-start'>
-                The Eclipse Temurin™ project provides code and processes that support the building of runtime binaries and associated
+                The Eclipse Temurin project provides code and processes that support the building of runtime binaries and associated
                 technologies that are high performance, enterprise-caliber, cross-platform, open-source licensed, and Java SE TCK-tested
                 for general use across the Java ecosystem.
               </p>
