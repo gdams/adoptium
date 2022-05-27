@@ -11,7 +11,7 @@ const JoinPage = () => (
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Join The Eclipse Adoptium&trade; Working Group</h1>
+          <h1 className='fw-light'>Join the Eclipse Adoptium&trade; Working Group</h1>
         </div>
         <HubspotForm
           portalId='5413615'
