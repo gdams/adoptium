@@ -24,7 +24,7 @@ action, and part of cloud providers' Java support.
 Linux installers are available at packages.adoptium.net. For more
 information see link:/installation/linux[this guide].
 
-== Is Eclipse Temurin(TM) free to use?
+== Is Temurin(TM) free to use?
 
 Yes. The Eclipse Temurin binaries are provided at no cost to you by Adoptium to use,
 forever, under the terms of the "GNU General Public License, version 2 with the
