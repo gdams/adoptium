@@ -1,4 +1,4 @@
-= Adoptium&trade; Marketplace Publisher Product Listing Repository
+= Adoptium(TM) Marketplace Publisher Product Listing Repository
 :description: Adoptium Marketplace Publisher Product Listing Guide
 :keywords: adoptium marketplace publisher listing guide
 :orgname: Eclipse Adoptium
