@@ -30,12 +30,12 @@ shuffle(infra)
 
 const SponsorsPage = () => (
   <Layout>
-    <Seo title='Sponsors' />
+    <Seo title='Adoptium Project Sponsors' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Sponsors</h1>
-          <p className='lead text-muted'>Additionally to our Working Group Members Adoptium is proud to receive financial donations (both one-off and regularly) from the following companies.</p>
+          <h1 className='fw-light'>Adoptium&trade; Project Sponsors</h1>
+          <p className='lead text-muted'>Adoptium is proud to receive financial donations (both one-off and regularly) from the following companies.</p>
           <MembersGrid
             members={sponsors}
           />
