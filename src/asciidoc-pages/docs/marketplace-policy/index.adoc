@@ -1,4 +1,4 @@
-= Adoptium&trade; Software Products Marketplace Policy
+= Adoptium(TM) Software Products Marketplace Policy
 :description: Adoptium Marketplace Policy
 :keywords: Adoptium marketplace policy
 :orgname: Eclipse Adoptium
