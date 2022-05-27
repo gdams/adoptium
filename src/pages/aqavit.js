@@ -10,7 +10,7 @@ const AqavitHome = () => (
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-10 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Eclipse AQAvit</h1>
+          <h1 className='fw-light'>Eclipse AQAvit&trade;</h1>
           <div className='row align-items-center pt-3'>
             <div className='col-6 col-md-4'>
               <img
@@ -22,7 +22,7 @@ const AqavitHome = () => (
             </div>
             <div className='col-12 col-sm-6 col-md-8'>
               <p className='text-start'>
-                Eclipse AQAvit™ is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.
+                Eclipse AQAvit is the quality and runtime branding evaluation project for Java SE runtimes and associated technology.
                 During a release it takes a functionally complete Java runtime and ensures that all the additional qualities are present that make it suitable for production use.
                 These quality criteria include good performance, exceptional security, resilience and endurance, and the ability to pass a wide variety of application test suites.
                 In addition to verifying that functionally complete runtimes are release ready, the AQA tests may also serve to verify new functionality during runtime development.
