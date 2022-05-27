@@ -1,4 +1,4 @@
-= AQAvit Verification
+= AQAvit&trade; Verification
 :page-authors: gdams, smlambert, llxia, tellison
 :aqavit-branch: v0.9.1-release
 Version 0.2, 02.03.2022
