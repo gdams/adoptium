@@ -28,5 +28,10 @@
         "name": "Huawei",
         "icon": "vendor-huawei.png",
         "postDownload": "https://www.openeuler.org/en/other/projects/bishengjdk"
+    },
+    {
+        "name": "Alibaba",
+        "icon": "vendor-alibaba.png",
+        "postDownload": "https://dragonwell-jdk.io/"
     }
 ]
