@@ -1,4 +1,4 @@
-= Adoptium&trade; Marketplace Publisher Guide
+= Adoptium(TM) Marketplace Publisher Guide
 :description: Adoptium Marketplace Publisher Guide
 :keywords: adoptium marketplace
 :orgname: Eclipse Adoptium
