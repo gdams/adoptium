@@ -1,4 +1,4 @@
-= About Eclipse Adoptium(TM)
+= About Eclipse Adoptium&#8482;
 :page-authors: gdams, karianna, tellison, parkerm, lasombra, hendrikebbers, davew16, akdsco
 
 The mission of the Eclipse Adoptium Top-Level Project is to produce
