@@ -1,4 +1,4 @@
-= Install Eclipse Temurin
+= Install Eclipse Temurin&trade;
 :page-authors: gdams, karianna
 
 Eclipse Temurin binaries are available for link:/temurin/releases[download] in
