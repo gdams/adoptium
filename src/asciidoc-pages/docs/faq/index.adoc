@@ -8,7 +8,7 @@ the best place is via
 https://adoptium.net/slack.html[Slack] or by raising an issue in the
 https://github.com/adoptium/adoptium-support[support channel].
 
-== Where are the latest Adoptium&trade; JDKs?
+== Where are the latest Adoptium(TM) JDKs?
 
 Adoptium's JDKs are called Eclipse Temurin, and the releases we recommend for
 use are available on our https://adoptium.net/temurin/releases/[latest releases page].
@@ -24,7 +24,7 @@ action, and part of cloud providers' Java support.
 Linux installers are available at packages.adoptium.net. For more
 information see link:/installation/linux[this guide].
 
-== Is Eclipse Temurin&trade; free to use?
+== Is Eclipse Temurin(TM) free to use?
 
 Yes. The Eclipse Temurin binaries are provided at no cost to you by Adoptium to use,
 forever, under the terms of the "GNU General Public License, version 2 with the
