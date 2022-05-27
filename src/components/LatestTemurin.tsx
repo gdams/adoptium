@@ -55,9 +55,9 @@ const LatestTemurin = (props): JSX.Element => {
     return (
       <div ref={ref} className={props.page === "home" ? "container hide-on-mobile" : "container"}>
         {binary ? (
-          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin for {userOSName} {arch}</h2>
+          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin&trade; for {userOSName} {arch}</h2>
         ) :
-          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin</h2>
+          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin&trade;</h2>
         }
         <div className={`btn-group-vertical mx-auto ${buttonClass}`}>
             {binary ? (
