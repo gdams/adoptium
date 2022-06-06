@@ -24,7 +24,9 @@ const TemurinDownloadTable = ({results}) => {
                         pkg && (
                             <tr key={pkg.platform_name}>
                                 <td className="table-secondary py-4 align-middle w-25">
-                                    <span className="text-white">{pkg.release_name}</span>
+                                    <a href={pkg.release_link} className="link-light">
+                                        <span className="text-white">{pkg.release_name}</span>
+                                    </a>
                                     <span className="text-white d-block m-2">
                                         Temurin <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={25} style={{ color: '#537FB9' }}/>
                                         <Link to='/aqavit'>
