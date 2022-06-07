@@ -68,7 +68,7 @@
     "@types/react-test-renderer": "^18.0.0",
     "@types/react-world-flags": "^1.4.2",
     "babel-jest": "^28.1.1",
-    "babel-preset-gatsby": "^2.15.0",
+    "babel-preset-gatsby": "^2.16.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.0",
