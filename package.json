@@ -107,7 +107,7 @@
       ".cache"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(gatsby|gatsby-plugin-mdx)/)"
+      "node_modules/(?!(gatsby|gatsby-plugin-mdx|gatsby-script)/)"
     ],
     "globals": {
       "__PATH_PREFIX__": ""
