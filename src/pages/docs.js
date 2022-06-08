@@ -79,7 +79,8 @@ const DocumentationPage = ({ data }) => (
               links={[
                 { name: 'Frequently Asked Questions', link: '/docs/faq' },
                 { name: 'Adoptium API', link: 'https://api.adoptium.net' },
-                { name: 'Adoptium Blog', link: 'https://blog.adoptium.net' }
+                { name: 'Adoptium Blog', link: 'https://blog.adoptium.net' },
+                { name: 'Download Logo Artwork', link: 'https://www.eclipse.org/org/artwork/zip_files/adoptium-logo.zip' }
               ]}
             />
           </div>
