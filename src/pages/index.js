@@ -25,9 +25,9 @@ const IndexPage = () => {
                     </h1>
                   </div>
                   <p className='mt-3 text-center text-md-start'>
-                  <Trans i18nKey='Intro'>
-                    Java™ is the world's leading programming language and platform. The Adoptium Working Group promotes and supports high-quality, TCK certified runtimes and associated technology for use across the Java™ ecosystem. Eclipse Temurin is the name of the OpenJDK distribution from Adoptium.
-                  </Trans>
+                    <Trans i18nKey='Intro'>
+                      Java™ is the world's leading programming language and platform. The Adoptium Working Group promotes and supports high-quality, TCK certified runtimes and associated technology for use across the Java™ ecosystem. Eclipse Temurin is the name of the OpenJDK distribution from Adoptium.
+                    </Trans>
                   </p>
                 </div>
                 <LatestTemurin page='home' />
