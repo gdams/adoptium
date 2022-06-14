@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next'
+import { Link, Trans } from 'gatsby-plugin-react-i18next'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'

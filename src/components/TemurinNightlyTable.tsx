@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby";
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import moment from 'moment';
 import { capitalize } from '../util/capitalize';
 
@@ -38,7 +38,7 @@ const TemurinNightlyTable = ({results}) => {
                                                             ) :
                                                                 <td>Not Available</td>
                                                             }
-                                                            <td><a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}>Checksum</a></td>
+                                                            <td><a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}><Trans>Checksum</Trans></a></td>
                                                         </tr>
                                                     )
                                             )

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../util/capitalize';
@@ -111,7 +111,7 @@ const BinaryTable = ({ checksum, link, extension, type, size, os, arch, version 
                                 data-bs-toggle="modal"
                                 data-bs-target="#checksumModal"
                                 data-bs-checksum={checksum}>
-                                <small>checksum</small>
+                                <small><Trans>Checksum</Trans></small>
                             </a>
                         </span>
                     </td>

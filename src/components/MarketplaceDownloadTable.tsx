@@ -10,12 +10,12 @@ const DownloadTable = ({results}) => {
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
             <thead className="table-dark">
                 <tr className="table-head">
-                    <td className="table-head"><Trans i18nKey="marketplaceTable.versionHeader">Build Version</Trans></td>
-                    <td className="table-head"><Trans i18nKey="marketplaceTable.distributionHeader">Distribution</Trans></td>
-                    <td className="table-head"><Trans i18nKey="marketplaceTable.vendorHeader">Vendor</Trans></td>
-                    <td className="table-head"><Trans i18nKey="marketplaceTable.osHeader">Operating System</Trans></td>
-                    <td className="table-head"><Trans i18nKey="marketplaceTable.archHeader">Architecture</Trans></td>
-                    <td className="table-head"><Trans i18nKey="marketplaceTable.downloadHeader">Download</Trans></td>
+                    <td className="table-head"><Trans>Build Version</Trans></td>
+                    <td className="table-head"><Trans>Distribution</Trans></td>
+                    <td className="table-head"><Trans>Vendor</Trans></td>
+                    <td className="table-head"><Trans>Operating System</Trans></td>
+                    <td className="table-head"><Trans>Architecture</Trans></td>
+                    <td className="table-head"><Trans>Download</Trans></td>
                 </tr>
             </thead>
             <tbody className="table-light">
@@ -95,7 +95,7 @@ const BinaryTable = ({ checksum, link, os, arch, pkgType, javaVersion, vendor }:
                 <table><tbody>
                 <tr>
                     <td>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}><Trans i18nKey="marketplaceTable.checksum">Checksum (SHA256)</Trans></a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}><Trans>Checksum</Trans> (SHA256)</a>
                     </td>
                 </tr>
                 </tbody></table>

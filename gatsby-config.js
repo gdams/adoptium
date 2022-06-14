@@ -32,7 +32,11 @@ module.exports = {
       options: {
         localeJsonSourceName: 'locale',
         languages: ['en', 'es', 'de'],
-        defaultLanguage: 'en'
+        defaultLanguage: 'en',
+        i18nextOptions: {
+          transSupportBasicHtmlNodes: true,
+          transKeepBasicHtmlNodesFor: ['u', 'a']
+        }
       }
     },
     'gatsby-transformer-asciidoc',
