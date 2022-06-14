@@ -3,7 +3,7 @@
 :keywords: adoptium logo styleguide
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: hendrikebbers
+:page-authors: hendrikebbers, gdams
 
 
 This page contains the logos of the Eclipse Adoptium top-level project and all projects of Adoptium.
