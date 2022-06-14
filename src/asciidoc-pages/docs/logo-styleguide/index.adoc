@@ -12,7 +12,8 @@ This page contains the logos of the Eclipse Adoptium top-level project and all p
 
 The logo of Adoptium can be used in landscape and portrait mode. 
 
-image:doc/logo-styleguide/adoptium-logos-l-p.png[Adoptium logo in landscape and portrait mode]
+[.m-5]
+image:doc/logo-styleguide/adoptium-logos-l-p.png[Adoptium logo in landscape and portrait mode, 100%]
 
 Non of the 2 is preferred and you should always use the one that fits best to the given layout.
 
@@ -20,7 +21,8 @@ Non of the 2 is preferred and you should always use the one that fits best to th
 
 Next to the landscape and portrait mode the logo is provided in 3 different color variants: coloured, grayscale, black&white. For each of the variants you can find different versions to use the logo always with a good contrast to the background.
 
-image:doc/logo-styleguide/adoptium-logo-color-variants.png[Adoptium logo color variants]
+[.m-5]
+image:doc/logo-styleguide/adoptium-logo-color-variants.png[Adoptium logo color variants, 100%]
 
 === Logo Download
 
@@ -30,7 +32,8 @@ You can download the logo in all available variants as PNG images with transpare
 
 For the https://projects.eclipse.org/projects/adoptium.temurin[Temurin project] we provide an official logo, too. The logo is based on the general layout and style that is used for all logos of project of the Adoptium working group. Like the Adoptium logo the Temurin logo can be used in landscape and portrait mode:
 
-image:doc/logo-styleguide/temurin-logos-l-p.png[Temurin logo in landscape and portrait mode]
+[.m-5]
+image:doc/logo-styleguide/temurin-logos-l-p.png[Temurin logo in landscape and portrait mode, 100%]
 
 === Color Variants
 
@@ -44,7 +47,8 @@ You can download the logo in all available variants as PNG images with transpare
 
 For the https://projects.eclipse.org/projects/adoptium.temurin[AQAvit project] we provide an official logo, too. The logo is based on the general layout and style that is used for all logos of project of the Adoptium working group. Like the Adoptium logo the AQAvit logo can be used in landscape and portrait mode:
 
-image:doc/logo-styleguide/aqavit-logos-l-p.png[AQAvit logo in landscape and portrait mode]
+[.m-5]
+image:doc/logo-styleguide/aqavit-logos-l-p.png[AQAvit logo in landscape and portrait mode, 100%]
 
 === Color Variants
 
