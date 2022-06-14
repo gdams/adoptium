@@ -1,5 +1,5 @@
 import React, { MutableRefObject, useRef } from 'react';
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link, Trans } from 'gatsby-plugin-react-i18next'
 
 import { FaArrowCircleRight, FaArchive, FaDownload } from 'react-icons/fa';
 
@@ -55,7 +55,11 @@ const LatestTemurin = (props): JSX.Element => {
     return (
       <div ref={ref} className={props.page === "home" ? "container hide-on-mobile" : "container"}>
         {binary ? (
-          <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin for {userOSName} {arch}</h2>
+          <h2 className={`fw-light mt-3 ${textClass}`}>
+            <Trans i18nKey="Download Temurin for" userOSName={userOSName} arch={arch}>
+              Download Temurin for {{ userOSName }} {{ arch }}
+            </Trans>
+          </h2>
         ) :
           <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin</h2>
         }
@@ -63,12 +67,12 @@ const LatestTemurin = (props): JSX.Element => {
             {binary ? (
               <>
                 <Link to="/download" state={{ link: binary.link, os: userOSName, arch: arch, pkg_type: 'JDK', java_version: binary.release_name }} className="btn btn-lg btn-primary mt-3 py-3 text-white">
-                    <FaDownload /> Latest LTS release
+                    <FaDownload /> <Trans>Latest LTS Release</Trans>
                     <br/>
                     <span style={{ fontSize: '.6em'}} className="font-weight-light">{binary.release_name}</span>
                 </Link>
                 <Link to="/temurin/releases" className="btn btn-outline-dark mt-3">
-                    Other platforms and versions <FaArrowCircleRight />
+                    <Trans>Other platforms and versions</Trans> <FaArrowCircleRight />
                 </Link>
               </>
             ) :
@@ -77,7 +81,7 @@ const LatestTemurin = (props): JSX.Element => {
               </Link>
             }
             <Link to="/temurin/archive" className="btn btn-outline-dark mt-3">
-                Release archive <FaArchive />
+                <Trans>Release Archive</Trans> <FaArchive />
             </Link>
         </div>
       </div>
