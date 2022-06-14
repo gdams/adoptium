@@ -1,7 +1,7 @@
 {
   "marketplace.marketplaceName": "Adoptium Marketplace",
-  "marketplace.marketplaceDescription": "Java™ is the world's leading programming language and platform.<br>The Adoptium Marketplace promotes high-quality, TCK certified and AQAvit verified runtimes for use across the Java ecosystem.",
-  "marketplace.aqavitDescription": "The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <a href='{{aqaLink}}'>here</a>. There is also a <a href='{{postLink}}'>blog post and brief presentation</a> that explains what testing is run and how it fits into the overall delivery pipeline.",
+  "marketplace.marketplaceDescription": "Java™ ist die weltweit führende Programmiersprache und Softwareplattform.<br>Der Adoptium Marketplace bietet hochwertige und TCK zertifizierte sowie AQAvit verifizierte Java Laufzeitumgebungen zum Download an.",
+  "marketplace.aqavitDescription": "Informationen zur offenen Testsuite AQAvit (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) können <a href='{{aqaLink}}'>hier</a> gefunden werden. Zusätzlich findet man <a href='{{postLink}}'>in diesem Blogpost</a> eine Beschreibung über die Nutzung der Tests und deren Integration in die Infrastruktur zum Bau und Test von Java Laufzeitumgebungen.",
   "marketplaceTable.versionHeader":"Version",
   "marketplaceTable.distributionHeader":"Distribution",
   "marketplaceTable.vendorHeader":"Anbieter",
