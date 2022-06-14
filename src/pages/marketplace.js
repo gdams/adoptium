@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
+import { Trans } from 'gatsby-plugin-react-i18next'
+
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
@@ -14,10 +16,10 @@ const DownloadPage = () => (
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Adoptium Marketplace</h1>
+          <h1 className='fw-light'><Trans i18nKey="marketplace.marketplaceName">Adoptium Marketplace</Trans></h1>
           <p className='pt-3'>
-            Java™ is the world's leading programming language and platform.
-            The Adoptium Marketplace promotes high-quality, TCK certified and AQAvit verified runtimes for use across the Java ecosystem.
+            <Trans i18nKey="marketplace.marketplaceDescription">Java™ is the world's leading programming language and platform. 
+            The Adoptium Marketplace promotes high-quality, TCK certified and AQAvit verified runtimes for use across the Java ecosystem.</Trans>
           </p>
           <div className='row align-items-center pt-3'>
             <div className='col-6 col-md-4'>
@@ -30,8 +32,8 @@ const DownloadPage = () => (
             </div>
             <div className='col-12 col-sm-6 col-md-8 '>
               <p className='text-start'>
-                The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <a href='https://github.com/Adoptium/aqa-tests'>here</a>.
-                There is also a <a href='https://blog.adoptopenjdk.net/2017/12/testing-java-help-count-ways/'>blog post and brief presentation</a> that explains what testing is run and how it fits into the overall delivery pipeline.
+                <Trans i18nKey="marketplace.aqavitDescription" aqaLink="https://github.com/Adoptium/aqa-tests" postPink="https://blog.adoptopenjdk.net/2017/12/testing-java-help-count-ways/" >The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <a href='https://github.com/Adoptium/aqa-tests'>here</a>.
+                There is also a <a href='https://blog.adoptopenjdk.net/2017/12/testing-java-help-count-ways/'>blog post and brief presentation</a> that explains what testing is run and how it fits into the overall delivery pipeline.</Trans>
               </p>
             </div>
           </div>
