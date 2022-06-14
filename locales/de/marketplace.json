@@ -1,5 +1,18 @@
 {
-    "Adoptium Marketplace": "AAAA",
-    "marketplaceDescription": "AAAA"
+  "marketplace.marketplaceName": "Adoptium Marketplace",
+  "marketplace.marketplaceDescription": "Java™ is the world's leading programming language and platform.<br>The Adoptium Marketplace promotes high-quality, TCK certified and AQAvit verified runtimes for use across the Java ecosystem.",
+  "marketplace.aqavitDescription": "The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <a href='{{aqaLink}}'>here</a>. There is also a <a href='{{postLink}}'>blog post and brief presentation</a> that explains what testing is run and how it fits into the overall delivery pipeline.",
+  "marketplaceTable.versionHeader":"Version",
+  "marketplaceTable.distributionHeader":"Distribution",
+  "marketplaceTable.vendorHeader":"Anbieter",
+  "marketplaceTable.osHeader":"Betriebssystem",
+  "marketplaceTable.archHeader":"Systemarchitektur",
+  "marketplaceTable.downloadHeader":"Runterladen",
+  "marketplaceTable.checksum":"Checksumme (SHA256)",
+  "downloadDropdown.os":"Betriebssystem",
+  "downloadDropdown.any":"Beliebig",
+  "downloadDropdown.arch":"Architektue",
+  "downloadDropdown.package":"Pakettyp",
+  "downloadDropdown.version":"Version"
   }
   
