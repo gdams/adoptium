@@ -8,7 +8,6 @@ import Seo from '../components/Seo'
 import LatestTemurin from '../components/LatestTemurin'
 
 const IndexPage = () => {
-  const { t } = useTranslation()
   return (
     <Layout>
       <Seo title='Home' />
