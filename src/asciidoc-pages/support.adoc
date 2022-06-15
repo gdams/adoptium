@@ -52,6 +52,7 @@ short delay while we complete our extensive build and tests cycles.
 |Java 16 - Mar 2021 | jdk-16.0.2+7 - 20th Jul 2021 | EOSL^[2]^ | Sep 2021
 |Java 17 (LTS) - Sep 2021 | jdk-17.0.3+7 - 19th Apr 2022 | jdk-17.0.4 - 19th Jul 2022 | At Least Oct 2027 ^[1]^
 |Java 18 - Mar 2022 |jdk-18.0.1+10 - 19th Apr 2022 | jdk-18.0.2 - 19th Jul 2022 | Sep 2022
+|Java 19 - Sep 2022 |N/A | jdk-19 - 20th Sep 2022 | Mar 2023
 |=======================================================================
 
 ^[1]^ As a general philosophy, Adoptium will continue to build binaries
