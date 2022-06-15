@@ -24,7 +24,7 @@ const TemurinArchiveTable = ({results}) => {
                                                     <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={30} style={{ color: '#537FB9' }}/>
                                                     <Link to='/aqavit'>
                                                         <img
-                                                            src='../../images/aqavit-icon.png'
+                                                            src='/images/aqavit-icon.png'
                                                             width={25}
                                                             alt='AQAvit logo'
                                                             data-toggle="tooltip"
@@ -35,7 +35,7 @@ const TemurinArchiveTable = ({results}) => {
                                                     </Link>
                                                     <h4 className="pt-3 pb-3" style={{fontSize: ".8rem"}}>{moment(release.timestamp).format('D MMMM YYYY')}</h4>
                                                     {release.source_url &&
-                                                        <span><a href={release.source_url} className="link-light"><FaDownload /> Source Code Archive</a></span>
+                                                        <span><a href={release.source_url} className="link-light"><FaDownload /> <Trans>Source Code Archive</Trans></a></span>
                                                     }
                                                 </div>
                                             </td>

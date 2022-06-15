@@ -23,7 +23,7 @@ export function fetchLatestForOS(
     return binary;
 }
 
-async function fetchLatestForOSRequest(version, os, arch) {
+async function fetchLatestForOSRequest(version: number, os: string, arch: string) {
     const url = `${baseUrl}/assets/feature_releases/${version}/ga?os=${os}&architecture=${arch}&image_type=jdk&jvm_impl=hotspot&page_size=1&vendor=eclipse`;
     const response = await fetch(url);
     const json = (await response.json())[0];

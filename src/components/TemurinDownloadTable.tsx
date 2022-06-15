@@ -12,7 +12,7 @@ const TemurinDownloadTable = ({results}) => {
     return (
         <>
         {source ? (
-             <span><a href={source.binary.package.link}>{source.release_name} Source Code Archive</a></span>
+             <span><a href={source.binary.package.link}>{source.release_name} <Trans>Source Code Archive</Trans></a></span>
         ):
             <></>
         }
@@ -31,7 +31,7 @@ const TemurinDownloadTable = ({results}) => {
                                         Temurin <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={25} style={{ color: '#537FB9' }}/>
                                         <Link to='/aqavit'>
                                             <img
-                                                src='../../images/aqavit-icon.png'
+                                                src='/images/aqavit-icon.png'
                                                 width={25}
                                                 alt='AQAvit logo'
                                                 data-toggle="tooltip"

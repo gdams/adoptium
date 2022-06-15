@@ -14,7 +14,7 @@ const AqavitHome = () => (
           <div className='row align-items-center pt-3'>
             <div className='col-6 col-md-4'>
               <img
-                src='../../images/aqavit-light.png'
+                src='/images/aqavit-light.png'
                 width={200}
                 alt='AQAvit logo'
                 className='img-fluid'
