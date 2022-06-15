@@ -75,7 +75,7 @@
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "prettier": "2.7.0",
-    "react-test-renderer": "^18.1.0"
+    "react-test-renderer": "^18.2.0"
   },
   "keywords": [
     "adoptium",
