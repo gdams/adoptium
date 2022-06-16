@@ -44,48 +44,48 @@ below are from the OpenJDK source project and may not match the date the
 Adoptium project will have binaries available - there will usually be a
 short delay while we complete our extensive build and tests cycles.
 
-[width="100%",cols="1,2,2,2,2",options="header",]
+[width="100%",cols="5*^",options="header",]
 |===
 
 | Java Version  | First Availability | Latest Release | Next Release Due | End of Availability ^[1]^
 
 | Java 8 (LTS)
 | Mar 2014
-^| 19 Apr 2022 +
+| 19 Apr 2022 +
 [.small]#jdk8u332#
-^| 19 Jul 2022 +
+| 19 Jul 2022 +
 [.small]#jdk8u342#
 | At Least Nov 2026
 
 | Java 11 (LTS)
 | Sep 2018
-^| 19 Apr 2022 +
-jdk-11.0.15+10
-^| 19 Jul 2022 +
-jdk-11.0.16
+| 19 Apr 2022 +
+[.small]#jdk-11.0.15+10#
+| 19 Jul 2022 +
+[.small]#jdk-11.0.16#
 | At Least Oct 2024
 
 | Java 16
 | Mar 2021
-^| 20 Jul 2021 +
-jdk-16.0.2+7
-^| EOSL^[2]^
+| 20 Jul 2021 +
+[.small]#jdk-16.0.2+7#
+| EOSL^[2]^
 | Sep 2021
 
 | Java 17 (LTS)
 | Sep 2021
-^| 19 Apr 2022 +
-jdk-17.0.3+7
-^| 19 Jul 2022 +
-jdk-17.0.4
+| 19 Apr 2022 +
+[.small]#jdk-17.0.3+7#
+| 19 Jul 2022 +
+[.small]#jdk-17.0.4#
 | At Least Oct 2027
 
 | Java 18
 | Mar 2022
-^| 19 Apr 2022 +
-jdk-18.0.1+10
-^| 19 Jul 2022 +
-jdk-18.0.2
+| 19 Apr 2022 +
+[.small]#jdk-18.0.1+10#
+| 19 Jul 2022 +
+[.small]#jdk-18.0.2#
 | Sep 2022
 
 | Java 19
