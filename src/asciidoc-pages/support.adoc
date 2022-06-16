@@ -44,7 +44,7 @@ below are from the OpenJDK source project and may not match the date the
 Adoptium project will have binaries available - there will usually be a
 short delay while we complete our extensive build and tests cycles.
 
-[width="100%",cols="5*^",options="header",]
+[width="100%",cols="5*",options="header",]
 |===
 
 | Java Version  | First Availability | Latest Release | Next Release Due | End of Availability ^[1]^
