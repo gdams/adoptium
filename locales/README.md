@@ -6,22 +6,21 @@ This is the locales folder, it contains several json files which are used to map
 ```tree
 .
 ├── de
+│   ├── download.json
 │   ├── index.json
 │   ├── language-selector.json
-│   ├── download.json
 │   ├── marketplace.json
 │   └── working-group.json
 ├── en
-│   ├── index.json
 │   └── marketplace.json
 ├── es
 │   ├── index.json
 │   ├── language-selector.json
 │   └── marketplace.json
 ├── zh-CN
+    ├── download.json
     ├── index.json
     ├── language-selector.json
-    ├── download.json
     ├── marketplace.json
     └── working-group.json
 ```
