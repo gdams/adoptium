@@ -70,7 +70,7 @@ https://github.com/adoptium/adoptium-support/issues/new/choose[support issue] y 
 y los problemas se abordarán sobre la base del mejor esfuerzo. Debe dirigirse a las organizaciones que ofrecen soporte comercial si necesita un nivel de servicio garantizado para su uso en Java.
 Tenemos una lista de variantes en nuestro
 https://hub.docker.com/_/eclipse-temurin[repositorio oficial de Docker] para asegurar que nosotros
-respondemos a la entrega de nuevas imagenes que contienen Temurin. Los usuarios
+respondemos a la entrega de nuevas imágenes que contienen Temurin. Los usuarios
 quienes quieren una distribución de Linux en contenedores que no proporcionamos 
 pueden seguir las instrucciones en  
 https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/[esta guia].
