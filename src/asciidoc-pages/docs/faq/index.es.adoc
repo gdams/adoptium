@@ -27,7 +27,7 @@ Classpath Exception". Usted puede utilizar, modificar y compartir libremente el 
 
 == ¿Cómo puedo ayudar en el proyecto?
 
-El equipo de Adotion ayuda en muchas maneras. Por ejemplo:
+El equipo de Adoptium ayuda en muchas maneras. Por ejemplo:
 
 * Cualquiera puede contribuir a los fondos que mantienen a la ejecución del proyecto, o
 como https://www.eclipse.org/donate/adoptium/[única donación] o a través de un
