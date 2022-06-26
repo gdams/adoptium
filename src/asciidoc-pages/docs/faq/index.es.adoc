@@ -20,7 +20,7 @@ https://github.com/marketplace/actions/setup-java-jdk#basic["setup-java"]
 action, y parte del soporte de Java de los proveedores de la nube.
 
 Los instaladores de Linux están disponibles en packages.adoptium.net. Para más
-información ver el enlace:/installation/linux[esta guia].
+información ver link:/installation/linux[esta guía].
 
 Sí. Los binarios de Eclipse Temurin son proporcionados para su uso sin ningún costo por Adoptium, por siempre, bajo los términos de la "GNU General Public License, version 2 with the
 Classpath Exception". Usted puede utilizar, modificar y compartir libremente el código como se describe en las licencias incluidas en la descarga.
