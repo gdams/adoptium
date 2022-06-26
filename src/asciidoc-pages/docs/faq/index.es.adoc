@@ -10,7 +10,7 @@ https://github.com/adoptium/adoptium-support[canal de soporte].
 == ¿Dónde están los últimos JDK de Adoptium?
 
 Adoptium JDK se llama Eclipse Temurin, y las versiones que recomendamos para su
-uso están disponibles en nuestro https://adoptium.net/temurin/releases/[ultima pagina de versiones].
+uso están disponibles en nuestra https://adoptium.net/temurin/releases/[última página de versiones].
 
 También contamos con todos los gestores de instalación más populares de Java, como:
 https://formulae.brew.sh/cask/temurin[Homebrew], https://sdkman.io/[SDKMAN],
