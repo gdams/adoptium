@@ -1,4 +1,5 @@
 {
+  "marketplace.marketplaceDescription": "Java™ es el lenguaje de programación y la plataforma de software líder en el mundo.<br>El Marketplace de Adoptium ofrece entornos de ejecución Java de alta calidad, certificados por TCK y verificados por AQAvit, para su descarga",
   "marketplace.aqavitDescription": "The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <aqavitLink>here</aqavitLink>. There is also a <blogPostLink>blog post and brief presentation</blogPostLink> that explains what testing is run and how it fits into the overall delivery pipeline."
   }
   
