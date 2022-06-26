@@ -66,7 +66,7 @@ que gestionará y hará un seguimiento privado del problema hasta que se resuelv
 
 Cuando algo simplemente no se comporta como lo espera o tiene preguntas sobre
 cómo configurar Temurin, por favor háganoslo saber públicamente abriendo un
-https://github.com/adoptium/adoptium-support/issues/new/choose[support issue] y trabajaremos con usted para buscar una solución. Nuestro link de soporte es link:/support["community support"]
+https://github.com/adoptium/adoptium-support/issues/new/choose[support issue] y trabajaremos con usted para encontrar una solución. Nuestro link de soporte es link:/support["community support"]
 y los problemas se abordarán sobre la base del mejor esfuerzo. Debe dirigirse a las organizaciones que ofrecen soporte comercial si necesita un nivel de servicio garantizado para su uso en Java.
 Tenemos una lista de variantes en nuestro
 https://hub.docker.com/_/eclipse-temurin[repositorio oficial de Docker] para asegurar que nosotros
