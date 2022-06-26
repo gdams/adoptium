@@ -47,7 +47,7 @@ y comparte tus ideas!
 
 == ¿Por cuánto tiempo será soportado Eclipse Temurin?
 
-Nuestra frecuencia de release y nuestra declaración de soporte está disponible en 
+Nuestra frecuencia de release y nuestra declaración de soporte está disponible 
 https://adoptium.net/support/[aquí].
 
 == ¿Eclipse Temurin ha pasado el JCK?
