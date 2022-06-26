@@ -1,0 +1,15 @@
+{
+    "Download Temurin for": "Descargar Temurin para {{userOSName}} {{arch}}",
+    "Latest LTS Release": "Última versión de LTS",
+    "Latest Releases": "Últimas versiones",
+    "Nightly Builds": "Compilaciones nocturnas",
+    "Other platforms and versions": "Otras plataformas y versiones",
+    "Release Archive": "Archivo de version",
+    "Vendor":"Propietario",
+    "Operating System":"Sistema Operativo",
+    "Architecture":"Arquitectura",
+    "Download":"Descarga",
+    "Checksum":"Checksum",
+    "Package Type":"Tipo de paquete",
+    "Source Code Archive": "Archivo de codigo fuente"
+}
