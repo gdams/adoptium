@@ -4,7 +4,7 @@
 Hemos reunido unas cuantas preguntas frecuentes (FAQs) en este documento.
 Si quieres conversar con nosotros sobre estos tópicos, o realizar preguntas adicionales 
 el mejor lugar es vía 
-https://adoptium.net/slack.html[Slack] o levantando un issue en 
+https://adoptium.net/slack.html[Slack] o levantando un issue en el
 https://github.com/adoptium/adoptium-support[canal de soporte].
 
 == ¿Dónde están los últimos JDK de Adoptium?
