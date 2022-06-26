@@ -106,7 +106,7 @@ Los desarrollos de AdoptOpenJDK se conocen ahora como "Eclipse Temurin by
 Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[leer el blog post]).
 Sin embargo, no te preocupes, a pesar de los cambios de marca, se tratan de los mismos procesos de desarrollo abiertos,
 suites de prueba de AQAvit y principalmente el mismo equipo de producción que antes, 
-pero hay link:/members[more larger companies] que aportan su experiencia
+pero hay link:/members[compañías mas grandes] que aportan su experiencia
 al grupo de trabajo.
 
 Sin embargo, para garantizar una transición fluida, hemos dejado activo el antiguo sitio,
