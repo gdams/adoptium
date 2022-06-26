@@ -45,7 +45,7 @@ link:/docs/first-timer-support[solucionando algunos issues] que han sido reporta
 * Muchas otras formas ya sea como única aventura o miembro de equipo a largo plazo, únete 
 y comparte tus ideas!
 
-== ¿Por cuámto tiempo seáa soportado Eclipse Temurin?
+== ¿Por cuánto tiempo será soportado Eclipse Temurin?
 
 Nuestra frecuencia de release y nuestra declaración de soporte está disponible en 
 https://adoptium.net/support/[aquí].
