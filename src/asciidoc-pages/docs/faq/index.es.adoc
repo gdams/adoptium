@@ -15,7 +15,7 @@ uso están disponibles en nuestra https://adoptium.net/temurin/releases/[última
 También contamos con todos los gestores de instalación más populares de Java, como:
 https://formulae.brew.sh/cask/temurin[Homebrew], https://sdkman.io/[SDKMAN],
 https://github.com/microsoft/winget-cli[winget], and https://chocolatey.org/[Chocolatey], nosotros aparecemos en
-https://hub.docker.com/_/eclipse-temurin[Imagenes docker oficiales], y ud puede usar Temurin mediante el Github
+https://hub.docker.com/_/eclipse-temurin[Imágenes docker oficiales], y ud puede usar Temurin mediante el Github
 https://github.com/marketplace/actions/setup-java-jdk#basic["setup-java"]
 action, y parte del soporte de Java de los proveedores de la nube.
 
