@@ -79,7 +79,7 @@ https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/[esta guia].
 
 Eclipse Temurin tiene la gama más amplia de soporte a plataformas a través de las múltiples versiones de 
 la API de Java. Cada nueva plataforma incurre en costos adicionales y de
-versions. Each new platform incurs further cost and exigen en los recursos del proyecto, asi que constantemente
+demanda en los recursos del proyecto, asi que constantemente
 revisamos la demanda por descargas y uso para asegurarnos que estamos liberando en plataformas relevantes hacia 
 un gran grupo de usuarios. El conjunto actual de plataformas al que nos dirigimos en nuestros procesos de prueba 
 y build está listado link:/supported-platforms[aquí].
