@@ -103,7 +103,7 @@ ocupará de más que solo Temurin, asi que la distinción es importante de menci
 == ¿Qué pasó con AdoptOpenJDK?
 
 Los desarrollos de AdoptOpenJDK se conocen ahora como "Eclipse Temurin by
-Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[read the blog post]).
+Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[leer el blog post]).
 Sin embargo, no te preocupes, a pesar de los cambios de marca, se tratan de los mismos procesos de desarrollo abiertos,
 suites de prueba de AQAvit y principalmente el mismo equipo de producción que antes, 
 pero hay link:/members[more larger companies] que aportan su experiencia
