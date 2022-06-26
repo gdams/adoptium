@@ -2,7 +2,7 @@
 :page-authors: gdams, karianna, sxa555, aahlenst, sxa, tellison, kemitix
 
 Hemos reunido unas cuantas preguntas frecuentes (FAQs) en este documento.
-Si quieres conversar con nosotros sobre estos topicos, o realizar preguntas adicionales 
+Si quieres conversar con nosotros sobre estos tópicos, o realizar preguntas adicionales 
 el mejor lugar es vía 
 https://adoptium.net/slack.html[Slack] o levantando un issue en 
 https://github.com/adoptium/adoptium-support[canal de soporte].
