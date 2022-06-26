@@ -89,7 +89,7 @@ y build está listado link:/supported-platforms[aquí].
 Sí! Se cuenta con una https://api.adoptium.net/q/swagger-ui/[API]
 que Adoptium provee para la descarga de Eclipse Temurin. Usando la API es posible obtener
 información sobre las últimas compilaciones de Temurin, y obtenerlas en tu propia
-applicación.
+aplicación.
 
 == ¿Qué significa el nombre de "Eclipse Temurin"?
 
