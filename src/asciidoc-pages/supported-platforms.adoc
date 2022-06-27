@@ -56,7 +56,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 20.04 | icon:times[] ["data-bs-toggle="tooltip"data-bs-placement="right"title="JDK8 builds have no JIT so are unsupported."]#^[3]^# | icon:check[] icon:docker[]  | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
 5+h| macOS (x64) ["data-bs-toggle="tooltip"data-bs-placement="right"title="macOS builds should work on 10.12 or above."]#^[4]^#
-| macOS 12 | icon:times[] | icon:check[] | icon:check[] | icon:check[]
+| macOS 12 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 10.15 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 10.14 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
