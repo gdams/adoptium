@@ -1,0 +1,18 @@
+{
+    "Download Temurin for": "下载 Temurin 基于操作系统 {{userOSName}} 架构 {{arch}} ",
+    "Latest LTS Release": "最新 LTS 发行包",
+    "Latest Releases": "下载最新发行包",
+    "Nightly Builds": "每晚构建",
+    "Other platforms and versions": "下载其他平台和版本",
+    "Release Archive": "下载归档",
+    "Vendor": "提供商",
+    "Operating System": "操作系统",
+    "Architecture": "硬件架构",
+    "Download": "下载",
+    "Checksum": "校验码",
+    "Package Type": "包类型",
+    "Source Code Archive": "源代码包",
+    "Distribution": "发行版本",
+    "Build Version": "构建版本",
+    "Version": "版本"
+}

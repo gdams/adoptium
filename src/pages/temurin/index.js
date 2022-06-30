@@ -15,7 +15,7 @@ const TemurinHome = () => (
           <div className='row align-items-center pt-3'>
             <div className='col-6 col-md-4'>
               <img
-                src='../../images/temurin-light.png'
+                src='/images/temurin-light.png'
                 width={150}
                 alt='Temurin logo'
                 className='img-fluid'

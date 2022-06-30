@@ -1,22 +1,31 @@
-## Locales Folder
+<!-- textlint-disable terminology -->
+# Locales Folder
 
 This is the locales folder, it contains several json files which are used to map text on pages and components to their correctly translated equivalents. Currently there are 3 top level directories (one for each language that we support):
 
 ```tree
 .
 ├── de
+│   ├── download.json
 │   ├── index.json
-│   └── language-selector.json
+│   ├── language-selector.json
+│   ├── marketplace.json
+│   └── working-group.json
 ├── en
-│   ├── index.json
-│   └── language-selector.json
-└── es
-    ├── index.json
-    └── language-selector.json
+│   └── marketplace.json
+├── es
+│   ├── index.json
+│   ├── language-selector.json
+│   └── marketplace.json
+├── zh-CN
+    ├── download.json
+    ├── index.json
+    ├── language-selector.json
+    ├── marketplace.json
+    └── working-group.json
 ```
 
 Inside these directories are json files which can be named anything but it's best to name them in a way that they will be easily associated with the section of the website that is being translated. An example JSON file is shown below:
-
 
 ```json
 {
@@ -29,7 +38,7 @@ Inside these directories are json files which can be named anything but it's bes
 
 The translations in this file can be used in one of two ways:
 
-### `<Trans>foobar</Trans>`
+## `<Trans>foobar</Trans>`
 
 The first way is to use the `<Trans>` function provided by `gatsby-plugin-react-i18next`
 
@@ -47,7 +56,7 @@ From there you can then use the function inside the React `return` block:
 
 Note that the text has to match the string in the JSON file in order for this to work.
 
-### useTranslation()
+## useTranslation()
 
 The second way is to use the `useTranslation()` function. This is recommended for blocks of large text and uses a keyword.
 

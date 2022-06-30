@@ -1,4 +1,3 @@
-import moment from 'moment';
 import { fetchExtension } from '../util/fetchExtension';
 
 const baseUrl = 'https://api.adoptium.net/v3';
@@ -57,8 +56,7 @@ function renderReleases(pkgs) {
                 architecture: releaseAsset.binary.architecture,
                 release_name: releaseAsset.release_name,
                 release_link: releaseAsset.release_link,
-                release_date: moment(releaseAsset.binary.updated_at).format('D MMMM YYYY'),
-                release_datetime: moment(releaseAsset.timestamp).format('YYYY-MM-DD hh:mm:ss'),
+                release_date: releaseAsset.binary.updated_at,
                 binaries: []
             };
         }

@@ -1,11 +1,13 @@
 import * as React from "react"
-import { Link } from 'gatsby-plugin-react-i18next';
-import moment from 'moment';
+import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../util/capitalize';
+import { localeDate } from "../util/localeDate";
 
 const TemurinArchiveTable = ({results}) => {
+    const { language } = useI18next();
+
     return (
         <div id="archive-list">
             <div id="pagination-container">
@@ -24,7 +26,7 @@ const TemurinArchiveTable = ({results}) => {
                                                     <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={30} style={{ color: '#537FB9' }}/>
                                                     <Link to='/aqavit'>
                                                         <img
-                                                            src='../../images/aqavit-icon.png'
+                                                            src='/images/aqavit-icon.png'
                                                             width={25}
                                                             alt='AQAvit logo'
                                                             data-toggle="tooltip"
@@ -33,9 +35,9 @@ const TemurinArchiveTable = ({results}) => {
                                                             className='img-fluid'
                                                         />
                                                     </Link>
-                                                    <h4 className="pt-3 pb-3" style={{fontSize: ".8rem"}}>{moment(release.timestamp).format('D MMMM YYYY')}</h4>
+                                                    <h4 className="pt-3 pb-3" style={{fontSize: ".8rem"}}>{localeDate(release.timestamp, language)}</h4>
                                                     {release.source_url &&
-                                                        <span><a href={release.source_url} className="link-light"><FaDownload /> Source Code Archive</a></span>
+                                                        <span><a href={release.source_url} className="link-light"><FaDownload /> <Trans>Source Code Archive</Trans></a></span>
                                                     }
                                                 </div>
                                             </td>
@@ -86,7 +88,7 @@ const TemurinArchiveTable = ({results}) => {
                                                                                     />
                                                                                 </td>
                                                                                 <td>
-                                                                                    <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}>Checksum</a>
+                                                                                    <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}><Trans>Checksum</Trans></a>
                                                                                 </td>
                                                                             </tr>
                                                                         )

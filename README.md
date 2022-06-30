@@ -18,13 +18,12 @@ This assumes you already have Node.js and npm installed. At time of writing we u
 
     ```shell
     npm install
-    npm install --global gatsby-cli
     ```
 
 1. Start the site up. Gatsby will build all of the various parts of the site (Asciidoc etc). Note that this command takes some time to execute.
 
     ```shell
-    gatsby develop
+    npm start
     ```
 
 1. **Open the source code and start editing!**

@@ -13,6 +13,7 @@ export async function getAllPkgsForVersion(
     let huaweiSelected = checkboxRef.current.vendorHuawei.checked;
     let zuluSelected = checkboxRef.current.vendorAzul.checked;
     let ibmSelected = checkboxRef.current.vendorIBM.checked;
+    let alibabaSelected = checkboxRef.current.vendorAlibaba.checked;
 
     let params = '?'
     params += 'feature_version=' + version;
@@ -59,6 +60,10 @@ export async function getAllPkgsForVersion(
         params += ('&vendor=ibm')
     }
 
+    if (alibabaSelected) {
+        params += ('&vendor=alibaba')
+    }
+
     let url = baseUrl + '/v1/assets/latestForVendors' + params;
     let json = await getPkgs(url);
     const data = JSON.parse(json);
@@ -84,6 +89,7 @@ export function getImageForDistribution(distribution: string) {
     case 'bisheng': return '/images/huawei.svg';
     case 'zulu': return '/images/azul-logo.png';
     case 'semeru': return '/images/ibm-logo.png';
+    case 'dragonwell': return '/images/dragonwell.png';
     default: return '';
     }
 }

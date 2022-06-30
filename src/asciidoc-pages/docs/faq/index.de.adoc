@@ -1,4 +1,4 @@
-= Häufig gestellte Fragen
+= Frequently Asked Questions
 :page-authors: gdams, HanSolo, sw-fox, aumann
 
 Wir haben unsere ersten Veröffentlichungen von Eclipse Temurin abgeschlossen und werden

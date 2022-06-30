@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next'
+import { Link, Trans } from 'gatsby-plugin-react-i18next'
 import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
@@ -8,7 +8,6 @@ import Seo from '../components/Seo'
 import LatestTemurin from '../components/LatestTemurin'
 
 const IndexPage = () => {
-  const { t } = useTranslation()
   return (
     <Layout>
       <Seo title='Home' />
@@ -25,7 +24,11 @@ const IndexPage = () => {
                       <Trans>Binaries for Free!</Trans>
                     </h1>
                   </div>
-                  <p className='mt-3 text-center text-md-start'>{t('Intro')}</p>
+                  <p className='mt-3 text-center text-md-start'>
+                    <Trans i18nKey='Intro'>
+                      Java™ is the world's leading programming language and platform. The Adoptium Working Group promotes and supports high-quality, TCK certified runtimes and associated technology for use across the Java™ ecosystem. Eclipse Temurin is the name of the OpenJDK distribution from Adoptium.
+                    </Trans>
+                  </p>
                 </div>
                 <LatestTemurin page='home' />
               </div>
@@ -42,14 +45,17 @@ const IndexPage = () => {
         </div>
         <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
           <div className='container py-5'>
-            <h2 className='text-pink'>The Adoptium&trade; Working Group</h2>
-            <p>The Adoptium Working Group promotes and supports high-quality runtimes and associated technology for use across the Java ecosystem.
-              Our vision is to meet the needs of Eclipse and the broader Java community by providing runtimes for Java-based applications.
-              We embrace existing standards and a wide variety of hardware and cloud platforms.
+            <h2 className='text-pink'><Trans>The Adoptium&trade; Working Group</Trans></h2>
+            <p>
+              <Trans i18nKey='wg-description'>
+                The Adoptium Working Group promotes and supports high-quality runtimes and associated technology for use across the Java ecosystem.
+                Our vision is to meet the needs of Eclipse and the broader Java community by providing runtimes for Java-based applications. We
+                embrace existing standards and a wide variety of hardware and cloud platforms.
+              </Trans>
             </p>
             <div className='btn-group'>
-              <Link to='/join' className='btn btn-lg btn-primary m-3 text-white'>Join the Working group</Link>
-              <Link to='/members' className='btn btn-lg btn-secondary m-3'>View our members</Link>
+              <Link to='/join' className='btn btn-lg btn-primary m-3 text-white'><Trans>Join the Working Group</Trans></Link>
+              <Link to='/members' className='btn btn-lg btn-secondary m-3'><Trans>View our Members</Trans></Link>
             </div>
           </div>
         </div>

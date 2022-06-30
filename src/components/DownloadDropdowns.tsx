@@ -1,5 +1,6 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react';
 import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 import VendorSelector from './VendorSelector'
 
@@ -93,7 +94,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
             {marketplace && <VendorSelector checkboxRef={checkboxRef} setCheckbox={setCheckbox} />}
             <div className="input-group mb-5 row g-2">
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
-                    <label className="px-2 fw-bold" htmlFor="os">Operating System</label>
+                    <label className="px-2 fw-bold" htmlFor="os"><Trans>Operating System</Trans></label>
                     <select id="os-filter" onChange={(e) => setOS(e.target.value)} value={os} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {oses.map(
@@ -104,7 +105,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     </select>
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
-                    <label className="px-2 fw-bold" htmlFor="arch">Architecture</label>
+                    <label className="px-2 fw-bold" htmlFor="arch"><Trans>Architecture</Trans></label>
                     <select id="arch-filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {arches.map(
@@ -115,7 +116,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     </select>
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
-                    <label className="px-2 fw-bold" htmlFor="package-type">Package Type</label>
+                    <label className="px-2 fw-bold" htmlFor="package-type"><Trans>Package Type</Trans></label>
                     <select id="package-type-filter" onChange={(e) => setPackageType(e.target.value)} value={packageType} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {packageTypes.map(
@@ -126,7 +127,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     </select>
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
-                    <label className="px-2 fw-bold" htmlFor="version">Version</label>
+                    <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
                     <select id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm">
                         {versionList.map(
                             (version, i): number | JSX.Element => version && (

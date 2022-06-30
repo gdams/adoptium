@@ -1,10 +1,13 @@
 import * as React from "react"
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../util/capitalize';
+import { localeDate } from "../util/localeDate";
 
 const TemurinDownloadTable = ({results}) => {
+    const { language } = useI18next();
+
     let source = false
     if (results && results.source) {
         source = results.source
@@ -12,7 +15,7 @@ const TemurinDownloadTable = ({results}) => {
     return (
         <>
         {source ? (
-             <span><a href={source.binary.package.link}>{source.release_name} Source Code Archive</a></span>
+             <span><a href={source.binary.package.link}>{source.release_name} <Trans>Source Code Archive</Trans></a></span>
         ):
             <></>
         }
@@ -24,12 +27,14 @@ const TemurinDownloadTable = ({results}) => {
                         pkg && (
                             <tr key={pkg.platform_name}>
                                 <td className="table-secondary py-4 align-middle w-25">
-                                    <span className="text-white">{pkg.release_name}</span>
+                                    <a href={pkg.release_link} className="link-light">
+                                        <span className="text-white">{pkg.release_name}</span>
+                                    </a>
                                     <span className="text-white d-block m-2">
                                         Temurin <MdVerifiedUser data-toggle="tooltip" data-placement="bottom" title="This build is JCK certified" size={25} style={{ color: '#537FB9' }}/>
                                         <Link to='/aqavit'>
                                             <img
-                                                src='../../images/aqavit-icon.png'
+                                                src='/images/aqavit-icon.png'
                                                 width={25}
                                                 alt='AQAvit logo'
                                                 data-toggle="tooltip"
@@ -39,7 +44,7 @@ const TemurinDownloadTable = ({results}) => {
                                             />
                                         </Link>
                                     </span>
-                                    <span className="text-white text-muted">{pkg.release_date}</span>
+                                    <span className="text-white text-muted">{localeDate(pkg.release_date, language)}</span>
                                 </td>
                                 <td className="align-middle w-20">{capitalize(pkg.os)}</td>
                                 <td className="align-middle w-20">{pkg.architecture}</td>
@@ -109,7 +114,7 @@ const BinaryTable = ({ checksum, link, extension, type, size, os, arch, version 
                                 data-bs-toggle="modal"
                                 data-bs-target="#checksumModal"
                                 data-bs-checksum={checksum}>
-                                <small>checksum</small>
+                                <small><Trans>Checksum</Trans></small>
                             </a>
                         </span>
                     </td>

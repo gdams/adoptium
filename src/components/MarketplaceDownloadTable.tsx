@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { capitalize } from '../util/capitalize';
 import { getImageForDistribution } from '../hooks'
@@ -10,12 +10,12 @@ const DownloadTable = ({results}) => {
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
             <thead className="table-dark">
                 <tr className="table-head">
-                    <td className="table-head">Build Version</td>
-                    <td className="table-head">Distribution</td>
-                    <td className="table-head">Vendor</td>
-                    <td className="table-head">Operating System</td>
-                    <td className="table-head">Architecture</td>
-                    <td className="table-head">Download</td>
+                    <td className="table-head"><Trans>Build Version</Trans></td>
+                    <td className="table-head"><Trans>Distribution</Trans></td>
+                    <td className="table-head"><Trans>Vendor</Trans></td>
+                    <td className="table-head"><Trans>Operating System</Trans></td>
+                    <td className="table-head"><Trans>Architecture</Trans></td>
+                    <td className="table-head"><Trans>Download</Trans></td>
                 </tr>
             </thead>
             <tbody className="table-light">
@@ -95,7 +95,7 @@ const BinaryTable = ({ checksum, link, os, arch, pkgType, javaVersion, vendor }:
                 <table><tbody>
                 <tr>
                     <td>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}>Checksum (SHA256)</a>
+                        <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}><Trans>Checksum</Trans> (SHA256)</a>
                     </td>
                 </tr>
                 </tbody></table>

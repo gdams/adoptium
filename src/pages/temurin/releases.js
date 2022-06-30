@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import { Link, Trans } from 'gatsby-plugin-react-i18next'
 import { FaArrowCircleRight } from 'react-icons/fa'
 
 import Layout from '../../components/Layout'
@@ -19,7 +20,7 @@ const TemurinReleases = () => (
           <div className='row align-items-center pt-3'>
             <div className='col-6 col-md-4'>
               <img
-                src='../../images/temurin-light.png'
+                src='/images/temurin-light.png'
                 width={120}
                 alt='Temurin logo'
                 className='img-fluid'
@@ -48,7 +49,7 @@ const TemurinReleases = () => (
         </p>
         <div className='btn-group-vertical col-6 mx-auto'>
           <Link to='/temurin/archive' className='btn btn btn-primary mt-3'>
-            Build archive <FaArrowCircleRight />
+            <Trans>Release Archive</Trans> <FaArrowCircleRight />
           </Link>
         </div>
       </div>
