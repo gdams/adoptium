@@ -1,4 +1,4 @@
-= Temurin&trade; Download Buttons
+= Temurin(TM) Download Buttons
 
 :page-authors: tellison
 :keywords: buttons
