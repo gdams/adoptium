@@ -1,4 +1,4 @@
 {
-    "marketplace.marketplaceDescription": "Java™ 是世界领先的编程语言和平台。Adoptium 工作组推进和支持高质量、TCK 认证, AQAvit 验证的运行时和其相关技术，使其在 Java™ 生态系统中得以应用。",
+    "marketplace.marketplaceDescription": "Java&trade; 是世界领先的编程语言和平台。Adoptium 工作组推进和支持高质量、TCK 认证, AQAvit 验证的运行时和其相关技术，使其在 Java 生态系统中得以应用。",
     "marketplace.aqavitDescription": "开源测试项目 AQAvit (全称Adoptium Quality Assurance)具体信息可以在<aqavitLink>该链接</aqavitLink>找到. 另外还附有<blogPostLink>博客和简要说明</blogPostLink>阐述了其测试用例以及如何整合到持续部署中。"
 }
