@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import { Trans } from 'gatsby-plugin-react-i18next'
 import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
 
 import DatePicker from 'react-date-picker';
