@@ -43,7 +43,10 @@ const SponsorsPage = () => (
           <MembersGrid
             members={infra}
           />
-          <a target='_blank' rel='noreferrer' href='https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' className='btn btn-lg btn-primary mt-5'>Want to become a Sponsor?</a>
+          <div className='btn-group-vertical'>
+            <a target='_blank' rel='noreferrer' href='https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' className='btn btn-lg btn-primary mt-5'>Want to become a Sponsor?</a>
+            <a target='_blank' rel='noreferrer' href='https://github.com/sponsors/adoptium' className='btn btn-lg btn-primary mt-5'>Fund Eclipse Adoptium on GitHub!</a>
+          </div>
         </div>
       </div>
     </section>

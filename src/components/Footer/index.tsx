@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import { FaTwitter, FaYoutube, FaGithub, FaSlack } from 'react-icons/fa';
 import RandomContributor from '../RandomContributor';

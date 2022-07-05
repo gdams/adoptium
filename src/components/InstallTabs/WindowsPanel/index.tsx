@@ -1,4 +1,3 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import ShellBox from '../../ShellBox';
 import '../InstallTabs.scss';

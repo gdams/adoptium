@@ -396,6 +396,7 @@ exports[`DocumentationCard component renders correctly 1`] = `
             <a
               class="text-muted"
               href="/slack"
+              hreflang="en"
             >
               <svg
                 fill="currentColor"

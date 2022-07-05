@@ -20,6 +20,7 @@ export default function Template ({ data }) {
   })
   const { asciidoc, file } = data // data.asciidoc holds our data
   const { document, fields, html, pageAttributes } = asciidoc
+  const pageAuthorList = pageAttributes.authors || ''
   const { relativePath } = file
   return (
     <Layout>
@@ -42,7 +43,7 @@ export default function Template ({ data }) {
           </div>
         </div>
         <hr className='m-5' />
-        <AuthorsList authors={pageAttributes.authors.split(',')} />
+        <AuthorsList authors={pageAuthorList.split(',')} />
         <EditLink relativePath={relativePath} />
       </section>
     </Layout>
