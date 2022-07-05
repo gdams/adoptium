@@ -20,6 +20,11 @@ temurin-<version>-jdk
 e.g temurin-17-jdk or temurin-8-jdk
 ....
 
+[TIP]
+====
+On most Linux systems you must have superuser privileges to install packages such as Temurin. You may need to prefix the commands below with `sudo` for them to succeed.
+====
+
 == Deb installation on Debian or Ubuntu
 
 . Ensure the necessary packages are present:
