@@ -45,7 +45,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
         <Trans>Use the drop-down boxes below to filter the list of current releases.</Trans>
       </p>
       <div className="input-group p-3 d-flex justify-content-center">
-        <label className="px-2 fw-bold" htmlFor="version">Version</label>
+        <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
         <select id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm" style={{ maxWidth: '10em' }}>
             {versions.map(
                 (version, i): number | JSX.Element => version && (
