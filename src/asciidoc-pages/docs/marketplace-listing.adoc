@@ -79,6 +79,7 @@ The simplest `index.json` file only contains a reference to a single `releases.j
 
 [source, json]
 {
+  "schema_version": "1.0.0",
   "releases": [
     "example.json"
   ]
@@ -95,20 +96,21 @@ As a further more complex example, the following repository shows a release file
 ====
 [source]
 ----
-/index.json
-/index.json.sha256.sign
-
-/8/index.json
-/8/index.json.sha256.sign
-/8/jdk8u312_b07.json
-/8/jdk8u312_b07.json.sha256.sign
-
-/17/index.json
-/17/index.json.sha256.sign
-/17/jdk_17_0_1_12.json
-/17/jdk_17_0_1_12.json.sha256.sign
-/17/jdk_17_0_2_8.json
-/17/jdk_17_0_2_8.json.sha256.sign
+.
+├── 17
+│   ├── index.json
+│   ├── index.json.sha256.sign
+│   ├── jdk_17_0_1_12.json
+│   ├── jdk_17_0_1_12.json.sha256.sign
+│   ├── jdk_17_0_2_8.json
+│   └── jdk_17_0_2_8.json.sha256.sign
+├── 8
+│   ├── index.json
+│   ├── index.json.sha256.sign
+│   ├── jdk8u312_b07.json
+│   └── jdk8u312_b07.json.sha256.sign
+├── index.json
+└── index.json.sha256.sign
 ----
 ====
 
@@ -116,6 +118,7 @@ In this repository the root `/index.json` would contain
 
 [source, json]
 {
+  "schema_version": "1.0.0",
   "indexes": [
     "8/index.json",
     "17/index.json"
@@ -128,6 +131,7 @@ and the `17/index.json` would contain
 
 [source, json]
 {
+  "schema_version": "1.0.0",
   "indexes": [
   ],
   "releases": [
