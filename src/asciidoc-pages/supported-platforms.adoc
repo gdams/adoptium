@@ -1,5 +1,5 @@
 = Supported Platforms
-:page-authors: gdams, karianna, SueChaplain, sxa, KalyanJoseph, sxa555, ParkerM, hendrikebbers, aahlenst, MBoegers
+:page-authors: gdams, karianna, SueChaplain, sxa, KalyanJoseph, sxa555, ParkerM, hendrikebbers, aahlenst, MBoegers, luozhenyu
 :icons: font
 
 [lead text-muted]
