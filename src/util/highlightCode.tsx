@@ -1,5 +1,5 @@
 import hljs from 'highlight.js/lib/core'
-import 'highlight.js/styles/atom-one-dark.css'
+import 'highlight.js/styles/stackoverflow-light.css'
 
 // See the full list of supported languages at https://highlightjs.readthedocs.io/en/latest/supported-languages.html
 import java from 'highlight.js/lib/languages/java'
