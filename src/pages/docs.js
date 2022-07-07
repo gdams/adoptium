@@ -79,7 +79,7 @@ const DocumentationPage = ({ data }) => (
               title='Source Code'
               Icon={FaGithub}
               links={[
-                { name: 'Adoptium GitHub Organization', link: 'https://github.com/adoptium' },
+                { name: 'Adoptium on GitHub', link: 'https://github.com/adoptium' },
                 { name: 'Repository Overview', link: 'https://github.com/adoptium/adoptium/blob/main/README.md' },
                 { name: 'Build Scripts', link: 'https://github.com/adoptium/temurin-build' },
                 { name: 'Installer Code', link: 'https://github.com/adoptium/installer' },
