@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
 
+import { SiGithubsponsors } from 'react-icons/si'
+
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import MembersGrid from '../components/MembersGrid'
@@ -45,7 +47,7 @@ const SponsorsPage = () => (
           />
           <div className='btn-group-vertical'>
             <a target='_blank' rel='noreferrer' href='https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' className='btn btn-lg btn-primary mt-5'>Want to become a Sponsor?</a>
-            <a target='_blank' rel='noreferrer' href='https://github.com/sponsors/adoptium' className='btn btn-lg btn-primary mt-5'>Fund Eclipse Adoptium on GitHub!</a>
+            <a target='_blank' rel='noreferrer' href='https://github.com/sponsors/adoptium' className='btn btn-lg btn-outline-dark mt-3'><SiGithubsponsors color='#bf3989' /> Become a GitHub Sponsor!</a>
           </div>
         </div>
       </div>
