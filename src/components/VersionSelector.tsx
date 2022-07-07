@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { Trans } from 'gatsby-plugin-react-i18next'
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
 
 import DatePicker from 'react-date-picker';
@@ -8,6 +8,7 @@ import { versions, defaultVersion } from '../util/defaults'
 import { setURLParam } from '../util/setURLParam';
 
 const VersionSelector = ({updater, releaseType, Table}) => {
+  const { language } = useI18next();
   let selectedVersion = defaultVersion
   let [versionParam] = useQueryParam('version', NumberParam)
   if (versionParam) {
@@ -69,6 +70,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
             value={buildDate}
             maxDate={new Date()}
             onChange={updateBuildDate}
+            locale={language}
           />
         </div>
       )}

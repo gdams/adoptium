@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditLink component external URL renders correctly 1`] = `
+<div>
+  <a
+    href="https://external-link.com"
+    rel="noreferrer"
+    target="_blank"
+  >
+    External Link
+  </a>
+</div>
+`;
+
+exports[`EditLink component internal link renders correctly 1`] = `
+<div>
+  <a
+    href="/page1"
+    hreflang="en"
+  >
+    Page 1
+  </a>
+</div>
+`;

@@ -1,5 +1,5 @@
 = Linux (RPM/DEB) installer packages
-:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie, sxa
+:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie, sxa, tellison, luozhenyu
 :toc:
 :icons: font
 
@@ -20,58 +20,70 @@ temurin-<version>-jdk
 e.g temurin-17-jdk or temurin-8-jdk
 ....
 
+[TIP]
+====
+On most Linux systems you must have superuser privileges to install packages such as Temurin. You may need to prefix the commands below with `sudo` for them to succeed.
+====
+
 == Deb installation on Debian or Ubuntu
 
 . Ensure the necessary packages are present:
 +
 [source, bash]
 ----
-apt-get install -y wget apt-transport-https
+apt install -y wget apt-transport-https
 ----
 +
 . Download the Eclipse Adoptium GPG key:
 +
 [source, bash]
 ----
-wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /usr/share/keyrings/adoptium.asc
+mkdir -p /etc/apt/keyrings
+wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /etc/apt/keyrings/adoptium.asc
 ----
 +
-. Configure the Eclipse Adoptium apt repository:
+. Configure the Eclipse Adoptium apt repository. To check the full list of versions supported take a look at the list in the tree at https://packages.adoptium.net/ui/native/deb/dists/.
 +
 [source, bash]
 ----
-echo "deb [signed-by=/usr/share/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
 ----
 +
 . Install the Temurin version you require:
 +
 [source, bash]
 ----
-apt-get update # update if you haven't already
-apt-get install temurin-17-jdk
+apt update # update if you haven't already
+apt install temurin-17-jdk
 ----
 
 == CentOS/RHEL/Fedora Instructions
 
-. Add the RPM repo to `/etc/yum.repos.d/adoptium.repo` making sure to
-change the distribution name if you are not using CentOS. RPMs are
-also available for RHEL and Fedora. To check the full list of versions
-supported take a look at the list in the tree at
-https://packages.adoptium.net/ui/native/rpm/.
+. Add the RPM repo to `/etc/yum.repos.d/adoptium.repo` making sure to change the distribution name if you are not using CentOS/RHEL/Fedora. To check the full list of versions supported take a look at the list in the tree at https://packages.adoptium.net/ui/native/rpm/.
 +
 [source, bash]
 ----
+# Uncomment and change the distribution name if you are not using CentOS/RHEL/Fedora
+# DISTRIBUTION_NAME=centos
+
 cat <<EOF > /etc/yum.repos.d/adoptium.repo
 [Adoptium]
 name=Adoptium
-baseurl=https://packages.adoptium.net/artifactory/rpm/centos/\$releasever/\$basearch
+baseurl=https://packages.adoptium.net/artifactory/rpm/${DISTRIBUTION_NAME:-$(. /etc/os-release; echo $ID)}/\$releasever/\$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
 EOF
 ----
 +
-. Install the Temurin version you require:
+. Install the Temurin version you require using `dnf`:
++
+[source, bash]
+----
+dnf update # update if you haven't already
+dnf install temurin-17-jdk
+----
+Alternatively, if you are using `yum`:
 +
 [source, bash]
 ----

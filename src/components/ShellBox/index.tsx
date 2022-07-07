@@ -3,7 +3,6 @@ import React from 'react';
 import './ShellBox.scss';
 
 interface Props {
-  textToCopy: string;
   children: React.ReactNode;
 }
 
