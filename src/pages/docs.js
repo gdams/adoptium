@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { FaDownload, FaQuestion, FaGithub, FaBox, FaInfoCircle, FaGlobe, FaGem } from 'react-icons/fa'
+import { FaDownload, FaQuestion, FaGithub, FaBox, FaInfoCircle, FaGlobe, FaGem, FaUserFriends } from 'react-icons/fa'
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
@@ -23,7 +23,8 @@ const DocumentationPage = ({ data }) => (
                 { name: 'Download Eclipse Temurin', link: '/temurin/releases' },
                 { name: 'Install Eclipse Temurin', link: '/installation' },
                 { name: 'Container Images', link: 'https://hub.docker.com/_/eclipse-temurin' },
-                { name: 'Release Archive', link: '/temurin/archive' }
+                { name: 'Release Archive', link: '/temurin/archive' },
+                { name: 'Nightly Developer Builds', link: '/temurin/nightly' }
               ]}
             />
             <DocumentationCard
@@ -38,25 +39,25 @@ const DocumentationPage = ({ data }) => (
             />
             <DocumentationCard
               title='AQAvit Quality'
+              Icon={FaGem}
               links={[
                 { name: 'About Eclipse AQAvit', link: '/aqavit' },
                 { name: 'AQAvit Quality Verification', link: '/docs/qvs-policy' },
                 { name: 'AQAvit Verification Guide', link: '/docs/aqavit-verification' }
               ]}
-              Icon={FaGem}
             />
             <DocumentationCard
               title='Marketplace'
+              Icon={FaBox}
               links={[
                 { name: 'Marketplace Downloads', link: '/marketplace' },
                 { name: 'Marketplace Listing Information', link: '/docs/marketplace-policy' },
                 { name: 'Marketplace Publisher Guide', link: '/docs/marketplace-guide' }
               ]}
-              Icon={FaBox}
             />
             <DocumentationCard
               title='Contributing'
-              Icon={FaGithub}
+              Icon={FaUserFriends}
               links={[
                 { name: 'First Timer Support', link: '/docs/first-timer-support' },
                 { name: 'Sign the Contributor Agreement', link: '/docs/eca-sign-off' },
@@ -69,8 +70,20 @@ const DocumentationPage = ({ data }) => (
               Icon={FaGlobe}
               links={[
                 { name: 'About Eclipse Adoptium', link: '/about' },
+                { name: 'Working Group Members', link: '/members' },
                 { name: 'Join the Working Group', link: '/join' },
                 { name: 'Sponsor the Working Group', link: 'https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' }
+              ]}
+            />
+            <DocumentationCard
+              title='Source Code'
+              Icon={FaGithub}
+              links={[
+                { name: 'Adoptium on GitHub', link: 'https://github.com/adoptium' },
+                { name: 'Repository Overview', link: 'https://github.com/adoptium/adoptium/blob/main/README.md' },
+                { name: 'Build Scripts', link: 'https://github.com/adoptium/temurin-build' },
+                { name: 'Installer Code', link: 'https://github.com/adoptium/installer' },
+                { name: 'Mission Control Build', link: 'https://github.com/adoptium/jmc-build' }
               ]}
             />
             <DocumentationCard

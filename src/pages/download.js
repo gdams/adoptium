@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import { BiDonateHeart } from 'react-icons/bi'
+import { SiGithubsponsors } from 'react-icons/si'
 
 import vendors from '../json/marketplace.json'
 import Layout from '../components/Layout'
@@ -62,7 +63,8 @@ const DownloadPage = ({ location }) => {
             {vendor === 'Adoptium' && <p>Eclipse Temurin binaries are 100% free and open source and used by millions of developers every day. Here are three easy ways you can contribute toward the future development of Eclipse Adoptium projects and technologies.</p>}
             <h2 className='fw-light py-3'>Donate to the Eclipse Adoptium Working Group</h2>
             <p>You can help power the Adoptium Community with a donation</p>
-            <a href='https://eclipse.org/donate/adoptium' target='_blank' className='btn btn-primary btn-lg' rel='noreferrer'>Donate <BiDonateHeart /></a>
+            <a href='https://eclipse.org/donate/adoptium' target='_blank' className='btn btn-primary btn-lg m-2' rel='noreferrer'>Donate <BiDonateHeart /></a>
+            <a target='_blank' rel='noreferrer' href='https://github.com/sponsors/adoptium' className='btn btn-lg btn-outline-dark m-2'><SiGithubsponsors color='#bf3989' /> Become a GitHub Sponsor!</a>
             <h2 className='fw-light py-3'>Get involved</h2>
             <p>Whether you choose to <a href='https://github.com/adoptium/adoptium-support/issues' target='_blank' rel='noreferrer'>report bugs</a>, request features, or <Link to='/docs/first-timer-support'>become a committer</Link>, you can help improve the technology for yourself and the rest of the community.</p>
             <h2 className='fw-light py-3'>Join the Working Group</h2>

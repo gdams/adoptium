@@ -9,6 +9,7 @@ on:
 
 jobs:
   check_contributors:
+    if: github.repository == 'adoptium/website-v2'
     name: Check Contributors
     runs-on: ubuntu-latest
     steps:
