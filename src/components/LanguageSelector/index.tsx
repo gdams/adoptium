@@ -15,7 +15,9 @@ const LanguageSelector = (): JSX.Element => {
     // Convert locale to ISO 3166-1 alpha-2 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
     switch(lng) {
       case 'en':
-        return 'gb';
+        return 'us';
+        case 'en-GB':
+          return 'gb';
       case 'zh-CN':
         return 'cn';
       default:
@@ -28,6 +30,8 @@ const LanguageSelector = (): JSX.Element => {
     switch(lng) {
       case 'zh-CN':
         return 'zh';
+      case 'en-GB':
+        return 'en';
       default:
         return lng;
     }
