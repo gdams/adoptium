@@ -30,7 +30,9 @@ const TemurinReleases = () => (
             <div className='col-12 col-sm-6 col-md-8'>
               <p className='text-start'>
                 <Trans
-                  i18nKey='release.intro' components={{
+                  i18nKey='release.intro'
+                  defaults='Eclipse Temurin is the open source Java SE build based upon OpenJDK. Temurin is available for a <supportedPlatformsLink>wide range of platforms</supportedPlatformsLink> and Java SE versions. The latest releases recommended for use in production are listed below, and are regularly <supportLink>updated and supported</supportLink> by the Adoptium community. Migration help, container images and package installation guides are available in the <docsLink>documentation section</docsLink>. You can read the <foojayLink>Release Notes</foojayLink> for each version thanks to our friends at Foojay.io!'
+                  components={{
                     supportedPlatformsLink: <LinkText href='/supported-platforms' />,
                     supportLink: <LinkText href='/support' />,
                     docsLink: <LinkText href='/docs' />,

@@ -34,7 +34,9 @@ const DownloadPage = () => (
             <div className='col-12 col-sm-6 col-md-8 '>
               <p className='text-start'>
                 <Trans
-                  i18nKey='marketplace.aqavitDescription' components={{
+                  i18nKey='marketplace.aqavitDescription'
+                  defaults='The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <aqavitLink>here</aqavitLink>. There is also a <blogPostLink>blog post and brief presentation</blogPostLink> that explains what testing is run and how it fits into the overall delivery pipeline.'
+                  components={{
                     aqavitLink: <LinkText href='https://github.com/Adoptium/aqa-tests' />,
                     blogPostLink: <LinkText href='https://blog.adoptopenjdk.net/2017/12/testing-java-help-count-ways' />
                   }}
