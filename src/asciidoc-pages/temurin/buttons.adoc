@@ -1,6 +1,6 @@
 = Temurin(TM) Download Buttons
 
-:page-authors: tellison
+:page-authors: tellison, gdams
 :keywords: buttons
 
 Button images and corresponding code are provided for you to embed in your own documentation, website, etc to promote Eclipse Temurin. These buttons link to the Temurin download page and ensure users have easy access to the latest versions.
