@@ -28,7 +28,7 @@ export default function Template ({ data }) {
       <section className='py-5 container'>
         <div className='asciidoc-container container-adoc' id='asciidoc-container'>
           <div className='asciidoc'>
-            <h1 className='pb-4 fw-light text-center'>{convert(document.title)}</h1>
+            <h1 className='pb-4 fw-light text-center' dangerouslySetInnerHTML={{ __html: document.title }}/>
             {fields.slug === '/installation/' && (
               <section className='adopt-demo-container hide-on-mobile my-5'>
                 <div className='adopt-demo mx-auto'>
