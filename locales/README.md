@@ -11,12 +11,6 @@ This is the locales folder, it contains several json files which are used to map
 │   ├── language-selector.json
 │   ├── marketplace.json
 │   └── working-group.json
-├── en
-│   └── marketplace.json
-│   ├── temurin.json
-├── en-GB
-│   └── marketplace.json
-│   ├── temurin.json
 ├── es
 │   ├── index.json
 │   ├── language-selector.json
