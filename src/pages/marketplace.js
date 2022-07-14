@@ -18,8 +18,11 @@ const DownloadPage = () => (
         <div className='col-lg-8 col-md-8 mx-auto'>
           <h1 className='fw-light'>Adoptium&trade; Marketplace</h1>
           <p className='pt-3'>
-            <Trans i18nKey='marketplace.marketplaceDescription'>Java&trade; is the world's leading programming language and platform.
-              The Adoptium Marketplace promotes high-quality, TCK certified and AQAvit verified runtimes for use across the Java ecosystem.
+            <Trans
+              shouldUnescape={true}
+              i18nKey='marketplace.marketplaceDescription'>
+                Java&trade; is the world's leading programming language and platform.
+                The Adoptium Marketplace promotes high-quality, TCK certified and AQAvit verified runtimes for use across the Java ecosystem.
             </Trans>
           </p>
           <div className='row align-items-center pt-3'>
