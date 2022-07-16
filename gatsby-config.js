@@ -10,9 +10,11 @@ module.exports = {
   siteMetadata: {
     title: 'Adoptium',
     description: 'Eclipse Adoptium provides prebuilt OpenJDK binaries from a fully open source set of build scripts and infrastructure. Supported platforms include Linux, macOS, Windows, ARM, Solaris, and AIX.',
-    author: 'Eclipse Adoptium'
+    author: 'Eclipse Adoptium',
+    siteUrl: 'https://adoptium.net'
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
