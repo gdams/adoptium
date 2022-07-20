@@ -37,7 +37,7 @@
     "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-remark-autolink-headers": "^5.18.1",
     "gatsby-remark-code-titles": "^1.1.0",
-    "gatsby-source-filesystem": "^4.18.1",
+    "gatsby-source-filesystem": "^4.19.0",
     "gatsby-transformer-asciidoc": "^3.19.0",
     "gatsby-transformer-remark": "^5.18.1",
     "gatsby-transformer-sharp": "^4.18.1",
