@@ -118,9 +118,8 @@ with Microsoft Windows instead.
 === Java Flight Recorder
 
 Java Flight Recorder (JFR) was decoupled from the Oracle JDK and
-contributed to the OpenJDK community. Work is underway to backport JFR
-from OpenJDK 11 to OpenJDK 8. When this work is complete, Temurin will
-include JFR in OpenJDK 8 binaries.
+contributed to the OpenJDK community. JFR is included in all versions of
+Temurin.
 
 === Eclipse Mission Control
 
