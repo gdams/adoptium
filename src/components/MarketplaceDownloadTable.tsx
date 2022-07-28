@@ -30,7 +30,8 @@ const DownloadTable = ({results}) => {
                                     <span>{pkg.release_name}</span>
                                     <br></br>
                                     <span>{pkg.binary.image_type == 'jdk' ? 'JDK' : 'JRE'}</span>
-                                    <span className="text-white text-muted">{localeDate(pkg.lastUpdatedTimestamp, language)}</span>
+                                    <br></br>
+                                    <span className="text-white text-muted">{localeDate(pkg.last_updated_timestamp, language)}</span>
                                 </td>
                                 <td className="fw-bold align-middle">
                                     {capitalize(pkg.binary.distribution)}
