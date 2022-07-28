@@ -1,11 +1,14 @@
 import * as React from "react"
-import { Link, Trans } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { capitalize } from '../util/capitalize';
 import { getImageForDistribution } from '../hooks'
 import { fetchExtension } from '../util/fetchExtension';
+import { localeDate } from "../util/localeDate";
 
 const DownloadTable = ({results}) => {
+    const { language } = useI18next();
+
     return (
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
             <thead className="table-dark">
@@ -27,6 +30,7 @@ const DownloadTable = ({results}) => {
                                     <span>{pkg.release_name}</span>
                                     <br></br>
                                     <span>{pkg.binary.image_type == 'jdk' ? 'JDK' : 'JRE'}</span>
+                                    <span className="text-white text-muted">{localeDate(pkg.lastUpdatedTimestamp, language)}</span>
                                 </td>
                                 <td className="fw-bold align-middle">
                                     {capitalize(pkg.binary.distribution)}
