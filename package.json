@@ -7,7 +7,7 @@
   "dependencies": {
     "@asciidoctor/core": "^2.2.6",
     "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
+    "@emotion/styled": "^11.10.0",
     "@fortawesome/fontawesome-free": "^6.1.2",
     "@mui/lab": "^5.0.0-alpha.92",
     "@mui/material": "^5.9.2",
