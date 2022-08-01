@@ -36,8 +36,9 @@ const DownloadTable = ({results}) => {
                                     <span>
                                         // Package age in days > 180?
                                         {(Math.floor((Date.now() - pkg.binary.timestamp) / (1000 * 60 * 60 * 24)) > 1) &&
-                                            <br></br>
-                                            <span className="text-white text-warning">Out of Date
+                                            <span className="text-white text-warning">
+                                                <br></br>
+                                                Out of Date
                                                 <TiWarning data-toggle="tooltip" data-placement="bottom" title="This build is over 180 days old." size={25} style={{ color: '##B33B3B' }}/>
                                             </span>}
                                     </span>
