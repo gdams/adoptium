@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
+import { TiWarning } from 'react-icons/ti';
 import { capitalize } from '../util/capitalize';
 import { getImageForDistribution } from '../hooks'
 import { fetchExtension } from '../util/fetchExtension';
@@ -32,6 +33,14 @@ const DownloadTable = ({results}) => {
                                     <span>{pkg.binary.image_type == 'jdk' ? 'JDK' : 'JRE'}</span>
                                     <br></br>
                                     <span className="text-white text-muted">{localeDate(pkg.binary.timestamp, language)}</span>
+                                    {
+                                        // Package age in days > 180?
+                                        (Math.floor((Date.now() - pkg.binary.timestamp) / (1000 * 60 * 60 * 24)) > 1) &&
+                                            <br></br>
+                                            <span className="text-white text-warning">Out of Date
+                                                <TiWarning data-toggle="tooltip" data-placement="bottom" title="This build is over 180 days old." size={25} style={{ color: '##B33B3B' }}/>
+                                            </span>
+                                    }
                                 </td>
                                 <td className="fw-bold align-middle">
                                     {capitalize(pkg.binary.distribution)}
