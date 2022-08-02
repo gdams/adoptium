@@ -34,7 +34,8 @@ const DownloadTable = ({results}) => {
                                     <br></br>
                                     <span className="text-white text-muted">{localeDate(pkg.binary.timestamp, language)}</span>
                                     <span>
-                                        {(Math.floor((Date.now() - pkg.binary.timestamp) / (1000 * 60 * 60 * 24)) > 1) &&
+                                        {const daysOld = Math.floor((Date.now() - new Date(pkg.binary.timestamp)) / (1000 * 60 * 60 * 24);
+                                         (daysOld > 1) &&
                                             <span className="text-white text-warning">
                                                 <br></br>
                                                 Out of Date
