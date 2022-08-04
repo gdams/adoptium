@@ -33,7 +33,7 @@
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sass": "^5.19.0",
     "gatsby-plugin-sharp": "^4.20.0",
-    "gatsby-plugin-sitemap": "^5.19.0",
+    "gatsby-plugin-sitemap": "^5.20.0",
     "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-remark-autolink-headers": "^5.19.0",
     "gatsby-remark-code-titles": "^1.1.0",
