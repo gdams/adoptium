@@ -59,7 +59,7 @@
     "react-switch": "^7.0.0",
     "react-tabs": "^4.2.1",
     "react-use-flexsearch": "^0.1.1",
-    "react-world-flags": "^1.5.0",
+    "react-world-flags": "^1.5.1",
     "sass": "1.54.2",
     "use-query-params": "^1.2.3"
   },
