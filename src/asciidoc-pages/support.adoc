@@ -89,9 +89,9 @@ Sep 2022
 
 | Java 8 (LTS)
 | Mar 2014
-| 19 Jul 2022 +
-[.small]#jdk8u345#
 | 01 Aug 2022 +
+[.small]#jdk8u345#
+| 18 Oct 2022 +
 [.small]#jdk8u352#
 | At least Nov 2026
 
