@@ -15,7 +15,7 @@ The logo of Adoptium can be used in landscape and portrait mode.
 [.m-5]
 image:doc/logo-styleguide/adoptium-logos-l-p.png[Adoptium logo in landscape and portrait mode, 100%]
 
-Non of the 2 is preferred and you should always use the one that fits best to the given layout.
+None of the 2 is preferred and you should always use the one that fits best to the given layout.
 
 === Color Variants
 
@@ -26,7 +26,7 @@ image:doc/logo-styleguide/adoptium-logo-color-variants.png[Adoptium logo color v
 
 === Logo Download
 
-You can download the logo in all available variants as PNG images with transparent background link:doc/logo-styleguide/adoptium-logo.zip[here].
+You can download the logo in all available variants as PNG images with transparent background link:/images/doc/logo-styleguide/aqavit-logo.zip[here].
 
 == Temurin by Adoptium
 
