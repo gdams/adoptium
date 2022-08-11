@@ -93,13 +93,12 @@ yum install temurin-17-jdk
 
 == openSUSE/SLES Instructions
 
-. Import the RPM repo making sure to change the openSUSE version if you
-are not using OpenSUSE 15.2. RPM’s are also available for SLES 12 and 15. To check the full list of versions supported take a look at
-https://packages.adoptium.net/ui/native/rpm/.
+. Import the RPM repo as follows. RPM’s are also available for SLES 12 and 15. To check the full list of versions supported take a look at
+https://packages.adoptium.net/ui/native/rpm/. The repositories may work with other versions but are not guaranteed and have not been tested.
 +
 [source, bash]
 ----
-zypper ar -f https://packages.adoptium.net/artifactory/rpm/opensuse/15.2/$(uname -m) adoptium
+zypper ar -f https://packages.adoptium.net/artifactory/rpm/opensuse/$(. /etc/os-release; echo $VERSION_ID)/$(uname -m) adoptium
 ----
 +
 . Install the Temurin version you require:
