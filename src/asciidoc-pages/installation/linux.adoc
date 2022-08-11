@@ -99,7 +99,7 @@ https://packages.adoptium.net/ui/native/rpm/.
 +
 [source, bash]
 ----
-zypper ar -f https://packages.adoptium.net/artifactory/rpm/opensuse/15.2/$(uname -m) adoptium
+zypper ar -f https://packages.adoptium.net/artifactory/rpm/opensuse/$(. /etc/os-release; echo $VERSION_ID)/$(uname -m) adoptium
 ----
 +
 . Install the Temurin version you require:
