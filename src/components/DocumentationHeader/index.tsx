@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { convert } from 'html-to-text'
 import { useFlexSearch } from "react-use-flexsearch";
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
@@ -28,7 +29,7 @@ const DocumentationHeader = ({
       if (!results[result].path.includes('index')) {
         let item: Object = {
           id: results[result].id,
-          label: results[result].title,
+          label: convert(results[result].title),
           link: results[result].path
         }
         hintArray.push(item)
