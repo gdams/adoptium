@@ -5,7 +5,7 @@
 https://adoptium.net/slack.html[Slack] 或者在
 https://github.com/adoptium/adoptium-support[渠道支持] 中创建一个新议题
 
-== 如何找到最新发布的 Adoptium JDK？
+== 如何找到最新发布的 Adoptium(R) JDK？
 
 Adoptium 的 JDK 称为 Eclipse Temurin，推荐您使用我们的 https://adoptium.net/temurin/releases/[最新版本]。
 

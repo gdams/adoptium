@@ -36,7 +36,7 @@ const SponsorsPage = () => (
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Adoptium&trade; Project Sponsors</h1>
+          <h1 className='fw-light'>Adoptium&reg; Project Sponsors</h1>
           <p className='lead text-muted'>Adoptium is proud to receive financial donations (both one-off and regularly) from the following companies.</p>
           <MembersGrid
             members={sponsors}

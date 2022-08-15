@@ -8,7 +8,7 @@ the best place is via
 https://adoptium.net/slack.html[Slack] or by raising an issue in the
 https://github.com/adoptium/adoptium-support[support channel].
 
-== Where are the latest Adoptium(TM) JDKs?
+== Where are the latest Adoptium(R) JDKs?
 
 Adoptium's JDKs are called Eclipse Temurin, and the releases we recommend for
 use are available on our https://adoptium.net/temurin/releases/[latest releases page].

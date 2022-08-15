@@ -16,7 +16,7 @@ const DownloadPage = () => (
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Adoptium&trade; Marketplace</h1>
+          <h1 className='fw-light'>Adoptium&reg; Marketplace</h1>
           <p className='pt-3'>
             <Trans
               shouldUnescape

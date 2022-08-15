@@ -45,7 +45,7 @@ const IndexPage = () => {
         </div>
         <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
           <div className='container py-5'>
-            <h2 className='text-pink'><Trans>The Adoptium&trade; Working Group</Trans></h2>
+            <h2 className='text-pink'><Trans>The Adoptium&reg; Working Group</Trans></h2>
             <p>
               <Trans i18nKey='wg-description'>
                 The Adoptium Working Group promotes and supports high-quality runtimes and associated technology for use across the Java ecosystem.

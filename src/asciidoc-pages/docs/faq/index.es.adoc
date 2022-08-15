@@ -7,7 +7,7 @@ el mejor lugar es vía
 https://adoptium.net/slack.html[Slack] o levantando un issue en el
 https://github.com/adoptium/adoptium-support[canal de soporte].
 
-== ¿Dónde están los últimos JDK de Adoptium?
+== ¿Dónde están los últimos JDK de Adoptium(R)?
 
 Adoptium JDK se llama Eclipse Temurin, y las versiones que recomendamos para su
 uso están disponibles en nuestra https://adoptium.net/temurin/releases/[última página de versiones].

@@ -1,4 +1,4 @@
-= Eclipse Adoptium(TM) First Timers Support
+= Eclipse Adoptium(R) First Timers Support
 :page-authors: MBoegers, hendrikebbers, gdams, tellison
 :description: Support with first time contributions
 :keywords: adoptium documentation contribute first-time

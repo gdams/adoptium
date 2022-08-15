@@ -39,7 +39,7 @@ const MembersPage = () => (
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Adoptium&trade; Working Group Members</h1>
+          <h1 className='fw-light'>Adoptium&reg; Working Group Members</h1>
           <h2 className='fw-light pt-5'>Strategic Members</h2>
           <p className='lead text-muted'>Strategic Members are organizations that view Adoptium working group managed technology as critical to their organization’s future, and are investing significant resources to sustain and define the core activities that are the responsibility of the working group.</p>
           <MembersGrid
