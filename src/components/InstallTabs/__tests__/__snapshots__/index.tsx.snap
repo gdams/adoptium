@@ -102,7 +102,7 @@ exports[`Tests for InstallTabs component renders correctly 1`] = `
               >
                 winget install 
               </span>
-              EclipseAdoptium.Temurin.17
+              EclipseAdoptium.Temurin.17.JDK
             </code>
           </pre>
           <br />
@@ -131,7 +131,7 @@ exports[`Tests for InstallTabs component renders correctly 1`] = `
               >
                 winget install 
               </span>
-              EclipseAdoptium.Temurin.11
+              EclipseAdoptium.Temurin.11.JDK
             </code>
           </pre>
           <br />
@@ -160,7 +160,7 @@ exports[`Tests for InstallTabs component renders correctly 1`] = `
               >
                 winget upgrade 
               </span>
-              EclipseAdoptium.Temurin.17
+              EclipseAdoptium.Temurin.17.JDK
             </code>
           </pre>
           <br />
@@ -189,7 +189,7 @@ exports[`Tests for InstallTabs component renders correctly 1`] = `
               >
                 winget uninstall 
               </span>
-              EclipseAdoptium.Temurin.17
+              EclipseAdoptium.Temurin.17.JDK
             </code>
           </pre>
           <a
@@ -913,7 +913,7 @@ exports[`Tests for InstallTabs component renders correctly for other 1`] = `
               >
                 winget install 
               </span>
-              EclipseAdoptium.Temurin.17
+              EclipseAdoptium.Temurin.17.JDK
             </code>
           </pre>
           <br />
@@ -942,7 +942,7 @@ exports[`Tests for InstallTabs component renders correctly for other 1`] = `
               >
                 winget install 
               </span>
-              EclipseAdoptium.Temurin.11
+              EclipseAdoptium.Temurin.11.JDK
             </code>
           </pre>
           <br />
@@ -971,7 +971,7 @@ exports[`Tests for InstallTabs component renders correctly for other 1`] = `
               >
                 winget upgrade 
               </span>
-              EclipseAdoptium.Temurin.17
+              EclipseAdoptium.Temurin.17.JDK
             </code>
           </pre>
           <br />
@@ -1000,7 +1000,7 @@ exports[`Tests for InstallTabs component renders correctly for other 1`] = `
               >
                 winget uninstall 
               </span>
-              EclipseAdoptium.Temurin.17
+              EclipseAdoptium.Temurin.17.JDK
             </code>
           </pre>
           <a
