@@ -1,5 +1,5 @@
 = Preguntas Frecuentes
-:page-authors: eddumelendez, czelabueno, jdluna, raulmj
+:page-authors: eddumelendez, czelabueno, jdluna, raulmj, tellison
 
 Hemos reunido unas cuantas preguntas frecuentes (FAQs) en este documento.
 Si quieres conversar con nosotros sobre estos tópicos, o realizar preguntas adicionales 

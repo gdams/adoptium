@@ -1,5 +1,5 @@
 = 常见问题解答
-:page-authors: zdtsw, gdams
+:page-authors: zdtsw, gdams, tellison
 
 在该文件中我们收集了一些常见问题。如果您想与我们讨论这些话题或有其他问题，最好的途径是通过以下链接
 https://adoptium.net/slack.html[Slack] 或者在
