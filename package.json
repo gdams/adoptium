@@ -60,7 +60,7 @@
     "react-tabs": "^4.2.1",
     "react-use-flexsearch": "^0.1.1",
     "react-world-flags": "^1.5.1",
-    "sass": "1.54.4",
+    "sass": "1.54.5",
     "use-query-params": "^1.2.3"
   },
   "devDependencies": {
