@@ -9,7 +9,7 @@ import DocumentationCard from '../components/DocumentationCard'
 
 const DocumentationPage = ({ data }) => (
   <Layout>
-    <Seo title='Documentation' />
+
     <DocumentationHeader data={data} />
 
     <div className='page-content'>
@@ -105,6 +105,10 @@ const DocumentationPage = ({ data }) => (
 )
 
 export default DocumentationPage
+
+export const Head = () => (
+  <Seo title='Documentation' />
+)
 
 export const query = graphql`
   query ($language: String!) {

@@ -20,7 +20,6 @@ const NewsPage = (): JSX.Element => {
 
   return (
     <Layout>
-      <Seo title='News & Events' />
       <PageHeader title='News & Events' subtitle='Follow the latest updates from the Eclipse Adoptium Project' />
       <section className='text-center container-flex'>
         <div className='row py-lg-5 w-75 m-auto'>
@@ -83,6 +82,10 @@ const NewsPage = (): JSX.Element => {
 };
 
 export default NewsPage
+
+export const Head = () => (
+  <Seo title='News & Events' />
+)
 
 export const query = graphql`
   query ($language: String!) {

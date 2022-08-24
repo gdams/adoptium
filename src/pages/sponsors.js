@@ -32,7 +32,6 @@ shuffle(infra)
 
 const SponsorsPage = () => (
   <Layout>
-    <Seo title='Adoptium Project Sponsors' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
@@ -56,6 +55,10 @@ const SponsorsPage = () => (
 )
 
 export default SponsorsPage
+
+export const Head = () => (
+  <Seo title='Adoptium Project Sponsors' />
+)
 
 export const query = graphql`
   query ($language: String!) {

@@ -35,7 +35,6 @@ const DownloadPage = ({ location }) => {
 
   return (
     <Layout>
-      <Seo title='Thank You' />
       <section className='py-5 text-center container'>
         <div className='row py-lg-5'>
           <div className='col-lg-10 col-md-8 mx-auto'>
@@ -78,6 +77,10 @@ const DownloadPage = ({ location }) => {
 }
 
 export default DownloadPage
+
+export const Head = () => (
+  <Seo title='Thank You' />
+)
 
 export const query = graphql`
   query ($language: String!) {

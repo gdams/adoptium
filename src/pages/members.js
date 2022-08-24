@@ -35,7 +35,6 @@ shuffle(participantMembers)
 
 const MembersPage = () => (
   <Layout>
-    <Seo title='Adoptium Working Group Members' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
@@ -63,6 +62,10 @@ const MembersPage = () => (
 )
 
 export default MembersPage
+
+export const Head = () => (
+  <Seo title='Adoptium Working Group Members' />
+)
 
 export const query = graphql`
   query ($language: String!) {

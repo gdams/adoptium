@@ -7,7 +7,6 @@ import LatestTemurin from '../../components/LatestTemurin'
 
 const TemurinHome = () => (
   <Layout>
-    <Seo title='Eclipse Temurin' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-10 col-md-8 mx-auto'>
@@ -37,6 +36,10 @@ const TemurinHome = () => (
 )
 
 export default TemurinHome
+
+export const Head = () => (
+  <Seo title='Eclipse Temurin' />
+)
 
 export const query = graphql`
   query ($language: String!) {

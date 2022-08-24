@@ -12,7 +12,6 @@ import LinkText from '../components/LinkText'
 
 const DownloadPage = () => (
   <Layout>
-    <Seo title='Marketplace' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
@@ -57,6 +56,10 @@ const DownloadPage = () => (
 )
 
 export default DownloadPage
+
+export const Head = () => (
+  <Seo title='Marketplace' />
+)
 
 export const query = graphql`
   query ($language: String!) {

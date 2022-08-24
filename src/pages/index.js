@@ -10,7 +10,6 @@ import LatestTemurin from '../components/LatestTemurin'
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo title='Home' />
       <section id='home' className='home' style={{ overflowX: 'hidden' }}>
         <div className='container-flex'>
           <div className='main-banner row justify-content-center align-items-center'>
@@ -65,6 +64,10 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const Head = () => (
+  <Seo title='Home' />
+)
 
 export const query = graphql`
   query ($language: String!) {

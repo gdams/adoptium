@@ -5,12 +5,15 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
-import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-function Seo ({ description, lang, meta, title }) {
+interface Props {
+  title: string
+}
+
+const Seo = ({ title }: Props): JSX.Element => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -25,80 +28,33 @@ function Seo ({ description, lang, meta, title }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const siteTitle = title + " | Adoptium"
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang
-      }}
-      title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
-      meta={[
-        {
-          name: 'description',
-          content: metaDescription
-        },
-        {
-          property: 'og:title',
-          content: title
-        },
-        {
-          property: 'og:description',
-          content: metaDescription
-        },
-        {
-          property: 'og:type',
-          content: 'website'
-        },
-        {
-          name: 'og:image',
-          content: 'https://adoptium.net/images/social-image.png'
-        },
-        {
-          name: 'twitter:card',
-          content: 'summary_large_image'
-        },
-        {
-          name: 'twitter:site',
-          content: '@adoptium'
-        },
-        {
-          name: 'twitter:image',
-          content: 'https://adoptium.net/images/social-image.png'
-        },
-        {
-          name: 'twitter:creator',
-          content: site.siteMetadata?.author || ''
-        },
-        {
-          name: 'twitter:title',
-          content: title
-        },
-        {
-          name: 'twitter:description',
-          content: metaDescription
-        }
-      ].concat(meta)}
-    >
-      {/* Eclipse Cookie Consent Banner */}
+    <>
+      <title>{siteTitle}</title>
+      <meta name="description" content={site.siteMetadata.description} />
+      <meta name="og:title" content={siteTitle} />
+      <meta name="og:description" content={site.siteMetadata.description} />
+      <meta name="og:type" content="website" />
+      <meta name="og:image" content="https://adoptium.net/images/social-image.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@adoptium" />
+      <meta name="twitter:image" content="https://adoptium.net/images/social-image.png" />
+      <meta name="twitter:creator" content="@adoptium" />
+      <meta name="twitter:title" content={siteTitle} />
+      <meta name="twitter:description" content={site.siteMetadata.description} />
       <link rel='stylesheet' type='text/css' href='//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css' />
       <script src='//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js' />
-    </Helmet>
+    </>
   )
 }
 
 Seo.defaultProps = {
-  lang: 'en',
-  meta: [],
-  description: ''
+  title: 'Adoptium'
 }
 
 Seo.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired
 }
 

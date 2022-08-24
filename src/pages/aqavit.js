@@ -6,7 +6,6 @@ import Seo from '../components/Seo'
 
 const AqavitHome = () => (
   <Layout>
-    <Seo title='Eclipse AQAvit' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-10 col-md-8 mx-auto'>
@@ -63,6 +62,10 @@ const AqavitHome = () => (
 )
 
 export default AqavitHome
+
+export const Head = () => (
+  <Seo title='Eclipse AQAvit' />
+)
 
 export const query = graphql`
   query ($language: String!) {

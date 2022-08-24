@@ -7,7 +7,6 @@ import Seo from '../components/Seo'
 
 const JoinPage = () => (
   <Layout>
-    <Seo title='Join' />
     <section className='py-5 text-center container'>
       <div className='row py-lg-5'>
         <div className='col-lg-8 col-md-8 mx-auto'>
@@ -23,6 +22,10 @@ const JoinPage = () => (
 )
 
 export default JoinPage
+
+export const Head = () => (
+  <Seo title='Join' />
+)
 
 export const query = graphql`
   query ($language: String!) {
