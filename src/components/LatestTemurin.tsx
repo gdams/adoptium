@@ -10,6 +10,7 @@ import { defaultVersion } from '../util/defaults'
 let userOSName: string
 let userOSAPIName: string
 let arch: string = 'x64'
+let isSafari: boolean
 
 const LatestTemurin = (props): JSX.Element => {
 
@@ -22,7 +23,9 @@ const LatestTemurin = (props): JSX.Element => {
         let w = document.createElement("canvas").getContext("webgl");
         let d = w.getExtension('WEBGL_debug_renderer_info');
         let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
-        if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+        isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+        //Detect if the user is using a Apple GPU (M1)
+        if (isSafari || (g.match(/Apple/) && !g.match(/Apple GPU/))) {
           arch = 'aarch64'
         }
       }
@@ -55,11 +58,19 @@ const LatestTemurin = (props): JSX.Element => {
     return (
       <div ref={ref} className={props.page === "home" ? "container hide-on-mobile" : "container"}>
         {binary ? (
+          <>
           <h2 className={`fw-light mt-3 ${textClass}`}>
             <Trans i18nKey="Download Temurin for" userOSName={userOSName} arch={arch}>
               Download Temurin&trade; for {{ userOSName }} {{ arch }}
             </Trans>
           </h2>
+          {isSafari && (
+            <span>
+              We have detected that you're using Safari. Because we are <a href="https://stackoverflow.com/a/65412357">unable to detect your architecture</a> we have suggested aarch64 (M1).
+              For x64 builds please see other <Link to="/temurin/releases">downloads</Link>.
+            </span>
+          )}
+          </>
         ) :
           <h2 className={`fw-light mt-3 ${textClass}`}>Download Temurin&trade;</h2>
         }
