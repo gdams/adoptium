@@ -66,7 +66,7 @@ const LatestTemurin = (props): JSX.Element => {
           </h2>
           {isSafari && (
             <span>
-              We have detected that you're using Safari. Because we are <a href="https://stackoverflow.com/a/65412357">unable to detect your architecture</a> we have suggested aarch64 (M1).
+              We have detected that you're using Safari. Because we are <a target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/a/65412357">unable to detect your architecture</a> we have suggested aarch64 (M1).
               For x64 builds please see other <Link to="/temurin/releases">downloads</Link>.
             </span>
           )}
