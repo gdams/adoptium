@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SEO component SEO metadata renders correctly 1`] = `
+<div>
+  <title>
+    Page Title | Adoptium
+  </title>
+  <meta
+    content="Sample Description"
+    name="description"
+  />
+  <meta
+    content="Page Title | Adoptium"
+    name="og:title"
+  />
+  <meta
+    content="Sample Description"
+    name="og:description"
+  />
+  <meta
+    content="website"
+    name="og:type"
+  />
+  <meta
+    content="https://adoptium.net/images/social-image.png"
+    name="og:image"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="@adoptium"
+    name="twitter:site"
+  />
+  <meta
+    content="https://adoptium.net/images/social-image.png"
+    name="twitter:image"
+  />
+  <meta
+    content="@adoptium"
+    name="twitter:creator"
+  />
+  <meta
+    content="Page Title | Adoptium"
+    name="twitter:title"
+  />
+  <meta
+    content="Sample Description"
+    name="twitter:description"
+  />
+  <link
+    href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script
+    src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"
+  />
+</div>
+`;
