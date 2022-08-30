@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { SSRProvider } from '@react-aria/ssr'
 
-import Navbar from './Navbar'
-import Banner from './Banner'
-import Footer from './Footer'
+import Navbar from '../Navbar'
+import Banner from '../Banner'
+import Footer from '../Footer'
 import './layout.scss'
 
 const Layout = ({ children }) => {
