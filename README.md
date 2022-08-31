@@ -1,6 +1,6 @@
 # Adoptium Site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/359195e4-6832-4457-b67c-e79ddaf8c549/deploy-status)](https://app.netlify.com/sites/eclipsefdn-adoptium-v2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/359195e4-6832-4457-b67c-e79ddaf8c549/deploy-status)](https://app.netlify.com/sites/eclipsefdn-adoptium-v2/deploys) [![codecov](https://codecov.io/gh/adoptium/website-v2/branch/main/graph/badge.svg?token=XGJMJVT8BA)](https://codecov.io/gh/adoptium/website-v2)
 
 This repository contains the source code for [https://adoptium.net](https://adoptium.net).
 
