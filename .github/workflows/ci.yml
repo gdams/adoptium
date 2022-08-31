@@ -15,4 +15,6 @@ jobs:
         with:
           node-version: '16'
       - run: npm install --legacy-peer-deps
-      - run: npm test
+      - run: npm run coverage
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
