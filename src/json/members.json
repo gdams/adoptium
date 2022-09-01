@@ -48,12 +48,6 @@
     "tier": "participant"
   },
   {
-    "name": "Managecat",
-    "logo": "managecat.png",
-    "url": "https://managecat.com",
-    "tier": "participant"
-  },
-  {
     "name": "New Relic",
     "logo": "newrelic.svg",
     "url": "https://newrelic.com",
