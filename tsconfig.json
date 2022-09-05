@@ -20,5 +20,8 @@
       "downlevelIteration": true,
       "resolveJsonModule": true
     },
-    "include": ["**/*.{ts,tsx,mdx}"],
+    "include": [
+        "**/*.{ts,tsx,mdx}",
+        "*.{ts,tsx,mdx}"
+    ]
   }
