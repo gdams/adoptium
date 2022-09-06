@@ -453,7 +453,7 @@ exports[`Footer component > renders correctly 1`] = `
           id="dropdown-flags"
           type="button"
         >
-          &lt;&gt;Text&lt;/&gt;
+          Text
         </button>
       </div>
     </form>

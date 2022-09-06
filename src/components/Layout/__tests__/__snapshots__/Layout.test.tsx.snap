@@ -767,7 +767,7 @@ exports[`Layout component > renders correctly with data 1`] = `
             id="dropdown-flags"
             type="button"
           >
-            &lt;&gt;Text&lt;/&gt;
+            Text
           </button>
         </div>
       </form>

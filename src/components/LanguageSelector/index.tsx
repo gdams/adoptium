@@ -48,6 +48,7 @@ const LanguageSelector = (): JSX.Element => {
             {languages.map((lng) => (
               <a
                 href=""
+                id={lng}
                 key={lng}
                 onClick={(e) => {
                   e.preventDefault();

@@ -49,10 +49,10 @@ vi.mock('gatsby-plugin-react-i18next', async () => {
     }),
     useI18next: () => ({
       language: 'en',
-      languages: ['en', 'de'],
+      languages: ['en', 'en-GB', 'es', 'de', 'zh-CN'],
       changeLanguage: async () => await new Promise(() => {})
     }),
-    Trans: () => '<>Text</>'
+    Trans: () => 'Text'
   }
 })
 

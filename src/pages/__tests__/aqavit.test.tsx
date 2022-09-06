@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 import AQAvit from '../aqavit';
 
