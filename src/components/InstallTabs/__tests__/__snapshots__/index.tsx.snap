@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`Tests for InstallTabs component renders correctly 1`] = `
+exports[`Tests for InstallTabs component > renders correctly 1`] = `
 <div>
   <div
     class="install"
@@ -217,7 +217,7 @@ exports[`Tests for InstallTabs component renders correctly 1`] = `
 </div>
 `;
 
-exports[`Tests for InstallTabs component renders correctly for Linux 1`] = `
+exports[`Tests for InstallTabs component > renders correctly for Linux 1`] = `
 <div>
   <div
     class="install"
@@ -383,7 +383,6 @@ exports[`Tests for InstallTabs component renders correctly for Linux 1`] = `
           <a
             class="install__docs-button"
             href="/installation/linux"
-            hreflang="en"
           >
             Read documentation
           </a>
@@ -406,7 +405,7 @@ exports[`Tests for InstallTabs component renders correctly for Linux 1`] = `
 </div>
 `;
 
-exports[`Tests for InstallTabs component renders correctly for Unix 1`] = `
+exports[`Tests for InstallTabs component > renders correctly for Unix 1`] = `
 <div>
   <div
     class="install"
@@ -572,7 +571,6 @@ exports[`Tests for InstallTabs component renders correctly for Unix 1`] = `
           <a
             class="install__docs-button"
             href="/installation/linux"
-            hreflang="en"
           >
             Read documentation
           </a>
@@ -595,7 +593,7 @@ exports[`Tests for InstallTabs component renders correctly for Unix 1`] = `
 </div>
 `;
 
-exports[`Tests for InstallTabs component renders correctly for macOS 1`] = `
+exports[`Tests for InstallTabs component > renders correctly for macOS 1`] = `
 <div>
   <div
     class="install"
@@ -809,9 +807,9 @@ exports[`Tests for InstallTabs component renders correctly for macOS 1`] = `
 </div>
 `;
 
-exports[`Tests for InstallTabs component renders correctly for mobile 1`] = `<div />`;
+exports[`Tests for InstallTabs component > renders correctly for mobile 1`] = `<div />`;
 
-exports[`Tests for InstallTabs component renders correctly for other 1`] = `
+exports[`Tests for InstallTabs component > renders correctly for other 1`] = `
 <div>
   <div
     class="install"

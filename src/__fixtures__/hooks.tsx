@@ -1,4 +1,4 @@
-import { ContributorApiResponse, Contributor } from '../../src/hooks';
+import { ContributorApiResponse, Contributor } from '../hooks';
 
 export const createRandomContributorApiData = (): ContributorApiResponse => ({
   login: 'login_mock',

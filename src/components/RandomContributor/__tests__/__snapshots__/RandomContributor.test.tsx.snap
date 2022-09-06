@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`RandomContributor component 1 contribution should render as contribution (not contributions) 1`] = `
+exports[`RandomContributor component > 1 contribution should render as contribution (not contributions) 1`] = `
 <div>
   <div
     class="random-contributor"
@@ -61,7 +61,7 @@ exports[`RandomContributor component 1 contribution should render as contributio
 </div>
 `;
 
-exports[`RandomContributor component should render correctly 1`] = `
+exports[`RandomContributor component > should render correctly 1`] = `
 <div>
   <div
     class="random-contributor"
@@ -122,7 +122,7 @@ exports[`RandomContributor component should render correctly 1`] = `
 </div>
 `;
 
-exports[`RandomContributor component should render loading animation until data will be fetched 1`] = `
+exports[`RandomContributor component > should render loading animation until data will be fetched 1`] = `
 <div>
   <div
     class="random-contributor"

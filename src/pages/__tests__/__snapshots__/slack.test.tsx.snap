@@ -1,0 +1,51 @@
+// Vitest Snapshot v1
+
+exports[`Slack page > renders correctly 1`] = `
+<main>
+  <section
+    class="py-5 text-center container"
+  >
+    <div
+      class="row py-lg-5"
+    >
+      <div
+        class="col-lg-8 col-md-8 mx-auto"
+      >
+        <h1
+          class="fw-light"
+        >
+          Join our Slack channel!
+        </h1>
+      </div>
+      <form
+        action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdxrFvVu49Nx0zQKZAfHe_43H3H6BOhRiRXayQjjAmlbnSJfg/formResponse"
+        method="post"
+        target="_blank"
+      >
+        <div
+          class="form-group"
+        >
+          <label>
+            Email address
+            <input
+              autocomplete="email"
+              class="form-control"
+              name="emailAddress"
+              placeholder="Your email"
+              required=""
+              type="email"
+            />
+          </label>
+          <br />
+          <button
+            class="btn btn-primary mt-3"
+            type="submit"
+          >
+            Invite Me!
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+`;

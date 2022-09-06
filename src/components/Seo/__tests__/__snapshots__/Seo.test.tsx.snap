@@ -1,12 +1,11 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`SEO component SEO metadata renders correctly 1`] = `
+exports[`SEO component > SEO metadata renders correctly 1`] = `
 <div>
   <title>
     Page Title | Adoptium
   </title>
   <meta
-    content="Sample Description"
     name="description"
   />
   <meta
@@ -14,7 +13,6 @@ exports[`SEO component SEO metadata renders correctly 1`] = `
     name="og:title"
   />
   <meta
-    content="Sample Description"
     name="og:description"
   />
   <meta
@@ -46,7 +44,6 @@ exports[`SEO component SEO metadata renders correctly 1`] = `
     name="twitter:title"
   />
   <meta
-    content="Sample Description"
     name="twitter:description"
   />
   <link

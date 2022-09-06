@@ -1,4 +1,5 @@
 import { detectOS } from '../detectOS';
+import { describe, expect, it } from 'vitest'
 
 describe('Detect the user OS function', () => {
   it('should be defined', () => {

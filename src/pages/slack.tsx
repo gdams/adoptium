@@ -19,7 +19,7 @@ const JoinPage = () => (
           <div className='form-group'>
             <label>Email address
               <input
-                autocomplete='email'
+                autoComplete='email'
                 name='emailAddress'
                 placeholder='Your email'
                 type='email'

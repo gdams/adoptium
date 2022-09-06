@@ -1,10 +1,10 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`PageHeader component does not render without a subtitle 1`] = `<div />`;
+exports[`PageHeader component > does not render without a subtitle 1`] = `<div />`;
 
-exports[`PageHeader component does not render without a title 1`] = `<div />`;
+exports[`PageHeader component > does not render without a title 1`] = `<div />`;
 
-exports[`PageHeader component should render correctly 1`] = `
+exports[`PageHeader component > should render correctly 1`] = `
 <div>
   <div
     class="docs-header p-5 text-center"

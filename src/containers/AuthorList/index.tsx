@@ -8,8 +8,9 @@ interface Props {
 
 const AuthorsList = ({ authors }: Props): null | JSX.Element => {
   return (
+    <>
+    <p className="h5">Contributors</p>
     <ul className="list m-0">
-      <h5>Contributors</h5>
       {authors.map(
         (author, i): string | JSX.Element =>
           author && (
@@ -17,6 +18,7 @@ const AuthorsList = ({ authors }: Props): null | JSX.Element => {
           )
       )}
     </ul>
+    </>
   );
 };
 

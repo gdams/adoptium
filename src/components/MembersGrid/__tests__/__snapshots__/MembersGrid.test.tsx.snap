@@ -1,0 +1,44 @@
+// Vitest Snapshot v1
+
+exports[`MembersGrid component > Members grid renders correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="row justify-content-center align-items-center"
+    >
+      <div
+        class="col-lg-4 col-md-12 mt-5"
+      >
+        <a
+          href="https://member1.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Member 1 logo"
+            src="/images/member1.png"
+            style="width: 10rem;"
+          />
+        </a>
+      </div>
+      <div
+        class="col-lg-4 col-md-12 mt-5"
+      >
+        <a
+          href="https://member2.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="Member 2 logo"
+            src="/images/member2.png"
+            style="width: 10rem;"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,19 @@
+// Vitest Snapshot v1
+
+exports[`useMediaQuery > should check for matchMedia support 1`] = `
+<div>
+  undefined
+</div>
+`;
+
+exports[`useMediaQuery > should return false for not-matched query 1`] = `
+<div>
+  false
+</div>
+`;
+
+exports[`useMediaQuery > should return true for matched query 1`] = `
+<div>
+  true
+</div>
+`;

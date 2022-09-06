@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`ChecksumModal component ChecksumModal copies correctly 1`] = `
+exports[`ChecksumModal component > ChecksumModal copies correctly 1`] = `
 <div>
   <div
     aria-hidden="true"
@@ -92,7 +92,7 @@ exports[`ChecksumModal component ChecksumModal copies correctly 1`] = `
 </div>
 `;
 
-exports[`ChecksumModal component ChecksumModal renders correctly 1`] = `
+exports[`ChecksumModal component > ChecksumModal renders correctly 1`] = `
 <div>
   <div
     aria-hidden="true"

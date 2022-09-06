@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`DocumentationCard component renders correctly 1`] = `
+exports[`Footer component > renders correctly 1`] = `
 <div>
   <section
     class="bottom-info"
@@ -21,9 +21,11 @@ exports[`DocumentationCard component renders correctly 1`] = `
         <div
           class="col-sm-3 col-12"
         >
-          <h5>
+          <p
+            class="h5 pb-1"
+          >
             Eclipse Foundation
-          </h5>
+          </p>
           <ul
             class="nav flex-column"
           >
@@ -112,9 +114,11 @@ exports[`DocumentationCard component renders correctly 1`] = `
         <div
           class="col-sm-3 col-12"
         >
-          <h5>
+          <p
+            class="h5 pb-1"
+          >
             Legal
-          </h5>
+          </p>
           <ul
             class="nav flex-column"
           >
@@ -173,9 +177,11 @@ exports[`DocumentationCard component renders correctly 1`] = `
         <div
           class="col-sm-3 col-12"
         >
-          <h5>
+          <p
+            class="h5 pb-1"
+          >
             Useful Links
-          </h5>
+          </p>
           <ul
             class="nav flex-column"
           >
@@ -244,9 +250,11 @@ exports[`DocumentationCard component renders correctly 1`] = `
         <div
           class="col-sm-3 col-12"
         >
-          <h5>
+          <p
+            class="h5 pb-1"
+          >
             Other
-          </h5>
+          </p>
           <ul
             class="nav flex-column"
           >
@@ -328,6 +336,7 @@ exports[`DocumentationCard component renders correctly 1`] = `
             class="ms-3"
           >
             <a
+              aria-label="Adoptium Twitter Account"
               class="text-muted"
               href="https://twitter.com/adoptium"
             >
@@ -350,6 +359,7 @@ exports[`DocumentationCard component renders correctly 1`] = `
             class="ms-3"
           >
             <a
+              aria-label="Adoptium YouTube Account"
               class="text-muted"
               href="https://www.youtube.com/c/EclipseAdoptium"
             >
@@ -372,6 +382,7 @@ exports[`DocumentationCard component renders correctly 1`] = `
             class="ms-3"
           >
             <a
+              aria-label="Adoptium GitHub Account"
               class="text-muted"
               href="https://github.com/adoptium"
             >
@@ -394,9 +405,9 @@ exports[`DocumentationCard component renders correctly 1`] = `
             class="ms-3"
           >
             <a
+              aria-label="Adoptium Slack Account"
               class="text-muted"
               href="/slack"
-              hreflang="en"
             >
               <svg
                 fill="currentColor"
@@ -437,10 +448,13 @@ exports[`DocumentationCard component renders correctly 1`] = `
       >
         <button
           aria-expanded="false"
+          aria-label="Language Selector"
           class="text-left text-white dropdown-toggle btn btn-primary"
           id="dropdown-flags"
           type="button"
-        />
+        >
+          &lt;&gt;Text&lt;/&gt;
+        </button>
       </div>
     </form>
   </div>

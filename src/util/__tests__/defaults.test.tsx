@@ -1,4 +1,5 @@
 import { arches, defaultArchitecture, defaultPackageType, defaultVersion, marketplaceDistributions, oses, packageTypes, versions, versionsLTS } from "../defaults";
+import { describe, expect, it } from 'vitest'
 
 describe("defaults", () => {
     it("check types", () => {

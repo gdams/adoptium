@@ -1,5 +1,5 @@
 // Randomly shuffle array
-export function shuffle (array) {
+export function shuffle (array: Array<any>): Array<any> {
   let currentIndex = array.length; let randomIndex
 
   // While there remain elements to shuffle...

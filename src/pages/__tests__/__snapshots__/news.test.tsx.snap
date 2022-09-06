@@ -1,0 +1,74 @@
+// Vitest Snapshot v1
+
+exports[`News page > renders correctly 1`] = `
+<main>
+  <div
+    class="docs-header p-5 text-center"
+  >
+    <div
+      class="container"
+    >
+      <h1>
+        News & Events
+      </h1>
+      <div
+        class="lead"
+      >
+        Follow the latest updates from the Eclipse Adoptium Project
+      </div>
+      <div
+        class="main-search-box pt-3 d-block mx-auto"
+      />
+    </div>
+  </div>
+  <section
+    class="text-center container-flex"
+  >
+    <div
+      class="row py-lg-5 w-75 m-auto"
+    >
+      <div
+        class="row pt-5"
+      >
+        <div
+          class="col-md-5 text-start"
+        >
+          <h2>
+            News
+          </h2>
+        </div>
+        <div
+          class="col-md-1"
+        />
+        <div
+          class="col-md-6"
+        >
+          <h2>
+            Upcoming Events
+          </h2>
+          <ul
+            class="MuiTimeline-root MuiTimeline-positionAlternate css-55vwbm-MuiTimeline-root"
+          />
+          <a
+            class="px-2"
+            href="https://events.eclipse.org/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            View all
+          </a>
+          |
+          <a
+            class="px-2"
+            href="https://newsroom.eclipse.org/node/add/events"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Submit an event
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+`;

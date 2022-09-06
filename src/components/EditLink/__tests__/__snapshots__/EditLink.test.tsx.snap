@@ -1,8 +1,8 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`EditLink component does not render without a path 1`] = `<div />`;
+exports[`EditLink component > does not render without a path 1`] = `<div />`;
 
-exports[`EditLink component renders correctly 1`] = `
+exports[`EditLink component > renders correctly 1`] = `
 <div>
   <div
     class="mx-auto pt-5"

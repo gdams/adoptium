@@ -20,5 +20,9 @@
       "downlevelIteration": true,
       "resolveJsonModule": true
     },
-    "include": ["src/**/*"]
+    "include": [
+      "**/*.{ts,tsx,mdx}",
+      "vitest.config.ts",
+      "vitest-setup.ts"
+    ]
   }

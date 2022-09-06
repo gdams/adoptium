@@ -63,7 +63,7 @@ const DownloadPage = ({ location }) => {
             <h2 className='fw-light py-3'>Donate to the Eclipse Adoptium Working Group</h2>
             <p>You can help power the Adoptium Community with a donation</p>
             <a href='https://eclipse.org/donate/adoptium' target='_blank' className='btn btn-primary btn-lg m-2' rel='noreferrer'>Donate <BiDonateHeart /></a>
-            <a target='_blank' rel='noreferrer' href='https://github.com/sponsors/adoptium' className='btn btn-lg btn-outline-dark m-2'><SiGithubsponsors color='#bf3989' /> Become a GitHub Sponsor!</a>
+            <a target='_blank' rel='noreferrer' href='https://github.com/sponsors/adoptium' className='btn btn-lg btn-outline-dark m-2'><SiGithubsponsors aria-label='GitHub Sponsors Icon' color='#bf3989' /> Become a GitHub Sponsor!</a>
             <h2 className='fw-light py-3'>Get involved</h2>
             <p>Whether you choose to <a href='https://github.com/adoptium/adoptium-support/issues' target='_blank' rel='noreferrer'>report bugs</a>, request features, or <Link to='/docs/first-timer-support'>become a committer</Link>, you can help improve the technology for yourself and the rest of the community.</p>
             <h2 className='fw-light py-3'>Join the Working Group</h2>

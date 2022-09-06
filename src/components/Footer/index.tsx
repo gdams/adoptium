@@ -22,7 +22,7 @@ const Footer = (): JSX.Element => {
           <footer className="row row-cols-4 py-5 border-top">
 
             <div className="col-sm-3 col-12">
-              <h5>Eclipse Foundation</h5>
+              <p className="h5 pb-1">Eclipse Foundation</p>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/org/" className="nav-link p-0 text-muted">About Us</a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/org/foundation/contact.php" className="nav-link p-0 text-muted">Contact Us</a></li>
@@ -36,7 +36,7 @@ const Footer = (): JSX.Element => {
             </div>
 
             <div className="col-sm-3 col-12">
-              <h5>Legal</h5>
+            <p className="h5 pb-1">Legal</p>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/legal/privacy.php" className="nav-link p-0 text-muted">Privacy Policy</a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/legal/termsofuse.php" className="nav-link p-0 text-muted">Terms of Use</a></li>
@@ -47,7 +47,7 @@ const Footer = (): JSX.Element => {
             </div>
 
             <div className="col-sm-3 col-12">
-              <h5>Useful Links</h5>
+            <p className="h5 pb-1">Useful Links</p>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2"><a href="https://bugs.eclipse.org/bugs/" className="nav-link p-0 text-muted">Report a Bug</a></li>
                 <li className="nav-item mb-2"><a href="https://help.eclipse.org/" className="nav-link p-0 text-muted">Documentation</a></li>
@@ -59,7 +59,7 @@ const Footer = (): JSX.Element => {
             </div>
 
             <div className="col-sm-3 col-12">
-              <h5>Other</h5>
+            <p className="h5 pb-1">Other</p>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/ide/" className="nav-link p-0 text-muted">IDE and Tools</a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/projects" className="nav-link p-0 text-muted">Projects</a></li>
@@ -74,10 +74,10 @@ const Footer = (): JSX.Element => {
               <span className="text-muted">Copyright © Eclipse Foundation. All Rights Reserved.</span>
             </div>
             <ul className="nav col-md-5 col-9 pb-4 justify-content-end list-unstyled d-flex">
-              <li className="ms-3"><a className="text-muted" href="https://twitter.com/adoptium"><FaTwitter size={25} /></a></li>
-              <li className="ms-3"><a className="text-muted" href="https://www.youtube.com/c/EclipseAdoptium"><FaYoutube size={25} /></a></li>
-              <li className="ms-3"><a className="text-muted" href="https://github.com/adoptium"><FaGithub size={25} /></a></li>
-              <li className="ms-3"><Link className="text-muted" to="/slack"><FaSlack size={25} /></Link></li>
+              <li className="ms-3"><a className="text-muted" aria-label="Adoptium Twitter Account" href="https://twitter.com/adoptium"><FaTwitter size={25} /></a></li>
+              <li className="ms-3"><a className="text-muted" aria-label="Adoptium YouTube Account" href="https://www.youtube.com/c/EclipseAdoptium"><FaYoutube size={25} /></a></li>
+              <li className="ms-3"><a className="text-muted" aria-label="Adoptium GitHub Account" href="https://github.com/adoptium"><FaGithub size={25} /></a></li>
+              <li className="ms-3"><Link className="text-muted" aria-label="Adoptium Slack Account" to="/slack"><FaSlack size={25} /></Link></li>
             </ul>
             <div className="col-12 d-flex ">
                 <span className="text-muted">Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.</span>

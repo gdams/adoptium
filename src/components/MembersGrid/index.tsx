@@ -10,7 +10,7 @@ const array = members.members
                 {array.map(
                     (member, i): string | JSX.Element =>
                         member && (
-                            <div className='col-lg-4 col-md-12 mt-5'>
+                            <div className='col-lg-4 col-md-12 mt-5' key={member.name}>
                                 <a target='_blank' rel='noopener noreferrer' href={member.url}>
                                     <img src={`/images/${member.logo}`} style={{width: '10rem'}} alt={`${member.name} logo`}/>
                                 </a>

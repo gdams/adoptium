@@ -1,0 +1,29 @@
+// Vitest Snapshot v1
+
+exports[`Join page > renders correctly 1`] = `
+<main>
+  <section
+    class="py-5 text-center container"
+  >
+    <div
+      class="row py-lg-5"
+    >
+      <div
+        class="col-lg-8 col-md-8 mx-auto"
+      >
+        <h1
+          class="fw-light"
+        >
+          Join the Eclipse Adoptium® Working Group
+        </h1>
+      </div>
+      <div>
+        <div
+          id="reactHubspotForm0"
+          style="display: none;"
+        />
+      </div>
+    </div>
+  </section>
+</main>
+`;

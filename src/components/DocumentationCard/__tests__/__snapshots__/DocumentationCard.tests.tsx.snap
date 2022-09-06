@@ -1,12 +1,12 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`DocumentationCard component does not render when links is not object 1`] = `<div />`;
+exports[`DocumentationCard component > does not render when links is not object 1`] = `<div />`;
 
-exports[`DocumentationCard component does not render without a Icon 1`] = `<div />`;
+exports[`DocumentationCard component > does not render without a Icon 1`] = `<div />`;
 
-exports[`DocumentationCard component does not render without a title 1`] = `<div />`;
+exports[`DocumentationCard component > does not render without a title 1`] = `<div />`;
 
-exports[`DocumentationCard component renders correctly 1`] = `
+exports[`DocumentationCard component > renders correctly 1`] = `
 <div>
   <div
     class="col-12 col-lg-4 py-3"
@@ -52,14 +52,12 @@ exports[`DocumentationCard component renders correctly 1`] = `
             <a
               class="list-group-item list-group-item-action"
               href="/link1"
-              hreflang="en"
             >
               Link1
             </a>
             <a
               class="list-group-item list-group-item-action"
               href="/link2"
-              hreflang="en"
             >
               Link2
             </a>

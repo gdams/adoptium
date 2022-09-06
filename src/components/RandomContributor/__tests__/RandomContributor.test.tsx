@@ -2,11 +2,12 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import RandomContributor from '..';
 import { useOnScreen } from '../../../hooks/useOnScreen';
+import { describe, expect, it, vi } from 'vitest'
 import { useAdoptiumContributorsApi } from '../../../hooks/useAdoptiumContributorsApi';
-import { createRandomContributorViewData, createRandomContributorViewData1Contribution } from '../../../../test/__fixtures__/hooks';
+import { createRandomContributorViewData, createRandomContributorViewData1Contribution } from '../../../__fixtures__/hooks';
 
-jest.mock('../../../hooks/useOnScreen');
-jest.mock('../../../hooks/useAdoptiumContributorsApi');
+vi.mock('../../../hooks/useOnScreen');
+vi.mock('../../../hooks/useAdoptiumContributorsApi');
 
 describe('RandomContributor component', () => {
   it('should render correctly', () => {

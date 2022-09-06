@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 import { SSRProvider } from '@react-aria/ssr'
 
-import Navbar from '../Navbar'
+import NavBar from '../NavBar'
 import Banner from '../Banner'
 import Footer from '../Footer'
 import './layout.scss'
@@ -29,10 +29,10 @@ const Layout = ({ children }) => {
           transition: 'color 0.2s ease-out, background 0.2s ease-out'
         }}
       >
-        <Navbar siteTitle={data.site.siteMetadata?.title || 'Title'} />
+        <NavBar siteTitle={data.site.siteMetadata?.title || 'Title'} />
         <Banner />
         <main>
-          <main>{children}</main>
+          {children}
         </main>
         <Footer />
       </div>
