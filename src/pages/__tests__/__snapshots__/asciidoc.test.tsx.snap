@@ -6,6 +6,7 @@ exports[`Asciidoc pages > renders correctly 1`] = `
     Asciidoc Page title | Adoptium
   </title>
   <meta
+    content="Sample Description"
     name="description"
   />
   <meta
@@ -13,6 +14,7 @@ exports[`Asciidoc pages > renders correctly 1`] = `
     name="og:title"
   />
   <meta
+    content="Sample Description"
     name="og:description"
   />
   <meta
@@ -44,6 +46,7 @@ exports[`Asciidoc pages > renders correctly 1`] = `
     name="twitter:title"
   />
   <meta
+    content="Sample Description"
     name="twitter:description"
   />
   <link

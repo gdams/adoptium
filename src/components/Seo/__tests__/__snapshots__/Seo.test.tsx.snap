@@ -6,6 +6,7 @@ exports[`SEO component > SEO metadata renders correctly 1`] = `
     Page Title | Adoptium
   </title>
   <meta
+    content="Sample Description"
     name="description"
   />
   <meta
@@ -13,6 +14,7 @@ exports[`SEO component > SEO metadata renders correctly 1`] = `
     name="og:title"
   />
   <meta
+    content="Sample Description"
     name="og:description"
   />
   <meta
@@ -44,6 +46,7 @@ exports[`SEO component > SEO metadata renders correctly 1`] = `
     name="twitter:title"
   />
   <meta
+    content="Sample Description"
     name="twitter:description"
   />
   <link

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { render } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 
 import ShellBox from '../index';
 
@@ -12,6 +12,10 @@ Object.assign(navigator, {
 });
 
 const navigatorClipboardSpy = vi.spyOn(navigator.clipboard, 'writeText');
+
+afterEach(() => {
+  vi.clearAllMocks();
+});
 
 describe('ShellBox component', (): void => {
   it('renders correctly', (): void => {

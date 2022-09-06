@@ -11,9 +11,8 @@ vi.mock('gatsby', async () => {
   const mockUseStaticQuery = {
     site: {
       siteMetadata: {
-        siteTitle: 'Testing Gatsby Head API',
-        siteUrl: 'https://www.yourdomain.tld',
-        siteDescription: 'Showing how to test Gatsby Head API with Vitest and Playwright'
+        title: 'Sample Title',
+        description: 'Sample Description'
       }
     }
   }
