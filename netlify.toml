@@ -3,7 +3,7 @@ publish = "public"
 command = "npm run build"
 
 [build.environment]
-NODE_VERSION = "18"
+NODE_VERSION = "16"
 NPM_FLAGS = "--legacy-peer-deps"
 GATSBY_CONCURRENT_DOWNLOAD = "15"
 GATSBY_CPU_COUNT = "1"
