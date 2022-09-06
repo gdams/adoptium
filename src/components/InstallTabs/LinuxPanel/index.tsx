@@ -3,7 +3,7 @@ import React from 'react';
 import ShellBox from '../../ShellBox';
 import '../InstallTabs.scss';
 
-const LinuxPanel = (): JSX.Element => {
+export const PureLinuxPanel = (): JSX.Element => {
   return (
     <div>
       <ShellBox>
@@ -34,6 +34,10 @@ const LinuxPanel = (): JSX.Element => {
       </Link>
     </div>
   );
+};
+
+const LinuxPanel = (): JSX.Element => {
+  return <PureLinuxPanel />;
 };
 
 export default LinuxPanel;

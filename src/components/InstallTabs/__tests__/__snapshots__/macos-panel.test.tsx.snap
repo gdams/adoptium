@@ -1,0 +1,126 @@
+// Vitest Snapshot v1
+
+exports[`Tests for MacOSPanel component > renders correctly 1`] = `
+<div>
+  <div>
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Install the latest LTS version
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          brew install --cask 
+        </span>
+        temurin
+      </code>
+    </pre>
+    <br />
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Install a specific version
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          brew tap 
+        </span>
+        homebrew/cask-versions
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          brew install --cask 
+        </span>
+        temurin8
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          brew install --cask 
+        </span>
+        temurin11
+      </code>
+    </pre>
+    <br />
+    <br />
+    <br />
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Uninstall a specific version
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          brew uninstall --cask 
+        </span>
+        temurin
+      </code>
+    </pre>
+    <a
+      class="install__docs-button"
+      href="https://docs.brew.sh/Manpage"
+    >
+      Read documentation
+    </a>
+  </div>
+</div>
+`;

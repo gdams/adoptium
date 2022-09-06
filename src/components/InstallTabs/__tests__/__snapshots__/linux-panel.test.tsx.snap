@@ -1,0 +1,100 @@
+// Vitest Snapshot v1
+
+exports[`Tests for LinuxPanel component > renders correctly 1`] = `
+<div>
+  <div>
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Install the latest LTS version (Debian or Ubuntu)
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          apt-get install 
+        </span>
+        temurin-17-jdk
+      </code>
+    </pre>
+    <br />
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Install the latest LTS version (CentOS/RHEL/Fedora)
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          yum install 
+        </span>
+        temurin-17-jdk
+      </code>
+    </pre>
+    <br />
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Install the latest LTS version (openSUSE/SLES)
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          zypper install 
+        </span>
+        temurin-17-jdk
+      </code>
+    </pre>
+    <a
+      class="install__docs-button"
+      href="/installation/linux"
+    >
+      Read documentation
+    </a>
+  </div>
+</div>
+`;

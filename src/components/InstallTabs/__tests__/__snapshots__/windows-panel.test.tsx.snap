@@ -1,0 +1,129 @@
+// Vitest Snapshot v1
+
+exports[`Tests for WindowsPanel component > renders correctly 1`] = `
+<div>
+  <div>
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Install the latest version
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          winget install 
+        </span>
+        EclipseAdoptium.Temurin.17.JDK
+      </code>
+    </pre>
+    <br />
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Install a different version
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          winget install 
+        </span>
+        EclipseAdoptium.Temurin.11.JDK
+      </code>
+    </pre>
+    <br />
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Upgrade the Winget package
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          winget upgrade 
+        </span>
+        EclipseAdoptium.Temurin.17.JDK
+      </code>
+    </pre>
+    <br />
+    <pre
+      class="shell-box no-highlight"
+    >
+      <div
+        class="shell-box-top"
+      />
+      <code
+        class="shell-box-code"
+      >
+        <span
+          class="install__text__no-select"
+        >
+          # Uninstall the Winget package
+        </span>
+        <br />
+        <span
+          class="install__text__no-select"
+        >
+          $
+        </span>
+        <span
+          class="install-text-command"
+        >
+          winget uninstall 
+        </span>
+        EclipseAdoptium.Temurin.17.JDK
+      </code>
+    </pre>
+    <a
+      class="install__docs-button"
+      href="https://docs.microsoft.com/en-us/windows/package-manager/winget/"
+    >
+      Read documentation
+    </a>
+  </div>
+</div>
+`;

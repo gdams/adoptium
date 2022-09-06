@@ -2,7 +2,7 @@ import React from 'react';
 import ShellBox from '../../ShellBox';
 import '../InstallTabs.scss';
 
-const WindowsPanel = (): JSX.Element => {
+export const PureWindowsPanel = (): JSX.Element => {
   return (
     <div>
       <ShellBox>
@@ -40,6 +40,10 @@ const WindowsPanel = (): JSX.Element => {
       </a>
     </div>
   );
+};
+
+const WindowsPanel = (): JSX.Element => {
+  return <PureWindowsPanel />;
 };
 
 export default WindowsPanel;
