@@ -6,7 +6,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   // Create Asciidoc pages.
-  const asciidocTemplate = path.resolve('./src/templates/asciidocTemplate.js')
+  const asciidocTemplate = path.resolve('./src/templates/asciidocTemplate.tsx')
 
   const asciidocResults = await graphql(`
     {
