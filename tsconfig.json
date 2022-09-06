@@ -21,7 +21,8 @@
       "resolveJsonModule": true
     },
     "include": [
-        "**/*.{ts,tsx,mdx}",
-        "*.{ts,tsx,mdx}"
+      "**/*.{ts,tsx,mdx}",
+      "vitest.config.ts",
+      "vitest-setup.ts"
     ]
   }

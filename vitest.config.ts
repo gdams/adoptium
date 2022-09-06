@@ -6,19 +6,19 @@ export default defineConfig({
     {
       name: 'load-svg',
       enforce: 'pre',
-      transform(_, id) {
+      transform (_, id) {
         if (id.endsWith('.svg')) {
-          return 'export default \'img\'';
+          return 'export default \'img\''
         }
-      },
-    },
+      }
+    }
   ],
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: `./vitest-setup.ts`,
+    setupFiles: './vitest-setup.ts',
     coverage: {
-      reporter: [`text`, `json`, `html`],
-    },
-  },
+      reporter: ['text', 'json', 'html']
+    }
+  }
 })
