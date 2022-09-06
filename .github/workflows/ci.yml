@@ -7,9 +7,6 @@ on:
   pull_request:
     branches: [ main ]
 
-env:
-  NODE_OPTIONS: "--max-old-space-size=8192"
-
 jobs:
   ci:
     name: Run CI
@@ -19,7 +16,7 @@ jobs:
 
       - uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
           cache: npm
 
       - run: npm install --legacy-peer-deps
