@@ -103,6 +103,12 @@
   "bugs": {
     "url": "https://github.com/adoptium/website-v2/issues"
   },
+  "ts-standard": {
+    "ignore": [
+      "vitest-setup.ts",
+      "vitest.config.ts"
+    ]
+  },
   "homepage": "https://adoptium.net",
   "main": "gatsby-browser.js"
 }
