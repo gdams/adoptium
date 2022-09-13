@@ -16,8 +16,6 @@ export function fetchNewsItems(
         }
     }, [isVisible]);
 
-    console.log(typeof news)
-
     const newsAndEvents: News = {
         news: news,
         events: events
