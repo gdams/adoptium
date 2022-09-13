@@ -34,7 +34,7 @@
     "gatsby-plugin-sharp": "^4.23.0",
     "gatsby-plugin-sitemap": "^5.22.0",
     "gatsby-plugin-use-query-params": "^1.0.1",
-    "gatsby-remark-autolink-headers": "^5.22.0",
+    "gatsby-remark-autolink-headers": "^5.23.0",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-source-filesystem": "^4.22.0",
     "gatsby-transformer-asciidoc": "^3.22.0",
