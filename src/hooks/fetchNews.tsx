@@ -5,8 +5,8 @@ const baseUrl = 'https://newsroom.eclipse.org/api';
 export function fetchNewsItems(
     isVisible: boolean,
 ): News | null {
-    const [news, setNews] = useState<NewsItem | null>(null);
-    const [events, setEvents] = useState<EventItem | null>(null);
+    const [news, setNews] = useState<NewsItem[] | null>([]);
+    const [events, setEvents] = useState<EventItem[] | null>([]);
     useEffect(() => {
         if (isVisible) {
         (async () => {
@@ -15,6 +15,8 @@ export function fetchNewsItems(
         })();
         }
     }, [isVisible]);
+
+    console.log(typeof news)
 
     const newsAndEvents: News = {
         news: news,
@@ -39,8 +41,8 @@ async function fetchLatestEvents() {
 }
 
 export interface News {
-    news: NewsItem | null;
-    events: EventItem | null;
+    news: NewsItem[] | null;
+    events: EventItem[] | null;
 }
 
 export interface NewsItem {

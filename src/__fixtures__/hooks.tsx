@@ -42,7 +42,7 @@ export const createRandomNewsAndEventsData = (): News => ({
       id: 'id_mock',
       title: 'title_mock',
       body: 'body_mock',
-      date: new Date(),
+      date: new Date(Date.UTC(2020, 0, 1)),
       link: 'link_mock',
     },
   ],
@@ -51,7 +51,7 @@ export const createRandomNewsAndEventsData = (): News => ({
       id: 'id_mock',
       title: 'title_mock',
       infoLink: 'infoLink_mock',
-      date: new Date(),
+      date: new Date(Date.UTC(2020, 0, 1)),
     },
   ]
 });
