@@ -3,9 +3,9 @@ import { Link, Trans } from 'gatsby-plugin-react-i18next'
 
 import { FaArrowCircleRight, FaArchive, FaDownload } from 'react-icons/fa';
 
-import { detectOS, UserOS } from '../util/detectOS';
-import { fetchLatestForOS, useOnScreen } from '../hooks';
-import { defaultVersion } from '../util/defaults'
+import { detectOS, UserOS } from '../../util/detectOS';
+import { fetchLatestForOS, useOnScreen } from '../../hooks';
+import { defaultVersion } from '../../util/defaults'
 
 let userOSName: string
 let userOSAPIName: string

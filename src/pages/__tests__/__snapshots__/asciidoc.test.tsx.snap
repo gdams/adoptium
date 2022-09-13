@@ -75,6 +75,8 @@ exports[`Asciidoc pages > renders correctly 1`] = `
         <div
           class="asciidoc-content"
         >
+          
+            
           <p>
             Hello World, this is a 
           </p>
@@ -90,6 +92,62 @@ exports[`Asciidoc pages > renders correctly 1`] = `
             </code>
           </pre>
           <p />
+          
+            
+          <table
+            class="table table-hover py-2"
+          >
+            <thead
+              class="table-dark"
+            >
+              <tr>
+                <td>
+                  Header 1
+                </td>
+                <td>
+                  Header 2
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Cell 1
+                </td>
+                <td
+                  class="icon"
+                >
+                  Cell 2
+                  <i
+                    class="fa fa-circle-info fa-xl"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+            
+          <a
+            href="https://www.eclipse.org"
+            target="_blank"
+          >
+            Eclipse
+            <i
+              class="fa fa-external-link fa-xs p-1"
+            />
+          </a>
+          
+            
+          <i
+            class="fab fa-docker"
+          />
+          
+            
+          <i
+            class="fa fa-check"
+          />
+          
+        
         </div>
       </div>
     </div>

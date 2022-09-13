@@ -16,7 +16,7 @@ import { fetchNewsItems, useOnScreen } from '../hooks';
 const NewsPage = (): JSX.Element => {
   const ref = useRef<HTMLDivElement | null>(null);
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
-  const [news, events] = fetchNewsItems(isVisible);
+  const { news, events }  = fetchNewsItems(isVisible);
 
   return (
     <Layout>
@@ -30,7 +30,7 @@ const NewsPage = (): JSX.Element => {
                 (item, i) =>
                   item && (
                     <div key={item.id}>
-                      <h5><a target='_blank' rel='noreferrer' href={item.link}>{item.title}</a></h5>
+                      <p className='h5'><a target='_blank' rel='noreferrer' href={item.link}>{item.title}</a></p>
                       <p className='m-0 fw-bold'>{moment(item.date).format('D MMMM YYYY')}</p>
                       <p className='text-muted lh-sm'>{item.body}</p>
                     </div>
@@ -51,9 +51,9 @@ const NewsPage = (): JSX.Element => {
                         </TimelineSeparator>
                         <TimelineContent sx={{ py: '12px', px: 2 }}>
                           <p className='text-muted lh-1'>{moment(item.date).format('D MMMM YYYY')}</p>
-                          <h6 className='fw-bold'>
+                          <p className='h6 fw-bold'>
                             <a target='_blank' rel='noreferrer' href={item.infoLink}>{item.title}</a>
-                          </h6>
+                          </p>
                           <p className='fw-light lh-1'
                             style={{
                               overflow: 'hidden',

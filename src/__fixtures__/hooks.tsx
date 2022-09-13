@@ -1,4 +1,4 @@
-import { ContributorApiResponse, Contributor } from '../hooks';
+import { Binary, ContributorApiResponse, Contributor, News } from '../hooks';
 
 export const createRandomContributorApiData = (): ContributorApiResponse => ({
   login: 'login_mock',
@@ -29,6 +29,31 @@ export const createRandomContributorViewData = (): Contributor => ({
   contributionsCount: 0,
   commitsListUri: 'commitsListUri_mock',
   repo: 'reponame_mock',
+});
+
+export const createRandomLatestForOSData = (): Binary => ({
+  release_name: 'release_name_mock',
+  link: 'link_mock',
+});
+
+export const createRandomNewsAndEventsData = (): News => ({
+  news: [
+    {
+      id: 'id_mock',
+      title: 'title_mock',
+      body: 'body_mock',
+      date: new Date(),
+      link: 'link_mock',
+    },
+  ],
+  events: [
+    {
+      id: 'id_mock',
+      title: 'title_mock',
+      infoLink: 'infoLink_mock',
+      date: new Date(),
+    },
+  ]
 });
 
 export const createRandomContributorViewData1Contribution = (): Contributor => ({

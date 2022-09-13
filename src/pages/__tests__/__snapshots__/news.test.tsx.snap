@@ -36,6 +36,29 @@ exports[`News page > renders correctly 1`] = `
           <h2>
             News
           </h2>
+          <div>
+            <p
+              class="h5"
+            >
+              <a
+                href="link_mock"
+                rel="noreferrer"
+                target="_blank"
+              >
+                title_mock
+              </a>
+            </p>
+            <p
+              class="m-0 fw-bold"
+            >
+              12 September 2022
+            </p>
+            <p
+              class="text-muted lh-sm"
+            >
+              body_mock
+            </p>
+          </div>
         </div>
         <div
           class="col-md-1"
@@ -48,7 +71,46 @@ exports[`News page > renders correctly 1`] = `
           </h2>
           <ul
             class="MuiTimeline-root MuiTimeline-positionAlternate css-55vwbm-MuiTimeline-root"
-          />
+          >
+            <li
+              class="MuiTimelineItem-root MuiTimelineItem-positionAlternate MuiTimelineItem-missingOppositeContent css-1v6o2d9-MuiTimelineItem-root"
+            >
+              <div
+                class="MuiTimelineSeparator-root css-1fe7e6p-MuiTimelineSeparator-root"
+              >
+                <span
+                  class="MuiTimelineDot-root MuiTimelineDot-filled MuiTimelineDot-filledGrey css-v6mo1y-MuiTimelineDot-root"
+                />
+                <span
+                  class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                />
+              </div>
+              <div
+                class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionAlternate css-ghevlx-MuiTypography-root-MuiTimelineContent-root"
+              >
+                <p
+                  class="text-muted lh-1"
+                >
+                  12 September 2022
+                </p>
+                <p
+                  class="h6 fw-bold"
+                >
+                  <a
+                    href="infoLink_mock"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    title_mock
+                  </a>
+                </p>
+                <p
+                  class="fw-light lh-1"
+                  style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box;"
+                />
+              </div>
+            </li>
+          </ul>
           <a
             class="px-2"
             href="https://events.eclipse.org/"

@@ -1,11 +1,25 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { describe, expect, it } from 'vitest'
+import { useOnScreen } from '../../hooks/useOnScreen';
+import { describe, expect, it, vi } from 'vitest'
+import { fetchNewsItems } from '../../hooks/fetchNews';
+import { createRandomNewsAndEventsData } from '../../__fixtures__/hooks';
 import { axe } from 'vitest-axe';
 import News from '../news';
 
+vi.mock('../../hooks/useOnScreen');
+vi.mock('../../hooks/fetchNews');
+
 describe('News page', () => {
   it('renders correctly', () => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    useOnScreen.mockReturnValue(true);
+
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    fetchNewsItems.mockReturnValue(createRandomNewsAndEventsData());
+
     const { container } = render(<News />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
