@@ -42,7 +42,7 @@
     "gatsby-transformer-sharp": "^4.23.0",
     "highlight.js": "^11.6.0",
     "html-to-text": "^8.2.1",
-    "i18next": "^21.9.1",
+    "i18next": "^21.9.2",
     "iso-639-1": "^2.1.15",
     "moment": "^2.29.4",
     "prop-types": "^15.8.1",
