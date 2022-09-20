@@ -50,7 +50,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
               <div>
                 <a
                   class="link-light"
-                  href="release_link_mock"
+                  href="https://release_link_mock/"
                 >
                   <h2
                     class="pt-5"
@@ -104,7 +104,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                 <span>
                   <a
                     class="link-light"
-                    href="http://source_url_mock"
+                    href="https://source_url_mock/"
                   >
                     <svg
                       fill="currentColor"
@@ -197,7 +197,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
               <div>
                 <a
                   class="link-light"
-                  href="release_link_mock"
+                  href="https://release_link_mock/"
                 >
                   <h2
                     class="pt-5"
@@ -251,7 +251,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                 <span>
                   <a
                     class="link-light"
-                    href="http://source_url_mock"
+                    href="https://source_url_mock/"
                   >
                     <svg
                       fill="currentColor"

@@ -2,10 +2,10 @@ import * as React from "react"
 import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { TiWarning } from 'react-icons/ti';
-import { capitalize } from '../util/capitalize';
-import { getImageForDistribution } from '../hooks'
-import { fetchExtension } from '../util/fetchExtension';
-import { localeDate } from "../util/localeDate";
+import { capitalize } from '../../util/capitalize';
+import { getImageForDistribution } from '../../hooks'
+import { fetchExtension } from '../../util/fetchExtension';
+import { localeDate } from '../../util/localeDate';
 
 const DownloadTable = ({results}) => {
     const { language } = useI18next();
@@ -46,7 +46,7 @@ const DownloadTable = ({results}) => {
                                     {capitalize(pkg.binary.distribution)}
                                 </td>
                                 <td className="align-middle">
-                                    <img width="100px" src={getImageForDistribution(pkg.binary.distribution)}/>
+                                    <img width="100px" alt={`${pkg.binary.distribution} logo`} src={getImageForDistribution(pkg.binary.distribution)}/>
                                 </td>
                                 <td className="align-middle">
                                     {capitalize(pkg.binary.os)}
@@ -60,6 +60,7 @@ const DownloadTable = ({results}) => {
                                             {pkg.binary.installer && (
                                                 <BinaryTable
                                                     checksum={pkg.binary.installer[0].sha265sum}
+                                                    filename={pkg.binary.installer[0].name}
                                                     link={pkg.binary.installer[0].link}
                                                     os={pkg.binary.os}
                                                     arch={pkg.binary.architecture}
@@ -70,6 +71,7 @@ const DownloadTable = ({results}) => {
                                             )}
                                             <BinaryTable
                                                 checksum={pkg.binary.package.sha265sum}
+                                                filename={pkg.binary.package.name}
                                                 link={pkg.binary.package.link}
                                                 os={pkg.binary.os}
                                                 arch={pkg.binary.architecture}
@@ -95,6 +97,7 @@ export default DownloadTable;
 interface DownloadProps {
     checksum: string,
     link: URL;
+    filename: string;
     os: string;
     arch: string;
     pkgType: string;
@@ -102,7 +105,7 @@ interface DownloadProps {
     vendor: string;
 }
 
-const BinaryTable = ({ checksum, link, os, arch, pkgType, javaVersion, vendor }: DownloadProps): null | JSX.Element => {
+const BinaryTable = ({ checksum, link, filename, os, arch, pkgType, javaVersion, vendor }: DownloadProps): null | JSX.Element => {
     return (
         <tr key={checksum}>
             <td className="align-middle text-center">
@@ -116,7 +119,7 @@ const BinaryTable = ({ checksum, link, os, arch, pkgType, javaVersion, vendor }:
             </td>
             <td className="align-middle">
                 <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: pkgType, java_version: javaVersion, vendor: vendor }} className="btn btn-primary" style={{width: "6em"}}>
-                    <FaDownload /> {fetchExtension(link)}
+                    <FaDownload /> {fetchExtension(filename)}
                 </Link>
             </td>
         </tr>

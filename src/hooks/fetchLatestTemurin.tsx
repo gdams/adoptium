@@ -39,5 +39,5 @@ async function fetchLatestForOSRequest(version: number, os: string, arch: string
 
 export interface Binary {
   release_name: string;
-  link: string;
+  link: URL;
 }

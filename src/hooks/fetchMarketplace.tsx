@@ -1,12 +1,13 @@
 const baseUrl = 'https://marketplace-api.adoptium.net';
+import { VersionMetaData } from ".";
     
 export async function getAllPkgsForVersion(
-        version: number,
-        os: string,
-        architecture: string,
-        package_type: string,
-        checkboxRef: any,
-    ): Promise<apiData> {
+    version: number,
+    os: string,
+    architecture: string,
+    package_type: string,
+    checkboxRef: any,
+): Promise<MarketplaceRelease[] | null> {
     let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
     let temurinSelected = checkboxRef.current.vendorAdoptium.checked;
     let redhatSelected = checkboxRef.current.vendorRedHat.checked;
@@ -64,22 +65,16 @@ export async function getAllPkgsForVersion(
         params += ('&vendor=alibaba')
     }
 
-    let url = baseUrl + '/v1/assets/latestForVendors' + params;
+    let url = new URL(baseUrl + '/v1/assets/latestForVendors' + params);
     let json = await getPkgs(url);
     const data = JSON.parse(json);
     return data
 }
 
-async function getPkgs(url) {
-    let response = await makeRequest("GET", url);
-    return response;
+async function getPkgs(url: URL) {
+    let response = await fetch(url)
+    return response.text();
 }
-
-async function makeRequest(method, url): Promise<apiData> {
-    const response = await fetch(url);
-    const apiResult = await response.text();
-    return apiResult
-};
 
 export function getImageForDistribution(distribution: string) {
     switch(distribution) {
@@ -92,4 +87,36 @@ export function getImageForDistribution(distribution: string) {
     case 'dragonwell': return '/images/dragonwell.png';
     default: return '';
     }
+}
+
+export interface MarketplaceRelease {
+    release_name: string;
+    vendor: string;
+    binary: {
+        os: string;
+        architecture: string;
+        image_type: string;
+        jvm_impl: string;
+        package: {
+            name: string;
+            link: URL;
+            sha265sum: string;
+            sha256sum_link: URL;
+            signature_link: URL;
+        }
+        installer?: [{
+            name: string;
+            link: URL;
+            sha265sum: string;
+            sha256sum_link: URL;
+            signature_link: URL;
+        }]
+        timestamp: Date;
+        scm_ref: string;
+        openjdk_scm_ref: string;
+        distribution: string;
+        aqavit_results_link: URL;
+        tck_affidavit_link: URL;
+    }
+    version: VersionMetaData;
 }
