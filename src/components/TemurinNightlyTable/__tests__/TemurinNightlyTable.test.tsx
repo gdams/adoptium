@@ -22,7 +22,7 @@ describe('TemurinNightlyTable component', () => {
   it('renders correctly - no data', () => {
     const { container } = render(
       <TemurinNightlyTable
-        results={[]}
+        results={undefined}
       />
     );
     expect(container).toMatchSnapshot();

@@ -47,7 +47,9 @@ exports[`TemurinNightlyTable component > renders correctly - no data 1`] = `
       </thead>
       <tbody
         class="table-light"
-      />
+      >
+        <tr />
+      </tbody>
     </table>
   </div>
 </div>

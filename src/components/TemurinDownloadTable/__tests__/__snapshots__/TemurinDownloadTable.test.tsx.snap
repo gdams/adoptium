@@ -9,7 +9,9 @@ exports[`TemurinDownloadTable component > renders correctly - no data 1`] = `
   >
     <tbody
       class="table-light"
-    />
+    >
+      <tr />
+    </tbody>
   </table>
 </div>
 `;

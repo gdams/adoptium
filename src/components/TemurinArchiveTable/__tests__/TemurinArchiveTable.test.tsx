@@ -22,7 +22,7 @@ describe('TemurinArchiveTable component', () => {
   it('renders correctly - no data', () => {
     const { container } = render(
       <TemurinArchiveTable
-        results={[]}
+        results={undefined}
       />
     );
     expect(container).toMatchSnapshot();

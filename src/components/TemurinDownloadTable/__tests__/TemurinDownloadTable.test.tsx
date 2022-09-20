@@ -39,7 +39,7 @@ describe('TemurinDownloadTable component', () => {
   it('renders correctly - no data', () => {
     const { container } = render(
       <TemurinDownloadTable
-        results={[]}
+        results={undefined}
       />
     );
     expect(container).toMatchSnapshot();
