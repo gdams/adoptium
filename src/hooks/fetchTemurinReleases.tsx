@@ -2,7 +2,12 @@ import { fetchExtension } from '../util/fetchExtension';
 
 const baseUrl = 'https://api.adoptium.net/v3';
 
-export async function loadLatestAssets(version: number, os: string, architecture: string, packageType: string) {
+export async function loadLatestAssets(
+    version: number,
+    os: string,
+    architecture: string,
+    packageType: string
+): Promise<apiData> {
     let url = `${baseUrl}/assets/latest/${version}/hotspot?`;
     if (os !== 'any') {
         url += `os=${os}&`
@@ -29,7 +34,7 @@ async function makeRequest(method, url): Promise<apiData> {
     return apiResult
 };
 
-function renderReleases(pkgs) {
+function renderReleases(pkgs): TemurinRelease {
     let releases = []
     pkgs.forEach((releaseAsset) => {
         const platform = `${releaseAsset.binary.os}-${releaseAsset.binary.architecture}`
@@ -111,3 +116,25 @@ function sortByProperty (input, property, descending) {
       .sort(sorter);
   }
 };
+
+export interface TemurinRelease {
+    os: string;
+    arch: string;
+    release_date: Date;
+    release_link: string;
+    platform_name: string;
+    release_name: string;
+    binaries: [
+        {
+            type: string;
+            link: string;
+            checksum: string;
+            size: number;
+            extension: string;
+            installer_link?: string;
+            installer_checksum?: string;
+            installer_size?: number;
+            installer_extension?: string;
+        }
+    ];
+  }

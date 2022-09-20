@@ -1,4 +1,4 @@
-import { Binary, ContributorApiResponse, Contributor, News } from '../hooks';
+import { Binary, ContributorApiResponse, Contributor, News, TemurinRelease, TemurinReleases } from '../hooks';
 
 export const createRandomContributorApiData = (): ContributorApiResponse => ({
   login: 'login_mock',
@@ -21,6 +21,54 @@ export const createRandomContributorApiData = (): ContributorApiResponse => ({
   site_admin: false,
   contributions: 3,
 });
+
+export const createRandomTemurinRelease = (installer, id): TemurinRelease => ({
+  os: 'os_mock',
+  arch: 'arch_mock',
+  release_link: 'release_link_mock',
+  platform_name: `platform_name_mock${id}`,
+  release_name: 'release_name_mock',
+  release_date: new Date(Date.UTC(2020, 0, 1)),
+  binaries: [
+    {
+      type: 'type_mock',
+      link: 'link_mock',
+      checksum: 'checksum_mock',
+      size: 0,
+      extension: 'extension_mock',
+      installer_link: installer ? 'installer_link_mock' : undefined,
+      installer_checksum: installer ? 'installer_checksum_mock' : undefined,
+      installer_size: installer ? 0 : undefined,
+      installer_extension: installer ? 'installer_extension_mock' : undefined,
+    },
+  ],
+})
+
+export const createRandomTemurinReleases = (installer, id): TemurinReleases => ({
+  release_name: `release_name_mock_${id}`,
+  release_link: 'release_link_mock',
+  source_url: 'http://source_url_mock',
+  timestamp: new Date(Date.UTC(2020, 0, 1)),
+  platforms: {
+    'platform_mock': {
+      assets: [
+        {
+          os: 'os_mock',
+          architecture: 'architecture_mock',
+          type: 'type_mock',
+          link: 'https://link_mock',
+          checksum: `checksum_mock${id}`,
+          size: 0,
+          extension: 'extension_mock',
+          installer_link: installer ? 'https://installer_link_mock' : undefined,
+          installer_checksum: installer ? 'installer_checksum_mock' : undefined,
+          installer_size: installer ? 0 : undefined,
+          installer_extension: installer ? 'installer_extension_mock' : undefined,
+        },
+      ],
+    },
+  },
+})
 
 export const createRandomContributorViewData = (): Contributor => ({
   avatarUri: 'avatarUri_mock',

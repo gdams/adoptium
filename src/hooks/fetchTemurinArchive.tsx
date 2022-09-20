@@ -87,3 +87,27 @@ function renderReleases(pkgs) {
   })
   return releases
 }
+
+export interface TemurinReleases {
+  release_name: string;
+  release_link: string;
+  source_url: string;
+  timestamp: Date;
+  platforms: {
+    [key: string]: {
+      assets: {
+        os: string;
+        architecture: string;
+        type: string;
+        link: string;
+        checksum: string;
+        size: number;
+        extension: string;
+        installer_link?: string;
+        installer_checksum?: string;
+        installer_size?: number;
+        installer_extension?: string;
+      }[];
+    };
+  };
+}

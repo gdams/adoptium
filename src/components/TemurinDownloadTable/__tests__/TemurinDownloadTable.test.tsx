@@ -1,0 +1,47 @@
+import React from 'react';
+import { render } from '@testing-library/react';
+import { describe, expect, it } from 'vitest'
+import { createRandomTemurinRelease } from '../../../__fixtures__/hooks';
+import TemurinDownloadTable from '..';
+
+let releases = [
+  createRandomTemurinRelease(false, '1'),
+  createRandomTemurinRelease(true, '2'),
+];
+
+describe('TemurinDownloadTable component', () => {
+  it('renders correctly', () => {
+    const { container } = render(
+      <TemurinDownloadTable
+        results={releases}
+      />
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders correctly - with source', () => {
+    releases.source = {
+        release_name: 'mock-release-name',
+        binary: {
+          package: {
+              link: 'https://mock-link',
+          }
+        }
+    };
+    const { container } = render(
+      <TemurinDownloadTable
+        results={releases}
+      />
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders correctly - no data', () => {
+    const { container } = render(
+      <TemurinDownloadTable
+        results={[]}
+      />
+    );
+    expect(container).toMatchSnapshot();
+  });
+});

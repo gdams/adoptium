@@ -1,0 +1,185 @@
+// Vitest Snapshot v1
+
+exports[`TemurinNightlyTable component > renders correctly - no data 1`] = `
+<div>
+  <div
+    id="nightly-list"
+  >
+    <table
+      class="table table-hover text-start table-striped"
+      id="nightly-table"
+    >
+      <thead
+        class="table-dark"
+      >
+        <tr>
+          <td
+            class="fw-bold"
+          >
+            Platform
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Type
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Date
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Binary
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Installer
+          </td>
+          <td
+            class="fw-bold"
+          >
+            SHA256
+          </td>
+        </tr>
+      </thead>
+      <tbody
+        class="table-light"
+      />
+    </table>
+  </div>
+</div>
+`;
+
+exports[`TemurinNightlyTable component > renders correctly 1`] = `
+<div>
+  <div
+    id="nightly-list"
+  >
+    <table
+      class="table table-hover text-start table-striped"
+      id="nightly-table"
+    >
+      <thead
+        class="table-dark"
+      >
+        <tr>
+          <td
+            class="fw-bold"
+          >
+            Platform
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Type
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Date
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Binary
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Installer
+          </td>
+          <td
+            class="fw-bold"
+          >
+            SHA256
+          </td>
+        </tr>
+      </thead>
+      <tbody
+        class="table-light"
+      >
+        <tr
+          class="nightly-row"
+        >
+          <td>
+            Os_mock
+             
+            architecture_mock
+          </td>
+          <td>
+            type_mock
+          </td>
+          <td>
+            January 1, 2020
+          </td>
+          <td>
+            <a
+              href="/download"
+              state="[object Object]"
+            >
+              extension_mock (0 MB)
+            </a>
+          </td>
+          <td>
+            Not Available
+          </td>
+          <td>
+            <a
+              data-bs-checksum="checksum_mock1"
+              data-bs-target="#checksumModal"
+              data-bs-toggle="modal"
+              href=""
+            >
+              Text
+            </a>
+          </td>
+        </tr>
+        <tr
+          class="nightly-row"
+        >
+          <td>
+            Os_mock
+             
+            architecture_mock
+          </td>
+          <td>
+            type_mock
+          </td>
+          <td>
+            January 1, 2020
+          </td>
+          <td>
+            <a
+              href="/download"
+              state="[object Object]"
+            >
+              extension_mock (0 MB)
+            </a>
+          </td>
+          <td>
+            <a
+              href="/download"
+              state="[object Object]"
+            >
+              installer_extension_mock
+            </a>
+          </td>
+          <td>
+            <a
+              data-bs-checksum="checksum_mock2"
+              data-bs-target="#checksumModal"
+              data-bs-toggle="modal"
+              href=""
+            >
+              Text
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

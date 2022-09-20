@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
-import { capitalize } from '../util/capitalize';
-import { localeDate } from "../util/localeDate";
+import { capitalize } from '../../util/capitalize';
+import { localeDate } from '../../util/localeDate';
 
 const TemurinNightlyTable = ({results}) => {
     const { language } = useI18next();
@@ -30,7 +30,7 @@ const TemurinNightlyTable = ({results}) => {
                                             release.platforms[key].assets.map(
                                                 (asset, i): string | JSX.Element =>
                                                     asset && (
-                                                        <tr key={asset.checksum} className="nightly-row">
+                                                        <tr key={`${key}-${asset.type}`} className="nightly-row">
                                                             <td>{capitalize(asset.os)} {asset.architecture}</td>
                                                             <td>{asset.type}</td>
                                                             <td>{localeDate(release.timestamp, language)}</td>
