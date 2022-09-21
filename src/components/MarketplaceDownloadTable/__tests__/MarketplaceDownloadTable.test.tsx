@@ -27,4 +27,30 @@ describe('MarketplaceDownloadTable component', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  it('renders correctly - out of date', () => {
+    let releases = [
+      createRandomMarketplaceRelease(false),
+    ];
+    const { queryByText } = render(
+      <MarketplaceDownloadTable
+        results={releases}
+      />
+    );
+    expect(queryByText('Out of Date')).toBeInTheDocument();
+  });
+
+  it('renders correctly - in date', () => {
+    let releases = [
+      createRandomMarketplaceRelease(false),
+    ];
+    // Inject todays date
+    releases[0].binary.timestamp = new Date();
+    const { queryByText } = render(
+      <MarketplaceDownloadTable
+        results={releases}
+      />
+    );
+    expect(queryByText('Out of Date')).not.toBeInTheDocument();
+  });
 });

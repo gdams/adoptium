@@ -2,6 +2,7 @@ import { expect, vi } from 'vitest'
 import * as matchers from 'vitest-axe/matchers'
 import React from 'react'
 import 'vitest-axe/extend-expect'
+import '@testing-library/jest-dom'
 
 expect.extend(matchers)
 
