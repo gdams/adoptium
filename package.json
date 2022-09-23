@@ -21,7 +21,7 @@
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-gatsby-cloud": "^4.23.0",
     "gatsby-plugin-google-gtag": "^4.23.0",
-    "gatsby-plugin-google-tagmanager": "^4.23.0",
+    "gatsby-plugin-google-tagmanager": "^4.23.1",
     "gatsby-plugin-image": "^2.23.0",
     "gatsby-plugin-load-script": "^1.1.0",
     "gatsby-plugin-local-search": "^2.0.1",
