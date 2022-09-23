@@ -3,7 +3,7 @@ import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../../util/capitalize';
-import { localeDate } from "../../util/localeDate";
+import { localeDate } from '../../util/localeDate';
 
 const TemurinDownloadTable = ({results}) => {
     const { language } = useI18next();
