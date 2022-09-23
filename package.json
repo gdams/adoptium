@@ -31,7 +31,7 @@
     "gatsby-plugin-react-i18next": "^1.2.3",
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sass": "^5.23.1",
-    "gatsby-plugin-sharp": "^4.23.0",
+    "gatsby-plugin-sharp": "^4.23.1",
     "gatsby-plugin-sitemap": "^5.23.1",
     "gatsby-plugin-use-query-params": "^1.0.1",
     "gatsby-remark-autolink-headers": "^5.23.1",
