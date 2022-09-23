@@ -2,10 +2,11 @@ import {
   Binary,
   ContributorApiResponse,
   Contributor,
+  LatestTemurin,
   MarketplaceRelease,
   News,
   ReleaseAsset,
-  TemurinReleases
+  TemurinReleases,
 } from '../hooks';
 
 export const createRandomContributorApiData = (): ContributorApiResponse => ({
@@ -93,6 +94,58 @@ export const createRandomMarketplaceRelease = (installer): MarketplaceRelease =>
     build: 0,
     openjdk_version: 'openjdk_version_mock',
   }
+})
+
+export const mockLatestTemurin = (installer): LatestTemurin => ({
+  download_count: 0,
+  id: 'id_mock',
+  release_link: new URL('https://release_link_mock'),
+  release_name: 'release_name_mock',
+  release_type: 'release_type_mock',
+  timestamp: new Date(Date.UTC(2020, 0, 1)),
+  updated_at: new Date(Date.UTC(2020, 0, 1)),
+  vendor: 'vendor_mock',
+  version_data: {
+    major: 0,
+    minor: 0,
+    security: 0,
+    patch: 0,
+    build: 0,
+    openjdk_version: 'openjdk_version_mock',
+  },
+  binaries: [
+    {
+      os: 'os_mock',
+      architecture: 'arch_mock',
+      image_type: 'type_mock',
+      heap_size: 'heap_size_mock',
+      download_count: 0,
+      jvm_impl: 'jvm_impl_mock',
+      package: {
+        name: 'name_mock.tar.gz',
+        link: new URL('https://link_mock'),
+        checksum: 'sha265sum_mock',
+        checksum_link: new URL('https://sha256sum_link_mock'),
+        metadata_link: new URL('https://metadata_link_mock'),
+        signature_link: new URL('https://signature_link_mock'),
+        size: 0,
+        download_count: 0,
+      },
+      installer: installer
+      ?
+        {
+          name: 'installer_name_mock.msi',
+          link: new URL('https://installer_link_mock'),
+          checksum: 'installer_sha265sum_mock',
+          checksum_link: new URL('https://installer_sha256sum_link_mock'),
+          metadata_link: new URL('https://installer_metadata_link_mock'),
+          signature_link: new URL('https://installer_signature_link_mock'),
+          size: 0,
+          download_count: 0,
+        }
+      : undefined,
+    }
+  ]
 })
 
 export const createRandomTemurinReleases = (installer, id): TemurinReleases => ({
