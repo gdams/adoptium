@@ -58,7 +58,7 @@
     "react-tabs": "^4.2.1",
     "react-use-flexsearch": "^0.1.1",
     "react-world-flags": "^1.5.1",
-    "sass": "1.54.9",
+    "sass": "1.55.0",
     "use-query-params": "^1.2.3"
   },
   "devDependencies": {
