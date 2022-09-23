@@ -50,13 +50,21 @@ short delay while we complete our extensive build and tests cycles.
 
 | Java Version  | First Availability | Latest Release | Next Release Due | End of Availability ^[1]^
 
-| Java 19
+| Java 20
 | Expected +
-Sep 2022
+Mar 2023
 | Not available
 | Expected +
-20 Sep 2022
-| Expected Mar 2023
+Mar 2023
+| Expected Sep 2023
+
+| Java 19
+| Sep 2022
+| 20 Sep 2022 +
+[.small]#jdk-19+36#
+| 18 Oct 2022 +
+[.small]#jdk-19.0.1#
+| Mar 2023
 
 | Java 18
 | Mar 2022
