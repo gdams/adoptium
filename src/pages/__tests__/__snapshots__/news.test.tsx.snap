@@ -41,7 +41,7 @@ exports[`News page > renders correctly 1`] = `
               class="h5"
             >
               <a
-                href="link_mock"
+                href="https://link_mock/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -97,7 +97,7 @@ exports[`News page > renders correctly 1`] = `
                   class="h6 fw-bold"
                 >
                   <a
-                    href="infoLink_mock"
+                    href="https://infolink_mock/"
                     rel="noreferrer"
                     target="_blank"
                   >
