@@ -24,14 +24,17 @@ const DownloadPage = ({ location }) => {
   }
 
   // Send a custom event to Google Analytics
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   typeof window !== 'undefined' && link && window.gtag &&
+    // @ts-ignore
     window.gtag('event', 'download', {
       event_category: 'download',
       link: link,
       event_label: `${os}-${arch}-${type}`,
       java_version: version,
       vendor: vendor
-    })
+    });
 
   return (
     <Layout>

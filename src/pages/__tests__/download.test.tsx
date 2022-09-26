@@ -14,12 +14,18 @@ const location = {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+window.gtag = vi.fn();
+
 describe('Download page', () => {
   it('renders correctly', () => {
     const { container } = render(<Download location={location} />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
-
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    expect(window.gtag).toBeCalledTimes(1);
     expect(pageContent).toMatchSnapshot();
   });
 
@@ -37,7 +43,6 @@ describe('Download page', () => {
     const { container } = render(<Download location={location} />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
-
     expect(pageContent).toMatchSnapshot();
   });
 
