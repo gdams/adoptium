@@ -23,6 +23,8 @@ const DownloadPage = ({ location }) => {
     }
   }
 
+  console.log(version)
+
   // Send a custom event to Google Analytics
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore

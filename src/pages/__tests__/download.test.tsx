@@ -10,7 +10,8 @@ const location = {
     os: 'linux',
     arch: 'x64',
     type: 'jdk',
-    version: '11.0.11'
+    java_version: '1.0.0',
+    pkg_type: 'jdk'
   }
 }
 
@@ -26,6 +27,15 @@ describe('Download page', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     expect(window.gtag).toBeCalledTimes(1);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    expect(window.gtag).toBeCalledWith('event', 'download', {
+      event_category: 'download',
+      java_version: '1.0.0',
+      event_label: 'linux-x64-jdk',
+      link: 'https://fake-download.tar.gz',
+      vendor: 'Adoptium'
+    });
     expect(pageContent).toMatchSnapshot();
   });
 
@@ -36,8 +46,9 @@ describe('Download page', () => {
         os: 'linux',
         arch: 'x64',
         type: 'jdk',
-        version: '11.0.11',
-        vendor: 'azul'
+        java_version: '1.0.0',
+        vendor: 'azul',
+        pkg_type: 'jre'
       }
     }
     const { container } = render(<Download location={location} />);
