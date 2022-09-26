@@ -1,10 +1,12 @@
 import { expect, vi } from 'vitest'
-import * as matchers from 'vitest-axe/matchers'
+import * as axeMatchers from 'vitest-axe/matchers'
 import React from 'react'
+import matchers from '@testing-library/jest-dom/matchers';
 import 'vitest-axe/extend-expect'
 import '@testing-library/jest-dom'
 
-expect.extend(matchers)
+expect.extend(axeMatchers);
+expect.extend(matchers);
 
 vi.mock('gatsby', async () => {
   const gatsby = await vi.importActual<typeof import('gatsby')>('gatsby')
@@ -31,6 +33,12 @@ vi.mock('@reach/router', async () => {
     useLocation: () => ({
       pathname: '/'
     })
+  }
+})
+
+vi.mock('react-world-flags', async () => {
+  return {
+    default: () => 'Flag'
   }
 })
 

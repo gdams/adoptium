@@ -1,5 +1,101 @@
 // Vitest Snapshot v1
 
+exports[`Language Selector component > renders correctly - expanded 1`] = `
+<div>
+  <div
+    class="App lngg"
+  >
+    <form
+      class=""
+    >
+      <div
+        class="show dropdown"
+      >
+        <button
+          aria-expanded="true"
+          aria-label="Language Selector"
+          class="text-left text-white dropdown-toggle btn btn-primary"
+          id="dropdown-flags"
+          type="button"
+        >
+          Text
+        </button>
+        <div
+          aria-labelledby="dropdown-flags"
+          class="dropdown-menu dropdown-menu show"
+          data-popper-escaped="true"
+          data-popper-placement="bottom-start"
+          data-popper-reference-hidden="true"
+          style="position: absolute; top: 0px; left: 0px; transform: translate(0px, 2px);"
+          x-placement="bottom-start"
+        >
+          <a
+            aria-selected="false"
+            class="dropdown-item"
+            data-rr-ui-dropdown-item=""
+            href="#"
+            id="en"
+            role="button"
+            tabindex="0"
+          >
+            Flag
+            English
+          </a>
+          <a
+            aria-selected="false"
+            class="dropdown-item"
+            data-rr-ui-dropdown-item=""
+            href="#"
+            id="en-GB"
+            role="button"
+            tabindex="0"
+          >
+            Flag
+            English
+          </a>
+          <a
+            aria-selected="false"
+            class="dropdown-item"
+            data-rr-ui-dropdown-item=""
+            href="#"
+            id="es"
+            role="button"
+            tabindex="0"
+          >
+            Flag
+            Español
+          </a>
+          <a
+            aria-selected="false"
+            class="dropdown-item"
+            data-rr-ui-dropdown-item=""
+            href="#"
+            id="de"
+            role="button"
+            tabindex="0"
+          >
+            Flag
+            Deutsch
+          </a>
+          <a
+            aria-selected="false"
+            class="dropdown-item"
+            data-rr-ui-dropdown-item=""
+            href="#"
+            id="zh-CN"
+            role="button"
+            tabindex="0"
+          >
+            Flag
+            中文
+          </a>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
 exports[`Language Selector component > renders correctly 1`] = `
 <div>
   <div

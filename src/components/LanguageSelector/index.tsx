@@ -44,12 +44,12 @@ const LanguageSelector = (): JSX.Element => {
           <Dropdown.Toggle aria-label="Language Selector" id="dropdown-flags" className="text-left text-white">
             <Trans>Change Language</Trans>
           </Dropdown.Toggle>
-          <Dropdown.Menu>
-            {languages.map((lng) => (
-              <a
-                href=""
+          <Dropdown.Menu className="dropdown-menu">
+            {languages.map((lng: string) => (
+              <Dropdown.Item
                 id={lng}
                 key={lng}
+                eventKey={lng}
                 onClick={(e) => {
                   e.preventDefault();
                   if (location.pathname.includes('index')) {
@@ -58,12 +58,11 @@ const LanguageSelector = (): JSX.Element => {
                   } else {
                     changeLanguage(lng);
                   }
-                }}>
-                <Dropdown.Item key={lng} eventKey={lng}>
-                  <Flag code={ISO3166(lng)} width="35" /> 
-                  {ISO6391.getNativeName(ISO639(lng))}
-                </Dropdown.Item>
-              </a>
+                }}
+              >
+                <Flag code={ISO3166(lng)} width='35' /> 
+                {ISO6391.getNativeName(ISO639(lng))}
+              </Dropdown.Item>
             ))}
           </Dropdown.Menu>
         </Dropdown>

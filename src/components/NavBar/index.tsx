@@ -13,7 +13,7 @@ const ExactNavLink = props => (
   <Link getProps={isActive}{...props} />
 )
 
-const NavBar = ({siteTitle}): JSX.Element => {
+const NavBar = (): JSX.Element => {
   const {t} = useTranslation();
 
   return (
