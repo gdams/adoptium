@@ -220,14 +220,14 @@ export const createRandomNewsAndEventsData = (): News => ({
       title: 'title_mock',
       body: 'body_mock',
       date: new Date(Date.UTC(2020, 0, 1)),
-      link: 'link_mock',
+      link: new URL('https://link_mock'),
     },
   ],
   events: [
     {
       id: 'id_mock',
       title: 'title_mock',
-      infoLink: 'infoLink_mock',
+      infoLink: new URL('https://infoLink_mock'),
       date: new Date(Date.UTC(2020, 0, 1)),
     },
   ]
