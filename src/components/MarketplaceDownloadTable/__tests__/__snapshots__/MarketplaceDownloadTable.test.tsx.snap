@@ -158,7 +158,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
         >
           <img
             alt="distribution_mock logo"
-            src=""
+            src="/images/distribution_mock-logo.png"
             width="100px"
           />
         </td>
@@ -290,7 +290,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
         >
           <img
             alt="distribution_mock logo"
-            src=""
+            src="/images/distribution_mock-logo.png"
             width="100px"
           />
         </td>

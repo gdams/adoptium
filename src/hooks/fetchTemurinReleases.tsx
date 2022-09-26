@@ -1,3 +1,4 @@
+import { VersionMetaData } from '.';
 import { fetchExtension } from '../util/fetchExtension';
 
 const baseUrl = 'https://api.adoptium.net/v3';
@@ -18,9 +19,7 @@ export async function loadLatestAssets(
     if (packageType !== 'any') {
         url.searchParams.append('image_type', packageType);
     }
-    let   json      = await getPkgs(url);
-    const response  = JSON.parse(json);
-    const data = response;
+    let data = await getPkgs(url);
     let pkgsFound: TemurinRelease[] = []
     for (let pkg of data) {
         pkgsFound.push(pkg);
@@ -30,18 +29,13 @@ export async function loadLatestAssets(
 
 async function getPkgs(url: URL) {
     let response = await fetch(url)
-    return response.text();
-  }
+    return response.json();
+}
 
 function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
     let releases: ReleaseAsset[] = []
     pkgs.forEach((releaseAsset: TemurinRelease) => {
         const platform = `${releaseAsset.binary.os}-${releaseAsset.binary.architecture}`
-
-        // Skip this asset if its platform could not be matched (see the website's 'config.json')
-        if (!platform) {
-            return;
-        }
 
         // Skip this asset if it's not a binary type we're interested in displaying
         const binary_type = releaseAsset.binary.image_type.toUpperCase();
@@ -170,4 +164,42 @@ interface Binary {
     installer_checksum?: string;
     installer_size?: number;
     installer_extension?: string;
+}
+
+export interface MockTemurinReleaseAPI {
+    release_link: URL;
+    release_name: string;
+    vendor: string;
+    version: VersionMetaData
+    binary: {
+        project: string;
+        scm_ref: string;
+        updated_at: Date;
+        os: string;
+        architecture: string;
+        download_count: number;
+        heap_size: string;
+        image_type: string;
+        jvm_impl: string;
+        package: {
+            download_count: number;
+            name: string;
+            link: URL;
+            checksum: string;
+            checksum_link: URL;
+            signature_link: URL;
+            metadata_link: URL;
+            size: number;
+        }
+        installer?: {
+            download_count: number;
+            name: string;
+            link: URL;
+            checksum: string;
+            checksum_link: URL;
+            signature_link: URL;
+            metadata_link: URL;
+            size: number;
+        }
+    }
 }

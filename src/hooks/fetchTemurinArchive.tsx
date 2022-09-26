@@ -1,4 +1,5 @@
-import moment from "moment";
+import moment from 'moment';
+import { VersionMetaData } from '.';
 import { fetchExtension } from '../util/fetchExtension';
 
 const baseUrl = 'https://api.adoptium.net/v3';
@@ -8,8 +9,8 @@ let releases: TemurinReleases[] = []
 export async function getAssetsForVersion(
   version: number,
   releaseType: any,
-  numBuilds: number,
-  buildDate: Date
+  numBuilds?: number,
+  buildDate?: Date
 ): Promise<TemurinReleases[] | null> {
   let url = new URL(`${baseUrl}/assets/feature_releases/${version}/${releaseType}?vendor=eclipse`);
   if (numBuilds) {
@@ -19,8 +20,7 @@ export async function getAssetsForVersion(
     url.searchParams.append('before', moment(buildDate).format('Y-MM-DD'));
   }
   releases = []
-  const response = await getPkgs(url)
-  const packages = JSON.parse(response)
+  const packages = await getPkgs(url)
   let pkgsFound: TemurinReleases[] = []
   for (let pkg of packages) {
       pkgsFound.push(pkg);
@@ -30,7 +30,7 @@ export async function getAssetsForVersion(
 
 async function getPkgs(url: URL) {
   let response = await fetch(url)
-  return response.text();
+  return response.json();
 }
 
 function renderReleases(pkgs) {
@@ -45,11 +45,6 @@ function renderReleases(pkgs) {
     aRelease.binaries.forEach((
       aReleaseAsset: APIResponse) => {
         const platform = `${aReleaseAsset.os}-${aReleaseAsset.architecture}`
-  
-        // Skip this asset if its platform could not be matched (see the website's 'config.json')
-        if (!platform) {
-          return;
-        }
   
         // Skip this asset if it's not a binary type we're interested in displaying
         const binary_type = aReleaseAsset.image_type.toUpperCase();
@@ -73,14 +68,14 @@ function renderReleases(pkgs) {
           link: aReleaseAsset.package.link,
           checksum: aReleaseAsset.package.checksum,
           size: Math.floor(aReleaseAsset.package.size / 1000 / 1000),
-          extension: fetchExtension(aReleaseAsset.package.link.toString())
+          extension: fetchExtension(aReleaseAsset.package.name)
         };
   
         if (aReleaseAsset.installer) {
           binary_constructor.installer_link = aReleaseAsset.installer.link;
           binary_constructor.installer_checksum = aReleaseAsset.installer.checksum;
           binary_constructor.installer_size =  Math.floor(aReleaseAsset.installer.size / 1000 / 1000);
-          binary_constructor.installer_extension = fetchExtension(aReleaseAsset.installer.link.toString())
+          binary_constructor.installer_extension = fetchExtension(aReleaseAsset.installer.name)
         }
   
         // Add the new binary to the release asset
@@ -122,13 +117,33 @@ interface APIResponse {
   architecture: string;
   image_type: string;
   package: {
+    name: string;
     link: URL;
     checksum: string;
     size: number;
   };
   installer?: {
     link: URL;
+    name: string;
     checksum: string;
     size: number;
   };
+}
+
+export interface MockTemurinFeatureReleaseAPI {
+  id: string;
+  download_count: number;
+  release_name: string;
+  release_type: string;
+  release_link: URL;
+  source?: {
+    link: URL;
+    name: string;
+    size: number;
+  };
+  binaries: APIResponse[];
+  timestamp: Date;
+  updated_at: Date;
+  vendor: string;
+  version_data: VersionMetaData;
 }

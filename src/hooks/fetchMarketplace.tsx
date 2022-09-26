@@ -65,27 +65,24 @@ export async function getAllPkgsForVersion(
         params += ('&vendor=alibaba')
     }
 
-    let url = new URL(baseUrl + '/v1/assets/latestForVendors' + params);
-    let json = await getPkgs(url);
-    const data = JSON.parse(json);
+    const url = new URL(baseUrl + '/v1/assets/latestForVendors' + params);
+    const data = await getPkgs(url);
     return data
 }
 
 async function getPkgs(url: URL) {
-    let response = await fetch(url)
-    return response.text();
+    const response = await fetch(url)
+    return response.json();
 }
 
 export function getImageForDistribution(distribution: string) {
     switch(distribution) {
-    case 'microsoft': return '/images/microsoft-logo.png';
-    case 'temurin': return '/images/adoptium-logo.png';
-    case 'redhat': return '/images/redhat.svg';
-    case 'bisheng': return '/images/huawei.svg';
-    case 'zulu': return '/images/azul-logo.png';
-    case 'semeru': return '/images/ibm-logo.png';
-    case 'dragonwell': return '/images/dragonwell.png';
-    default: return '';
+        case 'temurin': return '/images/adoptium-logo.png';
+        case 'redhat': return '/images/redhat.svg';
+        case 'bisheng': return '/images/huawei.svg';
+        case 'zulu': return '/images/azul-logo.png';
+        case 'semeru': return '/images/ibm-logo.png';
+        default: return `/images/${distribution}-logo.png`;
     }
 }
 
