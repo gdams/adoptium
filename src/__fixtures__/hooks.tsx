@@ -2,9 +2,11 @@ import {
   Binary,
   ContributorApiResponse,
   Contributor,
+  EventAPI,
   LatestTemurin,
   MarketplaceRelease,
   News,
+  NewsAPI,
   ReleaseAsset,
   TemurinReleases,
 } from '../hooks';
@@ -147,6 +149,29 @@ export const mockLatestTemurin = (installer): LatestTemurin => ({
     }
   ]
 })
+
+export const mockNewsAPI = (): NewsAPI => ({
+  news: [
+    {
+      title: 'news_title_mock',
+      body: 'body_mock',
+      id: 'id_mock',
+      link: new URL('https://link_mock'),
+      date: new Date(Date.UTC(2020, 0, 1)),
+    }
+  ]
+});
+
+export const mockEventsAPI = (): EventAPI => ({
+  events: [
+    {
+      title: 'events_title_mock',
+      id: 'id_mock',
+      infoLink: new URL('https://link_mock'),
+      date: new Date(Date.UTC(2020, 0, 1)),
+    }
+  ]
+});
 
 export const createRandomTemurinReleases = (installer, id): TemurinReleases => ({
   release_name: `release_name_mock_${id}`,

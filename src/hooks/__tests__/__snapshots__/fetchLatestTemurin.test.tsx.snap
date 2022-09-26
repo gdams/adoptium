@@ -1,0 +1,15 @@
+// Vitest Snapshot v1
+
+exports[`fetchLatestForOS > binary URL is set correctly 1`] = `
+{
+  "link": "https://link_mock/",
+  "release_name": "release_name_mock",
+}
+`;
+
+exports[`fetchLatestForOS > installer is returned if available 1`] = `
+{
+  "link": "https://installer_link_mock/",
+  "release_name": "release_name_mock",
+}
+`;

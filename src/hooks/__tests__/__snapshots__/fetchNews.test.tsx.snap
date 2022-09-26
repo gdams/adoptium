@@ -1,0 +1,23 @@
+// Vitest Snapshot v1
+
+exports[`fetchNewsItems > returns valid news and events object 1`] = `
+{
+  "events": [
+    {
+      "date": 2020-01-01T00:00:00.000Z,
+      "id": "id_mock",
+      "infoLink": "https://link_mock/",
+      "title": "events_title_mock",
+    },
+  ],
+  "news": [
+    {
+      "body": "body_mock",
+      "date": 2020-01-01T00:00:00.000Z,
+      "id": "id_mock",
+      "link": "https://link_mock/",
+      "title": "news_title_mock",
+    },
+  ],
+}
+`;

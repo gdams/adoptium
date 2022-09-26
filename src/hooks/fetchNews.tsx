@@ -48,12 +48,20 @@ export interface NewsItem {
     title: string;
     body: string;
     date: Date;
-    link: string;
+    link: URL;
 }
 
 export interface EventItem {
     id: string;
     title: string;
-    infoLink: string;
+    infoLink: URL;
     date: Date;
+}
+
+export interface NewsAPI {
+    news: NewsItem[];
+}
+
+export interface EventAPI {
+    events: EventItem[];
 }

@@ -17,18 +17,22 @@ describe('fetchLatestForOS', () => {
   it('binary URL is set correctly', async () => {
     const { result } = renderHook(() => fetchLatestForOS(true, 11, 'linux', 'x64'));
     await waitFor(() => {
-      expect(global.fetch).toHaveBeenCalledTimes(1)
       expect(result.current?.release_name).toBe('release_name_mock')
-      expect(result.current?.link).toEqual(new URL('https://link_mock/'))
     }, { interval: 1 });
+    expect(global.fetch).toHaveBeenCalledTimes(1)
+    expect(fetch).toHaveBeenCalledWith(
+      "https://api.adoptium.net/v3/assets/feature_releases/11/ga?os=linux&architecture=x64&image_type=jdk&jvm_impl=hotspot&page_size=1&vendor=eclipse"
+    );
+    expect(result.current).toMatchSnapshot()
   })
 
   it('installer is returned if available', async () => {
     mockResponse = [mockLatestTemurin(true)];
     const { result } = renderHook(() => fetchLatestForOS(true, 11, 'linux', 'x64'));
     await waitFor(() => {
-      expect(global.fetch).toHaveBeenCalledTimes(1)
-      expect(result.current?.link).toEqual(new URL('https://installer_link_mock'))
+      expect(result.current?.release_name).toBe('release_name_mock')
     }, { interval: 1 });
+    expect(global.fetch).toHaveBeenCalledTimes(1)
+    expect(result.current).toMatchSnapshot()
   })
 });
