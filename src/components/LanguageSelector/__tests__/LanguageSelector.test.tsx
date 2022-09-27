@@ -1,8 +1,17 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import LanguageSelector from '..';
+
+
+vi.mock('@reach/router', async () => {
+  return {
+    useLocation: () => ({
+      pathname: '/',
+    })
+  }
+})
 
 describe('Language Selector component', () => {
 
@@ -18,8 +27,11 @@ describe('Language Selector component', () => {
       <LanguageSelector />
     );
     const dropdownButton = screen.getByRole("button");
-    await userEvent.click(dropdownButton).then(() => {
+    await userEvent.click(dropdownButton).then(async() => {
       expect(container).toMatchSnapshot();
+      // Simulate changing the language using the dropdown
+      const dropDownElement = screen.getByTestId("en-GB");
+      fireEvent.click(dropDownElement);
     });
   });
 });

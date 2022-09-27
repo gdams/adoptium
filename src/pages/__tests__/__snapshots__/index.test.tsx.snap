@@ -96,7 +96,14 @@ exports[`Index page > renders correctly 1`] = `
         </div>
         <div
           class="col-md-6"
-        />
+        >
+          <img
+            alt="Image showing server, cloud and laptop"
+            src="../images/servers-min.png"
+            style="opacity: 0.999; mix-blend-mode: luminosity;"
+            width="1000"
+          />
+        </div>
       </div>
     </div>
     <div

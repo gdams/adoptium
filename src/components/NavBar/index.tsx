@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { FaTwitter, FaYoutube, FaGithub, FaSlack } from 'react-icons/fa';
 
+// @ts-ignore
 import Logo from '../../images/adoptium-logo-dark.svg';
 
 const isActive = ({ isCurrent }) => {

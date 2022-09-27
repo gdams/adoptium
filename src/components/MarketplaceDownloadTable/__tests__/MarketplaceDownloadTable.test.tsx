@@ -5,8 +5,8 @@ import { createRandomMarketplaceRelease } from '../../../__fixtures__/hooks';
 import MarketplaceDownloadTable from '..';
 
 const releases = [
-  createRandomMarketplaceRelease(false),
-  createRandomMarketplaceRelease(true),
+  createRandomMarketplaceRelease(false, 1),
+  createRandomMarketplaceRelease(true, 2),
 ];
 
 describe('MarketplaceDownloadTable component', () => {
@@ -30,7 +30,7 @@ describe('MarketplaceDownloadTable component', () => {
 
   it('renders correctly - out of date', () => {
     let releases = [
-      createRandomMarketplaceRelease(false),
+      createRandomMarketplaceRelease(false, 1),
     ];
     const { queryByText } = render(
       <MarketplaceDownloadTable
@@ -42,7 +42,7 @@ describe('MarketplaceDownloadTable component', () => {
 
   it('renders correctly - in date', () => {
     let releases = [
-      createRandomMarketplaceRelease(false),
+      createRandomMarketplaceRelease(false, 1),
     ];
     // Inject todays date
     releases[0].binary.timestamp = new Date();

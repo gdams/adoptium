@@ -8,16 +8,14 @@ import { localeDate } from '../../util/localeDate';
 const TemurinDownloadTable = ({results}) => {
     const { language } = useI18next();
 
-    let source = false
+    let source
     if (results && results.source) {
         source = results.source
     }
     return (
-        <>
-        {source ? (
-             <span><a href={source.binary.package.link}>{source.release_name} <Trans>Source Code Archive</Trans></a></span>
-        ):
-            <></>
+    <>
+        {source &&
+            <span><a href={source.binary.package.link}>{source.release_name} <Trans>Source Code Archive</Trans></a></span>
         }
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
             <tbody className="table-light">
@@ -25,7 +23,7 @@ const TemurinDownloadTable = ({results}) => {
                 results.map(
                     (pkg, i): string | JSX.Element =>
                         pkg && (
-                            <tr key={pkg.platform_name}>
+                            <tr key={i}>
                                 <td className="table-secondary py-4 align-middle w-25">
                                     <a href={pkg.release_link} className="link-light">
                                         <span className="text-white">{pkg.release_name}</span>
@@ -50,11 +48,10 @@ const TemurinDownloadTable = ({results}) => {
                                 <td className="align-middle w-20">{pkg.architecture}</td>
                                 <td className="align-middle">
                                     <table className="table parent mb-0 w-auto">
-                                        <tbody className="table-light">
                                         {pkg.binaries.map(
                                             (binary, i): string | JSX.Element =>
                                                 binary && (
-                                                    <>
+                                                <tbody key={i} className="table-light">
                                                     {binary.installer_link && (
                                                         <BinaryTable
                                                             checksum={binary.installer_checksum}
@@ -77,10 +74,9 @@ const TemurinDownloadTable = ({results}) => {
                                                         arch={pkg.architecture}
                                                         version={pkg.release_name}
                                                     />
-                                                </>
+                                                </tbody>
                                             )
                                         )}
-                                        </tbody>
                                     </table>
                                 </td>
                             </tr>
@@ -91,7 +87,7 @@ const TemurinDownloadTable = ({results}) => {
             }
             </tbody>
         </table>
-        </>
+    </>
     );
 };
 
@@ -99,7 +95,7 @@ export default TemurinDownloadTable;
 
 const BinaryTable = ({ checksum, link, extension, type, size, os, arch, version }) => {
     return (
-        <tr key={checksum}>
+        <tr>
             <td className="align-middle text-center">
                 <table><tbody>
                 <tr>

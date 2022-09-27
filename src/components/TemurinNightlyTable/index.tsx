@@ -24,8 +24,7 @@ const TemurinNightlyTable = ({results}) => {
                         results.map(
                             (release, i): string | JSX.Element =>
                                 release && (
-                                    <>
-                                    {Object.keys(release.platforms).map(function(key) {
+                                    Object.keys(release.platforms).map(function(key) {
                                         return (
                                             release.platforms[key].assets.map(
                                                 (asset, i): string | JSX.Element =>
@@ -45,8 +44,7 @@ const TemurinNightlyTable = ({results}) => {
                                                     )
                                             )
                                         )
-                                    })}
-                                    </>
+                                    })
                                 )
                         )
                     ) :

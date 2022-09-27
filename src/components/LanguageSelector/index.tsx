@@ -48,6 +48,7 @@ const LanguageSelector = (): JSX.Element => {
             {languages.map((lng: string) => (
               <Dropdown.Item
                 id={lng}
+                data-testid={lng}
                 key={lng}
                 eventKey={lng}
                 onClick={(e) => {

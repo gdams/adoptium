@@ -26,7 +26,7 @@ const DownloadTable = ({results}) => {
                 {results ? (
                     results.map(
                         (pkg, i): string | JSX.Element =>
-                            <tr key={pkg.binary.package.checksum}>
+                            <tr key={pkg.binary.package.sha265sum}>
                                 <td className="table-secondary py-4 text-white align-middle w-20">
                                     <span>{pkg.release_name}</span>
                                     <br></br>

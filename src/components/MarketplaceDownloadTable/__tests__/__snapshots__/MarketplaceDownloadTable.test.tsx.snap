@@ -190,7 +190,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                       <tr>
                         <td>
                           <a
-                            data-bs-checksum="sha265sum_mock"
+                            data-bs-checksum="sha265sum_mock1"
                             data-bs-target="#checksumModal"
                             data-bs-toggle="modal"
                             href=""
@@ -371,7 +371,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                       <tr>
                         <td>
                           <a
-                            data-bs-checksum="sha265sum_mock"
+                            data-bs-checksum="sha265sum_mock2"
                             data-bs-target="#checksumModal"
                             data-bs-toggle="modal"
                             href=""

@@ -57,7 +57,7 @@ export const createRandomTemurinRelease = (installer, id): ReleaseAsset => ({
   ],
 })
 
-export const createRandomMarketplaceRelease = (installer): MarketplaceRelease => ({
+export const createRandomMarketplaceRelease = (installer, id): MarketplaceRelease => ({
   release_name: 'release_name_mock',
   vendor: 'vendor_mock',
   binary: {
@@ -74,7 +74,7 @@ export const createRandomMarketplaceRelease = (installer): MarketplaceRelease =>
     package: {
       name: 'name_mock.tar.gz',
       link: new URL('https://link_mock'),
-      sha265sum: 'sha265sum_mock',
+      sha265sum: `sha265sum_mock${id}`,
       sha256sum_link: new URL('https://sha256sum_link_mock'),
       signature_link: new URL('https://signature_link_mock'),
     },
