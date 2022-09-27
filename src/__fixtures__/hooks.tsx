@@ -35,11 +35,11 @@ export const createRandomContributorApiData = (): ContributorApiResponse => ({
   contributions: 3,
 });
 
-export const createRandomTemurinRelease = (installer, id): ReleaseAsset => ({
+export const createRandomTemurinRelease = (installer): ReleaseAsset => ({
   os: 'os_mock',
   architecture: 'arch_mock',
   release_link: new URL('https://release_link_mock'),
-  platform_name: `platform_name_mock${id}`,
+  platform_name: 'platform_name_mock',
   release_name: 'release_name_mock',
   release_date: new Date(Date.UTC(2020, 0, 1)),
   binaries: [
@@ -262,8 +262,8 @@ export const createMockTemurinFeatureReleaseAPI = (installer): MockTemurinFeatur
   ]
 });
 
-export const createRandomTemurinReleases = (installer, id): TemurinReleases => ({
-  release_name: `release_name_mock_${id}`,
+export const createRandomTemurinReleases = (installer): TemurinReleases => ({
+  release_name: 'release_name_mock',
   release_link: new URL('https://release_link_mock'),
   source_url: new URL('https://source_url_mock'),
   timestamp: new Date(Date.UTC(2020, 0, 1)),
@@ -275,7 +275,7 @@ export const createRandomTemurinReleases = (installer, id): TemurinReleases => (
           architecture: 'architecture_mock',
           type: 'type_mock',
           link: new URL('https://link_mock'),
-          checksum: `checksum_mock${id}`,
+          checksum: 'checksum_mock',
           size: 0,
           extension: 'extension_mock',
           installer_link: installer ? new URL('https://installer_link_mock') : undefined,

@@ -4,15 +4,6 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from 'vitest'
 import LanguageSelector from '..';
 
-
-vi.mock('@reach/router', async () => {
-  return {
-    useLocation: () => ({
-      pathname: '/',
-    })
-  }
-})
-
 describe('Language Selector component', () => {
 
   it('renders correctly', () => {

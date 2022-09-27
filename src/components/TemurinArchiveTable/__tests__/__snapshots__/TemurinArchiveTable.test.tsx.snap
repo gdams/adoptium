@@ -56,7 +56,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                     class="pt-5"
                     style="font-size: 1.5rem;"
                   >
-                    release_name_mock_1
+                    release_name_mock
                   </h2>
                 </a>
                 <svg
@@ -174,7 +174,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                     </td>
                     <td>
                       <a
-                        data-bs-checksum="checksum_mock1"
+                        data-bs-checksum="checksum_mock"
                         data-bs-target="#checksumModal"
                         data-bs-toggle="modal"
                         href=""
@@ -203,7 +203,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                     class="pt-5"
                     style="font-size: 1.5rem;"
                   >
-                    release_name_mock_2
+                    release_name_mock
                   </h2>
                 </a>
                 <svg
@@ -324,7 +324,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                     </td>
                     <td>
                       <a
-                        data-bs-checksum="checksum_mock2"
+                        data-bs-checksum="checksum_mock"
                         data-bs-target="#checksumModal"
                         data-bs-toggle="modal"
                         href=""

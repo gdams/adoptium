@@ -5,8 +5,8 @@ import { createRandomTemurinReleases } from '../../../__fixtures__/hooks';
 import TemurinArchiveTable from '..';
 
 const releases = [
-  createRandomTemurinReleases(false, '1'),
-  createRandomTemurinReleases(true, '2'),
+  createRandomTemurinReleases(false),
+  createRandomTemurinReleases(true),
 ];
 
 describe('TemurinArchiveTable component', () => {

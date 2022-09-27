@@ -17,7 +17,7 @@ const TemurinArchiveTable = ({results}) => {
                             results.map(
                                 (release, i): string | JSX.Element =>
                                     release && (
-                                        <tr key={release.release_name} className="release-row">
+                                        <tr key={i} className="release-row">
                                             <td className="text-white" style={{backgroundColor: "#333"}}>
                                                 <div>
                                                     <a href={release.release_link} className="link-light">
