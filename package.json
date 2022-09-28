@@ -16,7 +16,7 @@
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.2.1",
     "flexsearch": "^0.7.21",
-    "gatsby": "^4.23.1",
+    "gatsby": "^4.24.0",
     "gatsby-plugin-gatsby-cloud": "^4.24.0",
     "gatsby-plugin-google-gtag": "^4.24.0",
     "gatsby-plugin-google-tagmanager": "^4.24.0",
