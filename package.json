@@ -18,7 +18,7 @@
     "flexsearch": "^0.7.21",
     "gatsby": "^4.23.1",
     "gatsby-plugin-gatsby-cloud": "^4.24.0",
-    "gatsby-plugin-google-gtag": "^4.23.0",
+    "gatsby-plugin-google-gtag": "^4.24.0",
     "gatsby-plugin-google-tagmanager": "^4.24.0",
     "gatsby-plugin-image": "^2.23.0",
     "gatsby-plugin-local-search": "^2.0.1",
