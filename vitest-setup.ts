@@ -4,7 +4,6 @@ import React from 'react'
 import matchers from '@testing-library/jest-dom/matchers';
 import 'vitest-axe/extend-expect'
 import '@testing-library/jest-dom'
-import { StaticImage } from 'gatsby-plugin-image';
 
 expect.extend(axeMatchers);
 expect.extend(matchers);

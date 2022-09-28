@@ -1,0 +1,228 @@
+// Vitest Snapshot v1
+
+exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
+<div>
+  <div>
+    vendor-selector
+  </div>
+  <div
+    class="input-group mb-5 row g-2"
+  >
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="os"
+      >
+        Text
+      </label>
+      <select
+        aria-label="OS Filter"
+        class="form-select form-select-sm"
+        data-testid="os-filter"
+        id="os-filter"
+      >
+        <option
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="mock_os"
+        >
+          Mock_os
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="arch"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Architecture Filter"
+        class="form-select form-select-sm"
+        id="arch-filter"
+      >
+        <option
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="mock_arch"
+        >
+          mock_arch
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="package-type"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Package Type Filter"
+        class="form-select form-select-sm"
+        id="package-type-filter"
+      >
+        <option
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="jdk"
+        >
+          jdk
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="version"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Version Filter"
+        class="form-select form-select-sm"
+        id="version-filter"
+      >
+        <option
+          value="1"
+        >
+          1
+        </option>
+      </select>
+    </div>
+  </div>
+  <div>
+    table
+  </div>
+</div>
+`;
+
+exports[`DownloadDropdowns component > renders correctly 1`] = `
+<div>
+  <div
+    class="input-group mb-5 row g-2"
+  >
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="os"
+      >
+        Text
+      </label>
+      <select
+        aria-label="OS Filter"
+        class="form-select form-select-sm"
+        data-testid="os-filter"
+        id="os-filter"
+      >
+        <option
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="mock_os"
+        >
+          Mock_os
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="arch"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Architecture Filter"
+        class="form-select form-select-sm"
+        id="arch-filter"
+      >
+        <option
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="mock_arch"
+        >
+          mock_arch
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="package-type"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Package Type Filter"
+        class="form-select form-select-sm"
+        id="package-type-filter"
+      >
+        <option
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="jdk"
+        >
+          jdk
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="version"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Version Filter"
+        class="form-select form-select-sm"
+        id="version-filter"
+      >
+        <option
+          value="1"
+        >
+          1
+        </option>
+      </select>
+    </div>
+  </div>
+  <div>
+    table
+  </div>
+</div>
+`;

@@ -1,13 +1,11 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react';
-import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
+import { useQueryParam, NumberParam, StringParam } from 'use-query-params';
 import { Trans } from 'gatsby-plugin-react-i18next';
-
-import VendorSelector from './VendorSelector'
-
-import { detectOS, UserOS } from '../util/detectOS';
-import { setURLParam } from '../util/setURLParam';
-import { capitalize } from '../util/capitalize';
-import { oses, arches, packageTypes, versions, versionsLTS, defaultVersion, defaultArchitecture, defaultPackageType} from '../util/defaults'
+import VendorSelector from '../VendorSelector'
+import { detectOS, UserOS } from '../../util/detectOS';
+import { setURLParam } from '../../util/setURLParam';
+import { capitalize } from '../../util/capitalize';
+import { oses, arches, packageTypes, versions, versionsLTS, defaultVersion, defaultArchitecture, defaultPackageType} from '../../util/defaults';
 
 let defaultOS = 'any'
 let defaultArch = 'any'
@@ -41,11 +39,11 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     }
                 }
                 break;
-          case UserOS.LINUX:
-          case UserOS.UNIX:
-            defaultOS = 'linux'
+            case UserOS.LINUX:
+            case UserOS.UNIX:
+                defaultOS = 'linux'
             break;
-          default:
+        default:
             defaultOS = 'windows'
             break;
         }
@@ -95,7 +93,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
             <div className="input-group mb-5 row g-2">
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="os"><Trans>Operating System</Trans></label>
-                    <select id="os-filter" onChange={(e) => setOS(e.target.value)} value={os} className="form-select form-select-sm">
+                    <select id="os-filter" aria-label="OS Filter" data-testid="os-filter" onChange={(e) => setOS(e.target.value)} value={os} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {oses.map(
                             (os, i): string | JSX.Element => os && (
@@ -106,7 +104,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="arch"><Trans>Architecture</Trans></label>
-                    <select id="arch-filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
+                    <select id="arch-filter" aria-label="Architecture Filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {arches.map(
                             (arch, i): string | JSX.Element => arch && (
@@ -117,7 +115,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="package-type"><Trans>Package Type</Trans></label>
-                    <select id="package-type-filter" onChange={(e) => setPackageType(e.target.value)} value={packageType} className="form-select form-select-sm">
+                    <select id="package-type-filter" aria-label="Package Type Filter" onChange={(e) => setPackageType(e.target.value)} value={packageType} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {packageTypes.map(
                             (packageType, i): string | JSX.Element => packageType && (
@@ -128,7 +126,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
-                    <select id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm">
+                    <select id="version-filter" aria-label="Version Filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm">
                         {versionList.map(
                             (version, i): number | JSX.Element => version && (
                                 <option key={version} value={version}>{version}</option>
