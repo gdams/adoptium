@@ -29,7 +29,6 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
           Any
         </option>
         <option
-          data-testid="true"
           value="mock_os"
         >
           Mock_os
@@ -145,7 +144,6 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
           Any
         </option>
         <option
-          data-testid="true"
           value="mock_os"
         >
           Mock_os

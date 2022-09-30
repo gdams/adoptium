@@ -97,7 +97,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                         <option key="any" value="any">Any</option>
                         {oses.map(
                             (os, i): string | JSX.Element => os && (
-                                <option key={os.toLowerCase()} data-testid value={os.toLowerCase()}>{capitalize(os)}</option>
+                                <option key={os.toLowerCase()} value={os.toLowerCase()}>{capitalize(os)}</option>
                             )
                         )}
                     </select>
