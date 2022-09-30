@@ -70,14 +70,19 @@ describe('DownloadDropdowns component', () => {
       waitFor(() => {
         expect(updater).toHaveBeenCalledTimes(1);
       }).then(() => {
+        // Simulate a user using dropdowns
         let select = getByTestId("os-filter");
         fireEvent.change(select, { target: { value: "mock_os" } });
+        expect(updater).toHaveBeenCalledTimes(2);
         select = getByTestId("arch-filter");
         fireEvent.change(select, { target: { value: "mock_arch" } });
+        expect(updater).toHaveBeenCalledTimes(3);
         select = getByTestId("package-type-filter");
-        fireEvent.change(select, { target: { value: "jdk" } });
+        fireEvent.change(select, { target: { value: "any" } });
+        expect(updater).toHaveBeenCalledTimes(4);
         select = getByTestId("version-filter");
-        fireEvent.change(select, { target: { value: "1" } });
+        fireEvent.change(select, { target: { value: 1 } });
+        expect(updater).toHaveBeenCalledTimes(5);
         expect(container).toMatchSnapshot();
       });
     });
