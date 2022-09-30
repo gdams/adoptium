@@ -1,0 +1,128 @@
+// Vitest Snapshot v1
+
+exports[`Members page > renders correctly 1`] = `
+<main>
+  <section
+    class="py-5 text-center container"
+  >
+    <div
+      class="row py-lg-5"
+    >
+      <div
+        class="col-lg-8 col-md-8 mx-auto"
+      >
+        <h1
+          class="fw-light"
+        >
+          Adoptium® Working Group Members
+        </h1>
+        <h2
+          class="fw-light pt-5"
+        >
+          Strategic Members
+        </h2>
+        <p
+          class="lead text-muted"
+        >
+          Strategic Members are organizations that view Adoptium working group managed technology as critical to their organization’s future, and are investing significant resources to sustain and define the core activities that are the responsibility of the working group.
+        </p>
+        <div
+          class="container"
+        >
+          <div
+            class="row justify-content-center align-items-center"
+          >
+            <div
+              class="col-lg-4 col-md-12 mt-5"
+            >
+              <a
+                href="https://mock.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="mock_member logo"
+                  src="/images/mock_logo.png"
+                  style="width: 10rem;"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <h2
+          class="fw-light pt-5"
+        >
+          Enterprise Members
+        </h2>
+        <p
+          class="lead text-muted"
+        >
+          Enterprise Members are typically organizations that view the Adoptium working group managed technology as a critical part of their organization‘s business operations. These organizations want to influence the direction and support the development of a runtime technology ecosystem through Eclipse Adoptium.
+        </p>
+        <div
+          class="container"
+        >
+          <div
+            class="row justify-content-center align-items-center"
+          >
+            <div
+              class="col-lg-4 col-md-12 mt-5"
+            >
+              <a
+                href="https://mock.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="mock_member logo"
+                  src="/images/mock_logo.png"
+                  style="width: 10rem;"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <h2
+          class="fw-light pt-5"
+        >
+          Participant Members
+        </h2>
+        <p
+          class="lead text-muted"
+        >
+          Participant Members are typically organizations that deliver products or services based on Adoptium technology. These organizations want to participate in the evolution of the Eclipse Adoptium ecosystem to ensure it continues to meet their needs.
+        </p>
+        <div
+          class="container"
+        >
+          <div
+            class="row justify-content-center align-items-center"
+          >
+            <div
+              class="col-lg-4 col-md-12 mt-5"
+            >
+              <a
+                href="https://mock.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="mock_member logo"
+                  src="/images/mock_logo.png"
+                  style="width: 10rem;"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <a
+          class="btn btn-lg btn-primary mt-5"
+          href="/join"
+        >
+          Want to Join?
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+`;

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 
 import { SiGithubsponsors } from 'react-icons/si'
-
+import { MembersProps } from './members' 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import MembersGrid from '../components/MembersGrid'
@@ -10,8 +10,8 @@ import { shuffle } from '../util/shuffle'
 
 import Members from '../json/members.json'
 
-const sponsors = []
-const infra = []
+let sponsors: MembersProps[] = []
+let infra: MembersProps[] = []
 
 for (const member of Members) {
   switch (member.tier) {
@@ -27,8 +27,8 @@ for (const member of Members) {
 }
 
 // Randomly mix up members logos
-shuffle(sponsors)
-shuffle(infra)
+sponsors = shuffle(sponsors)
+infra = shuffle(infra)
 
 const SponsorsPage = () => (
   <Layout>

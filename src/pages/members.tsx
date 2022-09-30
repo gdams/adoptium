@@ -8,9 +8,9 @@ import { shuffle } from '../util/shuffle'
 
 import Members from '../json/members.json'
 
-const strategicMembers = []
-const enterpriseMembers = []
-const participantMembers = []
+let strategicMembers: MembersProps[] = []
+let enterpriseMembers: MembersProps[] = []
+let participantMembers: MembersProps[] = []
 
 for (const member of Members) {
   switch (member.tier) {
@@ -29,9 +29,9 @@ for (const member of Members) {
 }
 
 // Randomly mix up members logos
-shuffle(strategicMembers)
-shuffle(enterpriseMembers)
-shuffle(participantMembers)
+strategicMembers=(shuffle(strategicMembers))
+enterpriseMembers=(shuffle(enterpriseMembers))
+participantMembers=(shuffle(participantMembers))
 
 const MembersPage = () => (
   <Layout>
@@ -80,3 +80,9 @@ export const query = graphql`
     }
   }
 `
+interface MembersProps {
+  name: string;
+  logo: string;
+  url: string;
+  tier: string;
+}
