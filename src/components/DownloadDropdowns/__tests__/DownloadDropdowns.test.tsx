@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
+import { render, waitFor, fireEvent } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { act } from 'react-test-renderer';
 import { createRandomTemurinReleases } from '../../../__fixtures__/hooks';
@@ -60,7 +60,7 @@ vi.mock('use-query-params', () => ({
 describe('DownloadDropdowns component', () => {
   it('renders correctly', () => {
     act(() => {
-      const { container } = render(
+      const { container, getByTestId } = render(
         <DownloadDropdowns
           updaterAction={updater}
           marketplace={false}
@@ -70,6 +70,14 @@ describe('DownloadDropdowns component', () => {
       waitFor(() => {
         expect(updater).toHaveBeenCalledTimes(1);
       }).then(() => {
+        let select = getByTestId("os-filter");
+        fireEvent.change(select, { target: { value: "mock_os" } });
+        select = getByTestId("arch-filter");
+        fireEvent.change(select, { target: { value: "mock_arch" } });
+        select = getByTestId("package-type-filter");
+        fireEvent.change(select, { target: { value: "jdk" } });
+        select = getByTestId("version-filter");
+        fireEvent.change(select, { target: { value: "1" } });
         expect(container).toMatchSnapshot();
       });
     });

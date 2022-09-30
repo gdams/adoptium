@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
-import Sponsors from '../members';
+import Sponsors from '../sponsors';
 
 vi.mock('../../util/shuffle', () => {
   return {

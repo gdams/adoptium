@@ -97,14 +97,14 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                         <option key="any" value="any">Any</option>
                         {oses.map(
                             (os, i): string | JSX.Element => os && (
-                                <option key={os.toLowerCase()} value={os.toLowerCase()}>{capitalize(os)}</option>
+                                <option key={os.toLowerCase()} data-testid value={os.toLowerCase()}>{capitalize(os)}</option>
                             )
                         )}
                     </select>
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="arch"><Trans>Architecture</Trans></label>
-                    <select id="arch-filter" aria-label="Architecture Filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
+                    <select id="arch-filter" aria-label="Architecture Filter" data-testid="arch-filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {arches.map(
                             (arch, i): string | JSX.Element => arch && (
@@ -115,7 +115,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="package-type"><Trans>Package Type</Trans></label>
-                    <select id="package-type-filter" aria-label="Package Type Filter" onChange={(e) => setPackageType(e.target.value)} value={packageType} className="form-select form-select-sm">
+                    <select id="package-type-filter" aria-label="Package Type Filter" data-testid="package-type-filter" onChange={(e) => setPackageType(e.target.value)} value={packageType} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
                         {packageTypes.map(
                             (packageType, i): string | JSX.Element => packageType && (
@@ -126,7 +126,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 </div>
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
-                    <select id="version-filter" aria-label="Version Filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm">
+                    <select id="version-filter" aria-label="Version Filter" data-testid="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm">
                         {versionList.map(
                             (version, i): number | JSX.Element => version && (
                                 <option key={version} value={version}>{version}</option>

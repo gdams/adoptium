@@ -29,6 +29,7 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
           Any
         </option>
         <option
+          data-testid="true"
           value="mock_os"
         >
           Mock_os
@@ -47,6 +48,7 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
       <select
         aria-label="Architecture Filter"
         class="form-select form-select-sm"
+        data-testid="arch-filter"
         id="arch-filter"
       >
         <option
@@ -73,6 +75,7 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
       <select
         aria-label="Package Type Filter"
         class="form-select form-select-sm"
+        data-testid="package-type-filter"
         id="package-type-filter"
       >
         <option
@@ -99,6 +102,7 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
       <select
         aria-label="Version Filter"
         class="form-select form-select-sm"
+        data-testid="version-filter"
         id="version-filter"
       >
         <option
@@ -141,6 +145,7 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
           Any
         </option>
         <option
+          data-testid="true"
           value="mock_os"
         >
           Mock_os
@@ -159,6 +164,7 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
       <select
         aria-label="Architecture Filter"
         class="form-select form-select-sm"
+        data-testid="arch-filter"
         id="arch-filter"
       >
         <option
@@ -185,6 +191,7 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
       <select
         aria-label="Package Type Filter"
         class="form-select form-select-sm"
+        data-testid="package-type-filter"
         id="package-type-filter"
       >
         <option
@@ -211,6 +218,7 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
       <select
         aria-label="Version Filter"
         class="form-select form-select-sm"
+        data-testid="version-filter"
         id="version-filter"
       >
         <option

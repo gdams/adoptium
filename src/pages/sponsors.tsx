@@ -46,7 +46,7 @@ const SponsorsPage = () => (
           />
           <div className='btn-group-vertical'>
             <a target='_blank' rel='noreferrer' href='https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' className='btn btn-lg btn-primary mt-5'>Want to become a Sponsor?</a>
-            <a target='_blank' rel='noreferrer' href='https://github.com/sponsors/adoptium' className='btn btn-lg btn-outline-dark mt-3'><SiGithubsponsors color='#bf3989' /> Become a GitHub Sponsor!</a>
+            <a target='_blank' rel='noreferrer' href='https://github.com/sponsors/adoptium' className='btn btn-lg btn-outline-dark mt-3'><SiGithubsponsors aria-label='GitHub Sponsors Logo' color='#bf3989' /> Become a GitHub Sponsor!</a>
           </div>
         </div>
       </div>
