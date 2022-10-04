@@ -80,14 +80,12 @@ EOF
 +
 [source, bash]
 ----
-dnf update # update if you haven't already
 dnf install temurin-17-jdk
 ----
 Alternatively, if you are using `yum`:
 +
 [source, bash]
 ----
-yum update # update if you haven't already
 yum install temurin-17-jdk
 ----
 
