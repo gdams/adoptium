@@ -109,7 +109,7 @@ them down into your own application.
 This is the project and brand name for the binaries that the Eclipse
 Foundation produces.
 While we appreciate that the Adoptium/Temurin name split
-is more confusing that just "Adoptium", this is similar to how other
+is more confusing than just "Adoptium", this is similar to how other
 vendors brand their binaries, e.g. Amazon has Corretto, Azul has Zulu
 (and others). The "Adoptium" project and working group will deal with
 more than just Temurin so the distinction is important to maintain.
