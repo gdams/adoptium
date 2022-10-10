@@ -1,5 +1,5 @@
 = Frequently Asked Questions
-:page-authors: gdams, karianna, sxa555, aahlenst, sxa, tellison, kemitix
+:page-authors: gdams, karianna, sxa555, aahlenst, sxa, tellison, kemitix, Fishbowler
 
 We have gathered together a few frequently asked questions (FAQs) into
 this document.
