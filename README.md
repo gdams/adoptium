@@ -17,7 +17,7 @@ This assumes you already have Node.js and npm installed. At time of writing we u
 1. Install your dependencies
 
     ```shell
-    npm install
+    npm install --legacy-peer-deps
     ```
 
 1. Start the site up. Gatsby will build all of the various parts of the site (Asciidoc etc). Note that this command takes some time to execute.
