@@ -36,6 +36,12 @@
     "tier": "strategic"
   },
   {
+    "name": "Rivos",
+    "logo": "rivos.png",
+    "url": "https://www.rivosinc.com/",
+    "tier": "strategic"
+  },
+  {
     "name": "Bloomberg",
     "logo": "bloomberg.svg",
     "url": "https://www.techatbloomberg.com/opensource",
