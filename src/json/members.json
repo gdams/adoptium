@@ -13,6 +13,12 @@
     "tier": "strategic"
   },
   {
+    "name": "Google",
+    "logo": "google.svg",
+    "url": "https://google.com",
+    "tier": "strategic"
+  },
+  {
     "name": "Huawei",
     "logo": "huawei.svg",
     "url": "https://huawei.com",
