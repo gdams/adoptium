@@ -7,7 +7,7 @@ const repositories = [
 ];
 
 // List of users to exclude from random contributor
-const excludedContributors = ['dependabot-preview[bot]', 'dependabot[bot]', 'eclipse-temurin-bot'];
+const excludedContributors = ['dependabot-preview[bot]', 'dependabot[bot]', 'github-actions[bot]', 'eclipse-temurin-bot'];
 
 const randomValue = (list) => {
     return list[Math.floor(Math.random() * list.length)];
