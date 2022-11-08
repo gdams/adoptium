@@ -22,4 +22,4 @@ packages. Installation steps are covered in the following sections:
 
 * link:/installation/windows[Windows MSI installers packages]
 * link:/installation/macOS[macOS PKG installer packages]
-* link:/installation/linux[Linux (RPM/DEB) packages]
+* link:/installation/linux[Linux (RPM/DEB/APK) installer packages]
