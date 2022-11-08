@@ -1,4 +1,4 @@
-= Linux (RPM/DEB) installer packages
+= Linux (RPM/DEB/APK) installer packages
 :page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie, sxa, tellison, luozhenyu
 :toc:
 :icons: font
@@ -104,6 +104,30 @@ zypper ar -f https://packages.adoptium.net/artifactory/rpm/opensuse/$(. /etc/os-
 [source, bash]
 ----
 zypper install temurin-17-jdk
+----
+
+
+== Alpine Linux Instructions
+
+. Download the Eclipse Adoptium RSA key:
++
+[source, bash]
+----
+wget -O /etc/apk/keys/adoptium.rsa.pub https://packages.adoptium.net/artifactory/api/security/keypair/public/repositories/apk
+----
++
+. Configure the Eclipse Adoptium APK repository:
++
+[source, bash]
+----
+echo 'https://packages.adoptium.net/artifactory/apk/alpine/main' >> /etc/apk/repositories
+----
++
+. Install the Temurin version you require:
++
+[source, bash]
+----
+apk add temurin-17-jdk
 ----
 
 Please raise any issues over at
