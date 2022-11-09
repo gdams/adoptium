@@ -56,7 +56,7 @@
     "react-use-flexsearch": "^0.1.1",
     "react-world-flags": "^1.5.1",
     "sass": "1.56.1",
-    "use-query-params": "^1.2.3"
+    "use-query-params": "^2.0.1"
   },
   "devDependencies": {
     "@parcel/namer-default": "^2.8.0",
