@@ -59,7 +59,7 @@
     "use-query-params": "^1.2.3"
   },
   "devDependencies": {
-    "@parcel/namer-default": "^2.7.0",
+    "@parcel/namer-default": "^2.8.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
