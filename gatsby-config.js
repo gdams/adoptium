@@ -108,7 +108,6 @@ module.exports = {
     },
     'gatsby-plugin-netlify',
     'gatsby-plugin-image',
-    'gatsby-plugin-use-query-params',
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

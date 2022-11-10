@@ -1,5 +1,6 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react';
-import { useQueryParam, NumberParam, StringParam } from 'use-query-params';
+import { useLocation } from '@reach/router';
+import queryString from 'query-string';
 import { Trans } from 'gatsby-plugin-react-i18next';
 import VendorSelector from '../VendorSelector'
 import { detectOS, UserOS } from '../../util/detectOS';
@@ -13,11 +14,11 @@ let defaultArch = 'any'
 const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     let versionList = versions;
     let selectedVersion = defaultVersion;
-    let [versionParam] = useQueryParam('version', NumberParam)
+    const versionParam = queryString.parse(useLocation().search).version;
     if (versionParam) {
-        selectedVersion = versionParam;
+        selectedVersion = Number(versionParam);
     }
-    let [variantParam] = useQueryParam('variant', StringParam)
+    const variantParam = queryString.parse(useLocation().search).variant;
     if (variantParam) {
         setURLParam('version', variantParam.replace(/\D/g, ''))
         selectedVersion = parseInt(variantParam.replace(/\D/g, ''));

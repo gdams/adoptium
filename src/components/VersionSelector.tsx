@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
-import { useQueryParam, NumberParam, StringParam } from 'use-query-params'
+import { useLocation } from '@reach/router';
+import queryString from 'query-string';
 
 import DatePicker from 'react-date-picker';
 
@@ -10,11 +11,11 @@ import { setURLParam } from '../util/setURLParam';
 const VersionSelector = ({updater, releaseType, Table}) => {
   const { language } = useI18next();
   let selectedVersion = defaultVersion
-  let [versionParam] = useQueryParam('version', NumberParam)
+  const versionParam = queryString.parse(useLocation().search).version;
   if (versionParam) {
-      selectedVersion = versionParam;
+      selectedVersion = Number(versionParam);
   }
-  let [variantParam] = useQueryParam('variant', StringParam)
+  const variantParam = queryString.parse(useLocation().search).variant;
   if (variantParam) {
       setURLParam('version', variantParam.replace(/\D/g, ''))
       selectedVersion = parseInt(variantParam.replace(/\D/g, ''));

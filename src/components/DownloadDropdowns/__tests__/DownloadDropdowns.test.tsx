@@ -44,19 +44,6 @@ const updater = vi.fn().mockImplementation(() => {
   };
 });
 
-vi.mock('use-query-params', () => ({
-  NumberParam: vi.fn(),
-  StringParam: vi.fn(),
-  useQueryParam: (arg) => {
-    switch (arg) {
-      case 'version':
-        return [8, () => {}];
-      case 'variant':
-        return ['openjdk8', () => {}];
-    }
-  }
-}));
-
 describe('DownloadDropdowns component', () => {
   it('renders correctly', () => {
     act(() => {
