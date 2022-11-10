@@ -44,6 +44,15 @@ const updater = vi.fn().mockImplementation(() => {
   };
 });
 
+vi.mock('query-string', () => ({
+  default: {
+    parse: () => ({
+      version: 8,
+      variant: 'openjdk8',
+    }),
+  }
+}));
+
 describe('DownloadDropdowns component', () => {
   it('renders correctly', () => {
     act(() => {
