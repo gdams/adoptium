@@ -17,8 +17,8 @@ const VersionSelector = ({updater, releaseType, Table}) => {
   }
   const variantParam = queryString.parse(useLocation().search).variant;
   if (variantParam) {
-      setURLParam('version', variantParam.replace(/\D/g, ''))
-      selectedVersion = parseInt(variantParam.replace(/\D/g, ''));
+      setURLParam('version', variantParam.toString().replace(/\D/g, ''))
+      selectedVersion = parseInt(variantParam.toString().replace(/\D/g, ''));
   }
 
   const [version, udateVersion] = useState(selectedVersion.toString());
