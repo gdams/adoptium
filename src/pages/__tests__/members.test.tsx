@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
-import Members from '../members';
+import Members, { Head } from '../members';
 
 vi.mock('../../util/shuffle', () => {
   return {
@@ -28,6 +28,16 @@ describe('Members page', () => {
     const pageContent = container.querySelector('main');
 
     expect(pageContent).toMatchSnapshot();
+  });
+
+  it('head renders correctly', () => {
+    const { container } = render(<Head />);
+    // eslint-disable-next-line
+    const title = container.querySelector('title');
+
+    waitFor(() => {
+      expect(title).toHaveTextContent('Adoptium Working Group Members | Adoptium');
+    });
   });
 
   it('has no accessibility violations', async () => {

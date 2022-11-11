@@ -16,6 +16,15 @@ describe('Asciidoc pages', () => {
     expect(pageContent).toMatchSnapshot();
   });
 
+  it('renders correctly - installation slug', () => {
+    mockData.asciidoc.fields.slug = '/installation/';
+    const { container } = render(<AllAsciidocPages data={mockData} />);
+    // eslint-disable-next-line
+    const pageContent = container.querySelector('main');
+
+    expect(pageContent).toMatchSnapshot();
+  });
+
   it('has no accessibility violations', async () => {
     const { container } = render(<AllAsciidocPages data={mockData} />);
     const results = await axe(container);

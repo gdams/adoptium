@@ -142,9 +142,23 @@ exports[`Download page > renders correctly - vendor 1`] = `
         >
           You are downloading a build from 
           <strong>
-            azul
+            Azul
           </strong>
           , a member of the Eclipse Adoptium Working Group.
+        </p>
+        <p
+          class="py-2"
+        >
+          For support and next steps please visit the 
+          <a
+            href="https://www.azul.com/downloads?utm_source=adoptium&os=linux&arch=x64&type=jre&version=1.0.0"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Azul
+             Website
+          </a>
+          .
         </p>
         <meta
           content="0; url=https://fake-download.tar.gz"

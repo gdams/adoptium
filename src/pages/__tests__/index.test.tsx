@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
-import Index from '../index';
+import Index, { Head } from '../index';
 
 describe('Index page', () => {
   it('renders correctly', () => {
@@ -11,6 +11,16 @@ describe('Index page', () => {
     const pageContent = container.querySelector('main');
 
     expect(pageContent).toMatchSnapshot();
+  });
+
+  it('head renders correctly', () => {
+    const { container } = render(<Head />);
+    // eslint-disable-next-line
+    const title = container.querySelector('title');
+
+    waitFor(() => {
+      expect(title).toHaveTextContent('Home | Adoptium');
+    });
   });
 
   it('has no accessibility violations', async () => {
