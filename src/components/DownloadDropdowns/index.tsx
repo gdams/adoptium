@@ -20,10 +20,10 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     }
     const variantParam = queryString.parse(useLocation().search).variant;
     if (variantParam) {
-      // convert openjdk11 to 11
-      const parsedVersion = variantParam.toString().replace(/\D/g, '')
-      setURLParam('version', parsedVersion)
-      selectedVersion = parseInt(parsedVersion);
+        // convert openjdk11 to 11
+        const parsedVersion = variantParam.toString().replace(/\D/g, '')
+        setURLParam('version', parsedVersion)
+        selectedVersion = parseInt(parsedVersion);
     }
 
     if (marketplace) {
