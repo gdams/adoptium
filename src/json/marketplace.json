@@ -12,7 +12,7 @@
     {
         "name": "Microsoft",
         "icon": "vendor-microsoft.png",
-        "postDownload": null
+        "postDownload": "https://learn.microsoft.com/java/openjdk/"
     },
     {
         "name": "Azul",
