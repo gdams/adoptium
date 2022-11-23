@@ -28,9 +28,9 @@ of the jlinked binaires, and very importantly the impact of creating JREs on the
 workload.
 
 We have published helpful guides for how to
-[create your own JRE](https://blog.adoptium.net/2021/10/jlink-to-produce-own-runtime/) using `jlink`
+[create your own JRE](https://adoptium.net/blog/2021/10/jlink-to-produce-own-runtime/) using `jlink`
 and how to 
-[use jlink in Dockerfiles](https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/) that
+[use jlink in Dockerfiles](https://adoptium.net/blog/2021/08/using-jlink-in-dockerfiles/) that
 remain useful today.
 
 ## Listening to our user community

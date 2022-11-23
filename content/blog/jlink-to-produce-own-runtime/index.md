@@ -12,7 +12,7 @@ This post will show you how to create your own runtime for Java 17+ which is com
 
 ## Why have you decided to stop shipping JREs?
 
-***NOTE: This paragraph has been superceded since we are now shipping JREs with 17+ again - see https://blog.adoptium.net/2021/12/eclipse-temurin-jres-are-back/ for the details, however we still recommend using jlink to produce your own cut down java runtimes where possible***
+***NOTE: This paragraph has been superceded since we are now shipping JREs with 17+ again - see https://adoptium.net/blog/2021/12/eclipse-temurin-jres-are-back/ for the details, however we still recommend using jlink to produce your own cut down java runtimes where possible***
 
 While the OpenJDK build process still has support for building a JRE via the
 `legacy-jre` target it is, as the name suggests, legacy functionality.  The

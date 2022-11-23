@@ -186,7 +186,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
               <li>
                 <a
                   class="nav-link"
-                  href="https://blog.adoptium.net"
+                  href="https://adoptium.net/blog"
                 >
                   Blog
                 </a>

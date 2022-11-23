@@ -38,7 +38,7 @@ https://adoptium.net/support/[在此] 阅读我们的发布和支持周期声明
 
 我们提供一组Temurin官方 https://hub.docker.com/_/eclipse-temurin[Docker 镜像]
 
-对于那些想要使用但我们不直接提供镜像的用户，请参考 https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/[文档]
+对于那些想要使用但我们不直接提供镜像的用户，请参考 https://adoptium.net/blog/2021/08/using-jlink-in-dockerfiles/[文档]
 
 == 自动下载Temurin预编译
 
@@ -53,7 +53,7 @@ Adoptium 项目和工作组将处理的不仅仅是 Temurin，这就是为什么
 
 == AdoptOpenJDK 的去向
 
-原 AdoptOpenJDK 已改名为 “Adoptium 旗下的 Eclipse Temurin” "https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[博客文章]"
+原 AdoptOpenJDK 已改名为 “Adoptium 旗下的 Eclipse Temurin” "https://adoptium.net/blog/2021/08/adoptium-celebrates-first-release/[博客文章]"
 尽管品牌名发生了变化，但它仍然是开放式流程、包含 AQAvit 测试套件，并且由同一个团队进行构建。此外，link:/members[更多大公司] 参与到了工作组。
 
 由于用户仍处于过渡阶段，我们保留了旧站点 AdoptOpenJDK 的原样，但是您不应该依赖它，而更新使用 Adoptium API 和网站

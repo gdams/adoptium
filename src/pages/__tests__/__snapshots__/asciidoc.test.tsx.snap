@@ -22,7 +22,7 @@ exports[`Asciidoc pages > renders correctly - installation slug 1`] = `
     name="og:type"
   />
   <meta
-    content="https://adoptium.net/images/social-image.png"
+    content="https://sample.com/images/social-image.png"
     name="og:image"
   />
   <meta
@@ -34,7 +34,7 @@ exports[`Asciidoc pages > renders correctly - installation slug 1`] = `
     name="twitter:site"
   />
   <meta
-    content="https://adoptium.net/images/social-image.png"
+    content="https://sample.com/images/social-image.png"
     name="twitter:image"
   />
   <meta
@@ -481,7 +481,7 @@ exports[`Asciidoc pages > renders correctly 1`] = `
     name="og:type"
   />
   <meta
-    content="https://adoptium.net/images/social-image.png"
+    content="https://sample.com/images/social-image.png"
     name="og:image"
   />
   <meta
@@ -493,7 +493,7 @@ exports[`Asciidoc pages > renders correctly 1`] = `
     name="twitter:site"
   />
   <meta
-    content="https://adoptium.net/images/social-image.png"
+    content="https://sample.com/images/social-image.png"
     name="twitter:image"
   />
   <meta

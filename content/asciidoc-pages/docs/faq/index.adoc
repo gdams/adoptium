@@ -86,7 +86,7 @@ https://hub.docker.com/_/eclipse-temurin[official Docker repository] to ensure w
 are responsive to the delivery of new images containing Temurin. Users
 who want a containerized Linux distribution that we don’t provide can follow
 the instructions in
-https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/[this
+https://adoptium.net/blog/2021/08/using-jlink-in-dockerfiles/[this
 guide].
 
 == Will you support my favorite architecture and operating system?
@@ -117,7 +117,7 @@ more than just Temurin so the distinction is important to maintain.
 == What happened to AdoptOpenJDK?
 
 The AdoptOpenJDK builds are now known as "Eclipse Temurin by
-Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[read the blog post]).
+Adoptium"(https://adoptium.net/blog/2021/08/adoptium-celebrates-first-release/[read the blog post]).
 Don’t worry though - despite the branding changes it is the same open build processes,
 AQAvit test suites and primarily the same team producing them as before, but
 there are link:/members[more larger companies] bringing their expertise

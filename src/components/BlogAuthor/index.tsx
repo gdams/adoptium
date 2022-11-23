@@ -37,13 +37,12 @@ const LinkedinLink = (props) => {
 const BlogAuthor = (props) => {
   const author = props.author;
   const identifier = props.identifier;
-  const href = `/author/${identifier}`;
+  const href = `/blog/author/${identifier}`;
 
   return (
     <div
       style={{
         display: "flex",
-        // marginBottom: rhythm(2.5),
       }}
     >
       <ProfilePic identifier={identifier} name={author.name} />

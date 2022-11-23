@@ -26,7 +26,7 @@ Several of our online locations have also been changed over the last few days:
 | Account | Old Name | New Name |
 | --- | --- | --- |
 | Website | adoptopenjdk.net | [adoptium.net](https://adoptium.net) |
-| Blog | blog.adoptopenjdk.net | [blog.adoptium.net](https://blog.adoptium.net) |
+| Blog | blog.adoptopenjdk.net | [adoptium.net/blog](https://adoptium.net/blog) |
 | GitHub | AdoptOpenJDK | [Eclipse Adoptium](https://github.com/adoptium) |
 | Twitter | @adoptopenjdk | [@adoptium](https://twitter.com/adoptium) |
 | Slack | adoptopenjdk.slack.com | [adoptium.slack.com](https://adoptium.slack.com) |

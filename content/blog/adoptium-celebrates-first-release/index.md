@@ -18,7 +18,7 @@ Every release of Temurin has passed [Oracle’s Java SE TCK](https://en.wikipedi
 
 ### Successful Transition
 
-This first release marks the successful [transition of AdoptOpenJDK to Adoptium](https://blog.adoptium.net/2021/03/eclipse-adoptium-announcement/).
+This first release marks the successful [transition of AdoptOpenJDK to Adoptium](https://adoptium.net/blog/2021/03/eclipse-adoptium-announcement/).
 
 The project move involved transferring over 40 code repositories, a complex static and virtualized machine infrastructure, a running build system, and a two thousand members strong community to the Eclipse Foundation over a period of about one year. During that time the team continued to hit their quarterly release schedule, and grow the project through the introduction of a new incubator programme, participating in student mentoring programmes, and delivering innovation through machine learning and cloud optimization operational techniques amongst others.
 

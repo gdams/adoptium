@@ -48,10 +48,10 @@ const Seo = ({ title, description, twitterCard }: Props): JSX.Element => {
       <meta name="og:title" content={siteTitle} />
       <meta name="og:description" content={description} />
       <meta name="og:type" content="website" />
-      <meta name="og:image" content={site.siteMetadata.siteUrl + twitterCard} />
+      <meta name="og:image" content={site.siteMetadata.siteUrl + '/' + twitterCard} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@adoptium" />
-      <meta name="twitter:image" content={site.siteMetadata.siteUrl + twitterCard} />
+      <meta name="twitter:image" content={site.siteMetadata.siteUrl + '/' + twitterCard} />
       <meta name="twitter:creator" content="@adoptium" />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={description} />

@@ -35,7 +35,7 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 
 ## What about JRE base images?
 
-***NOTE: This paragraph has been superceded since we are now shipping JREs with 17+ again including docker images - see https://blog.adoptium.net/2021/12/eclipse-temurin-jres-are-back/ for the details, however we still recommend using jlink to produce your own cut down java runtimes where possible***
+***NOTE: This paragraph has been superceded since we are now shipping JREs with 17+ again including docker images - see https://adoptium.net/blog/2021/12/eclipse-temurin-jres-are-back/ for the details, however we still recommend using jlink to produce your own cut down java runtimes where possible***
 
 The Eclipse Temurin project produces JRE images for version 8. For JDK 11+ it is possible to use `jlink` and produce a custom runtime that works directly with your application:
 

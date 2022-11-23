@@ -101,7 +101,7 @@ const DocumentationPage = ({ data }) => (
               links={[
                 { name: 'Frequently Asked Questions', link: '/docs/faq' },
                 { name: 'Adoptium API', link: 'https://api.adoptium.net' },
-                { name: 'Adoptium Blog', link: 'https://blog.adoptium.net' },
+                { name: 'Adoptium Blog', link: 'https://adoptium.net/blog' },
                 { name: 'Logo Styleguide', link: '/docs/logo-styleguide' }
               ]}
             />

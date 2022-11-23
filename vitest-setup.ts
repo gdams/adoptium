@@ -15,7 +15,8 @@ vi.mock('gatsby', async () => {
     site: {
       siteMetadata: {
         title: 'Sample Title',
-        description: 'Sample Description'
+        description: 'Sample Description',
+        siteUrl: 'https://sample.com',
       }
     }
   }

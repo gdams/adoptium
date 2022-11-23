@@ -20,7 +20,7 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u31
 
 ### Eclipse Temurin 11 for Alpine Linux with musl libc
 
-We previously [announced Temurin 17 binaries for Alpine Linux](https://blog.adoptium.net/2021/09/eclipse-temurin-17-available/). We're pleased to announce that we have added support for Temurin 11 binaries as well. These can either be downloaded via the [website](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot) or used in our [Docker images](https://hub.docker.com/_/eclipse-temurin/):
+We previously [announced Temurin 17 binaries for Alpine Linux](https://adoptium.net/blog/2021/09/eclipse-temurin-17-available/). We're pleased to announce that we have added support for Temurin 11 binaries as well. These can either be downloaded via the [website](https://adoptium.net/releases.html?variant=openjdk11&jvmVariant=hotspot) or used in our [Docker images](https://hub.docker.com/_/eclipse-temurin/):
 
 ```bash
 ➜  ~ docker run -it eclipse-temurin:11-alpine java --version

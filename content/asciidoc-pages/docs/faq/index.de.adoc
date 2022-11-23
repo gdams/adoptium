@@ -20,7 +20,7 @@ Kurze Antwort: Das Projekt ist dermaßen gewachsen und um die Stabilität des Pr
 es in der https://projects.eclipse.org/projects/adoptium[Eclipse Foundation unterzubringen]
 , https://blog.adoptopenjdk.net/2020/06/adoptopenjdk-to-join-the-eclipse-foundation/[wie bereits Ende letzten Jahres angekündigt].
 
-Längere Antwort: Die Builds, welche Sie als AdoptOpenJDK kennen, sind jetzt "Eclipse Temurin by Adoptium"(https://blog.adoptium.net/2021/08/adoptium-celebrates-first-release/[release blog post])
+Längere Antwort: Die Builds, welche Sie als AdoptOpenJDK kennen, sind jetzt "Eclipse Temurin by Adoptium"(https://adoptium.net/blog/2021/08/adoptium-celebrates-first-release/[release blog post])
 Aber keine Sorge - trotz der Änderungen im Branding sind es die gleichen offenen Build-Prozesse, AQAvit-Test-Suites und hauptsächlich das gleiche Team, welches die builds erstellt.
 Allerdings sind jetzt link:/members[mehr größere Unternehmen] an der Arbeitsgruppe beteiligt.
 
@@ -56,7 +56,7 @@ Es gibt keinen Grund, sich über diese Änderung Sorgen zu machen - auch diese D
 
 Aufgrund der begrenzten Anzahl von Personen, welche an dem Projekt arbeiten, ist die Pflege der zahlreichen Docker-Images, welche wir on AdoptOpenJDK zur Verfügung gestellt
 haben, nicht mehr tragbar. Aus diesem Grund werden wir ein reduziertes Set von Docker-Images für Temurin bereitstellen.
-Jene Benutzer, welche sich eine containerbasierte Linux-Distribution wünschen, für die wir kein Image zur Verfügung stellen, verweisen wir an https://blog.adoptium.net/2021/08/using-jlink-in-dockerfiles/[diese
+Jene Benutzer, welche sich eine containerbasierte Linux-Distribution wünschen, für die wir kein Image zur Verfügung stellen, verweisen wir an https://adoptium.net/blog/2021/08/using-jlink-in-dockerfiles/[diese
 Anleitung].
 
 == Wo sind die Linux RPM/DEB Pakete?
