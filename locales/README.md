@@ -1,4 +1,3 @@
-<!-- textlint-disable terminology -->
 # Locales Folder
 
 This is the locales folder, it contains several json files which are used to map text on pages and components to their correctly translated equivalents. Currently there are 3 top level directories (one for each language that we support):

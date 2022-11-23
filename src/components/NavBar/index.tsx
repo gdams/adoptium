@@ -81,7 +81,7 @@ const NavBar = (): JSX.Element => {
                 <li><ExactNavLink className="dropdown-item" to="/sponsors">Sponsors</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/temurin/buttons">Promote</ExactNavLink></li>
                 <li><a className="nav-link" href="https://api.adoptium.net">API</a></li>
-                <li><a className="nav-link" href="https://blog.adoptium.net">Blog</a></li>
+                <li><ExactNavLink className="dropdown-item" to="/blog">Blog</ExactNavLink></li>
                 <li><a className="nav-link" href="https://status.adoptium.net">Status</a></li>
               </ul>
             </li>

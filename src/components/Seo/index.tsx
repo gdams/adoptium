@@ -11,9 +11,11 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 interface Props {
   title: string
+  description?: string
+  twitterCard?: string
 }
 
-const Seo = ({ title }: Props): JSX.Element => {
+const Seo = ({ title, description, twitterCard }: Props): JSX.Element => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -22,28 +24,37 @@ const Seo = ({ title }: Props): JSX.Element => {
             title
             description
             author
+            siteUrl
           }
         }
       }
     `
   )
 
-  const siteTitle = title + " | Adoptium"
+  if (!description) {
+    description = site.siteMetadata.description;
+  }
+
+  if (!twitterCard) {
+    twitterCard = "images/social-image.png";
+  }
+
+  const siteTitle = title + " | Adoptium";
 
   return (
     <>
       <title>{siteTitle}</title>
-      <meta name="description" content={site.siteMetadata.description} />
+      <meta name="description" content={description} />
       <meta name="og:title" content={siteTitle} />
-      <meta name="og:description" content={site.siteMetadata.description} />
+      <meta name="og:description" content={description} />
       <meta name="og:type" content="website" />
-      <meta name="og:image" content="https://adoptium.net/images/social-image.png" />
+      <meta name="og:image" content={site.siteMetadata.siteUrl + twitterCard} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@adoptium" />
-      <meta name="twitter:image" content="https://adoptium.net/images/social-image.png" />
+      <meta name="twitter:image" content={site.siteMetadata.siteUrl + twitterCard} />
       <meta name="twitter:creator" content="@adoptium" />
       <meta name="twitter:title" content={siteTitle} />
-      <meta name="twitter:description" content={site.siteMetadata.description} />
+      <meta name="twitter:description" content={description} />
       <link rel='stylesheet' type='text/css' href='//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css' />
       <script src='//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js' />
     </>

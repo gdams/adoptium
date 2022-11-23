@@ -11,7 +11,10 @@ module.exports = {
     title: 'Adoptium',
     description: 'Eclipse Adoptium provides prebuilt OpenJDK binaries from a fully open source set of build scripts and infrastructure. Supported platforms include Linux, macOS, Windows, ARM, Solaris, and AIX.',
     author: 'Eclipse Adoptium',
-    siteUrl: 'https://adoptium.net'
+    siteUrl: 'https://adoptium.net',
+    social: {
+      twitter: 'Adoptium',
+    },
   },
   plugins: [
     'gatsby-plugin-sitemap',
@@ -19,14 +22,30 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'asciidoc-pages',
-        path: path.join(__dirname, 'src/asciidoc-pages')
+        path: path.join(__dirname, 'content/asciidoc-pages'),
+        ignore: ['**/*.md'],
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        name: 'blog',
+        path:`${__dirname}/content/blog`,
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'assets',
+        path: `${__dirname}/static/images/authors`,
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'locale',
         path: path.join(__dirname, 'locales'),
-        name: 'locale'
+        ignore: ['**/*.md'],
       }
     },
     {
@@ -42,6 +61,23 @@ module.exports = {
       }
     },
     'gatsby-transformer-asciidoc',
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: ['.md'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 590,
+            },
+          },
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {

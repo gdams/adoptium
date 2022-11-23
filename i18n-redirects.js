@@ -4,7 +4,7 @@
 function getNodeRelativePath (
   { parent },
   omitFileExt,
-  basePath = '/src/asciidoc-pages'
+  basePath = '/content/asciidoc-pages'
 ) {
   const fileAbsolutePath = parent.absolutePath
   const relativePath = (fileAbsolutePath || '').split(basePath)?.[1]

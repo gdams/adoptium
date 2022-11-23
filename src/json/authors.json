@@ -1,0 +1,77 @@
+{
+    "georgeadams": {
+      "name": "George Adams",
+      "summary": "Java Program Manager @microsoft, Chair of Adoptium WG Steering Committee, Core Collaborator @nodejs",
+      "twitter": "gdams_",
+      "github": "gdams",
+      "linkedin": "gdams"
+    },
+    "jayashreekumar": {
+      "name": "Jayashree Kumar",
+      "summary": null,
+      "twitter": null,
+      "github": "jaysk1"
+    },
+    "lanxia": {
+      "name": "Lan Xia",
+      "summary": null,
+      "twitter": null,
+      "github": "llxia"
+    },
+    "martijnverburg": {
+      "name": "Martijn Verburg",
+      "summary": "Principal SWE Group Manager (Java) @ MSFT, ex CEO jClarity (acquired), LJC, Director @ AdoptOpenJDK, Speaker/Author, Java Champion, The Diabolical Developer",
+      "twitter": "karianna",
+      "github": "karianna"
+    },
+    "mesbahalam": {
+      "name": "Mesbah Alam",
+      "summary": "Software developer at IBM Runtime Technologies",
+      "twitter": null,
+      "github": "Mesbah-Alam"
+    },
+    "pmc": {
+      "name": "Adoptium PMC",
+      "summary": "Collective of Adoptium Project Management Committee members",
+      "twitter": "adoptium",
+      "github": "adoptium",
+      "linkedin": null
+    },
+    "shelleylambert": {
+      "name": "Shelley Lambert",
+      "summary": "Adoptium PMC and Adoptium WG Steering Committee member, Red Hat",
+      "twitter": null,
+      "github": "smlambert"
+    },
+    "timellison": {
+      "name": "Tim Ellison",
+      "summary": null,
+      "twitter": null,
+      "github": "tellison"
+    },
+    "sxa": {
+      "name": "Stewart X Addison",
+      "summary": "Adoptium PMC and steering WG member working for Red Hat",
+      "twitter": "sxaTech",
+      "github": "sxa"
+    },
+    "andrewleonard": {
+      "name": "Andrew Leonard",
+      "summary": "Adoptium Build team member working for Red Hat",
+      "twitter": null,
+      "github": "andrew-m-leonard"
+    },
+    "yiyang": {
+      "name": "Yi Yang",
+      "summary": "Software developer at Alibaba JVM Team",
+      "twitter": null,
+      "github": "kelthuzadx"
+    },
+    "denghuidong": {
+      "name": "Denghui Dong",
+      "summary": "Software developer at Alibaba",
+      "twitter": null,
+      "github": "D-D-H"
+    }
+}
+  
