@@ -1,6 +1,6 @@
 # Adding Content
 
-There are two different types of content, Blogs and Documentation. For adding/modifying documentation please see the seperate [README](./asciidoc-pages/README.md). For Blogs please review the steps below:
+There are two different types of content; Blogs and Documentation. For adding/modifying documentation please see the seperate [README](./asciidoc-pages/README.md). For Blogs please review the steps below:
 
 1. Create a folder in `blog` that is named after your post's title. [Slugify](https://blog.tersmitten.nl/slugify/) the title if it's more than a single word. Example: `hello-world`.
 2. Create a file called `index.md` in the directory you just created (`blog/hello-world`).
