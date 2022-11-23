@@ -60,6 +60,60 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: "gatsby-plugin-feed",
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.postPath,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.postPath
+                });
+              });
+            },
+            query: `
+              {
+                allMdx(sort: {frontmatter: {date: DESC}}, limit: 100) {
+                  totalCount
+                  edges {
+                    node {
+                      excerpt
+                      fields {
+                        slug
+                        postPath
+                      }
+                      frontmatter {
+                        date(formatString: "MMMM DD, YYYY")
+                        title
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Adoptium Blog",
+            match: undefined,
+          },
+        ],
+      },
+    },
     'gatsby-transformer-asciidoc',
     {
       resolve: 'gatsby-plugin-mdx',
