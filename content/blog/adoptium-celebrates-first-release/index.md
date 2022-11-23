@@ -20,7 +20,7 @@ Every release of Temurin has passed [Oracle’s Java SE TCK](https://en.wikipedi
 
 This first release marks the successful [transition of AdoptOpenJDK to Adoptium](https://adoptium.net/blog/2021/03/eclipse-adoptium-announcement/).
 
-The project move involved transferring over 40 code repositories, a complex static and virtualized machine infrastructure, a running build system, and a two thousand members strong community to the Eclipse Foundation over a period of about one year. During that time the team continued to hit their quarterly release schedule, and grow the project through the introduction of a new incubator programme, participating in student mentoring programmes, and delivering innovation through machine learning and cloud optimization operational techniques amongst others.
+The project move involved transferring over 40 code repositories, a complex static and virtualized machine infrastructure, a running build tool, and a two thousand members strong community to the Eclipse Foundation over a period of about one year. During that time the team continued to hit their quarterly release schedule, and grow the project through the introduction of a new incubator programme, participating in student mentoring programmes, and delivering innovation through machine learning and cloud optimization operational techniques amongst others.
 
 As part of the transition the Eclipse Foundation helped the community establish a new governance working group to support the work of the technical projects. The current [Adoptium working group members](https://adoptium.net/members.html) are Alibaba Cloud, Azul, Huawei, Karakun, Microsoft, Red Hat, IBM, iJUG, ManageCat, and New Relic.
 
@@ -32,7 +32,7 @@ Producing Temurin binaries follows modern best practices for cloud-based develop
 
 Utilizing “infrastructure as code” principles, the Temurin project ensures that each build of Java SE is open, consistent and reproducible. The resulting binaries built at the project are [supported by the community](https://adoptium.net/support.html) for as long as the upstream OpenJDK source project is maintained.
 
-Temurin actively encourages Java vendors to reuse the Adoptium technology in open and commercial products so that users have a consistent experience when moving between builds of OpenJDK while allowing for vendor-specific characteristics. 
+Temurin actively encourages Java vendors to reuse the Adoptium technology in open and commercial products so that users have a consistent experience when moving between builds of OpenJDK while allowing for vendor-specific characteristics.
 
 ### Eclipse AQAvit
 
@@ -59,4 +59,3 @@ Our immediate goal is to complete the set of binaries, installers and images for
 We will establish the Adoptium marketplace to enable our working group members to promote their own work based upon Adoptium’s quality criteria, and continue to innovate in the cloud-based CI/CD infrastructure that drives our efficiency as a shared community project.
 
 We encourage others who share our passion to contribute by reaching out through [Slack](https://adoptium.net/slack.html) and the [mailing list](https://accounts.eclipse.org/mailing-list/temurin-dev).
-

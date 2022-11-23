@@ -29,7 +29,7 @@ workload.
 
 We have published helpful guides for how to
 [create your own JRE](https://adoptium.net/blog/2021/10/jlink-to-produce-own-runtime/) using `jlink`
-and how to 
+and how to
 [use jlink in Dockerfiles](https://adoptium.net/blog/2021/08/using-jlink-in-dockerfiles/) that
 remain useful today.
 
@@ -50,9 +50,9 @@ analysis.
 
 Our users want both the convenience of a JRE package and the AQAvit quality assurance
 provided by the Adoptium project. As such, the Adoptium Project Management Committee (PMC) redoubled
-efforts to be able to create and maintain JREs for Java 17 onwards. 
+efforts to be able to create and maintain JREs for Java 17 onwards.
 
-## Eclipse Temurin JREs are back!
+## Eclipse Temurin JREs are back
 
 Adoptium is a community-driven project. We are here for our users, and we succeed by the kind efforts
 of our [development community](https://adoptium.net/slack.html) supported by the
@@ -62,7 +62,7 @@ The earlier decision to stop creating JREs from Java 17 onwards has been reverse
 continue to publish JREs for as long as it remains technically feasible to do so.
 
 JREs for Eclipse Temurin 17 have been published via
-[the website](https://adoptium.net/releases.html?variant=openjdk17), the
+[adoptium.net](https://adoptium.net/releases.html?variant=openjdk17), the
 [project API](https://api.adoptium.net/v3/assets/feature_releases/17/ga?image_type=jre), and
 [Dockerhub](https://hub.docker.com/_/eclipse-temurin?tab=tags&page=1&name=jre).
 We continue to encourage feedback about how the project is operating, what we can do better,

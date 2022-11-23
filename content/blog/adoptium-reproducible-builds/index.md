@@ -21,7 +21,7 @@ shows the high quality of the processes used to bring the JDK binaries to the co
 
 ### Secure Supply Chain
 
-The reproduciblity of builds goes hand in hand with knowing exactly what goes into it, in other words 
+The reproduciblity of builds goes hand in hand with knowing exactly what goes into it, in other words
 the Software Bill of Materials (SBOM). This detailed knowledge means we know the source and provenance
 of everything within and used to build the JDK. Thus any publicly published CVEs or vulnerabilities can be
 quickly cross-checked with the JDK and build tooling used. For more information on SBOM's and their capabilities
@@ -69,9 +69,10 @@ contributed back upstream to the OpenJDK community project. These fixes have als
 jdk17u stream, since jdk-17 is a long term supported release.
 
 OpenJDK contributions:
-- [8284539: Configure --with-source-date=version fails on MacOS](https://github.com/openjdk/jdk/pull/8247)
+
+- [8284539: Configure --with-source-date=version fails on macOS](https://github.com/openjdk/jdk/pull/8247)
 - [8284661: Reproducible assembly builds without relative linking](https://github.com/openjdk/jdk/pull/8177)
-- [8284437: Building from different users/workspace is not always deterministic ](https://github.com/openjdk/jdk/pull/8124)
+- [8284437: Building from different users/workspace is not always deterministic](https://github.com/openjdk/jdk/pull/8124)
 - [8283315: jrt-fs.jar not always deterministically built](https://github.com/openjdk/jdk/pull/7852)
 - [8279834: Alpine Linux fails to build when --with-source-date enabled](https://github.com/openjdk/jdk/pull/7025)
 - [8279182: MakeZipReproducible ZipEntry timestamps not localized to UTC](https://github.com/openjdk/jdk/pull/6926)
@@ -88,6 +89,7 @@ OpenJDK contributions:
 
 As well as continuing to identify and fix any OpenJDK non-deterministic issues, Eclipse Adoptium is continuing to
 integrate changes into the build scripts to fully support reproducible builds.
+
 - [Ongoing Adoptium reproducible build enhancements](https://github.com/adoptium/temurin-build/labels/reproducible-build)
 
 The following capabilities are available at Eclipse Adoptium:
@@ -96,7 +98,7 @@ The following capabilities are available at Eclipse Adoptium:
 
 The following are projects currently in-progress:
 
-- Reproducible jdk-19 builds for MacOS : https://github.com/adoptium/temurin-build/issues/2899.
+- Reproducible jdk-19 builds for macOS : https://github.com/adoptium/temurin-build/issues/2899.
 - Enhancing the Adoptium jenkins pipelines to integrate CycloneDX SBOM tooling to provide a standardized bill of materials framework for the Adoptium binaries : https://github.com/adoptium/temurin-build/issues/2900.
 - Detailed dependency bill of materials analysis to fully extended the CycloneDX SBOM json : https://github.com/adoptium/temurin-build/issues/2785.
 
@@ -116,4 +118,3 @@ If your company is working on reproducible builds, or other methods for securing
 How would your organization leverage Eclipse Adoptium reproducible builds?
 
 Feedback and contributions to this initiative are most welcome.
-

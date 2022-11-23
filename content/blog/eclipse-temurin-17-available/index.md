@@ -37,6 +37,6 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 17. 
 
 For a complete list of the enhancements (including ones that only impact developers of OpenJDK), [see the JDK 17 overview over at OpenJDK](https://openjdk.java.net/projects/jdk/17/).
 
-### Eclipse Temurin for Alpine Linux With musl libc 
+### Eclipse Temurin for Alpine Linux With musl libc
 
 [Alpine Linux](https://alpinelinux.org/) is a popular Linux distribution for container workloads because of its small footprint. Contrary to most other Linux distributions, Alpine Linux is not based on the [C library created by the GNU project](https://www.gnu.org/software/libc/) (usually referred to as "glibc") but uses [musl libc](https://musl.libc.org) instead. So far, OpenJDK has not supported musl libc but only glibc. With Eclipse Temurin 17, this is no longer necessary. We now have separate variants of Eclipse Temurin 17 that are purpose-built for musl libc that can be downloaded as a tarball and are also available as [ready-made container images](https://hub.docker.com/_/eclipse-temurin).

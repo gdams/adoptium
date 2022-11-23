@@ -23,7 +23,7 @@ This is the locales folder, it contains several json files which are used to map
     └── temurin.json
 ```
 
-Inside these directories are json files which can be named anything but it's best to name them in a way that they will be easily associated with the section of the website that is being translated. An example JSON file is shown below:
+Inside these directories are json files which can be named anything but it's best to name them in a way that they will be easily associated with the section of the site that is being translated. An example JSON file is shown below:
 
 ```json
 {

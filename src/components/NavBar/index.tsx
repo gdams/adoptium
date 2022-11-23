@@ -1,5 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
+import { Link as Noni18nLink } from "gatsby"
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { FaTwitter, FaYoutube, FaGithub, FaSlack, FaRss } from 'react-icons/fa';
 
@@ -16,8 +17,6 @@ const ExactNavLink = props => (
 
 const NavBar = (): JSX.Element => {
   const {t} = useTranslation();
-
-  console.log(window.location.pathname );
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-purple"
@@ -91,7 +90,7 @@ const NavBar = (): JSX.Element => {
         </div>
         <ul className="nav col-md-5 col-9 pb-4 justify-content-end list-unstyled d-flex hide-on-mobile p-3">
           { typeof window !== 'undefined' && window.location.href.includes('/blog') &&
-            <li className="ms-3"><Link style={navbarIcon} aria-label="Adoptium RSS Feed" to="/rss.xml"><FaRss size={25} /></Link></li>
+            <li className="ms-3"><Noni18nLink style={navbarIcon} aria-label="Adoptium RSS Feed" to="/rss.xml"><FaRss size={25} /></Noni18nLink></li>
           }
           <li className="ms-3"><a style={navbarIcon} target="_blank" aria-label="Adoptium Twitter Account" rel="noopener noreferrer" href="https://twitter.com/adoptium"><FaTwitter size={25} /></a></li>
           <li className="ms-3"><a style={navbarIcon} target="_blank" aria-label="Adoptium YouTube Account" rel="noopener noreferrer" href="https://www.youtube.com/c/EclipseAdoptium"><FaYoutube size={25} /></a></li>

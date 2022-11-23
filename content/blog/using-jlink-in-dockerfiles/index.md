@@ -67,7 +67,7 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 The `--add-modules` command accepts a comma seperated list of modules. To determine which modules you need you can run the following command with your existing JRE:
 
 ```bash
-$ jdk-11.0.8+10-jre/bin/java --list-modules
+jdk-11.0.8+10-jre/bin/java --list-modules
 ```
 
 We aren't completely ruling out creating JRE's for JDK11+ at this stage, so if a multi-stage dockerfile doesn't work for you then [we want to hear your thoughts](https://github.com/adoptium/temurin-build/issues/2683).

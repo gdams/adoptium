@@ -38,7 +38,7 @@ equivalent functionality to the legacy JRE.  Replace `jdk-17+35` in the examples
 below with the version of Java you are working with, and replace the forward
 slashes with the path separator on your platform (e.g.  `\` for Windows):
 
-```
+```bash
    jdk-17+35/bin/jlink --add-modules ALL-MODULE-PATH --output jdk-17+35-jre \
       --strip-debug --no-man-pages --no-header-files --compress=2
 ```
@@ -62,7 +62,7 @@ the ones which your runtime supports with `java --list-modules`. At the time
 of writing, using the `jdk-17+35` release, the list of extra modules is as
 follows:
 
-```
+```output
  jdk.attach
  jdk.compiler
  jdk.editpad
@@ -106,7 +106,7 @@ application requires.  You can do this with the
 command.  For example if I take a simple "Hello World!" application I can
 get the list of modules it requires as follows:
 
-```
+```bash
 $ jdk-17+35/bin/jdeps Hello.class
 Hello.class -> java.base
    <unnamed>        -> java.io        java.base
@@ -120,7 +120,7 @@ packages my application uses and which modules they relate to.  I can
 therefore create an even smaller custom runtime that will be suitable for my
 application using the following `jlink` command:
 
-```
+```bash
    jdk-17+35/bin/jlink --add-modules java.base --output jdk-17+35-minimaljre \
       --strip-debug --no-man-pages --no-header-files --compress=2
 ```

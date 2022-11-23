@@ -30,7 +30,7 @@ The original 8u342 Windows x64 release introduced a regression requiring the Vis
 
 ### Eclipse Temurin 11 for AIX requires XLC 16.1 runtime
 
-Due to some recent changes in the Harfbuzz library version used to build OpenJDK 11, XLC 16.1 is now required instead of XLC 13.1. Users will therefore be required to install the XLC 16.1 runtime on their system if they don't already have it. This change only affects Eclipse Temurin 11. The XLC16.1 runtime for AIX can be downloaded from https://www.ibm.com/support/pages/ibm-xl-cc-runtime-aix-161
+Due to some recent changes in the Harfbuzz library version used to build OpenJDK 11, XLC 16.1 is now required instead of XLC 13.1. Users will therefore be required to install the XLC 16.1 runtime on their system if they don't already have it. This change only affects Eclipse Temurin 11. The XLC16.1 runtime for AIX can be downloaded from https://www.ibm.com/support/pages/ibm-xl-cc-runtime-aix-161.
 
 Further discussion on this issue and the changes required can be found at the links below:
 
@@ -55,4 +55,3 @@ This release contains the following Root CA changes as described in the [Mozilla
 **Removals:**
 
 * Hellenic Academic and Research Institutions RootCA 2011
-
