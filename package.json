@@ -68,7 +68,7 @@
     "@types/testing-library__jest-dom": "^5.14.5",
     "@vitejs/plugin-react": "^2.2.0",
     "@vitest/coverage-c8": "^0.25.2",
-    "babel-preset-gatsby": "^3.0.0",
+    "babel-preset-gatsby": "^3.1.0",
     "cross-fetch": "^3.1.5",
     "gatsby-cli": "^5.0.0",
     "identity-obj-proxy": "^3.0.0",
