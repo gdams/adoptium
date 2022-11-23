@@ -19,7 +19,7 @@ const Byline = (props) => {
       }}
       className='byline'
     >
-      {date} – posted by &nbsp; <Link to={href}>{author}</Link> <ProfilePicInline identifier={identifier} name={author.name} />
+      {date} – posted by &nbsp; <Link to={href}>{author}</Link> <ProfilePicInline identifier={identifier} name={author} />
     </div>
   );
 };

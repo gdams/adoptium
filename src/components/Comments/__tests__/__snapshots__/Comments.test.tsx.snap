@@ -1,0 +1,19 @@
+// Vitest Snapshot v1
+
+exports[`Comments component > should render correctly 1`] = `
+<div>
+  <p
+    style="align-items: center; display: flex; flex-wrap: wrap; justify-content: flex-start; background-color: rgb(227, 227, 227); border-radius: 4px; padding: 0.5em; margin-top: 1em;"
+  >
+    <em>
+      Do you have questions or want to discuss this post? Hit us up on the 
+      <a
+        href="https://adoptium.slack.com/"
+      >
+        Adoptium Slack workspace
+      </a>
+      !
+    </em>
+  </p>
+</div>
+`;

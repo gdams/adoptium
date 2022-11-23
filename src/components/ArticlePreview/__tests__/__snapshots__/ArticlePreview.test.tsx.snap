@@ -1,0 +1,91 @@
+// Vitest Snapshot v1
+
+exports[`ArticlePreview component > should render correctly 1`] = `
+<div>
+  <article
+    class="pb-3"
+  >
+    <header>
+      <h3>
+        <a
+          href="/test-post"
+        >
+          Test Title
+        </a>
+      </h3>
+      <div
+        class="byline"
+        style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem; text-decoration: none;"
+      >
+        2021-01-01
+         – posted by   
+        <a
+          href="/blog/author/pmc"
+        >
+          Adoptium PMC
+        </a>
+         
+        <img
+          alt="Adoptium PMC"
+          image="[object Object]"
+          stlye="[object Object]"
+          style="margin-left: 0.5rem; margin-bottom: 0px; min-width: 30px; border-radius: 100%;"
+        />
+      </div>
+    </header>
+    <section>
+      <p>
+        Test Description
+         
+        <a
+          href="/test-post"
+        >
+          Read more
+        </a>
+      </p>
+    </section>
+  </article>
+</div>
+`;
+
+exports[`ArticlePreview component > should render correctly no match 1`] = `
+<div>
+  <article
+    class="pb-3"
+  >
+    <header>
+      <h3>
+        <a
+          href="/test-post"
+        >
+          Test Title
+        </a>
+      </h3>
+      <div
+        class="byline"
+        style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem; text-decoration: none;"
+      >
+        2021-01-01
+         – posted by   
+        <a
+          href="/blog/author/foo"
+        >
+          Test Author
+        </a>
+         
+      </div>
+    </header>
+    <section>
+      <p>
+        Test Excerpt
+         
+        <a
+          href="/test-post"
+        >
+          Read more
+        </a>
+      </p>
+    </section>
+  </article>
+</div>
+`;

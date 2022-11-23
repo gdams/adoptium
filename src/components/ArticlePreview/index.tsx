@@ -15,23 +15,23 @@ const ArticlePreview = (props) => {
   const excerpt = props.excerpt;
   const identifier = props.identifier;
 
-  return (
-    <article className='pb-3'>
-      <header>
-        <h3>
-          <Link to={postPath}>
-            {title}
-          </Link>
-        </h3>
-        <Byline author={author} date={date} identifier={identifier}/>
-      </header>
-      <section>
-        <p>
-          {description || excerpt} <Link to={postPath}>Read more</Link>
-        </p>
-      </section>
-    </article>
-  );
+    return (
+        <article className='pb-3'>
+            <header>
+                <h3>
+                <Link to={postPath}>
+                    {title}
+                </Link>
+                </h3>
+                <Byline author={author} date={date} identifier={identifier}/>
+            </header>
+            <section>
+                <p>
+                {description || excerpt} <Link to={postPath}>Read more</Link>
+                </p>
+            </section>
+        </article>
+    );
 };
 
 export default ArticlePreview;

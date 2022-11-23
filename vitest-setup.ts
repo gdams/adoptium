@@ -18,6 +18,30 @@ vi.mock('gatsby', async () => {
         description: 'Sample Description',
         siteUrl: 'https://sample.com',
       }
+    },
+    avatar: {
+      edges: [
+        {
+          node: {
+            name: 'pmc',
+            childImageSharp: {
+              gatsbyImageData: {
+                layout: 'fixed',
+                images: {
+                  fallback: {
+                    src: 'https://sample-images.com/pmc.png',
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    mdx: {
+      frontmatter: {
+        author: 'pmc',
+      }
     }
   }
 
@@ -32,9 +56,10 @@ vi.mock('gatsby', async () => {
 vi.mock('gatsby-plugin-image', async () => {
   const plugin = await vi.importActual<typeof import('gatsby-plugin-image')>('gatsby-plugin-image')
 
-  const mockImage = ({imgClassName, ...props}: any) => {
+  const mockImage = ({imgClassName, imgStyle, ...props}: any) => {
     return React.createElement('img', {
       className: imgClassName,
+      stlye: imgStyle,
       ...props
     })
   }

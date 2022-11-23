@@ -1,0 +1,13 @@
+// Vitest Snapshot v1
+
+exports[`Byline component > should render correctly 1`] = `
+<div>
+  <p
+    style="padding: 0.5em; background-color: rgb(227, 227, 227);"
+  >
+    <em>
+       – Adoptium Team
+    </em>
+  </p>
+</div>
+`;

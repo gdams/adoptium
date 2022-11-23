@@ -1,0 +1,14 @@
+// Vitest Snapshot v1
+
+exports[`ProfilePic component > should render correctly - no profile pic found 1`] = `<div />`;
+
+exports[`ProfilePic component > should render correctly 1`] = `
+<div>
+  <img
+    alt="sample name"
+    image="[object Object]"
+    stlye="[object Object]"
+    style="margin-right: 0.5rem; margin-bottom: 0px; min-width: 50px; border-radius: 100%;"
+  />
+</div>
+`;
