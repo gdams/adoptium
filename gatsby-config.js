@@ -13,8 +13,8 @@ module.exports = {
     author: 'Eclipse Adoptium',
     siteUrl: 'https://adoptium.net',
     social: {
-      twitter: 'Adoptium',
-    },
+      twitter: 'Adoptium'
+    }
   },
   plugins: [
     'gatsby-plugin-sitemap',
@@ -23,21 +23,21 @@ module.exports = {
       options: {
         name: 'asciidoc-pages',
         path: path.join(__dirname, 'content/asciidoc-pages'),
-        ignore: ['**/*.md'],
+        ignore: ['**/*.md']
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'blog',
-        path:`${__dirname}/content/blog`,
+        path: path.join(__dirname, 'content/blog')
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
-        path: `${__dirname}/static/images/authors`,
+        path: path.join(__dirname, 'static/images/authors')
       }
     },
     {
@@ -45,7 +45,7 @@ module.exports = {
       options: {
         name: 'locale',
         path: path.join(__dirname, 'locales'),
-        ignore: ['**/*.md'],
+        ignore: ['**/*.md']
       }
     },
     {
@@ -61,7 +61,7 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-feed",
+      resolve: 'gatsby-plugin-feed',
       options: {
         query: `
           {
@@ -84,8 +84,8 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.postPath,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.postPath
-                });
-              });
+                })
+              })
             },
             query: `
               {
@@ -107,12 +107,12 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-            title: "Adoptium Blog",
-            match: undefined,
-          },
-        ],
-      },
+            output: '/rss.xml',
+            title: 'Adoptium Blog',
+            match: undefined
+          }
+        ]
+      }
     },
     'gatsby-transformer-asciidoc',
     {
@@ -123,14 +123,14 @@ module.exports = {
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590,
-            },
+              maxWidth: 590
+            }
           },
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
-        ],
-      },
+          'gatsby-remark-smartypants'
+        ]
+      }
     },
     {
       resolve: 'gatsby-plugin-google-gtag',
