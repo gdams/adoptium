@@ -3,7 +3,7 @@ name: Contributor Updater
 on:
   push:
     paths:
-    - src/asciidoc-pages/**
+    - content/asciidoc-pages/**
     branches:         
     - main
 
@@ -24,7 +24,7 @@ jobs:
     - run: |
         # shellcheck disable=2043
         for changed_file in ${{ steps.files.outputs.all }}; do
-          if [[ ${changed_file} =~ ^src/asciidoc.*.adoc ]]; then
+          if [[ ${changed_file} =~ ^content/asciidoc.*.adoc ]]; then
             current_authors=$(grep ':page-authors:' "${changed_file}" | sed -n -e 's/^.*page-authors: //p')
             contibutors=$(python3 .github/workflows/github-file-contributors.py --file "${changed_file}")
             for contibutor in ${contibutors}; do
@@ -44,7 +44,7 @@ jobs:
       with:
         title: "Update Asciidoc Contributors"
         body: "This is an automatically generated pull request, it will be automatically merged if all the CI tests pass."
-        path: "src/asciidoc-pages/"
+        path: "content/asciidoc-pages/"
         branch: "contributor_bot"
         commit-message: "contributors: update asciidoc contributors"
         labels: automerge

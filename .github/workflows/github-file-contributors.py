@@ -17,7 +17,7 @@ parser = argparse.ArgumentParser(
 parser.add_argument(
     "--file",
     nargs="?",
-    default="src/asciidoc-pages/docs/marketplace-policy.adoc",
+    default="content/asciidoc-pages/docs/marketplace-policy.adoc",
     help="specify the relative path to a particular file",
 )
 args = parser.parse_args()
