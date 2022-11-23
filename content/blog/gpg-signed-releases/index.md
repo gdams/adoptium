@@ -64,7 +64,7 @@ jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | sel
 Note that as mentioned in the previous section, we also provide the
 sha256sums which can be obtained from the JSON file with
 
-```
+```bash
 jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | select (.image_type=="jdk") .package.checksum' adopt.json
 ```
 
