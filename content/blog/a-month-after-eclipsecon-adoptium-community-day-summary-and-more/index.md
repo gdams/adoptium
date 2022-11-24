@@ -30,7 +30,7 @@ On Monday, I had the opportunity to meet most of my Eclipse co-workers during ou
 - **[Eclipse Adoptium Incubator](https://projects.eclipse.org/projects/adoptium.incubator)**. With this project, Adoptium is able to foster collaboration with a low threshold for setting up new projects. The main goal is to prompt innovation, allowing the community to explore ideas that may become full projects or wind-up after lessons have been learnt. Currently, we have a project about a [Fast Start-up](https://blog.adoptium.net/2022/10/a-short-exploration-of-java-class-pre-initialization/) with collaboration between Alibaba and Google.
 - **[Migration toolkit for Java](https://projects.eclipse.org/projects/adoptium.emt4j)**. Most recent project to come to Adoptium, it helps manage some organizations' difficulties moving from Java 8 to Java 11+. The Alibaba team led the project as they wanted to share this tool.
 
-### Focus Areas for 2023, Adoptium Working group has four pillars for 2023 
+### Focus Areas for 2023, Adoptium Working group has four pillars for 2023
 
 - **Vibrant Healthy projects and Community**. Continue building a solid and healthy community. Attend events, and promote Adoptium.
 - **Increase Product Usage**. Keep up with trends, and ensure we build what people need. Explain the real value of our products. We already have the “we produce high-quality binaries”. We want to show how these binaries are produced, talk with organizations, and ensure they understand the project's position.
