@@ -122,14 +122,14 @@ module.exports = {
         mdxOptions: {
           remarkPlugins: [
             // Add GitHub Flavored Markdown (GFM) support
-            require('remark-gfm'),
+            require('remark-gfm')
           ]
         },
         gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 630,
+              maxWidth: 630
             }
           },
           'gatsby-remark-prismjs',
