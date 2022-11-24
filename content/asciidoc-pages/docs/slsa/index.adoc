@@ -3,7 +3,7 @@
 :keywords: Security SSDF SLSA Supply Chain
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: tellison, sxa
+:page-authors: tellison, sxa, gdams
 
 
 The https://slsa.dev/[Supply chain Levels for Software Artifacts (SLSA)^] is a security framework that helps to provide confidence that a set of inputs such as source code, libraries, and software packages, lead to a set of well-defined outputs such as a binary and software bill of materials. It is a structured set of technical requirements to help a producer trust the parts of the supply chain that are in their direct control and helps provide confidence in the build process to catch any upstream supply chain attacks.

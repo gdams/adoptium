@@ -3,7 +3,7 @@
 :keywords: Security SSDF SLSA Supply Chain
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: tellison
+:page-authors: tellison, gdams
 
 The Adoptium project produces high quality Java runtimes for use in mission-critical environments. It is important to the project and our users that the software we deliver is both safe and secure. Adoptium follows a set of fundamental, sound, and secure software development practices based on established secure software development practices that can be verified to establish the integrity of our deliverables.
 
