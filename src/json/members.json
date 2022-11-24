@@ -144,5 +144,11 @@
     "logo": "spearhead.jpg",
     "url": "https://spearhead.systems",
     "tier": "infra"
+  },
+  {
+    "name": "JFrog",
+    "logo": "jfrog.svg",
+    "url": "https://jfrog.com",
+    "tier": "infra"
   }
 ]
