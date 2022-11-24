@@ -14,7 +14,10 @@ import Tags from '../components/Tags';
 import Comments from '../components/Comments';
 
 const components = {
-  GuestPost
+  GuestPost,
+  blockquote: props => <blockquote style={{ paddingLeft: '1.5rem', borderLeft: '.3rem solid hsla(0,0%,0%,0.9)'}} className="blockquote" {...props} />,
+  table: props => <table className="table table-hover" {...props} />,
+  thead: props => <thead className="table-dark" {...props} />,
 };
 
 const BlogPostTemplate = ({ data, pageContext, location, children }) => {
@@ -41,7 +44,7 @@ const BlogPostTemplate = ({ data, pageContext, location, children }) => {
                 <div className='col-lg-9 col-md-9 mx-auto'>
                     <article>
                         <header className='pb-5'>
-                        <h1 className='mb-0'>{post.frontmatter.title}</h1>
+                        <h1 className='mb-0' style={{fontWeight: '900'}}>{post.frontmatter.title}</h1>
                         <Byline date={post.frontmatter.date} author={author.name} identifier={post.frontmatter.author} />
                         <ShareButton location={location} siteMetadata={data.site.siteMetadata} post={post.frontmatter}/>
                         </header>
