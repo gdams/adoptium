@@ -30,7 +30,7 @@
     "gatsby-plugin-offline": "^6.1.0",
     "gatsby-plugin-react-i18next": "^2.0.5",
     "gatsby-plugin-react-svg": "^3.3.0",
-    "gatsby-plugin-sass": "^6.1.0",
+    "gatsby-plugin-sass": "^6.2.0",
     "gatsby-plugin-sharp": "^5.1.0",
     "gatsby-plugin-sitemap": "^6.1.0",
     "gatsby-remark-autolink-headers": "^6.1.0",
