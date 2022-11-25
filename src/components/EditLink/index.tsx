@@ -11,7 +11,7 @@ const EditLink = ({ relativePath }: Props) => {
     return null;
   }
 
-  const href = `https://github.com/adoptium/website-v2/edit/main/content/asciidoc-pages/${relativePath}`;
+  const href = `https://github.com/adoptium/adoptium.net/edit/main/content/asciidoc-pages/${relativePath}`;
 
   return (
     <div className='mx-auto pt-5'>

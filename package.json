@@ -1,7 +1,7 @@
 {
   "name": "adoptium-website",
   "private": false,
-  "description": "Source code for Adoptium website (https://adoptium.net",
+  "description": "Source code for Adoptium website (https://adoptium.net)",
   "version": "0.1.0",
   "author": "George Adams <gadams@microsoft.com>",
   "dependencies": {
@@ -105,10 +105,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adoptium/website-v2.git"
+    "url": "git+https://github.com/adoptium/adoptium.net.git"
   },
   "bugs": {
-    "url": "https://github.com/adoptium/website-v2/issues"
+    "url": "https://github.com/adoptium/adoptium.net/issues"
   },
   "ts-standard": {
     "ignore": [

@@ -19,7 +19,7 @@ exports[`EditLink component > renders correctly 1`] = `
     <br />
     <a
       class="btn btn-secondary mt-2"
-      href="https://github.com/adoptium/website-v2/edit/main/content/asciidoc-pages//fake/path.adoc"
+      href="https://github.com/adoptium/adoptium.net/edit/main/content/asciidoc-pages//fake/path.adoc"
       rel="noopener noreferrer"
       style="border-color: #0869da; background-color: rgb(246, 248, 250);"
       target="_blank"

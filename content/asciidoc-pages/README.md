@@ -26,7 +26,7 @@ The directory layout of these files is very important as it determines the path 
 
 ## Required Attributes
 
-Every asciidoc file must have a `page-authors` attribute at the top. If you are starting a new page then start with just your own GitHub username. There is a [GitHub Action](https://github.com/adoptium/website-v2/blob/main/.github/workflows/check-contributors.yml) that will update contributors automatically once the doc has been merged so there is no need to add your username if you're editing an existing doc.
+Every asciidoc file must have a `page-authors` attribute at the top. If you are starting a new page then start with just your own GitHub username. There is a [GitHub Action](https://github.com/adoptium/adoptium.net/blob/main/.github/workflows/check-contributors.yml) that will update contributors automatically once the doc has been merged so there is no need to add your username if you're editing an existing doc.
 
 ```adoc
 :page-authors: gdams, karianna, sxa
