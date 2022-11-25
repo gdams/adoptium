@@ -6,13 +6,13 @@ Thanks for your interest in this project.
 
 adoptium.net is a project to regroup assets for the Eclipse Foundation look and feel.
 
-* [https://github.com/adoptium/website-v2](https://github.com/adoptium/website-v2)
+* [https://github.com/adoptium/adoptium.net](https://github.com/adoptium/adoptium.net)
 
 ## Developer resources
 
 The project maintains the following source code repositories
 
-* [https://github.com/adoptium/website-v2](https://github.com/adoptium/website-v2)
+* [https://github.com/adoptium/adoptium.net](https://github.com/adoptium/adoptium.net)
 
 ## Eclipse Contributor Agreement
 
