@@ -48,6 +48,7 @@ wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /et
 ----
 echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
 ----
+TIP: For Linux Mint (based on Ubuntu) you have to replace `VERSION_CODENAME` with `UBUNTU_CODENAME`.
 +
 . Install the Temurin version you require:
 +
