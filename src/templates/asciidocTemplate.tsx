@@ -13,7 +13,7 @@ import Seo from '../components/Seo'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@fortawesome/fontawesome-free/css/v4-shims.min.css'
 
-const AsciidocTemplate = ({ data }) =>{
+const AsciidocTemplate = ({ data }) => {
   useEffect(() => {
     asciidocFormatter()
     highlightCode()
