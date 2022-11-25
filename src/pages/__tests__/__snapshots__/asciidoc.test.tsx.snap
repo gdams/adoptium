@@ -2,61 +2,6 @@
 
 exports[`Asciidoc pages > renders correctly - installation slug 1`] = `
 <main>
-  <title>
-    Asciidoc Page title | Adoptium
-  </title>
-  <meta
-    content="Sample Description"
-    name="description"
-  />
-  <meta
-    content="Asciidoc Page title | Adoptium"
-    name="og:title"
-  />
-  <meta
-    content="Sample Description"
-    name="og:description"
-  />
-  <meta
-    content="website"
-    name="og:type"
-  />
-  <meta
-    content="https://sample.com/images/social-image.png"
-    name="og:image"
-  />
-  <meta
-    content="summary_large_image"
-    name="twitter:card"
-  />
-  <meta
-    content="@adoptium"
-    name="twitter:site"
-  />
-  <meta
-    content="https://sample.com/images/social-image.png"
-    name="twitter:image"
-  />
-  <meta
-    content="@adoptium"
-    name="twitter:creator"
-  />
-  <meta
-    content="Asciidoc Page title | Adoptium"
-    name="twitter:title"
-  />
-  <meta
-    content="Sample Description"
-    name="twitter:description"
-  />
-  <link
-    href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <script
-    src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"
-  />
   <section
     class="py-5 container"
   >
@@ -461,61 +406,6 @@ exports[`Asciidoc pages > renders correctly - installation slug 1`] = `
 
 exports[`Asciidoc pages > renders correctly 1`] = `
 <main>
-  <title>
-    Asciidoc Page title | Adoptium
-  </title>
-  <meta
-    content="Sample Description"
-    name="description"
-  />
-  <meta
-    content="Asciidoc Page title | Adoptium"
-    name="og:title"
-  />
-  <meta
-    content="Sample Description"
-    name="og:description"
-  />
-  <meta
-    content="website"
-    name="og:type"
-  />
-  <meta
-    content="https://sample.com/images/social-image.png"
-    name="og:image"
-  />
-  <meta
-    content="summary_large_image"
-    name="twitter:card"
-  />
-  <meta
-    content="@adoptium"
-    name="twitter:site"
-  />
-  <meta
-    content="https://sample.com/images/social-image.png"
-    name="twitter:image"
-  />
-  <meta
-    content="@adoptium"
-    name="twitter:creator"
-  />
-  <meta
-    content="Asciidoc Page title | Adoptium"
-    name="twitter:title"
-  />
-  <meta
-    content="Sample Description"
-    name="twitter:description"
-  />
-  <link
-    href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <script
-    src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"
-  />
   <section
     class="py-5 container"
   >
