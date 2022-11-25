@@ -9,6 +9,12 @@ GATSBY_CONCURRENT_DOWNLOAD = "15"
 GATSBY_CPU_COUNT = "1"
 
 [[redirects]]
+  from = "https://blog.adoptium.net/*"
+  to = "https://adoptium.net/blog/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/"
   query = {variant = ":variant"}
   to = "/temurin/releases/"
