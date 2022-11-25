@@ -34,10 +34,7 @@ describe('Members page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-
-    waitFor(() => {
-      expect(title).toHaveTextContent('Adoptium Working Group Members | Adoptium');
-    });
+    expect(title?.textContent).toEqual('Adoptium Working Group Members | Adoptium');
   });
 
   it('has no accessibility violations', async () => {

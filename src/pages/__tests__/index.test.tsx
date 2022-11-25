@@ -17,10 +17,7 @@ describe('Index page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-
-    waitFor(() => {
-      expect(title).toHaveTextContent('Home | Adoptium');
-    });
+    expect(title?.textContent).toEqual('Home | Adoptium');
   });
 
   it('has no accessibility violations', async () => {

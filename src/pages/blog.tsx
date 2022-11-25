@@ -34,7 +34,7 @@ const BlogIndex = ({ data }) => {
                         />
                         );
                     })}
-                    <nav>
+                    <div>
                         <ul
                         style={{
                             display: 'flex',
@@ -53,7 +53,7 @@ const BlogIndex = ({ data }) => {
                             )}
                         </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </section>

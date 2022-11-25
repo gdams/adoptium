@@ -6,13 +6,15 @@ exports[`ArticlePreview component > should render correctly 1`] = `
     class="pb-3"
   >
     <header>
-      <h3>
+      <h2
+        class="h3"
+      >
         <a
           href="/test-post"
         >
           Test Title
         </a>
-      </h3>
+      </h2>
       <div
         class="byline"
         style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem; text-decoration: none;"
@@ -54,13 +56,15 @@ exports[`ArticlePreview component > should render correctly no match 1`] = `
     class="pb-3"
   >
     <header>
-      <h3>
+      <h2
+        class="h3"
+      >
         <a
           href="/test-post"
         >
           Test Title
         </a>
-      </h3>
+      </h2>
       <div
         class="byline"
         style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem; text-decoration: none;"

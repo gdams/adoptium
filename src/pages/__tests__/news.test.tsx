@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, waitFor } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import { useOnScreen } from '../../hooks/useOnScreen';
 import { describe, expect, it, vi } from 'vitest'
 import { fetchNewsItems } from '../../hooks/fetchNews';
@@ -60,10 +60,7 @@ describe('News page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-
-    waitFor(() => {
-      expect(title).toHaveTextContent('News & Events | Adoptium');
-    });
+    expect(title).toHaveTextContent('News & Events | Adoptium');
   });
 
   it('has no accessibility violations', async () => {

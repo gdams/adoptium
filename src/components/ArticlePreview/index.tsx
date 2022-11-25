@@ -18,11 +18,11 @@ const ArticlePreview = (props) => {
     return (
         <article className='pb-3'>
             <header>
-                <h3>
+                <h2 className='h3'>
                 <Link to={postPath}>
                     {title}
                 </Link>
-                </h3>
+                </h2>
                 <Byline author={author} date={date} identifier={identifier}/>
             </header>
             <section>

@@ -34,10 +34,7 @@ describe('Sponsors page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-
-    waitFor(() => {
-      expect(title).toHaveTextContent('Sponsors | Adoptium');
-    });
+    expect(title?.textContent).toEqual('Adoptium Project Sponsors | Adoptium');
   });
 
   it('has no accessibility violations', async () => {

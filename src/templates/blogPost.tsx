@@ -49,7 +49,7 @@ const BlogPostTemplate = ({ data, pageContext, location, children }) => {
                         </footer>
                     </article>
 
-                    <nav>
+                    <div>
                         <ul
                         style={{
                             display: 'flex',
@@ -74,7 +74,7 @@ const BlogPostTemplate = ({ data, pageContext, location, children }) => {
                             )}
                         </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </section>
@@ -114,7 +114,6 @@ export const pageQuery = graphql`
     mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      body
       frontmatter {
         title
         author

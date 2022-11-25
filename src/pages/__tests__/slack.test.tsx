@@ -17,10 +17,7 @@ describe('Slack page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-
-    waitFor(() => {
-      expect(title).toHaveTextContent('Slack Signup | Adoptium');
-    });
+    expect(title?.textContent).toEqual('Slack Signup | Adoptium');
   });
 
   it('has no accessibility violations', async () => {

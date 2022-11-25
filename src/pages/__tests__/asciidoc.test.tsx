@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import AllAsciidocPages, { Head } from '../../templates/asciidocTemplate';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
@@ -20,10 +20,7 @@ describe('Asciidoc pages', () => {
     const { container } = render(<Head data={mockData} />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-
-    waitFor(() => {
-      expect(title).toHaveTextContent('Asciidoc Page title | Adoptium');
-    });
+    expect(title?.textContent).toEqual('Asciidoc Page title | Adoptium');
   });
 
   it('renders correctly - installation slug', () => {

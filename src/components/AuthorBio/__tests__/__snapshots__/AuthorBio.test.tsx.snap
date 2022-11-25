@@ -15,6 +15,7 @@ exports[`AuthorBio component > should render correctly 1`] = `
     <p>
        
       <a
+        aria-label="GitHub Profile"
         class="no-underline"
         href="https://github.com/adoptium"
       >
@@ -34,6 +35,7 @@ exports[`AuthorBio component > should render correctly 1`] = `
       </a>
        
       <a
+        aria-label="Twitter Profile"
         class="no-underline"
         href="https://twitter.com/adoptium"
       >
@@ -53,6 +55,7 @@ exports[`AuthorBio component > should render correctly 1`] = `
       </a>
        
       <a
+        aria-label="LinkedIn Profile"
         class="no-underline"
         href="https://www.linkedin.com/in/adoptium"
       >

@@ -35,7 +35,7 @@ const BlogPage = ({ data, pageContext }) => {
                             />
                         );
                     })}
-                    <nav>
+                    <div>
                         <ul
                         style={{
                             display: 'flex',
@@ -60,7 +60,7 @@ const BlogPage = ({ data, pageContext }) => {
                             )}
                         </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
             </div>
         </section>

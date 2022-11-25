@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
 import Download, { Head } from '../download';
@@ -71,10 +71,7 @@ describe('Download page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-
-    waitFor(() => {
-      expect(title).toHaveTextContent('Thank You | Adoptium');
-    });
+    expect(title).toHaveTextContent('Thank You | Adoptium');
   });
 
   it('has no accessibility violations', async () => {
