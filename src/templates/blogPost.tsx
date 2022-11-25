@@ -27,19 +27,8 @@ const BlogPostTemplate = ({ data, pageContext, location, children }) => {
   const author = AuthorData[post.frontmatter.author];
   const tags = post.frontmatter.tags;
 
-  let twitterCard = '';
-
-  if (post.frontmatter && post.frontmatter.featuredImage) {
-    twitterCard = post.frontmatter.featuredImage.childImageSharp.gatsbyImageData.images.fallback.src;
-  }
-
   return (
     <Layout>
-        <Seo
-            title={post.frontmatter.title}
-            description={post.frontmatter.description || post.excerpt}
-            twitterCard={twitterCard}
-        />
         <section className='py-5 container'>
             <div className='row py-lg-5'>
                 <div className='col-lg-9 col-md-9 mx-auto'>
@@ -94,6 +83,22 @@ const BlogPostTemplate = ({ data, pageContext, location, children }) => {
 };
 
 export default BlogPostTemplate;
+
+export const Head = ({ data }) => {
+  const post = data.mdx;
+  let twitterCard = '';
+
+  if (post.frontmatter && post.frontmatter.featuredImage) {
+    twitterCard = post.frontmatter.featuredImage.childImageSharp.gatsbyImageData.images.fallback.src;
+  }
+  return (
+    <Seo
+      title={post.frontmatter.title}
+      description={post.frontmatter.description || post.excerpt}
+      twitterCard={twitterCard}
+    />
+  );
+};
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!, $language: String!) {

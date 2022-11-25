@@ -14,10 +14,6 @@ const AuthorPage = ({ data, pageContext }) => {
 
   return (
     <Layout>
-        <Seo
-            title={author.name}
-            description={author.summary}
-        />
         <section className='py-5 container'>
             <div className='row py-lg-5'>
                 <div className='col-lg-9 col-md-9 mx-auto'>
@@ -51,6 +47,16 @@ const AuthorPage = ({ data, pageContext }) => {
 };
 
 export default AuthorPage;
+
+export const Head = ({ pageContext }) => {
+  const author = AuthorData[pageContext.author];
+  return (
+    <Seo
+      title={author.name}
+      description={author.summary}
+    />
+  );
+};
 
 export const authorPageQuery = graphql`
   query authorPageQuery($author: String!, $limit: Int!, $language: String!) {

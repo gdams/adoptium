@@ -13,7 +13,7 @@ import Seo from '../components/Seo'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@fortawesome/fontawesome-free/css/v4-shims.min.css'
 
-export default function Template ({ data }) {
+const AsciidocTemplate = ({ data }) =>{
   useEffect(() => {
     asciidocFormatter()
     highlightCode()
@@ -24,7 +24,6 @@ export default function Template ({ data }) {
   const { relativePath } = file
   return (
     <Layout>
-      <Seo title={convert(document.title)} />
       <section className='py-5 container'>
         <div className='asciidoc-container container-adoc' id='asciidoc-container'>
           <div className='asciidoc'>
@@ -49,6 +48,16 @@ export default function Template ({ data }) {
     </Layout>
   )
 }
+
+export default AsciidocTemplate;
+
+export const Head = ({ data: { asciidoc: { document } } }) => {
+  return (
+    <Seo
+      title={convert(document.title)}
+    />
+  );
+};
 
 export const pageQuery = graphql`
   query($id: String!, $language: String!) {

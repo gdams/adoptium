@@ -11,10 +11,6 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-        <Seo
-            title={pageContext.tag}
-            description={pageContext.tag}
-        />
         <section className='py-5 container'>
             <div className='row py-lg-5'>
                 <div className='col-lg-9 col-md-9 mx-auto'>
@@ -45,6 +41,15 @@ const Tags = ({ pageContext, data }) => {
 
 
 export default Tags;
+
+export const Head = ({ pageContext }) => {
+  return (
+    <Seo
+      title={pageContext.tag}
+      description={pageContext.tag}
+    />
+  );
+};
 
 export const tagsPageQuery = graphql`
   query tagsPageQuery($tag: String!, $language: String!) {

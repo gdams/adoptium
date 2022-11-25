@@ -9,12 +9,11 @@ import ArticlePreview from '../components/ArticlePreview';
 
 const BlogPage = ({ data, pageContext }) => {
   const posts = data.allMdx.edges;
-  const { currentPageNumber, previousPageNumber, nextPageNumber } = pageContext;
+  const { previousPageNumber, nextPageNumber } = pageContext;
   const previousPageLink = previousPageNumber === 1 ? '/blog' : `/blog/page/${previousPageNumber}`;
 
   return (
     <Layout>
-        <Seo title={`All posts – Page ${currentPageNumber}`} />
         <section className='py-5 container'>
             <div className='row py-lg-5'>
                 <div className='col-lg-9 col-md-9 mx-auto'>
@@ -70,6 +69,15 @@ const BlogPage = ({ data, pageContext }) => {
 };
 
 export default BlogPage;
+
+export const Head = ({ pageContext }) => {
+  const { currentPageNumber } = pageContext;
+  return (
+    <Seo
+      title={`All posts – Page ${currentPageNumber}`}
+    />
+  );
+};
 
 export const blogPageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!, $language: String!) {

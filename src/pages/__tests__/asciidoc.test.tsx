@@ -1,6 +1,6 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import AllAsciidocPages from '../../templates/asciidocTemplate';
+import { render, waitFor } from '@testing-library/react';
+import AllAsciidocPages, { Head } from '../../templates/asciidocTemplate';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 import { createAsciidocData } from '../../__fixtures__/page';
@@ -14,6 +14,16 @@ describe('Asciidoc pages', () => {
     const pageContent = container.querySelector('main');
 
     expect(pageContent).toMatchSnapshot();
+  });
+
+  it('head renders correctly', () => {
+    const { container } = render(<Head data={mockData} />);
+    // eslint-disable-next-line
+    const title = container.querySelector('title');
+
+    waitFor(() => {
+      expect(title).toHaveTextContent('Asciidoc Page title | Adoptium');
+    });
   });
 
   it('renders correctly - installation slug', () => {
