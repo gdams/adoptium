@@ -9,7 +9,7 @@ on:
 
 jobs:
   check_contributors:
-    if: github.repository == 'adoptium/website-v2'
+    if: github.repository_owner == 'adoptium'
     name: Check Contributors
     runs-on: ubuntu-latest
     steps:
