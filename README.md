@@ -12,7 +12,7 @@ This is is a Node.js / npm driven stack with AsciiDoc used for static content an
 
 ## How to develop locally
 
-This assumes you already have Node.js and npm installed. At time of writing we use Node.js 16.14.0 and npm 8.3.1. We recommend using nvm to manage your versions.
+This assumes you already have Node.js and npm installed. Node.js version 18 or above is required. We recommend using nvm to manage your versions.
 
 1. Install your dependencies
 
