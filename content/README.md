@@ -90,11 +90,11 @@ Example:
 
 This will render the following section at the top of the blog post:
 
-
+![Guest Post example](https://user-images.githubusercontent.com/20224954/204316138-cfd7cdbe-6727-4579-8dd0-443ba2435c41.png)
 
 ## Adding Authors
 
-1. Create an entry in `content/authors.json`. Structure:
+1. Create an entry in [`src/json/authors.json`](../src/json/authors.json). The schema uses this structure:
 
     ```json
     {
@@ -107,4 +107,4 @@ This will render the following section at the top of the blog post:
     }
     ```
 
-2. Your profile picture comes from GitHub but this can be changed by adding a profile picture in `content/assets/authors`. If the key in the `authors.json` is `janedoe`, name the image file `janedoe.jpg`.
+2. Your profile picture comes from GitHub but this can be changed by adding a profile picture in `static/images/authors`. If the key in the `authors.json` is `janedoe`, name the image file `janedoe.jpg`.
