@@ -2,10 +2,12 @@ name: Contributor Updater
 
 on:
   push:
-    paths:
-    - content/asciidoc-pages/**
-    branches:         
-    - main
+    paths: [ content/asciidoc-pages/** ]
+    branches: [ main ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   check_contributors:
