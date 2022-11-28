@@ -10,4 +10,8 @@ the requirements below.
 - [ ] `npm test` passes
 - [ ] documentation is changed or added (if applicable)
 - [ ] permission has been obtained to add new logo (if applicable)
+<<<<<<< HEAD
 - [ ] contribution guidelines followed [here](https://github.com/adoptium/adoptium.net/blob/main/CONTRIBUTING.md)
+=======
+- [ ] contribution guidelines followed [here](https://github.com/adoptium/adoptium.net/blob/main/CONTRIBUTING.md)
+>>>>>>> 377ff55 (repo name changes)
