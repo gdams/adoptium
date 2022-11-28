@@ -84,11 +84,13 @@ Example:
 
 ```markdown
 <GuestPost>
-    This a guest post by <a href="https://www.linkedin.com/in/weitzelm/">Mark Weitzel</a>, General Manager, New Relic One at New Relic.
+    This a guest post by [Mark Weitzel](https://www.linkedin.com/in/weitzelm/), General Manager, New Relic One at New Relic.
 </GuestPost>
 ```
 
-**Note:** Markdown is not supported within `<GuestPost/>`. This is a limitation of MDX v1 and fixed in [MDX v2](https://github.com/mdx-js/mdx/issues/1041) which is currently being developed.
+This will render the following section at the top of the blog post:
+
+
 
 ## Adding Authors
 
