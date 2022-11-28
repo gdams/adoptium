@@ -236,6 +236,7 @@ exports[`BlogPost Template page > renders correctly 1`] = `
                 Collective of Adoptium Project Management Committee members
                  
                 <a
+                  aria-label="GitHub Profile"
                   class="no-underline"
                   href="https://github.com/adoptium"
                 >
@@ -255,6 +256,7 @@ exports[`BlogPost Template page > renders correctly 1`] = `
                 </a>
                  
                 <a
+                  aria-label="Twitter Profile"
                   class="no-underline"
                   href="https://twitter.com/adoptium"
                 >

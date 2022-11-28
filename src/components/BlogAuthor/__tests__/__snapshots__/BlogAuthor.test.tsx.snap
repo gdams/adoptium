@@ -1,0 +1,24 @@
+// Vitest Snapshot v1
+
+exports[`BlogAuthor component > should render correctly 1`] = `
+<div>
+  <div
+    style="display: flex;"
+  >
+    <img
+      image="[object Object]"
+      stlye="[object Object]"
+      style="margin-right: 0.5rem; margin-bottom: 0px; min-width: 50px; border-radius: 100%;"
+    />
+    <p>
+      Posted by 
+      <a
+        href="/blog/author/pmc"
+      />
+       
+       
+       
+    </p>
+  </div>
+</div>
+`;
