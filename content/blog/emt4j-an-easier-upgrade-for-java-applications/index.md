@@ -24,7 +24,7 @@ On the other hand, the JDK upgrade of Java applications is slow. It has been nea
 
 There are many possible reasons. For example, JDK 8 introduces Lambda at the language level, which is attractive to developers. The JDK 11 update at the language level is optional. However, compared with upgrading from other versions to JDK 8 (upgrading from JDK 6/7 to JDK 8 is insensitive to applications), upgrading to JDK 11/17 will be much more difficult, and there will be many compatibility problems. For example:
 
-1. Deletion of some APIs such as sun.misc.\* results in ClassNotFoundException in the code
+1. Deletion of some packages such as `sun.misc.\*` results in `ClassNotFoundException` in the running code.
 
 2. Changes in the schema of the Java Version cause an exception to the original logic for determining the Java version.
 
