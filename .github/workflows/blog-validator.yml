@@ -27,8 +27,8 @@ jobs:
           if [[ ${added_file} =~ ^content/blog.*.md ]]; then
             blog_date=$(grep 'date:' "${added_file}" | sed -n -e 's/^.*date: //p' | tr -d '"')
             # Return difference in days between today and blog date
-            diff=$(( ($(date +%s) - $(date --date $blog_date +%s)) / (60*60*24) ))
-            if [[ $diff -gt 0 ]]; then
+            diff=$(( ($(date +%s) - $(date --date "${blog_date}" +%s)) / (60*60*24) ))
+            if [[ ${diff} -gt 0 ]]; then
               line_number=$(grep -n 'date:' "${added_file}"  | cut -d : -f 1)
               echo "Blog date is in the past, please update the date to today's date"
               echo "::error file=${added_file},line=${line_number}::Blog date is in the past, please update the date to today's date"
