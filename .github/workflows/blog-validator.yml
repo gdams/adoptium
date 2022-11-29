@@ -1,0 +1,38 @@
+name: Blog Validator
+
+on:
+  pull_request:
+    paths: [ content/blog/** ]
+    branches: [ main ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check_date:
+    if: github.repository_owner == 'adoptium'
+    name: Check Date
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # v3.1.0
+
+    - id: files
+      uses: jitterbit/get-changed-files@b17fbb00bdc0c0f63fcf166580804b4d2cdc2a42 # v1
+
+    - run: |
+        # shellcheck disable=2043
+        for added_file in ${{ steps.files.outputs.added }}; do
+          if [[ ${added_file} =~ ^content/blog.*.md ]]; then
+            blog_date=$(grep 'date:' "${added_file}" | sed -n -e 's/^.*date: //p' | tr -d '"')
+            # Return difference in days between today and blog date
+            diff=$(( ($(date +%s) - $(date --date $blog_date +%s)) / (60*60*24) ))
+            if [[ $diff -gt 0 ]]; then
+              line_number=$(grep -n 'date:' "${added_file}"  | cut -d : -f 1)
+              echo "Blog date is in the past, please update the date to today's date"
+              echo "::error file=${added_file},line=${line_number}::Blog date is in the past, please update the date to today's date"
+              exit 1
+            fi
+          fi
+        done
