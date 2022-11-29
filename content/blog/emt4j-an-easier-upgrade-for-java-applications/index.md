@@ -34,7 +34,7 @@ There are many possible reasons. For example, JDK 8 introduces Lambda at the lan
 
 5. J2EE-related packages have been deleted.
 
-If the applications that need to be upgraded depend on hundreds of second-party and third-party JARs, these JARs may also have compatibility problems. If dozens or even hundreds of applications need to be upgraded, the additional workload can be huge.
+If the applications that need to be upgraded depend on hundreds of third-party JARs, these JARs may also have compatibility problems. If dozens or even hundreds of applications need to be upgraded, the additional workload can be huge.
 
 Due to these difficulties, Alibaba has accumulated these upgrade experiences through tools to help Java applications upgrade to the latest version of JDK efficiently.
 
@@ -60,7 +60,7 @@ The following is the EMT4J architecture diagram:
 
 Let’s take a common scenario to demonstrate the use of the tool:
 
-Developer Tom received a task that required him to upgrade eight Java applications (app-service-1 to app-service-8) that his team was responsible for from JDK 8 to JDK 17. *How did he upgrade with the help of EMT4J?*
+Developer Tom needed to upgrade eight Java applications (app-service-1 to app-service-8) from JDK 8 to JDK 17. *How did he upgrade with the help of EMT4J?*
 
 The specific upgrade operation is divided into the following seven steps:
 
@@ -147,6 +147,6 @@ You can participate in the following ways:
 
 ## Summary
 
-Currently, there are many Java applications still on JDK 8, and these applications are planning or upgrading to JDK. We hope to make the upgrade easier through EMT4J.
+Currently, there are many Java applications still running on JDK 8 that need help upgrading, and these applications are planning or upgrading to JDK. We hope to make the upgrade easier through EMT4J.
 
 We have accumulated Alibaba's experience in upgrading JDK in the tool, but there are many compatibility problems that we have not encountered. In addition, new JDK versions will be released continuously, and new compatibility problems will continue to arise. We hope more developers can participate and enhance the functions of the tool through open-source, making it easier to upgrade Java applications. Please refer to [this link](https://github.com/adoptium/emt4j) for more details about how to use, contribute, etc.
