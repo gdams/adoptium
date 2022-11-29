@@ -129,7 +129,7 @@ The preceding EMT4J tool helped Tom upgrade from JDK 8 to JDK 17. *What are the 
 
 ### 3. It Supports Output in HTML, TXT, and JSON Formats
 
-## How Can We Contribute?
+## How Can You Contribute?
 
 If you encounter the following problems when using EMT4J:
 
