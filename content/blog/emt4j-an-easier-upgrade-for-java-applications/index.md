@@ -1,6 +1,6 @@
 ---
 title: EMT4J – An Easier Upgrade for Java Applications
-date: "2022-11-10T17:30:00+08:00"
+date: "2022-11-29T17:30:00+08:00"
 author: gangchen
 description: This article discusses EMT4J and explains its benefits.
 tags:
@@ -11,28 +11,28 @@ tags:
 ---
 
 # Preface
-Java applications have to deal with JDK upgrades. On the one hand, it is expected that Java applications can keep up with the latest JDK versions.
+Java applications have to deal with JDK upgrades to stay up to date with the security and functional enhancements of Java. On the one hand, it is expected that Java applications can keep up with the latest JDK versions.
 
-- Oracle recommends adjusting the release cycle of the LTS version of the JDK from three years to two years. The latest technology can be used in a shorter period for applications that only use the LTS version, but it also means version upgrades will be more frequent. 
+- Oracle recommends reducing the release cycle of the long term supported (LTS) versions of the JDK from three years to two years. The latest technology will be used in a shorter period for applications that only use the LTS versions, but it also means version upgrades will be more frequent.
 
-- Spring Framework 6 supports only JDK 17. Spring is the underlying framework that most enterprise-level applications rely on, which means they have to upgrade to JDK 17. 
+- Spring Framework 6 supports only JDK 17. Spring is the underlying framework that many enterprise-level applications rely on, which means applications have to upgrade to JDK 17 to move to the this Spring version.
 
-On the other hand, the JDK upgrade of Java applications is slow. It has been nearly four years since JDK 11 was released in 2018. The upgraded JDK 11 has not reached half (2022-state-of-java-ecosystem). In contrast, JDK 8 reached 38% within one year of its release, 64.3% within two years, and nearly 80% by 2018 (java-8-adoption-march-2016, jvm-ecosystem-report-2018). 
+On the other hand, the JDK upgrade of Java applications is slow. It has been nearly four years since JDK 11 was released in 2018. Adoption of JDK 11 has not reached 50% (according to 2022-state-of-java-ecosystem). In contrast, JDK 8 reached 38% within one year of its release, 64.3% within two years, and nearly 80% by 2018 (according to java-8-adoption-march-2016, jvm-ecosystem-report-2018).
 
-## Why Is the JDK 11 Upgrade Slow? 
+## Why Is the JDK 11 Upgrade Slow?
 There are many possible reasons. For example, JDK 8 introduces Lambda at the language level, which is attractive to developers. The JDK 11 update at the language level is optional. However, compared with upgrading from other versions to JDK 8 (upgrading from JDK 6/7 to JDK 8 is insensitive to applications), upgrading to JDK 11/17 will be much more difficult, and there will be many compatibility problems. For example:
 
-1. Deletion of some APIs such as sun.misc.\* results in ClassNotFoundException in the code 
+1. Deletion of some APIs such as sun.misc.\* results in ClassNotFoundException in the code
 
-2. Changes in the schema of the Java Version cause an exception to the original logic for determining the Java version. 
+2. Changes in the schema of the Java Version cause an exception to the original logic for determining the Java version.
 
-3. The user code uses the private API, and the API is marked as obsolete. 
+3. User code that calls private APIs, and the API is marked as obsolete.
 
-4. The introduction of the Java Platform Module System (JPMS) has caused the failure of some reflection codes. 
+4. The introduction of the Java Platform Module System (JPMS) has caused the failure of some reflection code.
 
 5. J2EE-related packages have been deleted. 
 
-If the applications that need to be upgraded depend on hundreds of two-party and three-party JAR, these JARs may also have compatibility problems. If dozens or even hundreds of applications need to be upgraded, the additional workload can be huge. 
+If the applications that need to be upgraded depend on hundreds of second-party and third-party JARs, these JARs may also have compatibility problems. If dozens or even hundreds of applications need to be upgraded, the additional workload can be huge.
 
 Due to these difficulties, Alibaba has accumulated these upgrade experiences through tools to help Java applications upgrade to the latest version of JDK efficiently. 
 
@@ -130,11 +130,11 @@ If you encounter the following problems when using EMT4J:
 
 - The problem description of the tool report is unclear. It is difficult to guide how to modify and add some new functions, such as the tool supporting other formats.
 
-You can participate in the contribution in the following ways:
+You can participate in the following ways:
 
 - Create an issue to describe the problem you are experiencing
 
-- After Fork modified the test, merging into master through PR
+- Submit a PR that modifies the analysis and tests
 
 # Summary
 Currently, there are many Java applications still on JDK 8, and these applications are planning or upgrading to JDK. We hope to make the upgrade easier through EMT4J. 
