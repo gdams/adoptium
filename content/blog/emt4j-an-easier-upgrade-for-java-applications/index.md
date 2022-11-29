@@ -54,7 +54,7 @@ Currently, you can use the following three methods:
 
 The following is the EMT4J architecture diagram:
 
-![architecture](architecture.jpg)
+![architecture](architecture.png)
 
 ## EMT4J – Usage (Scenario Demonstration)
 
@@ -70,7 +70,7 @@ The specific upgrade operation is divided into the following seven steps:
 
 3. He ran a tool check: `sh ${EMT4J_HOME}/bin/analysis.sh -f 8 -t 17 -j /home/jdk17 /home/app`, where `-f 8 -t 17` indicates the upgrade from 8 to 17, `-j /home/jdk17` indicates the installation directory of the target version JDK, and `/home/app` indicates the application package and parameter file to be checked. After the command is executed, report.html is generated in the current directory by default. Open the check report report.html to view the following list of problems:
 
-   ![content](content.jpg)
+   ![content](content.png)
 
 4. Tom clicked "The schema of java version changed in JDK9" to view the details of the problem and saw the following specific classes: `Location: file:/home/app/deploy/app-service-1/notify-utils-2.2.5.jar, Target: com.app.services1.utils.VersionInfo`.
 
@@ -94,7 +94,7 @@ The specific upgrade operation is divided into the following seven steps:
 
 6. Tom referred to how to fix it in the report and learned that the schema of Java Version has changed since JDK 9. He modified the code according to the new schema.
 
-    ![schema](schema.jpg)
+    ![schema](schema.png)
 
 7. Tom revised other issues in the reference report in turn. After the modification is completed, he used the target version JDK startup on the development machine to verify the correctness of the function.
 
