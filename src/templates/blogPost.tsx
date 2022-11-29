@@ -13,12 +13,22 @@ import ShareButton from '../components/Share';
 import Tags from '../components/Tags';
 import Comments from '../components/Comments';
 
+const div = props => {
+  // convert inline code to code blocks
+  if (props.dangerouslySetInnerHTML.__html.includes('class="language-text"')) {
+    return <code {...props} />
+  } else {
+    return <div {...props} />;
+  }
+}
+
 const components = {
   GuestPost,
   blockquote: props => <blockquote style={{ paddingLeft: '1.5rem', borderLeft: '.3rem solid hsla(0,0%,0%,0.9)' }} className='blockquote' {...props} />,
   table: props => <table className='table table-hover' {...props} />,
   thead: props => <thead className='table-dark' {...props} />,
   li: props => <li style={{ marginBottom: '1.5em' }} {...props} />,
+  div: div
 };
 
 const BlogPostTemplate = ({ data, pageContext, location, children }) => {
