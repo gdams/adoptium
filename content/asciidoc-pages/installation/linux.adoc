@@ -11,6 +11,11 @@ your favourite Linux distribution.
 See link:/supported-platforms[Supported Platforms] for a list of our officially supported installers by Linux distribution / version. Other Linux distributions / versions are supported on a best effort basis.
 ====
 
+[TIP]
+====
+On most Linux systems you must have superuser privileges to install packages such as Temurin. You may need to prefix the commands below with `sudo` for them to succeed.
+====
+
 == Eclipse Temurin Package Names
 
 The following name schema is being used:
@@ -19,11 +24,6 @@ The following name schema is being used:
 temurin-<version>-jdk
 e.g temurin-17-jdk or temurin-8-jdk
 ....
-
-[TIP]
-====
-On most Linux systems you must have superuser privileges to install packages such as Temurin. You may need to prefix the commands below with `sudo` for them to succeed.
-====
 
 == Deb installation on Debian or Ubuntu
 
