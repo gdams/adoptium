@@ -9,7 +9,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fortawesome/fontawesome-free": "^6.2.1",
-    "@gatsbyjs/reach-router": "^2.0.0-v2.0.3",
+    "@gatsbyjs/reach-router": "^2.0.0",
     "@mdx-js/react": "^2.1.5",
     "@mui/lab": "^5.0.0-alpha.97",
     "@mui/material": "^5.10.16",
