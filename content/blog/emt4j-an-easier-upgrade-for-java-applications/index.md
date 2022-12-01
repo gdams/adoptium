@@ -7,7 +7,6 @@ tags:
   - EMT4J
   - Java
   - OpenJDK
-  - "Eclipse Migration Toolkit for Java"
 ---
 
 ## Preface
