@@ -1,6 +1,6 @@
 ---
 title: EMT4J – An Easier Upgrade for Java Applications
-date: "2022-11-29T17:30:00+08:00"
+date: "2022-12-01T17:30:00+08:00"
 author: gangchen
 description: This article discusses EMT4J and explains its benefits.
 tags:
