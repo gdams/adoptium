@@ -68,12 +68,6 @@
     "tier": "participant"
   },
   {
-    "name": "New Relic",
-    "logo": "newrelic.svg",
-    "url": "https://newrelic.com",
-    "tier": "participant"
-  },
-  {
     "name": "CarGurus",
     "logo": "cargurus.svg",
     "url": "https://www.cargurus.com",
