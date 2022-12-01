@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import BlogPost, { Head } from '../../templates/blogPost';
+import BlogPost, { Head, formatDiv } from '../../templates/blogPost';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 import { createSingleMDXData } from '../../__fixtures__/page';
@@ -51,6 +51,16 @@ describe('BlogPost Template page', () => {
     const pageContent = container.querySelector('main');
 
     expect(pageContent).toMatchSnapshot();
+  });
+
+  it('formatDiv renders correctly', () => {
+    const { container } = render(formatDiv({ dangerouslySetInnerHTML: { __html: '<p>test</p>' } }));
+    expect(container).toMatchSnapshot();
+  });
+
+  it('formatDiv renders correctly - inline code block', () => {
+    const { container } = render(formatDiv({ dangerouslySetInnerHTML: { __html: '<code class="language-text">test</code>' } }));
+    expect(container).toMatchSnapshot();
   });
 
   it('head renders correctly', () => {
