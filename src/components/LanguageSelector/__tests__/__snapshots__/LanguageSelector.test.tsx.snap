@@ -14,7 +14,7 @@ exports[`Language Selector component > renders correctly - expanded 1`] = `
         <button
           aria-expanded="true"
           aria-label="Language Selector"
-          class="text-left text-white dropdown-toggle btn btn-primary"
+          class="text-left text-white dropdown-toggle show btn btn-primary"
           id="dropdown-flags"
           type="button"
         >
