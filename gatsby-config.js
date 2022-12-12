@@ -230,9 +230,9 @@ module.exports = {
         cssLoaderOptions: {
           modules: {
             namedExport: false,
-            exportLocalsConvention: 'camelCaseOnly',
-          },
-        },
+            exportLocalsConvention: 'camelCaseOnly'
+          }
+        }
       }
     },
     {
