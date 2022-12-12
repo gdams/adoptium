@@ -1,0 +1,42 @@
+// Vitest Snapshot v1
+
+exports[`AuthorsList component > renders correctly 1`] = `
+<div>
+  <div
+    class="_authorList_b2bb3b"
+  >
+    DOCUMENTATION AUTHORS
+    <ul>
+      <li>
+        <a
+          aria-label="test-author"
+          class="_link_09add8 author-icon"
+          href="https://github.com/test-author"
+          rel="noopener noreferrer"
+          style="margin-left: 0px;"
+          target="_blank"
+        >
+          <img
+            alt="test-author"
+            src="https://github.com/test-author.png?size=60"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          aria-label="another-test-author"
+          class="_link_09add8 author-icon"
+          href="https://github.com/another-test-author"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img
+            alt="another-test-author"
+            src="https://github.com/another-test-author.png?size=60"
+          />
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

@@ -11,7 +11,7 @@ export default function asciidocFormatter () {
   const asciidocContent = document.getElementById('asciidoc-container')
   const links = asciidocContent.querySelectorAll('a')
   links.forEach(link => {
-    if (!link.href.includes(location.host) && !link.className.includes('btn')) {
+    if (!link.href.includes(location.host) && !link.className.includes('btn') && !link.className.includes('author-icon')) {
       const anchorIcon = document.createElement('i')
       anchorIcon.className = 'fa fa-external-link fa-xs p-1'
       link.target = '_blank'
@@ -40,6 +40,20 @@ export default function asciidocFormatter () {
       archiveTypeIcon.className = 'fa fa-circle-info fa-xl'
       archiveTypeIcon.ariaHidden = true
       td.appendChild(archiveTypeIcon)
+    }
+  })
+  const divs = document.querySelectorAll('div')
+  divs.forEach(div => {
+    if (div.className === 'toc') {
+      const tocDetails = document.createElement('details')
+      tocDetails.className = 'p-3 my-3 bg-grey'
+      const tocSummary = document.createElement('summary')
+      tocSummary.innerHTML = 'Table of Contents'
+      tocSummary.className = 'lead'
+      tocDetails.appendChild(tocSummary)
+      const tocList = div.getElementsByClassName('sectlevel1')[0]
+      tocDetails.appendChild(tocList)
+      div.replaceWith(tocDetails)
     }
   })
 }
