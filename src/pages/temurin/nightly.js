@@ -19,7 +19,7 @@ const TemurinReleases = () => (
           <div className='row align-items-center pt-2'>
             <div className='callout callout-default text-start'>
               Please be aware that this archive contains intermediate builds created as a development step towards a <Link to='/temurin/releases'>full release</Link>.
-              <p class="text-warning">These builds are unsupported and not for use in production.</p>
+              <p class='text-warning'>These builds are unsupported and not for use in production.</p>
               Intermediate builds are ephemeral, and may disappear in the future.
               <br />
               <br />
