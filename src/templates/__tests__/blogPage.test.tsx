@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import BlogPage, { Head } from '../../templates/blogPage';
+import BlogPage, { Head } from '../blogPage';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 import { createMDXData } from '../../__fixtures__/page';

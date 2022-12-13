@@ -1,0 +1,69 @@
+// Vitest Snapshot v1
+
+exports[`TagPage pages > renders correctly 1`] = `
+<main>
+  <section
+    class="py-5 container"
+  >
+    <div
+      class="row py-lg-5"
+    >
+      <div
+        class="col-lg-9 col-md-9 mx-auto"
+      >
+        <h1>
+          test
+        </h1>
+        <hr
+          class="pb-5"
+        />
+        <article
+          class="pb-3"
+        >
+          <header>
+            <h2
+              class="h3"
+            >
+              <a
+                href="/mdx/mdx-page-title"
+              >
+                MDX Page title
+              </a>
+            </h2>
+            <div
+              class="byline"
+              style="display: flex; align-items: center; margin-top: 1rem; margin-bottom: 1rem; text-decoration: none;"
+            >
+              2021-01-01
+               – posted by   
+              <a
+                href="/blog/author/pmc"
+              >
+                Adoptium PMC
+              </a>
+               
+              <img
+                alt="Adoptium PMC"
+                image="[object Object]"
+                stlye="[object Object]"
+                style="margin-left: 0.5rem; margin-bottom: 0px; min-width: 30px; border-radius: 100%;"
+              />
+            </div>
+          </header>
+          <section>
+            <p>
+              MDX Page excerpt
+               
+              <a
+                href="/mdx/mdx-page-title"
+              >
+                Read more
+              </a>
+            </p>
+          </section>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+`;
