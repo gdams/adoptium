@@ -47,7 +47,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
   return (
     <>
       <p className='text-center'>
-        <Trans>Use the drop-down boxes below to filter the list of current releases.</Trans>
+        <Trans>Use the drop-down boxes below to filter the list of releases.</Trans>
       </p>
       <div className="input-group p-3 d-flex justify-content-center">
         <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
