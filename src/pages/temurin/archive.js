@@ -18,10 +18,10 @@ const TemurinReleases = () => (
           <h1 className='fw-light'>Archive</h1>
           <div className='row align-items-center pt-2'>
             <div className='callout callout-default text-start'>
-              Please be aware that this archive contains old releases.
-              <p class='text-warning'>Using old, superseded, or otherwise unsupported builds is not recommended.</p>
+              Please be aware that this archive contains old releases of Eclipse Temurin kept for reference. The <Link to='/temurin/releases'>latest releases</Link> should be used in development and production.
               <br />
-              The <Link to='/temurin/releases'>latest releases</Link> should be used in development and production.
+              <br />
+              <p class='text-warning'>Using old, superseded, or otherwise unsupported builds is not recommended.</p>
             </div>
             <div className='btn-group'>
               <Link to='/temurin/releases' className='btn btn-primary m-3'>
