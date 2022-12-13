@@ -18,15 +18,10 @@ const TemurinReleases = () => (
           <h1 className='fw-light'>Archive</h1>
           <div className='row align-items-center pt-2'>
             <div className='callout callout-default text-start'>
-              Please be aware that this archive contains old releases and intermediate builds created as a development step towards a <Link to='/temurin/releases'>full release</Link>.
-              Using old, superseded, or otherwise unsupported builds is not recommended. Intermediate builds are ephemeral, and may disappear in the future.
+              Please be aware that this archive contains old releases.
+              <p class='text-warning'>Using old, superseded, or otherwise unsupported builds is not recommended.</p>
               <br />
-              <br />
-              The following notice applies to intermediate builds:
-              <br />
-              &ldquo;This is an intermediate build made available for testing purposes only. The code is untested and presumed incompatible with the Java SE specification.
-              You should not deploy or write to this code, but instead use the tested and certified Java SE compatible version of the code that is available at <a href='https://adoptium.net'>adoptium.net</a>.
-              Redistribution of any Intermediate Build must retain this notice.&rdquo;
+              The <Link to='/temurin/releases'>latest releases</Link> should be used in development and production.
             </div>
             <div className='btn-group'>
               <Link to='/temurin/releases' className='btn btn-primary m-3'>
