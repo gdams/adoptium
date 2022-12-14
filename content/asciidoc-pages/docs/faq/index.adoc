@@ -24,6 +24,14 @@ action, and part of cloud providers' Java support.
 Linux installers are available at packages.adoptium.net. For more
 information see link:/installation/linux[this guide].
 
+== How can I link to the latest Temurin builds?
+
+The
+https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.adoc#example-two-linking-to-the-latest-jdk-or-jre[Adoptium API cookbook]
+has examples of stable URLs that link to specific or the latest Temurin JDKs and JREs. You can also promote Temurin by embedding html
+https://adoptium.net/en-GB/temurin/buttons/[buttons code]
+provided on the website.
+
 == Is Temurin(TM) free to use?
 
 Yes. The Eclipse Temurin binaries are provided at no cost to you by Adoptium to use,
@@ -103,6 +111,11 @@ Yes! There is a rich https://api.adoptium.net/q/swagger-ui/[download API]
 provided by Adoptium for downloading Eclipse Temurin builds. Using the API it is
 possible to get information about the latest builds of Temurin, and pull
 them down into your own application.
+
+We provide
+https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.adoc#example-three-scripting-a-download-using-the-adoptium-api[an example of automating a download]
+in the
+https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.adoc#adoptium-api-cookbook[Adoptium API cookbook].
 
 == What is this "Eclipse Temurin" name?
 
