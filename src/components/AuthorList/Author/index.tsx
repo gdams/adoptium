@@ -1,5 +1,5 @@
 import React from 'react';
-import './Author.scss';
+import styles from './index.module.scss';
 
 interface Props {
   index: number;
@@ -15,7 +15,6 @@ const Author = ({
   if (!username) {
     return null;
   }
-
   // Clean up username and build links.
   const githubUserName = username.trim();
   const githubLink = `https://github.com/${githubUserName}`;
@@ -27,15 +26,15 @@ const Author = ({
   return (
     <li>
       <a
-        className="link"
+        className={styles.link + ' author-icon'}
         href={githubLink}
-        title={username}
+        aria-label={githubUserName}
         key={username}
         target="_blank"
         rel="noopener noreferrer"
         style={mleft}
       >
-        <img className="img" src={githubImgLink} alt={username} />
+        <img src={githubImgLink} alt={username} />
       </a>
     </li>
   );

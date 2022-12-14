@@ -226,6 +226,12 @@ module.exports = {
       options: {
         sassOptions: {
           precision: 6
+        },
+        cssLoaderOptions: {
+          modules: {
+            namedExport: false,
+            exportLocalsConvention: 'camelCaseOnly'
+          }
         }
       }
     },

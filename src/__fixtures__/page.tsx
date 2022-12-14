@@ -18,6 +18,11 @@ export const createAsciidocData = (): {
             <a href="https://www.eclipse.org">Eclipse</a>
             <span class="icon">[docker]</span>
             <span class="icon">[check]</span>
+            <div class="toc">
+                <ul class="sectlevel1">
+                    <li><a href="#section-1">Section 1</a></li>
+                </ul>
+            </div>
         `,
         document: {
             title: 'Asciidoc Page title',

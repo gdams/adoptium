@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import AllAsciidocPages, { Head } from '../../templates/asciidocTemplate';
+import AllAsciidocPages, { Head } from '../asciidocTemplate';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 import { createAsciidocData } from '../../__fixtures__/page';

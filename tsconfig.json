@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
       "outDir": "build/dist",
-      "module": "esnext",
-      "target": "es5",
-      "lib": ["es6", "es7", "dom"],
+      "module": "ESNext",
+      "target": "ES6",
+      "lib": ["ES6", "ES7", "DOM"],
       "sourceMap": true,
       "allowJs": true,
       "jsx": "preserve",
@@ -18,7 +18,16 @@
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
       "downlevelIteration": true,
-      "resolveJsonModule": true
+      "resolveJsonModule": true,
+      "plugins": [
+        {
+          "name": "typescript-plugin-css-modules",
+          "options": {
+            "namedExports": false,
+            "classnameTransform": "camelCaseOnly"
+          }
+        }
+      ]
     },
     "include": [
       "**/*.{ts,tsx,mdx}",

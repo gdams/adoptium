@@ -6,15 +6,14 @@ exports[`Author component > renders correctly 1`] = `
 <div>
   <li>
     <a
-      class="link"
+      aria-label="test-author"
+      class="_link_09add8 author-icon"
       href="https://github.com/test-author"
       rel="noopener noreferrer"
       target="_blank"
-      title="test-author"
     >
       <img
         alt="test-author"
-        class="img"
         src="https://github.com/test-author.png?size=60"
       />
     </a>

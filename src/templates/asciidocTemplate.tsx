@@ -6,7 +6,7 @@ import highlightCode from '../util/highlightCode'
 import asciidocFormatter from '../util/asciidocFormatter'
 import Layout from '../components/Layout'
 import EditLink from '../components/EditLink'
-import AuthorsList from '../containers/AuthorList'
+import AuthorsList from '../components/AuthorList'
 import InstallTabs from '../components/InstallTabs'
 import Seo from '../components/Seo'
 
@@ -24,9 +24,12 @@ const AsciidocTemplate = ({ data }) => {
   const { relativePath } = file
   return (
     <Layout>
-      <section className='py-5 container'>
-        <div className='asciidoc-container container-adoc' id='asciidoc-container'>
-          <div className='asciidoc'>
+      <section className='py-5 px-3'>
+        <div className='asciidoc-container container-adoc row' id='asciidoc-container'>
+          <div className='col-lg-3 hide-on-mobile'>
+            {/* Leaving space for a table of contents (side bar) */}
+          </div>
+          <div className='asciidoc col-lg-6 col-md-12'>
             <h1 className='pb-4 fw-light text-center' dangerouslySetInnerHTML={{ __html: document.title }} />
             {fields.slug === '/installation/' && (
               <section className='adopt-demo-container hide-on-mobile my-5'>
@@ -39,11 +42,12 @@ const AsciidocTemplate = ({ data }) => {
               className='asciidoc-content'
               dangerouslySetInnerHTML={{ __html: html }}
             />
+          <hr className='m-5' />
+          <AuthorsList authors={pageAuthorList.split(',')} />
+          <EditLink relativePath={relativePath} />
           </div>
+          <div className='col-lg-3 hide-on-mobile'></div>
         </div>
-        <hr className='m-5' />
-        <AuthorsList authors={pageAuthorList.split(',')} />
-        <EditLink relativePath={relativePath} />
       </section>
     </Layout>
   )

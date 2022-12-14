@@ -319,6 +319,32 @@ exports[`Asciidoc pages > renders correctly - installation slug 1`] = `
             class="fa fa-check"
           />
           
+            
+          <details
+            class="p-3 my-3 bg-grey"
+          >
+            <summary
+              class="lead"
+            >
+              Table of Contents
+            </summary>
+            <ul
+              class="sectlevel1"
+            >
+              
+                    
+              <li>
+                <a
+                  href="#section-1"
+                >
+                  Section 1
+                </a>
+              </li>
+              
+                
+            </ul>
+          </details>
+          
         
         </div>
         <hr
@@ -500,6 +526,32 @@ exports[`Asciidoc pages > renders correctly 1`] = `
           <i
             class="fa fa-check"
           />
+          
+            
+          <details
+            class="p-3 my-3 bg-grey"
+          >
+            <summary
+              class="lead"
+            >
+              Table of Contents
+            </summary>
+            <ul
+              class="sectlevel1"
+            >
+              
+                    
+              <li>
+                <a
+                  href="#section-1"
+                >
+                  Section 1
+                </a>
+              </li>
+              
+                
+            </ul>
+          </details>
           
         
         </div>
