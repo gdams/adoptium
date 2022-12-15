@@ -68,7 +68,7 @@
     "typescript-plugin-css-modules": "^4.1.1"
   },
   "devDependencies": {
-    "@parcel/namer-default": "^2.8.1",
+    "@parcel/namer-default": "^2.8.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
