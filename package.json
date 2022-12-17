@@ -22,7 +22,7 @@
     "gatsby-plugin-gatsby-cloud": "^5.2.0",
     "gatsby-plugin-google-gtag": "^5.2.0",
     "gatsby-plugin-google-tagmanager": "^5.2.0",
-    "gatsby-plugin-image": "^3.2.0",
+    "gatsby-plugin-image": "^3.3.2",
     "gatsby-plugin-local-search": "^2.0.1",
     "gatsby-plugin-manifest": "^5.2.0",
     "gatsby-plugin-mdx": "^5.2.0",
