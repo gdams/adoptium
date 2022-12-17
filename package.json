@@ -43,7 +43,7 @@
     "gatsby-transformer-asciidoc": "^4.2.0",
     "gatsby-transformer-remark": "^6.2.0",
     "gatsby-transformer-sharp": "^5.2.0",
-    "highlight.js": "^11.6.0",
+    "highlight.js": "^11.7.0",
     "html-to-text": "^8.2.1",
     "i18next": "^21.10.0",
     "iso-639-1": "^2.1.15",
