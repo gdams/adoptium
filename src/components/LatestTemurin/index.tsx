@@ -77,21 +77,21 @@ const LatestTemurin = (props): JSX.Element => {
         <div className={`btn-group-vertical mx-auto ${buttonClass}`}>
             {binary ? (
               <>
-                <Link to="/download" state={{ link: binary.link, os: userOSName, arch: arch, pkg_type: 'JDK', java_version: binary.release_name }} className="btn btn-lg btn-primary mt-3 py-3 text-white">
+                <Link to="/download" state={{ link: binary.link, os: userOSName, arch: arch, pkg_type: 'JDK', java_version: binary.release_name }} className={props.page === "home" ? "btn btn-lg btn-pink mt-3 py-3 text-white" : "btn btn-lg btn-primary mt-3 py-3 text-white"}>
                     <FaDownload /> <Trans>Latest LTS Release</Trans>
                     <br/>
                     <span style={{ fontSize: '.6em'}} className="font-weight-light">{binary.release_name}</span>
                 </Link>
-                <Link to="/temurin/releases" className="btn btn-outline-dark mt-3">
+                <Link to="/temurin/releases" className={props.page === "home" ? "btn btn-outline-light mt-3" : "btn btn-outline-dark mt-3"}>
                     <Trans>Other platforms and versions</Trans> <FaArrowCircleRight />
                 </Link>
               </>
             ) :
-              <Link to="/temurin/releases" className="btn btn-lg btn-primary mt-3 py-3 text-white">
+              <Link to="/temurin/releases" className={props.page === "home" ? "btn btn-lg btn-pink mt-3 py-3 text-white" : "btn btn-lg btn-primary mt-3 py-3 text-white"}>
                   <FaDownload /> Latest LTS releases
               </Link>
             }
-            <Link to="/temurin/archive" className="btn btn-outline-dark mt-3">
+            <Link to="/temurin/archive" className={props.page === "home" ? "btn btn-outline-light mt-3" : "btn btn-outline-dark mt-3"}>
                 <Trans>Release Archive</Trans> <FaArchive />
             </Link>
         </div>
