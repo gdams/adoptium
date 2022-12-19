@@ -44,7 +44,7 @@ const IndexPage = () => {
           </div>
         </div>
         </section>
-        <section id='wg' className='home' style={{ overflowX: 'hidden' }}>
+        <section id='marketplace' className='home' style={{ overflowX: 'hidden' }}>
         <div className='p-3 bg-light rounded-3 text-start'>
           <div className='container py-5 row content'>
             <div className='col-lg-6'>

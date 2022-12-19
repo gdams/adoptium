@@ -4,7 +4,7 @@ exports[`Index page > renders correctly 1`] = `
 <main>
   <section
     class="home"
-    id="home"
+    id="hero"
     style="overflow-x: hidden;"
   >
     <div
@@ -27,7 +27,7 @@ exports[`Index page > renders correctly 1`] = `
                 class="my-3 my-md-5 text-center text-md-start banner-title"
               >
                 <h1
-                  class="display-4"
+                  class="display-4 text-white"
                 >
                   Text
                   <br />
@@ -35,7 +35,7 @@ exports[`Index page > renders correctly 1`] = `
                 </h1>
               </div>
               <p
-                class="mt-3 text-center text-md-start"
+                class="mt-3 text-center text-md-start text-white"
               >
                 Text
               </p>
@@ -52,7 +52,7 @@ exports[`Index page > renders correctly 1`] = `
                 class="btn-group-vertical mx-auto col-12"
               >
                 <a
-                  class="btn btn-lg btn-primary mt-3 py-3 text-white"
+                  class="btn btn-lg btn-pink mt-3 py-3 text-white"
                   href="/temurin/releases"
                 >
                   <svg
@@ -71,7 +71,7 @@ exports[`Index page > renders correctly 1`] = `
                    Latest LTS releases
                 </a>
                 <a
-                  class="btn btn-outline-dark mt-3"
+                  class="btn btn-outline-light mt-3"
                   href="/temurin/archive"
                 >
                   Text
@@ -106,8 +106,75 @@ exports[`Index page > renders correctly 1`] = `
         </div>
       </div>
     </div>
+  </section>
+  <section
+    class="home"
+    id="marketplace"
+    style="overflow-x: hidden;"
+  >
     <div
-      class="p-3 mt-4 mb-4 bg-light rounded-3 text-start"
+      class="p-3 bg-light rounded-3 text-start"
+    >
+      <div
+        class="container py-5 row content"
+      >
+        <div
+          class="col-lg-6"
+        >
+          <svg
+            color="#c52158"
+            fill="currentColor"
+            height="90%"
+            stroke="currentColor"
+            stroke-width="0"
+            style="color: rgb(197, 33, 88);"
+            viewBox="0 0 616 512"
+            width="90%"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="col-lg-6"
+        >
+          <h2
+            class="text-pink"
+          >
+            Text
+          </h2>
+          <p>
+            Text
+          </p>
+          <div
+            class="btn-group-vertical"
+          >
+            <a
+              class="btn btn-lg btn-primary text-white"
+              href="/marketplace"
+            >
+              Text
+            </a>
+            <a
+              class="btn btn-lg btn-secondary my-3"
+              href="/docs/marketplace-policy/"
+            >
+              Text
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="home"
+    id="wg"
+    style="overflow-x: hidden;"
+  >
+    <div
+      class="p-3 mb-4 rounded-3 text-start"
     >
       <div
         class="container py-5"
