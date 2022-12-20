@@ -86,7 +86,7 @@
     "jsdom": "^20.0.3",
     "prettier": "2.8.1",
     "react-test-renderer": "^18.2.0",
-    "vitest": "^0.25.8",
+    "vitest": "^0.26.0",
     "vitest-axe": "^0.1.0"
   },
   "keywords": [
