@@ -41,4 +41,4 @@ This release contains the following Root CA changes as described in the [Mozilla
 
 ### Temurin 17 support for AIX
 
-Up until now, Adoptium has not released a version of Eclipse Temurin 17 for AIX. As of Temurin 17.0.16 AIX is now fully supported. Please seee [Supported Platforms](https://adoptium.net/supported-platforms/) for specific details.
+Up until now, Adoptium has not released a version of Eclipse Temurin 17 for AIX. As of Temurin 17.0.16, AIX is now fully supported. Please see [Supported Platforms](https://adoptium.net/supported-platforms/) for specific details.
