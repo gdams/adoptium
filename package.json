@@ -87,7 +87,7 @@
     "jsdom": "^21.0.0",
     "prettier": "2.8.3",
     "react-test-renderer": "^18.2.0",
-    "vitest": "^0.27.2",
+    "vitest": "^0.28.1",
     "vitest-axe": "^0.1.0"
   },
   "overrides": {
