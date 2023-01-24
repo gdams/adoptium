@@ -24,6 +24,10 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u36
 
 The latest Eclipse Temurin container releases will no longer be shipped with the `src.zip` file. This is a ~50MB file that in nearly all Docker use-cases was unncessary and bloated the overall image size. See [Remove src.zip from container images](https://github.com/adoptium/containers/issues/268) for more context and also [Remove src.zip from the latest Java releases](https://github.com/docker-library/openjdk/issues/282) (an upstream official Docker discussion).
 
+### Addition of Red Hat Universal Base Images (UBI)
+
+Red Hat UBI 9 minimal base images were added to the [Eclipse Temurin](https://hub.docker.com/_/eclipse-temurin/) registry. With Centos 7 due to be deprecated in [June 2024](https://wiki.centos.org/About/Product), it is recommended that Centos users consider migrating to the newer UBI images. The tag schema for UBI 9 minimal images is `eclipse-temurin:<tag-name>-ubi9-minimal`. The full set of UBI tags can be viewed on [Docker Hub](https://hub.docker.com/_/eclipse-temurin/tags?name=ubi).
+
 ### Changes to Root Certificate Authorities (Root CAs)
 
 This release contains the following Root CA changes as described in the [Mozilla Meta-bug #1794506](https://bugzilla.mozilla.org/show_bug.cgi?id=1794506)
