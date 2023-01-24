@@ -29,9 +29,18 @@ e.g temurin-17-jdk or temurin-8-jdk
 
 . Ensure the necessary packages are present:
 +
+For Debian 9 (Stretch)/Ubuntu 16.04 (Xenial) or older:
++
 [source, bash]
 ----
 apt install -y wget apt-transport-https
+----
++
+For Debian 10 (Buster)/Ubuntu 18.04 (Bionic) or newer:
++
+[source, bash]
+----
+apt install -y wget
 ----
 +
 . Download the Eclipse Adoptium GPG key:
