@@ -82,7 +82,7 @@
     "@vitest/coverage-c8": "^0.28.1",
     "babel-preset-gatsby": "^3.4.0",
     "cross-fetch": "^3.1.5",
-    "gatsby-cli": "^5.4.0",
+    "gatsby-cli": "^5.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jsdom": "^21.1.0",
     "prettier": "2.8.3",
