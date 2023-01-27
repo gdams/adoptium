@@ -33,7 +33,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
               releaseNotes.release_notes.map(
                 (issue, i): string | JSX.Element =>
                   issue && (
-                    <tr>
+                    <tr key={issue.id}>
                       <td nowrap="nowrap"><a href={issue.link}>{issue.id}</a></td>
                       <td>{issue.subcomponent}</td>
                       <td>{issue.priority}</td>
