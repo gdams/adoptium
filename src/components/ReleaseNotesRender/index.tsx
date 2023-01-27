@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
 import { fetchReleaseNotesForVersion } from '../../hooks';
+import { ReleaseNoteAPIResponse } from '../../hooks/fetchReleaseNotes';
 
 const ReleaseNotesRender = (): null | JSX.Element => {
-  const version = queryString.parse(useLocation().search).version;
-  const [releaseNotes, setReleaseNotes] = useState(null);
+  const version = queryString.parse(useLocation().search, {decode: false}).version;
+  const [releaseNotes, setReleaseNotes] = useState<ReleaseNoteAPIResponse | null>(null);
 
   useEffect(() => {
     if (version) {
