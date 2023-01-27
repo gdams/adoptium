@@ -26,10 +26,6 @@ export const Head = () => (
 
 export const query = graphql`
   query ($language: String!) {
-    localSearchDocs {
-      index
-      store
-    }
     locales: allLocale(filter: {language: {eq: $language}}) {
       edges {
         node {
