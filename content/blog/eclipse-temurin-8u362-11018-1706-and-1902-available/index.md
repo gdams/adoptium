@@ -49,4 +49,4 @@ Up until now, Adoptium has not released a version of Eclipse Temurin 17 for AIX.
 
 ### Release Notes
 
-Since moving to the Eclipse Foundation, we haven't published release notes to our website. While they're not quite ready to go live yet, we expect them to be available in the coming weeks. Watch this space for more information!
+Since moving to the Eclipse Foundation, we haven't published release notes to our site. While they're not quite ready to go live yet, we expect them to be available in the coming weeks. Watch this space for more information!
