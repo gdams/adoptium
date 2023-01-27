@@ -161,7 +161,7 @@ export const mockEventsAPI = (): EventAPI => ({
   ]
 });
 
-export const createMockTemurinReleaseAPI = (installer): MockTemurinReleaseAPI => ({
+export const createMockTemurinReleaseAPI = (installer, image_type): MockTemurinReleaseAPI => ({
   release_link: new URL('https://release_link_mock'),
   release_name: 'release_name_mock',
   vendor: 'vendor_mock',
@@ -180,7 +180,7 @@ export const createMockTemurinReleaseAPI = (installer): MockTemurinReleaseAPI =>
     download_count: 0,
     updated_at: new Date(Date.UTC(2020, 0, 1)),
     os: 'os_mock',
-    image_type: 'jdk',
+    image_type: image_type? image_type : 'jdk',
     jvm_impl: 'jvm_impl_mock',
     heap_size: 'heap_size_mock',
     package: {
