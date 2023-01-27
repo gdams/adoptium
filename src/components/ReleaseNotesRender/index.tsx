@@ -40,7 +40,6 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                       <td>{issue.title}</td>
                     </tr>
 
-                    </>
                   )
                 )
             )}
