@@ -4,7 +4,7 @@ import queryString from 'query-string';
 import { fetchReleaseNotesForVersion } from '../../hooks';
 
 const ReleaseNotesRender = (): null | JSX.Element => {
-  const selectedVersion = queryString.parse(useLocation().search).version;
+  const version = queryString.parse(useLocation().search).version;
   const [version, setVersion] = useState(selectedVersion);
   const [releaseNotes, setReleaseNotes] = useState(null);
 
