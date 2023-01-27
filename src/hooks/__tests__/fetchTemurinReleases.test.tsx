@@ -29,7 +29,7 @@ describe('loadLatestAssets', () => {
     ];
     mockResponse[0].binary.image_type = 'sources';
     renderHook(async() => {
-      await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {
+      await loadLatestAssets(8, 'linux', 'x64', 'any').then((data) => {
         expect(data).toMatchSnapshot()
       })
     });
@@ -38,7 +38,7 @@ describe('loadLatestAssets', () => {
   it('returns valid JSON + installer', async() => {
     mockResponse = [createMockTemurinReleaseAPI(true)]
     renderHook(async() => {
-      await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {
+      await loadLatestAssets(8, 'linux', 'x64', 'jre').then((data) => {
         expect(data).toMatchSnapshot()
       })
     });
