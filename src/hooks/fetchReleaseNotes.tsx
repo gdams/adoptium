@@ -3,7 +3,7 @@ const baseUrl = 'http://staging-api.adoptium.net/v3/info/release_notes';
 
 export async function fetchReleaseNotesForVersion(
     version: any,
-): JSON | null {
+): Promise<ReleaseNote | null> {
     const url = `${baseUrl}/${version}`;
     try {
         // fetch the data from the API
@@ -12,4 +12,15 @@ export async function fetchReleaseNotesForVersion(
     } catch (error) {
         return null;
     }
+}
+
+export interface ReleaseNote {
+    id: string;
+    link: string;
+    title: string;
+    backportOf?: string;
+    priority?: string;
+    component?: string;
+    subcomponent?: string;
+    type?: string;
 }
