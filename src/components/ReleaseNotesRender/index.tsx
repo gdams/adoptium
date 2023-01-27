@@ -5,7 +5,6 @@ import { fetchReleaseNotesForVersion } from '../../hooks';
 
 const ReleaseNotesRender = (): null | JSX.Element => {
   const version = queryString.parse(useLocation().search).version;
-  const [version, setVersion] = useState(selectedVersion);
   const [releaseNotes, setReleaseNotes] = useState(null);
 
   useEffect(() => {
