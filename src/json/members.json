@@ -25,12 +25,6 @@
     "tier": "strategic"
   },
   {
-    "name": "Karakun",
-    "logo": "karakun.svg",
-    "url": "https://karakun.com",
-    "tier": "strategic"
-  },
-  {
     "name": "Microsoft",
     "logo": "microsoft.svg",
     "url": "https://opensource.microsoft.com",
