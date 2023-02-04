@@ -1,0 +1,71 @@
+// Vitest Snapshot v1
+
+exports[`Temurin Release Notes page > renders correctly 1`] = `
+<main>
+  <section
+    class="py-5 text-center container"
+  >
+    <div
+      class="row py-lg-5"
+    >
+      <div
+        class="col-lg-8 col-md-8 mx-auto"
+      >
+        <h1
+          class="fw-light"
+        >
+          Text
+        </h1>
+      </div>
+      <div
+        class="text-center container"
+      >
+        <h2>
+          version
+        </h2>
+        <table
+          class="table"
+          style="border-spacing: 0 10px; border-collapse: separate;"
+        >
+          <thead
+            class="table-dark"
+          >
+            <tr
+              class="table-head"
+            >
+              <th>
+                Issue
+              </th>
+              <th>
+                Component
+              </th>
+              <th>
+                Priority
+              </th>
+              <th>
+                Title
+              </th>
+            </tr>
+          </thead>
+          <tr>
+            <td
+              nowrap="nowrap"
+            >
+              <a
+                href="https://link_mock/"
+              >
+                id_mock
+              </a>
+            </td>
+            <td />
+            <td />
+            <td>
+              title_mock
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+`;
