@@ -1,7 +1,6 @@
 import { VersionMetaData } from '.';
 
-//TODO: Point to the live API endpoint when it is available
-const baseUrl = 'http://staging-api.adoptium.net/v3/info/release_notes';
+const baseUrl = 'http://api.adoptium.net/v3/info/release_notes';
 
 export async function fetchReleaseNotesForVersion(
     version: any,

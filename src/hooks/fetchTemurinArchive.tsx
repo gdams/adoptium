@@ -43,6 +43,7 @@ async function getPkgs(url: URL) {
 
 function renderReleases(pkgs, pagecount) {
   pkgs.forEach((aRelease) => {
+    console.log(aRelease)
     const release: TemurinReleases = {
         release_name: aRelease.release_name,
         release_link: aRelease.release_link,
@@ -56,8 +57,11 @@ function renderReleases(pkgs, pagecount) {
   
         // Skip this asset if it's not a binary type we're interested in displaying
         const binary_type = aReleaseAsset.image_type.toUpperCase();
-        if (binary_type == 'SOURCES') {
-          release.source_url = new URL(aReleaseAsset.package.link);
+        if (aRelease.source) {
+          release.source_url = new URL(aRelease.source.link);
+        }
+        if (aRelease.release_notes) {
+          release.release_notes = true;
         }
         if (!['INSTALLER', 'JDK', 'JRE'].includes(binary_type)) {
           return;
@@ -109,6 +113,7 @@ export interface TemurinReleases {
       assets: ReleaseAsset[];
     };
   };
+  release_notes?: boolean;
 }
 
 interface ReleaseAsset {
@@ -155,6 +160,11 @@ export interface MockTemurinFeatureReleaseAPI {
     size: number;
   };
   binaries: APIResponse[];
+  release_notes?: {
+    link: URL;
+    name: string;
+    size: number;
+  };
   timestamp: Date;
   updated_at: Date;
   vendor: string;

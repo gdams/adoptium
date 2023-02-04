@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
+import { MdNotes } from 'react-icons/md';
 import { Pagination } from '@mui/material';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../../util/capitalize';
@@ -41,7 +42,10 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                 </Link>
                                                 <h4 className="pt-3 pb-3" style={{fontSize: ".8rem"}}>{localeDate(release.timestamp, language)}</h4>
                                                 {release.source_url &&
-                                                    <span><a href={release.source_url} className="link-light"><FaDownload /> <Trans>Source Code Archive</Trans></a></span>
+                                                    <p><a href={release.source_url} className="link-light"><FaDownload /> <Trans>Source Code Archive</Trans></a></p>
+                                                }
+                                                {release.release_notes &&
+                                                    <p><Link to={`/temurin/release-notes?version=${release.release_name}`} className="link-light"><MdNotes /> <Trans>Release Notes</Trans></Link></p>
                                                 }
                                             </div>
                                         </td>
