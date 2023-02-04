@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { loadLatestAssets } from '../fetchTemurinReleases';
 import { createMockTemurinReleaseAPI  } from '../../__fixtures__/hooks';
 
-let mockResponse = [createMockTemurinReleaseAPI(false)];
+let mockResponse = [createMockTemurinReleaseAPI(false, 'jdk')];
 
 global.fetch = vi.fn(() => Promise.resolve({
   json: () => Promise.resolve(mockResponse)
@@ -24,21 +24,23 @@ describe('loadLatestAssets', () => {
 
   it('source image is processed correctly', async() => {
     mockResponse = [
-      createMockTemurinReleaseAPI(false),
-      createMockTemurinReleaseAPI(false)
+      createMockTemurinReleaseAPI(false, 'sources'),
+      createMockTemurinReleaseAPI(false, 'jdk')
     ];
-    mockResponse[0].binary.image_type = 'sources';
     renderHook(async() => {
-      await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {
+      await loadLatestAssets(8, 'linux', 'x64', 'any').then((data) => {
         expect(data).toMatchSnapshot()
       })
     });
   });
 
   it('returns valid JSON + installer', async() => {
-    mockResponse = [createMockTemurinReleaseAPI(true)]
+    mockResponse = [
+      createMockTemurinReleaseAPI(true, 'jdk'),
+      createMockTemurinReleaseAPI(true, 'jre')
+    ]
     renderHook(async() => {
-      await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {
+      await loadLatestAssets(8, 'linux', 'x64', 'jre').then((data) => {
         expect(data).toMatchSnapshot()
       })
     });

@@ -43,7 +43,6 @@ async function getPkgs(url: URL) {
 
 function renderReleases(pkgs, pagecount) {
   pkgs.forEach((aRelease) => {
-    console.log(aRelease)
     const release: TemurinReleases = {
         release_name: aRelease.release_name,
         release_link: aRelease.release_link,

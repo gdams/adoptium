@@ -1,6 +1,6 @@
 import { VersionMetaData } from '.';
 
-const baseUrl = 'http://api.adoptium.net/v3/info/release_notes';
+const baseUrl = 'https://api.adoptium.net/v3/info/release_notes';
 
 export async function fetchReleaseNotesForVersion(
     version: any,

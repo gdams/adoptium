@@ -16,10 +16,15 @@ export async function loadLatestAssets(
     if (architecture !== 'any') {
         url.searchParams.append('architecture', architecture);
     }
-    if (packageType !== 'any') {
-        url.searchParams.append('image_type', packageType);
-    }
     let data = await getPkgs(url);
+
+    // Filter JDK/JRE if necessary
+    if (packageType === 'jdk') {
+        data = data.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jre');
+    } else if (packageType === 'jre') {
+        data = data.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jdk');
+    }
+
     let pkgsFound: TemurinRelease[] = []
     for (let pkg of data) {
         pkgsFound.push(pkg);

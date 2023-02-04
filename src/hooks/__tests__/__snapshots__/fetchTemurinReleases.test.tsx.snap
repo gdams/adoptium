@@ -14,7 +14,7 @@ exports[`loadLatestAssets > returns valid JSON + installer 1`] = `
         "installer_size": 0,
         "link": "https://link_mock/",
         "size": 0,
-        "type": "JDK",
+        "type": "JRE",
       },
     ],
     "os": "os_mock",

@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { FaDownload } from 'react-icons/fa';
+import { MdNotes } from 'react-icons/md';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../../util/capitalize';
 import { localeDate } from '../../util/localeDate';
@@ -15,7 +16,11 @@ const TemurinDownloadTable = ({results}) => {
     return (
     <>
         {source &&
-            <span><a href={source.binary.package.link}>{source.release_name} <Trans>Source Code Archive</Trans></a></span>
+            <>
+            <p><a href={source.binary.package.link}>{source.release_name} <Trans>Source Code Archive</Trans></a></p>
+            {/* We assume release notes exist here */}
+            <p><Link to={`/temurin/release-notes?version=${source.release_name}`}><MdNotes /> <Trans>Release Notes</Trans></Link></p>
+            </>
         }
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
             <tbody className="table-light">
