@@ -23,6 +23,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
               <th>Title</th>
             </tr>
           </thead>
+          <tbody>
           {releaseNotes && (
               releaseNotes.release_notes.map(
                 (issue, i): string | JSX.Element =>
@@ -37,6 +38,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                   )
                 )
             )}
+          </tbody>
         </table>
       ) : (
         <>

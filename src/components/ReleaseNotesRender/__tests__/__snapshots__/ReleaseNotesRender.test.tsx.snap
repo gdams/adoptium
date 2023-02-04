@@ -53,22 +53,24 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
           </th>
         </tr>
       </thead>
-      <tr>
-        <td
-          nowrap="nowrap"
-        >
-          <a
-            href="https://link_mock/"
+      <tbody>
+        <tr>
+          <td
+            nowrap="nowrap"
           >
-            id_mock
-          </a>
-        </td>
-        <td />
-        <td />
-        <td>
-          title_mock
-        </td>
-      </tr>
+            <a
+              href="https://link_mock/"
+            >
+              id_mock
+            </a>
+          </td>
+          <td />
+          <td />
+          <td>
+            title_mock
+          </td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </div>
