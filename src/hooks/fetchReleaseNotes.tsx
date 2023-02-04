@@ -1,10 +1,29 @@
 import { VersionMetaData } from '.';
+import { useEffect, useState } from 'react';
 
 const baseUrl = 'https://api.adoptium.net/v3/info/release_notes';
 
-export async function fetchReleaseNotesForVersion(
+export function fetchReleaseNotesForVersion(
+    isVisible: boolean,
     version: any,
-): Promise<ReleaseNoteAPIResponse | null> {
+): ReleaseNoteAPIResponse | null {
+    if (!version) {
+        return null
+    }
+
+    const [releaseNotes, setReleaseNotes] = useState<ReleaseNoteAPIResponse | null>(null);
+    useEffect(() => {
+        if (isVisible) {
+        (async () => {
+            setReleaseNotes(await fetchReleaseNote(version));
+        })();
+        }
+    }, [isVisible]);
+
+    return releaseNotes;
+}
+
+async function fetchReleaseNote(version) {
     const url = `${baseUrl}/${version}`;
     try {
         // fetch the data from the API
@@ -25,7 +44,7 @@ export interface ReleaseNoteAPIResponse {
 
 export interface ReleaseNote {
     id: string;
-    link: string;
+    link: URL;
     title: string;
     backportOf?: string;
     priority?: string;

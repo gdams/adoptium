@@ -1,12 +1,12 @@
 import {
   Binary,
-  ContributorApiResponse,
   Contributor,
   EventAPI,
   LatestTemurin,
   MarketplaceRelease,
   MockTemurinFeatureReleaseAPI,
   MockTemurinReleaseAPI,
+  ReleaseNoteAPIResponse,
   News,
   NewsResponse,
   ReleaseAsset,
@@ -207,6 +207,28 @@ export const createMockTemurinReleaseAPI = (installer, image_type): MockTemurinR
       : undefined,
   }
 });
+
+export const createMockReleaseNotesAPI = (): ReleaseNoteAPIResponse => ({
+  id: 'id_mock',
+  vendor: 'vendor_mock',
+  version_data: {
+    major: 0,
+    minor: 0,
+    security: 0,
+    patch: 0,
+    build: 0,
+    openjdk_version: 'openjdk_version_mock',
+  },
+  release_name: 'release_name_mock',
+  release_notes: [
+    {
+      id: 'id_mock',
+      link: new URL('https://link_mock'),
+      title: 'title_mock',
+    }
+  ]
+});
+
 
 export const createMockTemurinFeatureReleaseAPI = (installer): MockTemurinFeatureReleaseAPI => ({
   id: 'id_mock',

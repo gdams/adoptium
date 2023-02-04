@@ -1,23 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useRef, MutableRefObject } from 'react';
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
-import { fetchReleaseNotesForVersion } from '../../hooks';
-import { ReleaseNoteAPIResponse } from '../../hooks/fetchReleaseNotes';
+import { fetchReleaseNotesForVersion, useOnScreen } from '../../hooks';
 
 const ReleaseNotesRender = (): null | JSX.Element => {
   const version = queryString.parse(useLocation().search, {decode: false}).version;
-  const [releaseNotes, setReleaseNotes] = useState<ReleaseNoteAPIResponse | null>(null);
 
-  useEffect(() => {
-    if (version) {
-      fetchReleaseNotesForVersion(version).then((data) => {
-        setReleaseNotes(data);
-      });
-    }
-  }, [version]);
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
+  const releaseNotes = fetchReleaseNotesForVersion(isVisible, version);
 
   return (
-	    <div className="text-center container">
+	    <div ref={ref} className="text-center container">
         <h2>{version}</h2>
       {releaseNotes ? (
         <table className="table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
@@ -34,7 +28,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                 (issue, i): string | JSX.Element =>
                   issue && (
                     <tr key={issue.id}>
-                      <td nowrap="nowrap"><a href={issue.link}>{issue.id}</a></td>
+                      <td nowrap="nowrap"><a href={issue.link.toString()}>{issue.id}</a></td>
                       <td>{issue.subcomponent}</td>
                       <td>{issue.priority}</td>
                       <td>{issue.title}</td>
