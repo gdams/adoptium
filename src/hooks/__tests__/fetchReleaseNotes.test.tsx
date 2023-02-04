@@ -25,4 +25,9 @@ describe('fetchReleaseNotesForVersion', () => {
     );
     expect(result.current).toMatchSnapshot()
   })
+
+  it('returns null if version is not defined', async () => {
+    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, null));
+    expect(result.current).toBe(null)
+  })
 });

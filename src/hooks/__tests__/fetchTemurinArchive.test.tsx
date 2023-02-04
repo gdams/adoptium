@@ -51,6 +51,15 @@ describe('getAssetsForVersion', () => {
     });
   });
 
+  it('returns valid JSON - invalid image_type', async() => {
+    mockResponse[0].binaries[0].image_type = 'foobar';
+    renderHook(async() => {
+      await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
+        expect(data?.releases[0].platforms).toStrictEqual({})
+      })
+    });
+  });
+
   it('returns valid JSON - with installers', async() => {
     mockResponse = [createMockTemurinFeatureReleaseAPI(true)];
     renderHook(async() => {
