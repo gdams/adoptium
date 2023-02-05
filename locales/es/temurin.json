@@ -1,5 +1,6 @@
 {
-    "release.intro": "Eclipse Temurin es el proyecto open source de Java SE basado en OpenJDK. Temurin esta disponible para una <supportedPlatformsLink>gama amplia de plataformas</supportedPlatformsLink> y versiones de Java SE. Las más recientes versiones recomendadas para uso en producción son listadas a continuación, y son regularmente <supportLink>actualizadas y soportadas</supportLink> por la comunidad de Adoptium. Ayuda de migración, imágenes de contenedores y guías de instalación de paquetes están disponibles en la <docsLink>sección de documentación</docsLink>. Puedes leer las <foojayLink>Notas de la liberación</foojayLink> de cada versión gracias a nuestros amigos en Foojay.io!",
+    "release.intro": "Eclipse Temurin es el proyecto open source de Java SE basado en OpenJDK. Temurin esta disponible para una <supportedPlatformsLink>gama amplia de plataformas</supportedPlatformsLink> y versiones de Java SE. Las más recientes versiones recomendadas para uso en producción son listadas a continuación, y son regularmente <supportLink>actualizadas y soportadas</supportLink> por la comunidad de Adoptium. Ayuda de migración, imágenes de contenedores y guías de instalación de paquetes están disponibles en la <docsLink>sección de documentación</docsLink>.",
     "Use the drop-down boxes below to filter the list of current releases.": "Usa la caja desplegable de abajo para listar la lista de las actuales liberaciones.",
-    "Previous releases are available in the Temurin archive.": "Liberaciones previas se encuentran disponibles en los archivos de Temurin."
+    "Previous releases are available in the Temurin archive.": "Liberaciones previas se encuentran disponibles en los archivos de Temurin.",
+    "Release Notes": "Notas de la liberación"
 }

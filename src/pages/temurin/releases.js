@@ -30,12 +30,11 @@ const TemurinReleases = () => (
               <p className='text-start'>
                 <Trans
                   i18nKey='release.intro'
-                  defaults='Eclipse Temurin is the open source Java SE build based upon OpenJDK. Temurin is available for a <supportedPlatformsLink>wide range of platforms</supportedPlatformsLink> and Java SE versions. The latest releases recommended for use in production are listed below, and are regularly <supportLink>updated and supported</supportLink> by the Adoptium community. Migration help, container images and package installation guides are available in the <docsLink>documentation section</docsLink>. You can read the <foojayLink>Release Notes</foojayLink> for each version thanks to our friends at Foojay.io!'
+                  defaults='Eclipse Temurin is the open source Java SE build based upon OpenJDK. Temurin is available for a <supportedPlatformsLink>wide range of platforms</supportedPlatformsLink> and Java SE versions. The latest releases recommended for use in production are listed below, and are regularly <supportLink>updated and supported</supportLink> by the Adoptium community. Migration help, container images and package installation guides are available in the <docsLink>documentation section</docsLink>.'
                   components={{
                     supportedPlatformsLink: <LinkText href='/supported-platforms' />,
                     supportLink: <LinkText href='/support' />,
-                    docsLink: <LinkText href='/docs' />,
-                    foojayLink: <LinkText href='https://foojay.io/java-17/?tab=component' />
+                    docsLink: <LinkText href='/docs' />
                   }}
                 />
               </p>

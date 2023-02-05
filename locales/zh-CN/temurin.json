@@ -1,5 +1,6 @@
 {
-    "release.intro": "Eclipse Temurin 是由基于 OpenJDK 的开源 Java SE 产生的构建版本。Temurin 适用于 <supportedPlatformsLink>广泛的平台</supportedPlatformsLink> 以及诸多 Java SE 版本。以下列出了推荐用于生产的最新版本，并且定期由 Adoptium 社区发布<supportLink>更新和支持</supportLink>。迁移帮助、容器镜像和包安装指南可在<docsLink>文档区</docsLink>获得。感谢Foojay.io的朋友们，您可以阅读每个版本的<foojayLink>发行说明</foojayLink>!",
+    "release.intro": "Eclipse Temurin 是由基于 OpenJDK 的开源 Java SE 产生的构建版本。Temurin 适用于 <supportedPlatformsLink>广泛的平台</supportedPlatformsLink> 以及诸多 Java SE 版本。以下列出了推荐用于生产的最新版本，并且定期由 Adoptium 社区发布<supportLink>更新和支持</supportLink>。迁移帮助、容器镜像和包安装指南可在<docsLink>文档区</docsLink>获得。",
     "Use the drop-down boxes below to filter the list of current releases.": "使用下面的下拉框过滤当前版本列表 ",
-    "Previous releases are available in the Temurin archive.": "以前的版本可从 Temurin 档案中下载"
+    "Previous releases are available in the Temurin archive.": "以前的版本可从 Temurin 档案中下载",
+    "Release Notes": "发行说明"
 }
