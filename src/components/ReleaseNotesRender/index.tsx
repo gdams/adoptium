@@ -11,12 +11,12 @@ const ReleaseNotesRender = (): null | JSX.Element => {
   const releaseNotes = fetchReleaseNotesForVersion(isVisible, version);
 
   return (
-	    <div ref={ref} className="text-center container">
+	    <div ref={ref} className='text-center container'>
         <h2>{version}</h2>
       {releaseNotes ? (
-        <table className="table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
+        <table className='table' style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
           <thead className='table-dark'>
-            <tr className="table-head">
+            <tr className='table-head'>
               <th>Issue</th>
               <th>Component</th>
               <th>Priority</th>
@@ -29,7 +29,9 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                 (issue, i): string | JSX.Element =>
                   issue && (
                     <tr key={issue.id}>
-                      <td nowrap="nowrap"><a href={issue.link.toString()}>{issue.id}</a></td>
+                      <td nowrap='nowrap'>
+                        <a target='_blank' rel='noopener noreferrer' href={issue.link.toString()}>{issue.id}</a>
+                      </td>
                       <td>{issue.subcomponent}</td>
                       <td>{issue.priority}</td>
                       <td>{issue.title}</td>

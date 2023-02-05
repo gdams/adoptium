@@ -60,6 +60,8 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
           >
             <a
               href="https://link_mock/"
+              rel="noopener noreferrer"
+              target="_blank"
             >
               id_mock
             </a>
