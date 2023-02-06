@@ -37,10 +37,8 @@ describe('Temurin Release Notes page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
+    expect(title).toHaveTextContent('Release Notes | Adoptium');
 
-    waitFor(() => {
-      expect(title).toHaveTextContent('Temurin | Adoptium');
-    });
   });
 
   it('has no accessibility violations', async () => {
