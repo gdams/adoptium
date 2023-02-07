@@ -1,7 +1,13 @@
 import React, { useRef, MutableRefObject } from 'react';
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
+import BootstrapTable from 'react-bootstrap-table-next';
+import paginationFactory from 'react-bootstrap-table2-paginator';
+import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
+
 import { fetchReleaseNotesForVersion, useOnScreen } from '../../hooks';
+
+const { SearchBar } = Search;
 
 const ReleaseNotesRender = (): null | JSX.Element => {
   const version = queryString.parse(useLocation().search, {decode: false}).version;
@@ -10,46 +16,58 @@ const ReleaseNotesRender = (): null | JSX.Element => {
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
   const releaseNotes = fetchReleaseNotesForVersion(isVisible, version);
 
-  return (
-	    <div ref={ref} className='text-center container'>
-        <h2>{version}</h2>
-      {releaseNotes ? (
-        <table className='table' style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
-          <thead className='table-dark'>
-            <tr className='table-head'>
-              <th>Issue</th>
-              <th>Component</th>
-              <th>Priority</th>
-              <th>Title</th>
-            </tr>
-          </thead>
-          <tbody>
-          {releaseNotes && (
-              releaseNotes.release_notes.map(
-                (issue, i): string | JSX.Element =>
-                  issue && (
-                    <tr key={issue.id}>
-                      <td nowrap='nowrap'>
-                        <a target='_blank' rel='noopener noreferrer' href={issue.link.toString()}>{issue.id}</a>
-                      </td>
-                      <td>{issue.subcomponent}</td>
-                      <td>{issue.priority}</td>
-                      <td>{issue.title}</td>
-                    </tr>
+  const columns = [{
+    dataField: 'link',
+    text: 'Issue',
+    formatter: (cell, row) => (
+      <a target='_blank' rel='noopener noreferrer' href={row.link}>{row.id}</a>
+    ),
+    sort: true
+  }, {
+    dataField: 'subcomponent',
+    text: 'Component',
+    sort: true
+  }, {
+    dataField: 'priority',
+    text: 'Priority',
+    sort: true
+  }, {
+    dataField: 'title',
+    text: 'Title'
+  }];
 
-                  )
-                )
-            )}
-          </tbody>
-        </table>
+  return (
+	  <div ref={ref}>
+      <h2 className='text-center'>{version}</h2>
+      {releaseNotes ? (
+        <ToolkitProvider
+          keyField='id'
+          data={ releaseNotes.release_notes }
+          columns={ columns }
+          search
+        >
+          {
+            props => (
+              <>
+                <div className='p-5'>
+                  <SearchBar className='' { ...props.searchProps } />
+                  <BootstrapTable striped hover bodyClasses='text-nowrap'
+                    pagination={
+                      paginationFactory({sizePerPage: 20, showTotal: true}) 
+                    } { ...props.baseProps }
+                  />
+                </div>
+              </>
+            )
+          }
+        </ToolkitProvider>
       ) : (
         <>
         <h2>Oops... We couldn't find those release notes</h2>
         <span>Please ensure that you have a specified a version using the version URL parameter: <code>?version=x.x.x</code></span>
         </>
       )}
-
-</div>
+    </div>
   );
  };
 
