@@ -98,7 +98,16 @@
       "gatsby": ">=5.0.0"
     },
     "react-bootstrap-table-next": {
-      "react": ">=18.0.0"
+      "react": ">=18.0.0",
+      "react-dom": ">=18.0.0"
+    },
+    "react-bootstrap-table2-paginator": {
+      "react": ">=18.0.0",
+      "react-dom": ">=18.0.0"
+    },
+    "react-bootstrap-table2-toolkit": {
+      "react": ">=18.0.0",
+      "react-dom": ">=18.0.0"
     }
   },
   "keywords": [
