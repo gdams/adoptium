@@ -3,7 +3,7 @@
 exports[`ReleaseNotesRender component > should render correctly - version not defined 1`] = `
 <div>
   <div
-    class="text-center container"
+    class="text-center"
   >
     <h2>
       version
@@ -24,56 +24,247 @@ exports[`ReleaseNotesRender component > should render correctly - version not de
 exports[`ReleaseNotesRender component > should render correctly 1`] = `
 <div>
   <div
-    class="text-center container"
+    class="text-center"
   >
     <h2>
       version
     </h2>
-    <table
-      class="table"
-      style="border-spacing: 0 10px; border-collapse: separate;"
+    <div
+      class="MuiTableContainer-root py-3 css-rorn0c-MuiTableContainer-root"
     >
-      <thead
-        class="table-dark"
+      <table
+        aria-label="Release Notes Table"
+        class="MuiTable-root table table-striped css-quj9j6-MuiTable-root"
       >
-        <tr
-          class="table-head"
+        <thead
+          class="MuiTableHead-root table-dark css-15wwp11-MuiTableHead-root"
         >
-          <th>
-            Issue
-          </th>
-          <th>
-            Component
-          </th>
-          <th>
-            Priority
-          </th>
-          <th>
-            Title
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td
-            nowrap="nowrap"
+          <tr
+            class="MuiTableRow-root MuiTableRow-head table-head css-1q1u3t4-MuiTableRow-root"
           >
-            <a
-              href="https://link_mock/"
-              rel="noopener noreferrer"
-              target="_blank"
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium fw-bold text-light css-1ndpvdd-MuiTableCell-root"
+              scope="col"
             >
-              id_mock
-            </a>
-          </td>
-          <td />
-          <td />
-          <td>
-            title_mock
-          </td>
-        </tr>
-      </tbody>
-    </table>
+              Issue
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium fw-bold text-light css-1ndpvdd-MuiTableCell-root"
+              scope="col"
+            >
+              Component
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium fw-bold text-light css-1ndpvdd-MuiTableCell-root"
+              scope="col"
+            >
+              Priority
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium fw-bold text-light css-1ndpvdd-MuiTableCell-root"
+              scope="col"
+            >
+              Title
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+        >
+          <tr
+            class="MuiTableRow-root css-34nofg-MuiTableRow-root"
+          >
+            <th
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium text-nowrap css-1ex1afd-MuiTableCell-root"
+              scope="row"
+            >
+              <a
+                href="https://link_mock/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                id_mock
+              </a>
+            </th>
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+            />
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+            />
+            <td
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+            >
+              title_mock
+            </td>
+          </tr>
+        </tbody>
+        <tfoot
+          class="MuiTableFooter-root css-9cgc89-MuiTableFooter-root"
+        >
+          <tr
+            class="MuiTableRow-root MuiTableRow-footer css-1q1u3t4-MuiTableRow-root"
+          >
+            <td
+              class="MuiTableCell-root MuiTableCell-footer MuiTableCell-sizeMedium MuiTablePagination-root css-fikjyc-MuiTableCell-root-MuiTablePagination-root"
+              colspan="4"
+            >
+              <div
+                class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar"
+              >
+                <div
+                  class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer"
+                />
+                <p
+                  class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
+                  id=":r1:"
+                >
+                  Rows per page:
+                </p>
+                <div
+                  class="MuiInputBase-root MuiInputBase-colorPrimary m-0 css-16c50h-MuiInputBase-root-MuiTablePagination-select"
+                >
+                  <select
+                    aria-label="rows per page"
+                    class="MuiNativeSelect-select MuiTablePagination-select MuiNativeSelect-standard MuiInputBase-input css-m3l1ig-MuiNativeSelect-select-MuiInputBase-input"
+                    id=":r0:"
+                  >
+                    <option
+                      class="MuiTablePagination-menuItem"
+                      value="20"
+                    >
+                      20
+                    </option>
+                    <option
+                      class="MuiTablePagination-menuItem"
+                      value="50"
+                    >
+                      50
+                    </option>
+                    <option
+                      class="MuiTablePagination-menuItem"
+                      value="75"
+                    >
+                      75
+                    </option>
+                    <option
+                      class="MuiTablePagination-menuItem"
+                      value="-1"
+                    >
+                      All
+                    </option>
+                  </select>
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiNativeSelect-icon MuiTablePagination-selectIcon MuiNativeSelect-iconStandard css-10bey84-MuiSvgIcon-root-MuiNativeSelect-icon"
+                    data-testid="ArrowDropDownIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows"
+                >
+                  1–1 of 1
+                </p>
+                <div
+                  class="MuiBox-root css-1zye22"
+                >
+                  <button
+                    aria-label="first page"
+                    class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="m16.293 17.707 1.414-1.414L13.414 12l4.293-4.293-1.414-1.414L10.586 12zM7 6h2v12H7z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    aria-label="previous page"
+                    class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    aria-label="next page"
+                    class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
+                      />
+                    </svg>
+                  </button>
+                  <button
+                    aria-label="last page"
+                    class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-sizeMedium css-78trlr-MuiButtonBase-root-MuiIconButton-root"
+                    disabled=""
+                    tabindex="-1"
+                    type="button"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.707 17.707 13.414 12 7.707 6.293 6.293 7.707 10.586 12l-4.293 4.293zM15 6h2v12h-2z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
   </div>
 </div>
 `;

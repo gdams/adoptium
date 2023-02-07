@@ -8,13 +8,9 @@ import ReleaseNotesRender from '../../components/ReleaseNotesRender'
 
 const ReleaseNotesPage = () => (
   <Layout>
-    <section className='py-5 text-center container'>
-      <div className='row py-lg-5'>
-        <div className='col-lg-8 col-md-8 mx-auto'>
-          <h1 className='fw-light'><Trans>Release Notes</Trans></h1>
-        </div>
-        <ReleaseNotesRender />
-      </div>
+    <section className='py-5 text-center container-xl'>
+      <h1 className='fw-light'><Trans>Release Notes</Trans></h1>
+      <ReleaseNotesRender />
     </section>
   </Layout>
 )
