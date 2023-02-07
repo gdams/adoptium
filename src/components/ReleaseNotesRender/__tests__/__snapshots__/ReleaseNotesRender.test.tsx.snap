@@ -43,25 +43,25 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
             class="MuiTableRow-root MuiTableRow-head table-head css-1q1u3t4-MuiTableRow-root"
           >
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium fw-bold text-light css-1ndpvdd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium fw-bold text-light css-1ygcj2i-MuiTableCell-root"
               scope="col"
             >
               Issue
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium fw-bold text-light css-1ndpvdd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium fw-bold text-light css-1ygcj2i-MuiTableCell-root"
               scope="col"
             >
               Component
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium fw-bold text-light css-1ndpvdd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium fw-bold text-light css-1ygcj2i-MuiTableCell-root"
               scope="col"
             >
               Priority
             </th>
             <th
-              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignCenter MuiTableCell-sizeMedium fw-bold text-light css-1ndpvdd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignLeft MuiTableCell-sizeMedium fw-bold text-light css-1ygcj2i-MuiTableCell-root"
               scope="col"
             >
               Title
@@ -93,7 +93,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
               class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
             />
             <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-1ex1afd-MuiTableCell-root"
+              class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-186s492-MuiTableCell-root"
             >
               title_mock
             </td>

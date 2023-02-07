@@ -114,10 +114,10 @@ const ReleaseNotesRender = (): null | JSX.Element => {
           <Table className='table table-striped' sx={{ minWidth: 650 }} aria-label='Release Notes Table'>
             <TableHead className='table-dark'>
               <TableRow className='table-head'>
-                <TableCell align="center" className='fw-bold text-light'>Issue</TableCell>
-                <TableCell align="center" className='fw-bold text-light'>Component</TableCell>
-                <TableCell align="center" className='fw-bold text-light'>Priority</TableCell>
-                <TableCell align="center" className='fw-bold text-light'>Title</TableCell>
+                <TableCell align="left" className='fw-bold text-light'>Issue</TableCell>
+                <TableCell align="left" className='fw-bold text-light'>Component</TableCell>
+                <TableCell align="left" className='fw-bold text-light'>Priority</TableCell>
+                <TableCell align="left" className='fw-bold text-light'>Title</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -134,7 +134,9 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                   </TableCell>
                   <TableCell>{issue.subcomponent}</TableCell>
                   <TableCell>{issue.priority}</TableCell>
-                  <TableCell>{issue.title}</TableCell>
+                  <TableCell sx={{maxWidth: '500px'}}>
+                    {issue.title}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
