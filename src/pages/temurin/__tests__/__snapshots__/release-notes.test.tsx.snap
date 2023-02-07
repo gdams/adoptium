@@ -3,71 +3,268 @@
 exports[`Temurin Release Notes page > renders correctly 1`] = `
 <main>
   <section
-    class="py-5 text-center container"
+    class="py-5 container-xxl"
   >
-    <div
-      class="row py-lg-5"
+    <h1
+      class="fw-light text-center"
     >
-      <div
-        class="col-lg-8 col-md-8 mx-auto"
+      Text
+    </h1>
+    <div>
+      <h2
+        class="text-center"
       >
-        <h1
-          class="fw-light"
-        >
-          Text
-        </h1>
-      </div>
+        version
+      </h2>
       <div
-        class="text-center container"
+        class="p-5"
       >
-        <h2>
-          version
-        </h2>
-        <table
-          class="table"
-          style="border-spacing: 0 10px; border-collapse: separate;"
+        <label
+          class="search-label"
+          for="search-bar-0"
         >
-          <thead
-            class="table-dark"
+          <span
+            class="sr-only"
+            id="search-bar-0-label"
           >
-            <tr
-              class="table-head"
+            Search this table
+          </span>
+          <input
+            aria-labelledby="search-bar-0-label"
+            class="form-control "
+            id="search-bar-0"
+            placeholder="Search"
+            type="text"
+            value=""
+          />
+        </label>
+        <div
+          class="react-bootstrap-table"
+        >
+          <table
+            class="table table-striped table-hover table-bordered"
+          >
+            <thead>
+              <tr>
+                <th
+                  aria-label="Issue sortable"
+                  class="sortable"
+                  tabindex="0"
+                >
+                  Issue
+                  <span
+                    class="order"
+                  >
+                    <span
+                      class="dropdown"
+                    >
+                      <span
+                        class="caret"
+                      />
+                    </span>
+                    <span
+                      class="dropup"
+                    >
+                      <span
+                        class="caret"
+                      />
+                    </span>
+                  </span>
+                </th>
+                <th
+                  aria-label="Component sortable"
+                  class="sortable"
+                  tabindex="0"
+                >
+                  Component
+                  <span
+                    class="order"
+                  >
+                    <span
+                      class="dropdown"
+                    >
+                      <span
+                        class="caret"
+                      />
+                    </span>
+                    <span
+                      class="dropup"
+                    >
+                      <span
+                        class="caret"
+                      />
+                    </span>
+                  </span>
+                </th>
+                <th
+                  aria-label="Priority sortable"
+                  class="sortable"
+                  tabindex="0"
+                >
+                  Priority
+                  <span
+                    class="order"
+                  >
+                    <span
+                      class="dropdown"
+                    >
+                      <span
+                        class="caret"
+                      />
+                    </span>
+                    <span
+                      class="dropup"
+                    >
+                      <span
+                        class="caret"
+                      />
+                    </span>
+                  </span>
+                </th>
+                <th
+                  tabindex="0"
+                >
+                  Title
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class="text-nowrap"
             >
-              <th>
-                Issue
-              </th>
-              <th>
-                Component
-              </th>
-              <th>
-                Priority
-              </th>
-              <th>
-                Title
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td
-                nowrap="nowrap"
+              <tr>
+                <td>
+                  <a
+                    href="https://link_mock/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    id_mock
+                  </a>
+                </td>
+                <td />
+                <td />
+                <td>
+                  title_mock
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="row react-bootstrap-table-pagination"
+        >
+          <div
+            class="col-md-6 col-xs-6 col-sm-6 col-lg-6"
+          >
+            <span
+              class="react-bs-table-sizePerPage-dropdown dropdown"
+              style="visibility: visible;"
+            >
+              <button
+                aria-expanded="false"
+                class="btn btn-default btn-secondary dropdown-toggle"
+                data-toggle="dropdown"
+                id="pageDropDown"
+                type="button"
+              >
+                20
+                 
+                <span>
+                  <span
+                    class="caret"
+                  />
+                </span>
+              </button>
+              <ul
+                aria-labelledby="pageDropDown"
+                class="dropdown-menu "
+                role="menu"
+              >
+                <li
+                  class="dropdown-item"
+                  role="presentation"
+                >
+                  <a
+                    data-page="10"
+                    href="#"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    10
+                  </a>
+                </li>
+                <li
+                  class="dropdown-item"
+                  role="presentation"
+                >
+                  <a
+                    data-page="25"
+                    href="#"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    25
+                  </a>
+                </li>
+                <li
+                  class="dropdown-item"
+                  role="presentation"
+                >
+                  <a
+                    data-page="30"
+                    href="#"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    30
+                  </a>
+                </li>
+                <li
+                  class="dropdown-item"
+                  role="presentation"
+                >
+                  <a
+                    data-page="50"
+                    href="#"
+                    role="menuitem"
+                    tabindex="-1"
+                  >
+                    50
+                  </a>
+                </li>
+              </ul>
+            </span>
+            <span
+              class="react-bootstrap-table-pagination-total"
+            >
+               Showing rows 
+              1
+               to 
+              1
+               of 
+              1
+            </span>
+          </div>
+          <div
+            class="react-bootstrap-table-pagination-list col-md-6 col-xs-6 col-sm-6 col-lg-6"
+          >
+            <ul
+              class="pagination react-bootstrap-table-page-btns-ul"
+            >
+              <li
+                class="active page-item"
+                title="1"
               >
                 <a
-                  href="https://link_mock/"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                  class="page-link"
+                  href="#"
                 >
-                  id_mock
+                  1
                 </a>
-              </td>
-              <td />
-              <td />
-              <td>
-                title_mock
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </section>

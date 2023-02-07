@@ -96,6 +96,9 @@
   "overrides": {
     "gatsby-plugin-react-i18next": {
       "gatsby": ">=5.0.0"
+    },
+    "react-bootstrap-table-next": {
+      "react": ">=18.0.0"
     }
   },
   "keywords": [
