@@ -1,3 +1,9 @@
 .MuiTablePagination-toolbar p {
   margin: 0 !important;
 }
+
+.MuiDataGrid-root .MuiDataGrid-cell {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  text-align: left !important;
+}
