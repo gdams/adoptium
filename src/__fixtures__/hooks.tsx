@@ -208,7 +208,7 @@ export const createMockTemurinReleaseAPI = (installer, image_type): MockTemurinR
   }
 });
 
-export const createMockReleaseNotesAPI = (): ReleaseNoteAPIResponse => ({
+export const createMockReleaseNotesAPI = (number): ReleaseNoteAPIResponse => ({
   id: 'id_mock',
   vendor: 'vendor_mock',
   version_data: {
@@ -220,13 +220,12 @@ export const createMockReleaseNotesAPI = (): ReleaseNoteAPIResponse => ({
     openjdk_version: 'openjdk_version_mock',
   },
   release_name: 'release_name_mock',
-  release_notes: [
-    {
-      id: 'id_mock',
-      link: new URL('https://link_mock'),
-      title: 'title_mock',
-    }
-  ]
+  // return an array of length number with the same release notes
+  release_notes: Array.from({ length: number }, (v, i) => ({
+    id: i.toString(),
+    link: new URL('https://link_mock'),
+    title: 'title_mock',
+  }))
 });
 
 

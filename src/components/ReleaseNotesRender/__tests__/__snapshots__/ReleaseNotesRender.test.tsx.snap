@@ -83,7 +83,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                id_mock
+                0
               </a>
             </th>
             <td

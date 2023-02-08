@@ -6,7 +6,7 @@ exports[`fetchReleaseNotesForVersion > returns valid JSON 1`] = `
   "release_name": "release_name_mock",
   "release_notes": [
     {
-      "id": "id_mock",
+      "id": "0",
       "link": "https://link_mock/",
       "title": "title_mock",
     },

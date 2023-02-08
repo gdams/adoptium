@@ -25,7 +25,7 @@ describe('Temurin Release Notes page', () => {
     useOnScreen.mockReturnValue(true);
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI());
+    fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI(1));
     const { container } = render(<ReleaseNotesPage />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
@@ -47,7 +47,7 @@ describe('Temurin Release Notes page', () => {
     useOnScreen.mockReturnValue(true);
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
-    fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI());
+    fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI(1));
     const { container } = render(<ReleaseNotesPage />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();

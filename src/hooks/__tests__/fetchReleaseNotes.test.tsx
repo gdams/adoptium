@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { fetchReleaseNotesForVersion } from '../fetchReleaseNotes';
 import { createMockReleaseNotesAPI } from '../../__fixtures__/hooks';
 
-let mockResponse = createMockReleaseNotesAPI();
+let mockResponse = createMockReleaseNotesAPI(1);
 
 global.fetch = vi.fn(() => Promise.resolve({
   json: () => Promise.resolve(mockResponse)
