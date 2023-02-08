@@ -40,7 +40,7 @@
     "gatsby-remark-prismjs": "^7.5.0",
     "gatsby-remark-smartypants": "^6.6.0",
     "gatsby-source-filesystem": "^5.6.0",
-    "gatsby-transformer-asciidoc": "^4.5.0",
+    "gatsby-transformer-asciidoc": "^4.6.0",
     "gatsby-transformer-remark": "^6.6.0",
     "gatsby-transformer-sharp": "^5.5.0",
     "highlight.js": "^11.6.0",
