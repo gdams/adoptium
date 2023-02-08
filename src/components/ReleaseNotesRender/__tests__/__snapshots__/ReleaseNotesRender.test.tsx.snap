@@ -271,7 +271,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                     aria-colindex="3"
                     aria-label="Priority"
                     aria-sort="none"
-                    class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--alignRight MuiDataGrid-columnHeader--sortable MuiDataGrid-columnHeader--numeric"
+                    class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable"
                     data-field="priority"
                     role="columnheader"
                     style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"
@@ -431,7 +431,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       <div
                         aria-colindex="3"
                         aria-colspan="1"
-                        class="MuiDataGrid-cell MuiDataGrid-cell--textRight"
+                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                         data-colindex="2"
                         data-field="priority"
                         role="cell"
@@ -440,7 +440,6 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       >
                         <div
                           class="MuiDataGrid-cellContent"
-                          title=""
                         />
                       </div>
                     </div>
