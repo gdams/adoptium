@@ -7,14 +7,11 @@ export interface AsciidocPage {
     },
     fields: {
         slug: string;
+        relativePath: string;
     },
     pageAttributes: {
         authors: string;
     }
-}
-
-export interface File {
-    relativePath: string;
 }
 
 export interface MDXPage {

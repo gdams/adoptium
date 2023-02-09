@@ -1,6 +1,5 @@
 import {
     AsciidocPage,
-    File,
     MDXPage,
     SingleMDXPage,
     SiteMetaData
@@ -8,7 +7,6 @@ import {
 
 export const createAsciidocData = (): {
     asciidoc: AsciidocPage;
-    file: File;
   } => ({
     asciidoc: {
         id: 'asciidoc-1',
@@ -33,11 +31,9 @@ export const createAsciidocData = (): {
         },
         fields: {
             slug: '/asciidoc/asciidoc-page-title',
+            relativePath: 'test.adoc',
         }
     },
-    file: {
-        relativePath: 'test.adoc',
-    }
 });
 
 export const createMDXData = (): {
