@@ -1,4 +1,4 @@
-= Preguntas Frecuentes
+= Frequently Asked Questions
 :page-authors: eddumelendez, czelabueno, jdluna, raulmj, tellison, gdams
 
 Hemos reunido unas cuantas preguntas frecuentes (FAQs) en este documento.

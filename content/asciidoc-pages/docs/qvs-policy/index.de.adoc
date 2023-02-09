@@ -1,4 +1,4 @@
-= AQAvit Quality Verification Suite Policy
+= AQAvit(TM) Quality Verification Suite Policy
 :description: Adoptium QVS Policy
 :keywords: adoptium AQAvit quality policy
 :orgname: Eclipse Adoptium

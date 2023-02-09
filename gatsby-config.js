@@ -5,6 +5,7 @@
  */
 
 const path = require('path')
+const locales = require('./locales/i18n')
 
 module.exports = {
   siteMetadata: {
@@ -45,19 +46,25 @@ module.exports = {
       options: {
         name: 'locale',
         path: path.join(__dirname, 'locales'),
-        ignore: ['**/*.md']
+        ignore: ['**/*.md', 'i18n.js']
       }
     },
     {
       resolve: 'gatsby-plugin-react-i18next',
       options: {
         localeJsonSourceName: 'locale',
-        languages: ['en', 'en-GB', 'es', 'de', 'zh-CN'],
+        languages: Object.keys(locales),
         defaultLanguage: 'en',
         i18nextOptions: {
           transSupportBasicHtmlNodes: true,
           transKeepBasicHtmlNodesFor: ['u', 'a']
-        }
+        },
+        pages: [
+          {
+            matchPath: '/:lang?/docs/:uid',
+            getLanguageFromPath: true
+          }
+        ]
       }
     },
     {

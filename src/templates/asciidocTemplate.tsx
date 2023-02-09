@@ -18,10 +18,10 @@ const AsciidocTemplate = ({ data }) => {
     asciidocFormatter()
     highlightCode()
   })
-  const { asciidoc, file } = data // data.asciidoc holds our data
+  const { asciidoc } = data // data.asciidoc holds our data
   const { document, fields, html, pageAttributes } = asciidoc
   const pageAuthorList = pageAttributes.authors || ''
-  const { relativePath } = file
+  const { relativePath } = fields
   return (
     <Layout>
       <section className='py-5 px-3'>
@@ -64,8 +64,8 @@ export const Head = ({ data: { asciidoc: { document } } }) => {
 };
 
 export const pageQuery = graphql`
-  query($id: String!, $language: String!) {
-    asciidoc(id: { eq: $id }) {
+  query($locale: String!, $title: String!, $language: String!) {
+    asciidoc(fields: {locale: {eq: $locale}}, document: {title: {eq: $title}}) {
       html
       document {
         title
@@ -73,13 +73,11 @@ export const pageQuery = graphql`
       }
       fields {
         slug
+        relativePath
       }
       pageAttributes {
         authors
       }
-    }
-    file(childAsciidoc: {id: {eq: $id }}) {
-      relativePath
     }
     locales: allLocale(filter: {language: {eq: $language}}) {
       edges {
