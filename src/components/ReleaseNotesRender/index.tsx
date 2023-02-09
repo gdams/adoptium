@@ -3,6 +3,8 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
 
+/* axelinter:disable:aria-required-children */
+
 import { fetchReleaseNotesForVersion, useOnScreen } from '../../hooks';
 import './ReleaseNotesRender.scss';
 
