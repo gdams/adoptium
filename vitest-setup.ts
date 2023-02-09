@@ -4,6 +4,7 @@ import React from 'react'
 import matchers from '@testing-library/jest-dom/matchers';
 import 'vitest-axe/extend-expect'
 import '@testing-library/jest-dom'
+import 'vitest-canvas-mock'
 
 expect.extend(axeMatchers);
 expect.extend(matchers);

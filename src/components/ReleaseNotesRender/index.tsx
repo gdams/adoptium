@@ -35,6 +35,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
         <div className='pt-3' style={{ display: 'flex', height: '100%' }}>
           <div style={{ flexGrow: 1 }}>
             <DataGrid
+              aria-label='Release Notes'
               autoHeight
               rows={releaseNotes.release_notes}
               columns={columns}

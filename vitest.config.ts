@@ -16,6 +16,9 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
+    deps: {
+      inline: ['vitest-canvas-mock'],
+    },
     setupFiles: './vitest-setup.ts',
     coverage: {
       all: true,

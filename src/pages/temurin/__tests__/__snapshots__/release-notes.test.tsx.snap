@@ -25,6 +25,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
         >
           <div
             aria-colcount="4"
+            aria-label="Release Notes"
             aria-multiselectable="false"
             aria-rowcount="2"
             class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard css-1e2bxag-MuiDataGrid-root"
