@@ -3,8 +3,6 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
 
-/* axelinter:disable:aria-required-children */
-
 import { fetchReleaseNotesForVersion, useOnScreen } from '../../hooks';
 import './ReleaseNotesRender.scss';
 
@@ -22,6 +20,7 @@ const columns: GridColDef[] = [
   { field: 'title', headerName: 'Title', width: 800 },
 ];
 
+/* axelinter:disable:aria-required-children */
 const ReleaseNotesRender = (): null | JSX.Element => {
   const version = queryString.parse(useLocation().search, {decode: false}).version;
 
@@ -30,12 +29,14 @@ const ReleaseNotesRender = (): null | JSX.Element => {
   const releaseNotes = fetchReleaseNotesForVersion(isVisible, version);
   const [pageSize, setPageSize] = React.useState<number>(20);
 
+  /* axelinter:disable:aria-required-children */
   return (
 	  <div ref={ref} className='text-center'>
     <h2>{version}</h2>
       {releaseNotes ? (
         <div className='pt-3' style={{ display: 'flex', height: '100%' }}>
           <div style={{ flexGrow: 1 }}>
+            {/* axelinter:disable:aria-required-children */}
             <DataGrid
               aria-label='Release Notes'
               autoHeight
