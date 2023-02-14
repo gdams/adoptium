@@ -1,18 +1,22 @@
 = Frequently Asked Questions
 :page-authors: gdams, HanSolo, sw-fox, aumann
 
-Wir haben unsere ersten Veröffentlichungen von Eclipse Temurin abgeschlossen und werden
-diese FAQ aktualisieren, sobald die Dinge fertiggestellt und verfügbar sind. Falls Ihre
-Frage nicht durch die unten stehenden Einträge beantwortet wird oder Sie
-direkt mit uns sprechen möchten bzw. zusätzliche Fragen haben, ist der beste Ort unser
-https://adoptium.net/slack.html[Slack-Channel] oder über einen Issue im
-https://github.com/adoptium/adoptium-support[Support-Kanal].
+Auf dieser Seite haben wir versucht häufig gestellte Fragen (FAQs) für die Community zu beantworten.
+Alle weiteren Fragen können jederzeit gerne in unsere https://adoptium.net/slack.html[Slack-Channel] gestellt
+oder per Ticket im https://github.com/adoptium/adoptium-support[Support-Kanal] eingereicht werden.
 
+== Wo kann man die neuesten Adoptium® JDKs finden?
 
-== Wo sind die neuesten JDKs?
+Die JDKs von Adoptium heißen Eclipse Temurin. Die von uns empfohlenen Versionen kann man direkt 
+https://adoptium.net/temurin/releases/[auf unserer Seite] finden.
 
-Die meisten der Eclipse Temurin builds mit HotSpot für 8u322-b06, 11.0.14+9 und
-jdk-17.0.2+8 sind nun auf dieser Seite verfügbar.
+Unsere JDKs sind auch in allen bekannten Java-Installationsmanagern wie https://formulae.brew.sh/cask/temurin[Homebrew],
+https://sdkman.io/[SDKMAN], https://github.com/microsoft/winget-cli[winget] und https://chocolatey.org/[Chocolatey] vertrehten.
+Zusätzlich gib es https://hub.docker.com/_/eclipse-temurin[offizielle Docker-Images] und die Möglichkeit Temurin über die
+https://github.com/marketplace/actions/setup-java-jdk#basic[Github-Aktion "setup-java"] sowie als Teil der individuellen Java-Unterstützung
+von Cloud-Anbietern zu verwenden.
+
+Linux-Installationsprogramme sind unter `packages.adoptium.net` verfügbar. Weitere Informationen hierzu finden Sie https://adoptium.net/installation/linux[in diesem Leitfaden].
 
 == Was ist mit AdoptOpenJDK passiert?
 
