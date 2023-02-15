@@ -23,6 +23,14 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
         <div
           style="flex-grow: 1;"
         >
+          <p>
+            This section organizes the changes in the selected update release by the main component under which each issue is filed.
+          </p>
+          <p>
+            <strong>
+              The total number of fixes marked as P1 is: 1
+            </strong>
+          </p>
           <div
             aria-colcount="4"
             aria-label="Release Notes"
@@ -32,7 +40,48 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
             role="grid"
           >
             <div>
-              <div />
+              <div>
+                <div
+                  class="MuiDataGrid-toolbarContainer css-1j9kmqg-MuiDataGrid-toolbarContainer"
+                >
+                  <button
+                    aria-label="Show filters"
+                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                    data-mui-internal-clone-element="true"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span
+                      class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
+                    >
+                      <span
+                        class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+                      >
+                        <svg
+                          aria-hidden="true"
+                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                          data-testid="FilterListIcon"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
+                          />
+                        </svg>
+                        <span
+                          class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary MuiBadge-badge MuiBadge-invisible css-1pi4uwz-MuiBadge-badge"
+                        >
+                          0
+                        </span>
+                      </span>
+                    </span>
+                    Filters
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </button>
+                </div>
+              </div>
             </div>
             <div
               class="MuiDataGrid-main css-204u17-MuiDataGrid-main"
@@ -55,7 +104,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       aria-colindex="1"
                       aria-label="Issue"
                       aria-sort="none"
-                      class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable"
+                      class="MuiDataGrid-columnHeader"
                       data-field="id"
                       role="columnheader"
                       style="height: 56px; width: 150px; min-width: 150px; max-width: 150px;"
@@ -79,42 +128,16 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               Issue
                             </div>
                           </div>
-                          <div
-                            class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
-                          >
-                            <button
-                              aria-label="Sort"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                              tabindex="-1"
-                              title="Sort"
-                              type="button"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-ptiqhd-MuiSvgIcon-root"
-                                data-testid="ArrowUpwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-                                />
-                              </svg>
-                              <span
-                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                              />
-                            </button>
-                          </div>
                         </div>
                         <div
                           class="MuiDataGrid-menuIcon"
                         >
                           <button
-                            aria-controls=":r2:"
+                            aria-controls=":r3:"
                             aria-haspopup="true"
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                            id=":r3:"
+                            id=":r4:"
                             tabindex="-1"
                             title="Menu"
                             type="button"
@@ -157,7 +180,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       aria-colindex="2"
                       aria-label="Component"
                       aria-sort="none"
-                      class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable"
+                      class="MuiDataGrid-columnHeader"
                       data-field="component"
                       role="columnheader"
                       style="height: 56px; width: 150px; min-width: 150px; max-width: 150px;"
@@ -181,42 +204,16 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               Component
                             </div>
                           </div>
-                          <div
-                            class="MuiDataGrid-iconButtonContainer css-ltf0zy-MuiDataGrid-iconButtonContainer"
-                          >
-                            <button
-                              aria-label="Sort"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                              tabindex="-1"
-                              title="Sort"
-                              type="button"
-                            >
-                              <svg
-                                aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-ptiqhd-MuiSvgIcon-root"
-                                data-testid="ArrowUpwardIcon"
-                                focusable="false"
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
-                                />
-                              </svg>
-                              <span
-                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                              />
-                            </button>
-                          </div>
                         </div>
                         <div
                           class="MuiDataGrid-menuIcon"
                         >
                           <button
-                            aria-controls=":r5:"
+                            aria-controls=":r6:"
                             aria-haspopup="true"
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                            id=":r6:"
+                            id=":r7:"
                             tabindex="-1"
                             title="Menu"
                             type="button"
@@ -258,8 +255,8 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                     <div
                       aria-colindex="3"
                       aria-label="Priority"
-                      aria-sort="none"
-                      class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable"
+                      aria-sort="ascending"
+                      class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-columnHeader--sorted"
                       data-field="priority"
                       role="columnheader"
                       style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"
@@ -314,11 +311,11 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           class="MuiDataGrid-menuIcon"
                         >
                           <button
-                            aria-controls=":r8:"
+                            aria-controls=":r9:"
                             aria-haspopup="true"
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                            id=":r9:"
+                            id=":ra:"
                             tabindex="-1"
                             title="Menu"
                             type="button"
@@ -469,7 +466,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                     />
                     <p
                       class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-                      id=":r1:"
+                      id=":r2:"
                     >
                       Rows per page:
                     </p>
@@ -479,9 +476,9 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         aria-expanded="false"
                         aria-haspopup="listbox"
-                        aria-labelledby=":r1: :r0:"
+                        aria-labelledby=":r2: :r1:"
                         class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
-                        id=":r0:"
+                        id=":r1:"
                         role="button"
                         tabindex="0"
                       >

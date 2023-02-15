@@ -43,4 +43,21 @@ describe('ReleaseNotesRender component', () => {
         expect(fetchReleaseNotesForVersion).toHaveBeenCalledTimes(1);
         expect(container).toMatchSnapshot();
     });
+
+    it('should render correctly - no release notes', () => {
+        // mock query string version
+        vi.mock('query-string', () => ({
+            default: {
+              parse: () => ({
+                version: 'version',
+              }),
+            }
+        }));
+        fetchReleaseNotesForVersion.mockReturnValue({ release_notes: null});
+        const { container } = render(
+            <ReleaseNotesRender />
+        );
+        expect(fetchReleaseNotesForVersion).toHaveBeenCalledTimes(1);
+        expect(container).toMatchSnapshot();
+    });
 });

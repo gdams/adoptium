@@ -1,5 +1,5 @@
 import React, { useRef, MutableRefObject } from 'react';
-import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridToolbarContainer, GridToolbarFilterButton, } from '@mui/x-data-grid';
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
 
@@ -28,30 +28,40 @@ export const fetchTitle = (priority) => {
   return title;
 };
 
+const CustomToolbar: React.FunctionComponent<{
+  setFilterButtonEl: React.Dispatch<React.SetStateAction<HTMLButtonElement | null>>;
+}> = ({ setFilterButtonEl }) => (
+  <GridToolbarContainer>
+    <GridToolbarFilterButton ref={setFilterButtonEl} />
+  </GridToolbarContainer>
+);
+
 const columns: GridColDef[] = [
   {
     field: 'id',
     headerName: 'Issue',
     width: 150,
+    sortable: false,
     renderCell: (params) => (
       <a target='_blank' rel='noopener noreferrer' href={params.row.link}>{params.value}</a>
     ),
   },
-  { field: 'component', headerName: 'Component', width: 150 },
+  { field: 'component', headerName: 'Component', width: 150, sortable: false },
   {
     field: 'priority',
+    type: 'singleSelect',
+    valueOptions: ['1', '2', '3', '4', '5'],
     headerName: 'Priority',
     width: 100,
     renderCell: (params) => {
       const title = fetchTitle(params.value);
-
       return (
         // check if params.value is defined, if not, return an empty string
         <span title={title} className={`badge bg-primary priority-${params.value}`}>{params.value ? `P${params.value}` : ''}</span>
       )
     },
   },
-  { field: 'title', headerName: 'Title', width: 800 },
+  { field: 'title', headerName: 'Title', width: 800, sortable: false },
 ];
 
 const ReleaseNotesRender = (): null | JSX.Element => {
@@ -61,6 +71,8 @@ const ReleaseNotesRender = (): null | JSX.Element => {
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
   const releaseNotes = fetchReleaseNotesForVersion(isVisible, version);
   const [pageSize, setPageSize] = React.useState<number>(20);
+
+  const totalP1 = releaseNotes?.release_notes?.filter((note) => note.priority === '1').length;
 
   return (
 	  <div ref={ref} className='text-center'>
@@ -73,18 +85,30 @@ const ReleaseNotesRender = (): null | JSX.Element => {
             <span>Please ensure that you have a specified a version using the version URL parameter: <code>?version=x.x.x</code></span>
             </>
           ) : (
-          <DataGrid
-            aria-label='Release Notes'
-            autoHeight
-            rows={releaseNotes && releaseNotes.release_notes? releaseNotes.release_notes : []}
-            loading={releaseNotes === null}
-            columns={columns}
-            pageSize={pageSize}
-            rowsPerPageOptions={[20, 50, 75]}
-            onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
-            pagination
-            isRowSelectable={() => false}
-          />
+            <>
+              <p>This section organizes the changes in the selected update release by the main component under which each issue is filed.</p>
+              <p><strong>{`The total number of fixes marked as P1 is: ${totalP1}`}</strong></p>
+              <DataGrid
+                aria-label='Release Notes'
+                autoHeight
+                rows={releaseNotes && releaseNotes.release_notes? releaseNotes.release_notes : []}
+                loading={releaseNotes === null}
+                columns={columns}
+                pageSize={pageSize}
+                rowsPerPageOptions={[20, 50, 75]}
+                onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+                pagination
+                isRowSelectable={() => false}
+                components={{
+                  Toolbar: CustomToolbar,
+                }}
+                initialState={{
+                  sorting: {
+                    sortModel: [{ field: 'priority', sort: 'asc' }],
+                  },
+                }}
+              />
+            </>
           )}
         </div>
       </div>
