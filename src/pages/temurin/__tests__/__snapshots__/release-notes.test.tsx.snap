@@ -419,15 +419,16 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         <div
                           aria-colindex="3"
                           aria-colspan="1"
-                          class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                           data-colindex="2"
                           data-field="priority"
                           role="cell"
                           style="min-width: 100px; max-width: 100px; min-height: 52px; max-height: 52px;"
                           tabindex="-1"
                         >
-                          <div
-                            class="MuiDataGrid-cellContent"
+                          <span
+                            class="badge bg-primary priority-undefined"
+                            title="Unknown Priority"
                           />
                         </div>
                       </div>

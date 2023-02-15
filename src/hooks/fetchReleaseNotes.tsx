@@ -30,7 +30,7 @@ async function fetchReleaseNote(version) {
         const response = await fetch(url);
         return await response.json();
     } catch (error) {
-        return null;
+        return { release_notes: null };
     }
 }
 
