@@ -1,8 +1,7 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
-import userEvent from '@testing-library/user-event';
-import ReleaseNotesRender from '../index';
+import ReleaseNotesRender, { fetchTitle } from '../index';
 import { fetchReleaseNotesForVersion } from '../../../hooks/fetchReleaseNotes';
 import { createMockReleaseNotesAPI  } from '../../../__fixtures__/hooks';
 
@@ -18,6 +17,14 @@ describe('ReleaseNotesRender component', () => {
             <ReleaseNotesRender />
         );
         expect(container).toMatchSnapshot();
+    });
+
+    it('fetchTitle should return correct title', () => {
+        expect(fetchTitle('1')).toBe('P1 - Blocks development and/or testing work, production could not run.');
+        expect(fetchTitle('2')).toBe('P2 - Crashes, loss of data, severe memory leak.');
+        expect(fetchTitle('3')).toBe('P3 - Major loss of function.');
+        expect(fetchTitle('4')).toBe('P4 - Minor loss of function, or other problem where easy workaround is present.');
+        expect(fetchTitle('5')).toBe('P5 - Cosmetic problem like misspelt words or misaligned text.');
     });
     
     it('should render correctly', () => {

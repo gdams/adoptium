@@ -8,6 +8,7 @@ exports[`fetchReleaseNotesForVersion > returns valid JSON 1`] = `
     {
       "id": "0",
       "link": "https://link_mock/",
+      "priority": "1",
       "title": "title_mock",
     },
   ],

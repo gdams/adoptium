@@ -5,7 +5,28 @@ import queryString from 'query-string';
 
 import { fetchReleaseNotesForVersion, useOnScreen } from '../../hooks';
 import './ReleaseNotesRender.scss';
-import { render } from 'react-dom';
+
+export const fetchTitle = (priority) => {
+  let title
+  switch (priority) {
+    case '1':
+      title = 'P1 - Blocks development and/or testing work, production could not run.';
+      break;
+    case '2':
+      title = 'P2 - Crashes, loss of data, severe memory leak.';
+      break;
+    case '3':
+      title = 'P3 - Major loss of function.';
+      break;
+    case '4':
+      title = 'P4 - Minor loss of function, or other problem where easy workaround is present.';
+      break;
+    case '5':
+      title = 'P5 - Cosmetic problem like misspelt words or misaligned text.';
+      break;
+  }
+  return title;
+};
 
 const columns: GridColDef[] = [
   {
@@ -22,26 +43,7 @@ const columns: GridColDef[] = [
     headerName: 'Priority',
     width: 100,
     renderCell: (params) => {
-      // set title text using switch case
-      // if params.value is 1 then title = P4 - Minor loss of function, or other problem where easy workaround is present.
-      let title = 'Unknown Priority';
-      switch (params.value) {
-        case '1':
-          title = 'P1 - Blocks development and/or testing work, production could not run.';
-          break;
-        case '2':
-          title = 'P2 - Crashes, loss of data, severe memory leak.';
-          break;
-        case '3':
-          title = 'P3 - Major loss of function.';
-          break;
-        case '4':
-          title = 'P4 - Minor loss of function, or other problem where easy workaround is present.';
-          break;
-        case '5':
-          title = 'P5 - Cosmetic problem like misspelt words or misaligned text.';
-          break;
-      }
+      const title = fetchTitle(params.value);
 
       return (
         // check if params.value is defined, if not, return an empty string

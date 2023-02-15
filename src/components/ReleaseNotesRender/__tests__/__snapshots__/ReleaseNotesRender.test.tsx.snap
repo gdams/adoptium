@@ -925,9 +925,11 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                         tabindex="-1"
                       >
                         <span
-                          class="badge bg-primary priority-undefined"
-                          title="Unknown Priority"
-                        />
+                          class="badge bg-primary priority-1"
+                          title="P1 - Blocks development and/or testing work, production could not run."
+                        >
+                          P1
+                        </span>
                       </div>
                     </div>
                   </div>
