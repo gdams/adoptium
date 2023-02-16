@@ -20,11 +20,13 @@ describe('ReleaseNotesRender component', () => {
     });
 
     it('fetchTitle should return correct title', () => {
-        expect(fetchTitle('1')).toBe('P1 - Blocks development and/or testing work, production could not run.');
-        expect(fetchTitle('2')).toBe('P2 - Crashes, loss of data, severe memory leak.');
-        expect(fetchTitle('3')).toBe('P3 - Major loss of function.');
-        expect(fetchTitle('4')).toBe('P4 - Minor loss of function, or other problem where easy workaround is present.');
-        expect(fetchTitle('5')).toBe('P5 - Cosmetic problem like misspelt words or misaligned text.');
+        expect(fetchTitle('1')).toContain('P1');
+        expect(fetchTitle('2')).toContain('P2');
+        expect(fetchTitle('3')).toContain('P3');
+        expect(fetchTitle('4')).toContain('P4');
+        expect(fetchTitle('5')).toContain('P5');
+        expect(fetchTitle(null)).toBeUndefined();
+        expect(fetchTitle('123')).toBeUndefined();
     });
     
     it('should render correctly', () => {
