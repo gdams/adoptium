@@ -69,3 +69,9 @@ IBM 现在已经接管了 OpenJ9，并且命名为 "https://developer.ibm.com/la
 
 当迁移到 Eclipse 基金会后，我们的协议是将不再在我们的安装程序中包含 IcedTea-Web
 如若您仍然需要IcedTea-Web，可按照 https://blog.adoptopenjdk.net/2018/10/using-icedtea-web-browser-plug-in-with-adoptopenjdk/[指南]添加其功能。
+
+== 谈谈这个项目吗 ?
+
+参与我们项目的人都热衷于将它推广，同时我们渴望将我们在 Adoptium 所做的工作以及 Temurin 二进制文件一并推广。
+如果您有各类论坛希望我们加入参予，我们会尽力给予协助。
+总的来说，与我们的最佳方式互动方式是通过 Slack 来联系我们的团队。
