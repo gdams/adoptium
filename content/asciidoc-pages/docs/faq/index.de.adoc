@@ -18,6 +18,14 @@ von Cloud-Anbietern zu verwenden.
 
 Linux-Installationsprogramme sind unter `packages.adoptium.net` verfügbar. Weitere Informationen hierzu finden Sie https://adoptium.net/installation/linux[in diesem Leitfaden].
 
+== Gibt es statische Links für Temurin™ Builds?
+
+Das https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.adoc#example-two-linking-to-the-latest-jdk-or-jre[Adoptium API cookbook] beinhatet Beispiele zu statischen und stabilen URLs die zu spezifischen Temurin Versionen verlinken. Zusätzlich bieten wir https://adoptium.net/en-GB/temurin/buttons/[HTML Buttons] an, die auf Temurin downloads verweisen.
+
+== Kann Temurin kostenlos genutzt werden?
+
+Ja. Eclipse Temurin wird von Adoptium kostenlos unter der "GNU General Public License, version 2 with the Classpath Exception" Lizenz vertrieben.
+
 == Was ist mit AdoptOpenJDK passiert?
 
 Kurze Antwort: Das Projekt ist dermaßen gewachsen und um die Stabilität des Projektes in der Zukunft zu gewährleisten, haben wir uns entschieden
