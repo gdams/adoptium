@@ -16,11 +16,7 @@ const TemurinDownloadTable = ({results}) => {
     return (
     <>
         {source &&
-            <>
-            <p><a href={source.binary.package.link}>{source.release_name} <Trans>Source Code Archive</Trans></a></p>
-            {/* We assume release notes exist here */}
             <p><Link to={`/temurin/release-notes?version=${source.release_name}`}><MdNotes /> <Trans>Release Notes</Trans></Link></p>
-            </>
         }
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
             <tbody className="table-light">
@@ -92,6 +88,9 @@ const TemurinDownloadTable = ({results}) => {
             }
             </tbody>
         </table>
+        {source &&
+            <p><a href={source.binary.package.link}>{source.release_name} <Trans>Source Code Archive</Trans></a></p>
+        }
     </>
     );
 };

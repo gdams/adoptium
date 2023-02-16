@@ -25,6 +25,7 @@ describe('ReleaseNotesRender component', () => {
         expect(fetchTitle('3')).toContain('P3');
         expect(fetchTitle('4')).toContain('P4');
         expect(fetchTitle('5')).toContain('P5');
+        expect(fetchTitle('6')).toContain('not publicly visible');
         expect(fetchTitle(null)).toBeUndefined();
         expect(fetchTitle('123')).toBeUndefined();
     });

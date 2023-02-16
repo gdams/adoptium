@@ -20,15 +20,6 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
 <div>
   <p>
     <a
-      href="https://mock-link"
-    >
-      mock-release-name
-       
-      Text
-    </a>
-  </p>
-  <p>
-    <a
       href="/temurin/release-notes?version=mock-release-name"
     >
       <svg
@@ -407,6 +398,15 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
       </tr>
     </tbody>
   </table>
+  <p>
+    <a
+      href="https://mock-link"
+    >
+      mock-release-name
+       
+      Text
+    </a>
+  </p>
 </div>
 `;
 

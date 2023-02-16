@@ -1,5 +1,5 @@
 import React, { useRef, MutableRefObject } from 'react';
-import { DataGrid, GridColDef, GridToolbarContainer, GridToolbarFilterButton, } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridToolbarContainer, GridToolbarFilterButton, gridClasses } from '@mui/x-data-grid';
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
 
@@ -24,6 +24,8 @@ export const fetchTitle = (priority) => {
     case '5':
       title = 'P5 - Cosmetic problem like misspelt words or misaligned text.';
       break;
+    case '6':
+      title = 'This issue is not publicly visible.'
   }
   return title;
 };
@@ -38,16 +40,6 @@ const CustomToolbar: React.FunctionComponent<{
 
 const columns: GridColDef[] = [
   {
-    field: 'id',
-    headerName: 'Issue',
-    width: 150,
-    sortable: false,
-    renderCell: (params) => (
-      <a target='_blank' rel='noopener noreferrer' href={params.row.link}>{params.value}</a>
-    ),
-  },
-  { field: 'component', headerName: 'Component', width: 150, sortable: false },
-  {
     field: 'priority',
     type: 'singleSelect',
     valueOptions: ['1', '2', '3', '4', '5'],
@@ -57,9 +49,36 @@ const columns: GridColDef[] = [
       const title = fetchTitle(params.value);
       return (
         // check if params.value is defined, if not, return an empty string
-        <span title={title} className={`badge bg-primary priority-${params.value}`}>{params.value ? `P${params.value}` : ''}</span>
+        <span title={title} className={`badge bg-secondary priority-${params.value}`}>{params.value && params.value !== '6' ? `P${params.value}` : 'P?'}</span>
       )
     },
+  },
+  {
+    field: 'type',
+    type: 'singleSelect',
+    // set value options to all unique values in type column
+    valueOptions: ['Backport', 'Bug'],
+    headerName: 'Type',
+    width: 100,
+    sortable: false,
+    renderCell: (params) => (
+      <span>{params.value ? params.value : 'Hidden'}</span>
+    )
+  },
+  {
+    field: 'component',
+    headerName: 'Component',
+    width: 150,
+    sortable: false
+  },
+  {
+    field: 'id',
+    headerName: 'Issue',
+    width: 150,
+    sortable: false,
+    renderCell: (params) => (
+      <a target='_blank' rel='noopener noreferrer' href={params.row.link}>{params.value}</a>
+    ),
   },
   { field: 'title', headerName: 'Title', width: 800, sortable: false },
 ];
@@ -71,6 +90,13 @@ const ReleaseNotesRender = (): null | JSX.Element => {
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
   const releaseNotes = fetchReleaseNotesForVersion(isVisible, version);
   const [pageSize, setPageSize] = React.useState<number>(20);
+
+  // Set all priorities set as undefined to '?' to avoid errors
+  releaseNotes?.release_notes?.forEach((note) => {
+    if (note.priority === undefined) {
+      note.priority = '6';
+    }
+  });
 
   const totalP1 = releaseNotes?.release_notes?.filter((note) => note.priority === '1').length;
 
@@ -101,6 +127,12 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                 isRowSelectable={() => false}
                 components={{
                   Toolbar: CustomToolbar,
+                }}
+                getRowHeight={() => 'auto'}
+                sx={{
+                  [`& .${gridClasses.cell}`]: {
+                    py: 1,
+                  },
                 }}
                 initialState={{
                   sorting: {
