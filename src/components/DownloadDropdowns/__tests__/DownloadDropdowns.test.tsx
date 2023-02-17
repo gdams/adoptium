@@ -54,8 +54,8 @@ vi.mock('query-string', () => ({
 }));
 
 describe('DownloadDropdowns component', () => {
-  it('renders correctly', () => {
-    act(() => {
+  it('renders correctly', async () => {
+    await act(async () => {
       const { container, getByTestId } = render(
         <DownloadDropdowns
           updaterAction={updater}
@@ -65,27 +65,35 @@ describe('DownloadDropdowns component', () => {
       );
       waitFor(() => {
         expect(updater).toHaveBeenCalledTimes(1);
-      }).then(() => {
+      }).then(async () => {
         // Simulate a user using dropdowns
-        let select = getByTestId("os-filter");
-        fireEvent.change(select, { target: { value: "mock_os" } });
+        let select = getByTestId('os-filter');
+        act(() => {
+          fireEvent.change(select, { target: { value: 'mock_os' } });
+        });
         expect(updater).toHaveBeenCalledTimes(2);
-        select = getByTestId("arch-filter");
-        fireEvent.change(select, { target: { value: "mock_arch" } });
+        select = getByTestId('arch-filter');
+        act(() => {
+          fireEvent.change(select, { target: { value: 'mock_arch' } });
+        });
         expect(updater).toHaveBeenCalledTimes(3);
-        select = getByTestId("package-type-filter");
-        fireEvent.change(select, { target: { value: "any" } });
+        select = getByTestId('package-type-filter');
+        act(() => {
+          fireEvent.change(select, { target: { value: 'any' } });
+        });
         expect(updater).toHaveBeenCalledTimes(4);
-        select = getByTestId("version-filter");
-        fireEvent.change(select, { target: { value: 1 } });
+        select = getByTestId('version-filter');
+        act(() => {
+          fireEvent.change(select, { target: { value: 1 } });
+        });
         expect(updater).toHaveBeenCalledTimes(5);
         expect(container).toMatchSnapshot();
       });
     });
   });
 
-  it('renders correctly - marketplace', () => {
-    act(() => {
+  it('renders correctly - marketplace', async () => {
+    await act(async () => {
       const { container } = render(
         <DownloadDropdowns
           updaterAction={updater}

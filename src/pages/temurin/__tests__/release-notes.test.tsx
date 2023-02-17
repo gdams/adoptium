@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
+import { render, act } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import { useOnScreen } from '../../../hooks/useOnScreen';
 import { fetchReleaseNotesForVersion } from '../../../hooks/fetchReleaseNotes';
@@ -48,12 +48,14 @@ describe('Temurin Release Notes page', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI(1));
-    const { container } = render(<ReleaseNotesPage />);
-    const results = await axe(container, {
-      rules: {
-        'aria-required-children': { enabled: false }, // unfixable in this case
-      }
+    await act(async () => {
+      const { container } = render(<ReleaseNotesPage />);
+      const results = await axe(container, {
+        rules: {
+          'aria-required-children': { enabled: false }, // unfixable in this case
+        }
+      });
+      expect(results).toHaveNoViolations();
     });
-    expect(results).toHaveNoViolations();
   });
 });
