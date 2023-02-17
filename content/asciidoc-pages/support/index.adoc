@@ -56,20 +56,27 @@ will typically appear within a few days of these dates.
 
 | Java Version  | First Availability | Latest Release | Next Release Due | End of Availability ^[1]^
 
-| Java 20
+| Java 21 (LTS)
 | Expected +
-Mar 2023
+Sep 2023
 | Not available
 | Expected +
-Mar 2023
+Sep 2023
+| Expected Sep 2029
+
+| Java 20
+| Expected +
+21 Mar 2023
+| Not available
+| Expected +
+21 Mar 2023
 | Expected Sep 2023
 
 | Java 19
 | Sep 2022
-| 20 Oct 2022 +
-[.small]#jdk-19.0.1+10#
 | 17 Jan 2023 +
-[.small]#jdk-19.0.2#
+[.small]#jdk-19.0.2+7#
+| EOSL^[2]^
 | Mar 2023
 
 | Java 18
@@ -81,26 +88,26 @@ Mar 2023
 
 | Java 17 (LTS)
 | Sep 2021
-| 18 Oct 2022 +
-[.small]#jdk-17.0.5+8#
 | 17 Jan 2023 +
-[.small]#jdk-17.0.6#
+[.small]#jdk-17.0.6+10#
+| 18 Apr 2023 +
+[.small]#jdk-17.0.7#
 | At least Oct 2027
 
 | Java 11 (LTS)
 | Sep 2018
-| 18 Oct 2022 +
-[.small]#jdk-11.0.17+8#
 | 17 Jan 2023 +
-[.small]#jdk-11.0.18#
+[.small]#jdk-11.0.18+10#
+| 18 Apr 2023 +
+[.small]#jdk-11.0.19#
 | At least Oct 2024
 
 | Java 8 (LTS)
 | Mar 2014
-| 20 Oct 2022 +
-[.small]#jdk8u352-b08#
 | 17 Jan 2023 +
-[.small]#jdk8u361#
+[.small]#jdk8u362-b09#
+| 18 Apr 2023 +
+[.small]#jdk8u372#
 | At least Nov 2026
 
 |===
