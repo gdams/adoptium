@@ -1,7 +1,6 @@
 import React from 'react';
-import { render, waitFor, fireEvent } from '@testing-library/react';
+import { act, render, waitFor, fireEvent } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { act } from 'react-test-renderer';
 import { createRandomTemurinReleases } from '../../../__fixtures__/hooks';
 import DownloadDropdowns from '..';
 
@@ -55,7 +54,7 @@ vi.mock('query-string', () => ({
 
 describe('DownloadDropdowns component', () => {
   it('renders correctly', async () => {
-    await act(async () => {
+    await act (async () => {
       const { container, getByTestId } = render(
         <DownloadDropdowns
           updaterAction={updater}
@@ -65,27 +64,19 @@ describe('DownloadDropdowns component', () => {
       );
       waitFor(() => {
         expect(updater).toHaveBeenCalledTimes(1);
-      }).then(async () => {
+      }).then(() => {
         // Simulate a user using dropdowns
         let select = getByTestId('os-filter');
-        act(() => {
-          fireEvent.change(select, { target: { value: 'mock_os' } });
-        });
+        fireEvent.change(select, { target: { value: 'mock_os' } });
         expect(updater).toHaveBeenCalledTimes(2);
         select = getByTestId('arch-filter');
-        act(() => {
-          fireEvent.change(select, { target: { value: 'mock_arch' } });
-        });
+        fireEvent.change(select, { target: { value: 'mock_arch' } });
         expect(updater).toHaveBeenCalledTimes(3);
         select = getByTestId('package-type-filter');
-        act(() => {
-          fireEvent.change(select, { target: { value: 'any' } });
-        });
+        fireEvent.change(select, { target: { value: 'any' } });
         expect(updater).toHaveBeenCalledTimes(4);
         select = getByTestId('version-filter');
-        act(() => {
-          fireEvent.change(select, { target: { value: 1 } });
-        });
+        fireEvent.change(select, { target: { value: 1 } });
         expect(updater).toHaveBeenCalledTimes(5);
         expect(container).toMatchSnapshot();
       });
