@@ -77,7 +77,7 @@ exports[`ReleaseNotesRender component > should render correctly - version not de
                     class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
                   >
                     <span
-                      class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+                      class="MuiBadge-root css-1c32n2y-MuiBadge-root"
                     >
                       <svg
                         aria-hidden="true"
@@ -91,7 +91,7 @@ exports[`ReleaseNotesRender component > should render correctly - version not de
                         />
                       </svg>
                       <span
-                        class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary MuiBadge-badge MuiBadge-invisible css-1pi4uwz-MuiBadge-badge"
+                        class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-1pi4uwz-MuiBadge-badge"
                       >
                         0
                       </span>
@@ -580,7 +580,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                     class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
                   >
                     <span
-                      class="MuiBadge-root MuiBadge-root css-1c32n2y-MuiBadge-root"
+                      class="MuiBadge-root css-1c32n2y-MuiBadge-root"
                     >
                       <svg
                         aria-hidden="true"
@@ -594,7 +594,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                         />
                       </svg>
                       <span
-                        class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary MuiBadge-badge MuiBadge-invisible css-1pi4uwz-MuiBadge-badge"
+                        class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-1pi4uwz-MuiBadge-badge"
                       >
                         0
                       </span>
