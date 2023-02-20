@@ -91,11 +91,39 @@ usage.
 
 We have a set list of variants in our
 https://hub.docker.com/_/eclipse-temurin[official Docker repository] to ensure we
-are responsive to the delivery of new images containing Temurin. Users
-who want a containerized Linux distribution that we don’t provide can follow
+are responsive to the delivery of new images containing Temurin.  Docker collaborates
+with Adoptium to decide which base operating system container versions they will
+support for Temurin.
+
+Users who want a containerized Linux distribution that we don’t provide can follow
 the instructions in
 https://adoptium.net/blog/2021/08/using-jlink-in-dockerfiles/[this
 guide].
+
+== My scanner reports a CVE in the Eclipse Temurin Docker image. Can you fix it?
+
+The https://hub.docker.com/_/eclipse-temurin[Temurin container images] available on
+Docker Hub are https://docs.docker.com/docker-hub/official_images/[official images]
+created and maintained as a collaborative effort between the Adoptium project and
+Docker, Inc. Adoptium creates, maintains, and tests a broad set of
+https://github.com/adoptium/containers[Temurin Dockerfile source files] which are
+https://github.com/docker-library/official-images/blob/master/library/eclipse-temurin[used by Docker]
+to create official images across various base operating systems.
+
+Docker strives to ensure that the Temurin images contain the most up-to-date packages
+available within a reasonable time frame. Docker has their own robust vulnerability
+scanning program, however, a third-party security scanner may flag an issue with an
+official image. Docker have
+https://github.com/docker-library/faq#why-does-my-security-scanner-show-that-an-image-has-cves[addressed various reasons]
+this may happen in their FAQ. We are grateful to Docker for continuing to refresh the
+base images and rebuild the official images on a regular basis.
+
+We are happy to
+https://github.com/adoptium/adoptium-support/issues/new/choose[receive questions]
+about the
+https://hub.docker.com/_/eclipse-temurin[eclipse-temurin images], but note that
+in some cases we will need to refer the issue to Docker where it relates to the base operating
+system.
 
 == Will you support my favorite architecture and operating system?
 
