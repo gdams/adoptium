@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 // List of repos that will be checked for contributions
 const repositories = [
   'temurin-build', 'ci-jenkins-pipelines', 'infrastructure', 'aqa-tests', 'adoptium.net', 'api.adoptium.net', 'containers', 'installer',
-  'STF', 'run-aqa', 'TKG', 'aqa-test-tooks', 'aqa-systemtest', 'bumblebench', 'jenkins-helper'
+  'STF', 'run-aqa', 'TKG', 'aqa-test-tools', 'aqa-systemtest', 'bumblebench', 'jenkins-helper'
 ];
 
 // List of users to exclude from random contributor
