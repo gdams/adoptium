@@ -45,7 +45,7 @@ jobs:
 
     - uses: gr2m/create-or-update-pull-request-action@dc1726cbf4dd3ce766af4ec29cfb660e0125e8ee # v1
       env:
-        GITHUB_TOKEN: ${{ secrets.ADOPTIUM_TEMURIN_BOT_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.ADOPTIUM_BOT_TOKEN }}
       with:
         title: "Update Asciidoc Contributors"
         body: "This is an automatically generated pull request, it will be automatically merged if all the CI tests pass."
@@ -53,4 +53,4 @@ jobs:
         branch: "contributor_bot"
         commit-message: "contributors: update asciidoc contributors"
         labels: automerge
-        author: "eclipse-temurin-bot <temurin-bot@eclipse.org>"
+        author: "adoptium-bot <adoptium-bot@eclipse.org>"
