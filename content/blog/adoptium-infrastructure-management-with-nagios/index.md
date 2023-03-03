@@ -1,6 +1,6 @@
 ---
 title: Adoptium Infrastructure Management With Nagios
-date: "2023-02-08T12:00:00+00:00"
+date: "2023-03-03T17:08:00+00:00"
 author: steelhead31
 description: This article provides an introduction to how nagios is used to monitor Adoptium public infrastructure
 tags:
