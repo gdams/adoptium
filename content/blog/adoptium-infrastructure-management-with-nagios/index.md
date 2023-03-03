@@ -17,9 +17,9 @@ To aid in this task, the [Nagios Core](https://www.nagios.org/projects/nagios-co
 
 Useful Links:
 
- - [Visual view of the Adoptium infrastructure](https://github.com/adoptium/infrastructure/blob/master/docs/adoptopenjdk.pdf)
- - [Infrastructure Repository README](https://github.com/adoptium/infrastructure/blob/master/README.md)
- - [Usage Of Ansible](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml),
+- [Visual view of the Adoptium infrastructure](https://github.com/adoptium/infrastructure/blob/master/docs/adoptopenjdk.pdf)
+- [Infrastructure Repository README](https://github.com/adoptium/infrastructure/blob/master/README.md)
+- [Usage Of Ansible](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml),
 
 ## 2. How It Works
 
