@@ -38,7 +38,7 @@ The Nagios configuration allows hosts to be grouped together, as the Adoptium pu
 
 ![Nagios_Hostgroups](Nagios_HGs.jpg)
 
-###  2.2.2 Nagios Servicegroups Overview
+####  2.2.2 Nagios Servicegroups Overview
 
 In addition to the Host Groups grouping detailed in 2.2.1, the Nagios configuration also allows hosts to be grouped together with a second optional grouping known as Service Groups. Currently there are only two service groups being monitored in this fashion, the dockerhost servers (which host docker containers) and  Infra servers, which is a specialist group for monitoring key infrastructure servers. The page shown in the screenshot below allows you to quickly see then number of individual servers, and the status of the services for each host allocated to a service group.
 
