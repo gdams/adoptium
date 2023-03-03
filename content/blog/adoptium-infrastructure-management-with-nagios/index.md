@@ -52,4 +52,4 @@ The final pages shown in the screenshot below is a more detailed view of all the
 
 ## 3. Summary
 
-The above guide is provided as an introduction to the monitoring strategy and tools currently in place. Any issues or questions can be raised in the Adoptium slack workspace or within the relevant Github repositories.
+The above guide is provided as an introduction to the monitoring strategy and tools currently in place. Any issues or questions can be raised in the Adoptium slack workspace or within the relevant Github repositories. In addition to this, there is also an overview video, which covers all of the above on the Adoptium YouTube channel, [Introduction To Nagios Monitoring At Adoptium](https://www.youtube.com/watch?v=Dr8ymWV-pow)
