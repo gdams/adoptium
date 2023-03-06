@@ -11,7 +11,7 @@ tags:
 
 ## 1. Introduction
 
-The Adoptium project, has a significant amount of infrastructure and servers that are used constantly for many purposes, such as build and test runs, inventory management ( via ansible ), the CI/CD tool Jenkins etc, and as such there is a requirement to proactively monitor the state of this inventory, and prevent significant issues before they arise wherever possible.
+The Adoptium project has a significant amount of infrastructure and servers that are used constantly for many purposes, such as build and test runs, inventory management (via Ansible), the CI/CD tool Jenkins, and more. As such, there is a requirement to proactively monitor the state of this inventory, and prevent significant issues before they arise wherever possible.
 
 To aid in this task, the [Nagios Core](https://www.nagios.org/projects/nagios-core/) product has been implemented to monitor the various machines and services on them, in order to provide early warnings and allow preventative action to be taken.
 
