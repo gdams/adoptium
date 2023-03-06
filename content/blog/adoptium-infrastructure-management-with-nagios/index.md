@@ -23,23 +23,23 @@ Useful Links:
 
 ## 2. How It Works
 
-The Nagios server, is responsible for running a series of checks, on various servers, in order to provide an alert and early warning system to help mitigate potential problems. The servers being monitored, and the checks taking place are all defined within the Nagios configuration files, and can be updated, amended and extended to suit whatever requirements are needed. In addition, the methods of notification and thresholds are also customisable on a per-host and service basis. The Adoptium Nagios server is currently set to notify warnings and critical errors directly to the [#infrastructure-bot](https://adoptium.slack.com/archives/C8C212BU6) channel within the Adoptium Slack workspace.
+The Nagios server is responsible for running a series of checks on various servers, to provide an early warning system to help mitigate potential problems. The servers being monitored and the checks taking place are all defined within the Nagios configuration files, and can be updated, amended and extended to suit whatever requirements are needed. In addition the methods of notification and thresholds are also customisable on a per host and service basis. The Adoptium Nagios server is currently set to notify warnings and critical errors directly to the [#infrastructure-bot](https://adoptium.slack.com/archives/C8C212BU6) channel within the Adoptium Slack workspac
 
 ### 2.1 Accessing The Adoptium Nagios Server
 
-The Adoptium Nagios server can be accessed via this URL : https://nagios.adoptopenjdk.net/nagios/ , but it requires a login, which can be requested by logging an issue in the [infrastructure GitHub repository](https://github.com/adoptium/infrastructure/issues). Once logged in you will be presented with the following screen:
+The Adoptium Nagios server can be accessed via this URL: [https://nagios.adoptopenjdk.net/nagios/](https://nagios.adoptopenjdk.net/nagios/), but it does require a login, which can be requested by logging an issue in the [infrastructure GitHub repository](https://github.com/adoptium/infrastructure/issues). Once logged in you will be presented with the following screen:
 
 ![Nagios_Main_Screen](Nagios_Main.jpg)
 
 ### 2.2 Key Features Overview
 
-As shown in the screenshot below, there are 3 key areas which will display the states of the hosts and services being monitored in Nagios, these are highlighted in the screenshot and documented in the appropriately named sections below.
+As shown in the screenshot below, there are 3 key areas which will display the states of the hosts and services being monitored in Nagios. These key areas are highlighted in the screenshot and documented in the named sections below
 
 ![Nagios_Main_Screen_Key_Features](Nagios_Main_hl.jpg)
 
 #### 2.2.1 Nagios Hostgroups Overview
 
-The Nagios configuration allows hosts to be grouped together, as the Adoptium public infrastructure is supplied by a number of different providers, this is a good way to check on the hosts and services on a per- provider basis. The Host Groups page  shown in the screenshot below allows you to quickly see the number of individual servers, and the status of the services for each individual server on a single page.
+The Nagios configuration allows hosts to be grouped together, as the Adoptium public infrastructure is supplied by a number of different providers, this is a good way to check on the hosts and services on a per provider basis. The Host Groups page shown in the screenshot below allows you to quickly see then number of individual servers, and the status of the services for each individual server on a single page.
 
 ![Nagios_Hostgroups](Nagios_HGs.jpg)
 
