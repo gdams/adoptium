@@ -39,7 +39,7 @@ As shown in the screenshot below, there are 3 key areas which will display the s
 
 #### 2.2.1 Nagios Hostgroups Overview
 
-The Nagios configuration allows hosts to be grouped together, as the Adoptium public infrastructure is supplied by a number of different providers, this is a good way to check on the hosts and services on a per provider basis. The Host Groups page shown in the screenshot below allows you to quickly see then number of individual servers, and the status of the services for each individual server on a single page.
+The Nagios configuration allows hosts to be grouped together, as the Adoptium public infrastructure is supplied by a number of different providers, this is a good way to check on the hosts and services on a per provider basis. The Host Groups page shown in the screenshot below allows you to quickly see the number of individual servers, and the status of the services for each individual server on a single page.
 
 ![Nagios_Hostgroups](Nagios_HGs.jpg)
 
