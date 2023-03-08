@@ -1,0 +1,7 @@
+According to me we should place the "want to join" button at the starting of the webpage rather than,
+at the end as the user would have to scroll all the way down unlike the  way as the Eclipse foundation page is designed.
+We can have two button placed side-by-side one of "want to join" and the other should be about the contact for the membership. 
+These should be at the top of the page just like that of the page of The Eclipse Foundation. 
+For the "want to sponsor" we can place that one at the end of the webpage. 
+This can be the improvements over the current format.
+
