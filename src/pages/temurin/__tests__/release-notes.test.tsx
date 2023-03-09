@@ -50,11 +50,7 @@ describe('Temurin Release Notes page', () => {
     fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI(1));
     await act(async () => {
       const { container } = render(<ReleaseNotesPage />);
-      const results = await axe(container, {
-        rules: {
-          'aria-required-children': { enabled: false }, // unfixable in this case
-        }
-      });
+      const results = await axe(container);
       expect(results).toHaveNoViolations();
     });
   });

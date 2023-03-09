@@ -89,7 +89,6 @@ const ReleaseNotesRender = (): null | JSX.Element => {
   const ref = useRef<HTMLDivElement | null>(null);
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
   const releaseNotes = fetchReleaseNotesForVersion(isVisible, version);
-  const [pageSize, setPageSize] = React.useState<number>(20);
 
   // Set all priorities set as undefined to '?' to avoid errors
   releaseNotes?.release_notes?.forEach((note) => {
@@ -120,9 +119,17 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                 rows={releaseNotes && releaseNotes.release_notes? releaseNotes.release_notes : []}
                 loading={releaseNotes === null}
                 columns={columns}
-                pageSize={pageSize}
-                rowsPerPageOptions={[20, 50, 75]}
-                onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+                initialState={{
+                  pagination: {
+                    paginationModel: {
+                      pageSize: 20
+                    }
+                  },
+                  sorting: {
+                    sortModel: [{ field: 'priority', sort: 'asc' }],
+                  },
+                }}
+                pageSizeOptions={[20, 50, 75]}
                 pagination
                 isRowSelectable={() => false}
                 components={{
@@ -132,11 +139,6 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                 sx={{
                   [`& .${gridClasses.cell}`]: {
                     py: 1,
-                  },
-                }}
-                initialState={{
-                  sorting: {
-                    sortModel: [{ field: 'priority', sort: 'asc' }],
                   },
                 }}
               />

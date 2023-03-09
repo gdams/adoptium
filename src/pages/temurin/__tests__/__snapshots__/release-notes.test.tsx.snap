@@ -1,4 +1,4 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`Temurin Release Notes page > renders correctly 1`] = `
 <main>
@@ -36,58 +36,56 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
             aria-label="Release Notes"
             aria-multiselectable="false"
             aria-rowcount="2"
-            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard css-75r3lu-MuiDataGrid-root"
+            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-1bvp8j9-MuiDataGrid-root"
             role="grid"
           >
             <div>
-              <div>
-                <div
-                  class="MuiDataGrid-toolbarContainer css-1j9kmqg-MuiDataGrid-toolbarContainer"
+              <div
+                class="MuiDataGrid-toolbarContainer css-128fb87-MuiDataGrid-toolbarContainer"
+              >
+                <button
+                  aria-label="Show filters"
+                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                  data-mui-internal-clone-element="true"
+                  tabindex="0"
+                  type="button"
                 >
-                  <button
-                    aria-label="Show filters"
-                    class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
-                    data-mui-internal-clone-element="true"
-                    tabindex="0"
-                    type="button"
+                  <span
+                    class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
                   >
                     <span
-                      class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
+                      class="MuiBadge-root css-1c32n2y-MuiBadge-root"
                     >
-                      <span
-                        class="MuiBadge-root css-1c32n2y-MuiBadge-root"
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        data-testid="FilterListIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                          data-testid="FilterListIcon"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
-                          />
-                        </svg>
-                        <span
-                          class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-1pi4uwz-MuiBadge-badge"
-                        >
-                          0
-                        </span>
+                        <path
+                          d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
+                        />
+                      </svg>
+                      <span
+                        class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-1pi4uwz-MuiBadge-badge"
+                      >
+                        0
                       </span>
                     </span>
-                    Filters
-                    <span
-                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                    />
-                  </button>
-                </div>
+                  </span>
+                  Filters
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
               </div>
             </div>
             <div
               class="MuiDataGrid-main css-204u17-MuiDataGrid-main"
             >
               <div
-                class="MuiDataGrid-columnHeaders css-z8fhq1-MuiDataGrid-columnHeaders"
+                class="MuiDataGrid-columnHeaders MuiDataGrid-withBorderColor css-1iyq7zh-MuiDataGrid-columnHeaders"
                 style="min-height: 56px; max-height: 56px; line-height: 56px;"
               >
                 <div
@@ -104,7 +102,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       aria-colindex="1"
                       aria-label="Priority"
                       aria-sort="ascending"
-                      class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-columnHeader--sorted"
+                      class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-columnHeader--sorted MuiDataGrid-withBorderColor"
                       data-field="priority"
                       role="columnheader"
                       style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"
@@ -122,7 +120,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Priority
@@ -206,7 +204,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       aria-colindex="2"
                       aria-label="Type"
                       aria-sort="none"
-                      class="MuiDataGrid-columnHeader"
+                      class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                       data-field="type"
                       role="columnheader"
                       style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"
@@ -224,7 +222,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Type
@@ -282,7 +280,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       aria-colindex="3"
                       aria-label="Component"
                       aria-sort="none"
-                      class="MuiDataGrid-columnHeader"
+                      class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                       data-field="component"
                       role="columnheader"
                       style="height: 56px; width: 150px; min-width: 150px; max-width: 150px;"
@@ -300,7 +298,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Component
@@ -358,7 +356,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       aria-colindex="4"
                       aria-label="Issue"
                       aria-sort="none"
-                      class="MuiDataGrid-columnHeader"
+                      class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                       data-field="id"
                       role="columnheader"
                       style="height: 56px; width: 150px; min-width: 150px; max-width: 150px;"
@@ -376,7 +374,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Issue
@@ -434,7 +432,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       aria-colindex="5"
                       aria-label="Title"
                       aria-sort="none"
-                      class="MuiDataGrid-columnHeader"
+                      class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                       data-field="title"
                       role="columnheader"
                       style="height: 56px; width: 800px; min-width: 800px; max-width: 800px;"
@@ -452,7 +450,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-1jbbcbn-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Title
@@ -510,11 +508,11 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 </div>
               </div>
               <div
-                style="overflow: visible; width: 0px;"
+                style="flex: 0 0px; overflow: visible;"
               >
                 <div
-                  class="MuiDataGrid-virtualScroller css-1w5m2wr-MuiDataGrid-virtualScroller"
-                  style="width: 0px; height: auto; margin-top: 56px; overflow-x: hidden; overflow-y: hidden;"
+                  class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
+                  style="overflow-x: hidden; overflow-y: hidden;"
                 >
                   <div
                     class="MuiDataGrid-virtualScrollerContent css-1kwdphh-MuiDataGrid-virtualScrollerContent"
@@ -536,7 +534,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         <div
                           aria-colindex="1"
                           aria-colspan="1"
-                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
                           data-colindex="0"
                           data-field="priority"
                           role="cell"
@@ -553,7 +551,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         <div
                           aria-colindex="2"
                           aria-colspan="1"
-                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
                           data-colindex="1"
                           data-field="type"
                           role="cell"
@@ -567,7 +565,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         <div
                           aria-colindex="3"
                           aria-colspan="1"
-                          class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                          class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
                           data-colindex="2"
                           data-field="component"
                           role="cell"
@@ -581,7 +579,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         <div
                           aria-colindex="4"
                           aria-colspan="1"
-                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
                           data-colindex="3"
                           data-field="id"
                           role="cell"
@@ -599,7 +597,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         <div
                           aria-colindex="5"
                           aria-colspan="1"
-                          class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
+                          class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
                           data-colindex="4"
                           data-field="title"
                           role="cell"
@@ -633,107 +631,105 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 />
               </div>
             </div>
-            <div>
+            <div
+              class="MuiDataGrid-footerContainer MuiDataGrid-withBorderColor css-wop1k0-MuiDataGrid-footerContainer"
+            >
+              <div />
               <div
-                class="MuiDataGrid-footerContainer css-17jjc08-MuiDataGrid-footerContainer"
+                class="MuiTablePagination-root css-rtrcn9-MuiTablePagination-root"
               >
-                <div />
                 <div
-                  class="MuiTablePagination-root css-rtrcn9-MuiTablePagination-root"
+                  class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar"
                 >
                   <div
-                    class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar"
+                    class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer"
+                  />
+                  <p
+                    class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
+                    id=":r2:"
+                  >
+                    Rows per page:
+                  </p>
+                  <div
+                    class="MuiInputBase-root MuiInputBase-colorPrimary css-16c50h-MuiInputBase-root-MuiTablePagination-select"
                   >
                     <div
-                      class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer"
+                      aria-expanded="false"
+                      aria-haspopup="listbox"
+                      aria-labelledby=":r2: :r1:"
+                      class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
+                      id=":r1:"
+                      role="button"
+                      tabindex="0"
+                    >
+                      20
+                    </div>
+                    <input
+                      aria-hidden="true"
+                      class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                      tabindex="-1"
+                      value="20"
                     />
-                    <p
-                      class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-                      id=":r2:"
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon"
+                      data-testid="ArrowDropDownIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
                     >
-                      Rows per page:
-                    </p>
-                    <div
-                      class="MuiInputBase-root MuiInputBase-colorPrimary css-16c50h-MuiInputBase-root-MuiTablePagination-select"
-                    >
-                      <div
-                        aria-expanded="false"
-                        aria-haspopup="listbox"
-                        aria-labelledby=":r2: :r1:"
-                        class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
-                        id=":r1:"
-                        role="button"
-                        tabindex="0"
-                      >
-                        20
-                      </div>
-                      <input
-                        aria-hidden="true"
-                        class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
-                        tabindex="-1"
-                        value="20"
+                      <path
+                        d="M7 10l5 5 5-5z"
                       />
+                    </svg>
+                  </div>
+                  <p
+                    class="MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows"
+                  >
+                    1–1 of 1
+                  </p>
+                  <div
+                    class="MuiTablePagination-actions"
+                  >
+                    <button
+                      aria-label="Go to previous page"
+                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+                      disabled=""
+                      tabindex="-1"
+                      title="Go to previous page"
+                      type="button"
+                    >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon"
-                        data-testid="ArrowDropDownIcon"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        data-testid="KeyboardArrowLeftIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M7 10l5 5 5-5z"
+                          d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
                         />
                       </svg>
-                    </div>
-                    <p
-                      class="MuiTablePagination-displayedRows css-levciy-MuiTablePagination-displayedRows"
+                    </button>
+                    <button
+                      aria-label="Go to next page"
+                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+                      disabled=""
+                      tabindex="-1"
+                      title="Go to next page"
+                      type="button"
                     >
-                      1–1 of 1
-                    </p>
-                    <div
-                      class="MuiTablePagination-actions"
-                    >
-                      <button
-                        aria-label="Go to previous page"
-                        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
-                        disabled=""
-                        tabindex="-1"
-                        title="Go to previous page"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        data-testid="KeyboardArrowRightIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                          data-testid="KeyboardArrowLeftIcon"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
-                          />
-                        </svg>
-                      </button>
-                      <button
-                        aria-label="Go to next page"
-                        class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
-                        disabled=""
-                        tabindex="-1"
-                        title="Go to next page"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                          data-testid="KeyboardArrowRightIcon"
-                          focusable="false"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        <path
+                          d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
