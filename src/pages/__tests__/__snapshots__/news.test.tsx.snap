@@ -256,7 +256,7 @@ exports[`News page > renders correctly 1`] = `
                 </p>
                 <p
                   class="fw-light lh-1"
-                  style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box;"
+                  style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 5;"
                 />
               </div>
             </li>
