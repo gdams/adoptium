@@ -33,7 +33,7 @@
     "gatsby-plugin-sass": "^6.7.0",
     "gatsby-plugin-sharp": "^5.8.0",
     "gatsby-plugin-sitemap": "^6.8.0",
-    "gatsby-remark-autolink-headers": "^6.7.0",
+    "gatsby-remark-autolink-headers": "^6.8.0",
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-copy-linked-files": "^6.7.0",
     "gatsby-remark-images": "^7.8.0",
