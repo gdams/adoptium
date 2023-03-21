@@ -42,7 +42,7 @@
     "gatsby-source-filesystem": "^5.8.0",
     "gatsby-transformer-asciidoc": "^4.8.0",
     "gatsby-transformer-remark": "^6.8.0",
-    "gatsby-transformer-sharp": "^5.7.0",
+    "gatsby-transformer-sharp": "^5.8.0",
     "highlight.js": "^11.6.0",
     "html-to-text": "^9.0.4",
     "i18next": "^21.10.0",
