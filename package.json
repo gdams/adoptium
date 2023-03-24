@@ -14,7 +14,7 @@
     "@mui/lab": "^5.0.0-alpha.97",
     "@mui/material": "^5.11.14",
     "@mui/x-data-grid": "^6.0.3",
-    "@popperjs/core": "^2.11.6",
+    "@popperjs/core": "^2.11.7",
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.2.3",
     "flexsearch": "^0.7.31",
