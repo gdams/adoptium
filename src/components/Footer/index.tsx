@@ -79,8 +79,11 @@ const Footer = (): JSX.Element => {
               <li className="ms-3"><a className="text-muted" aria-label="Adoptium GitHub Account" href="https://github.com/adoptium"><FaGithub size={25} /></a></li>
               <li className="ms-3"><Link className="text-muted" aria-label="Adoptium Slack Account" to="/slack"><FaSlack size={25} /></Link></li>
             </ul>
-            <div className="col-12 d-flex ">
+            <div className="col-12 pb-4 d-flex ">
                 <span className="text-muted">Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.</span>
+            </div>
+            <div className="col-12 justify-content-end d-flex">
+              <a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-light.svg" alt="Deploys by Netlify" /> </a>
             </div>
           </footer>
         </div>
