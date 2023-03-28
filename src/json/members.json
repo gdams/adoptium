@@ -134,6 +134,12 @@
     "tier": "infra"
   },
   {
+    "name": "Netlify",
+    "logo": "netlify-light.svg",
+    "url": "https://www.netlify.com",
+    "tier": "infra"
+  },
+  {
     "name": "Spearhead",
     "logo": "spearhead.jpg",
     "url": "https://spearhead.systems",
