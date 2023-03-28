@@ -336,6 +336,21 @@ exports[`Footer component > renders correctly 1`] = `
             class="ms-3"
           >
             <a
+              href="https://www.netlify.com"
+            >
+               
+              <img
+                alt="Deploys by Netlify"
+                src="https://www.netlify.com/v3/img/components/netlify-light.svg"
+                style="height: 25px;"
+              />
+               
+            </a>
+          </li>
+          <li
+            class="ms-3"
+          >
+            <a
               aria-label="Adoptium Twitter Account"
               class="text-muted"
               href="https://twitter.com/adoptium"
