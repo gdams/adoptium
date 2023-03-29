@@ -7,18 +7,9 @@ import Seo from '../components/Seo'
 import MembersGrid from '../components/MembersGrid'
 import { shuffle } from '../util/shuffle'
 
-let adopters: MembersProps[] = [
-  {
-    "name": "Red Hat",
-    "logo": "redhat.svg",
-    "tier": "adopter"
-  },
-  {
-    "name": "Microsoft",
-    "logo": "microsoft.svg",
-    "tier": "adopter"
-  },
-]
+import Adopters from '../json/adopters.json'
+
+let adopters: MembersProps[] = Adopters
 
 // Randomly mix up adopters logos
 adopters = shuffle(adopters)
