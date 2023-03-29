@@ -56,8 +56,8 @@ const columns: GridColDef[] = [
   {
     field: 'type',
     type: 'singleSelect',
-    // set value options to all unique values in type column
-    valueOptions: ['Backport', 'Bug'],
+    // TODO: This needs automatically setting
+    valueOptions: ['Backport', 'Bug', 'Enhancement'],
     headerName: 'Type',
     width: 100,
     sortable: false,
@@ -97,6 +97,25 @@ const ReleaseNotesRender = (): null | JSX.Element => {
     }
   });
 
+  interface FilterItem {
+    field: string;
+    operator: string;
+    value: string;
+  }
+
+  // Set type to 'Enhancement' by default if version matches jdk-xx+xx
+  const regex = /^jdk-(2\d|\d{3,})\+\d+$/;
+  let filterItems: FilterItem[] = [];
+  if (version?.toString && regex.test(version?.toString())) {
+    filterItems.push(
+      {
+        field: 'type',
+        operator: 'is',
+        value: 'Enhancement'
+      }
+    )
+  }
+
   const totalP1 = releaseNotes?.release_notes?.filter((note) => note.priority === '1').length;
 
   return (
@@ -123,6 +142,11 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                   pagination: {
                     paginationModel: {
                       pageSize: 20
+                    }
+                  },
+                  filter: {
+                    filterModel: {
+                      items: filterItems
                     }
                   },
                   sorting: {
