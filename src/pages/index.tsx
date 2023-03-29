@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { Link, Trans } from 'gatsby-plugin-react-i18next'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import BrandCarousel from '../components/BrandCarousel'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import LatestTemurin from '../components/LatestTemurin'
@@ -42,6 +43,11 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+      </section>
+      {/* align the below text in the center */}
+      <p className='text-center text-muted text-lead pt-3'>The largest companies in the world trust Eclipse Temurin for their Java workloads</p>
+      <BrandCarousel />
+      <section id='about' className='about'>
         <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
           <div className='container py-5'>
             <h2 className='text-pink'><Trans>The Adoptium&reg; Working Group</Trans></h2>

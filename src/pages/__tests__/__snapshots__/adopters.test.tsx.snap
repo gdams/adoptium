@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Adopters page > renders correctly 1`] = `
+<main>
+  <section
+    class="py-5 text-center container"
+  >
+    <div
+      class="row py-lg-5"
+    >
+      <div
+        class="col-lg-8 col-md-8 mx-auto"
+      >
+        <h1
+          class="fw-light"
+        >
+          Eclipse Temurin™ Adopters Page
+        </h1>
+        <p
+          class="lead text-muted"
+        >
+          Companies that use Eclipse Temurin in production.
+        </p>
+        <div
+          class="container"
+        >
+          <div
+            class="row justify-content-center align-items-center"
+          >
+            <div
+              class="col-lg-4 col-md-12 mt-5"
+            >
+              <a
+                href="https://mock.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="mock_member logo"
+                  src="/images/mock_logo.png"
+                  style="width: 10rem;"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+`;
