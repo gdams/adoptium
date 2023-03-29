@@ -44,8 +44,100 @@ exports[`Adopters page > renders correctly 1`] = `
             </div>
           </div>
         </div>
+        <a
+          aria-controls="getListed"
+          aria-expanded="false"
+          class="btn btn-secondary mt-5"
+          data-bs-toggle="collapse"
+          href="#getListed"
+          role="button"
+        >
+          How Can I Get My Logo Displayed?
+        </a>
+        <div
+          class="collapse"
+          id="getListed"
+        >
+          <div
+            class="card card-body text-start"
+          >
+            <p>
+              You can easily add your organization’s logo to our list of adopters by creating an issue or by submitting a pull request.
+            </p>
+            <p
+              class="h3"
+            >
+              Option 1 - Open an Issue
+            </p>
+            <ol>
+              <li>
+                Go to
+                 
+                <a
+                  href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters/-/issues/"
+                >
+                  https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters/-/issues/
+                </a>
+                .
+              </li>
+              <li>
+                Select the ‘New Issue’ button.
+              </li>
+            </ol>
+            <p>
+              When submitting a pull request, please make the following changes to the eclipsefdn-project-adopters'
+               
+              <a
+                href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters"
+              >
+                codebase
+              </a>
+              :
+            </p>
+            <ol>
+              <li>
+                Attach logo files to an issue by dragging and dropping them in the text editor of the form.
+              </li>
+            </ol>
+            <p
+              class="h3"
+            >
+              Option 2 - Submit a Pull Request
+            </p>
+            <ol>
+              <li>
+                Go to
+                 
+                <a
+                  href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters/"
+                >
+                  https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters
+                </a>
+                .
+              </li>
+              <li>
+                Fork the repository.
+              </li>
+              <li>
+                Update the adopter data file config/adopters.json. If your organization supports multiple projects, another project can be added to the projects list within the organization’s node. The values in this list should be the ID of the project.
+              </li>
+              <li>
+                Add a colored and a white organization logo to
+                 
+                <code>
+                  static/assets/images/adopters
+                </code>
+                .
+              </li>
+              <li>
+                Submit the pull request.
+              </li>
+            </ol>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+  ;
 </main>
 `;
