@@ -68,7 +68,6 @@ Sep 2023
 | Mar 2023
 | 21 Mar 2023 +
 [.small]#jdk-20.0.0+36#
-| Expected +
 | 18 Apr 2023 +
 [.small]#jdk-20.0.1#
 | Expected Sep 2023
