@@ -459,6 +459,7 @@ exports[`ReleaseNotesRender component > should render correctly - version not de
                   </div>
                   <input
                     aria-hidden="true"
+                    aria-invalid="false"
                     class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
                     tabindex="-1"
                     value="20"
@@ -1192,6 +1193,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                   </div>
                   <input
                     aria-hidden="true"
+                    aria-invalid="false"
                     class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
                     tabindex="-1"
                     value="20"
