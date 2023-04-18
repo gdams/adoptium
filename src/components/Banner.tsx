@@ -9,7 +9,7 @@ const Banner = () => {
     return (
       <div className="alert text-white alert-dismissible fade show mb-0 text-center" style={{ backgroundColor: '#ff1464' }} role="alert">
        <strong className='p-1'>18th of April 2023:</strong>
-          We are creating the April 2023 CPU binaries for Eclipse Temurin 8u372, 11.0.19, 17.0.7 and 20.0.1 
+          We are creating the April 2023 PSU binaries for Eclipse Temurin 8u372, 11.0.19, 17.0.7 and 20.0.1 
           You can track progress
           <a
             href="https://github.com/adoptium/adoptium/issues/224"
