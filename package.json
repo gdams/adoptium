@@ -41,7 +41,7 @@
     "gatsby-remark-smartypants": "^6.9.0",
     "gatsby-source-filesystem": "^5.9.0",
     "gatsby-transformer-asciidoc": "^4.9.0",
-    "gatsby-transformer-remark": "^6.8.0",
+    "gatsby-transformer-remark": "^6.9.0",
     "gatsby-transformer-sharp": "^5.9.0",
     "highlight.js": "^11.6.0",
     "html-to-text": "^9.0.5",
