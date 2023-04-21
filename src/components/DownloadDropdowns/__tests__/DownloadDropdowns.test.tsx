@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitFor, fireEvent } from '@testing-library/react';
+import { render, fireEvent, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest'
 import { act } from 'react-test-renderer';
 import { createRandomTemurinReleases } from '../../../__fixtures__/hooks';
@@ -11,7 +11,6 @@ const Table = () => {
   );
 };
 
-// Mock the VendorSelector component as this is tested separately
 vi.mock('../../VendorSelector', () => {
   return {
     default: () => <div>vendor-selector</div>,
@@ -55,57 +54,63 @@ vi.mock('query-string', () => ({
 
 describe('DownloadDropdowns component', () => {
   it('renders correctly', async () => {
-    await act(async () => {
-      const { container, getByTestId } = render(
-        <DownloadDropdowns
-          updaterAction={updater}
-          marketplace={false}
-          Table={Table}
-        />
-      );
-      waitFor(() => {
-        expect(updater).toHaveBeenCalledTimes(1);
-      }).then(async () => {
-        // Simulate a user using dropdowns
-        let select = getByTestId('os-filter');
-        act(() => {
-          fireEvent.change(select, { target: { value: 'mock_os' } });
-        });
-        expect(updater).toHaveBeenCalledTimes(2);
-        select = getByTestId('arch-filter');
-        act(() => {
-          fireEvent.change(select, { target: { value: 'mock_arch' } });
-        });
-        expect(updater).toHaveBeenCalledTimes(3);
-        select = getByTestId('package-type-filter');
-        act(() => {
-          fireEvent.change(select, { target: { value: 'any' } });
-        });
-        expect(updater).toHaveBeenCalledTimes(4);
-        select = getByTestId('version-filter');
-        act(() => {
-          fireEvent.change(select, { target: { value: 1 } });
-        });
-        expect(updater).toHaveBeenCalledTimes(5);
-        expect(container).toMatchSnapshot();
-      });
+    const { container, getByTestId } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={false}
+        Table={Table}
+      />
+    );
+
+    await waitFor(() => {
+      expect(updater).toHaveBeenCalledTimes(1);
     });
+
+    let select;
+
+    // Simulate a user using dropdowns
+    select = getByTestId('os-filter');
+    await act(async () => {
+      fireEvent.change(select, { target: { value: 'mock_os' } });
+    });
+
+    expect(updater).toHaveBeenCalledTimes(2);
+
+    select = getByTestId('arch-filter');
+    await act(async () => {
+      fireEvent.change(select, { target: { value: 'mock_arch' } });
+    });
+
+    expect(updater).toHaveBeenCalledTimes(3);
+
+    select = getByTestId('package-type-filter');
+    await act(async () => {
+      fireEvent.change(select, { target: { value: 'any' } });
+    });
+
+    expect(updater).toHaveBeenCalledTimes(4);
+
+    select = getByTestId('version-filter');
+    await act(async () => {
+      fireEvent.change(select, { target: { value: 1 } });
+    });
+
+    expect(updater).toHaveBeenCalledTimes(5);
+    expect(container).toMatchSnapshot();
   });
 
   it('renders correctly - marketplace', async () => {
-    await act(async () => {
-      const { container } = render(
-        <DownloadDropdowns
-          updaterAction={updater}
-          marketplace={true}
-          Table={Table}
-        />
-      );
-      waitFor(() => {
-        expect(updater).toHaveBeenCalledTimes(1);
-      }).then(() => {
-        expect(container).toMatchSnapshot();
-      });
+    const { container } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={true}
+        Table={Table}
+      />
+    );
+    await waitFor(() => {
+      expect(updater).toHaveBeenCalledTimes(1);
     });
+
+    expect(container).toMatchSnapshot();
   });
 });
