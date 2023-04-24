@@ -77,7 +77,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
               value={buildDate}
               maxDate={new Date()}
               onChange={(newValue) => {
-                updateBuildDate(newValue);
+                newValue && updateBuildDate(newValue);
               }}
               sx={{
                 maxWidth: '10em',
