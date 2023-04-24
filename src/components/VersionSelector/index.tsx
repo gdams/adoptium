@@ -2,11 +2,12 @@ import React, { useState, useCallback, useEffect } from 'react';
 import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import { useLocation } from '@reach/router';
 import queryString from 'query-string';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
-import DatePicker from 'react-date-picker';
-
-import { versions, defaultVersion } from '../util/defaults'
-import { setURLParam } from '../util/setURLParam';
+import { versions, defaultVersion } from '../../util/defaults'
+import { setURLParam } from '../../util/setURLParam';
 
 const VersionSelector = ({updater, releaseType, Table}) => {
   const { language } = useI18next();
@@ -26,7 +27,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
   const [version, udateVersion] = useState(selectedVersion.toString());
   const [numBuilds, udateNumBuilds] = useState(5);
   const [page, updatePage] = useState(0);
-  const [buildDate, updateBuildDate] = useState(new Date());  
+  const [buildDate, updateBuildDate] = useState<Date>(new Date());
   const [releases, setReleases] = useState(null);
 
   useEffect(() => {
@@ -51,7 +52,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       </p>
       <div className="input-group p-3 d-flex justify-content-center">
         <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
-        <select id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm" style={{ maxWidth: '10em' }}>
+        <select data-testid="version-filter" id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm" style={{ maxWidth: '10em' }}>
             {versions.map(
                 (version, i): number | JSX.Element => version && (
                     <option key={version} value={version}>{version}</option>
@@ -62,7 +63,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       {releaseType === "ea" && (
         <div className="input-group pb-5 d-flex justify-content-center">
           <span className='p-2'>View</span>
-          <select id="build-num-filter" onChange={(e) => setNumBuilds(e.target.value)} defaultValue={numBuilds} className="form-select form-select-sm" style={{ maxWidth: '5em' }}>
+          <select data-testid="build-num-filter" id="build-num-filter" onChange={(e) => setNumBuilds(e.target.value)} defaultValue={numBuilds} className="form-select form-select-sm" style={{ maxWidth: '5em' }}>
             <option key={1} value={1}>1</option>
             <option key={5} value={5}>5</option>
             <option key={10} value={10}>10</option>
@@ -70,12 +71,19 @@ const VersionSelector = ({updater, releaseType, Table}) => {
             <option key={50} value={50}>50</option>
           </select>
           <span className='p-2'>nightly builds prior to:</span>
-          <DatePicker
-            value={buildDate}
-            maxDate={new Date()}
-            onChange={updateBuildDate}
-            locale={language}
-          />
+          <LocalizationProvider dateAdapter={AdapterDateFns} locale={language}>
+            <DesktopDatePicker
+              label="Build Date"
+              value={buildDate}
+              maxDate={new Date()}
+              onChange={(newValue) => {
+                updateBuildDate(newValue);
+              }}
+              sx={{
+                maxWidth: '10em',
+              }}
+            />
+          </LocalizationProvider>
         </div>
       )}
       <Table results={releases} updatePage={updatePage}/>

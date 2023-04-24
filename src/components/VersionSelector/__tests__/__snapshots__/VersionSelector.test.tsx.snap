@@ -1,0 +1,176 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`VersionSelector > updates the number of builds and build date when the inputs change 1`] = `
+"[36m<div>[39m
+  [36m<p[39m
+    [33mclass[39m=[32m\\"text-center\\"[39m
+  [36m>[39m
+    [0mText[0m
+  [36m</p>[39m
+  [36m<div[39m
+    [33mclass[39m=[32m\\"input-group p-3 d-flex justify-content-center\\"[39m
+  [36m>[39m
+    [36m<label[39m
+      [33mclass[39m=[32m\\"px-2 fw-bold\\"[39m
+      [33mfor[39m=[32m\\"version\\"[39m
+    [36m>[39m
+      [0mText[0m
+    [36m</label>[39m
+    [36m<select[39m
+      [33mclass[39m=[32m\\"form-select form-select-sm\\"[39m
+      [33mdata-testid[39m=[32m\\"version-filter\\"[39m
+      [33mid[39m=[32m\\"version-filter\\"[39m
+      [33mstyle[39m=[32m\\"max-width: 10em;\\"[39m
+    [36m>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"20\\"[39m
+      [36m>[39m
+        [0m20[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"19\\"[39m
+      [36m>[39m
+        [0m19[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"18\\"[39m
+      [36m>[39m
+        [0m18[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"17\\"[39m
+      [36m>[39m
+        [0m17[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"16\\"[39m
+      [36m>[39m
+        [0m16[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"11\\"[39m
+      [36m>[39m
+        [0m11[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"8\\"[39m
+      [36m>[39m
+        [0m8[0m
+      [36m</option>[39m
+    [36m</select>[39m
+  [36m</div>[39m
+  [36m<div[39m
+    [33mclass[39m=[32m\\"input-group pb-5 d-flex justify-content-center\\"[39m
+  [36m>[39m
+    [36m<span[39m
+      [33mclass[39m=[32m\\"p-2\\"[39m
+    [36m>[39m
+      [0mView[0m
+    [36m</span>[39m
+    [36m<select[39m
+      [33mclass[39m=[32m\\"form-select form-select-sm\\"[39m
+      [33mdata-testid[39m=[32m\\"build-num-filter\\"[39m
+      [33mid[39m=[32m\\"build-num-filter\\"[39m
+      [33mstyle[39m=[32m\\"max-width: 5em;\\"[39m
+    [36m>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"1\\"[39m
+      [36m>[39m
+        [0m1[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mselected[39m=[32m\\"\\"[39m
+        [33mvalue[39m=[32m\\"5\\"[39m
+      [36m>[39m
+        [0m5[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"10\\"[39m
+      [36m>[39m
+        [0m10[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"20\\"[39m
+      [36m>[39m
+        [0m20[0m
+      [36m</option>[39m
+      [36m<option[39m
+        [33mvalue[39m=[32m\\"50\\"[39m
+      [36m>[39m
+        [0m50[0m
+      [36m</option>[39m
+    [36m</select>[39m
+    [36m<span[39m
+      [33mclass[39m=[32m\\"p-2\\"[39m
+    [36m>[39m
+      [0mnightly builds prior to:[0m
+    [36m</span>[39m
+    [36m<div[39m
+      [33mclass[39m=[32m\\"MuiFormControl-root MuiTextField-root css-1ku64c3-MuiFormControl-root-MuiTextField-root\\"[39m
+    [36m>[39m
+      [36m<label[39m
+        [33mclass[39m=[32m\\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root\\"[39m
+        [33mdata-shrink[39m=[32m\\"true\\"[39m
+        [33mfor[39m=[32m\\":r2:\\"[39m
+        [33mid[39m=[32m\\":r2:-label\\"[39m
+      [36m>[39m
+        [0mBuild Date[0m
+      [36m</label>[39m
+      [36m<div[39m
+        [33mclass[39m=[32m\\"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root\\"[39m
+      [36m>[39m
+        [36m<input[39m
+          [33maria-invalid[39m=[32m\\"false\\"[39m
+          [33mautocomplete[39m=[32m\\"off\\"[39m
+          [33mclass[39m=[32m\\"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input\\"[39m
+          [33mid[39m=[32m\\":r2:\\"[39m
+          [33minputmode[39m=[32m\\"text\\"[39m
+          [33mplaceholder[39m=[32m\\"MM/DD/YYYY\\"[39m
+          [33mtype[39m=[32m\\"text\\"[39m
+          [33mvalue[39m=[32m\\"01/01/2022\\"[39m
+        [36m/>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m\\"MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root\\"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33maria-label[39m=[32m\\"Choose date, selected date is Jan 1, 2022\\"[39m
+            [33mclass[39m=[32m\\"MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root\\"[39m
+            [33mtabindex[39m=[32m\\"0\\"[39m
+            [33mtype[39m=[32m\\"button\\"[39m
+          [36m>[39m
+            [36m<svg[39m
+              [33maria-hidden[39m=[32m\\"true\\"[39m
+              [33mclass[39m=[32m\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\\"[39m
+              [33mdata-testid[39m=[32m\\"CalendarIcon\\"[39m
+              [33mfocusable[39m=[32m\\"false\\"[39m
+              [33mviewBox[39m=[32m\\"0 0 24 24\\"[39m
+            [36m>[39m
+              [36m<path[39m
+                [33md[39m=[32m\\"M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z\\"[39m
+              [36m/>[39m
+            [36m</svg>[39m
+            [36m<span[39m
+              [33mclass[39m=[32m\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"[39m
+            [36m/>[39m
+          [36m</button>[39m
+        [36m</div>[39m
+        [36m<fieldset[39m
+          [33maria-hidden[39m=[32m\\"true\\"[39m
+          [33mclass[39m=[32m\\"MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline\\"[39m
+        [36m>[39m
+          [36m<legend[39m
+            [33mclass[39m=[32m\\"css-14lo706\\"[39m
+          [36m>[39m
+            [36m<span>[39m
+              [0mBuild Date[0m
+            [36m</span>[39m
+          [36m</legend>[39m
+        [36m</fieldset>[39m
+      [36m</div>[39m
+    [36m</div>[39m
+  [36m</div>[39m
+  [36m<div>[39m
+    [0mTable[0m
+  [36m</div>[39m
+[36m</div>[39m"
+`;
