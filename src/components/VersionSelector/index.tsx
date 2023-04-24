@@ -9,8 +9,18 @@ import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 import { versions, defaultVersion } from '../../util/defaults'
 import { setURLParam } from '../../util/setURLParam';
 
+import enGB from 'date-fns/locale/en-GB';
+
 const VersionSelector = ({updater, releaseType, Table}) => {
   const { language } = useI18next();
+
+  let locale;
+
+  // import the correct date locale for the language
+  if (language !== 'en') {
+    locale = require(`date-fns/locale/${language}/index.js`);
+  }
+
   let selectedVersion = defaultVersion
   const versionParam = queryString.parse(useLocation().search).version;
   if (versionParam) {
@@ -71,7 +81,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
             <option key={50} value={50}>50</option>
           </select>
           <span className='p-2'>nightly builds prior to:</span>
-          <LocalizationProvider dateAdapter={AdapterDateFns} locale={language}>
+          <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={locale}>
             <DesktopDatePicker
               label="Build Date"
               value={buildDate}
