@@ -4,18 +4,14 @@ exports[`VersionSelector > updates the number of builds and build date when the 
 "[36m<div>[39m
   [36m<p[39m
     [33mclass[39m=[32m\\"text-center\\"[39m
-  [36m>[39m
-    [0mText[0m
-  [36m</p>[39m
+  [36m/>[39m
   [36m<div[39m
     [33mclass[39m=[32m\\"input-group p-3 d-flex justify-content-center\\"[39m
   [36m>[39m
     [36m<label[39m
       [33mclass[39m=[32m\\"px-2 fw-bold\\"[39m
       [33mfor[39m=[32m\\"version\\"[39m
-    [36m>[39m
-      [0mText[0m
-    [36m</label>[39m
+    [36m/>[39m
     [36m<select[39m
       [33mclass[39m=[32m\\"form-select form-select-sm\\"[39m
       [33mdata-testid[39m=[32m\\"version-filter\\"[39m

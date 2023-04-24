@@ -35,6 +35,7 @@ const mockResults = [
 const useFlexSearchMock = (mockResults) => () => mockResults;
 // Mock useFlexSearch hook
 vi.mock('react-use-flexsearch');
+// @ts-ignore
 useFlexSearch.mockImplementation(useFlexSearchMock(mockResults));
 
 describe('DocumentationHeader', () => {

@@ -2,8 +2,10 @@ import React from 'react';
 import { act, render, screen, fireEvent, prettyDOM } from '@testing-library/react';
 import queryString from 'query-string';
 import { afterEach, vi } from 'vitest';
+import { useI18next } from 'gatsby-plugin-react-i18next'
 import VersionSelector from '../index';
 import { defaultVersion } from '../../../util/defaults';
+import locales from '../../../../locales/i18n';
 
 describe('VersionSelector', () => {
   const updater = vi.fn();
@@ -11,6 +13,14 @@ describe('VersionSelector', () => {
   const Table = () => <div>Table</div>;
 
   vi.mock('query-string');
+
+  vi.mock('gatsby-plugin-react-i18next');
+
+  // @ts-ignore
+  useI18next.mockReturnValue({
+    language: 'en',
+    languages: locales
+  });
 
   vi.mock('@mui/x-date-pickers/DatePicker', () => {
     return vi.importActual('@mui/x-date-pickers/DesktopDatePicker')
@@ -49,7 +59,7 @@ describe('VersionSelector', () => {
     });
     expect(updater).toHaveBeenCalledWith('8', releaseType, 5, expect.any(Date), 0);
   });
-  
+
   it('updates the number of builds and build date when the inputs change', async () => {
     queryString.parse = vi.fn().mockReturnValue({});
     let container;
@@ -57,17 +67,17 @@ describe('VersionSelector', () => {
       const result = render(<VersionSelector updater={updater} releaseType='ea' Table={Table} />);
       container = result.container;
     });
-  
+
     fireEvent.change(screen.getByTestId('build-num-filter'), { target: { value: 10 } });
-  
+
     await act(async () => {
       const datepicker = screen.getByLabelText('Build Date')
       fireEvent.change(datepicker, { target: { value: '01/01/2022' } })
       expect(datepicker.getAttribute('value')).toBe('01/01/2022');
     });
-  
+
     expect(updater).lastCalledWith('17', 'ea', '10', expect.any(Date), 0);
-  
+
     // Add the snapshot test for the final rendered output
     expect(prettyDOM(container)).toMatchSnapshot();
   });
@@ -94,5 +104,24 @@ describe('VersionSelector', () => {
     expect(screen.queryByLabelText('View')).not.toBeInTheDocument();
     expect(screen.queryByLabelText('nightly builds prior to:')).not.toBeInTheDocument();
     expect(screen.getByText('Table')).toBeInTheDocument();
+  });
+
+  // loop through locales
+  Object.keys(locales).forEach((locale) => {
+    it(`renders when the locale is set to ${locale}`, async () => {
+      queryString.parse = vi.fn().mockReturnValue({});
+
+      // @ts-ignore
+      useI18next.mockReturnValue({
+        language: locale,
+        languages: locales,
+      });
+
+      await act(async () => {
+        render(<VersionSelector updater={updater} releaseType='ea' Table={Table} />);
+      });
+      const datepicker = screen.getByLabelText('Build Date')
+      expect(datepicker).toBeInTheDocument();
+    });
   });
 });

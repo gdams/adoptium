@@ -9,8 +9,6 @@ import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 import { versions, defaultVersion } from '../../util/defaults'
 import { setURLParam } from '../../util/setURLParam';
 
-import enGB from 'date-fns/locale/en-GB';
-
 const VersionSelector = ({updater, releaseType, Table}) => {
   const { language } = useI18next();
 
