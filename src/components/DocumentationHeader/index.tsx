@@ -48,6 +48,7 @@ const DocumentationHeader = ({
 		      <div className="main-search-box pt-3 d-block mx-auto">
             <Autocomplete
               disablePortal
+              data-testid="autocomplete"
               id="combo-box-demo"
               options={hintArray}
               onChange={(event: any, option: any) => {
