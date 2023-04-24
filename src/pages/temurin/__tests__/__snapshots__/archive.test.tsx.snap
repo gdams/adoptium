@@ -1,0 +1,249 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Temurin Archive page > renders correctly 1`] = `
+<main>
+  <section
+    class="py-5 text-center container"
+  >
+    <div
+      class="row py-lg-5"
+    >
+      <div
+        class="col-lg-10 col-md-8 mx-auto"
+      >
+        <h1
+          class="fw-light"
+        >
+          Archive
+        </h1>
+        <div
+          class="row align-items-center pt-2"
+        >
+          <div
+            class="callout callout-default text-start"
+          >
+            Please be aware that this archive contains old releases of Eclipse Temurin kept for reference. The 
+            <a
+              href="/temurin/releases"
+            >
+              latest releases
+            </a>
+             should be used in development and production.
+            <br />
+            <br />
+            <p
+              class="text-warning"
+            >
+              Using old, superseded, or otherwise unsupported builds is not recommended.
+            </p>
+          </div>
+          <div
+            class="btn-group"
+          >
+            <a
+              class="btn btn-primary m-3"
+              href="/temurin/releases"
+            >
+              Text
+               
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"
+                />
+              </svg>
+            </a>
+            <a
+              class="btn btn-secondary m-3"
+              href="/temurin/nightly"
+            >
+              Text
+               
+              <svg
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p
+      class="text-center"
+    >
+      Text
+    </p>
+    <div
+      class="input-group p-3 d-flex justify-content-center"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="version"
+      >
+        Text
+      </label>
+      <select
+        aria-label="version-filter"
+        class="form-select form-select-sm"
+        data-testid="version-filter"
+        id="version-filter"
+        style="max-width: 10em;"
+      >
+        <option
+          value="20"
+        >
+          20
+        </option>
+        <option
+          value="19"
+        >
+          19
+        </option>
+        <option
+          value="18"
+        >
+          18
+        </option>
+        <option
+          value="17"
+        >
+          17
+        </option>
+        <option
+          value="16"
+        >
+          16
+        </option>
+        <option
+          value="11"
+        >
+          11
+        </option>
+        <option
+          value="8"
+        >
+          8
+        </option>
+      </select>
+    </div>
+    <div
+      id="archive-list"
+    >
+      <table
+        class="table table-borderless table-condensed archive-container"
+        id="archive-table"
+        style="border-spacing: 0 20px; border-collapse: separate;"
+      >
+        <tbody
+          class="table-light"
+        >
+          <tr />
+        </tbody>
+      </table>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="checksumModalLabel"
+      class="modal fade"
+      id="checksumModal"
+      style="z-index: 10000;"
+      tabindex="-1"
+    >
+      <div
+        class="modal-dialog modal-lg"
+      >
+        <div
+          class="modal-content"
+        >
+          <div
+            class="modal-header"
+          >
+            <h5
+              class="modal-title"
+              id="checksumModalLabel"
+            >
+              Checksum (SHA256)
+            </h5>
+            <button
+              aria-label="Close"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              type="button"
+            />
+          </div>
+          <div
+            class="modal-body text-start"
+          >
+            <p>
+              The checksum is used to ensure the file has not been corrupted during download. You should compare the checksum of the file you received with the value below to ensure the file you received is complete and unmodified.
+            </p>
+            <p>
+              On Windows use 
+              <code>
+                certUtil -hashfile 
+                <var>
+                  file
+                </var>
+                 SHA256
+              </code>
+              , on Linux use 
+              <code>
+                sha256sum 
+                <var>
+                  file
+                </var>
+              </code>
+              , and on macOS use 
+              <code>
+                shasum -a 256 
+                <var>
+                  file
+                </var>
+              </code>
+              .
+            </p>
+            <input
+              readonly=""
+              style="width: 100%;"
+              value=""
+            />
+          </div>
+          <div
+            class="modal-footer"
+          >
+            <button
+              class="btn btn-primary"
+              type="button"
+            >
+              Copy
+            </button>
+            <button
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              type="button"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+`;

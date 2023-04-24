@@ -60,7 +60,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       </p>
       <div className="input-group p-3 d-flex justify-content-center">
         <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
-        <select data-testid="version-filter" id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm" style={{ maxWidth: '10em' }}>
+        <select data-testid="version-filter" aria-label="version-filter" id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm" style={{ maxWidth: '10em' }}>
             {versions.map(
                 (version, i): number | JSX.Element => version && (
                     <option key={version} value={version}>{version}</option>
@@ -71,7 +71,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       {releaseType === "ea" && (
         <div className="input-group pb-5 d-flex justify-content-center">
           <span className='p-2'>View</span>
-          <select data-testid="build-num-filter" id="build-num-filter" onChange={(e) => setNumBuilds(e.target.value)} defaultValue={numBuilds} className="form-select form-select-sm" style={{ maxWidth: '5em' }}>
+          <select data-testid="build-num-filter" aria-label="Filter by number of builds" id="build-num-filter" onChange={(e) => setNumBuilds(e.target.value)} defaultValue={numBuilds} className="form-select form-select-sm" style={{ maxWidth: '5em' }}>
             <option key={1} value={1}>1</option>
             <option key={5} value={5}>5</option>
             <option key={10} value={10}>10</option>

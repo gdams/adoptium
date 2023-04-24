@@ -3,7 +3,7 @@ import { vi } from 'vitest';
 import { act, render, fireEvent, screen, within } from '@testing-library/react';
 import { useFlexSearch } from 'react-use-flexsearch';
 import DocumentationHeader from '../index';
-// 
+
 // Mock data for testing
 const mockData = {
   localSearchDocs: {

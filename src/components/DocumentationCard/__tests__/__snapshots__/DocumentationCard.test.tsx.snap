@@ -17,8 +17,8 @@ exports[`DocumentationCard component > renders correctly 1`] = `
       <div
         class="card-body"
       >
-        <h5
-          class="card-title mb-3"
+        <p
+          class="card-title mb-3 h5"
         >
           <span
             class="theme-icon-holder card-icon-holder me-2"
@@ -42,7 +42,7 @@ exports[`DocumentationCard component > renders correctly 1`] = `
           >
             Test Title
           </span>
-        </h5>
+        </p>
         <div
           class="card-text"
         >

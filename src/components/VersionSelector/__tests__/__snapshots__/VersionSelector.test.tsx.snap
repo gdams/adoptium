@@ -13,6 +13,7 @@ exports[`VersionSelector > updates the number of builds and build date when the 
       [33mfor[39m=[32m\\"version\\"[39m
     [36m/>[39m
     [36m<select[39m
+      [33maria-label[39m=[32m\\"version-filter\\"[39m
       [33mclass[39m=[32m\\"form-select form-select-sm\\"[39m
       [33mdata-testid[39m=[32m\\"version-filter\\"[39m
       [33mid[39m=[32m\\"version-filter\\"[39m
@@ -64,6 +65,7 @@ exports[`VersionSelector > updates the number of builds and build date when the 
       [0mView[0m
     [36m</span>[39m
     [36m<select[39m
+      [33maria-label[39m=[32m\\"Filter by number of builds\\"[39m
       [33mclass[39m=[32m\\"form-select form-select-sm\\"[39m
       [33mdata-testid[39m=[32m\\"build-num-filter\\"[39m
       [33mid[39m=[32m\\"build-num-filter\\"[39m

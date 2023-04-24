@@ -1,0 +1,930 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Docs page > renders correctly 1`] = `
+<main>
+  <div
+    class="docs-header p-5 text-center"
+  >
+    <div
+      class="container"
+    >
+      <h1>
+        Documentation
+      </h1>
+      <div
+        class="lead"
+      >
+        Everything you need to get started with Adoptium technology
+      </div>
+      <div
+        class="main-search-box pt-3 d-block mx-auto"
+      >
+        <div
+          class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1h51icj-MuiAutocomplete-root"
+          data-testid="autocomplete"
+        >
+          <div
+            class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-wb57ya-MuiFormControl-root-MuiTextField-root"
+          >
+            <label
+              class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+              data-shrink="false"
+              for="combo-box-demo"
+              id="combo-box-demo-label"
+            >
+              Start typing to search the docs...
+            </label>
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root"
+            >
+              <input
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-invalid="false"
+                autocapitalize="none"
+                autocomplete="off"
+                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
+                id="combo-box-demo"
+                role="combobox"
+                spellcheck="false"
+                type="text"
+                value=""
+              />
+              <div
+                class="MuiAutocomplete-endAdornment css-1q60rmi-MuiAutocomplete-endAdornment"
+              >
+                <button
+                  aria-label="Open"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-qzbt6i-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+                  tabindex="-1"
+                  title="Open"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="ArrowDropDownIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M7 10l5 5 5-5z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+              <fieldset
+                aria-hidden="true"
+                class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+              >
+                <legend
+                  class="css-yjsfm1"
+                >
+                  <span>
+                    Start typing to search the docs...
+                  </span>
+                </legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="page-content"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="docs-overview py-5"
+      >
+        <div
+          class="row justify-content-center"
+        >
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    Download Temurin
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/temurin/releases"
+                    >
+                      Download Eclipse Temurin
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/installation"
+                    >
+                      Install Eclipse Temurin
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://hub.docker.com/_/eclipse-temurin"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Container Images
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/temurin/archive"
+                    >
+                      Release Archive
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/temurin/nightly"
+                    >
+                      Nightly Developer Builds
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 384 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799 68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    Temurin Support
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/support"
+                    >
+                      Support
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/migration"
+                    >
+                      Migration Guide
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/supported-platforms"
+                    >
+                      Supported Platforms
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://github.com/adoptium/adoptium-support/issues"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Submit an Issue
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 576 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M485.5 0L576 160H474.9L405.7 0h79.8zm-128 0l69.2 160H149.3L218.5 0h139zm-267 0h79.8l-69.2 160H0L90.5 0zM0 192h100.7l123 251.7c1.5 3.1-2.7 5.9-5 3.3L0 192zm148.2 0h279.6l-137 318.2c-1 2.4-4.5 2.4-5.5 0L148.2 192zm204.1 251.7l123-251.7H576L357.3 446.9c-2.3 2.7-6.5-.1-5-3.2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    AQAvit Quality
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/aqavit"
+                    >
+                      About Eclipse AQAvit
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/qvs-policy"
+                    >
+                      AQAvit Quality Verification
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/aqavit-verification"
+                    >
+                      AQAvit Verification Guide
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M509.5 184.6L458.9 32.8C452.4 13.2 434.1 0 413.4 0H272v192h238.7c-.4-2.5-.4-5-1.2-7.4zM240 0H98.6c-20.7 0-39 13.2-45.5 32.8L2.5 184.6c-.8 2.4-.8 4.9-1.2 7.4H240V0zM0 224v240c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V224H0z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    Marketplace
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/marketplace"
+                    >
+                      Marketplace Downloads
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/marketplace-policy"
+                    >
+                      Marketplace Listing Information
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/marketplace-guide"
+                    >
+                      Marketplace Publisher Guide
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 640 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    Contributing
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/first-timer-support"
+                    >
+                      First Timer Support
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/eca-sign-off"
+                    >
+                      Sign the Contributor Agreement
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/slack"
+                    >
+                      Join our Slack Channel
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://github.com/adoptium/.github/blob/main/CODE_OF_CONDUCT.md"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Code of Conduct
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 448 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M400 224h-24v-72C376 68.2 307.8 0 224 0S72 68.2 72 152v72H48c-26.5 0-48 21.5-48 48v192c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V272c0-26.5-21.5-48-48-48zm-104 0H152v-72c0-39.7 32.3-72 72-72s72 32.3 72 72v72z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    Secure Software
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/secure-software"
+                    >
+                      Secure Software Practices
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/slsa"
+                    >
+                      SLSA Secure Supply Chain
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://www.eclipse.org/security/policy.php"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Vulnerability Reporting
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 496 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    Eclipse Adoptium
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/about"
+                    >
+                      About Eclipse Adoptium
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/members"
+                    >
+                      Working Group Members
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/join"
+                    >
+                      Join the Working Group
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Sponsor the Working Group
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 496 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    Source Code
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://github.com/adoptium"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Adoptium on GitHub
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://github.com/adoptium/adoptium/blob/main/README.md"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Repository Overview
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://github.com/adoptium/temurin-build"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Build Scripts
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://github.com/adoptium/installer"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Installer Code
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://github.com/adoptium/jmc-build"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Mission Control Build
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-4 py-3"
+          >
+            <div
+              class="card shadow-sm"
+            >
+              <div
+                class="card-body"
+              >
+                <p
+                  class="card-title mb-3 h5"
+                >
+                  <span
+                    class="theme-icon-holder card-icon-holder me-2"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="card-title-text"
+                  >
+                    Other Resources
+                  </span>
+                </p>
+                <div
+                  class="card-text"
+                >
+                  <div
+                    class="list-group list-group-flush"
+                  >
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/faq"
+                    >
+                      Frequently Asked Questions
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://api.adoptium.net"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Adoptium API
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="https://adoptium.net/blog"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      Adoptium Blog
+                       
+                      <svg
+                        fill="currentColor"
+                        height="13"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        width="13"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/logo-styleguide"
+                    >
+                      Logo Styleguide
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;

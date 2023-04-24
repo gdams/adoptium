@@ -2,11 +2,11 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
-import Marketplace, { Head } from '../marketplace';
+import Releases, { Head } from '../releases';
 
-describe('Marketplace page', () => {
+describe('Releases page', () => {
   it('renders correctly', () => {
-    const { container } = render(<Marketplace />);
+    const { container } = render(<Releases />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -17,11 +17,11 @@ describe('Marketplace page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-    expect(title?.textContent).toEqual('Marketplace | Adoptium');
+    expect(title?.textContent).toEqual('Latest Releases | Adoptium');
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Marketplace />);
+    const { container } = render(<Releases />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

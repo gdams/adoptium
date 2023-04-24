@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Marketplace page > renders correctly 1`] = `
+exports[`Releases page > renders correctly 1`] = `
 <main>
   <section
     class="py-5 text-center container"
@@ -9,18 +9,13 @@ exports[`Marketplace page > renders correctly 1`] = `
       class="row py-lg-5"
     >
       <div
-        class="col-lg-8 col-md-8 mx-auto"
+        class="col-lg-10 col-md-8 mx-auto"
       >
         <h1
           class="fw-light"
         >
-          Adoptium® Marketplace
+          Eclipse Temurin™ Latest Releases
         </h1>
-        <p
-          class="pt-3"
-        >
-          Text
-        </p>
         <div
           class="row align-items-center pt-3"
         >
@@ -28,14 +23,14 @@ exports[`Marketplace page > renders correctly 1`] = `
             class="col-6 col-md-4"
           >
             <img
-              alt="AQAvit logo"
+              alt="Temurin logo"
               class="img-fluid"
-              src="/images/aqavit-light.png"
-              width="150"
+              src="/images/temurin-light.png"
+              width="120"
             />
           </div>
           <div
-            class="col-12 col-sm-6 col-md-8 "
+            class="col-12 col-sm-6 col-md-8"
           >
             <p
               class="text-start"
@@ -46,151 +41,15 @@ exports[`Marketplace page > renders correctly 1`] = `
         </div>
       </div>
     </div>
-    <ul
-      class="vendor-list pt-5"
+    <div
+      class="row align-items-center pt-3"
     >
-      <li
-        class="vendor-li"
+      <p
+        class="text-center"
       >
-        <input
-          checked=""
-          data-testid="Adoptium"
-          id="vendorAdoptium"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorAdoptium"
-          title="Adoptium"
-        >
-          <img
-            alt="Adoptium icon"
-            src="/images/vendors/vendor-adoptium.png"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="Red Hat"
-          id="vendorRed Hat"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorRed Hat"
-          title="Red Hat"
-        >
-          <img
-            alt="Red Hat icon"
-            src="/images/vendors/vendor-redhat.png"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="Microsoft"
-          id="vendorMicrosoft"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorMicrosoft"
-          title="Microsoft"
-        >
-          <img
-            alt="Microsoft icon"
-            src="/images/vendors/vendor-microsoft.png"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="Azul"
-          id="vendorAzul"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorAzul"
-          title="Azul"
-        >
-          <img
-            alt="Azul icon"
-            src="/images/vendors/vendor-azul.png"
-            style="padding: 0.7em;"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="IBM"
-          id="vendorIBM"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorIBM"
-          title="IBM"
-        >
-          <img
-            alt="IBM icon"
-            src="/images/vendors/vendor-ibm.png"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="Huawei"
-          id="vendorHuawei"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorHuawei"
-          title="Huawei"
-        >
-          <img
-            alt="Huawei icon"
-            src="/images/vendors/vendor-huawei.png"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="Alibaba"
-          id="vendorAlibaba"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorAlibaba"
-          title="Alibaba"
-        >
-          <img
-            alt="Alibaba icon"
-            src="/images/vendors/vendor-alibaba.png"
-          />
-        </label>
-      </li>
-    </ul>
+        Text
+      </p>
+    </div>
     <div
       class="input-group mb-5 row g-2"
     >
@@ -356,9 +215,29 @@ exports[`Marketplace page > renders correctly 1`] = `
           id="version-filter"
         >
           <option
+            value="20"
+          >
+            20
+          </option>
+          <option
+            value="19"
+          >
+            19
+          </option>
+          <option
+            value="18"
+          >
+            18
+          </option>
+          <option
             value="17"
           >
             17
+          </option>
+          <option
+            value="16"
+          >
+            16
           </option>
           <option
             value="11"
@@ -378,44 +257,6 @@ exports[`Marketplace page > renders correctly 1`] = `
       id="download-table"
       style="border-spacing: 0 10px; border-collapse: separate;"
     >
-      <thead
-        class="table-dark"
-      >
-        <tr
-          class="table-head"
-        >
-          <td
-            class="table-head"
-          >
-            Text
-          </td>
-          <td
-            class="table-head"
-          >
-            Text
-          </td>
-          <td
-            class="table-head"
-          >
-            Text
-          </td>
-          <td
-            class="table-head"
-          >
-            Text
-          </td>
-          <td
-            class="table-head"
-          >
-            Text
-          </td>
-          <td
-            class="table-head"
-          >
-            Text
-          </td>
-        </tr>
-      </thead>
       <tbody
         class="table-light"
       >
@@ -507,6 +348,39 @@ exports[`Marketplace page > renders correctly 1`] = `
             </button>
           </div>
         </div>
+      </div>
+    </div>
+    <div
+      class="row align-items-center pt-3"
+    >
+      <p
+        class="text-center"
+      >
+        Text
+      </p>
+      <div
+        class="btn-group-vertical col-6 mx-auto"
+      >
+        <a
+          class="btn btn btn-primary mt-3"
+          href="/temurin/archive"
+        >
+          Text
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"
+            />
+          </svg>
+        </a>
       </div>
     </div>
   </section>
