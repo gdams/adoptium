@@ -222,13 +222,13 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
             inputmode="text"
             placeholder="MM/DD/YYYY"
             type="text"
-            value="04/24/2023"
+            value="01/01/2022"
           />
           <div
             class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
           >
             <button
-              aria-label="Choose date, selected date is Apr 24, 2023"
+              aria-label="Choose date, selected date is Jan 1, 2022"
               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root"
               tabindex="0"
               type="button"
