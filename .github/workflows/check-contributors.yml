@@ -1,6 +1,7 @@
 name: Contributor Updater
 
 on:
+  workflow_dispatch:
   push:
     paths: [ content/asciidoc-pages/** ]
     branches: [ main ]
