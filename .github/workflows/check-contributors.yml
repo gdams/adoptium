@@ -31,6 +31,10 @@ jobs:
     - run: pip3 install bs4
 
     - run: |
+        # This function takes one argument, which is the path to a file.
+        # The function first checks if the file path matches a regular expression pattern for AsciiDoc files located in the "content/asciidoc" directory
+        # If the file path matches the pattern, the function extracts the current authors from the file using grep and sed. It then uses a Python script to determine the contributors to the file and loops through each contributor.
+        # For each contributor, the function checks if they are already listed as an author in the file. If not, it adds the contributor to the list of authors and updates the file using sed.
         update_authors() {
           local file=$1
           if [[ ${file} =~ ^content/asciidoc.*.adoc ]]; then
