@@ -49,7 +49,7 @@ jobs:
 
         # if workflow_dispatch, then we need to get all asciidoc files
         if [[ -z "${{ steps.files.outputs.all }}" ]]; then
-          for changed_file in $(find content/asciidoc-pages -name '*.adoc' -type f); do
+          find content/asciidoc-pages -name '*.adoc' -type f | while read -r changed_file; do
             update_authors "${changed_file}"
           done
         else
