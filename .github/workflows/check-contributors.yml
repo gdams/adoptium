@@ -11,6 +11,7 @@ concurrency:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   check_contributors:
@@ -25,25 +26,38 @@ jobs:
 
     - id: files
       uses: jitterbit/get-changed-files@b17fbb00bdc0c0f63fcf166580804b4d2cdc2a42 # v1
+      if: github.event_name == 'push'
       
     - run: pip3 install bs4
 
     - run: |
-        # shellcheck disable=2043
-        for changed_file in ${{ steps.files.outputs.all }}; do
-          if [[ ${changed_file} =~ ^content/asciidoc.*.adoc ]]; then
-            current_authors=$(grep ':page-authors:' "${changed_file}" | sed -n -e 's/^.*page-authors: //p')
-            contibutors=$(python3 .github/workflows/github-file-contributors.py --file "${changed_file}")
+        update_authors() {
+          local file=$1
+          if [[ ${file} =~ ^content/asciidoc.*.adoc ]]; then
+            current_authors=$(grep ':page-authors:' "${file}" | sed -n -e 's/^.*page-authors: //p')
+            contibutors=$(python3 .github/workflows/github-file-contributors.py --file "${file}")
             for contibutor in ${contibutors}; do
               if ! echo "${current_authors}" | grep "${contibutor}"; then
                 echo "adding ${contibutor}"
                 current_authors_replacement="${current_authors}, ${contibutor}"
                 echo "${current_authors_replacement}"
-                sed -i "s/${current_authors}/${current_authors_replacement}/g" "${changed_file}"
+                sed -i "s/${current_authors}/${current_authors_replacement}/g" "${file}"
               fi
             done
           fi
-        done
+        }
+
+        # if workflow_dispatch, then we need to get all asciidoc files
+        if [[ -z "${{ steps.files.outputs.all }}" ]]; then
+          for changed_file in $(find content/asciidoc-pages -name '*.adoc' -type f); do
+            update_authors "${changed_file}"
+          done
+        else
+          # shellcheck disable=2043
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            update_authors "${changed_file}"
+          done
+        fi
 
     - uses: gr2m/create-or-update-pull-request-action@dc1726cbf4dd3ce766af4ec29cfb660e0125e8ee # v1
       env:

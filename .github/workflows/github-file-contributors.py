@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 org = "adoptium"
-repo = "website-v2"
+repo = "adoptium.net"
 branch = "main"
 # This is where we define users that should be skipped
 excludedUsers = "eclipse-temurin-bot"
