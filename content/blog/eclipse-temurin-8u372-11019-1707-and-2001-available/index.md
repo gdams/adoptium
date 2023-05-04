@@ -8,7 +8,7 @@ tags:
   - Announcement
 ---
 
-Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u372, 11.0.19, 17.0.7 and 20.0.1. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. All binaries are available from the [Temurin download page](https://adoptium.net/temurin/releases).
+Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u372, 11.0.19, 17.0.7 and 20.0.1. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. Binaries, installers, and source code are available from the [Temurin download page](https://adoptium.net/temurin/releases).
 
 * [List of security fixes and other fixes in OpenJDK 8u372](https://bugs.openjdk.org/browse/JDK-8306392?jql=project%20%3D%20JDK%20AND%20fixVersion%20%3D%20openjdk8u372)
 
