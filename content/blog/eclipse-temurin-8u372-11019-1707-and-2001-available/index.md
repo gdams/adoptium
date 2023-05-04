@@ -31,11 +31,3 @@ This release contains the following security and functional fixes and updates.
 ### No JDK 20 binaries for Linux PPC64le, s390x, arm32, and AIX ppc64
 
 Adoptium will not be releasing JDK 20.0.1 for Linux PPC64le, s390x, arm32, and AIX ppc64 due to issues found in testing. These platforms may be released at a later date if the issues are resolved in the implementation.
-
-**Additions:**
-
-* Add BJCA Global Root CA1 and CA2 root certificates
-
-**Removals:**
-
-* None
