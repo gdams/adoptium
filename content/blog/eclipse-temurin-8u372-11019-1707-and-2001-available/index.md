@@ -44,11 +44,3 @@ This release contains the following Root CA changes as described in the [Mozilla
 
 * None
 
-### Release Notes
-
-Release notes are now being generated and published to the GitHub releases alongside the tarballs:
-
-[Release notes for JDK 8u372] (https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u372-b07/OpenJDK8U-jdk-release-notes_8u372b07.json)
-[Release notes for JDK 11.0.19] (https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-jdk-release-notes_11.0.19_7.json)
-[Release notes for JDK 17.0.7] (https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-jdk-release-notes_17.0.7_7.json)
-[Release notes for JDK 20.0.1] (https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-jdk-release-notes_20.0.1_9.json)
