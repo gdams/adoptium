@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 8u372, 11.0.19, 17.0.7 and 20.0.1 Available
-date: "2023-05-03T12:00:00+00:00"
+date: "2023-05-04T12:00:00+00:00"
 author: pmc
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u372, 11.0.19, 17.0.7 and 20.0.1. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
