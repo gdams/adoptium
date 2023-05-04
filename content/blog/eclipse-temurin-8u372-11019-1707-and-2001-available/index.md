@@ -32,10 +32,6 @@ This release contains the following security and functional fixes and updates.
 
 Adoptium will not be releasing JDK 20.0.1 for Linux PPC64le, s390x, arm32, and AIX ppc64 due to issues found in testing. These platforms may be released at a later date if the issues are resolved in the implementation.
 
-### Changes to Root Certificate Authorities (Root CAs)
-
-This release contains the following Root CA changes as described in the [Mozilla Meta-bug #1804498](https://bugzilla.mozilla.org/show_bug.cgi?id=1804498)
-
 **Additions:**
 
 * Add BJCA Global Root CA1 and CA2 root certificates
