@@ -53,12 +53,7 @@ const LanguageSelector = (): JSX.Element => {
                 eventKey={lng}
                 onClick={(e) => {
                   e.preventDefault();
-                  if (location.pathname.includes('index')) {
-                    let newPath = location.pathname.split("/index")[0].slice(3)
-                    changeLanguage(lng, newPath);
-                  } else {
-                    changeLanguage(lng);
-                  }
+                  changeLanguage(lng);
                 }}
               >
                 <Flag code={ISO3166(lng)} width='35' /> 

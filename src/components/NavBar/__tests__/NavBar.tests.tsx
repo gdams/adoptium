@@ -10,5 +10,4 @@ describe('NavBar component', () => {
     );
     expect(container).toMatchSnapshot();
   });
-
 });

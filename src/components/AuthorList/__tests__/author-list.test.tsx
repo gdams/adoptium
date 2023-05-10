@@ -9,4 +9,9 @@ describe('AuthorsList component', () => {
     const { container } = render(<AuthorsList authors={authors} />);
     expect(container).toMatchSnapshot();
   });
+
+  it('returns null when no authors are passed', () => {
+    const { container } = render(<AuthorsList authors={[]} />);
+    expect(container).toBeNull;
+  });
 });
