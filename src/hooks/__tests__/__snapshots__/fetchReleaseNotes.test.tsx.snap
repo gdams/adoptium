@@ -6,10 +6,12 @@ exports[`fetchReleaseNotesForVersion > returns valid JSON 1`] = `
   "release_name": "release_name_mock",
   "release_notes": [
     {
+      "component": "component_mock",
       "id": "0",
       "link": "https://link_mock/",
       "priority": "1",
       "title": "title_mock",
+      "type": "Bug",
     },
   ],
   "vendor": "vendor_mock",

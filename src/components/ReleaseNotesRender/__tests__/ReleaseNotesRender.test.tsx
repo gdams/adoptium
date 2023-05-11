@@ -4,15 +4,52 @@ import { describe, expect, it, vi } from 'vitest'
 import ReleaseNotesRender, { fetchTitle } from '../index';
 import { fetchReleaseNotesForVersion } from '../../../hooks/fetchReleaseNotes';
 import { createMockReleaseNotesAPI  } from '../../../__fixtures__/hooks';
+import { DataGridProps } from "@mui/x-data-grid"
+import queryString from 'query-string';
 
+vi.mock('query-string');
 vi.mock('../../../hooks/fetchReleaseNotes');
+
+// Disable Virtualization so vitest can render all the columns
+// https://github.com/mui/mui-x/issues/1151#issuecomment-1108349639
+vi.mock('@mui/x-data-grid', async () => {
+    const datagrid: any = await vi.importActual('@mui/x-data-grid')
+    const { DataGrid } = datagrid
+    return {
+        ...datagrid,
+        DataGrid: (props: DataGridProps) => {
+            return <DataGrid {...props} disableVirtualization />
+        },
+    }
+});
 
 afterEach(() => {
     vi.clearAllMocks();
 });
 
 describe('ReleaseNotesRender component', () => {
+    it('should render correctly', () => {
+        queryString.parse = vi.fn().mockReturnValue({'version': 'jdk-17.0.1+12'});
+
+        // @ts-ignore
+        fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI(2));
+
+        const { container } = render(
+            <ReleaseNotesRender />
+        );
+
+        expect(fetchReleaseNotesForVersion).toHaveBeenCalledTimes(1);
+        
+        // check if 2 rows are rendered
+        expect(container.querySelectorAll('.MuiDataGrid-row')).toHaveLength(2);
+
+        expect(container).toMatchSnapshot();
+    });
+
+    
     it('should render correctly - version not defined', () => {
+        queryString.parse = vi.fn().mockReturnValue({});
+
         const { container } = render(
             <ReleaseNotesRender />
         );
@@ -29,33 +66,50 @@ describe('ReleaseNotesRender component', () => {
         expect(fetchTitle(null)).toBeUndefined();
         expect(fetchTitle('123')).toBeUndefined();
     });
-    
-    it('should render correctly', () => {
-        // mock query string version
-        vi.mock('query-string', () => ({
-            default: {
-              parse: () => ({
-                version: 'version',
-              }),
-            }
-        }));
-        fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI(1));
+
+    // Set type to 'Enhancement' by default if version matches jdk-xx+xx
+    it('should render correctly - type set to Enhancement', async () => {
+        queryString.parse = vi.fn().mockReturnValue({'version': 'jdk-20+36'});
+
+        function mockReleaseNotes(num: number) {
+            let mockReleaseNotesAPI = createMockReleaseNotesAPI(num);
+            mockReleaseNotesAPI.release_notes[0].type = 'Enhancement';
+            return mockReleaseNotesAPI;
+        }
+
+        // @ts-ignore
+        fetchReleaseNotesForVersion.mockReturnValue(mockReleaseNotes(2));
         const { container } = render(
             <ReleaseNotesRender />
         );
-        expect(fetchReleaseNotesForVersion).toHaveBeenCalledTimes(1);
-        expect(container).toMatchSnapshot();
+
+        // check if 1 row is rendered and 1 is filtered out
+        expect(container.querySelectorAll('.MuiDataGrid-row')).toHaveLength(1);
+    });
+
+    // sets priority as p? when priority is not defined
+    it('should render correctly - priority not defined', () => {
+        queryString.parse = vi.fn().mockReturnValue({'version': 'version'});
+        function mockReleaseNotes() {
+            let mockReleaseNotesAPI = createMockReleaseNotesAPI(1);
+            mockReleaseNotesAPI.release_notes[0].priority = undefined;
+            return mockReleaseNotesAPI;
+        }
+
+        // @ts-ignore
+        fetchReleaseNotesForVersion.mockReturnValue(mockReleaseNotes());
+        const { container } = render(
+            <ReleaseNotesRender />
+        );
+
+        const priorityColumn = container.querySelectorAll('.MuiDataGrid-cell')[0];
+        expect(priorityColumn.textContent).toContain('P?');
     });
 
     it('should render correctly - no release notes', () => {
-        // mock query string version
-        vi.mock('query-string', () => ({
-            default: {
-              parse: () => ({
-                version: 'version',
-              }),
-            }
-        }));
+        queryString.parse = vi.fn().mockReturnValue({'version': 'version'});
+
+        // @ts-ignore
         fetchReleaseNotesForVersion.mockReturnValue({ release_notes: null});
         const { container } = render(
             <ReleaseNotesRender />

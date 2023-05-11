@@ -225,7 +225,9 @@ export const createMockReleaseNotesAPI = (number): ReleaseNoteAPIResponse => ({
     id: i.toString(),
     link: new URL('https://link_mock'),
     title: 'title_mock',
-    priority: '1'
+    priority: '1',
+    type: 'Bug',
+    component: 'component_mock',
   }))
 });
 

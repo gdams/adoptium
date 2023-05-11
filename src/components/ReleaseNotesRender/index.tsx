@@ -106,7 +106,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
   // Set type to 'Enhancement' by default if version matches jdk-xx+xx
   const regex = /^jdk-(2\d|\d{3,})\+\d+$/;
   let filterItems: FilterItem[] = [];
-  if (version?.toString && regex.test(version?.toString())) {
+  if (version?.toString && regex.test(version.toString())) {
     filterItems.push(
       {
         field: 'type',
@@ -123,7 +123,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
     <h2>{version}</h2>
       <div className='pt-3' style={{ display: 'flex', height: '100%' }}>
         <div style={{ flexGrow: 1 }}>
-          {releaseNotes?.release_notes === null ? (
+          {!version || releaseNotes?.release_notes === null ? (
             <>
             <h2>Oops... We couldn't find those release notes</h2>
             <span>Please ensure that you have a specified a version using the version URL parameter: <code>?version=x.x.x</code></span>
