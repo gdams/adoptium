@@ -87,33 +87,12 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
             releases.push(release);
         }
 
-        releases = orderPlatforms(releases, 'platform_ordinal');
         releases.forEach((release) => {
             release.binaries.sort((binaryA, binaryB) => binaryA.type > binaryB.type ? 1 : binaryA.type < binaryB.type ? -1 : 0);
         });
     })
     return releases
 }
-
-function orderPlatforms (input, attr = 'thisPlatformOrder') {
-  return sortByProperty(input, attr, false);
-};
-
-function sortByProperty (input, property, descending) {
-  const invert = descending ? -1 : 1;
-  const sorter = (a, b) => {
-    return invert * (a[property] > b[property] ? 1 : a[property] < b[property] ? -1 : 0);
-  };
-
-  if (Array.isArray(input)) {
-    return input.sort(sorter);
-  } else {
-    // Preserve the source object key as '_key'
-    return Object.keys(input)
-      .map(_key => Object.assign(input[_key], {_key}))
-      .sort(sorter);
-  }
-};
 
 export interface ReleaseAsset {
     platform_name: string;

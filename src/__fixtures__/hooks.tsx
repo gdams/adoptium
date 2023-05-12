@@ -1,6 +1,7 @@
 import {
   Binary,
   Contributor,
+  ContributorApiResponse,
   EventAPI,
   LatestTemurin,
   MarketplaceRelease,
@@ -351,3 +352,27 @@ export const createRandomContributorViewData1Contribution = (): Contributor => (
   commitsListUri: 'commitsListUri_mock',
   repo: 'reponame_mock',
 });
+
+export const createMockAdoptiumContributorsApi = (): ContributorApiResponse => (
+  {
+    login: 'test-user',
+    id: 1,
+    url: 'https://api.github.com/users/test-user',
+    type: 'User',
+    contributions: 10,
+    node_id: '1',
+    avatar_url: 'https://github.com/images/error/octocat_happy.gif',
+    gravatar_id: '',
+    html_url: 'https://github.com/images/error/octocat_happy.gif',
+    followers_url: 'https://api.github.com/users/test-user/followers',
+    following_url: 'https://api.github.com/users/test-user/following{/other_user}',
+    gists_url: 'https://api.github.com/users/test-user/gists{/gist_id}',
+    starred_url: 'https://api.github.com/users/test-user/starred{/owner}{/repo}',
+    subscriptions_url: 'https://api.github.com/users/test-user/subscriptions',
+    organizations_url: 'https://api.github.com/users/test-user/orgs',
+    repos_url: 'https://api.github.com/users/test-user/repos',
+    events_url: 'https://api.github.com/users/test-user/events{/privacy}',
+    received_events_url: 'https://api.github.com/users/test-user/received_events',
+    site_admin: false
+  }
+);
