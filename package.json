@@ -82,7 +82,7 @@
     "@vitejs/plugin-react": "^4.0.0",
     "@vitest/coverage-c8": "^0.31.0",
     "babel-preset-gatsby": "^3.9.0",
-    "cross-fetch": "^3.1.5",
+    "cross-fetch": "^3.1.6",
     "gatsby-cli": "^5.9.0",
     "identity-obj-proxy": "^3.0.0",
     "jsdom": "^22.0.0",
