@@ -39,7 +39,7 @@
     "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-copy-linked-files": "^6.10.0",
     "gatsby-remark-images": "^7.10.0",
-    "gatsby-remark-prismjs": "^7.9.0",
+    "gatsby-remark-prismjs": "^7.10.0",
     "gatsby-remark-smartypants": "^6.10.0",
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-asciidoc": "^4.10.0",
