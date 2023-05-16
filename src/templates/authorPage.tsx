@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql, Slice } from 'gatsby';
 
-// import AuthorBio from '../components/AuthorBio';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import AuthorData from '../json/authors.json';
