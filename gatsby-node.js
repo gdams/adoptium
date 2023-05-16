@@ -4,6 +4,7 @@ const { pipeline } = require('stream')
 const { promisify } = require('util')
 const { createFilePath } = require('gatsby-source-filesystem')
 const locales = require('./locales/i18n')
+const authors = require('./src/json/authors.json')
 
 const { localizedSlug, findKey, removeTrailingSlash } = require('./src/util/gatsby-node-helpers')
 
@@ -124,7 +125,35 @@ exports.onCreateNode = async ({ node, actions, getNode, getNodes }) => {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createSlice } = actions
+
+  // Create Slice components https://www.gatsbyjs.com/docs/how-to/performance/using-slices/
+  createSlice({
+    id: 'navbar',
+    component: require.resolve('./src/components/NavBar/index.tsx')
+  })
+
+  createSlice({
+    id: 'footer',
+    component: require.resolve('./src/components/Footer/index.tsx')
+  })
+
+  createSlice({
+    id: 'banner',
+    component: require.resolve('./src/components/Banner.tsx')
+  })
+
+  // create slice for AuthorBio
+  for (const author of Object.keys(authors)) {
+    createSlice({
+      id: `author-bio-${author}`,
+      component: require.resolve('./src/components/AuthorBio/index.tsx'),
+      context: {
+        identifier: author,
+        author: authors[author]
+      }
+    })
+  }
 
   // Create Asciidoc pages.
   const asciidocTemplate = path.resolve('./src/templates/asciidocTemplate.tsx')
@@ -200,6 +229,9 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         author,
         limit: 10
+      },
+      slices: {
+        authorBio: `author-bio-${author}`
       }
     })
   }

@@ -2,14 +2,12 @@ import React from 'react';
 import { useI18next, Trans } from 'gatsby-plugin-react-i18next';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
-import { useLocation } from '@reach/router';
 import Flag from 'react-world-flags'
 import ISO6391 from 'iso-639-1';
 import './LanguageSelector.scss';
 
 const LanguageSelector = (): JSX.Element => {
   const {languages, changeLanguage} = useI18next();
-  const location = useLocation();
 
   function ISO3166(lng: string) {
     // Convert locale to ISO 3166-1 alpha-2 https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2

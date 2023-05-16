@@ -1,7 +1,7 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Slice } from 'gatsby';
 
-import AuthorBio from '../components/AuthorBio';
+// import AuthorBio from '../components/AuthorBio';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import AuthorData from '../json/authors.json';
@@ -18,7 +18,7 @@ const AuthorPage = ({ data, pageContext }) => {
             <div className='row py-lg-5'>
                 <div className='col-lg-9 col-md-9 mx-auto'>
                     <h1>{author.name}</h1>
-                    <AuthorBio identifier={pageContext.author} author={author} />
+                    <Slice alias='authorBio' />
 
                     <hr className='pb-5'/>
 

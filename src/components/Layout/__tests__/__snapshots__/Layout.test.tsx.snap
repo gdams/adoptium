@@ -6,18 +6,18 @@ exports[`Layout component > renders correctly with data 1`] = `
     class="container-fluid p-0"
     style="transition: color 0.2s ease-out, background 0.2s ease-out;"
   >
-    <div>
-      mock-navbar
-    </div>
-    <div>
-      mock-banner
-    </div>
+    <div
+      class="slice--navbar"
+    />
+    <div
+      class="slice--banner"
+    />
     <main>
       mock-children
     </main>
-    <div>
-      mock-footer
-    </div>
+    <div
+      class="slice--footer"
+    />
   </div>
 </div>
 `;

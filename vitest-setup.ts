@@ -50,7 +50,11 @@ vi.mock('gatsby', async () => {
     ...gatsby,
     graphql: vi.fn(),
     StaticQuery: vi.fn(),
-    useStaticQuery: vi.fn().mockImplementation(() => mockUseStaticQuery)
+    useStaticQuery: vi.fn().mockImplementation(() => mockUseStaticQuery),
+    Slice: vi.fn()
+    .mockImplementation(({ alias }) =>
+      React.createElement('div', { className: `slice--${alias}` })
+    ),
   }
 })
 

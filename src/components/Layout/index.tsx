@@ -1,24 +1,11 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Slice } from 'gatsby'
 import SSRProvider from 'react-bootstrap/SSRProvider'
 
-import NavBar from '../NavBar'
-import Banner from '../Banner'
-import Footer from '../Footer'
 import './layout.scss'
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <SSRProvider>
       <div
@@ -29,12 +16,12 @@ const Layout = ({ children }) => {
           transition: 'color 0.2s ease-out, background 0.2s ease-out'
         }}
       >
-        <NavBar />
-        <Banner />
+        <Slice alias='navbar' />
+        <Slice alias='banner' />
         <main>
           {children}
         </main>
-        <Footer />
+        <Slice alias='footer' />
       </div>
     </SSRProvider>
   )

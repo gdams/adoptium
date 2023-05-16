@@ -5,17 +5,11 @@ import RandomContributor from '../RandomContributor';
 import LanguageSelector from '../LanguageSelector';
 import './Footer.scss';
 
-export interface DropDownState {
-  active: number;
-  isOpen: boolean;
-  shouldDropDownBlur: boolean;
-}
-
 const Footer = (): JSX.Element => {
   return (
     <>
     <section className="bottom-info">
-        <RandomContributor />
+      <RandomContributor />
     </section>
       <div className="bg-grey">
         <div className="container mt-5">
@@ -81,7 +75,7 @@ const Footer = (): JSX.Element => {
               <li className="ms-3"><Link className="text-muted" aria-label="Adoptium Slack Account" to="/slack"><FaSlack size={25} /></Link></li>
             </ul>
             <div className="col-12 d-flex ">
-                <span className="text-muted">Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.</span>
+              <span className="text-muted">Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.</span>
             </div>
           </footer>
         </div>
