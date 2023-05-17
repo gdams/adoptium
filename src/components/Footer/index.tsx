@@ -1,8 +1,8 @@
 import { Link } from 'gatsby-plugin-react-i18next';
 import React from 'react';
+import { Slice } from 'gatsby';
 import { FaTwitter, FaYoutube, FaGithub, FaSlack } from 'react-icons/fa';
 import RandomContributor from '../RandomContributor';
-import LanguageSelector from '../LanguageSelector';
 import './Footer.scss';
 
 const Footer = (): JSX.Element => {
@@ -80,7 +80,7 @@ const Footer = (): JSX.Element => {
           </footer>
         </div>
       </div>
-      <LanguageSelector />
+      <Slice alias="language-selector" />
     </>
   );
 };
