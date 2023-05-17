@@ -140,7 +140,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   createSlice({
     id: 'banner',
-    component: require.resolve('./src/components/Banner.tsx')
+    component: require.resolve('./src/components/Banner/index.tsx')
   })
 
   // create slice for AuthorBio
