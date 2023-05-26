@@ -186,7 +186,7 @@ exports.onCreateNode = async ({ node, actions, getNode, getNodes }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage, createSlice } = actions
-  const postsPerPage = 10;
+  const postsPerPage = 10
 
   // Create Slice components https://www.gatsbyjs.com/docs/how-to/performance/using-slices/
   createSlice({
