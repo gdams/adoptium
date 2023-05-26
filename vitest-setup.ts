@@ -2,6 +2,10 @@ import { expect, vi } from 'vitest'
 import * as axeMatchers from 'vitest-axe/matchers'
 import React from 'react'
 import matchers from '@testing-library/jest-dom/matchers';
+import { configure } from '@testing-library/dom';
+configure({
+  computedStyleSupportsPseudoElements: true
+})
 import 'vitest-axe/extend-expect'
 import '@testing-library/jest-dom'
 import 'vitest-canvas-mock'

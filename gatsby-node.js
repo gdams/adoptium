@@ -186,6 +186,7 @@ exports.onCreateNode = async ({ node, actions, getNode, getNodes }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage, createSlice } = actions
+  const postsPerPage = 10;
 
   // Create Slice components https://www.gatsbyjs.com/docs/how-to/performance/using-slices/
   createSlice({
@@ -283,16 +284,45 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     })
 
-    createPage({
-      path: `/blog/author/${author}`,
-      component: authorPage,
-      context: {
-        author,
-        limit: 10
-      },
-      slices: {
-        authorBio: `author-bio-${author}`
-      }
+    // Query all blog posts by author to determine the number of pages needed
+    const authorPosts = await graphql(
+      `
+        {
+          allMdx(filter: {frontmatter: {author: {eq: "${author}"}}}) {
+            totalCount
+          }
+        }
+      `
+    )
+
+    if (authorPosts.errors) {
+      throw authorPosts.errors
+    }
+
+    const numAuthorPages = Math.ceil(authorPosts.data.allMdx.totalCount / postsPerPage)
+
+    Array.from({ length: numAuthorPages }).forEach((_, index) => {
+      const currentPageNumber = index + 1
+      const previousPageNumber =
+        currentPageNumber === 1 ? null : currentPageNumber - 1
+      const nextPageNumber =
+        currentPageNumber === numAuthorPages ? null : currentPageNumber + 1
+      createPage({
+        path: index === 0 ? `/blog/author/${author}` : `/blog/author/${author}/page/${index + 1}`,
+        component: authorPage,
+        context: {
+          author,
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          numAuthorPages,
+          currentPageNumber,
+          previousPageNumber,
+          nextPageNumber
+        },
+        slices: {
+          authorBio: `author-bio-${author}`
+        }
+      })
     })
   }
 
@@ -365,7 +395,6 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  const postsPerPage = 10
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, index) => {
     const currentPageNumber = index + 1
