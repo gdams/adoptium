@@ -199,6 +199,14 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   Status
                 </a>
               </li>
+              <li>
+                <a
+                  class="nav-link"
+                  href="https://adoptium.net/support"
+                >
+                  Support
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
