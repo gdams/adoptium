@@ -15,7 +15,7 @@
     "@mui/material": "^5.13.2",
     "@mui/x-data-grid": "^6.5.0",
     "@mui/x-date-pickers": "^6.5.0",
-    "@popperjs/core": "^2.11.7",
+    "@popperjs/core": "^2.11.8",
     "@react-icons/all-files": "^4.1.0",
     "bootstrap": "^5.2.3",
     "date-fns": "^2.30.0",
