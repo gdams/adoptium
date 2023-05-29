@@ -85,7 +85,7 @@
     "cross-fetch": "^3.1.6",
     "gatsby-cli": "^5.9.0",
     "identity-obj-proxy": "^3.0.0",
-    "jsdom": "^22.0.0",
+    "jsdom": "^22.1.0",
     "prettier": "2.8.8",
     "react-test-renderer": "^18.2.0",
     "vitest": "^0.31.1",
