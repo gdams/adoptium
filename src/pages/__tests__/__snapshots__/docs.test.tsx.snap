@@ -166,7 +166,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Container Images
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -264,7 +264,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Submit an Issue
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -478,7 +478,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Code of Conduct
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -558,7 +558,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Vulnerability Reporting
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -644,7 +644,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Sponsor the Working Group
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -712,7 +712,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Adoptium on GitHub
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -734,7 +734,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Repository Overview
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -756,7 +756,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Build Scripts
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -778,7 +778,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Installer Code
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -800,7 +800,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Mission Control Build
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -874,7 +874,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Adoptium API
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -896,7 +896,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Adoptium Blog
-                       
+
                       <svg
                         fill="currentColor"
                         height="13"
@@ -910,6 +910,12 @@ exports[`Docs page > renders correctly 1`] = `
                           d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"
                         />
                       </svg>
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/brand"
+                    >
+                      Brand
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
