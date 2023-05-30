@@ -166,7 +166,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Container Images
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -264,7 +264,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Submit an Issue
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -478,7 +478,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Code of Conduct
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -558,7 +558,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Vulnerability Reporting
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -644,7 +644,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Sponsor the Working Group
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -712,7 +712,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Adoptium on GitHub
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -734,7 +734,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Repository Overview
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -756,7 +756,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Build Scripts
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -778,7 +778,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Installer Code
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -800,7 +800,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Mission Control Build
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -874,7 +874,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Adoptium API
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
@@ -896,7 +896,7 @@ exports[`Docs page > renders correctly 1`] = `
                       target="_blank"
                     >
                       Adoptium Blog
-
+                       
                       <svg
                         fill="currentColor"
                         height="13"
