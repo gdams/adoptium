@@ -14,14 +14,17 @@ tags:
 
 The Adoptium project utilises the [Nagios Core](https://www.nagios.org/projects/nagios-core/) product to monitor the infrastructure that is used to provide services to the project. In order to maintain our Nagios monitoring solution an infrastructure-as-code solution has been developed to work alongside our current Ansible and Github based inventory management.
 
-This blog post will cover how the project utilises Ansible & Github to deploy and maintain the Nagios monitoring solution, but there is a previous post which provides an overview of how the project utilises Nagios to monitor the server inventory here: [Adoptium Infrastructure Management With Nagios](https://adoptium.net/blog/2023/03/adoptium-infrastructure-management-with-nagios/).
+As part of a drive to improve automation, and revitalise the Nagios server, a project was undertaken with the aid of an Outreachy intern. The aim of this project was to improve the coverage and resilience of the Nagios service, and improve the ability to maintain it going forward. The main goals were to have a consistent way to create/recover a Nagios server, and also to improve the process for adding new hosts.
+
+This blog post will cover how the project utilised Ansible & Github to deploy and maintain the Nagios monitoring solution.
 
 These are the key areas covered in this blog:
 
   - * Adoptium Infrastructure Management
   - * Deployment of Nagios plugins & monitoring agents on hosts.
   - * Setup & Configuration Of A New Nagios Server Instance
-  - * Using The Nagios Configuration Playbook To Create The Server Configuration.
+
+There is also previous blog post which provides an overview of how the Nagios solution monitors the infrastructure here: [Adoptium Infrastructure Management With Nagios](https://adoptium.net/blog/2023/03/adoptium-infrastructure-management-with-nagios/).
 
 ## 2. Adoptium Infrastructure Management
 
@@ -44,6 +47,11 @@ Useful Links:
 
 ## 3. Demonstration of the Nagios server installation playbooks
 
+
+This demonstration is being run on an x64 Ubuntu 22.04 virtual machines, which is running in isolation from the production infrastructure.
 ![Clone Infrastructure Repository](clonerepo.gif)
+
+
+![Install Nagios Server Using Play Book](buildserver.gif)
 
 ## 4. Demonstration of the Nagios configuration playbook
