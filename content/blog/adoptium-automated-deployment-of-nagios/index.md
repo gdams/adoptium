@@ -44,4 +44,6 @@ Useful Links:
 
 ## 3. Demonstration of the Nagios server installation playbooks
 
+![Clone Infrastructure Repository](clonerepo.gif)
+
 ## 4. Demonstration of the Nagios configuration playbook
