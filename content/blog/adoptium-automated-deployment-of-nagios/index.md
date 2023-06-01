@@ -52,11 +52,7 @@ The below screen recording shows a typical run of the playbook used to build out
 
 Once the playbook has completed, there will be a running Nagios server, and it will have configured the basic set of checks for the Nagios server itself, these elements can all be seen in the screenshots below:
 
-<details><summary>Nagios Home Page</summary>
-<p>
 ![Nagios Home Page](Nagios_Home.png)  
-</p>
-</details>
 
 -- --
 |![Nagios Home Page](Nagios_Home.png)  | ![Nagios Hosts Page](Nagios_Hosts.png) |
