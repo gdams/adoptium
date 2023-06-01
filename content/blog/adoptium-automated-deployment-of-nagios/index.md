@@ -43,7 +43,7 @@ In summary, Ansible is used to automate infrastructure provisioning and configur
 Useful Links:
 
 - [Infrastructure Repository README](https://github.com/adoptium/infrastructure/blob/master/README.md)
-- [Usage Of Ansible](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml),
+- [Usage Of Ansible](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml)
 
 ## 3. Demonstration of the Nagios server installation playbooks
 
@@ -59,13 +59,21 @@ Once the playbook has completed, there will be a running Nagios server, and it w
 |![Nagios Services Page](Nagios_Services.png)  | ![Nagios Checks Page](Nagios_Checks.png) |
 -- --
 
-
-
-
-
-
-
 ## 4. Demonstration of the Nagios configuration playbook
+
+The below screen recording shows a typical run of the playbook used to build out the Nagios Server, the documentation in the infrastructure repository has a more detailed guide on how to do this, but other than the steps to configure secret elements such as the Nagios admin user password , slack URL, and elements like ssh keys, its a very straightforward process...
+
+![Configure Nagios Server Using Play Book](configserver.gif)
+
+Once the playbook has completed, there will be a running Nagios server, and it will have configured the basic set of checks for the Nagios server itself, these elements can all be seen in the screenshots below:
+
+-- --
+|![Nagios Full Hosts Page](AllHosts.png)  | ![Nagios Service Groups Page](ServiceGroups.png) |
+|--|--|
+|![Nagios Host Check 1](host1.png)  | ![Nagios Host Check 2](host2.png) |
+-- --
+
+
 
 
 N.B. This demonstration is being run on an x64 Ubuntu 22.04 virtual machine, which is running in isolation from the production infrastructure. As such it is prevented from actually connecting to the public infrastructure to carry out any checks beyond a cursory "ping" test, and as shown in the last screenshots, most system checks fail.
