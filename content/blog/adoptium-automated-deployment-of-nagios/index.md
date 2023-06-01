@@ -1,7 +1,7 @@
 
 ---
 title: Adoptium Automated Deployment Of Nagios
-date: "2023-05-30T12:00:00+00:00"
+date: "2023-06-01T12:30:00+00:00"
 author: steelhead31
 description: This article demonstrates the Adoptium Nagios deployment playbooks.
 tags:
