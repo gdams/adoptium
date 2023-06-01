@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { graphql } from 'gatsby'
-import { FaDownload, FaQuestion, FaGithub, FaBox, FaInfoCircle, FaGlobe, FaGem, FaUserFriends, FaLock } from 'react-icons/fa'
+import { FaDownload, FaQuestion, FaGithub, FaBox, FaInfoCircle, FaGlobe, FaGem, FaUserFriends, FaLock, FaRocket } from 'react-icons/fa'
 
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
@@ -103,6 +103,16 @@ const DocumentationPage = ({ data }) => (
                 { name: 'Adoptium API', link: 'https://api.adoptium.net' },
                 { name: 'Adoptium Blog', link: 'https://adoptium.net/blog' },
                 { name: 'Logo Styleguide', link: '/docs/logo-styleguide' }
+              ]}
+            />
+            <DocumentationCard
+              title='Branding Materials'
+              Icon={FaRocket}
+              links={[
+                { name: 'Color Scheme and Fonts', link: '/docs/brand' },
+                { name: 'Brand guidelines', link: 'https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf' },
+                { name: 'Google Slide template', link: 'https://docs.google.com/presentation/d/1ChGhqZrAHCdk5S2Ii5s5RROng1saTaTtjZzsxWJ_MPA/copy' },
+                { name: 'Marketing criteria', link: '/docs/marketing-criteria' }
               ]}
             />
           </div>
