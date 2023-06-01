@@ -4,10 +4,10 @@ import vendors from '../../json/marketplace.json';
 import './VendorSelector.scss';
 
 // Shuffle vendors
-//for (let i = vendors.length - 1; i > 0; i--) {
-//    const j = Math.floor(Math.random() * (i + 1));
-//    [vendors[i], vendors[j]] = [vendors[j], vendors[i]];
-//}
+for (let i = vendors.length - 1; i >= 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [vendors[i], vendors[j]] = [vendors[j], vendors[i]];
+}
 
 const VendorSelector = ({
     checkboxRef,
