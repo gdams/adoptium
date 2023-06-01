@@ -43,7 +43,7 @@ In summary, Ansible is used to automate infrastructure provisioning and configur
 Useful Links:
 
 - [Infrastructure Repository README](https://github.com/adoptium/infrastructure/blob/master/README.md)
-- [Usage Of Ansible](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml)
+- [Ansible Inventory](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml)
 
 ## 3. Demonstration of the Nagios server installation playbooks
 
@@ -61,11 +61,11 @@ Once the playbook has completed, there will be a running Nagios server, and it w
 
 ## 4. Demonstration of the Nagios configuration playbook
 
-The below screen recording shows a typical run of the playbook used to build out the Nagios Server, the documentation in the infrastructure repository has a more detailed guide on how to do this, but other than the steps to configure secret elements such as the Nagios admin user password , slack URL, and elements like ssh keys, its a very straightforward process...
+The below screen recording shows a typical run of the playbook used to configure the Nagios Server, it creates configuration based on the [Adoptium Ansible inventory file](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml). The Nagios configuration playbook documentation in the infrastructure repository has a more detailed guide on how this functions, and how to customise its behaviour.
 
 ![Configure Nagios Server Using Play Book](configserver.gif)
 
-Once the playbook has completed, there will be a running Nagios server, and it will have configured the basic set of checks for the Nagios server itself, these elements can all be seen in the screenshots below:
+Once the run of the configuration of the playbook has completed, the configuration of service groups, hosts and checks will all be created, updated or amended based on the options configured, and the changes will be visible in Nagios as shown in the screenshots below.
 
 -- --
 |![Nagios Full Hosts Page](AllHosts.png)  | ![Nagios Service Groups Page](ServiceGroups.png) |
@@ -74,6 +74,4 @@ Once the playbook has completed, there will be a running Nagios server, and it w
 -- --
 
 
-
-
-N.B. This demonstration is being run on an x64 Ubuntu 22.04 virtual machine, which is running in isolation from the production infrastructure. As such it is prevented from actually connecting to the public infrastructure to carry out any checks beyond a cursory "ping" test, and as shown in the last screenshots, most system checks fail.
+N.B. This demonstration is being run on an x64 Ubuntu 22.04 virtual machine, which is running in isolation from the production infrastructure. As such it is prevented from actually connecting to the public infrastructure to carry out any checks beyond a cursory "ping" test, and as shown in the last screenshots, most system checks fail, and this is expected behaviour for this demonstration.
