@@ -47,11 +47,25 @@ Useful Links:
 
 ## 3. Demonstration of the Nagios server installation playbooks
 
+As shown in the screenshots and
 
-This demonstration is being run on an x64 Ubuntu 22.04 virtual machines, which is running in isolation from the production infrastructure.
+-- --
+
 ![Clone Infrastructure Repository](clonerepo.gif)
+
+-- --
+|![Nagios Home Page](Nagios_Home.png)  | ![Nagios Hosts Page](Nagios_Hosts.png) |
+|--|--|
+| 3 | 4 |
+-- --
+
 
 
 ![Install Nagios Server Using Play Book](buildserver.gif)
 
+
+
 ## 4. Demonstration of the Nagios configuration playbook
+
+
+N.B. This demonstration is being run on an x64 Ubuntu 22.04 virtual machine, which is running in isolation from the production infrastructure. As such it is prevented from actually connecting to the public infrastructure to carry out any checks beyond a cursory "ping" test, and as shown in the last screenshots, most system checks fail.
