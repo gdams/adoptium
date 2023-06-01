@@ -1,4 +1,3 @@
-
 ---
 title: Adoptium Automated Deployment Of Nagios
 date: "2023-06-01T12:30:00+00:00"
@@ -12,11 +11,11 @@ tags:
 
 ## 1. Introduction
 
-The Adoptium project utilises the [Nagios Core](https://www.nagios.org/projects/nagios-core/) product to monitor the infrastructure that is used to provide services to the project. In order to maintain our Nagios monitoring solution an infrastructure-as-code solution has been developed to work alongside our current Ansible and Github based inventory management.
+The Adoptium project utilises the [Nagios Core](https://www.nagios.org/projects/nagios-core/) product to monitor the infrastructure that is used to provide services to the project. In order to maintain our Nagios monitoring solution an infrastructure-as-code solution has been developed to work alongside our current Ansible and GitHub based inventory management.
 
 As part of a drive to improve automation, and revitalise the Nagios server, a project was undertaken with the aid of an Outreachy intern. The aim of this project was to improve the coverage and resilience of the Nagios service, and improve the ability to maintain it going forward. The main goals were to have a consistent way to create/recover a Nagios server, and also to improve the process for adding new hosts.
 
-This blog post will cover how the project utilised Ansible & Github to deploy and maintain the Nagios monitoring solution.
+This blog post will cover how the project utilised Ansible & GitHub to deploy and maintain the Nagios monitoring solution.
 
 These are the key areas covered in this blog:
 
@@ -28,22 +27,22 @@ There is also previous blog post which provides an overview of how the Nagios so
 
 ## 2. Adoptium Infrastructure Management
 
-The Adoptium project utilises a combination of Ansible and Github to help maintain and manage a consistent configuration across the large number of servers in use by the project. All of the elements detailed below, are stored within the [Adoptium Infrastructure Github Repository](https://github.com/adoptium/infrastructure/), alongside relevant documentation. The key elements are:
+The Adoptium project utilises a combination of Ansible and GitHub to help maintain and manage a consistent configuration across the large number of servers in use by the project. All of the elements detailed below, are stored within the [Adoptium Infrastructure GitHub Repository](https://GitHub.com/adoptium/infrastructure/), alongside relevant documentation. The key elements are:
 
   Ansible: Ansible is an open-source automation tool that allows you to manage and configure systems. In the context of the Adoptium project, Ansible is used to automate the provisioning and configuration of servers and other infrastructure components.
 
-  Inventory Management: Ansible uses an inventory file that contains information about the hosts and groups of hosts that need to be managed. The [Adoptium inventory file](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml) defines the servers, their IP addresses, connection details, and other relevant information, for the servers in use.
+  Inventory Management: Ansible uses an inventory file that contains information about the hosts and groups of hosts that need to be managed. The [Adoptium inventory file](https://raw.GitHubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml) defines the servers, their IP addresses, connection details, and other relevant information, for the servers in use.
 
   Ansible Playbooks: Ansible playbooks are YAML files that contain a set of instructions, or tasks, to be executed on the managed hosts. These playbooks define the desired state of the infrastructure and automate the deployment and configuration tasks. These playbooks are run periodically both on new and existing hosts to maintain consistent configuration.
 
-  Continuous Integration/Continuous Deployment (CI/CD): Within the Adoptium infrastructure repository, Github actions are leveraged to automate the execution of Ansible playbooks whenever changes are pushed to the repository. This enables automated testing and deployment of infrastructure changes, making the management of the Adoptium project's inventory more efficient. In addition to this, tools such as the VagrantPlayBook check facility within the [Adoptium Jenkins Server][https://ci.adoptium.net/] allow development and testing of any changes to the Ansible playbooks.
+  Continuous Integration/Continuous Deployment (CI/CD): Within the Adoptium infrastructure repository, GitHub actions are leveraged to automate the execution of Ansible playbooks whenever changes are pushed to the repository. This enables automated testing and deployment of infrastructure changes, making the management of the Adoptium project's inventory more efficient. In addition to this, tools such as the VagrantPlayBook check facility within the [Adoptium Jenkins Server][https://ci.adoptium.net/] allow development and testing of any changes to the Ansible playbooks.
 
 In summary, Ansible is used to automate infrastructure provisioning and configuration, while GitHub provides version control and collaboration capabilities for managing the Ansible playbooks and inventory files. This combination allows for efficient and streamlined management of the Adoptium project's inventory.
 
 Useful Links:
 
-- [Infrastructure Repository README](https://github.com/adoptium/infrastructure/blob/master/README.md)
-- [Ansible Inventory](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml)
+- [Infrastructure Repository README](https://GitHub.com/adoptium/infrastructure/blob/master/README.md)
+- [Ansible Inventory](https://raw.GitHubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml)
 
 ## 3. Demonstration of the Nagios server installation playbooks
 
@@ -61,7 +60,7 @@ Once the playbook has completed, there will be a running Nagios server, and it w
 
 ## 4. Demonstration of the Nagios configuration playbook
 
-The below screen recording shows a typical run of the playbook used to configure the Nagios Server, it creates configuration based on the [Adoptium Ansible inventory file](https://raw.githubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml). The Nagios configuration playbook documentation in the infrastructure repository has a more detailed guide on how this functions, and how to customise its behaviour.
+The below screen recording shows a typical run of the playbook used to configure the Nagios Server, it creates configuration based on the [Adoptium Ansible inventory file](https://raw.GitHubusercontent.com/adoptium/infrastructure/master/ansible/inventory.yml). The Nagios configuration playbook documentation in the infrastructure repository has a more detailed guide on how this functions, and how to customise its behaviour.
 
 ![Configure Nagios Server Using Play Book](configserver.gif)
 
