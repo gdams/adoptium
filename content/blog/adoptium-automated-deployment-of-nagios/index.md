@@ -20,9 +20,9 @@ This blog post will cover how the project utilised Ansible & Github to deploy an
 
 These are the key areas covered in this blog:
 
-  - * Adoptium Infrastructure Management
-  - * Deployment of Nagios plugins & monitoring agents on hosts.
-  - * Setup & Configuration Of A New Nagios Server Instance
+  - Adoptium Infrastructure Management
+  - Deployment of Nagios plugins & monitoring agents on hosts.
+  - Setup & Configuration Of A New Nagios Server Instance
 
 There is also previous blog post which provides an overview of how the Nagios solution monitors the infrastructure here: [Adoptium Infrastructure Management With Nagios](https://adoptium.net/blog/2023/03/adoptium-infrastructure-management-with-nagios/).
 
