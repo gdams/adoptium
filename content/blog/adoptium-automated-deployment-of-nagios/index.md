@@ -52,6 +52,12 @@ The below screen recording shows a typical run of the playbook used to build out
 
 Once the playbook has completed, there will be a running Nagios server, and it will have configured the basic set of checks for the Nagios server itself, these elements can all be seen in the screenshots below:
 
+<details><summary>Nagios Home Page</summary>
+<p>
+![Nagios Home Page](Nagios_Home.png)  
+</p>
+</details>
+
 -- --
 |![Nagios Home Page](Nagios_Home.png)  | ![Nagios Hosts Page](Nagios_Hosts.png) |
 |--|--|
@@ -67,9 +73,9 @@ The below screen recording shows a typical run of the playbook used to configure
 Once the run of the configuration of the playbook has completed, the configuration of service groups, hosts and checks will all be created, updated or amended based on the options configured, and the changes will be visible in Nagios as shown in the screenshots below.
 
 -- --
-|![Nagios Full Hosts Page](AllHosts.png)  | ![Nagios Service Groups Page](ServiceGroups.png) |
+|![Nagios Full Hosts Page](AllHosts.png) | ![Nagios Service Groups Page](ServiceGroups.png) |
 |--|--|
-|![Nagios Host Check 1](host1.png)  | ![Nagios Host Check 2](host2.png) |
+|![Nagios Host Check 1](host1.png) | ![Nagios Host Check 2](host2.png) |
 -- --
 
 N.B. This demonstration is being run on an x64 Ubuntu 22.04 virtual machine, which is running in isolation from the production infrastructure. As such it is prevented from actually connecting to the public infrastructure to carry out any checks beyond a cursory "ping" test, and as shown in the last screenshots, most system checks fail, and this is expected behaviour for this demonstration.
