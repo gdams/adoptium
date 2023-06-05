@@ -32,7 +32,6 @@ jobs:
       with:
         title: "Update Project Adopters"
         body: "This is an automatically generated pull request, it will be automatically merged if all the CI tests pass."
-        path: "/"
         branch: "adopters_bot"
         commit-message: "adopters: update temurin adopters"
         author: "adoptium-bot <adoptium-bot@eclipse.org>"
