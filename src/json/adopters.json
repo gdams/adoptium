@@ -1,7 +1,12 @@
 [
     {
         "name": "OpenElements",
-        "logo": "adopters/logo-open-elements.svg",
+        "logo": "openelements.svg",
+        "tier": "adopter"
+    },
+    {
+        "name": "Microsoft",
+        "logo": "microsoft.svg",
         "tier": "adopter"
     }
 ]
