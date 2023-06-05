@@ -1,5 +1,5 @@
 = About Eclipse Adoptium(R)
-:page-authors: zdtsw
+:page-authors: zdtsw, gdams
 
 Eclipse Adoptium 作为顶级项目的使命是生产高质量的 Java 运行时和相关技术，以应用于 Java 生态系统。
 
