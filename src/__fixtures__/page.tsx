@@ -40,6 +40,7 @@ export const createMDXData = (): {
     allMdx: MDXPage;
 } => ({
     allMdx: {
+        totalCount: 1,
         edges: [
             {
                 node: {

@@ -3,14 +3,14 @@
 :keywords: adoptium logo styleguide
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: hendrikebbers, gdams, PrajwalBorkar
+:page-authors: hendrikebbers, gdams, PrajwalBorkar, Ndacyayisenga-droid
 
 
 This page contains the logos of the Eclipse Adoptium top-level project and all projects of Adoptium.
 
 == Eclipse Adoptium
 
-The logo of Adoptium can be used in landscape and portrait mode. 
+The logo of Adoptium can be used in landscape and portrait mode.
 
 [.m-5]
 image:doc/logo-styleguide/adoptium-logos-l-p.png[Adoptium logo in landscape and portrait mode, 100%]
@@ -57,3 +57,10 @@ Next to the landscape and portrait mode the logo is provided in 3 different colo
 === Logo Download
 
 You can download the logo in all available variants as PNG images with transparent background link:/images/doc/logo-styleguide/aqavit-logo.zip[here].
+
+== Mission Control by Adoptium
+
+[.m-5]
+image:doc/logo-styleguide/mission-control-logos-l-p.png[AQAvit logo in landscape and portrait mode, 100%]
+
+You can download the logo in all available variants as PNG images with transparent background link:/images/doc/logo-styleguide/mission-control-logo.zip[here].

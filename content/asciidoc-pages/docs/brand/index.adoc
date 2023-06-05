@@ -1,0 +1,38 @@
+= Adoptium Color Schema and Fonts
+:description: Adoptium brand
+:keywords: adoptium color fonts
+:orgname: Eclipse Adoptium
+:lang: en
+:page-authors: Ndacyayisenga-droid
+
+For Eclipse Adoptium and all projects of the working group we have defined a color schema and fonts that should be used in all marketing material to have a consistent look.
+
+== Adoptium Color Schema
+
+The color schema is based on the colors of the Adoptium logo. We might extend the color schema with additional colors to create a better contrast in designs but for now the color schema is based on the following colors (next to basic colors like black and white):
+
+[.m-5]
+image:doc/brand/color-schema-l-p.png[Adoptium color schema in landscape, 100%]
+
+== Adoptium Fonts
+
+We have defined 2 fonts that should be used on marketing material for Adoptium. The fonts are free to use and can be downloaded at Google Fonts.
+
+For texts in general the 'Poppins' font should be used while the 'Nunito' font is good for large headlines. The 'Nunito' font is used in the Adoptium logo and therefore should only be used in combination with the 'Poppins' font. An example of the fonts can be found here:
+
+[.m-5]
+image:doc/brand/fonts-l-p.png[Adoptium fonts in landscape, 100%]
+
+== Downloads
+
+You can download the fonts directly at Google fonts:
+
+* https://fonts.google.com/specimen/Poppins[Poppins^]
+
+* https://fonts.google.com/specimen/Nunito[Nunito^]
+
+== Variants and Alternatives
+
+For the 'Nunito' font Google Fonts provide the 'Nunito Sans' variant that can be found https://fonts.google.com/specimen/Nunito+Sans[here^]. This font can be used in documents if you need a 3rd font.
+
+**Note:** For more information about adoptium brand guidlines, checkout https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf[here^]

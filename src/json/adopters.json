@@ -1,12 +1,7 @@
 [
     {
-        "name": "Microsoft",
-        "logo": "microsoft.svg",
-        "tier": "adopter"
-    },
-    {
-        "name": "Red Hat",
-        "logo": "redhat.svg",
+        "name": "OpenElements",
+        "logo": "adopters/logo-open-elements.svg",
         "tier": "adopter"
     }
 ]

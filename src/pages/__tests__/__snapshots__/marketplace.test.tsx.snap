@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Slack page > renders correctly 1`] = `
+exports[`Marketplace page > renders correctly 1`] = `
 <main>
   <section
     class="py-5 text-center container"
@@ -54,6 +54,7 @@ exports[`Slack page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="Adoptium"
           id="vendorAdoptium"
           type="checkbox"
         />
@@ -73,6 +74,7 @@ exports[`Slack page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="Red Hat"
           id="vendorRed Hat"
           type="checkbox"
         />
@@ -92,6 +94,7 @@ exports[`Slack page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="Microsoft"
           id="vendorMicrosoft"
           type="checkbox"
         />
@@ -111,6 +114,7 @@ exports[`Slack page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="Azul"
           id="vendorAzul"
           type="checkbox"
         />
@@ -131,6 +135,7 @@ exports[`Slack page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="IBM"
           id="vendorIBM"
           type="checkbox"
         />
@@ -150,6 +155,7 @@ exports[`Slack page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="Huawei"
           id="vendorHuawei"
           type="checkbox"
         />
@@ -169,6 +175,7 @@ exports[`Slack page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="Alibaba"
           id="vendorAlibaba"
           type="checkbox"
         />
@@ -349,19 +356,9 @@ exports[`Slack page > renders correctly 1`] = `
           id="version-filter"
         >
           <option
-            value="17"
+            value="1"
           >
-            17
-          </option>
-          <option
-            value="11"
-          >
-            11
-          </option>
-          <option
-            value="8"
-          >
-            8
+            1 - LTS
           </option>
         </select>
       </div>

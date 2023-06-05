@@ -1,6 +1,7 @@
 name: Contributor Updater
 
 on:
+  workflow_dispatch:
   push:
     paths: [ content/asciidoc-pages/** ]
     branches: [ main ]
@@ -11,6 +12,7 @@ concurrency:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   check_contributors:
@@ -19,29 +21,48 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3.5.0
+    - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
+      with:
+        persist-credentials: false
 
     - id: files
       uses: jitterbit/get-changed-files@b17fbb00bdc0c0f63fcf166580804b4d2cdc2a42 # v1
+      if: github.event_name == 'push'
       
     - run: pip3 install bs4
 
     - run: |
-        # shellcheck disable=2043
-        for changed_file in ${{ steps.files.outputs.all }}; do
-          if [[ ${changed_file} =~ ^content/asciidoc.*.adoc ]]; then
-            current_authors=$(grep ':page-authors:' "${changed_file}" | sed -n -e 's/^.*page-authors: //p')
-            contibutors=$(python3 .github/workflows/github-file-contributors.py --file "${changed_file}")
+        # This function takes one argument, which is the path to a file.
+        # The function first checks if the file path matches a regular expression pattern for AsciiDoc files located in the "content/asciidoc" directory
+        # If the file path matches the pattern, the function extracts the current authors from the file using grep and sed. It then uses a Python script to determine the contributors to the file and loops through each contributor.
+        # For each contributor, the function checks if they are already listed as an author in the file. If not, it adds the contributor to the list of authors and updates the file using sed.
+        update_authors() {
+          local file=$1
+          if [[ ${file} =~ ^content/asciidoc.*.adoc ]]; then
+            current_authors=$(grep ':page-authors:' "${file}" | sed -n -e 's/^.*page-authors: //p')
+            contibutors=$(python3 .github/workflows/github-file-contributors.py --file "${file}")
             for contibutor in ${contibutors}; do
               if ! echo "${current_authors}" | grep "${contibutor}"; then
                 echo "adding ${contibutor}"
                 current_authors_replacement="${current_authors}, ${contibutor}"
                 echo "${current_authors_replacement}"
-                sed -i "s/${current_authors}/${current_authors_replacement}/g" "${changed_file}"
+                sed -i "s/${current_authors}/${current_authors_replacement}/g" "${file}"
               fi
             done
           fi
-        done
+        }
+
+        # if workflow_dispatch, then we need to get all asciidoc files
+        if [[ -z "${{ steps.files.outputs.all }}" ]]; then
+          find content/asciidoc-pages -name '*.adoc' -type f | while read -r changed_file; do
+            update_authors "${changed_file}"
+          done
+        else
+          # shellcheck disable=2043
+          for changed_file in ${{ steps.files.outputs.all }}; do
+            update_authors "${changed_file}"
+          done
+        fi
 
     - uses: gr2m/create-or-update-pull-request-action@dc1726cbf4dd3ce766af4ec29cfb660e0125e8ee # v1
       env:

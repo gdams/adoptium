@@ -1,11 +1,72 @@
+const crypto = require('crypto')
 const path = require('path')
+const fetch = require('node-fetch')
 const fs = require('fs')
 const { pipeline } = require('stream')
 const { promisify } = require('util')
 const { createFilePath } = require('gatsby-source-filesystem')
 const locales = require('./locales/i18n')
+const authors = require('./src/json/authors.json')
 
 const { localizedSlug, findKey, removeTrailingSlash } = require('./src/util/gatsby-node-helpers')
+
+// Import available versions from Adoptium API
+exports.sourceNodes = async ({ actions, createNodeId }) => {
+  const { createNode } = actions
+
+  // Fetch available versions from Adoptium API
+  const res = await fetch('https://api.adoptium.net/v3/info/available_releases')
+  const data = await res.json()
+
+  data.available_releases.forEach((release, i) => {
+    const nodeContent = JSON.stringify(release)
+
+    const nodeMeta = {
+      id: createNodeId(`adoptium-release-${i}`), // Unique identifier for each node
+      parent: null,
+      children: [],
+      internal: {
+        type: 'Versions',
+        content: nodeContent,
+        contentDigest: crypto
+          .createHash('md5')
+          .update(nodeContent)
+          .digest('hex')
+      }
+    }
+
+    const lts = data.available_lts_releases.includes(release)
+
+    const extraData = {
+      version: release,
+      lts,
+      label: lts ? `${release} - LTS` : release.toString()
+    }
+
+    // Combine the metadata and data to create the node
+    const node = Object.assign({}, extraData, nodeMeta)
+    createNode(node)
+  })
+
+  // Create a node for the most recent LTS release
+  const latestLTS = data.most_recent_lts
+  const nodeContent = JSON.stringify(latestLTS)
+  const node = {
+    id: createNodeId('adoptium-lts-most-recent'), // Unique identifier for each node
+    version: latestLTS,
+    parent: null,
+    children: [],
+    internal: {
+      type: 'MostRecentLTS',
+      content: nodeContent,
+      contentDigest: crypto
+        .createHash('md5')
+        .update(nodeContent)
+        .digest('hex')
+    }
+  }
+  createNode(node)
+}
 
 exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions
@@ -124,7 +185,36 @@ exports.onCreateNode = async ({ node, actions, getNode, getNodes }) => {
 }
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage, createSlice } = actions
+  const postsPerPage = 10
+
+  // Create Slice components https://www.gatsbyjs.com/docs/how-to/performance/using-slices/
+  createSlice({
+    id: 'navbar',
+    component: require.resolve('./src/components/NavBar/index.tsx')
+  })
+
+  createSlice({
+    id: 'footer',
+    component: require.resolve('./src/components/Footer/index.tsx')
+  })
+
+  createSlice({
+    id: 'banner',
+    component: require.resolve('./src/components/Banner/index.tsx')
+  })
+
+  // create slice for AuthorBio
+  for (const author of Object.keys(authors)) {
+    createSlice({
+      id: `author-bio-${author}`,
+      component: require.resolve('./src/components/AuthorBio/index.tsx'),
+      context: {
+        identifier: author,
+        author: authors[author]
+      }
+    })
+  }
 
   // Create Asciidoc pages.
   const asciidocTemplate = path.resolve('./src/templates/asciidocTemplate.tsx')
@@ -194,13 +284,45 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     })
 
-    createPage({
-      path: `/blog/author/${author}`,
-      component: authorPage,
-      context: {
-        author,
-        limit: 10
-      }
+    // Query all blog posts by author to determine the number of pages needed
+    const authorPosts = await graphql(
+      `
+        {
+          allMdx(filter: {frontmatter: {author: {eq: "${author}"}}}) {
+            totalCount
+          }
+        }
+      `
+    )
+
+    if (authorPosts.errors) {
+      throw authorPosts.errors
+    }
+
+    const numAuthorPages = Math.ceil(authorPosts.data.allMdx.totalCount / postsPerPage)
+
+    Array.from({ length: numAuthorPages }).forEach((_, index) => {
+      const currentPageNumber = index + 1
+      const previousPageNumber =
+        currentPageNumber === 1 ? null : currentPageNumber - 1
+      const nextPageNumber =
+        currentPageNumber === numAuthorPages ? null : currentPageNumber + 1
+      createPage({
+        path: index === 0 ? `/blog/author/${author}` : `/blog/author/${author}/page/${index + 1}`,
+        component: authorPage,
+        context: {
+          author,
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          numAuthorPages,
+          currentPageNumber,
+          previousPageNumber,
+          nextPageNumber
+        },
+        slices: {
+          authorBio: `author-bio-${author}`
+        }
+      })
     })
   }
 
@@ -273,7 +395,6 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  const postsPerPage = 10
   const numPages = Math.ceil(posts.length / postsPerPage)
   Array.from({ length: numPages }).forEach((_, index) => {
     const currentPageNumber = index + 1

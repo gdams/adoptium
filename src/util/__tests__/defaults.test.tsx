@@ -1,4 +1,4 @@
-import { arches, defaultArchitecture, defaultPackageType, defaultVersion, oses, packageTypes, versions, versionsLTS } from "../defaults";
+import { arches, defaultArchitecture, defaultPackageType, oses, packageTypes } from "../defaults";
 import { describe, expect, it } from 'vitest'
 
 describe("defaults", () => {
@@ -6,9 +6,6 @@ describe("defaults", () => {
         expect(oses).toBeInstanceOf(Object);
         expect(arches).toBeInstanceOf(Object);
         expect(packageTypes).toBeInstanceOf(Object);
-        expect(versions).toBeInstanceOf(Object);
-        expect(versionsLTS).toBeInstanceOf(Object);
-        expect(typeof defaultVersion).toBe("number");
         expect(typeof defaultPackageType).toBe("string");
         expect(typeof defaultArchitecture).toBe("string");
     });

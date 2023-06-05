@@ -16,6 +16,7 @@ export interface AsciidocPage {
 
 export interface MDXPage {
     edges: MDXPageItem[];
+    totalCount: number;
 }
 
 export interface MDXPageItem {

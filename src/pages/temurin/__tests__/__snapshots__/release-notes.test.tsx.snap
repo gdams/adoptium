@@ -36,50 +36,51 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
             aria-label="Release Notes"
             aria-multiselectable="false"
             aria-rowcount="2"
-            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-1bvp8j9-MuiDataGrid-root"
+            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-yhlmex-MuiDataGrid-root"
             role="grid"
           >
-            <div>
-              <div
-                class="MuiDataGrid-toolbarContainer css-128fb87-MuiDataGrid-toolbarContainer"
+            <div
+              class="MuiDataGrid-toolbarContainer css-128fb87-MuiDataGrid-toolbarContainer"
+            >
+              <button
+                aria-expanded="false"
+                aria-haspopup="true"
+                aria-label="Show filters"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                data-mui-internal-clone-element="true"
+                id=":r0:"
+                tabindex="0"
+                type="button"
               >
-                <button
-                  aria-label="Show filters"
-                  class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
-                  data-mui-internal-clone-element="true"
-                  tabindex="0"
-                  type="button"
+                <span
+                  class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
                 >
                   <span
-                    class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
+                    class="MuiBadge-root css-1c32n2y-MuiBadge-root"
                   >
-                    <span
-                      class="MuiBadge-root css-1c32n2y-MuiBadge-root"
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      data-testid="FilterListIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
-                        data-testid="FilterListIcon"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
-                        />
-                      </svg>
-                      <span
-                        class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-1pi4uwz-MuiBadge-badge"
-                      >
-                        0
-                      </span>
+                      <path
+                        d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
+                      />
+                    </svg>
+                    <span
+                      class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-1pi4uwz-MuiBadge-badge"
+                    >
+                      0
                     </span>
                   </span>
-                  Filters
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
-                </button>
-              </div>
+                </span>
+                Filters
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
             </div>
             <div
               class="MuiDataGrid-main css-204u17-MuiDataGrid-main"
@@ -157,13 +158,13 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           class="MuiDataGrid-menuIcon"
                         >
                           <button
-                            aria-controls=":r3:"
-                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-haspopup="menu"
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                            id=":r4:"
+                            data-mui-internal-clone-element="true"
+                            id=":r6:"
                             tabindex="-1"
-                            title="Menu"
                             type="button"
                           >
                             <svg
@@ -233,13 +234,13 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           class="MuiDataGrid-menuIcon"
                         >
                           <button
-                            aria-controls=":r6:"
-                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-haspopup="menu"
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                            id=":r7:"
+                            data-mui-internal-clone-element="true"
+                            id=":rc:"
                             tabindex="-1"
-                            title="Menu"
                             type="button"
                           >
                             <svg
@@ -309,13 +310,13 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           class="MuiDataGrid-menuIcon"
                         >
                           <button
-                            aria-controls=":r9:"
-                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-haspopup="menu"
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                            id=":ra:"
+                            data-mui-internal-clone-element="true"
+                            id=":ri:"
                             tabindex="-1"
-                            title="Menu"
                             type="button"
                           >
                             <svg
@@ -385,13 +386,13 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           class="MuiDataGrid-menuIcon"
                         >
                           <button
-                            aria-controls=":rc:"
-                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-haspopup="menu"
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                            id=":rd:"
+                            data-mui-internal-clone-element="true"
+                            id=":ro:"
                             tabindex="-1"
-                            title="Menu"
                             type="button"
                           >
                             <svg
@@ -461,13 +462,13 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                           class="MuiDataGrid-menuIcon"
                         >
                           <button
-                            aria-controls=":rf:"
-                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-haspopup="menu"
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
-                            id=":rg:"
+                            data-mui-internal-clone-element="true"
+                            id=":ru:"
                             tabindex="-1"
-                            title="Menu"
                             type="button"
                           >
                             <svg
@@ -508,127 +509,112 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 </div>
               </div>
               <div
-                style="flex: 0 0px; overflow: visible;"
+                class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
+                style="overflow-x: hidden; overflow-y: hidden;"
               >
                 <div
-                  class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
-                  style="overflow-x: hidden; overflow-y: hidden;"
+                  class="MuiDataGrid-virtualScrollerContent css-1kwdphh-MuiDataGrid-virtualScrollerContent"
+                  style="width: auto; height: 52px; min-height: auto;"
                 >
                   <div
-                    class="MuiDataGrid-virtualScrollerContent css-1kwdphh-MuiDataGrid-virtualScrollerContent"
-                    style="width: auto; height: 52px; min-height: auto;"
+                    class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
+                    style="transform: translate3d(0px, 0px, 0px);"
                   >
                     <div
-                      class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
-                      style="transform: translate3d(0px, 0px, 0px);"
+                      aria-rowindex="2"
+                      aria-selected="false"
+                      class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
+                      data-id="0"
+                      data-rowindex="0"
+                      role="row"
+                      style="max-height: none; min-height: auto;"
                     >
                       <div
-                        aria-rowindex="2"
-                        aria-selected="false"
-                        class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
-                        data-id="0"
-                        data-rowindex="0"
-                        role="row"
-                        style="max-height: none; min-height: auto;"
+                        aria-colindex="1"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                        data-colindex="0"
+                        data-field="priority"
+                        role="cell"
+                        style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span
+                          class="badge bg-secondary priority-1"
+                          title="P1 - Blocks development and/or testing work, production could not run."
+                        >
+                          P1
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="2"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                        data-colindex="1"
+                        data-field="type"
+                        role="cell"
+                        style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <span>
+                          Bug
+                        </span>
+                      </div>
+                      <div
+                        aria-colindex="3"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                        data-colindex="2"
+                        data-field="component"
+                        role="cell"
+                        style="min-width: 150px; max-width: 150px; min-height: auto; max-height: none;"
+                        tabindex="-1"
                       >
                         <div
-                          aria-colindex="1"
-                          aria-colspan="1"
-                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
-                          data-colindex="0"
-                          data-field="priority"
-                          role="cell"
-                          style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
-                          tabindex="-1"
+                          class="MuiDataGrid-cellContent"
+                          title="component_mock"
                         >
-                          <span
-                            class="badge bg-secondary priority-1"
-                            title="P1 - Blocks development and/or testing work, production could not run."
-                          >
-                            P1
-                          </span>
+                          component_mock
                         </div>
-                        <div
-                          aria-colindex="2"
-                          aria-colspan="1"
-                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
-                          data-colindex="1"
-                          data-field="type"
-                          role="cell"
-                          style="min-width: 100px; max-width: 100px; min-height: auto; max-height: none;"
-                          tabindex="-1"
+                      </div>
+                      <div
+                        aria-colindex="4"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                        data-colindex="3"
+                        data-field="id"
+                        role="cell"
+                        style="min-width: 150px; max-width: 150px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
+                        <a
+                          href="https://link_mock/"
+                          rel="noopener noreferrer"
+                          target="_blank"
                         >
-                          <span>
-                            Hidden
-                          </span>
-                        </div>
+                          0
+                        </a>
+                      </div>
+                      <div
+                        aria-colindex="5"
+                        aria-colspan="1"
+                        class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
+                        data-colindex="4"
+                        data-field="title"
+                        role="cell"
+                        style="min-width: 800px; max-width: 800px; min-height: auto; max-height: none;"
+                        tabindex="-1"
+                      >
                         <div
-                          aria-colindex="3"
-                          aria-colspan="1"
-                          class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
-                          data-colindex="2"
-                          data-field="component"
-                          role="cell"
-                          style="min-width: 150px; max-width: 150px; min-height: auto; max-height: none;"
-                          tabindex="-1"
+                          class="MuiDataGrid-cellContent"
+                          title="title_mock"
                         >
-                          <div
-                            class="MuiDataGrid-cellContent"
-                          />
-                        </div>
-                        <div
-                          aria-colindex="4"
-                          aria-colspan="1"
-                          class="MuiDataGrid-cell--withRenderer MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
-                          data-colindex="3"
-                          data-field="id"
-                          role="cell"
-                          style="min-width: 150px; max-width: 150px; min-height: auto; max-height: none;"
-                          tabindex="-1"
-                        >
-                          <a
-                            href="https://link_mock/"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                          >
-                            0
-                          </a>
-                        </div>
-                        <div
-                          aria-colindex="5"
-                          aria-colspan="1"
-                          class="MuiDataGrid-cell MuiDataGrid-cell--textLeft MuiDataGrid-withBorderColor"
-                          data-colindex="4"
-                          data-field="title"
-                          role="cell"
-                          style="min-width: 800px; max-width: 800px; min-height: auto; max-height: none;"
-                          tabindex="-1"
-                        >
-                          <div
-                            class="MuiDataGrid-cellContent"
-                            title="title_mock"
-                          >
-                            title_mock
-                          </div>
+                          title_mock
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="Mui-resizeTriggers"
-              >
-                <div
-                  class="expand-trigger"
-                >
-                  <div
-                    style="width: 1px; height: 1px;"
-                  />
-                </div>
-                <div
-                  class="contract-trigger"
-                />
               </div>
             </div>
             <div
@@ -646,7 +632,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                   />
                   <p
                     class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-                    id=":r2:"
+                    id=":r4:"
                   >
                     Rows per page:
                   </p>
@@ -656,9 +642,9 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                     <div
                       aria-expanded="false"
                       aria-haspopup="listbox"
-                      aria-labelledby=":r2: :r1:"
+                      aria-labelledby=":r4: :r3:"
                       class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
-                      id=":r1:"
+                      id=":r3:"
                       role="button"
                       tabindex="0"
                     >
@@ -666,6 +652,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                     </div>
                     <input
                       aria-hidden="true"
+                      aria-invalid="false"
                       class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
                       tabindex="-1"
                       value="20"

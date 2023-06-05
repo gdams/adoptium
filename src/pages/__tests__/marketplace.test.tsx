@@ -4,7 +4,7 @@ import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 import Marketplace, { Head } from '../marketplace';
 
-describe('Slack page', () => {
+describe('Marketplace page', () => {
   it('renders correctly', () => {
     const { container } = render(<Marketplace />);
     // eslint-disable-next-line

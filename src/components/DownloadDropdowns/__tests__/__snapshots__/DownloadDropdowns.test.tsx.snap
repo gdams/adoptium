@@ -107,7 +107,7 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
         <option
           value="1"
         >
-          1
+          1 - LTS
         </option>
       </select>
     </div>
@@ -222,7 +222,12 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
         <option
           value="1"
         >
-          1
+          1 - LTS
+        </option>
+        <option
+          value="2"
+        >
+          2
         </option>
       </select>
     </div>

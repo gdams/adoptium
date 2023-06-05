@@ -3,9 +3,8 @@ import { GitHubLink, TwitterLink, LinkedinLink } from '../BlogAuthor';
 
 import ProfilePic from '../ProfilePic';
 
-const AuthorBio = (props) => {
-  const author = props.author;
-  const identifier = props.identifier;
+const AuthorBio = ({ sliceContext }) => {
+  const { author, identifier } = sliceContext;
 
   return (
     <div

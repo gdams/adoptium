@@ -5,6 +5,7 @@ import { createMockTemurinReleaseAPI  } from '../../__fixtures__/hooks';
 
 let mockResponse = [createMockTemurinReleaseAPI(false, 'jdk')];
 
+// @ts-ignore
 global.fetch = vi.fn(() => Promise.resolve({
   json: () => Promise.resolve(mockResponse)
 }));

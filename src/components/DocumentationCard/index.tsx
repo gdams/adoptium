@@ -33,12 +33,12 @@ const DocumentationCard = ({
   <div className='col-12 col-lg-4 py-3'>
     <div className='card shadow-sm'>
       <div className='card-body'>
-        <h5 className='card-title mb-3'>
+        <p className='card-title mb-3 h5'>
           <span className='theme-icon-holder card-icon-holder me-2'>
               <Icon />
             </span>
             <span className='card-title-text'>{title}</span>
-        </h5>
+        </p>
         <div className='card-text'>
           <div className='list-group list-group-flush'>
             {links.map((link: Object) => (

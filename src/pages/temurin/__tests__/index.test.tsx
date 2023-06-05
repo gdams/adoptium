@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import { useOnScreen } from '../../../hooks/useOnScreen';
 import { fetchLatestForOS } from '../../../hooks/fetchLatestTemurin';
@@ -10,6 +10,12 @@ import Index, { Head } from '../index';
 vi.mock('../../../hooks/useOnScreen');
 vi.mock('../../../hooks/fetchLatestTemurin');
 
+const mockLatestLTS = {
+  mostRecentLts: {
+    version: 1
+  }
+};
+
 describe('Temurin Index page', () => {
   it('renders correctly', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -18,7 +24,7 @@ describe('Temurin Index page', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     fetchLatestForOS.mockReturnValue(createRandomLatestForOSData());
-    const { container } = render(<Index />);
+    const { container } = render(<Index data={mockLatestLTS} />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -39,7 +45,7 @@ describe('Temurin Index page', () => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     fetchLatestForOS.mockReturnValue(createRandomLatestForOSData());
-    const { container } = render(<Index />);
+    const { container } = render(<Index data={mockLatestLTS} />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

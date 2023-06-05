@@ -1,7 +1,7 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Slice } from 'gatsby';
+import { Link } from 'gatsby-plugin-react-i18next'
 
-import AuthorBio from '../components/AuthorBio';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import AuthorData from '../json/authors.json';
@@ -12,13 +12,16 @@ const AuthorPage = ({ data, pageContext }) => {
   const author = AuthorData[pageContext.author];
   const posts = data.allMdx.edges;
 
+  const { previousPageNumber, nextPageNumber } = pageContext;
+  const previousPageLink = previousPageNumber === 1 ? `/blog/author/${pageContext.author}` : `/blog/author/${previousPageNumber}`;
+
   return (
     <Layout>
         <section className='py-5 container'>
             <div className='row py-lg-5'>
                 <div className='col-lg-9 col-md-9 mx-auto'>
                     <h1>{author.name}</h1>
-                    <AuthorBio identifier={pageContext.author} author={author} />
+                    <Slice alias='authorBio' />
 
                     <hr className='pb-5'/>
 
@@ -38,6 +41,32 @@ const AuthorPage = ({ data, pageContext }) => {
                         />
                         );
                     })}
+                    <div>
+                        <ul
+                        style={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            justifyContent: 'space-between',
+                            listStyle: 'none',
+                            padding: 0,
+                        }}
+                        >
+                        <li>
+                            {previousPageNumber && (
+                            <Link to={previousPageLink} rel='prev'>
+                                ← Previous page
+                            </Link>
+                            )}
+                        </li>
+                        <li>
+                            {nextPageNumber && (
+                            <Link to={`/blog/author/${pageContext.author}/page/${nextPageNumber}`} rel='next'>
+                                Next page →
+                            </Link>
+                            )}
+                        </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -50,16 +79,17 @@ export default AuthorPage;
 
 export const Head = ({ pageContext }) => {
   const author = AuthorData[pageContext.author];
+  const { currentPageNumber } = pageContext;
   return (
     <Seo
-      title={author.name}
+      title={currentPageNumber === 1 ? author.name : `${author.name} - Page ${currentPageNumber}`}
       description={author.summary}
     />
   );
 };
 
 export const authorPageQuery = graphql`
-  query authorPageQuery($author: String!, $limit: Int!, $language: String!) {
+  query authorPageQuery($author: String!, $skip: Int!, $limit: Int!, $language: String!) {
     site {
       siteMetadata {
         title
@@ -69,6 +99,7 @@ export const authorPageQuery = graphql`
       filter: {frontmatter: {author: {eq: $author}}}
       sort: {frontmatter: {date: DESC}}
       limit: $limit
+      skip: $skip
     ) {
       edges {
         node {

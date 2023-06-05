@@ -1,0 +1,53 @@
+= Adoptium marketing criteria
+:description: Adoptium Marketing Criteria
+:keywords: adoptium marketing
+:orgname: Eclipse Adoptium
+:lang: en
+:page-authors: Ndacyayisenga-droid
+
+Adoptium Working Group has defined how to share and publish an event, news, or social media post; the final decision on posting is made and managed by the Adoptium marketing committee. The committee uses the Adoptium Slack channel #marketing, and this information is also shared using #community and #buzz channels.
+
+== Share an event
+
+The goal of this part is to define proper criteria to publish and share an event at the Adoptium / news and event https://adoptium.net/news/
+
+1. Either the Community manager or any Adoptium member can request an event publication if:
+
+- Some Adoptium community members are attending.
+- Adoptium working group is sponsoring, or
+- There are some sessions about Adoptium
+
+2. As a community, we are tracking all possible events to attend using an internal list https://docs.google.com/spreadsheets/d/1sSzIkTrujZRPbqq1ao6EA4E6WIQK-qqPp2QZNEChDEs/edit#gid=446200723[Adoptium_List of Conferences and Event^] once we have confirmed one or more of the criteria explained above, we can continue with the process.
+
+3. The responsible should request the publishing by submitting the event here https://newsroom.eclipse.org/node/add/events. Keep in mind that if this is a shared event with other Eclipse Foundation working groups, the description will be standard and reviewed by the marketing team, as this team is the one responsible for event moderation.
+
+4. Remember to share the event on the https://adoptium.slack.com/archives/C01BUN6GJUB[#community^] channel as well.
+
+== Share a news
+
+The goal of this document is to define proper criteria to publish and share a piece of news at the Adoptium / news and event https://adoptium.net/news/
+
+1. Either the Community manager or any Adoptium member can request a  news publication if:
+
+- The article or blog post talks about any of the Eclipse Adoptium projects: https://projects.eclipse.org/projects/adoptium, created by a third party or by an Adoptium member.
+- Adoptium working group is sponsoring or creating the news, or
+
+2. Please, use the https://adoptium.slack.com/archives/C88P3DL86[#buzz^] or https://adoptium.slack.com/archives/C02BADFQZK5R[#marketing^] channel to inform about this news.
+
+3. The responsible (Community manager or Community member) should request the publishing by submitting the news here https://newsroom.eclipse.org/node/add/news. Or send an email here: news@eclipse.org
+
+- When submitting the news, by using the newsroom, on “publishing information,” select  “Eclipse” and “Adoptium,” and add a brief introduction. Keep in mind that the Eclipse marketing team is moderating this content. You have the opportunity to share the news under the Adoptium news and also as part of Eclipse Announcements https://newsroom.eclipse.org/eclipse/announcements/  or Community news https://newsroom.eclipse.org/eclipse/community-news/
+
+- When submitting the news using the email address, please give a news summary, Who the involved Adoptium member is; Share their social media handle if they agree, and ask to share the news at announcement or community news if applicable.
+
+4. The marketing team will share the news using Adoptium's social media accounts.IF the news has already been shared, inform as a separate note in the summary editing field or the email and share the link, as they might only amplify the current post.
+
+== Social media posting
+
+As part of the marketing committee, if you want to post something on Adoptium's social media LinkedIn: https://www.linkedin.com/showcase/adoptium/    and Twitter: https://twitter.com/adoptium, please follow these steps:
+
+- Ask the Eclipse marketing team to share a social media posting by emailing news@eclipse.org.
+- We will use the same criteria for sharing the news, explained above.
+- Share the news link, explain the reason for sharing, say who the Adoptium member involve, and share their social media handle if they agree.
+- Do a proofreading process with someone else from Eclipse or Adoptium team before sharing any social media content.
+- If a specific Adoptium member authors the news or article, we should mention their social media handle (prior authorization). If the news implies, more team members mention the PMC or WG member. Be specific about this when requesting a social media posting.

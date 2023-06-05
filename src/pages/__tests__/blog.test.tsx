@@ -16,6 +16,16 @@ describe('Blog page', () => {
     expect(pageContent).toMatchSnapshot();
   });
 
+  // test when nextPageNumber is set
+  it('renders correctly with nextPageNumber', () => {
+    mockData.allMdx.totalCount = 11;
+    const { container } = render(<BlogIndex data={mockData}/>);
+    // eslint-disable-next-line
+    const pageContent = container.querySelector('main');
+
+    expect(pageContent).toHaveTextContent('Next page →');
+  });
+
   it('head renders correctly', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line

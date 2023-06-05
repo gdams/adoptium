@@ -4,9 +4,15 @@ import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 import Index, { Head } from '../index';
 
+const mockLatestLTS = {
+  mostRecentLts: {
+    version: 1
+  }
+};
+
 describe('Index page', () => {
   it('renders correctly', () => {
-    const { container } = render(<Index />);
+    const { container } = render(<Index data={mockLatestLTS} />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -21,7 +27,7 @@ describe('Index page', () => {
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Index />);
+    const { container } = render(<Index data={mockLatestLTS} />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

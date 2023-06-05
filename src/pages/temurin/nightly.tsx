@@ -28,7 +28,7 @@ const TemurinReleases = () => (
               Redistribution of any Intermediate Build must retain this notice.&rdquo;
               <br />
               <br />
-              <p class='text-warning'>These builds are unsupported and not for use in production.</p>
+              <p className='text-warning'>These builds are unsupported and not for use in production.</p>
             </div>
             <div className='btn-group'>
               <Link to='/temurin/releases' className='btn btn-primary m-3'>

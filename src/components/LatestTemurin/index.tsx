@@ -1,11 +1,9 @@
 import React, { MutableRefObject, useRef } from 'react';
-import { Link, Trans } from 'gatsby-plugin-react-i18next'
-
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import { FaArrowCircleRight, FaArchive, FaDownload } from 'react-icons/fa';
 
 import { detectOS, UserOS } from '../../util/detectOS';
 import { fetchLatestForOS, useOnScreen } from '../../hooks';
-import { defaultVersion } from '../../util/defaults'
 
 let userOSName: string
 let userOSAPIName: string
@@ -13,6 +11,7 @@ let arch: string = 'x64'
 let isSafari: boolean
 
 const LatestTemurin = (props): JSX.Element => {
+  const defaultVersion = props.latestLTS
 
   const userOS = detectOS();
   switch (userOS) {
@@ -21,7 +20,9 @@ const LatestTemurin = (props): JSX.Element => {
       userOSAPIName = 'mac'
       if (typeof document !== 'undefined') {
         let w = document.createElement("canvas").getContext("webgl");
+        // @ts-ignore
         let d = w.getExtension('WEBGL_debug_renderer_info');
+        // @ts-ignore
         let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
         isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         //Detect if the user is using a Apple GPU (M1)

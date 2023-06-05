@@ -1,6 +1,6 @@
 {
-    "release.intro": "Eclipse Temurin ist die quelloffene Java SE Implementierung basierend auf OpenJDK. Temurin ist verfügbar auf <supportedPlatformsLink>einer Vielzahl von Plattformen</supportedPlatformsLink> und Java SE Versionen. Die aktuellsten Versionen zur Verwendung in Produktivumgebungen sind unten gelistet und werden <supportLink>regelmäßig aktualisiert und unterstützt</supportLink> von der Adoptium Community. Hilfe zur Migration, Kontainern und Installation durch Packetmanagern ist vorhanden in userer <docsLink>Dokumentation</docsLink>.",
+    "release.intro": "Eclipse Temurin ist die quelloffene Java-SE-Implementierung basierend auf OpenJDK. Temurin ist für <supportedPlatformsLink>eine Vielzahl von Plattformen</supportedPlatformsLink> und Java-SE-Versionen verfügbar. Die aktuellsten Versionen zur Verwendung in Produktivumgebungen sind unten aufgelistet und werden <supportLink>regelmäßig aktualisiert und unterstützt</supportLink> durch die Adoptium-Community. Hilfe zur Migration, zu Containern und zur Installation durch Paketmanager ist in unserer <docsLink>Dokumentation</docsLink> zu finden.",
     "Use the drop-down boxes below to filter the list of current releases.": "Die Auswahllisten unten können benutzt werden um aktuelle Releases zu filtern.",
-    "Previous releases are available in the Temurin archive.": "Vorherige Releases sind verfügbar im Temurin Archiv.",
+    "Previous releases are available in the Temurin archive.": "Vorherige Releases sind im Temurin-Archiv verfügbar.",
     "Release Notes": "Versionshinweise"
 }

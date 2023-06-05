@@ -2,6 +2,10 @@ import { expect, vi } from 'vitest'
 import * as axeMatchers from 'vitest-axe/matchers'
 import React from 'react'
 import matchers from '@testing-library/jest-dom/matchers';
+import { configure } from '@testing-library/dom';
+configure({
+  computedStyleSupportsPseudoElements: true
+})
 import 'vitest-axe/extend-expect'
 import '@testing-library/jest-dom'
 import 'vitest-canvas-mock'
@@ -19,6 +23,29 @@ vi.mock('gatsby', async () => {
         description: 'Sample Description',
         siteUrl: 'https://sample.com',
       }
+    },
+    mostRecentLts: {
+      version: 1,
+    },
+    allVersions: {
+      edges: [
+        {
+          node: {
+            id: 'mock-id-1',
+            version: 1,
+            label: '1 - LTS',
+            lts: true,
+          }
+        },
+        {
+          node: {
+            id: 'mock-id-2',
+            version: 2,
+            label: '2',
+            lts: false,
+          }
+        },
+      ]
     },
     avatar: {
       edges: [
@@ -50,7 +77,11 @@ vi.mock('gatsby', async () => {
     ...gatsby,
     graphql: vi.fn(),
     StaticQuery: vi.fn(),
-    useStaticQuery: vi.fn().mockImplementation(() => mockUseStaticQuery)
+    useStaticQuery: vi.fn().mockImplementation(() => mockUseStaticQuery),
+    Slice: vi.fn()
+    .mockImplementation(({ alias }) =>
+      React.createElement('div', { className: `slice--${alias}` })
+    ),
   }
 })
 

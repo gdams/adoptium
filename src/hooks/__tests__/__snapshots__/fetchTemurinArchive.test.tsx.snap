@@ -1,5 +1,33 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`getAssetsForVersion > returns valid JSON - ea 1`] = `
+{
+  "pagecount": 3,
+  "releases": [
+    {
+      "platforms": {
+        "os_mock-arch_mock": {
+          "assets": [
+            {
+              "architecture": "arch_mock",
+              "checksum": "checksum_mock",
+              "extension": "tar.gz",
+              "link": "https://link_mock/",
+              "os": "os_mock",
+              "size": 0,
+              "type": "DEBUGIMAGE",
+            },
+          ],
+        },
+      },
+      "release_link": "https://release_link_mock/",
+      "release_name": "release_name_mock",
+      "timestamp": 2020-01-01T00:00:00.000Z,
+    },
+  ],
+}
+`;
+
 exports[`getAssetsForVersion > returns valid JSON - with installers 1`] = `
 {
   "pagecount": 3,
@@ -55,7 +83,6 @@ exports[`getAssetsForVersion > returns valid JSON - with release notes 1`] = `
       "release_link": "https://release_link_mock/",
       "release_name": "release_name_mock",
       "release_notes": true,
-      "source_url": "https://source_mock/",
       "timestamp": 2020-01-01T00:00:00.000Z,
     },
   ],

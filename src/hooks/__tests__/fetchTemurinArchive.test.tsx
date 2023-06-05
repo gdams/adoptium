@@ -5,6 +5,7 @@ import { createMockTemurinFeatureReleaseAPI  } from '../../__fixtures__/hooks';
 
 let mockResponse = [createMockTemurinFeatureReleaseAPI(false)];
 
+// @ts-ignore
 global.fetch = vi.fn(() => Promise.resolve({
   json: () => Promise.resolve(mockResponse),
   headers: {
@@ -14,6 +15,7 @@ global.fetch = vi.fn(() => Promise.resolve({
 
 afterEach(() => {
   vi.clearAllMocks();
+  mockResponse = [createMockTemurinFeatureReleaseAPI(false)];
 });
 
 describe('getAssetsForVersion', () => {
@@ -22,6 +24,32 @@ describe('getAssetsForVersion', () => {
       await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
         expect(data).toMatchSnapshot()
       })
+    });
+  });
+
+  it('returns valid JSON - ea', async() => {
+    // set type as debugimage
+    mockResponse[0].binaries[0].image_type = 'debugimage';
+
+    const newBinary = {
+      image_type: 'foobar',
+      os: 'mac',
+      architecture: 'x64',
+      package: {
+        name: 'rogue_package',
+        link: new URL('https://package_mock/'),
+        size: 180,
+        checksum: 'package_mock_checksum',
+      },
+    };
+
+    // add a second binary same as the first but with invalid image_type
+    mockResponse[0].binaries.push(newBinary);
+    
+    renderHook(async() => {
+      await getAssetsForVersion(8, 'ea', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
+        expect(data).toMatchSnapshot()
+      });
     });
   });
 

@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link as Noni18nLink } from "gatsby"
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
-import { FaTwitter, FaYoutube, FaGithub, FaSlack, FaRss } from 'react-icons/fa';
+import { FaTwitter, FaLinkedin, FaYoutube, FaGithub, FaSlack, FaRss } from 'react-icons/fa';
 
 // @ts-ignore
 import Logo from '../../images/adoptium-logo-dark.svg';
@@ -76,6 +76,7 @@ const NavBar = (): JSX.Element => {
                 Further Information
               </Link>
               <ul className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown2">
+                <li><ExactNavLink className="dropdown-item" to="/support">Support</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/news">News & Events</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/about">About</ExactNavLink></li>
                 <li><ExactNavLink className="dropdown-item" to="/members">Members</ExactNavLink></li>
@@ -94,6 +95,9 @@ const NavBar = (): JSX.Element => {
             <li className="ms-3"><Noni18nLink style={navbarIcon} aria-label="Adoptium RSS Feed" to="/rss.xml"><FaRss size={25} /></Noni18nLink></li>
           }
           <li className="ms-3"><a style={navbarIcon} target="_blank" aria-label="Adoptium Twitter Account" rel="noopener noreferrer" href="https://twitter.com/adoptium"><FaTwitter size={25} /></a></li>
+          <li className="ms-3">
+          <a style={navbarIcon} target="_blank" aria-label="Adoptium LinkedIn Page" rel="noopener noreferrer" href="https://www.linkedin.com/showcase/adoptium/">
+          <FaLinkedin size={25} /></a></li>
           <li className="ms-3"><a style={navbarIcon} target="_blank" aria-label="Adoptium YouTube Account" rel="noopener noreferrer" href="https://www.youtube.com/c/EclipseAdoptium"><FaYoutube size={25} /></a></li>
           <li className="ms-3"><a style={navbarIcon} target="_blank" aria-label="Adoptium GitHub Account" rel="noopener noreferrer" href="https://github.com/adoptium"><FaGithub size={25} /></a></li>
           <li className="ms-3"><Link style={navbarIcon} aria-label="Adoptium Slack Account" to="/slack"><FaSlack size={25} /></Link></li>

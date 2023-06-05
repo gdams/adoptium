@@ -4,6 +4,7 @@ name: Adopters Updater
 on:
   schedule:
     - cron: '0 */12 * * *'
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -20,6 +21,8 @@ jobs:
     steps:
 
     - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3.5.0
+      with:
+        persist-credentials: false
 
     - run: python3 .github/workflows/fetch-adopters.py
 
@@ -27,10 +30,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.ADOPTIUM_BOT_TOKEN }}
       with:
-        title: "Update Project Adopters"
+        title: "Update Temurin Adopters"
         body: "This is an automatically generated pull request, it will be automatically merged if all the CI tests pass."
-        path: "/"
         branch: "adopters_bot"
         commit-message: "adopters: update temurin adopters"
-        labels: automerge
         author: "adoptium-bot <adoptium-bot@eclipse.org>"

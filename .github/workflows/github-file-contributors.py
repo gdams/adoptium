@@ -6,10 +6,10 @@ import requests
 from bs4 import BeautifulSoup
 
 org = "adoptium"
-repo = "website-v2"
+repo = "adoptium.net"
 branch = "main"
 # This is where we define users that should be skipped
-excludedUsers = "eclipse-temurin-bot"
+excludedUsers = "adoptium-bot, eclipse-temurin-bot"
 
 parser = argparse.ArgumentParser(
     description="List GitHub contributor usernames for a given file"

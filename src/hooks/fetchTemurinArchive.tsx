@@ -8,7 +8,7 @@ let releases: TemurinReleases[] = []
 
 export async function getAssetsForVersion(
   version: number,
-  releaseType: any,
+  releaseType: ReleaseType,
   numBuilds: number,
   buildDate: Date,
   page: number
@@ -33,7 +33,7 @@ export async function getAssetsForVersion(
   for (let pkg of packages) {
       pkgsFound.push(pkg);
   }
-  return renderReleases(pkgsFound, pagecount);
+  return renderReleases(pkgsFound, pagecount, releaseType);
 }
 
 async function getPkgs(url: URL) {
@@ -41,7 +41,7 @@ async function getPkgs(url: URL) {
   return response;
 }
 
-function renderReleases(pkgs, pagecount) {
+function renderReleases(pkgs, pagecount, releaseType) {
   pkgs.forEach((aRelease) => {
     const release: TemurinReleases = {
         release_name: aRelease.release_name,
@@ -62,7 +62,13 @@ function renderReleases(pkgs, pagecount) {
         if (aRelease.release_notes) {
           release.release_notes = true;
         }
-        if (!['INSTALLER', 'JDK', 'JRE'].includes(binary_type)) {
+
+        if (releaseType === 'ga' && !['INSTALLER', 'JDK', 'JRE'].includes(binary_type)) {
+          return;
+        }
+
+        // Choose which ea binary types to display
+        if (releaseType === 'ea' && !['INSTALLER', 'JDK', 'JRE', 'DEBUGIMAGE'].includes(binary_type)) {
           return;
         }
   
@@ -96,6 +102,8 @@ function renderReleases(pkgs, pagecount) {
   })
   return {releases, pagecount}
 }
+
+type ReleaseType = 'ea' | 'ga';
 
 export interface ReturnedReleases {
   releases: TemurinReleases[];

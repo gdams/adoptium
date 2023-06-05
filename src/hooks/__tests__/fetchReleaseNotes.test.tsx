@@ -5,6 +5,7 @@ import { createMockReleaseNotesAPI } from '../../__fixtures__/hooks';
 
 let mockResponse = createMockReleaseNotesAPI(1);
 
+// @ts-ignore
 global.fetch = vi.fn(() => Promise.resolve({
   json: () => Promise.resolve(mockResponse)
 }));
@@ -24,10 +25,22 @@ describe('fetchReleaseNotesForVersion', () => {
       "https://api.adoptium.net/v3/info/release_notes/sample_version"
     );
     expect(result.current).toMatchSnapshot()
-  })
+  });
+
+  it('returns null if error is caught in fetch', async () => {
+    global.fetch = vi.fn(() => Promise.reject('error'));
+    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version'));
+    await waitFor(() => {
+      expect(result.current).toBe(null)
+    }, { interval: 1 });
+    expect(global.fetch).toHaveBeenCalledTimes(1)
+    expect(fetch).toHaveBeenCalledWith(
+      "https://api.adoptium.net/v3/info/release_notes/sample_version"
+    );
+  });
 
   it('returns null if version is not defined', async () => {
     const { result } = renderHook(() => fetchReleaseNotesForVersion(true, null));
     expect(result.current).toBe(null)
-  })
+  });
 });

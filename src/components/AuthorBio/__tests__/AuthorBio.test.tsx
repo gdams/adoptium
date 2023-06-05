@@ -7,13 +7,15 @@ describe('AuthorBio component', () => {
     it('should render correctly', () => {
         const { container } = render(
             <AuthorBio
-                author={{
-                    name:'Test Author',
-                    twitter:'adoptium',
-                    github:'adoptium',
-                    linkedin:'adoptium',
+                sliceContext={{
+                    author: {
+                        name: 'Test Author',
+                        twitter: 'adoptium',
+                        github: 'adoptium',
+                        linkedin: 'adoptium',
+                    },
+                    identifier: 'pmc'
                 }}
-                identifier='pmc'
             />
         );
 
@@ -21,49 +23,57 @@ describe('AuthorBio component', () => {
     });
 
     it('should render correctly - Summary', () => {
-        const { container } = render(
+        render(
             <AuthorBio
-                author={{
-                    name:'Test Author',
-                    summary: 'Test Summary'
+                sliceContext={{
+                    author: {
+                        name: 'Test Author',
+                        summary: 'Test Summary'
+                    },
+                    identifier: 'pmc'
                 }}
-                identifier='pmc'
             />
         );
     });
 
     it('should render correctly - no GitHub', () => {
-        const { container } = render(
+        render(
             <AuthorBio
-                author={{
-                    name:'Test Author',
-                    twitter:'adoptium',
-                    linkedin:'adoptium',
+                sliceContext={{
+                    author: {
+                        name: 'Test Author',
+                        twitter: 'adoptium',
+                        linkedin: 'adoptium',
+                    },
+                    identifier: 'pmc'
                 }}
-                identifier='pmc'
             />
         );
     });
 
     it('should render correctly - no Linked', () => {
-        const { container } = render(
+        render(
             <AuthorBio
-                author={{
-                    name:'Test Author',
-                    twitter:'adoptium',
+                sliceContext={{
+                    author: {
+                        name: 'Test Author',
+                        twitter: 'adoptium',
+                    },
+                    identifier: 'pmc'
                 }}
-                identifier='pmc'
             />
         );
     });
 
     it('should render correctly - no Twitter', () => {
-        const { container } = render(
+        render(
             <AuthorBio
-                author={{
-                    name:'Test Author'
+                sliceContext={{
+                    author: {
+                        name: 'Test Author'
+                    },
+                    identifier: 'pmc'
                 }}
-                identifier='pmc'
             />
         );
     });
