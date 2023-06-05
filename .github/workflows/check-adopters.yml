@@ -1,0 +1,39 @@
+name: Adopters Updater
+
+# // Run on cron every 12 hours
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  check_adopters:
+    if: github.repository_owner == 'adoptium'
+    name: Temurin Adopters
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@8f4b7f84864484a7bf31766abe9204da3cbe65b3 # v3.5.0
+      with:
+        persist-credentials: false
+
+    - run: python3 .github/workflows/fetch-adopters.py
+
+    - uses: gr2m/create-or-update-pull-request-action@dc1726cbf4dd3ce766af4ec29cfb660e0125e8ee # v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.ADOPTIUM_BOT_TOKEN }}
+      with:
+        title: "Update Project Adopters"
+        body: "This is an automatically generated pull request, it will be automatically merged if all the CI tests pass."
+        path: "/"
+        branch: "adopters_bot"
+        commit-message: "adopters: update temurin adopters"
+        labels: automerge
+        author: "adoptium-bot <adoptium-bot@eclipse.org>"
