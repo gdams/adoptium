@@ -8,4 +8,4 @@ jobs:
   automerge:
     uses: adoptium/.github/.github/workflows/pr-auto-merge.yml@main
     with:
-      allowed-author: eclipse-temurin-bot
+      allowed-author: adoptium-bot
