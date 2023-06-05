@@ -178,6 +178,14 @@ exports[`NavBar component > navbar renders correctly 1`] = `
               <li>
                 <a
                   class="dropdown-item"
+                  href="/adopters"
+                >
+                  Temurin Adopters
+                </a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
                   href="/temurin/buttons"
                 >
                   Promote
