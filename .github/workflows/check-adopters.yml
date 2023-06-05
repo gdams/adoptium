@@ -35,5 +35,4 @@ jobs:
         path: "/"
         branch: "adopters_bot"
         commit-message: "adopters: update temurin adopters"
-        labels: automerge
         author: "adoptium-bot <adoptium-bot@eclipse.org>"
