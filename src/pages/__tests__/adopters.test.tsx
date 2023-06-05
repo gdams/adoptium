@@ -34,7 +34,7 @@ describe('Adopters page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-    expect(title?.textContent).toEqual('Eclipse Temurin Adopters Page | Adoptium');
+    expect(title?.textContent).toEqual('Eclipse Temurin Adopters | Adoptium');
   });
 
   it('has no accessibility violations', async () => {

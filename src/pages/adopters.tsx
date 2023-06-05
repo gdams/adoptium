@@ -19,7 +19,7 @@ const AdoptersPage = () => (
 <section className="py-5 text-center container">
   <div className="row py-lg-5">
     <div className="col-lg-8 col-md-8 mx-auto">
-      <h1 className="fw-light">Eclipse Temurin&trade; Adopters Page</h1>
+      <h1 className="fw-light">Eclipse Temurin&trade; Adopters</h1>
       <p className="lead text-muted">
         Companies that use Eclipse Temurin in production.
       </p>
@@ -51,22 +51,19 @@ const AdoptersPage = () => (
               .
             </li>
             <li>Select the ‘New Issue’ button.</li>
-          </ol>
-          <p>
-            When submitting a pull request, please make the following changes to
-            the eclipsefdn-project-adopters'{" "}
-            <a href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters">
-              codebase
-            </a>
-            :
-          </p>
-          <ol>
             <li>
               Attach logo files to an issue by dragging and dropping them in the
               text editor of the form.
             </li>
           </ol>
           <p className='h3'>Option 2 - Submit a Pull Request</p>
+          <p>When submitting a pull request, please make the following changes to
+            the eclipsefdn-project-adopters'{" "}
+            <a href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters">
+              codebase
+            </a>
+            :
+          </p>
           <ol>
             <li>
               Go to{" "}
@@ -100,7 +97,7 @@ const AdoptersPage = () => (
 export default AdoptersPage
 
 export const Head = () => (
-  <Seo title='Eclipse Temurin Adopters Page' />
+  <Seo title='Eclipse Temurin Adopters' />
 )
 
 export const query = graphql`

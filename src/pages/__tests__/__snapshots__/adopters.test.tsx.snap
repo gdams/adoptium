@@ -14,7 +14,7 @@ exports[`Adopters page > renders correctly 1`] = `
         <h1
           class="fw-light"
         >
-          Eclipse Temurin™ Adopters Page
+          Eclipse Temurin™ Adopters
         </h1>
         <p
           class="lead text-muted"
@@ -83,7 +83,15 @@ exports[`Adopters page > renders correctly 1`] = `
               <li>
                 Select the ‘New Issue’ button.
               </li>
+              <li>
+                Attach logo files to an issue by dragging and dropping them in the text editor of the form.
+              </li>
             </ol>
+            <p
+              class="h3"
+            >
+              Option 2 - Submit a Pull Request
+            </p>
             <p>
               When submitting a pull request, please make the following changes to the eclipsefdn-project-adopters'
                
@@ -93,16 +101,6 @@ exports[`Adopters page > renders correctly 1`] = `
                 codebase
               </a>
               :
-            </p>
-            <ol>
-              <li>
-                Attach logo files to an issue by dragging and dropping them in the text editor of the form.
-              </li>
-            </ol>
-            <p
-              class="h3"
-            >
-              Option 2 - Submit a Pull Request
             </p>
             <ol>
               <li>
