@@ -249,8 +249,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-bootstrap-5',
-        short_name: 'gb5-starter',
+        name: 'eclipse-adoptium',
+        short_name: 'adoptium',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
