@@ -1,0 +1,13 @@
+# How to support us
+
+Hey there! We're all about building a strong community that supports our project in various ways. Here are a few awesome ways you can show your love and help us thrive:
+
+1. Spread the Word: Be our ultimate hype person! Follow us on Twitter at @adoptium, tag us in your posts, and share our social media handles across different platforms. Help us reach a wider audience and create a buzz about our project.
+2. Collaborate: Check out our https://adoptium.net/en-GB/docs/["How to Contribute"] documentation for detailed information on how you can get involved. Whether you're an individual contributor or an organization, we welcome your expertise and collaboration. Whether you have coding skills, testing prowess, or a knack for documentation, there are plenty of ways to make a meaningful impact. Additionally, if you have ideas for joint projects, research initiatives, or any other form of collaboration, let's explore them together. We believe that by working hand in hand, we can achieve remarkable things. So, join us and be a part of our vibrant community!
+3. Financial Support: There are several ways to support us financially:
+- Donations: You can make direct donations to our project. We have two mechanisms for donations: direct https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf[sponsorship] and Github sponsorship. Every contribution goes a long way in supporting our development efforts.
+- In-Kind Support: If you have resources such as machine time or other assets that the project can benefit from directly, consider donating them. Your support will help us enhance our     infrastructure and operations.
+- Join the Adoptium Working Group: Organizations can join the https://www.eclipse.org/org/workinggroups/about.php[Adoptium Working Group] by becoming a member of the Eclipse Foundation and paying the associated membership fees. These fees contribute to the Adoptium Working Group, which in turn supports our project. It's a great way for organizations to show their commitment and actively contribute to our success.
+4.  Share Ideas and Feedback: Join our community calls, raise issues, suggest enhancements, and participate actively in discussions. Your input is invaluable in shaping the future of our project. By   actively engaging with the community, you become an integral part of our journey.
+
+Remember, it's the collective effort of passionate individuals, organizations, and the community that drives us forward. Let's join forces and create something extraordinary together!
