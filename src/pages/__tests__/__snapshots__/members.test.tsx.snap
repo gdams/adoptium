@@ -127,7 +127,7 @@ exports[`Members page > renders correctly 1`] = `
           href="https://www.eclipse.org/org/foundation/contact.php"
           style="margin: 20px;"
         >
-          Conntact us
+          Contact us
         </a>
         <a
           class="btn btn-lg btn-primary mt-5"

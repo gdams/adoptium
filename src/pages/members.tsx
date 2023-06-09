@@ -55,7 +55,7 @@ const MembersPage = () => (
             members={participantMembers}
           />
           <Link style={{margin: 20}} to='https://membership.eclipse.org/application#sign-in' className='btn btn-lg btn-primary mt-5'>Ready to Join?</Link>
-          <Link style={{margin: 20}} to='https://www.eclipse.org/org/foundation/contact.php' className='btn btn-lg btn-primary mt-5'>Conntact us</Link>
+          <Link style={{margin: 20}} to='https://www.eclipse.org/org/foundation/contact.php' className='btn btn-lg btn-primary mt-5'>Contact us</Link>
           <Link style={{margin: 20}} to='/join' className='btn btn-lg btn-primary mt-5'>Learn More</Link>
         </div>
       </div>

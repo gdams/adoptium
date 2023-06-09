@@ -202,7 +202,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
               <li>
                 <a
                   class="dropdown-item"
-                  href="/supportus"
+                  href="/support-us"
                 >
                   Support Us
                 </a>
