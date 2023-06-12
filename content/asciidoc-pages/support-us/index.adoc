@@ -4,7 +4,7 @@
 :keywords: adoptium support
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: Ndacyayisenga-droid
+:page-authors: Ndacyayisenga-droid, gdams
 
 Hey there! We're all about building a strong community that supports our project in various ways. Here are a few awesome ways you can show your love and help us thrive:
 
