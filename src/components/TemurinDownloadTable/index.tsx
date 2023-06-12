@@ -97,36 +97,48 @@ const TemurinDownloadTable = ({results}) => {
 
 export default TemurinDownloadTable;
 
-const BinaryTable = ({ checksum, link, extension, type, size, os, arch, version }) => {
-    return (
-        <tr>
-            <td className="align-middle text-center">
-                <table><tbody>
-                <tr>
-                    <td>
-                        {`${type} - ${size} MB`}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span className="fw-light">
-                            <a href=""
-                                data-bs-toggle="modal"
-                                data-bs-target="#checksumModal"
-                                data-bs-checksum={checksum}>
-                                <small><Trans>Checksum</Trans></small>
-                            </a>
-                        </span>
-                    </td>
-                </tr>
+const BinaryTable = ({ checksum, extension, type, size, os, arch, version }) => {
+    const handleDownloadClick = () => {
+      const link = 'https://adoptium.net/en-GB/download/';
+      window.open(link, "_blank");
+    };
 
-                </tbody></table>
-            </td>
-            <td className="align-middle">
-                <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: type, java_version: version }} className="btn btn-primary" style={{width: "6em"}}>
-                    <FaDownload /> {extension}
-                </Link>
-            </td>
-        </tr>
-    )
-}
+    return (
+      <tr>
+        <td className="align-middle text-center">
+          <table>
+            <tbody>
+              <tr>
+                <td>{`${type} - ${size} MB`}</td>
+              </tr>
+              <tr>
+                <td>
+                  <span className="fw-light">
+                    <a
+                      href=""
+                      data-bs-toggle="modal"
+                      data-bs-target="#checksumModal"
+                      data-bs-checksum={checksum}
+                    >
+                      <small>
+                        <Trans>Checksum</Trans>
+                      </small>
+                    </a>
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td className="align-middle">
+          <button
+            onClick={handleDownloadClick}
+            className="btn btn-primary"
+            style={{ width: "6em" }}
+          >
+            <FaDownload /> {extension}
+          </button>
+        </td>
+      </tr>
+    );
+  };

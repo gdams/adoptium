@@ -166,10 +166,8 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                 <td
                   class="align-middle"
                 >
-                  <a
+                  <button
                     class="btn btn-primary"
-                    href="/download"
-                    state="[object Object]"
                     style="width: 6em;"
                   >
                     <svg
@@ -187,7 +185,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                     </svg>
                      
                     extension_mock
-                  </a>
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -309,10 +307,8 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                 <td
                   class="align-middle"
                 >
-                  <a
+                  <button
                     class="btn btn-primary"
-                    href="/download"
-                    state="[object Object]"
                     style="width: 6em;"
                   >
                     <svg
@@ -330,7 +326,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                     </svg>
                      
                     installer_extension_mock
-                  </a>
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -368,10 +364,8 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                 <td
                   class="align-middle"
                 >
-                  <a
+                  <button
                     class="btn btn-primary"
-                    href="/download"
-                    state="[object Object]"
                     style="width: 6em;"
                   >
                     <svg
@@ -389,7 +383,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                     </svg>
                      
                     extension_mock
-                  </a>
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -535,10 +529,8 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                 <td
                   class="align-middle"
                 >
-                  <a
+                  <button
                     class="btn btn-primary"
-                    href="/download"
-                    state="[object Object]"
                     style="width: 6em;"
                   >
                     <svg
@@ -556,7 +548,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                     </svg>
                      
                     extension_mock
-                  </a>
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -678,10 +670,8 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                 <td
                   class="align-middle"
                 >
-                  <a
+                  <button
                     class="btn btn-primary"
-                    href="/download"
-                    state="[object Object]"
                     style="width: 6em;"
                   >
                     <svg
@@ -699,7 +689,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                     </svg>
                      
                     installer_extension_mock
-                  </a>
+                  </button>
                 </td>
               </tr>
               <tr>
@@ -737,10 +727,8 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                 <td
                   class="align-middle"
                 >
-                  <a
+                  <button
                     class="btn btn-primary"
-                    href="/download"
-                    state="[object Object]"
                     style="width: 6em;"
                   >
                     <svg
@@ -758,7 +746,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                     </svg>
                      
                     extension_mock
-                  </a>
+                  </button>
                 </td>
               </tr>
             </tbody>
