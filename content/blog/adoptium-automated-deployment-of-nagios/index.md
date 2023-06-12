@@ -55,7 +55,7 @@ Once the playbook has completed, there will be a running Nagios server, and it w
 ![Nagios Home Page](Nagios_Home.png)  
 ![Nagios Hosts Page](Nagios_Hosts.png)
 ![Nagios Services Page](Nagios_Services.png)
-![Nagios Checks Page](Nagios_Checks.png) |
+![Nagios Checks Page](Nagios_Checks.png)
 
 ## 4. Demonstration of the Nagios configuration playbook
 
