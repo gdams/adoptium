@@ -109,7 +109,7 @@ git push origin my_new_branch
 
 - You can use -f in git push if need to overwrite your git history. Please use this flag with caution.
 
-We would like to encourage you to open a pull request early and use `Create draft pull request` option. This allows others to check the PR, get early feedback, and helps create a better end product.
+We would like to encourage you to open a pull request early and use the `Create draft pull request` option. This allows others to check the PR, get early feedback, and helps create a better end product.
 
 If you have been given access to run test jobs in our Jenkins server, run https://ci.adoptium.net/job/Grinder/[Grinder] to validate your PR. If you do not have access, the reviewers of your PR will run some tests. Reviewers may ask you to run extra tests depending on what changes you have made in your PR.
 
