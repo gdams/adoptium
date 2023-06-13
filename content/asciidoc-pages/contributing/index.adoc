@@ -104,7 +104,7 @@ Push the change into your Git repo:
 
 [source, bash]
 ----
-git push -f origin my_new_branch
+git push origin my_new_branch
 ----
 
 - You can skip -f in git push if you've never pushed your branch before.
