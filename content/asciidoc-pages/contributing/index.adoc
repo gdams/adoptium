@@ -107,7 +107,7 @@ Push the change into your Git repo:
 git push origin my_new_branch
 ----
 
-- You can skip -f in git push if you've never pushed your branch before.
+- You can use -f in git push if need to overwrite your git history. Please use this flag with caution.
 
 We would like to encourage you to open a pull request early and use `Create draft pull request` option. This allows others to check the PR, get early feedback, and helps create a better end product.
 
