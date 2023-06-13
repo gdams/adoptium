@@ -41,7 +41,7 @@ For more information, please see the https://www.eclipse.org/projects/handbook/#
 
 == Submitting a contribution to Adoptium
 
-After signing ECA, you can propose contributions by sending pull requests (PRs) through GitHub.
+After signing the ECA, you can propose contributions by sending pull requests (PRs) through GitHub.
 
 **Note:** Assume we are contributing to the `aqa-tests` repo
 
