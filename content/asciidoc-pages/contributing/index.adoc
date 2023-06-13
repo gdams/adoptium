@@ -43,7 +43,7 @@ For more information, please see the https://www.eclipse.org/projects/handbook/#
 
 After signing ECA, you can propose contributions by sending pull requests (PRs) through GitHub.
 
-**Note:** Assume we are `aqa-tests` repo
+**Note:** Assume we are contributing to the `aqa-tests` repo
 
 If this is your first time contributing to the project, fork the repo by clicking on the Fork button in the top-right corner of the git repo page. This creates a copy of the repo under your GitHub account: https://github.com/<YourGitUserName>/aqa-tests.git
 
