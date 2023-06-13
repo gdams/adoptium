@@ -1,0 +1,124 @@
+= Contributing to Adoptium
+:page-authors: Ndacyayisenga-droid
+
+Thanks for your interest in this project.
+
+== Project description
+
+Adoptium is an open-source project that focuses on providing high-quality, production-ready distributions of the Java Development Kit (JDK) and associated technologies. The project's main goal is to create a vendor-neutral, community-driven distribution of OpenJDK, which is the open-source implementation of the Java Platform, Standard Edition (Java SE).
+
+Adoptium aims to provide users with reliable and well-tested builds of OpenJDK across different platforms, including Windows, macOS, Linux, and more. The project collaborates closely with the OpenJDK community and benefits from the expertise of a diverse group of contributors, including developers, organizations, and Java enthusiasts.
+
+One of the key objectives of Adoptium is to make it easier for developers and organizations to access and consume OpenJDK builds. It provides prebuilt binaries that are thoroughly tested, ensuring stability and compatibility. These binaries are available for free, making it convenient for developers to adopt and use OpenJDK in their projects without any licensing restrictions.
+
+Adoptium also offers long-term support (LTS) builds, which are specifically designed for enterprises and organizations that require a stable and reliable Java runtime environment. The LTS builds receive regular updates and security patches, ensuring the longevity and maintenance of the Java platform.
+
+Overall, Adoptium aims to provide a trustworthy and accessible distribution of OpenJDK, promoting transparency, collaboration, and community-driven innovation within the Java ecosystem.
+
+- https://github.com/adoptium
+
+== Developer resources
+
+The AQAvit project maintains the following source code repositories:
+
+- https://github.com/adoptium/temurin-build
+- https://github.com/adoptium/aqa-tests
+- https://github.com/adoptium/installer
+- https://github.com/adoptium/adoptium-support
+- https://github.com/adoptium/containers
+- https://github.com/adoptium/adoptium.net
+- And many https://github.com/adoptium/[others]
+
+== Eclipse Contributor Agreement
+
+Before your contribution can be accepted by the project team contributors must electronically sign the Eclipse Contributor Agreement (ECA).
+
+- http://www.eclipse.org/legal/ECA.php
+
+Commits that are provided by non-committers must have a Signed-off-by field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. The non-committer must additionally have an Eclipse Foundation account and must have a signed Eclipse Contributor Agreement (ECA) on file.
+
+For more information, please see the Eclipse Committer Handbook and Adoptium documentation:
+
+- https://www.eclipse.org/projects/handbook/#resources-commit
+- https://adoptium.net/docs/eca-sign-off
+
+== Submitting a contribution to Adoptium
+
+After signing ECA, you can propose contributions by sending pull requests (PRs) through GitHub.
+
+**Note:** Assume we are `aqa-tests` repo
+
+If this is your first time contributing to the project, fork the repo by clicking on the Fork button in the top-right corner of the git repo page. This creates a copy of the repo under your GitHub account: https://github.com/<YourGitUserName>/aqa-tests.git
+
+Git clone the your repo:
+
+[source, bash]
+----
+git clone https://github.com/<YourGitUserName>/aqa-tests.git
+----
+
+Create a new branch to work on:
+
+[source, bash]
+----
+cd aqa-tests
+git checkout -b my_new_branch
+----
+
+- Add https://github.com/adoptium/aqa-tests.git as your upstream:
+
+[source, bash]
+----
+git remote add upstream https://github.com/adoptium/aqa-tests.git
+----
+
+Before you start working on the issue, plese make sure the local branch is up to date:
+
+[source, bash]
+----
+git fetch upstream
+git rebase upstream/master
+----
+
+Once you are done with your work, track your changes and commit.
+
+[source, bash]
+----
+git add .
+git commit -s -m "message about this PR"
+----
+
+- Commit message example:
+
+[source, bash]
+----
+Update jtreg in openjdk test
+This patch updates jtreg version from 5.1 to 6.1.
+Fixes: #1234
+Signed-off-by: Full Name <email>
+----
+
+- The first line is the PR title. It should describe the change made. Please keep it short and simple.
+- The body should include detailed information about your PR. You may want to include designs, rationale, and a brief explanation of what you have changed. Please keep it concise.
+- When a commit has related issues, please use the Git keywords to automatically close or relate to the issues. https://help.github.com/articles/closing-issues-using-keywords/
+- Please sign off on your commit in the footer. This can be automatically added to your commit by passing -s to git commit (see above example).
+
+Push the change into your Git repo:
+
+[source, bash]
+----
+git push -f origin my_new_branch
+----
+
+- You can skip -f in git push if you've never pushed your branch before.
+
+We would like to encourage you to open a pull request early and use `Create draft pull request` option. This allows others to check the PR, get early feedback, and helps create a better end product.
+
+If you have been given access to run test jobs in our Jenkins server, run https://ci.adoptium.net/job/Grinder/[Grinder] to validate your PR. Your can find recordings about how to use Grinder in AQA Lightning Talk Series: https://github.com/eclipse-openj9/openj9/wiki/AQA-Lightning-Talk-Series. If you do not have access, the reviewers of your PR will run some tests. Reviewers may ask you to run extra tests depending on what changes you have made in your PR.
+
+Ensure all related Grinder jobs pass and provide the Grinder links in the PR comment. Your changes must also pass the auto PR builds that will be applied to your pull request.
+
+Convert PR to `Ready for review` once the PR is ready.
+
+== Contact
+Contact the Eclipse Foundation Webdev team via webdev@eclipse-foundation.org.

@@ -59,6 +59,7 @@ const DocumentationPage = ({ data }) => (
               title='Contributing'
               Icon={FaUserFriends}
               links={[
+                { name: 'How To Contribute', link: '/contributing' },
                 { name: 'First Timer Support', link: '/docs/first-timer-support' },
                 { name: 'Sign the Contributor Agreement', link: '/docs/eca-sign-off' },
                 { name: 'Join our Slack Channel', link: '/slack' },
