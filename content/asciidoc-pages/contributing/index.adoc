@@ -19,7 +19,7 @@ Overall, Adoptium aims to provide a trustworthy and accessible distribution of O
 
 == Developer resources
 
-The AQAvit project maintains the following source code repositories:
+The Adoptium project maintains the following source code repositories:
 
 - https://github.com/adoptium/temurin-build
 - https://github.com/adoptium/aqa-tests
@@ -35,12 +35,9 @@ Before your contribution can be accepted by the project team contributors must e
 
 - http://www.eclipse.org/legal/ECA.php
 
-Commits that are provided by non-committers must have a Signed-off-by field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. The non-committer must additionally have an Eclipse Foundation account and must have a signed Eclipse Contributor Agreement (ECA) on file.
+Commits that are provided by non-committers must have a Signed-off-by field in the footer indicating that the author is aware of the terms by which the contribution has been provided to the project. The non-committer must additionally have an Eclipse Foundation account and must have a signed https://adoptium.net/docs/eca-sign-off[Eclipse Contributor Agreement] (ECA) on file.
 
-For more information, please see the Eclipse Committer Handbook and Adoptium documentation:
-
-- https://www.eclipse.org/projects/handbook/#resources-commit
-- https://adoptium.net/docs/eca-sign-off
+For more information, please see the https://www.eclipse.org/projects/handbook/#resources-commit[Eclipse Committer Handbook] and Adoptium documentation:
 
 == Submitting a contribution to Adoptium
 
@@ -114,7 +111,7 @@ git push -f origin my_new_branch
 
 We would like to encourage you to open a pull request early and use `Create draft pull request` option. This allows others to check the PR, get early feedback, and helps create a better end product.
 
-If you have been given access to run test jobs in our Jenkins server, run https://ci.adoptium.net/job/Grinder/[Grinder] to validate your PR. Your can find recordings about how to use Grinder in AQA Lightning Talk Series: https://github.com/eclipse-openj9/openj9/wiki/AQA-Lightning-Talk-Series. If you do not have access, the reviewers of your PR will run some tests. Reviewers may ask you to run extra tests depending on what changes you have made in your PR.
+If you have been given access to run test jobs in our Jenkins server, run https://ci.adoptium.net/job/Grinder/[Grinder] to validate your PR. If you do not have access, the reviewers of your PR will run some tests. Reviewers may ask you to run extra tests depending on what changes you have made in your PR.
 
 Ensure all related Grinder jobs pass and provide the Grinder links in the PR comment. Your changes must also pass the auto PR builds that will be applied to your pull request.
 
