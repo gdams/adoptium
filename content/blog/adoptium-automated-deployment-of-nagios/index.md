@@ -73,4 +73,3 @@ Once the run of the configuration of the playbook has completed, the configurati
 ![Nagios Host Check 2](host2.png)
 
 N.B. This demonstration is being run on an x64 Ubuntu 22.04 virtual machine, which is running in isolation from the production infrastructure. As such it is prevented from actually connecting to the public infrastructure to carry out any checks beyond a cursory "ping" test, and as shown in the last screenshots, most system checks fail, and this is expected behaviour for this demonstration.
-
