@@ -15,7 +15,7 @@ The Adoptium project utilises the [Nagios Core](https://www.nagios.org/projects/
 
 As part of a drive to improve automation, and revitalise the Nagios server, a project was undertaken with the aid of an Outreachy intern. The aim of this project was to improve the coverage and resilience of the Nagios service, and improve the ability to maintain it going forward. The main goals were to have a consistent way to create/recover a Nagios server, and also to improve the process for adding new hosts.
 
-This blog post will cover how the project utilised Ansible & GitHub to deploy and maintain the Nagios monitoring solution.
+This blog post will cover how the project utilised Ansible and GitHub to deploy and maintain the Nagios monitoring solution.
 
 These are the key areas covered in this blog:
 
