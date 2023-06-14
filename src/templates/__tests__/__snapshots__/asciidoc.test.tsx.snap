@@ -252,18 +252,133 @@ exports[`Asciidoc pages > renders correctly - installation slug 1`] = `
           <p>
             Hello World, this is a 
           </p>
-          <pre>
+          <pre
+            class="language-none"
+            tabindex="0"
+          >
             <code
-              class="hljs language-bash"
+              class="language-none"
             >
-              <span
-                class="hljs-built_in"
-              >
-                test
-              </span>
+              test
             </code>
           </pre>
           <p />
+          
+            
+          <pre
+            class="language-java"
+            tabindex="0"
+          >
+            <code
+              class="language-java"
+            >
+              <span
+                class="token keyword"
+              >
+                public
+              </span>
+               
+              <span
+                class="token keyword"
+              >
+                static
+              </span>
+               
+              <span
+                class="token keyword"
+              >
+                void
+              </span>
+               
+              <span
+                class="token function"
+              >
+                main
+              </span>
+              <span
+                class="token punctuation"
+              >
+                (
+              </span>
+              <span
+                class="token class-name"
+              >
+                String
+              </span>
+              <span
+                class="token punctuation"
+              >
+                [
+              </span>
+              <span
+                class="token punctuation"
+              >
+                ]
+              </span>
+               args
+              <span
+                class="token punctuation"
+              >
+                )
+              </span>
+               
+              <span
+                class="token punctuation"
+              >
+                {
+              </span>
+              
+                
+              <span
+                class="token class-name"
+              >
+                System
+              </span>
+              <span
+                class="token punctuation"
+              >
+                .
+              </span>
+              out
+              <span
+                class="token punctuation"
+              >
+                .
+              </span>
+              <span
+                class="token function"
+              >
+                println
+              </span>
+              <span
+                class="token punctuation"
+              >
+                (
+              </span>
+              <span
+                class="token string"
+              >
+                "Hello World"
+              </span>
+              <span
+                class="token punctuation"
+              >
+                )
+              </span>
+              <span
+                class="token punctuation"
+              >
+                ;
+              </span>
+              
+            
+              <span
+                class="token punctuation"
+              >
+                }
+              </span>
+            </code>
+          </pre>
           
             
           <table
@@ -460,18 +575,133 @@ exports[`Asciidoc pages > renders correctly 1`] = `
           <p>
             Hello World, this is a 
           </p>
-          <pre>
+          <pre
+            class="language-none"
+            tabindex="0"
+          >
             <code
-              class="hljs language-bash"
+              class="language-none"
             >
-              <span
-                class="hljs-built_in"
-              >
-                test
-              </span>
+              test
             </code>
           </pre>
           <p />
+          
+            
+          <pre
+            class="language-java"
+            tabindex="0"
+          >
+            <code
+              class="language-java"
+            >
+              <span
+                class="token keyword"
+              >
+                public
+              </span>
+               
+              <span
+                class="token keyword"
+              >
+                static
+              </span>
+               
+              <span
+                class="token keyword"
+              >
+                void
+              </span>
+               
+              <span
+                class="token function"
+              >
+                main
+              </span>
+              <span
+                class="token punctuation"
+              >
+                (
+              </span>
+              <span
+                class="token class-name"
+              >
+                String
+              </span>
+              <span
+                class="token punctuation"
+              >
+                [
+              </span>
+              <span
+                class="token punctuation"
+              >
+                ]
+              </span>
+               args
+              <span
+                class="token punctuation"
+              >
+                )
+              </span>
+               
+              <span
+                class="token punctuation"
+              >
+                {
+              </span>
+              
+                
+              <span
+                class="token class-name"
+              >
+                System
+              </span>
+              <span
+                class="token punctuation"
+              >
+                .
+              </span>
+              out
+              <span
+                class="token punctuation"
+              >
+                .
+              </span>
+              <span
+                class="token function"
+              >
+                println
+              </span>
+              <span
+                class="token punctuation"
+              >
+                (
+              </span>
+              <span
+                class="token string"
+              >
+                "Hello World"
+              </span>
+              <span
+                class="token punctuation"
+              >
+                )
+              </span>
+              <span
+                class="token punctuation"
+              >
+                ;
+              </span>
+              
+            
+              <span
+                class="token punctuation"
+              >
+                }
+              </span>
+            </code>
+          </pre>
           
             
           <table

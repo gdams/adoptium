@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "logo": {
+          "type": "string"
+        },
+        "tier": {
+          "type": "string",
+          "enum": ["adopter"]
+        }
+      },
+      "required": ["name", "logo", "tier"],
+      "additionalProperties": false
+    }
+  }

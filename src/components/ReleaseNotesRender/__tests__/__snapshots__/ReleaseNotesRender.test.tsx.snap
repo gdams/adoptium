@@ -86,16 +86,19 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
           aria-label="Release Notes"
           aria-multiselectable="false"
           aria-rowcount="3"
-          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-yhlmex-MuiDataGrid-root"
+          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-18q4k0e-MuiDataGrid-root"
           role="grid"
         >
           <div
             class="MuiDataGrid-toolbarContainer css-128fb87-MuiDataGrid-toolbarContainer"
           >
             <button
+              aria-expanded="false"
+              aria-haspopup="true"
               aria-label="Show filters"
               class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
               data-mui-internal-clone-element="true"
+              id=":r0:"
               tabindex="0"
               type="button"
             >
@@ -205,12 +208,12 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                         class="MuiDataGrid-menuIcon"
                       >
                         <button
-                          aria-controls=":r3:"
-                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-haspopup="menu"
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":r4:"
+                          id=":r6:"
                           tabindex="-1"
                           type="button"
                         >
@@ -281,12 +284,12 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                         class="MuiDataGrid-menuIcon"
                       >
                         <button
-                          aria-controls=":r7:"
-                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-haspopup="menu"
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":r8:"
+                          id=":rc:"
                           tabindex="-1"
                           type="button"
                         >
@@ -357,12 +360,12 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                         class="MuiDataGrid-menuIcon"
                       >
                         <button
-                          aria-controls=":rb:"
-                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-haspopup="menu"
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rc:"
+                          id=":ri:"
                           tabindex="-1"
                           type="button"
                         >
@@ -433,12 +436,12 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                         class="MuiDataGrid-menuIcon"
                       >
                         <button
-                          aria-controls=":rf:"
-                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-haspopup="menu"
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rg:"
+                          id=":ro:"
                           tabindex="-1"
                           type="button"
                         >
@@ -509,12 +512,12 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                         class="MuiDataGrid-menuIcon"
                       >
                         <button
-                          aria-controls=":rj:"
-                          aria-haspopup="true"
+                          aria-expanded="false"
+                          aria-haspopup="menu"
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rk:"
+                          id=":ru:"
                           tabindex="-1"
                           type="button"
                         >
@@ -772,7 +775,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                 />
                 <p
                   class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-                  id=":r2:"
+                  id=":r4:"
                 >
                   Rows per page:
                 </p>
@@ -782,9 +785,9 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                   <div
                     aria-expanded="false"
                     aria-haspopup="listbox"
-                    aria-labelledby=":r2: :r1:"
+                    aria-labelledby=":r4: :r3:"
                     class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
-                    id=":r1:"
+                    id=":r3:"
                     role="button"
                     tabindex="0"
                   >
