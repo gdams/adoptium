@@ -1,6 +1,6 @@
 ---
 title: Adoptium Automated Deployment Of Nagios
-date: "2023-06-01T12:30:00+00:00"
+date: "2023-06-14T11:00:00+00:00"
 author: steelhead31
 description: This article demonstrates the Adoptium Nagios deployment playbooks.
 tags:
@@ -24,6 +24,8 @@ These are the key areas covered in this blog:
 - Setup & Configuration Of A New Nagios Server Instance
 
 There is also previous blog post which provides an overview of how the Nagios solution monitors the infrastructure here: [Adoptium Infrastructure Management With Nagios](https://adoptium.net/blog/2023/03/adoptium-infrastructure-management-with-nagios/).
+
+In addition to the prior blog post, there is a YouTube video [Automated Nagios Deployment Using Ansible at Adoptium](https://www.youtube.com/watch?v=XDHsK1UT58w), which has a live demonstration of the process detailed in this blog post, available on the [Adoptium YouTube channel](https://www.youtube.com/@EclipseAdoptium).
 
 ## 2. Adoptium Infrastructure Management
 
@@ -51,6 +53,7 @@ The below screen recording shows a typical run of the playbook used to build out
 ![Install Nagios Server Using Play Book](buildserver.gif)
 
 Once the playbook has completed, there will be a running Nagios server, and it will have configured the basic set of checks for the Nagios server itself, these elements can all be seen in the screenshots below:
+
 
 ![Nagios Home Page](Nagios_Home.gif)  
 ![Nagios Hosts Page](Nagios_Hosts.gif)

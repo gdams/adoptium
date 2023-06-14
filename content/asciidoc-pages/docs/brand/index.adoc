@@ -1,9 +1,7 @@
-= Adoptium Color Schema and Fonts
+= Adoptium(R) Color Schema and Fonts
 :description: Adoptium brand
 :keywords: adoptium color fonts
-:orgname: Eclipse Adoptium
-:lang: en
-:page-authors: Ndacyayisenga-droid
+:page-authors: Ndacyayisenga-droid, gdams
 
 For Eclipse Adoptium and all projects of the working group we have defined a color schema and fonts that should be used in all marketing material to have a consistent look.
 
@@ -11,8 +9,24 @@ For Eclipse Adoptium and all projects of the working group we have defined a col
 
 The color schema is based on the colors of the Adoptium logo. We might extend the color schema with additional colors to create a better contrast in designs but for now the color schema is based on the following colors (next to basic colors like black and white):
 
-[.m-5]
-image:doc/brand/color-schema-l-p.png[Adoptium color schema in landscape, 100%]
+[cols="5*^",",]
+|=================================================
+| Secondary Colors {set:cellbgcolor:white}
+| [.text-white]##FF5A92# {set:cellbgcolor:#FF5A92}
+| [.text-white]##C25588# {set:cellbgcolor:#C25588}
+| [.text-white]##86507E#  {set:cellbgcolor:#86507E}
+| [.text-white]##5A4C76# {set:cellbgcolor:#5A4C76}
+| **Primary Colors** {set:cellbgcolor:white}
+| [.text-white]##FF1464# {set:cellbgcolor:#FF1464}
+| [.text-white]##A80D55# {set:cellbgcolor:#A80D55}
+| [.text-white]##530547# {set:cellbgcolor:#530547}
+| [.text-white]##14003C# {set:cellbgcolor:#14003C}
+| Secondary Colors {set:cellbgcolor:white}
+| [.text-white]##B20E46# {set:cellbgcolor:#B20E46}
+| [.text-white]##75093B# {set:cellbgcolor:#75093B}
+| [.text-white]##3A0331# {set:cellbgcolor:#3A0331}
+| [.text-white]##0E002A# {set:cellbgcolor:#0E002A}
+|=================================================
 
 == Adoptium Fonts
 
@@ -20,8 +34,11 @@ We have defined 2 fonts that should be used on marketing material for Adoptium. 
 
 For texts in general the 'Poppins' font should be used while the 'Nunito' font is good for large headlines. The 'Nunito' font is used in the Adoptium logo and therefore should only be used in combination with the 'Poppins' font. An example of the fonts can be found here:
 
-[.m-5]
-image:doc/brand/fonts-l-p.png[Adoptium fonts in landscape, 100%]
+[.font-nunito.m-5]
+### Header should be written in Nunito Font
+
+[.font-poppins]
+Paragraphs should be written in Poppins Font. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 == Downloads
 

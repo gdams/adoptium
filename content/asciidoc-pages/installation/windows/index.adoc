@@ -74,7 +74,7 @@ together:
 silently installs Temurin, updates the PATH, associates .jar files with
 Java applications and defines JAVA_HOME:
 +
-[source,bat]
+[source,batch]
 ----
 msiexec /i <package>.msi ADDLOCAL=FeatureMain,FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome INSTALLDIR="c:\Program Files\Temurin\" /quiet
 ----
@@ -84,7 +84,7 @@ Note: You must use `INSTALLDIR` with FeatureMain.
 The following example silently installs all the features for
 `INSTALLLEVEL=1`:
 +
-[source,bat]
+[source,batch]
 ----
 msiexec /i <package>.msi INSTALLLEVEL=1 /quiet
 ----
@@ -94,7 +94,7 @@ you can use the Windows installer `TRANSFORMS` option to set your
 language choice. For example, to set the UI language to German, use code
 `1031`, which must be preceded by a `:`.
 +
-[source,bat]
+[source,batch]
 ----
 msiexec /i <package>.msi INSTALLLEVEL=1 TRANSFORMS=:1031
 ----
@@ -108,7 +108,7 @@ list].
 To reinstall Temurin in silent mode with default features, run the
 following command:
 
-[source,bat]
+[source,batch]
 ----
 msiexec /i <package>.msi REINSTALL=ALL /quiet
 ----
@@ -116,7 +116,7 @@ msiexec /i <package>.msi REINSTALL=ALL /quiet
 If you want to upgrade Temurin in silent mode, run the following
 command:
 
-[source,bat]
+[source,batch]
 ----
 msiexec /i <package>.msi REINSTALL=ALL REINSTALLMODE=amus /quiet
 ----

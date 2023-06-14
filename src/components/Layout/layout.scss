@@ -64,7 +64,7 @@ body:not(.dark) .dark-mode-only,
 }
 
 .hide-on-mobile {
-  @media only screen and (max-width: 500px) {
+  @media only screen and (width <= 500px) {
     display: none !important;
   }
 }
@@ -144,4 +144,12 @@ body:not(.dark) .dark-mode-only,
 iframe {
   width: 100%;
   height: 25em;
+}
+
+.font-nunito {
+  font-family: Nunito, sans-serif;
+}
+
+.font-poppins {
+  font-family: Poppins, sans-serif;
 }

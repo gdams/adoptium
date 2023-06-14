@@ -27,7 +27,7 @@ AQAvit can be run in various CI/CD environments as well as directly via command-
 | | 
 a|image::aqacert_basic_steps.png["basic steps",350,350]
 a|
-[source, subs="attributes"]
+[source, bash, subs="attributes"]
 ----
 git clone --depth 1 --branch {aqavit-branch} https://github.com/adoptium/aqa-tests.git 
 
@@ -56,7 +56,7 @@ Publish <results>.zip
 [%collapsible]
 ====
 The AQAvit project created a Github action that allows for running the AQAvit test suite from workflow files.  The `run-aqa` action in the link:/https://github.com/adoptium/run-aqa[run-aqa repository^] allows users to pass in custom OpenJDK binaries for verification.  Here is an example workflow file that can run sanity level targets on the 3 supported platforms available as Github runners: 
-[source, subs="attributes"]
+[source, yaml, subs="attributes"]
 ----
 name: Run AQAvit
 
