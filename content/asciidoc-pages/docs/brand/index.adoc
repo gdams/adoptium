@@ -1,7 +1,7 @@
 = Adoptium(R) Color Schema and Fonts
 :description: Adoptium brand
 :keywords: adoptium color fonts
-:page-authors: Ndacyayisenga-droid
+:page-authors: Ndacyayisenga-droid, gdams
 
 For Eclipse Adoptium and all projects of the working group we have defined a color schema and fonts that should be used in all marketing material to have a consistent look.
 
