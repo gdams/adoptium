@@ -50,7 +50,7 @@ Useful Links:
 
 The below screen recording shows a typical run of the playbook used to build out the Nagios Server, the documentation in the infrastructure repository has a more detailed guide on how to do this, but other than the steps to configure secret elements such as the Nagios admin user password , slack URL, and elements like ssh keys, its a very straightforward process...
 
-![Install Nagios Server Using Play Book](buildserver.gif)
+![Install Nagios Server Using Playbook](buildserver.gif)
 
 Once the playbook has completed, there will be a running Nagios server, and it will have configured the basic set of checks for the Nagios server itself, these elements can all be seen in the screenshots below:
 
