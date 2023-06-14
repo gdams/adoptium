@@ -23,10 +23,9 @@ These are the key areas covered in this blog:
 - Deployment of Nagios plugins & monitoring agents on hosts.
 - Setup & Configuration Of A New Nagios Server Instance
 
-There is also previous blog post which provides an overview of how the Nagios solution monitors the infrastructure here: [Adoptium Infrastructure Management With Nagios](https://adoptium.net/blog/2023/03/adoptium-infrastructure-management-with-nagios/). 
+There is also previous blog post which provides an overview of how the Nagios solution monitors the infrastructure here: [Adoptium Infrastructure Management With Nagios](https://adoptium.net/blog/2023/03/adoptium-infrastructure-management-with-nagios/).
 
 In addition to the prior blog post, there is a YouTube video [Automated Nagios Deployment Using Ansible at Adoptium](https://www.youtube.com/watch?v=XDHsK1UT58w), which has a live demonstration of the process detailed in this blog post, available on the [Adoptium YouTube channel](https://www.youtube.com/@EclipseAdoptium).
-
 
 ## 2. Adoptium Infrastructure Management
 
