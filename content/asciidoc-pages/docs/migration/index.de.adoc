@@ -32,7 +32,7 @@ fonts] |  icon:times[]   |  icon:times[]
 |  icon:check[]   (Marlin)
 |Kodac Color Matching System (KCMS) library |link:#_lcms[LCMS] |  icon:check[]   |  icon:check[]  
 |SNMP |Use link:#_jmx[JMX] (or SNMP4J) |  icon:check[]   (separat erhältlich) |  icon:check[]   (separat erhältlich)
-|Sound drivers |Use link:#_windows_sound_drivers[Windows sound drivers]
+|Sound drivers |Use link:#_windows_sound_drivers[Windows Sound Treiber]
 |  icon:check[]   (not bundled) |  icon:check[]   (not bundled)
 |Java Flight Recorder (JFR) |link:#_java_flight_recorder[Java Flight
 Recorder] |  icon:check[]   |  icon:check[]  
