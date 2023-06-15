@@ -42,7 +42,7 @@
     "gatsby-remark-prismjs": "^7.10.0",
     "gatsby-remark-smartypants": "^6.11.0",
     "gatsby-source-filesystem": "^5.10.0",
-    "gatsby-transformer-asciidoc": "^4.10.0",
+    "gatsby-transformer-asciidoc": "^4.11.0",
     "gatsby-transformer-remark": "^6.11.0",
     "gatsby-transformer-sharp": "^5.11.0",
     "html-to-text": "^9.0.5",
