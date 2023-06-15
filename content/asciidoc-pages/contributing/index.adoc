@@ -87,7 +87,7 @@ git commit -s -m "message about this PR"
 
 - Commit message example:
 
-[source, bash]
+[source]
 ----
 Update jtreg in openjdk test
 This patch updates jtreg version from 5.1 to 6.1.
