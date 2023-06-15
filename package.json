@@ -40,7 +40,7 @@
     "gatsby-remark-copy-linked-files": "^6.10.0",
     "gatsby-remark-images": "^7.10.0",
     "gatsby-remark-prismjs": "^7.10.0",
-    "gatsby-remark-smartypants": "^6.10.0",
+    "gatsby-remark-smartypants": "^6.11.0",
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-asciidoc": "^4.10.0",
     "gatsby-transformer-remark": "^6.10.0",
