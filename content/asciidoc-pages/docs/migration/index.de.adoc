@@ -27,12 +27,11 @@ icon:check[] - Unterstützt, icon:times[] - Nicht Unterstützt
 |T2K font rendering engine
 |link:#_freetype_font_rendering_library[Freetype] |  icon:check[]   |  icon:check[]  
 |Monotype Lucida fonts |link:#_relicensed_lucida_fonts[Relicensed Lucida
-fonts] |  icon:times[]    (coming soon) |  icon:times[]    (coming soon)
+fonts] |  icon:times[]   |  icon:times[] 
 |Ductus 2D renderer |link:#_pisces_and_marlin[Pisces/Marlin] |  icon:check[]   (Pisces)
 |  icon:check[]   (Marlin)
 |Kodac Color Matching System (KCMS) library |link:#_lcms[LCMS] |  icon:check[]   |  icon:check[]  
-|SNMP |Use link:#_jmx[JMX] (or SNMP4J) |  icon:check[]   (not bundled) |  icon:check[]   (not
-bundled)
+|SNMP |Use link:#_jmx[JMX] (or SNMP4J) |  icon:check[]   (separat erhältlich) |  icon:check[]   (separat erhältlich)
 |Sound drivers |Use link:#_windows_sound_drivers[Windows sound drivers]
 |  icon:check[]   (not bundled) |  icon:check[]   (not bundled)
 |Java Flight Recorder (JFR) |link:#_java_flight_recorder[Java Flight
