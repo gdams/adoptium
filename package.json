@@ -95,7 +95,9 @@
   },
   "overrides": {
     "gatsby-plugin-react-i18next": {
-      "gatsby": ">=5.0.0"
+      "gatsby": ">=5.0.0",
+      "i18next": ">=23.0.0",
+      "react-i18next": ">=13.0.0"
     }
   },
   "keywords": [
