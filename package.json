@@ -30,7 +30,7 @@
     "gatsby-plugin-mdx": "^5.10.0",
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-offline": "^6.11.0",
-    "gatsby-plugin-react-i18next": "^2.0.5",
+    "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-sass": "^6.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
@@ -95,7 +95,6 @@
   },
   "overrides": {
     "gatsby-plugin-react-i18next": {
-      "gatsby": ">=5.0.0",
       "i18next": ">=23.0.0",
       "react-i18next": ">=13.0.0"
     }
