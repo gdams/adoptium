@@ -15,7 +15,7 @@ The Adoptium project utilises the [Nagios Core](https://www.nagios.org/projects/
 
 As part of a drive to improve automation, and revitalise the Nagios server, a project was undertaken with the aid of an [Outreachy](https://www.outreachy.org/) intern. The [Outreachy](https://www.outreachy.org/) organisation provides internships in open source and open science to people subject to systemic bias and impacted by underrepresentation in the technical industry where they are living.
 
-The aim of this project was to improve the coverage and resilience of the Nagios service, and improve the ability to maintain it going forward. The main goals were to have a consistent way to create/recover a Nagios server, and also to improve the process for adding new hosts.
+The aim of this project was to improve the coverage and resilience of the Nagios service, and improve the ability to maintain it going forward. The main goals were to have a consistent way to create/recover a Nagios server, and also to improve the process for adding new hosts. There is a project wiki page, which has more details, about the project which can be found [here](https://github.com/adoptium/infrastructure/wiki/Outreachy:-Open-Infrastructure-Monitoring-Configuration:-Project-MonCon)
 
 This blog post will cover how the project utilised Ansible and GitHub to deploy and maintain the Nagios monitoring solution.
 
