@@ -1,5 +1,5 @@
 = Linux (RPM/DEB/APK) installer packages
-:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie, sxa, tellison, luozhenyu
+:page-authors: gdams, karianna, perlun, TheCrazyLex, TobiX, topaussie, sxa, tellison, luozhenyu, Ndacyayisenga-droid
 :toc:
 :icons: font
 
@@ -18,7 +18,7 @@ Please note that on most Linux systems, superuser privileges are required to ins
 ----
 echo "deb [arch=amd64] https://some.repository.url focal main" | sudo tee /etc/apt/sources.list.d/adoptium.list > /dev/null
 ----
-By using 'sudo tee', you can write the repository entry to the appropriate file with elevated privileges, preventing any write permission errors. This ensures a smooth installation process."
+By using `sudo tee`, you can write the repository entry to the appropriate file with elevated privileges, preventing any write permission errors. This ensures a smooth installation process."
 ====
 
 == Eclipse Temurin Package Names
