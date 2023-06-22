@@ -13,7 +13,12 @@ See link:/supported-platforms[Supported Platforms] for a list of our officially 
 
 [TIP]
 ====
-On most Linux systems you must have superuser privileges to install packages such as Temurin. You may need to prefix the commands below with `sudo` for them to succeed.
+Please note that on most Linux systems, superuser privileges are required to install packages such as Temurin. To ensure successful execution of the commands below, you may need to prefix them with `sudo`. Additionally, when adding the repository, consider using `sudo tee` to avoid potential permission issues. For example:
+[source, bash]
+----
+echo "deb [arch=amd64] https://some.repository.url focal main" | sudo tee /etc/apt/sources.list.d/adoptium.list > /dev/null
+----
+By using 'sudo tee', you can write the repository entry to the appropriate file with elevated privileges, preventing any write permission errors. This ensures a smooth installation process."
 ====
 
 == Eclipse Temurin Package Names
