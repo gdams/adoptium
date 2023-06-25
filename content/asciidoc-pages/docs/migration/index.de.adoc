@@ -21,7 +21,7 @@ die Schritte, die nötig sind um diese zu übernehmen.
 icon:check[] - Unterstützt, icon:times[] - Nicht Unterstützt
 [cols="35%,25%,20%,20%",options="header",]
 |=======================================================================
-|Oracle JDK 8 proprietäre Komponente |Alternative Komponente |OpenJDK 8 |OpenJDK 11
+|Oracle JDK 8 proprietäre Komponente |Alternative Komponente |OpenJDK 8 |OpenJDK 11 Und über
 |Java Web Start |link:#_icedtea_web[IcedTea-Web] | icon:check[] |  icon:times[]   
 |JavaFX |link:#_openjfx[OpenJFX] |  icon:times[]    |  icon:check[]  
 |T2K font rendering engine
@@ -62,8 +62,8 @@ Es wird daran gearbeitet
 daran, diese Unterschiede zu minimieren oder zu beseitigen.
 
 IcedTea-Web 1.8.x und 2.0.x sind kompatibel mit Temurin 8 Builds. Wir wissen, dass Software, welche
-auf IcedTea-Web basiert, die Ausführung von OpenJDK 11 basierten JNLP-Anwendungen unterstützt, aber IcedTea-Web
-enthält keine Tests, um die OpenJDK 11 Unterstützung zu überprüfen und wir bündeln es daher nicht mit Temurin 11 Builds.
+auf IcedTea-Web basiert, die Ausführung von OpenJDK 11 Und über basierten JNLP-Anwendungen unterstützt, aber IcedTea-Web
+enthält keine Tests, um die OpenJDK 11 Und über Unterstützung zu überprüfen und wir bündeln es daher nicht mit Temurin 11 Builds.
 
 === OpenJFX
 
