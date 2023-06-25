@@ -1,5 +1,5 @@
 = Migration Guide
-:page-authors: gdams, karianna, SueChaplain, hendrikebbers, sxa555, ParkerM, jiekang, HanSolo, MBoegers
+:page-authors: gdams, karianna, SueChaplain, hendrikebbers, sxa555, ParkerM, jiekang, HanSolo, MBoegers, ojuschugh1
 :icons: font
 
 == Migrating to Eclipse Temurin
