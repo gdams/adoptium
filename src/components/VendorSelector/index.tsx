@@ -3,11 +3,15 @@ import * as React from "react"
 import vendors from '../../json/marketplace.json';
 import './VendorSelector.scss';
 
-// Shuffle vendors
-for (let i = vendors.length - 1; i >= 0; i--) {
+// Function to shuffle array elements randomly
+const shuffleArray = (array) => {
+  const shuffledArray = array.slice();
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [vendors[i], vendors[j]] = [vendors[j], vendors[i]];
-}
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+};
 
 const VendorSelector = ({
     checkboxRef,
@@ -17,9 +21,12 @@ const VendorSelector = ({
         setCheckbox(checkboxRef.current.checked)
     };
 
+    // Randomize the order of vendors
+    const shuffledVendors = shuffleArray(vendors);
+
     return (
         <ul className="vendor-list pt-5">
-            {vendors.map(
+            {shuffledVendors.map(
                 (vendor, i): string | JSX.Element =>
                     vendor && (
                         <li key={vendor.name} className="vendor-li">

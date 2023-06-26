@@ -54,18 +54,18 @@ exports[`Marketplace page > renders correctly 1`] = `
       >
         <input
           checked=""
-          data-testid="Adoptium"
-          id="vendorAdoptium"
+          data-testid="Microsoft"
+          id="vendorMicrosoft"
           type="checkbox"
         />
         <label
           class="vendor-label"
-          for="vendorAdoptium"
-          title="Adoptium"
+          for="vendorMicrosoft"
+          title="Microsoft"
         >
           <img
-            alt="Adoptium icon"
-            src="/images/vendors/vendor-adoptium.png"
+            alt="Microsoft icon"
+            src="/images/vendors/vendor-microsoft.png"
           />
         </label>
       </li>
@@ -94,18 +94,18 @@ exports[`Marketplace page > renders correctly 1`] = `
       >
         <input
           checked=""
-          data-testid="Microsoft"
-          id="vendorMicrosoft"
+          data-testid="Adoptium"
+          id="vendorAdoptium"
           type="checkbox"
         />
         <label
           class="vendor-label"
-          for="vendorMicrosoft"
-          title="Microsoft"
+          for="vendorAdoptium"
+          title="Adoptium"
         >
           <img
-            alt="Microsoft icon"
-            src="/images/vendors/vendor-microsoft.png"
+            alt="Adoptium icon"
+            src="/images/vendors/vendor-adoptium.png"
           />
         </label>
       </li>
@@ -114,39 +114,18 @@ exports[`Marketplace page > renders correctly 1`] = `
       >
         <input
           checked=""
-          data-testid="Azul"
-          id="vendorAzul"
+          data-testid="Alibaba"
+          id="vendorAlibaba"
           type="checkbox"
         />
         <label
           class="vendor-label"
-          for="vendorAzul"
-          title="Azul"
+          for="vendorAlibaba"
+          title="Alibaba"
         >
           <img
-            alt="Azul icon"
-            src="/images/vendors/vendor-azul.png"
-            style="padding: 0.7em;"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="IBM"
-          id="vendorIBM"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorIBM"
-          title="IBM"
-        >
-          <img
-            alt="IBM icon"
-            src="/images/vendors/vendor-ibm.png"
+            alt="Alibaba icon"
+            src="/images/vendors/vendor-alibaba.png"
           />
         </label>
       </li>
@@ -175,18 +154,39 @@ exports[`Marketplace page > renders correctly 1`] = `
       >
         <input
           checked=""
-          data-testid="Alibaba"
-          id="vendorAlibaba"
+          data-testid="IBM"
+          id="vendorIBM"
           type="checkbox"
         />
         <label
           class="vendor-label"
-          for="vendorAlibaba"
-          title="Alibaba"
+          for="vendorIBM"
+          title="IBM"
         >
           <img
-            alt="Alibaba icon"
-            src="/images/vendors/vendor-alibaba.png"
+            alt="IBM icon"
+            src="/images/vendors/vendor-ibm.png"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
+      >
+        <input
+          checked=""
+          data-testid="Azul"
+          id="vendorAzul"
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendorAzul"
+          title="Azul"
+        >
+          <img
+            alt="Azul icon"
+            src="/images/vendors/vendor-azul.png"
+            style="padding: 0.7em;"
           />
         </label>
       </li>
