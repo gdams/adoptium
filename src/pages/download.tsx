@@ -36,6 +36,15 @@ const DownloadPage = ({ location }) => {
       vendor: vendor
     });
 
+  const redirectUrl = 'https://adoptium.net/en-GB/temurin/releases/'
+
+  const shouldRedirect = !location.state || !location.state.link
+
+  if (shouldRedirect) {
+    window.location.href = redirectUrl
+    return null
+  }
+
   return (
     <Layout>
       <section className='py-5 text-center container'>
