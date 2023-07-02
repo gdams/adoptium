@@ -24,10 +24,7 @@ const DownloadPage = ({ location }) => {
   }
 
   // Send a custom event to Google Analytics
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
   typeof window !== 'undefined' && link && window.gtag &&
-    // @ts-ignore
     window.gtag('event', 'download', {
       event_category: 'download',
       link: link,
@@ -40,8 +37,13 @@ const DownloadPage = ({ location }) => {
 
   const shouldRedirect = !location.state || !location.state.link
 
+  React.useEffect(() => {
+    if (shouldRedirect) {
+      window.location.href = redirectUrl
+    }
+  }, [])
+
   if (shouldRedirect) {
-    window.location.href = redirectUrl
     return null
   }
 
