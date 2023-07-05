@@ -58,7 +58,7 @@ jobs:
             IFS=", " read -r -a tag_array <<< "$tags"
             for tag in "${tag_array[@]}"; do
               lowercase_tag=$(echo "$tag" | tr '[:upper:]' '[:lower:]')
-              if ! [[ "$lowercase_tag" =~ ^[a-z0-9-]+$ ]] || ! [[ " ${valid_tags[*]} " =~ " $lowercase_tag " ]]; then
+              if ! [[ $lowercase_tag =~ ^[a-z0-9-]+$ ]] || ! [[  ${valid_tags[*]}  =~  $lowercase_tag  ]]; then
                 invalid_tags+=("$tag")
               fi
             done
