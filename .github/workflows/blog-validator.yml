@@ -2,8 +2,8 @@ name: Blog Validator
 
 on:
   pull_request:
-    paths: [content/blog/**]
-    branches: [main]
+    paths: [ content/blog/** ]
+    branches: [ main ]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
