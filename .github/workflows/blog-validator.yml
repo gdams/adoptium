@@ -2,8 +2,8 @@ name: Blog Validator
 
 on:
   pull_request:
-    paths: [ content/blog/** ]
-    branches: [ main ]
+    paths: [content/blog/**]
+    branches: [main]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -13,9 +13,9 @@ permissions:
   contents: read
 
 jobs:
-  check_date:
+  check_date_and_tags:
     if: github.repository_owner == 'adoptium'
-    name: Check Date
+    name: Check Date and Tags
     runs-on: ubuntu-latest
     steps:
 
@@ -34,9 +34,39 @@ jobs:
             # Return difference in days between today and blog date
             diff=$(( ($(date +%s) - $(date --date "${blog_date}" +%s)) / (60*60*24) ))
             if [[ ${diff} -gt 0 ]]; then
-              line_number=$(grep -n 'date:' "${added_file}"  | cut -d : -f 1)
+              line_number=$(grep -n 'date:' "${added_file}" | cut -d : -f 1)
               echo "Blog date is in the past, please update the date to today's date"
               echo "::error file=${added_file},line=${line_number}::Blog date is in the past, please update the date to today's date"
+              exit 1
+            fi
+
+            # Validate tags
+            tags=$(grep 'tags:' "${added_file}" | sed -n -e 's/^.*tags: //p' | tr -d '[]"')
+            valid_tags=(
+              "temurin"
+              "aqavit"
+              "emt4j"
+              "adoptium"
+              "java"
+              "openjdk"
+              "infrastructure"
+              "security"
+              "announcement"
+              "release-notes"
+            )
+            invalid_tags=()
+            IFS=", " read -r -a tag_array <<< "$tags"
+            for tag in "${tag_array[@]}"; do
+              lowercase_tag=$(echo "$tag" | tr '[:upper:]' '[:lower:]')
+              if [[ ! "$lowercase_tag" =~ ^[a-z0-9-]+$ || ! " ${valid_tags[*]} " =~ " $lowercase_tag " ]]; then
+                invalid_tags+=("$tag")
+              fi
+            done
+
+            if [ ${#invalid_tags[@]} -gt 0 ]; then
+              line_number=$(grep -n 'tags:' "${added_file}" | cut -d : -f 1)
+              echo "Invalid tags found: ${invalid_tags[*]}"
+              echo "::error file=${added_file},line=${line_number}::Invalid tags found: ${invalid_tags[*]}"
               exit 1
             fi
           fi
