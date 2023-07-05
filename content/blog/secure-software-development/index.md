@@ -4,8 +4,8 @@ date: "2022-11-28T15:00:00+00:00"
 author: sxa
 description: An overview of the SSDF framework and what we are doing to work towards implementing it
 tags:
-  - Temurin
-  - Security
+  - temurin
+  - security
 ---
 
 ## Introduction to the framework

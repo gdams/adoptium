@@ -4,8 +4,8 @@ date: "2023-01-27T12:00:00+00:00"
 author: pmc
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u362, 11.0.18, 17.0.6 and 19.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
-  - Temurin
-  - Announcement
+  - temurin
+  - announcement
 ---
 
 Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u362, 11.0.18, 17.0.6 and 19.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. All binaries are available from the [Temurin download page](https://adoptium.net/temurin/releases).

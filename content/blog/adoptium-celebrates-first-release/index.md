@@ -4,8 +4,8 @@ date: "2021-08-02T12:00:00+00:00"
 author: timellison
 description: Adoptium has successfully achieved the first release of Eclipse Temurin Java SE binaries.
 tags:
-  - Release
-  - "Eclipse Temurin"
+  - release-notes
+  - temurin
 ---
 
 ### Release Milestone

@@ -4,8 +4,8 @@ date: "2021-04-12T12:00:00+00:00"
 author: timellison
 description: Adoptium to build OpenJDK binaries, and will promote additional high quality builds.
 tags:
-  - AQAvit quality
-  - Eclipse Temurin
+  - aqavit
+  - temurin
 ---
 
 As the AdoptOpenJDK project transitions to Eclipse Adoptium

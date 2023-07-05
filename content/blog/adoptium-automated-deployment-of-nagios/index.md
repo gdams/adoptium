@@ -4,9 +4,8 @@ date: "2023-06-14T11:00:00+00:00"
 author: steelhead31
 description: This article demonstrates the Adoptium Nagios deployment playbooks.
 tags:
-  - Adoptium
-  - Infrastructure
-  - Nagios
+  - adoptium
+  - infrastructure
 ---
 
 ## 1. Introduction
@@ -56,7 +55,7 @@ The below screen recording shows a typical run of the playbook used to build out
 
 Once the playbook has completed, there will be a running Nagios server, and it will have configured the basic set of checks for the Nagios server itself, these elements can all be seen in the screenshots below:
 
-![Nagios Home Page](Nagios_Home.gif)  
+![Nagios Home Page](Nagios_Home.gif)
 ![Nagios Hosts Page](Nagios_Hosts.gif)
 ![Nagios Services Page](Nagios_Services.gif)
 ![Nagios Checks Page](Nagios_Checks.gif) |

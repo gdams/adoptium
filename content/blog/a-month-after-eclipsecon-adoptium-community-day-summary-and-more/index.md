@@ -4,8 +4,7 @@ date: "2022-11-24T12:00:00+00:00"
 author: carmendelgado
 description: Our Community Manager gives us a summary of Eclipse Adoptium activities around the EclipseCon event.
 tags:
-  - "Adoptium"
-  - "EclipseCon"
+  - "adoptium"
 ---
 
 A month after EclipseCon. I, Carmen Delgado, Adoptium Community manager, want to share my experience attending the [EclipseCon 2022](https://www.eclipsecon.org/2022) edition in Ludwigsburg, Germany, from 24 to  27 October.  It was my third week in the role, and this is how I documented the experience.

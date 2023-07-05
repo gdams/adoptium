@@ -4,7 +4,7 @@ date: "2021-12-30T12:00:00+00:00"
 author: georgeadams
 description: Eclipse Temurin RPM and DEB packages are now available for installing on your favourite Linux distribution.
 tags:
-  - Temurin
+  - temurin
 ---
 
 Eclipse Temurin RPM and DEB packages are now available for installing on your favourite Linux distribution.

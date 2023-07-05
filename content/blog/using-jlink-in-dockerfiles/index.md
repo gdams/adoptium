@@ -4,8 +4,7 @@ date: "2021-08-20T12:00:00+00:00"
 author: georgeadams
 description: How to swap a JRE docker image for a jlink runtime
 tags:
-  - Temurin
-  - Docker
+  - temurin
 ---
 
 The Eclipse Temurin project is excited to announce that the official docker images for Temurin binaries are now available on [Docker Hub](https://hub.docker.com/_/eclipse-temurin).

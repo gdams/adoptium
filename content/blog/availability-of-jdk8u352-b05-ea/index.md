@@ -4,14 +4,14 @@ date: "2022-09-09T12:20:00+00:00"
 author: shelleylambert
 description: This post is to raise awareness of JDK 8u352-b05 Early Access Build availability and asking the community to try it out early.
 tags:
-  - Temurin
+  - temurin
 ---
 
 ## Announcing an Early Access Build of JDK 8u352-b05
 
-Heads up to the community of an upcoming specification in JDK 8 which described in detail by JDK 8 Updates Project Lead, [Andrew Haley](https://openjdk.org/census#aph) in this article, [JDK 8 Maintenance Release 4](https://access.redhat.com/articles/6964484).  It is a recommended concise bit of reading that advises what to proactively look for in your applications to ensure that you will not hit any issues upon picking up the October update of JDK 8.  
+Heads up to the community of an upcoming specification in JDK 8 which described in detail by JDK 8 Updates Project Lead, [Andrew Haley](https://openjdk.org/census#aph) in this article, [JDK 8 Maintenance Release 4](https://access.redhat.com/articles/6964484).  It is a recommended concise bit of reading that advises what to proactively look for in your applications to ensure that you will not hit any issues upon picking up the October update of JDK 8.
 
-To aid in this recommendation to test that your application code will handle the specification change gracefully, we have created an early access build of JDK 8u352-b05 (activities outlined in [temurin-build/issues/3089](https://github.com/adoptium/temurin-build/issues/3089)).  
+To aid in this recommendation to test that your application code will handle the specification change gracefully, we have created an early access build of JDK 8u352-b05 (activities outlined in [temurin-build/issues/3089](https://github.com/adoptium/temurin-build/issues/3089)).
 
 ## A Table of Convenient Links
 

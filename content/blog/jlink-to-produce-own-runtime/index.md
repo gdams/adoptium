@@ -4,7 +4,7 @@ date: "2021-10-04T12:00:00+00:00"
 author: sxa
 description: How to swap a JRE image for a jlink runtime
 tags:
-  - Temurin
+  - temurin
 ---
 
 With the release of the latest LTS version of Temurin we have decided not to ship Java Runtime Environments (JREs) separately from the JDK downloads.

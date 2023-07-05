@@ -4,31 +4,31 @@ date: "2022-08-24T12:20:00+00:00"
 author: shelleylambert
 description: This post summarizes the retrospective assessment of the July 2022 CPU and various respins thereafter.
 tags:
-  - Temurin
-  - AQAvit
+  - temurin
+  - aqavit
 ---
 
 ## Introduction
 
 As most of our large consumer base already knows, Eclipse Adoptium is *the* community 'build, distribution and verification' project for the upstream OpenJDK project.  We serve up millions of binaries per week, as can be seen in the [download trends in our dashboard](https://dash.adoptium.net/).  We deliver these binaries in the most transparent manner.  There is no 'mystery meat' in our recipe.  In the spirit of such great transparency, this post serves to share our insights of the post mortem analysis of our most recent release activities.
 
-We follow a strict regime of continuous improvement at the project, which means after each of our release cycles, conducting thorough [retrospectives](https://github.com/adoptium/adoptium/issues/155) on what went well, what did not go well, and what actions are needed to improve in the future.  
+We follow a strict regime of continuous improvement at the project, which means after each of our release cycles, conducting thorough [retrospectives](https://github.com/adoptium/adoptium/issues/155) on what went well, what did not go well, and what actions are needed to improve in the future.
 
 ## Goals and Metrics
 
 All good retrospective activities start with "what were we trying to achieve"?  During the July Critical Patch Update (CPU), we were targeting to deliver 42 different 'products', which is essentially the platform/version combinations of Eclipse Temurin that we build, test and distribute at the project.
 
-Based on download numbers, we have divided these products into 'primary' and 'secondary' platforms.  We focus our efforts on the primary platforms first to get these into the hands of our users as quickly as possible.  Currently, x64 Linux, x64 Windows and x64 Mac are the leading downloaded platforms, so they are categorized as 'primary' platforms.  The remaining platforms are categorized as 'secondary' platforms.  Within the secondary platforms, some may even be considered 'best effort' platforms which as the name suggests are put at the bottom of the priority list.  
+Based on download numbers, we have divided these products into 'primary' and 'secondary' platforms.  We focus our efforts on the primary platforms first to get these into the hands of our users as quickly as possible.  Currently, x64 Linux, x64 Windows and x64 Mac are the leading downloaded platforms, so they are categorized as 'primary' platforms.  The remaining platforms are categorized as 'secondary' platforms.  Within the secondary platforms, some may even be considered 'best effort' platforms which as the name suggests are put at the bottom of the priority list.
 
 To keep our goals simple, we aim to release the primary platforms within 2 days of the final OpenJDK source code being available.  For secondary platforms, our target is to release within 7 days of the source code availability.  These are summarized in a release status issue to communicate on-going status to the community.  The July release activities were tracked in [adoptium/issues/153](https://github.com/adoptium/adoptium/issues/153).
 
-For the original GA tags for July, you can find our 'scorecard' on how we did.  64.3% were released within the targeted timeframes, 37.7% were not released within targets.  Of the ones that were not released within targets, 7 of them missed the targets by more than 5 days, which I will retrospectively refer to as "the Sickest Seven".  For a detailed breakdown of these targets per platform and version, see [adoptium/issues/157](https://github.com/adoptium/adoptium/issues/157).  
+For the original GA tags for July, you can find our 'scorecard' on how we did.  64.3% were released within the targeted timeframes, 37.7% were not released within targets.  Of the ones that were not released within targets, 7 of them missed the targets by more than 5 days, which I will retrospectively refer to as "the Sickest Seven".  For a detailed breakdown of these targets per platform and version, see [adoptium/issues/157](https://github.com/adoptium/adoptium/issues/157).
 
 ## The Sickest Seven
 
-As [issue 157](https://github.com/adoptium/adoptium/issues/157) describes, 7 of the 42 products released badly missed the target goals (by 5 or more days).  
+As [issue 157](https://github.com/adoptium/adoptium/issues/157) describes, 7 of the 42 products released badly missed the target goals (by 5 or more days).
 
-Let's look at the Sickest Seven, and determine next actions for improvement.  
+Let's look at the Sickest Seven, and determine next actions for improvement.
 From the initial July release activity, the *Sickest Seven* (7 products that took more than 5 business days over the 2 or 7 day target to publish), plus the *two outliers* from the respins:
 
 | Platform | Version | Days over Target | Underlying Reasons / Notes | Actions to Improve |
@@ -47,7 +47,7 @@ What is encouraging about this list is that most of these issues have actionable
 
 A project that is changing, is a project that is going to occasionally break.  This is will always be the case, but how do we pro-actively protect ourselves in the tug-of-war between adding new features and remaining stable and secure?  The answer is of course 'testing'.  While we have an ever-evolving suite of tests for verifying the OpenJDK binaries we produce via the [AQAvit project](https://adoptium.net/aqavit), we additionally need to be better at adding tests to verify the changes we are making to our own build and distribution scripts.
 
-Several changes went in ahead of the July CPU that introduced delays during the release.  2 of the changes are enhancements as part of our Secure Software Development Framework [(SSDF) activities](https://github.com/adoptium/adoptium/issues/120), [GPG signing](https://adoptium.net/blog/2022/07/gpg-signed-releases/) and the [addition of SBOM artifacts](https://github.com/adoptium/temurin-build/issues/2900). These features introduce new artifacts that can be downloaded alongside of the JDK binaries.  
+Several changes went in ahead of the July CPU that introduced delays during the release.  2 of the changes are enhancements as part of our Secure Software Development Framework [(SSDF) activities](https://github.com/adoptium/adoptium/issues/120), [GPG signing](https://adoptium.net/blog/2022/07/gpg-signed-releases/) and the [addition of SBOM artifacts](https://github.com/adoptium/temurin-build/issues/2900). These features introduce new artifacts that can be downloaded alongside of the JDK binaries.
 
 During the release, there were some initial missteps when not all of the new artifacts were published.  While this was easily rectified, it prompted the team to add checks for ensuring we are publishing the expected set of artifacts.
 
@@ -69,7 +69,7 @@ Let's look at the last 2 years and the set of unique issues identifying the need
 
 ---
 
-For the JDK 8u345 respin, the issue described in JDK-8290832 points to its root cause [JDK-8194154](https://bugs.openjdk.org/browse/JDK-8194154), which describes the crash that would occur when changing the "user.dir" property.  While changing user.dir is discouraged, some applications still do it, notably Gradle.  This is an interesting dilemma, where the feature is highly discouraged, but still possible, and therefore it is used in the field by some number of applications.  
+For the JDK 8u345 respin, the issue described in JDK-8290832 points to its root cause [JDK-8194154](https://bugs.openjdk.org/browse/JDK-8194154), which describes the crash that would occur when changing the "user.dir" property.  While changing user.dir is discouraged, some applications still do it, notably Gradle.  This is an interesting dilemma, where the feature is highly discouraged, but still possible, and therefore it is used in the field by some number of applications.
 
 For the JDK 11.0.16.1, JDK 17.0.4.1 and JDK 18.0.2.1 respins, these could have potentially been found within the AQAvit testing if we had the [Wildfly testing](https://github.com/adoptium/aqa-tests/tree/master/external/wildfly) enabled.  This highlights the fact that we need to be testing with a broad set of external applications, especially ones that are used widely.  We are actively incorporating a set of tests in the AQAvit suite for this purpose in our [external test](https://github.com/adoptium/aqa-tests/tree/master/external) category, but need to progress this work.
 
@@ -87,7 +87,7 @@ In absence of membership, we will have to look at soak testing our release build
 
 ### Positive Takeaways
 
-While most of this blog post has been spent analyzing what could be improved, it is important to remember that many things went well and how we have continuously improved our deliveries.  This past release is no exception.  Even during this release, we were able to improve the speed with which we delivered the respun products for late changes in OpenJDK.  
+While most of this blog post has been spent analyzing what could be improved, it is important to remember that many things went well and how we have continuously improved our deliveries.  This past release is no exception.  Even during this release, we were able to improve the speed with which we delivered the respun products for late changes in OpenJDK.
 
 | Release activity | % tarballs published within target |
 | --- | --- |

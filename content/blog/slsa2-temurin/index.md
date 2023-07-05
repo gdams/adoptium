@@ -4,8 +4,8 @@ date: "2022-11-25T17:00:00+00:00"
 author: sxa
 description: Eclipse Temurin by Adoptium is compliant with level 2 of the SLSA secure development framework.
 tags:
-  - Temurin
-  - Security
+  - temurin
+  - security
 ---
 
 ## Introduction to SLSA

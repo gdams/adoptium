@@ -5,9 +5,8 @@ author: georgeadams
 description: Adoptium is excited to announce the immediate availability of Eclipse Temurin 17.
 featuredImage: "./eclipse_temurin_17.jpg"
 tags:
-  - Adoptium
-  - Eclipse Foundation
-  - Temurin
+  - adoptium
+  - temurin
 ---
 
 Adoptium is happy to announce the immediate availability of Eclipse Temurin 17. As always, all binaries are available free of charge without usage restrictions on a wide range of platforms.

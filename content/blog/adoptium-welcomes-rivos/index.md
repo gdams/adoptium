@@ -4,8 +4,8 @@ date: "2022-11-23T15:00:00+00:00"
 author: pmc
 description: Adoptium welcomes Rivos as the latest working group strategic member.
 tags:
-  - "Working Group"
-  - "Eclipse Temurin"
+  - "adoptium"
+  - "temurin"
 ---
 
 ### Adoptium welcomes Rivos
