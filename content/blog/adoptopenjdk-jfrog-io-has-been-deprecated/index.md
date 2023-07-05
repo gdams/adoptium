@@ -36,7 +36,7 @@ To ensure the security and reliability of your Java applications, it is imperati
 
 - **Reliable Security Updates**: packages.adoptium.net is actively maintained, and security updates are promptly applied to address any vulnerabilities discovered within Temurin binaries. This ensures that you have the latest patches and fixes to safeguard your applications.
 
-- **Long-Term Support**: packages.adoptium.net hosts long-term support (LTS) versions of Eclipse Temurin, providing stability and extended maintenance for your critical applications. This is particularly valuable for production environments that require ongoing support and bug fixes.
+- **Long-Term Support**: packages.adoptium.net hosts long-term support (LTS) versions of Eclipse Temurin, providing stability and extended maintenance for your critical applications. This is particularly valuable for production environments that require ongoing support and bugfixes.
 
 The documentation for switching to these new packages is available in our [Linux Installer Guide](/installation/linux/).
 
