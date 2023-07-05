@@ -12,7 +12,7 @@ If you are still utilising the deprecated [adoptopenjdk.jfrog.io](https://adopto
 
 In a rapidly evolving technological landscape, security vulnerabilities are discovered regularly, and updates and patches are released to address them. By continuing to use adoptopenjdk.jfrog.io, you are essentially missing out on these critical updates, leaving your applications and systems exposed to potential security breaches.
 
-In an effort to migrate users onto the new [packages.adoptium.net](https://packages.adoptium.net) service, we will be operating scheduled brownouts in which the old service will return an error code. This will break users but will be the most efficient way to encourage people to migrate to the new service. This will ultimatelt lead to the service being shut down at the end of 2023.
+In an effort to migrate users onto the new [packages.adoptium.net](https://packages.adoptium.net) service, we will be operating scheduled brownouts in which the old service will return an error code. This will break users but will be the most efficient way to encourage people to migrate to the new service. This will ultimately lead to the service being shut down at the end of 2023.
 
 ## Scheduled Brownout plan
 
