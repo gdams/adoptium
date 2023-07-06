@@ -43,7 +43,7 @@ const TemurinDownloadTable = ({results}) => {
                                             />
                                         </Link>
                                     </span>
-                                    <span className="text-white text-muted">{localeDate(pkg.release_date, language)}</span>
+                                    <span className="text-white">{localeDate(pkg.release_date, language)}</span>
                                 </td>
                                 <td className="align-middle w-20">{capitalize(pkg.os)}</td>
                                 <td className="align-middle w-20">{pkg.architecture}</td>
