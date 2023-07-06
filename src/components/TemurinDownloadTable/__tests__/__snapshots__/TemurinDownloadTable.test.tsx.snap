@@ -107,7 +107,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
             </a>
           </span>
           <span
-            class="text-white text-muted"
+            class="text-white"
           >
             January 1, 2020
           </span>
@@ -250,7 +250,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
             </a>
           </span>
           <span
-            class="text-white text-muted"
+            class="text-white"
           >
             January 1, 2020
           </span>
@@ -476,7 +476,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
             </a>
           </span>
           <span
-            class="text-white text-muted"
+            class="text-white"
           >
             January 1, 2020
           </span>
@@ -619,7 +619,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
             </a>
           </span>
           <span
-            class="text-white text-muted"
+            class="text-white"
           >
             January 1, 2020
           </span>
