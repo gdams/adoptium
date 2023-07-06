@@ -1,6 +1,6 @@
 ---
 title: AdoptOpenJDK.jfrog.io has been deprecated!
-date: "2023-07-05T12:00:00+00:00"
+date: "2023-07-06T12:00:00+00:00"
 author: pmc
 description: DEPRECATION - Scheduled brownouts for adoptopenjdk.jfrog.io
 tags:
