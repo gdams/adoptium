@@ -74,6 +74,26 @@ exports[`Marketplace page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="Huawei"
+          id="vendorHuawei"
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendorHuawei"
+          title="Huawei"
+        >
+          <img
+            alt="Huawei icon"
+            src="/images/vendors/vendor-huawei.png"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
+      >
+        <input
+          checked=""
           data-testid="Red Hat"
           id="vendorRed Hat"
           type="checkbox"
@@ -86,26 +106,6 @@ exports[`Marketplace page > renders correctly 1`] = `
           <img
             alt="Red Hat icon"
             src="/images/vendors/vendor-redhat.png"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="Microsoft"
-          id="vendorMicrosoft"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorMicrosoft"
-          title="Microsoft"
-        >
-          <img
-            alt="Microsoft icon"
-            src="/images/vendors/vendor-microsoft.png"
           />
         </label>
       </li>
@@ -135,6 +135,26 @@ exports[`Marketplace page > renders correctly 1`] = `
       >
         <input
           checked=""
+          data-testid="Microsoft"
+          id="vendorMicrosoft"
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendorMicrosoft"
+          title="Microsoft"
+        >
+          <img
+            alt="Microsoft icon"
+            src="/images/vendors/vendor-microsoft.png"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
+      >
+        <input
+          checked=""
           data-testid="IBM"
           id="vendorIBM"
           type="checkbox"
@@ -147,26 +167,6 @@ exports[`Marketplace page > renders correctly 1`] = `
           <img
             alt="IBM icon"
             src="/images/vendors/vendor-ibm.png"
-          />
-        </label>
-      </li>
-      <li
-        class="vendor-li"
-      >
-        <input
-          checked=""
-          data-testid="Huawei"
-          id="vendorHuawei"
-          type="checkbox"
-        />
-        <label
-          class="vendor-label"
-          for="vendorHuawei"
-          title="Huawei"
-        >
-          <img
-            alt="Huawei icon"
-            src="/images/vendors/vendor-huawei.png"
           />
         </label>
       </li>
