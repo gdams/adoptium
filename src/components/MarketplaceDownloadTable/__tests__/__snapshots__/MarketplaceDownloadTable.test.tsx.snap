@@ -115,7 +115,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
           </span>
           <br />
           <span
-            class="text-white text-muted"
+            class="text-white"
           >
             January 1, 2020
           </span>
@@ -247,7 +247,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
           </span>
           <br />
           <span
-            class="text-white text-muted"
+            class="text-white"
           >
             January 1, 2020
           </span>

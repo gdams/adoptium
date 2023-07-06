@@ -32,7 +32,7 @@ const DownloadTable = ({results}) => {
                                     <br></br>
                                     <span>{pkg.binary.image_type == 'jdk' ? 'JDK' : 'JRE'}</span>
                                     <br></br>
-                                    <span className="text-white text-muted">{localeDate(pkg.binary.timestamp, language)}</span>
+                                    <span className="text-white">{localeDate(pkg.binary.timestamp, language)}</span>
                                     <span>
                                         {(Math.floor((Date.now() - new Date(pkg.binary.timestamp).getTime()) / (1000 * 60 * 60 * 24)) > 180) &&
                                             <span className="text-warning">
