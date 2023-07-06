@@ -8,19 +8,19 @@ tags:
   - Installers
 ---
 
-TL;DR -- `adoptopenjdk.jfrog.io` is being shut down, users should move to Temurin builds at [packages.adoptium.net](https://packages.adoptium.net)
+**TL;DR -- `adoptopenjdk.jfrog.io` is being shut down, users should move to `packages.adoptium.net` to obtain Adoptium's Temurin packages.**
 
-[AdoptOpenJDK moved](https://blog.adoptopenjdk.net/2021/08/goodbye-adoptopenjdk-hello-adoptium/) to become Eclipse Adoptium back in August 2021. Since then the packaged version of Eclipse Temurin have been made available via [packages.adoptium.net](https://packages.adoptium.net).
+[AdoptOpenJDK moved](https://blog.adoptopenjdk.net/2021/08/goodbye-adoptopenjdk-hello-adoptium/) to become Eclipse Adoptium back in August 2021. Since then the packaged versions of Eclipse Temurin have been made available via [packages.adoptium.net](https://packages.adoptium.net) and `adoptopenjdk.jfrog.io` has been deprecated.
 
-If you are still utilising the deprecated [adoptopenjdk.jfrog.io](https://adoptopenjdk.jfrog.io) service, it's essential to understand the potential vulnerabilities associated with this choice. As the service has been deprecated, it is no longer actively maintained or updated to address security concerns. This means that the OpenJDK distributions obtained from this source may contain known vulnerabilities that are not recommended for production use. The packages at AdoptOpenJDK were last updated in June 2021 and are at version `11.0.11` and `8u292`, while latest is `11.0.19` and `8u372` - that's 8 releases behind.
+If you are still utilising the deprecated [adoptopenjdk.jfrog.io](https://adoptopenjdk.jfrog.io) service, it's essential to understand the potential vulnerabilities associated with this choice. As the service has been deprecated, it is no longer actively maintained or updated to address security concerns. This means that the OpenJDK distributions obtained from this source may contain known vulnerabilities that are not recommended for production use. The packages at AdoptOpenJDK were last updated in June 2021 and are at version `11.0.11` and `8u292`, while latest is `11.0.19` and `8u372` - that's now *eight* releases behind the latest.
 
 In a rapidly evolving technological landscape, security vulnerabilities are discovered regularly, and updates and patches are released to address them. By continuing to use adoptopenjdk.jfrog.io, you are essentially missing out on these critical updates, leaving your applications and systems exposed to potential security breaches.
 
-In order to migrate users onto the new [packages.adoptium.net](https://packages.adoptium.net) service, we will be operating scheduled brownouts in which the old AdoptOpenJDK service will return an error code. We recognize that this will break users but will be the most direct way to migrate people to the new service. This will ultimately lead to the old service being shut down entirely at the end of 2023.
+In order to migrate users onto the [packages.adoptium.net](https://packages.adoptium.net) service, we will be operating scheduled brownouts in which the old AdoptOpenJDK service will return an error code. We recognize that this will break users but it is the most direct way to migrate people to the new service. This will ultimately lead to the old service being shut down entirely at the end of 2023.
 
 To fix their breakage users should move to picking up the latest secure packages at [packages.adoptium.net](https://packages.adoptium.net).
 
-## Scheduled Brownout plan
+## Scheduled brownout plan
 
 The brownout plan is a carefully orchestrated process that aims to gradually phase out the usage of adoptopenjdk.jfrog.io while providing developers with sufficient time to migrate to [packages.adoptium.net](https://packages.adoptium.net). The following table outlines the key stages and timeline of the brownout plan:
 
