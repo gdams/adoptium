@@ -8,11 +8,17 @@ tags:
   - Installers
 ---
 
-If you are still utilising the deprecated [adoptopenjdk.jfrog.io](https://adoptopenjdk.jfrog.io) service, it's essential to understand the potential vulnerabilities associated with this choice. As the service has been deprecated, it is no longer actively maintained or updated to address security concerns. This means that the OpenJDK distributions obtained from this source may contain known vulnerabilities that are not recommended for production use.
+TL;DR -- `adoptopenjdk.jfrog.io` is being shut down, users should move to Temurin builds at [packages.adoptium.net](https://packages.adoptium.net)
+
+[AdoptOpenJDK moved](https://blog.adoptopenjdk.net/2021/08/goodbye-adoptopenjdk-hello-adoptium/) to become Eclipse Adoptium back in August 2021. Since then the packaged version of Eclipse Temurin have been made available via [packages.adoptium.net](https://packages.adoptium.net).
+
+If you are still utilising the deprecated [adoptopenjdk.jfrog.io](https://adoptopenjdk.jfrog.io) service, it's essential to understand the potential vulnerabilities associated with this choice. As the service has been deprecated, it is no longer actively maintained or updated to address security concerns. This means that the OpenJDK distributions obtained from this source may contain known vulnerabilities that are not recommended for production use. The packages at AdoptOpenJDK were last updated in June 2021 and are at version `11.0.11` and `8u292`, while latest is `11.0.19` and `8u372` - that's 8 releases behind.
 
 In a rapidly evolving technological landscape, security vulnerabilities are discovered regularly, and updates and patches are released to address them. By continuing to use adoptopenjdk.jfrog.io, you are essentially missing out on these critical updates, leaving your applications and systems exposed to potential security breaches.
 
-In an effort to migrate users onto the new [packages.adoptium.net](https://packages.adoptium.net) service, we will be operating scheduled brownouts in which the old service will return an error code. This will break users but will be the most efficient way to encourage people to migrate to the new service. This will ultimately lead to the service being shut down at the end of 2023.
+In order to migrate users onto the new [packages.adoptium.net](https://packages.adoptium.net) service, we will be operating scheduled brownouts in which the old AdoptOpenJDK service will return an error code. We recognize that this will break users but will be the most direct way to migrate people to the new service. This will ultimately lead to the old service being shut down entirely at the end of 2023.
+
+To fix their breakage users should move to picking up the latest secure packages at [packages.adoptium.net](https://packages.adoptium.net).
 
 ## Scheduled Brownout plan
 
@@ -28,7 +34,8 @@ The brownout plan is a carefully orchestrated process that aims to gradually pha
 | August 18 - August 24      | 1:00 - 13:00                               |
 | August 25 - August 31      | 1:00 - 17:00                               |
 | September 1 - September 30 | A full day every other day                 |
-| October 1 - December 31    | Full day for three consecutive days weekly |
+| October 1 - December 30    | Full day for three consecutive days weekly |
+| December 31                | Service discontinued permanently           |
 
 ## Migrating to packages.adoptium.net
 
@@ -36,10 +43,12 @@ To ensure the security and reliability of your Java applications, it is imperati
 
 - **Reliable Security Updates**: packages.adoptium.net is actively maintained, and security updates are promptly applied to address any vulnerabilities discovered within Temurin binaries. This ensures that you have the latest patches and fixes to safeguard your applications.
 
+- **New Java Versions**: packages.adoptium.net hosts new versions of Eclipse Temurin, providing new Java APIs and functionality that improves productivity and capabilities for your Java applications in line with the Java platform specifications.
+
 - **Long-Term Support**: packages.adoptium.net hosts long-term support (LTS) versions of Eclipse Temurin, providing stability and extended maintenance for your critical applications. This is particularly valuable for production environments that require ongoing support and bugfixes.
 
 The documentation for switching to these new packages is available in our [Linux Installer Guide](/installation/linux/).
 
 ## A final thank you
 
-The project would like to express their gratitude to [jFrog](https://jfrog.com/artifactory/) for their ongoing sponsorship of both the old (and new) Artifactory instances. Without the help of companies like jFrog, it would be impossible to offer the variety of services that we do. For our full list of infrastructure sponsors see our [Sponsors List](/sponsors).
+The project would like to express their gratitude to [jFrog](https://jfrog.com/artifactory/) for their ongoing sponsorship of both the old (and new) Artifactory instances over many years. Without the help of companies like jFrog, it would be impossible to offer the variety of services that we do. For our full list of infrastructure sponsors see our [Sponsors List](/sponsors).
