@@ -1,6 +1,6 @@
 import { Link } from 'gatsby-plugin-react-i18next';
 import React from 'react';
-import { FaTwitter, FaYoutube, FaGithub, FaSlack } from 'react-icons/fa';
+import { FaTwitter, FaYoutube, FaGithub, FaSlack, FaLinkedin } from 'react-icons/fa';
 import RandomContributor from '../RandomContributor';
 import LanguageSelector from '../LanguageSelector';
 import './Footer.scss';
@@ -63,13 +63,14 @@ const Footer = (): JSX.Element => {
                 <li className="nav-item mb-2"><a href="https://status.eclipse.org/" className="nav-link p-0 text-muted">Service Status</a></li>
               </ul>
             </div>
-            
+
             <div className="col-sm-6 col-12 py-2 d-flex">
               <span className="text-muted">Copyright © Eclipse Foundation. All Rights Reserved.</span>
             </div>
             <ul className="nav col-md-5 col-9 pb-4 justify-content-end list-unstyled d-flex">
               <li className="ms-3"><a href="https://www.netlify.com"> <img src="/images/netlify-light.svg" alt="Deploys by Netlify" style={{height: '25px'}}/> </a></li>
               <li className="ms-3"><a className="text-muted" aria-label="Adoptium Twitter Account" href="https://twitter.com/adoptium"><FaTwitter size={25} /></a></li>
+              <li className="ms-3"><a className="text-muted" aria-label="Adoptium Linkedin Account" href="https://www.linkedin.com/showcase/adoptium/"><FaLinkedin size={25} /></a></li>
               <li className="ms-3"><a className="text-muted" aria-label="Adoptium YouTube Account" href="https://www.youtube.com/c/EclipseAdoptium"><FaYoutube size={25} /></a></li>
               <li className="ms-3"><a className="text-muted" aria-label="Adoptium GitHub Account" href="https://github.com/adoptium"><FaGithub size={25} /></a></li>
               <li className="ms-3"><Link className="text-muted" aria-label="Adoptium Slack Account" to="/slack"><FaSlack size={25} /></Link></li>
