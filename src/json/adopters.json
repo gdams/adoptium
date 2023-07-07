@@ -11,7 +11,7 @@
     },
     {
         "name": "Red Hat",
-        "logo": "adopters/Logo-RedHat-A-Color-RGB.svg",
+        "logo": "redhat.svg",
         "tier": "adopter"
     }
 ]
