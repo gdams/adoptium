@@ -1,5 +1,5 @@
 = Commercial Support Options for Eclipse Temurin(TM)
-:page-authors: gdams
+:page-authors: gdams, tellison
 
 There are a variety of commercial support options available for Eclipse Temurin. It is important to note that none of these providers have been evaluated by or are officially endorsed by the Adoptium(R) project. Each commercial support provider tends to cater to different typical use-cases, so it is recommended that you research each option carefully based on your specific needs and requirements.
 
