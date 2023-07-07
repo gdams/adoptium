@@ -8,5 +8,10 @@
         "name": "Microsoft",
         "logo": "microsoft.svg",
         "tier": "adopter"
+    },
+    {
+        "name": "Red Hat",
+        "logo": "adopters/Logo-RedHat-A-Color-RGB.svg",
+        "tier": "adopter"
     }
 ]
