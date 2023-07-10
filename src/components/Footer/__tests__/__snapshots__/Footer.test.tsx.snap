@@ -190,7 +190,7 @@ exports[`Footer component > renders correctly 1`] = `
             >
               <a
                 class="nav-link p-0 text-muted"
-                href="https://bugs.eclipse.org/bugs/"
+                href="https://github.com/adoptium/adoptium-support/issues"
               >
                 Report a Bug
               </a>
@@ -200,7 +200,7 @@ exports[`Footer component > renders correctly 1`] = `
             >
               <a
                 class="nav-link p-0 text-muted"
-                href="https://help.eclipse.org/"
+                href="/docs"
               >
                 Documentation
               </a>
@@ -210,7 +210,7 @@ exports[`Footer component > renders correctly 1`] = `
             >
               <a
                 class="nav-link p-0 text-muted"
-                href="https://www.eclipse.org/contribute/"
+                href="/contributing"
               >
                 How to Contribute
               </a>
