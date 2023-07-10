@@ -3,7 +3,7 @@
 :toc:
 :icons: font
 
-Eclipse Temurin RPM, DEB AND APK packages are now available for installation on
+Eclipse Temurin RPM, DEB and APK packages are now available for installation on
 your favourite Linux distribution.
 
 [NOTE]
