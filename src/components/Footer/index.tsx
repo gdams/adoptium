@@ -44,7 +44,7 @@ const Footer = (): JSX.Element => {
             <p className="h5 pb-1">Useful Links</p>
               <ul className="nav flex-column">
                 <li className="nav-item mb-2"><a href="https://github.com/adoptium/adoptium-support/issues" className="nav-link p-0 text-muted">Report a Bug</a></li>
-                <li className="nav-item mb-2"><a href="/docs" className="nav-link p-0 text-muted">Documentation</a></li>
+                <li className="nav-item mb-2"><Link to="/docs" className="nav-link p-0 text-muted">Documentation</Link></li>
                 <li className="nav-item mb-2"><Link to="/contributing" className="nav-link p-0 text-muted">How to Contribute</Link></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/mail/" className="nav-link p-0 text-muted">Mailing Lists</a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/forums/" className="nav-link p-0 text-muted">Forums</a></li>
