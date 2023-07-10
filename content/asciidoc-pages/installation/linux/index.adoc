@@ -3,12 +3,12 @@
 :toc:
 :icons: font
 
-Eclipse Temurin RPM and DEB packages are now available for installing on
+Eclipse Temurin RPM, DEB AND APK packages are now available for installation on
 your favourite Linux distribution.
 
 [NOTE]
 ====
-See link:/supported-platforms[Supported Platforms] for a list of our officially supported installers by Linux distribution / version. Other Linux distributions / versions are supported on a best effort basis.
+See link:/supported-platforms[Supported Platforms] for a list of our officially supported installers by Linux distribution / version. Other Linux distributions / versions are supported on a best-effort basis.
 ====
 
 [TIP]
