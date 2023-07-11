@@ -20,7 +20,7 @@ For more details, please visit the https://open-elements.com/temurin-support/[Op
 ^.^|
 image:https://adoptium.net/images/redhat.svg[Red Hat,150]
 |
-https://www.redhat.com[Red Hat] ist seit langem ein anerkannter Marktführer in der Java-Community und engagiert sich auch weiterhin bei der Weiterentwicklung von Java durch offene, von der Community getriebene Innovationen. Red Hat-Kunden erhalten professionellen Support für Eclipse Temurin über eine Subskription erhalten, welche einen weltweiten 24x7-Support für ihre  Java-Produktions-Workloads ermöglicht.
+https://www.redhat.com[Red Hat] ist seit langem ein anerkannter Marktführer in der Java-Community und engagiert sich auch weiterhin bei der Weiterentwicklung von Java durch offene, von der Community getriebene Innovationen. Red Hat-Kunden können professionellen Support für Eclipse Temurin über eine Subskription erhalten, welche einen weltweiten 24x7-Support für ihre  Java-Produktions-Workloads ermöglicht.
 
 Besuchen Sie https://developers.redhat.com/java/red-hat-and-java?utm_source=adoptium[Red Hat & Java] oder kontaktieren Sie den https://www.redhat.com/contact?utm_source=adoptium[Red Hat-Vertrieb] für weitere Informationen
 
