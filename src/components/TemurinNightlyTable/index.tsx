@@ -30,7 +30,7 @@ const TemurinNightlyTable = ({results}) => {
                                                 (asset, i): string | JSX.Element =>
                                                     asset && (
                                                         <tr key={`${key}-${asset.type}`} className="nightly-row">
-                                                            <td>{capitalize(asset.os)} {asset.architecture}</td>
+                                                            <td>{capitalize(asset.os)} {asset.architecture === 'x32' ? 'x86' : asset.architecture}</td>
                                                             <td>{asset.type}</td>
                                                             <td>{localeDate(release.timestamp, language)}</td>
                                                             <td><Link to="/download" state={{ link: asset.link, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: 'nightly' }}>{`${asset.extension} (${asset.size} MB)`}</Link></td>
