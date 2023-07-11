@@ -1,0 +1,29 @@
+= Kommerzielle Supportoptionen für Eclipse Temurin(TM)
+:page-authors: gdams, tellison
+
+Es gibt verschiedene kommerzielle Supportoptionen für Eclipse Temurin. Bitte beachten Sie, dass keiner der folgenden Anbieter vom Adoptium(R)-Projekt evaluiert wurde oder offiziell empfohlen wird. Jeder kommerzielle Supportanbieter hat in der Regel unterschiedliche Schwerpunkte und Anwendungsfälle für seine Produkte. Daher wird empfohlen, jede Option sorgfältig im Hinblick auf Ihre spezifischen Bedürfnisse und Anforderungen hin zu evaluieren.
+
+In alphabetischer Reihenfolge:
+
+[cols="1,3"]
+|===
+| 
+| 
+
+^.^|
+image:https://adoptium.net/images/openelements.svg[Open Elements,150]
+|
+Purchasing OpenElements Temurin Support & Care provides you with a variety of benefits that enhance the performance and security of your Java applications and optimize your development process. As a member of Adoptium and with our exceptional network within OpenElements, we directly contribute to its development. Through our activities in the Java and Open Source ecosystem, we can provide you with information and insights into the current and future developments within the Eclipse Adoptium Working Group and the OpenJDK.
+
+For more details, please visit the https://open-elements.com/temurin-support/[Open Elements Website].
+
+^.^|
+image:https://adoptium.net/images/redhat.svg[Red Hat,150]
+|
+https://www.redhat.com[Red Hat] ist seit langem ein anerkannter Marktführer in der Java-Community und engagiert sich auch weiterhin bei der Weiterentwicklung von Java durch offene, von der Community getriebene Innovationen. Red Hat-Kunden erhalten professionellen Support für Eclipse Temurin über eine Subskription erhalten, welche einen weltweiten 24x7-Support für ihre  Java-Produktions-Workloads ermöglicht.
+
+Besuchen Sie https://developers.redhat.com/java/red-hat-and-java?utm_source=adoptium[Red Hat & Java] oder kontaktieren Sie den https://www.redhat.com/contact?utm_source=adoptium[Red Hat-Vertrieb] für weitere Informationen
+
+|===
+
+Kommerzielle Anbieter können eine https://github.com/adoptium/adoptium.net/issues/new/choose[Anfrage stellen], um zu dieser Liste hinzugefügt zu werden.
