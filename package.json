@@ -75,7 +75,7 @@
     "@types/gatsbyjs__reach-router": "^2.0.0",
     "@types/prismjs": "^1.26.0",
     "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
+    "@types/react-dom": "^18.2.7",
     "@types/react-test-renderer": "^18.0.0",
     "@types/react-world-flags": "^1.4.2",
     "@types/testing-library__jest-dom": "^5.14.8",
