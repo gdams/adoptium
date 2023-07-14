@@ -13,9 +13,10 @@ En orden alfabético:
 ^.^|
 image:https://adoptium.net/images/openelements.svg[Open Elements,150]
 |
-Purchasing OpenElements Temurin Support & Care provides you with a variety of benefits that enhance the performance and security of your Java applications and optimize your development process. As a member of Adoptium and with our exceptional network within OpenElements, we directly contribute to its development. Through our activities in the Java and Open Source ecosystem, we can provide you with information and insights into the current and future developments within the Eclipse Adoptium Working Group and the OpenJDK.
 
-For more details, please visit the https://open-elements.com/temurin-support/[Open Elements Website].
+La compra de https://open-elements.com[Open Elements] Temurin Support & Care te provee una variedad de beneficios que mejoran el rendimiento y la seguridad de tus aplicaciones Java, y optimizan tu proceso de desarrollo. Como miembro de Adoptium contribuimos directamente al desarrollo de proyectos en Adoptium. A través de nuestras actividades en el ecosistema de Java y Open Source, podemos proporcionarte información y conocimientos sobre los desarrollos actuales y futuros dentro del Eclipse Adoptium Working Group y del OpenJDK.
+
+Para obtener más detalles, ve https://open-elements.com/temurin-support/[el sitio web de Open Elements].
 
 ^.^|
 image:https://adoptium.net/images/redhat.svg[Red Hat,150]
