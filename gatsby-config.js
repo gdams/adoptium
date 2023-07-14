@@ -65,6 +65,10 @@ module.exports = {
             getLanguageFromPath: true
           },
           {
+            matchPath: '/:lang?/temurin/:uid',
+            getLanguageFromPath: true
+          },
+          {
             matchPath: '/:lang?/about/',
             getLanguageFromPath: true
           }
