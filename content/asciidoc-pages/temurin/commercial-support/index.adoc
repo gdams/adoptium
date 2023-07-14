@@ -11,6 +11,13 @@ In alphabetical order:
 | 
 
 ^.^|
+image:https://adoptium.net/images/ibm-logo.png[IBM,200]
+|
+With more than two decades experience implementing, delivering, and supporting Java for enterprises of all sizes and industries, https://www.ibm.com[IBM] is a proud member of the Adoptium working group, supporting and contributing to the high quality community led delivery of Eclipse Temurin. Temurin consumers can receive cost effective and flexibly licensed enterprise-grade support for their mission critical Java workloads with IBM Runtimes for Business.
+
+Visit https://www.ibm.com/products/support-for-runtimes[IBM Runtimes for Business] today for more information.
+
+^.^|
 image:https://adoptium.net/images/openelements.svg[Open Elements,150]
 |
 Purchasing OpenElements Temurin Support & Care provides you with a variety of benefits that enhance the performance and security of your Java applications and optimize your development process. As a member of Adoptium and with our exceptional network within OpenElements, we directly contribute to its development. Through our activities in the Java and Open Source ecosystem, we can provide you with information and insights into the current and future developments within the Eclipse Adoptium Working Group and the OpenJDK.
