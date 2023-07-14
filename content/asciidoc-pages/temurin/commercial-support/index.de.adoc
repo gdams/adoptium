@@ -11,7 +11,7 @@ In alphabetischer Reihenfolge:
 | 
 
 ^.^|
-image:https://adoptium.net/images/ibm-logo.png[IBM,200]
+image:https://adoptium.net/images/ibm-logo.png[IBM,150]
 |
 With more than two decades experience implementing, delivering, and supporting Java for enterprises of all sizes and industries, https://www.ibm.com[IBM] is a proud member of the Adoptium working group, supporting and contributing to the high quality community led delivery of Eclipse Temurin. Temurin consumers can receive cost effective and flexibly licensed enterprise-grade support for their mission critical Java workloads with IBM Runtimes for Business.
 
