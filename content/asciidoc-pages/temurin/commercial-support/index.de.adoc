@@ -1,7 +1,7 @@
 = Kommerzielle Supportoptionen für Eclipse Temurin(TM)
 :page-authors: gdams, tellison
 
-Es gibt verschiedene kommerzielle Supportoptionen für Eclipse Temurin. Bitte beachten Sie, dass keiner der folgenden Anbieter vom Adoptium(R)-Projekt evaluiert wurde oder offiziell empfohlen wird. Jeder kommerzielle Supportanbieter hat in der Regel unterschiedliche Schwerpunkte und Anwendungsfälle für seine Produkte. Daher wird empfohlen, jede Option sorgfältig im Hinblick auf Ihre spezifischen Bedürfnisse und Anforderungen hin zu evaluieren.
+Es gibt verschiedene kommerzielle Supportoptionen für Eclipse Temurin. Bitte beachten Sie, dass keiner der folgenden Anbieter vom Adoptium(R) Projekt evaluiert wurde oder offiziell empfohlen wird. Jeder kommerzielle Supportanbieter hat in der Regel unterschiedliche Schwerpunkte und Anwendungsfälle für seine Produkte. Daher wird empfohlen, jede Option sorgfältig im Hinblick auf Ihre spezifischen Bedürfnisse und Anforderungen hin zu evaluieren.
 
 In alphabetischer Reihenfolge:
 
@@ -13,16 +13,16 @@ In alphabetischer Reihenfolge:
 ^.^|
 image:https://adoptium.net/images/openelements.svg[Open Elements,150]
 |
-Purchasing OpenElements Temurin Support & Care provides you with a variety of benefits that enhance the performance and security of your Java applications and optimize your development process. As a member of Adoptium and with our exceptional network within OpenElements, we directly contribute to its development. Through our activities in the Java and Open Source ecosystem, we can provide you with information and insights into the current and future developments within the Eclipse Adoptium Working Group and the OpenJDK.
+Als Mitglied der Adoptium™ Arbeitsgruppe bietet https://open-elements.de[OpenElements] mit Eclipse Temurin Support & Care eine Vielzahl von Vorteilen, welche die Leistungsfähigkeit und Sicherheit Ihrer Java-Anwendungen erhöhen sowie Ihren Entwicklungsprozess optimieren. Durch die direkte Mitarbeit und außergewöhnliche Vernetzung von Open Elements im Java und Open Source Ökosystem können wir Ihnen zusätzlich wichtige Informationen und Einblicke in die aktuelle und zukünftige Entwicklung von Eclipse Temurin, der Eclipse Adoptium Arbeitsgruppe sowie dem OpenJDK ermöglichen. Darüber hinaus bietet Temurin Support & Care Unterstützung und Dokumentation sowohl in englischer als auch deutscher Sprache an.
 
-For more details, please visit the https://open-elements.com/temurin-support/[Open Elements Website].
+Besuchen Sie unsere Seite zum https://open-elements.de/temurin-support/[Temurin Support & Care Programm von OpenElements] für weitere Informationen.
 
 ^.^|
 image:https://adoptium.net/images/redhat.svg[Red Hat,150]
 |
-https://www.redhat.com[Red Hat] ist seit langem ein anerkannter Marktführer in der Java-Community und engagiert sich auch weiterhin bei der Weiterentwicklung von Java durch offene, von der Community getriebene Innovationen. Red Hat-Kunden können professionellen Support für Eclipse Temurin über eine Subskription erhalten, welche einen weltweiten 24x7-Support für ihre  Java-Produktions-Workloads ermöglicht.
+https://www.redhat.com[Red Hat] ist seit langem ein anerkannter Marktführer in der Java-Community und engagiert sich auch weiterhin bei der Weiterentwicklung von Java durch offene, von der Community getriebene Innovationen. Red Hat Kunden können professionellen Support für Eclipse Temurin über eine Subskription erhalten, welche einen weltweiten 24x7-Support für ihre Java-Produktions-Workloads ermöglicht.
 
-Besuchen Sie https://developers.redhat.com/java/red-hat-and-java?utm_source=adoptium[Red Hat & Java] oder kontaktieren Sie den https://www.redhat.com/contact?utm_source=adoptium[Red Hat-Vertrieb] für weitere Informationen
+Besuchen Sie https://developers.redhat.com/java/red-hat-and-java?utm_source=adoptium[Red Hat & Java] oder kontaktieren Sie den https://www.redhat.com/contact?utm_source=adoptium[Red Hat Vertrieb] für weitere Informationen.
 
 |===
 
