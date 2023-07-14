@@ -1,5 +1,5 @@
 = Opciones de soporte comercial para Eclipse Temurin(TM)
-:page-authors: gdams, tellison
+:page-authors: gdams, tellison, hendrikebbers
 
 Actualmente, hay disponible una variedad de opciones comerciales para el soporte de Eclipse Temurin. Es importante señalar que ninguno de estos proveedores ha sido evaluado ni cuenta con el respaldo oficial del proyecto Adoptium(R). Cada proveedor de soporte comercial tiende a atender diferentes casos de uso típicos, por lo que se recomienda que investigue cuidadosamente cada opción en función de sus necesidades y requisitos específicos.
 
