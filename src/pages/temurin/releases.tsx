@@ -11,57 +11,68 @@ import ChecksumModal from '../../components/ChecksumModal'
 import LinkText from '../../components/LinkText'
 import { loadLatestAssets } from '../../hooks'
 
-const TemurinReleases = () => (
-  <Layout>
-    <section className='py-5 text-center container'>
-      <div className='row py-lg-5'>
-        <div className='col-lg-10 col-md-8 mx-auto'>
-          <h1 className='fw-light'>Eclipse Temurin™ Latest Releases</h1>
-          <div className='row align-items-center pt-3'>
-            <div className='col-6 col-md-4'>
-              <img
-                src='/images/temurin-light.png'
-                width={120}
-                alt='Temurin logo'
-                className='img-fluid'
-              />
-            </div>
-            <div className='col-12 col-sm-6 col-md-8'>
-              <p className='text-start'>
-                <Trans
-                  i18nKey='release.intro'
-                  defaults='Eclipse Temurin is the open source Java SE build based upon OpenJDK. Temurin is available for a <supportedPlatformsLink>wide range of platforms</supportedPlatformsLink> and Java SE versions. The latest releases recommended for use in production are listed below, and are regularly <supportLink>updated and supported</supportLink> by the Adoptium community. Migration help, container images and package installation guides are available in the <docsLink>documentation section</docsLink>.'
-                  components={{
-                    supportedPlatformsLink: <LinkText href='/supported-platforms' />,
-                    supportLink: <LinkText href='/support' />,
-                    docsLink: <LinkText href='/docs' />
-                  }}
+const TemurinReleases = () => {
+  const [initialLoad, setInitialLoad] = React.useState(false)
+
+  React.useEffect(() => {
+    if (!initialLoad) {
+      setInitialLoad(true)
+      window.history.replaceState(null, null, '/temurin/releases/?os=win&arch=x64&package=jdk')
+    }
+  }, [initialLoad])
+
+  return (
+    <Layout>
+      <section className='py-5 text-center container'>
+        <div className='row py-lg-5'>
+          <div className='col-lg-10 col-md-8 mx-auto'>
+            <h1 className='fw-light'>Eclipse Temurin™ Latest Releases</h1>
+            <div className='row align-items-center pt-3'>
+              <div className='col-6 col-md-4'>
+                <img
+                  src='/images/temurin-light.png'
+                  width={120}
+                  alt='Temurin logo'
+                  className='img-fluid'
                 />
-              </p>
+              </div>
+              <div className='col-12 col-sm-6 col-md-8'>
+                <p className='text-start'>
+                  <Trans
+                    i18nKey='release.intro'
+                    defaults='Eclipse Temurin is the open source Java SE build based upon OpenJDK. Temurin is available for a <supportedPlatformsLink>wide range of platforms</supportedPlatformsLink> and Java SE versions. The latest releases recommended for use in production are listed below, and are regularly <supportLink>updated and supported</supportLink> by the Adoptium community. Migration help, container images and package installation guides are available in the <docsLink>documentation section</docsLink>.'
+                    components={{
+                      supportedPlatformsLink: <LinkText href='/supported-platforms' />,
+                      supportLink: <LinkText href='/support' />,
+                      docsLink: <LinkText href='/docs' />
+                    }}
+                  />
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className='row align-items-center pt-3'>
-        <p className='text-center'>
-          <Trans>Use the drop-down boxes below to filter the list of current releases.</Trans>
-        </p>
-      </div>
-      <DownloadDropdowns updaterAction={loadLatestAssets} marketplace={false} Table={DownloadTable} />
-      <ChecksumModal />
-      <div className='row align-items-center pt-3'>
-        <p className='text-center'>
-          <Trans>Previous releases are available in the Temurin archive.</Trans>
-        </p>
-        <div className='btn-group-vertical col-6 mx-auto'>
-          <Link to='/temurin/archive' className='btn btn btn-primary mt-3'>
-            <Trans>Release Archive</Trans> <FaArrowCircleRight />
-          </Link>
+        <div className='row align-items-center pt-3'>
+          <p className='text-center'>
+            <Trans>Use the drop-down boxes below to filter the list of current releases.</Trans>
+          </p>
         </div>
-      </div>
-    </section>
-  </Layout>
-)
+        <DownloadDropdowns updaterAction={loadLatestAssets} marketplace={false} Table={DownloadTable} />
+        <ChecksumModal />
+        <div className='row align-items-center pt-3'>
+          <p className='text-center'>
+            <Trans>Previous releases are available in the Temurin archive.</Trans>
+          </p>
+          <div className='btn-group-vertical col-6 mx-auto'>
+            <Link to='/temurin/archive' className='btn btn btn-primary mt-3'>
+              <Trans>Release Archive</Trans> <FaArrowCircleRight />
+            </Link>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  )
+}
 
 export default TemurinReleases
 
