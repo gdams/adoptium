@@ -11,11 +11,11 @@ tags:
 
 Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u382, 11.0.20, 17.0.8 and 20.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. Binaries, installers, and source code are available from the [Temurin download page](https://adoptium.net/temurin/releases).
 
-## Security Vulerabilities Resolved in this Release
+## Security Vulerabilities Resolved
 
-The following table summaries security vulnerabilities fixed in this release cycle for each Temurin version. Each line shows the [Common Vulnerabilities and Exposures (CVE) vulnerability database](https://nvd.nist.gov/vuln) reference and [Common Vulnerability Scoring System (CVSS) v3.1 base score](https://www.first.org/cvss/v3.1/specification-document).
+The following table summaries security vulnerabilities fixed in this release cycle. The affected Temurin version streams are noted by an 'X' in the table. Each line shows the [Common Vulnerabilities and Exposures (CVE) vulnerability database](https://nvd.nist.gov/vuln) reference and [Common Vulnerability Scoring System (CVSS) v3.1 base score](https://www.first.org/cvss/v3.1/specification-document). Note that defense-in-depth issues are not assigned CVEs.
 
-| CVE ID  | Component | CVSSv3.1 Base Score | Temurin 8 | Temurin 11 | Temurin 17 | Temurin 20 |
+| CVE ID  | Component | CVSSv3.1 Base Score | v8 | v11 | v17 | v20 |
 | :---                                                              | :---                |  :----:      |  :----:   | :----:     | :----:     | :----:     |
 | [CVE-2023-25193](https://nvd.nist.gov/vuln/detail/CVE-2023-25193) | client-libs/2d      | High (7.5)   |           | X          | X          | X          |
 | [CVE-2023-22041](https://nvd.nist.gov/vuln/detail/CVE-2023-22041) | hotspot/compiler    | Medium (5.1) |           | X          | X          | X          |
