@@ -13,15 +13,17 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u38
 
 ## Security Vulerabilities Resolved in this Release
 
-| CVE ID  | Component | [CVSSv3.1 Base Score](https://www.first.org/cvss/v3.1/specification-document)    | Temurin 8 | Temurin 11 | Temurin 17 | Temurin 20 |
+The following table summaries security vulnerabilities fixed in this release cycle for each Temurin version. Each line shows the [Common Vulnerabilities and Exposures (CVE) vulnerability database](https://nvd.nist.gov/vuln) reference and [Common Vulnerability Scoring System (CVSS) v3.1 base score](https://www.first.org/cvss/v3.1/specification-document).
+
+| CVE ID  | Component | CVSSv3.1 Base Score | Temurin 8 | Temurin 11 | Temurin 17 | Temurin 20 |
 | :---                                                              | :---                |  :----:      |  :----:   | :----:     | :----:     | :----:     |
-| [CVE-2023-25193](https://nvd.nist.gov/vuln/detail/CVE-2023-25193) | client-libs/2d      | High (7.5)   |           | :x:        | :x:        | :x:        |
-| [CVE-2023-22041](https://nvd.nist.gov/vuln/detail/CVE-2023-22041) | hotspot/compiler  	| Medium (5.1) |           | :x:        | :x:        | :x:        |
-| [CVE-2023-22044](https://nvd.nist.gov/vuln/detail/CVE-2023-22044) | hotspot/compiler	  | Low (3.7)    |           |            | :x:        | :x:        |
-| [CVE-2023-22045](https://nvd.nist.gov/vuln/detail/CVE-2023-22045) | hotspot/compiler  	| Low (3.7)    | :x:       | :x:        | :x:        | :x:        |
-| [CVE-2023-22049](https://nvd.nist.gov/vuln/detail/CVE-2023-22049) | core-libs/java.io   | Low (3.7)    | :x:       | :x:        | :x:        | :x:        |
-| [CVE-2023-22036](https://nvd.nist.gov/vuln/detail/CVE-2023-22036) | core-libs/java.util | Low (3.7)    |           | :x:        | :x:        | :x:        |
-| [CVE-2023-22006](https://nvd.nist.gov/vuln/detail/CVE-2023-22006) | core-libs/java.net  | Low (3.1)    |           | :x:        | :x:        | :x:        |
+| [CVE-2023-25193](https://nvd.nist.gov/vuln/detail/CVE-2023-25193) | client-libs/2d      | High (7.5)   |           | X          | X          | X          |
+| [CVE-2023-22041](https://nvd.nist.gov/vuln/detail/CVE-2023-22041) | hotspot/compiler    | Medium (5.1) |           | X          | X          | X          |
+| [CVE-2023-22044](https://nvd.nist.gov/vuln/detail/CVE-2023-22044) | hotspot/compiler    | Low (3.7)    |           |            | X          | X          |
+| [CVE-2023-22045](https://nvd.nist.gov/vuln/detail/CVE-2023-22045) | hotspot/compiler    | Low (3.7)    | X         | X          | X          | X          |
+| [CVE-2023-22049](https://nvd.nist.gov/vuln/detail/CVE-2023-22049) | core-libs/java.io   | Low (3.7)    | X         | X          | X          | X          |
+| [CVE-2023-22036](https://nvd.nist.gov/vuln/detail/CVE-2023-22036) | core-libs/java.util | Low (3.7)    |           | X          | X          | X          |
+| [CVE-2023-22006](https://nvd.nist.gov/vuln/detail/CVE-2023-22006) | core-libs/java.net  | Low (3.1)    |           | X          | X          | X          |
 
 ## Fixes and Updates
 
