@@ -138,7 +138,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Download Temurin
+                    Get Temurin
                   </span>
                 </p>
                 <div
@@ -151,13 +151,13 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/installation"
                     >
-                      Install Eclipse Temurin
+                      Install Temurin
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/temurin/releases"
                     >
-                      Download Eclipse Temurin
+                      Download Temurin
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -469,7 +469,7 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/temurin/nightly"
                     >
-                      Nightly Developer Builds
+                      Developer Nightly Builds
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -616,7 +616,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Adoptium Governance
+                    Governance
                   </span>
                 </p>
                 <div
@@ -960,7 +960,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Branding Materials
+                    Branding
                   </span>
                 </p>
                 <div

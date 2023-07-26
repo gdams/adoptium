@@ -17,11 +17,11 @@ const DocumentationPage = ({ data }) => (
         <div className='docs-overview py-5'>
           <div className='row justify-content-center'>
             <DocumentationCard
-              title='Download Temurin'
+              title='Get Temurin'
               Icon={FaDownload}
               links={[
-                { name: 'Install Eclipse Temurin', link: '/installation' },
-                { name: 'Download Eclipse Temurin', link: '/temurin/releases' },
+                { name: 'Install Temurin', link: '/installation' },
+                { name: 'Download Temurin', link: '/temurin/releases' },
                 { name: 'Container Images', link: 'https://hub.docker.com/_/eclipse-temurin' },
                 { name: 'Release Archive', link: '/temurin/archive' }
               ]}
@@ -61,7 +61,7 @@ const DocumentationPage = ({ data }) => (
               links={[
                 { name: 'How To Contribute', link: '/contributing' },
                 { name: 'First Timer Support', link: '/docs/first-timer-support' },
-                { name: 'Nightly Developer Builds', link: '/temurin/nightly' },
+                { name: 'Developer Nightly Builds', link: '/temurin/nightly' },
                 { name: 'Join our Slack Channel', link: '/slack' },
                 { name: 'Code of Conduct', link: 'https://github.com/adoptium/.github/blob/main/CODE_OF_CONDUCT.md' }
               ]}
@@ -76,7 +76,7 @@ const DocumentationPage = ({ data }) => (
               ]}
             />
             <DocumentationCard
-              title='Adoptium Governance'
+              title='Governance'
               Icon={FaGlobe}
               links={[
                 { name: 'About Eclipse Adoptium', link: '/about' },
@@ -107,7 +107,7 @@ const DocumentationPage = ({ data }) => (
               ]}
             />
             <DocumentationCard
-              title='Branding Materials'
+              title='Branding'
               Icon={FaRocket}
               links={[
                 { name: 'Brand Guidelines', link: 'https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf' },
