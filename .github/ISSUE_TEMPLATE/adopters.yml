@@ -39,7 +39,7 @@ body:
     id: terms
     attributes:
       label: The Legal Stuff
-      description: By submitting your company's logo to our project you agree to it being displayed on our adopters page.
+      description: By submitting your organization's logo to our project you agree to it being displayed on our adopters page.
       options:
-        - label: My organisation consents to their logo being displayed on the Eclipse Temurin adopters page.
+        - label: My organization consents to their logo being displayed on the Eclipse Temurin adopters page.
           required: true
