@@ -1,0 +1,45 @@
+name: Project Adopter Request
+description: List your organization logo as an adopter of Eclipse Temurin.
+title: "[Adopter]: "
+labels: ["adopter"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to list your organization as an adopter of Eclipse Temurin
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What is your organization called?
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      description: What's the official website?
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Logos
+        
+        **Important:** Please attach your logos in svg or png format, zipped if svg. Please note that we require both color options for logos for distribution purposes.
+
+        * We need color logo with transparent background.
+        * We also need white logo with a transparent background.
+  - type: textarea
+    attributes:
+      label: Logos
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: The Legal Stuff
+      description: By submitting your company's logo to our project you agree to it being displayed on our adopters page.
+      options:
+        - label: My organisation consents to their logo being displayed on the Eclipse Temurin adopters page.
+          required: true
