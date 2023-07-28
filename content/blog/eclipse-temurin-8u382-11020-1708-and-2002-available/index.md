@@ -17,13 +17,13 @@ The following table summaries security vulnerabilities fixed in this release cyc
 
 | CVE Identifier  | Component | CVSS Score | v8 | v11 | v17 | v20 |
 | :---                                                              | :---                |  :----:      |  :----:   | :----:     | :----:     | :----:     |
-| [CVE-2023-22041](https://nvd.nist.gov/vuln/detail/CVE-2023-22041) | hotspot/compiler    | Medium ([5.1](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-22041)) |           | X          | X          | X          |
-| [CVE-2023-25193](https://nvd.nist.gov/vuln/detail/CVE-2023-25193) | client-libs/2d      | Low ([3.7](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-25193))   |           | X          | X          | X          |
-| [CVE-2023-22044](https://nvd.nist.gov/vuln/detail/CVE-2023-22044) | hotspot/compiler    | Low ([3.7](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-22044))    |           |            | X          | X          |
-| [CVE-2023-22045](https://nvd.nist.gov/vuln/detail/CVE-2023-22045) | hotspot/compiler    | Low ([3.7](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-22045))    | X         | X          | X          | X          |
-| [CVE-2023-22049](https://nvd.nist.gov/vuln/detail/CVE-2023-22049) | core-libs/java.io   | Low ([3.7](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-22049))    | X         | X          | X          | X          |
-| [CVE-2023-22036](https://nvd.nist.gov/vuln/detail/CVE-2023-22036) | core-libs/java.util | Low ([3.7](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-22036))    |           | X          | X          | X          |
-| [CVE-2023-22006](https://nvd.nist.gov/vuln/detail/CVE-2023-22006) | core-libs/java.net  | Low ([3.1](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2023-22006))    |           | X          | X          | X          |
+| [CVE-2023-22041](https://nvd.nist.gov/vuln/detail/CVE-2023-22041) | hotspot/compiler    | Medium ([5.1](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N)) |           | X          | X          | X          |
+| [CVE-2023-25193](https://nvd.nist.gov/vuln/detail/CVE-2023-25193) | client-libs/2d      | Low ([3.7](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L))   |           | X          | X          | X          |
+| [CVE-2023-22044](https://nvd.nist.gov/vuln/detail/CVE-2023-22044) | hotspot/compiler    | Low ([3.7](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N))    |           |            | X          | X          |
+| [CVE-2023-22045](https://nvd.nist.gov/vuln/detail/CVE-2023-22045) | hotspot/compiler    | Low ([3.7](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N))    | X         | X          | X          | X          |
+| [CVE-2023-22049](https://nvd.nist.gov/vuln/detail/CVE-2023-22049) | core-libs/java.io   | Low ([3.7](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N))    | X         | X          | X          | X          |
+| [CVE-2023-22036](https://nvd.nist.gov/vuln/detail/CVE-2023-22036) | core-libs/java.util | Low ([3.7](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L))    |           | X          | X          | X          |
+| [CVE-2023-22006](https://nvd.nist.gov/vuln/detail/CVE-2023-22006) | core-libs/java.net  | Low ([3.1](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N))    |           | X          | X          | X          |
 
 ## Fixes and Updates
 
