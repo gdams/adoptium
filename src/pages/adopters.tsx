@@ -44,13 +44,17 @@ const AdoptersPage = () => (
           <p className='h3'>Option 1 - Open an Issue</p>
           <ol>
             <li>
-              Go to{" "}
-              <a href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters/-/issues/">
-                https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters/-/issues/
+              Go to our{" "}
+              <a
+                href="https://github.com/adoptium/adoptium.net/issues/new?assignees=&labels=adopter&projects=&template=adopters.yml&title=%5BAdopter%5D%3A+"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Temurin Adopters Form
               </a>
               .
             </li>
-            <li>Select the ‘New Issue’ button.</li>
+            <li>Fill out the relevant fields (it takes less than 5 minutes)</li>
             <li>
               Attach logo files to an issue by dragging and dropping them in the
               text editor of the form.
@@ -59,7 +63,11 @@ const AdoptersPage = () => (
           <p className='h3'>Option 2 - Submit a Pull Request</p>
           <p>When submitting a pull request, please make the following changes to
             the eclipsefdn-project-adopters'{" "}
-            <a href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters">
+            <a
+              href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters"
+              target="_blank"
+              rel="noreferrer"
+            >
               codebase
             </a>
             :
@@ -67,14 +75,18 @@ const AdoptersPage = () => (
           <ol>
             <li>
               Go to{" "}
-              <a href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters/">
+              <a
+                href="https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 https://gitlab.eclipse.org/eclipsefdn/it/api/eclipsefdn-project-adopters
               </a>
               .
             </li>
             <li>Fork the repository.</li>
             <li>
-              Update the adopter data file config/adopters.json. If your
+              Update the adopter data file <code>config/adopters.json</code>. If your
               organization supports multiple projects, another project can be
               added to the projects list within the organization’s node. The
               values in this list should be the ID of the project.
