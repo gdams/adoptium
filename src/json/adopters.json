@@ -28,5 +28,10 @@
         "name": "Tirasa",
         "logo": "adopters/logo-tirasa.svg",
         "tier": "adopter"
+    },
+    {
+        "name": "Radiant Logic",
+        "logo": "adopters/logo-radiant-logic.png",
+        "tier": "adopter"
     }
 ]
