@@ -1,6 +1,6 @@
 import React, { useRef, MutableRefObject } from 'react';
 import { DataGrid, GridColDef, GridToolbarContainer, GridToolbarFilterButton, gridClasses } from '@mui/x-data-grid';
-import { useLocation } from '@reach/router';
+import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
 
 import { fetchReleaseNotesForVersion, useOnScreen } from '../../hooks';

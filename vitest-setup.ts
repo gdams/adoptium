@@ -106,7 +106,7 @@ vi.mock('gatsby-plugin-image', async () => {
   return mockPlugin
 })
 
-vi.mock('@reach/router', async () => {
+vi.mock('@gatsbyjs/reach-router', async () => {
   return {
     useLocation: () => ({
       pathname: '/'
