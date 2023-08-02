@@ -1,6 +1,6 @@
 import React, { useRef, useState, useCallback, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { useLocation } from '@reach/router';
+import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
 import { Trans } from 'gatsby-plugin-react-i18next';
 import VendorSelector from '../VendorSelector'
