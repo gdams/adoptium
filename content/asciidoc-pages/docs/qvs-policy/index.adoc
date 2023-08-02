@@ -19,7 +19,7 @@ at no charge as open source licensed software. You can fork, copy or modify the 
 Nominated
 https://github.com/adoptium/aqa-tests/releases[releases of the AQAvit quality verification suite^]
 (QVS) are available under the
-https://www.eclipse.org/legal/documents/eclipse-foundation-quality-verification-suite-license.php[Eclipse Foundation Quality Verification Suite License^]
+https://www.eclipse.org/legal/eclipse-foundation-quality-verification-suite-license.php[Eclipse Foundation Quality Verification Suite License^]
 (QVSL). A software product will be deemed to be “verified” by the AQAvit QVS if it fully and completely meets and satisfies all requirements of the AQAvit QVS as described in the QVSL.
 
 It is not necessary to be an Adoptium working group member to produce an AQAvit verified software product.

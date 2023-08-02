@@ -1,5 +1,6 @@
 = Temurin(TM) Support
 :page-authors: gdams, karianna, sxa, tellison, SueChaplain, sxa555, mvitz, ParkerM, M-Davies, Malax, lasombra, practicalli-john, jeffalder, hendrikebbers, douph1, andrew-m-leonard, mr-david-owens, DanHeidinga, sophia-guo, zdtsw
+:toc:
 
 == Community Support
 
@@ -20,9 +21,13 @@ support on Temurin binaries. Read
 https://medium.com/@javachampions/java-is-still-free-3-0-0-ocrt-2021-bca75c88d23b[Java Is Still Free (3.0.0)]
 for some background information about Java support options.
 
+== Commercial Support
+
+We understand that some users prefer commercial, paid-for support of Eclipse Temurin. Eclipse does not provide such services but please see our link:/temurin/commercial-support[Commercial Support] page where a list of companies offering contracted support is maintained.
+
 == Release Roadmap
 
-The frequency of Adoptium releases is guided by the schedule of our
+The frequency of Temurin releases is guided by the schedule of our
 dependencies.
 
 OpenJDK provide a new feature release every six months, and a

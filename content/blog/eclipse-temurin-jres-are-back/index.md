@@ -4,7 +4,7 @@ date: "2021-12-21T12:00:00+00:00"
 author: timellison
 description: Due to popular demand, the Adoptium project will produce JREs for Java 17 onwards.
 tags:
-  - Temurin
+  - temurin
 ---
 
 ## Background

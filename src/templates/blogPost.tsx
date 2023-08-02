@@ -12,6 +12,7 @@ import Byline from '../components/Byline';
 import ShareButton from '../components/Share';
 import Tags from '../components/Tags';
 import Comments from '../components/Comments';
+import ImagePopup from '../components/ImagePopup';
 
 export const formatDiv = props => {
   // convert inline code to code blocks
@@ -28,6 +29,7 @@ const components = {
   table: props => <table className='table table-hover' {...props} />,
   thead: props => <thead className='table-dark' {...props} />,
   li: props => <li style={{ marginBottom: '1.5em' }} {...props} />,
+  img: props => <ImagePopup {...props} />,
   div: formatDiv
 };
 

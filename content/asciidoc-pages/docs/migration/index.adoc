@@ -1,5 +1,5 @@
 = Migration Guide
-:page-authors: gdams, karianna, SueChaplain, hendrikebbers, sxa555, ParkerM, jiekang, HanSolo, MBoegers
+:page-authors: gdams, karianna, SueChaplain, hendrikebbers, sxa555, ParkerM, jiekang, HanSolo, MBoegers, ojuschugh1
 :icons: font
 
 == Migrating to Eclipse Temurin
@@ -22,7 +22,7 @@ them.
 icon:check[] - Supported, icon:times[] - Not Supported
 [cols="35%,25%,20%,20%",options="header",]
 |=======================================================================
-|Oracle JDK 8 proprietary component |Alternative component |OpenJDK 8 |OpenJDK 11
+|Oracle JDK 8 proprietary component |Alternative component |OpenJDK 8 |OpenJDK 11 and above
 |Java Web Start |link:#_icedtea_web[IcedTea-Web] | icon:check[] |  icon:times[]   
 |JavaFX |link:#_openjfx[OpenJFX] |  icon:times[]    |  icon:check[]  
 |T2K font rendering engine
@@ -65,8 +65,8 @@ ongoing to minimize or eliminate these differences.
 
 IcedTea-Web 1.8.x and 2.0.x are compatible with Temurin 8 builds. We
 know that software which is based on IcedTea-Web supports the execution
-of OpenJDK 11 based JNLP applications but IcedTea-Web does not contain
-any tests to check OpenJDK 11 support and we do not bundle it with
+of OpenJDK 11 and above based JNLP applications but IcedTea-Web does not contain
+any tests to check OpenJDK 11 and above support and we do not bundle it with
 Temurin 11 builds.
 
 === OpenJFX

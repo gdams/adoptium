@@ -117,9 +117,24 @@ exports[`Members page > renders correctly 1`] = `
         </div>
         <a
           class="btn btn-lg btn-primary mt-5"
-          href="/join"
+          href="https://membership.eclipse.org/application#sign-in"
+          style="margin: 20px;"
         >
-          Want to Join?
+          Ready to Join?
+        </a>
+        <a
+          class="btn btn-lg btn-primary mt-5"
+          href="https://www.eclipse.org/org/foundation/contact.php"
+          style="margin: 20px;"
+        >
+          Contact us
+        </a>
+        <a
+          class="btn btn-lg btn-primary mt-5"
+          href="/join"
+          style="margin: 20px;"
+        >
+          Learn More
         </a>
       </div>
     </div>

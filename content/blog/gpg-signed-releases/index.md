@@ -4,8 +4,8 @@ date: "2022-07-27T16:00:00+00:00"
 author: sxa
 description: How to verify GPG signatures of the Temurin artifacts using the Eclipse public key
 tags:
-  - Temurin
-  - Security
+  - temurin
+  - security
 ---
 
 With the latest releases from July 2022 (8u342, 11.0.16, 17.0.4 and 18.0.2)

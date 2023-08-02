@@ -4,8 +4,8 @@ date: "2022-11-28T15:00:00+00:00"
 author: sxa
 description: An overview of the SSDF framework and what we are doing to work towards implementing it
 tags:
-  - Temurin
-  - Security
+  - temurin
+  - security
 ---
 
 ## Introduction to the framework
@@ -39,7 +39,7 @@ levels too as we perform this work, and with SSDF and SLSA we have
 complementary frameworks with both helping to enhance the software
 development lifecycle security and SLSA specifically allowing us to
 demonstrate iterative progress via the levels it has. Our
-[recent blog post](https://adoptium.net/blog/2022/11/slsa2_temurin/)
+[recent blog post](https://adoptium.net/blog/2022/11/slsa2-temurin/)
 announcing SLSA level 2 compliance is an example of this.
 
 ## What are we doing?

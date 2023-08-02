@@ -4,9 +4,8 @@ date: "2022-10-04T12:00:00+00:00"
 author: pmc
 description: Adoptium is excited to announce the immediate availability of Eclipse Temurin 19.
 tags:
-  - Adoptium
-  - Eclipse Foundation
-  - Temurin
+  - adoptium
+  - temurin
 ---
 
 Adoptium is happy to announce the immediate availability of Eclipse Temurin 19. As always, all binaries are available free of charge without usage restrictions on a wide range of platforms.

@@ -4,9 +4,8 @@ date: "2023-03-06T08:53:00+00:00"
 author: steelhead31
 description: This article provides an introduction to how Nagios is used to monitor Adoptium public infrastructure
 tags:
-  - Adoptium
-  - Infrastructure
-  - Nagios
+  - adoptium
+  - infrastructure
 ---
 
 ## 1. Introduction

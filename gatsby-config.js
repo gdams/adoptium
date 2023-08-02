@@ -65,6 +65,10 @@ module.exports = {
             getLanguageFromPath: true
           },
           {
+            matchPath: '/:lang?/temurin/commercial-support/',
+            getLanguageFromPath: true
+          },
+          {
             matchPath: '/:lang?/about/',
             getLanguageFromPath: true
           }
@@ -249,11 +253,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-bootstrap-5',
-        short_name: 'gb5-starter',
+        name: 'Eclipse Adoptium',
+        short_name: 'adoptium',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#14003C',
+        theme_color: '#14003C',
         display: 'standalone',
         icon: 'src/images/adoptium-icon.png' // This path is relative to the root of the site.
       }

@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest'
-import Byline from '../index';
+import GuestPost from '../index';
 
-describe('Byline component', () => {
+describe('GuestPost component', () => {
     it('should render correctly', () => {
         const { container } = render(
-            <Byline
+            <GuestPost
                 children={[]}
             />
         );

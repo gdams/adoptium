@@ -12,17 +12,17 @@ This is is a Node.js / npm driven stack with AsciiDoc used for static content an
 
 ## How to develop locally
 
-This assumes you already have Node.js and npm installed. Node.js version 18 or above is required. We recommend using nvm to manage your versions.
+This assumes you already have Node.js and npm installed. Node.js version 18 or above is required. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage your versions.
 
 1. Install your dependencies
 
-    ```shell
-    npm install --legacy-peer-deps
+    ```bash
+    npm install
     ```
 
 1. Start the site up. Gatsby will build all of the various parts of the site (Asciidoc etc). Note that this command takes some time to execute.
 
-    ```shell
+    ```bash
     npm start
     ```
 

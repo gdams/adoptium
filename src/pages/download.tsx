@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { Link, graphql } from 'gatsby'
+import React, { useEffect } from 'react'
+import { Link, graphql, navigate } from 'gatsby'
 import { BiDonateHeart } from 'react-icons/bi'
 import { SiGithubsponsors } from 'react-icons/si'
 
@@ -24,10 +24,7 @@ const DownloadPage = ({ location }) => {
   }
 
   // Send a custom event to Google Analytics
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
   typeof window !== 'undefined' && link && window.gtag &&
-    // @ts-ignore
     window.gtag('event', 'download', {
       event_category: 'download',
       link: link,
@@ -35,6 +32,18 @@ const DownloadPage = ({ location }) => {
       java_version: version,
       vendor: vendor
     });
+
+  const shouldRedirect = !link
+
+  useEffect(() => {
+    if (shouldRedirect) {
+      navigate('/temurin/releases')
+    }
+  }, [])
+
+  if (shouldRedirect) {
+    return null
+  }
 
   return (
     <Layout>
@@ -57,10 +66,12 @@ const DownloadPage = ({ location }) => {
                   )
             )}
 
-            {link && <meta httpEquiv='refresh' content={`0; url=${link}`} />}
-            {link
-              ? <p className='text-muted py-3'>If the download doesn't start in a few seconds, please <a href={link}>click here</a> to start the download.</p>
-              : <p className='text-muted py-3'>Ooops - something doesn't seem quite right here. Please try again.</p>}
+            {link &&
+              <>
+                <meta httpEquiv='refresh' content={`0; url=${link}`} />
+                <p className='text-muted py-3'>If the download doesn't start in a few seconds, please <a href={link}>click here</a> to start the download.</p>
+              </>
+            }
 
             {vendor === 'Adoptium' && <p>Eclipse Temurin binaries are 100% free and open source and used by millions of developers every day. Here are three easy ways you can contribute toward the future development of Eclipse Adoptium projects and technologies.</p>}
             <h2 className='fw-light py-3'>Donate to the Eclipse Adoptium Working Group</h2>

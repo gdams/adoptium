@@ -5,8 +5,7 @@ author: georgeadams
 description: After months of hard work, the migration process has begun!
 featuredImage: "./adoptium_banner.jpg"
 tags:
-  - Adoptium
-  - Eclipse Foundation
+  - adoptium
 ---
 
 After months of hard work, the process to stand up Eclipse Adoptium has begun!

@@ -50,6 +50,12 @@
     "tier": "enterprise"
   },
   {
+    "name": "Canonical",
+    "logo": "canonical.png",
+    "url": "https://canonical.com/",
+    "tier": "enterprise"
+  },
+  {
     "name": "IBM",
     "logo": "ibm-logo.png",
     "url": "https://ibm.com",

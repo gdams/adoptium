@@ -1,5 +1,5 @@
 = Migration Guide
-:page-authors: gdams, HanSolo, MBoegers
+:page-authors: gdams, HanSolo, MBoegers, hendrikebbers, ojuschugh1
 :icons: font
 
 == Migration zu Eclipse Temurin
@@ -18,22 +18,21 @@ sind, um sie zu ersetzen.
 Klicken Sie auf die Links um mehr über die einzelnen Komponenten zu erfahren und über
 die Schritte, die nötig sind um diese zu übernehmen.
 
-icon:check[] - Supported, icon:times[] - Not Supported
+icon:check[] - Unterstützt, icon:times[] - Nicht Unterstützt
 [cols="35%,25%,20%,20%",options="header",]
 |=======================================================================
-|Oracle JDK 8 proprietäre Komponente |Alternative Komponente |OpenJDK 8 |OpenJDK 11
+|Oracle JDK 8 proprietäre Komponente |Alternative Komponente |OpenJDK 8 |OpenJDK 11 Und über
 |Java Web Start |link:#_icedtea_web[IcedTea-Web] | icon:check[] |  icon:times[]   
 |JavaFX |link:#_openjfx[OpenJFX] |  icon:times[]    |  icon:check[]  
 |T2K font rendering engine
 |link:#_freetype_font_rendering_library[Freetype] |  icon:check[]   |  icon:check[]  
 |Monotype Lucida fonts |link:#_relicensed_lucida_fonts[Relicensed Lucida
-fonts] |  icon:times[]    (coming soon) |  icon:times[]    (coming soon)
+fonts] |  icon:times[]   |  icon:times[] 
 |Ductus 2D renderer |link:#_pisces_and_marlin[Pisces/Marlin] |  icon:check[]   (Pisces)
 |  icon:check[]   (Marlin)
 |Kodac Color Matching System (KCMS) library |link:#_lcms[LCMS] |  icon:check[]   |  icon:check[]  
-|SNMP |Use link:#_jmx[JMX] (or SNMP4J) |  icon:check[]   (not bundled) |  icon:check[]   (not
-bundled)
-|Sound drivers |Use link:#_windows_sound_drivers[Windows sound drivers]
+|SNMP |Use link:#_jmx[JMX] (or SNMP4J) |  icon:check[]   (separat erhältlich) |  icon:check[]   (separat erhältlich)
+|Sound drivers |Use link:#_windows_sound_drivers[Windows Sound Treiber]
 |  icon:check[]   (not bundled) |  icon:check[]   (not bundled)
 |Java Flight Recorder (JFR) |link:#_java_flight_recorder[Java Flight
 Recorder] |  icon:check[]   |  icon:check[]  
@@ -63,8 +62,8 @@ Es wird daran gearbeitet
 daran, diese Unterschiede zu minimieren oder zu beseitigen.
 
 IcedTea-Web 1.8.x und 2.0.x sind kompatibel mit Temurin 8 Builds. Wir wissen, dass Software, welche
-auf IcedTea-Web basiert, die Ausführung von OpenJDK 11 basierten JNLP-Anwendungen unterstützt, aber IcedTea-Web
-enthält keine Tests, um die OpenJDK 11 Unterstützung zu überprüfen und wir bündeln es daher nicht mit Temurin 11 Builds.
+auf IcedTea-Web basiert, die Ausführung von OpenJDK 11 Und über basierten JNLP-Anwendungen unterstützt, aber IcedTea-Web
+enthält keine Tests, um die OpenJDK 11 Und über Unterstützung zu überprüfen und wir bündeln es daher nicht mit Temurin 11 Builds.
 
 === OpenJFX
 

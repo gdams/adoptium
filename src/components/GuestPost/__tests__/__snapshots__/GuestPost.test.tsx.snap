@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Byline component > should render correctly 1`] = `
+exports[`GuestPost component > should render correctly 1`] = `
 <div>
   <p
     style="padding: 0.5em; background-color: rgb(227, 227, 227);"

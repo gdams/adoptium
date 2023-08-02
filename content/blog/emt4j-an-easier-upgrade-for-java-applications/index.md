@@ -4,9 +4,9 @@ date: "2022-12-01T17:30:00+08:00"
 author: gangchen
 description: This article discusses EMT4J and explains its benefits.
 tags:
-  - EMT4J
-  - Java
-  - OpenJDK
+  - emt4j
+  - java
+  - openjdk
 ---
 
 ## Preface
@@ -76,17 +76,17 @@ The specific upgrade operation is divided into the following seven steps:
 5. Tom opened the `app-service-1` project and saw the following code. The following code cannot handle a version number similar to 17.0.1.
 
    ```java
-   private final String JAVA_VERSION = System.getProperty("java.version");   
+   private final String JAVA_VERSION = System.getProperty("java.version");
    private final int getJavaVersionAsInt() {
        if (this.JAVA_VERSION == null)
-           return 0; 
+           return 0;
        String str = this.JAVA_VERSION.substring(0, 1);
        str = str + this.JAVA_VERSION.substring(2, 3);
        if (this.JAVA_VERSION.length() >= 5) {
            str = str + this.JAVA_VERSION.substring(4, 5);
        } else {
            str = str + "0";
-       } 
+       }
        return Integer.parseInt(str);
    }
    ```

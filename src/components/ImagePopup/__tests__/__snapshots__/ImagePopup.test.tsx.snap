@@ -1,0 +1,36 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ImagePopup component > should render correctly 1`] = `
+<div>
+  <img
+    alt="test"
+    class="img-fluid pb-3"
+    src="test"
+    style="cursor: pointer;"
+  />
+  <div
+    aria-hidden="true"
+    aria-labelledby="exampleModalCenterTitle"
+    class="modal fade "
+    role="dialog"
+    style="display: none;"
+    tabindex="-1"
+  >
+    <div
+      class="modal-dialog modal-dialog-centered"
+      role="document"
+      style="max-width: 90%;"
+    >
+      <div
+        class="modal-content"
+      >
+        <img
+          alt="test"
+          src="test"
+          style="cursor: pointer;"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

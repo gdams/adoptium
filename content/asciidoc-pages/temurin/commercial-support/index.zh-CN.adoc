@@ -1,0 +1,41 @@
+= Commercial Support Options for Eclipse Temurin(TM)
+:page-authors: zdtsw
+
+对于Eclipse Temurin，我们提供多种商业支持选项。
+需要注意的是，以下列举的供应商并未经过Adoptium(R)项目的评估，也没有得到Adoptium(R)项目正式认可。
+每个商业支持供应商通常都针对不同的典型用例，因此建议您根据您的具体需求仔细研究各个选项。
+
+
+按字母顺序排列：
+
+[cols="1,3"]
+|===
+| 
+| 
+
+^.^|
+image:https://adoptium.net/images/ibm-logo.png[IBM,150]
+|
+With more than two decades experience implementing, delivering, and supporting Java for enterprises of all sizes and industries, https://www.ibm.com[IBM] is a proud member of the Adoptium working group, supporting and contributing to the high quality community led delivery of Eclipse Temurin. Temurin consumers can receive cost effective and flexibly licensed enterprise-grade support for their mission critical Java workloads with IBM Runtimes for Business.
+
+Visit https://www.ibm.com/products/support-for-runtimes[IBM Runtimes for Business] today for more information.
+
+^.^|
+image:https://adoptium.net/images/openelements.svg[Open Elements,150]
+|
+Purchasing OpenElements Temurin Support & Care provides you with a variety of benefits that enhance the performance and security of your Java applications and optimize your development process. As a member of Adoptium and with our exceptional network within OpenElements, we directly contribute to its development. Through our activities in the Java and Open Source ecosystem, we can provide you with information and insights into the current and future developments within the Eclipse Adoptium Working Group and the OpenJDK.
+
+For more details, please visit the https://open-elements.com/temurin-support/[Open Elements Website].
+
+^.^|
+image:https://adoptium.net/images/redhat.svg[Red Hat,150]
+|
+https://www.redhat.com[红帽子] 长期以来一直是Java社区中公认的领导者, 并致力于通过开放的、社区驱动的创新推动Java的发展。
+Red Hat的客户可以通过订阅获得对关键的Java生产环境提供的24x7全球Eclipse Temurin专业支持。
+
+请访问 https://developers.redhat.com/java/red-hat-and-java?utm_source=adoptium[Red Hat & Java] 
+或者联系 https://www.redhat.com/contact?utm_source=adoptium[红帽子销售] 以获取更多信息
+
+|===
+
+商业支持供应商可以通过 https://github.com/adoptium/adoptium.net/issues/new/choose[提交请求] 以加入此列表。

@@ -8,5 +8,25 @@
         "name": "Microsoft",
         "logo": "microsoft.svg",
         "tier": "adopter"
+    },
+    {
+        "name": "Red Hat",
+        "logo": "redhat.svg",
+        "tier": "adopter"
+    },
+    {
+        "name": "Delphix",
+        "logo": "delphix.svg",
+        "tier": "adopter"
+    },
+    {
+        "name": "GoCD",
+        "logo": "adopters/logo-gocd.svg",
+        "tier": "adopter"
+    },
+    {
+        "name": "Tirasa",
+        "logo": "adopters/logo-tirasa.svg",
+        "tier": "adopter"
     }
 ]

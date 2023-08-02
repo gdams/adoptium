@@ -138,7 +138,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Download Temurin
+                    Get Temurin
                   </span>
                 </p>
                 <div
@@ -149,15 +149,15 @@ exports[`Docs page > renders correctly 1`] = `
                   >
                     <a
                       class="list-group-item list-group-item-action"
-                      href="/temurin/releases"
+                      href="/installation"
                     >
-                      Download Eclipse Temurin
+                      Install Temurin
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
-                      href="/installation"
+                      href="/temurin/releases"
                     >
-                      Install Eclipse Temurin
+                      Download Temurin
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -186,12 +186,6 @@ exports[`Docs page > renders correctly 1`] = `
                       href="/temurin/archive"
                     >
                       Release Archive
-                    </a>
-                    <a
-                      class="list-group-item list-group-item-action"
-                      href="/temurin/nightly"
-                    >
-                      Nightly Developer Builds
                     </a>
                   </div>
                 </div>
@@ -243,7 +237,13 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/support"
                     >
-                      Support
+                      Support Guide
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="temurin/commercial-support"
+                    >
+                      Commercial Support
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -455,15 +455,21 @@ exports[`Docs page > renders correctly 1`] = `
                   >
                     <a
                       class="list-group-item list-group-item-action"
+                      href="/contributing"
+                    >
+                      How To Contribute
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
                       href="/docs/first-timer-support"
                     >
                       First Timer Support
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
-                      href="/docs/eca-sign-off"
+                      href="/temurin/nightly"
                     >
-                      Sign the Contributor Agreement
+                      Developer Nightly Builds
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -553,7 +559,7 @@ exports[`Docs page > renders correctly 1`] = `
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
-                      href="https://www.eclipse.org/security/policy.php"
+                      href="https://github.com/adoptium/adoptium/security/policy"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
@@ -610,7 +616,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Eclipse Adoptium
+                    Governance
                   </span>
                 </p>
                 <div
@@ -643,7 +649,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Sponsor the Working Group
+                      Sponsor the Project
                        
                       <svg
                         fill="currentColor"
@@ -913,9 +919,9 @@ exports[`Docs page > renders correctly 1`] = `
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
-                      href="/docs/logo-styleguide"
+                      href="/support-us"
                     >
-                      Logo Styleguide
+                      Support Us
                     </a>
                   </div>
                 </div>
@@ -954,7 +960,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Branding Materials
+                    Branding
                   </span>
                 </p>
                 <div
@@ -965,17 +971,11 @@ exports[`Docs page > renders correctly 1`] = `
                   >
                     <a
                       class="list-group-item list-group-item-action"
-                      href="/docs/brand"
-                    >
-                      Color Scheme and Fonts
-                    </a>
-                    <a
-                      class="list-group-item list-group-item-action"
                       href="https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Brand guidelines
+                      Brand Guidelines
                        
                       <svg
                         fill="currentColor"
@@ -997,7 +997,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Google Slide template
+                      Google Slide Template
                        
                       <svg
                         fill="currentColor"
@@ -1015,9 +1015,15 @@ exports[`Docs page > renders correctly 1`] = `
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
+                      href="temurin/buttons"
+                    >
+                      Download Buttons
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
                       href="/docs/marketing-criteria"
                     >
-                      Marketing criteria
+                      Marketing Criteria
                     </a>
                   </div>
                 </div>

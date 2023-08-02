@@ -4,9 +4,8 @@ date: "2022-10-14T12:20:00+00:00"
 author: yiyang
 description: This short article discusses the background and details of Java class pre-initialization.
 tags:
-  - JVM
-  - Java
-  - OpenJDK
+  - java
+  - openjdk
 ---
 
 ## 1. Background

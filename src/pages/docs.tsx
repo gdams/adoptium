@@ -17,21 +17,21 @@ const DocumentationPage = ({ data }) => (
         <div className='docs-overview py-5'>
           <div className='row justify-content-center'>
             <DocumentationCard
-              title='Download Temurin'
+              title='Get Temurin'
               Icon={FaDownload}
               links={[
-                { name: 'Download Eclipse Temurin', link: '/temurin/releases' },
-                { name: 'Install Eclipse Temurin', link: '/installation' },
+                { name: 'Install Temurin', link: '/installation' },
+                { name: 'Download Temurin', link: '/temurin/releases' },
                 { name: 'Container Images', link: 'https://hub.docker.com/_/eclipse-temurin' },
-                { name: 'Release Archive', link: '/temurin/archive' },
-                { name: 'Nightly Developer Builds', link: '/temurin/nightly' }
+                { name: 'Release Archive', link: '/temurin/archive' }
               ]}
             />
             <DocumentationCard
               title='Temurin Support'
               Icon={FaQuestion}
               links={[
-                { name: 'Support', link: '/support' },
+                { name: 'Support Guide', link: '/support' },
+                { name: 'Commercial Support', link: 'temurin/commercial-support' },
                 { name: 'Migration Guide', link: '/docs/migration' },
                 { name: 'Supported Platforms', link: '/supported-platforms' },
                 { name: 'Submit an Issue', link: 'https://github.com/adoptium/adoptium-support/issues' }
@@ -59,8 +59,9 @@ const DocumentationPage = ({ data }) => (
               title='Contributing'
               Icon={FaUserFriends}
               links={[
+                { name: 'How To Contribute', link: '/contributing' },
                 { name: 'First Timer Support', link: '/docs/first-timer-support' },
-                { name: 'Sign the Contributor Agreement', link: '/docs/eca-sign-off' },
+                { name: 'Developer Nightly Builds', link: '/temurin/nightly' },
                 { name: 'Join our Slack Channel', link: '/slack' },
                 { name: 'Code of Conduct', link: 'https://github.com/adoptium/.github/blob/main/CODE_OF_CONDUCT.md' }
               ]}
@@ -71,17 +72,17 @@ const DocumentationPage = ({ data }) => (
               links={[
                 { name: 'Secure Software Practices', link: '/docs/secure-software' },
                 { name: 'SLSA Secure Supply Chain', link: '/docs/slsa' },
-                { name: 'Vulnerability Reporting', link: 'https://www.eclipse.org/security/policy.php' }
+                { name: 'Vulnerability Reporting', link: 'https://github.com/adoptium/adoptium/security/policy' }
               ]}
             />
             <DocumentationCard
-              title='Eclipse Adoptium'
+              title='Governance'
               Icon={FaGlobe}
               links={[
                 { name: 'About Eclipse Adoptium', link: '/about' },
                 { name: 'Working Group Members', link: '/members' },
                 { name: 'Join the Working Group', link: '/join' },
-                { name: 'Sponsor the Working Group', link: 'https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' }
+                { name: 'Sponsor the Project', link: 'https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' }
               ]}
             />
             <DocumentationCard
@@ -102,17 +103,17 @@ const DocumentationPage = ({ data }) => (
                 { name: 'Frequently Asked Questions', link: '/docs/faq' },
                 { name: 'Adoptium API', link: 'https://api.adoptium.net' },
                 { name: 'Adoptium Blog', link: 'https://adoptium.net/blog' },
-                { name: 'Logo Styleguide', link: '/docs/logo-styleguide' }
+                { name: 'Support Us', link: '/support-us' }
               ]}
             />
             <DocumentationCard
-              title='Branding Materials'
+              title='Branding'
               Icon={FaRocket}
               links={[
-                { name: 'Color Scheme and Fonts', link: '/docs/brand' },
-                { name: 'Brand guidelines', link: 'https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf' },
-                { name: 'Google Slide template', link: 'https://docs.google.com/presentation/d/1ChGhqZrAHCdk5S2Ii5s5RROng1saTaTtjZzsxWJ_MPA/copy' },
-                { name: 'Marketing criteria', link: '/docs/marketing-criteria' }
+                { name: 'Brand Guidelines', link: 'https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf' },
+                { name: 'Google Slide Template', link: 'https://docs.google.com/presentation/d/1ChGhqZrAHCdk5S2Ii5s5RROng1saTaTtjZzsxWJ_MPA/copy' },
+                { name: 'Download Buttons', link: 'temurin/buttons' },
+                { name: 'Marketing Criteria', link: '/docs/marketing-criteria' }
               ]}
             />
           </div>

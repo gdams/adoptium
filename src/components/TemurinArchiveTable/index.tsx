@@ -66,7 +66,7 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                         <tr key={asset.checksum}>
                                                                             <td>
                                                                             {i === 0 &&
-                                                                                `${capitalize(asset.os)} ${asset.architecture}`
+                                                                                `${capitalize(asset.os)} ${asset.architecture === 'x32' ? 'x86' : asset.architecture}`
                                                                             }
                                                                             </td>
                                                                             <td>

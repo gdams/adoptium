@@ -12,6 +12,9 @@ export const createAsciidocData = (): {
         id: 'asciidoc-1',
         html: `
             <p>Hello World, this is a <pre><code>test</code></pre></p>
+            <pre><code class="language-java">public static void main(String[] args) {
+                System.out.println("Hello World");
+            }</code></pre>
             <table><thead><td>Header 1</td><td>Header 2</td></thead><tbody><tr><td>Cell 1</td><td class="icon">Cell 2</td></tr></tbody></table>
             <a href="https://www.eclipse.org">Eclipse</a>
             <span class="icon">[docker]</span>

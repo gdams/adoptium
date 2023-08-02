@@ -77,7 +77,7 @@ Some of the following additional requirements for Adoptium's build of Eclipse Te
 Source - https://slsa.dev/spec/v0.1/requirements#retained-indefinitely[Retained 18mo^]::
 +
 All revisions to source code and its change history are preserved indefinitely and cannot be deleted, except when subject to an established and transparent policy for obliteration, such as a legal or Eclipse Foundation policy requirement. This level of superuser control for changing or deleting history is maintained directly and exclusively by
-https://ecliipse.org[the Eclipse Foundation^]
+https://eclipse.org[the Eclipse Foundation^]
 on behalf of the project.
 +
 Since we store all our code in GitHub it is not be possible for persons to delete or modify the history, even with multi-party approval, except by trusted Eclipse Foundation platform admins with two-party approval following the foundation's obliterate policy. Questions about this policy should be

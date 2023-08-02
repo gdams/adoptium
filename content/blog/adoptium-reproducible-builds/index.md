@@ -5,7 +5,7 @@ author: andrewleonard
 description: Eclipse Adoptium is working towards fully reproducible builds, this blog explains why
  they are needed and the work ongoing to achieve them.
 tags:
-  - Temurin
+  - temurin
 ---
 
 ## Why do we need Reproducible Builds?

@@ -82,6 +82,7 @@ vi.mock('gatsby', async () => {
     .mockImplementation(({ alias }) =>
       React.createElement('div', { className: `slice--${alias}` })
     ),
+    navigate: vi.fn(),
   }
 })
 

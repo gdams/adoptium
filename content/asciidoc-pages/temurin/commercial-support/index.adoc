@@ -1,0 +1,36 @@
+= Commercial Support Options for Eclipse Temurin(TM)
+:page-authors: gdams, tellison
+
+There are a variety of commercial support options available for Eclipse Temurin. It is important to note that none of these providers have been evaluated by or are officially endorsed by the Adoptium(R) project. Each commercial support provider tends to cater to different typical use-cases, so it is recommended that you research each option carefully based on your specific needs and requirements.
+
+In alphabetical order:
+
+[cols="1,3"]
+|===
+| 
+| 
+
+^.^|
+image:https://adoptium.net/images/ibm-logo.png[IBM,150]
+|
+With more than two decades experience implementing, delivering, and supporting Java for enterprises of all sizes and industries, https://www.ibm.com[IBM] is a proud member of the Adoptium working group, supporting and contributing to the high quality community led delivery of Eclipse Temurin. Temurin consumers can receive cost effective and flexibly licensed enterprise-grade support for their mission critical Java workloads with IBM Runtimes for Business.
+
+Visit https://www.ibm.com/products/support-for-runtimes[IBM Runtimes for Business] today for more information.
+
+^.^|
+image:https://adoptium.net/images/openelements.svg[Open Elements,150]
+|
+Purchasing OpenElements Temurin Support & Care provides you with a variety of benefits that enhance the performance and security of your Java applications and optimize your development process. As a member of Adoptium and with our exceptional network within OpenElements, we directly contribute to its development. Through our activities in the Java and Open Source ecosystem, we can provide you with information and insights into the current and future developments within the Eclipse Adoptium Working Group and the OpenJDK.
+
+For more details, please visit the https://open-elements.com/temurin-support/[Open Elements Website].
+
+^.^|
+image:https://adoptium.net/images/redhat.svg[Red Hat,150]
+|
+https://www.redhat.com[Red Hat] has long been a recognized leader in the Java community, and remains committed to moving Java forward through open, community-driven innovation. Red Hat customers can get professional support for Eclipse Temurin through a subscription, enabling 24x7 worldwide support for the most critical production Java workloads.
+
+Visit https://developers.redhat.com/java/red-hat-and-java?utm_source=adoptium[Red Hat & Java] or contact https://www.redhat.com/contact?utm_source=adoptium[Red Hat Sales] for more information.
+
+|===
+
+Commercial support providers may https://github.com/adoptium/adoptium.net/issues/new/choose[open a request] to be added to this list.
