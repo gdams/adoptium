@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 8u382, 11.0.20, 17.0.8 and 20.0.2 Available
-date: "2023-07-28T12:00:00+00:00"
+date: "2023-08-04T12:00:00+00:00"
 author: pmc
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u382, 11.0.20, 17.0.8 and 20.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
@@ -9,7 +9,7 @@ tags:
   - release-notes
 ---
 
-Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u382, 11.0.20, 17.0.8 and 20.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. Binaries, installers, and source code are available from the [Temurin download page](https://adoptium.net/temurin/releases).
+Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u382, 11.0.20, 17.0.8 and 20.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. Binaries, installers, and source code are available from the [Temurin download page](https://adoptium.net/temurin/releases), [official container images](https://hub.docker.com/_/eclipse-temurin) are available at DockerHub, and [installable packages](https://adoptium.net/installation/) are available for various operating systems.
 
 ## Security Vulerabilities Resolved
 
@@ -25,6 +25,8 @@ The following table summaries security vulnerabilities fixed in this release cyc
 | [CVE-2023-22036](https://nvd.nist.gov/vuln/detail/CVE-2023-22036) | core-libs/java.util | Low ([3.7](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L))    |           | X          | X          | X          |
 | [CVE-2023-22006](https://nvd.nist.gov/vuln/detail/CVE-2023-22006) | core-libs/java.net  | Low ([3.1](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N))    |           | X          | X          | X          |
 
+Users should follow the [Adoptium policy for reporting vulnerability concerns](https://github.com/adoptium/adoptium/security/policy#security-policies-and-procedures) with this release.
+
 ## Fixes and Updates
 
 This release contains the following fixes and updates.
@@ -39,6 +41,10 @@ This release contains the following fixes and updates.
 
 ## New and Noteworthy
 
-### No JDK 20 binaries for Linux PPC64le, s390x, arm32, and AIX ppc64
+### New Container Functionality
 
-Adoptium will not be releasing JDK 20.0.2 for Linux PPC64le, s390x, arm32, and AIX ppc64 due to issues found in testing. These platforms may be released at a later date if the issues are resolved in the implementation.
+Temurin container images now have the ability to add additional Certificate Authority (CA) certificates to the truststore at runtime. This is useful for applications that wish to manage a custom list of CA's. This feature is being rolled out across all official images except Windows-based images.
+
+### No JDK 20 binaries for Linux PPC64le, s390x, arm32, and limited AIX ppc64 releases
+
+Adoptium is not releasing Temurin 20.0.2 for Linux PPC64le, s390x, arm32, and AIX ppc64 due to issues found in testing. In addition, Adoptium is only be releasing Temurin 8u832 for AIX ppc64 at present as other Java versions on AIX ppc64 have a known issue that is being resolved by a dependency. These platforms may be released at a later date if the issues are resolved in the upstream implementations.
