@@ -33,5 +33,10 @@
         "name": "Radiant Logic",
         "logo": "adopters/logo-radiant-logic.png",
         "tier": "adopter"
+    },
+    {
+        "name": "Doping Technology",
+        "logo": "adopters/logo-doping-tech.svg",
+        "tier": "adopter"
     }
 ]
