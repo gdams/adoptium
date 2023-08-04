@@ -87,6 +87,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
             >
               <div
                 class="MuiDataGrid-columnHeaders MuiDataGrid-withBorderColor css-1iyq7zh-MuiDataGrid-columnHeaders"
+                role="presentation"
                 style="min-height: 56px; max-height: 56px; line-height: 56px;"
               >
                 <div
@@ -112,9 +113,11 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -214,9 +217,11 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -290,9 +295,11 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -366,9 +373,11 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -442,9 +451,11 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         class="MuiDataGrid-columnHeaderDraggableContainer"
                         draggable="false"
+                        role="presentation"
                       >
                         <div
                           class="MuiDataGrid-columnHeaderTitleContainer"
+                          role="presentation"
                         >
                           <div
                             class="MuiDataGrid-columnHeaderTitleContainerContent"
@@ -510,14 +521,17 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
               </div>
               <div
                 class="MuiDataGrid-virtualScroller css-axafay-MuiDataGrid-virtualScroller"
+                role="presentation"
                 style="overflow-x: hidden; overflow-y: hidden;"
               >
                 <div
                   class="MuiDataGrid-virtualScrollerContent css-1kwdphh-MuiDataGrid-virtualScrollerContent"
+                  role="presentation"
                   style="width: auto; height: 52px; min-height: auto;"
                 >
                   <div
                     class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
+                    role="rowgroup"
                     style="transform: translate3d(0px, 0px, 0px);"
                   >
                     <div
@@ -572,6 +586,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       >
                         <div
                           class="MuiDataGrid-cellContent"
+                          role="presentation"
                           title="component_mock"
                         >
                           component_mock
@@ -607,6 +622,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       >
                         <div
                           class="MuiDataGrid-cellContent"
+                          role="presentation"
                           title="title_mock"
                         >
                           title_mock
