@@ -10,6 +10,9 @@
         "logo": {
           "type": "string"
         },
+        "logoPadding": {
+          "type": "string"
+        },
         "tier": {
           "type": "string",
           "enum": ["adopter"]
