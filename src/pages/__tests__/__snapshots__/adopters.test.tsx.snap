@@ -4,6 +4,7 @@ exports[`Adopters page > renders correctly 1`] = `
 <main>
   <section
     class="py-5 text-center container"
+    style="max-width: 80em;"
   >
     <div
       class="row py-lg-5"
@@ -28,7 +29,7 @@ exports[`Adopters page > renders correctly 1`] = `
             class="row justify-content-center align-items-center"
           >
             <div
-              class="col-lg-4 col-md-12 mt-5"
+              class="col-lg-3 col-md-12 mt-5"
             >
               <a
                 href="https://mock.com"
@@ -146,6 +147,5 @@ exports[`Adopters page > renders correctly 1`] = `
       </div>
     </div>
   </section>
-  ;
 </main>
 `;
