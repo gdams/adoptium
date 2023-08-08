@@ -19,7 +19,7 @@
         },
         "tier": {
           "type": "string",
-          "enum": ["strategic", "enterprise", "participant", "sponsor", "infra"]
+          "enum": ["adopter", "strategic", "enterprise", "participant", "sponsor", "infra"]
         }
       },
       "required": ["name", "logo", "url", "tier"],

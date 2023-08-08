@@ -1,6 +1,6 @@
 import Ajv from 'ajv';
 import adopters from '../adopters.json';
-import adoptersSchema from '../adopters.schema.json';
+import adoptersSchema from '../members.schema.json';
 
 const ajv = new Ajv();
 const validate = ajv.compile(adoptersSchema);
