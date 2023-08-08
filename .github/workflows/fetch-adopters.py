@@ -41,6 +41,7 @@ if temurin_project is not None:
             new_adopter = {
                 "name": adopter["name"],
                 "logo": "adopters/" + adopter["logo"],
+                "url": adopter["homepage_url"],
                 "tier": "adopter",
             }
             current_adopters.append(new_adopter)
