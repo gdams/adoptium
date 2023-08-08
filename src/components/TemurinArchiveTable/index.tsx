@@ -54,9 +54,9 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                 <tbody>
                                                     <tr>
                                                         <td className="fw-bold">OS / Architecture</td>
-                                                        <td className="fw-bold" style={{borderLeft: "1px solid #DDD"}}>Installer</td>
+                                                        <td className="fw-bold" style={{borderLeft: "1px solid rgb(221, 221, 221)"}}>Installer</td>
                                                         <td className="fw-bold">SHA256</td>
-                                                        <td className="fw-bold" style={{borderLeft: "1px solid #DDD"}}>Binary</td>
+                                                        <td className="fw-bold" style={{borderLeft: "1px solid rgb(221, 221, 221)"}}>Binary</td>
                                                         <td className="fw-bold">SHA256</td>
                                                     </tr>
                                                     {Object.keys(release.platforms).map(function(key) {
@@ -70,7 +70,7 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                                 `${capitalize(asset.os)} ${asset.architecture === 'x32' ? 'x86' : asset.architecture}`
                                                                             }
                                                                             </td>
-                                                                            <td style={{borderLeft: "1px solid #DDD", paddingLeft: "20px"}}>
+                                                                            <td style={{borderLeft: "1px solid rgb(221, 221, 221)", paddingLeft: "20px"}}>
                                                                                 {asset.installer_link ? (
                                                                                     <DownloadButton
                                                                                         link={asset.installer_link}
@@ -92,7 +92,7 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                             ): <></>
                                                                             }
                                                                             </td>
-                                                                            <td style={{borderLeft: "1px solid #DDD", paddingLeft: "20px"}}>
+                                                                            <td style={{borderLeft: "1px solid rgb(221, 221, 221)", paddingLeft: "20px"}}>
                                                                                 <DownloadButton
                                                                                     link={asset.link}
                                                                                     platform={key}
