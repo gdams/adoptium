@@ -53,5 +53,23 @@
         "logo": "adopters/logo-total-validator.svg",
         "url": "https://www.totalvalidator.com/",
         "tier": "adopter"
+    },
+    {
+        "name": "Dynatrace",
+        "logo": "adopters/logo-dynatrace.png",
+        "url": "https://www.dynatrace.com/",
+        "tier": "adopter"
+    },
+    {
+        "name": "Kestra",
+        "logo": "adopters/logo-kestra.svg",
+        "url": "https://kestra.io/",
+        "tier": "adopter"
+    },
+    {
+        "name": "R3m Score",
+        "logo": "adopters/logo-r3m-score.png",
+        "url": "https://r3mscore.com/",
+        "tier": "adopter"
     }
 ]
