@@ -22,7 +22,7 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                         results.releases.map(
                             (release, i): string | JSX.Element =>
                                 release && (
-                                    <tr key={i} className="release-row">
+                                    <tr key={`release-${i}`} className="release-row">
                                         <td className="text-white" style={{backgroundColor: "#333"}}>
                                             <div>
                                                 <a href={release.release_link} className="link-light">
@@ -64,7 +64,7 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                             release.platforms[key].assets.map(
                                                                 (asset, i): string | JSX.Element =>
                                                                     asset && (
-                                                                        <tr key={i}>
+                                                                        <tr key={`asset-${i}`}>
                                                                             <td>
                                                                             {i === 0 &&
                                                                                 `${capitalize(asset.os)} ${asset.architecture === 'x32' ? 'x86' : asset.architecture}`
