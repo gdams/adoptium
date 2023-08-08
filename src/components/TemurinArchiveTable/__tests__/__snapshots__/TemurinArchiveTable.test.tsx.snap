@@ -150,14 +150,25 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
             >
               <tbody>
                 <tr>
-                  <td />
                   <td
                     class="fw-bold"
+                  >
+                    OS / Architecture
+                  </td>
+                  <td
+                    class="fw-bold"
+                    style="border-left: 1px solid rgb(221, 221, 221);"
                   >
                     Installer
                   </td>
                   <td
                     class="fw-bold"
+                  >
+                    SHA256
+                  </td>
+                  <td
+                    class="fw-bold"
+                    style="border-left: 1px solid rgb(221, 221, 221);"
                   >
                     Binary
                   </td>
@@ -171,7 +182,9 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                   <td>
                     Os_mock architecture_mock
                   </td>
-                  <td>
+                  <td
+                    style="border-left: 1px solid rgb(221, 221, 221); padding-left: 20px;"
+                  >
                     <a
                       class="btn"
                       style="width: 9em; background-color: rgb(215, 222, 233);"
@@ -179,9 +192,14 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                       Not Available
                     </a>
                   </td>
-                  <td>
+                  <td
+                    style="padding-right: 20px;"
+                  />
+                  <td
+                    style="border-left: 1px solid rgb(221, 221, 221); padding-left: 20px;"
+                  >
                     <a
-                      class="btn btn-secondary"
+                      class="btn btn-primary"
                       href="/download"
                       state="[object Object]"
                       style="width: 9em;"
@@ -323,14 +341,25 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
             >
               <tbody>
                 <tr>
-                  <td />
                   <td
                     class="fw-bold"
+                  >
+                    OS / Architecture
+                  </td>
+                  <td
+                    class="fw-bold"
+                    style="border-left: 1px solid rgb(221, 221, 221);"
                   >
                     Installer
                   </td>
                   <td
                     class="fw-bold"
+                  >
+                    SHA256
+                  </td>
+                  <td
+                    class="fw-bold"
+                    style="border-left: 1px solid rgb(221, 221, 221);"
                   >
                     Binary
                   </td>
@@ -344,7 +373,9 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                   <td>
                     Os_mock architecture_mock
                   </td>
-                  <td>
+                  <td
+                    style="border-left: 1px solid rgb(221, 221, 221); padding-left: 20px;"
+                  >
                     <a
                       class="btn btn-primary"
                       href="/download"
@@ -355,9 +386,23 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                        
                     </a>
                   </td>
-                  <td>
+                  <td
+                    style="padding-right: 20px;"
+                  >
                     <a
-                      class="btn btn-secondary"
+                      data-bs-checksum="installer_checksum_mock"
+                      data-bs-target="#checksumModal"
+                      data-bs-toggle="modal"
+                      href=""
+                    >
+                      Text
+                    </a>
+                  </td>
+                  <td
+                    style="border-left: 1px solid rgb(221, 221, 221); padding-left: 20px;"
+                  >
+                    <a
+                      class="btn btn-primary"
                       href="/download"
                       state="[object Object]"
                       style="width: 9em;"
