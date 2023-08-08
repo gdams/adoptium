@@ -85,6 +85,6 @@ export const query = graphql`
 export interface MembersProps {
   name: string;
   logo: string;
-  url?: string;
+  url: string;
   tier: string;
 }

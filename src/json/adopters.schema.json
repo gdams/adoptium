@@ -13,12 +13,16 @@
         "logoPadding": {
           "type": "string"
         },
+        "url": {
+          "type": "string",
+          "pattern": "^https://[^\\s/$.?#].[^\\s]*$"
+        },
         "tier": {
           "type": "string",
           "enum": ["adopter"]
         }
       },
-      "required": ["name", "logo", "tier"],
+      "required": ["name", "logo", "url", "tier"],
       "additionalProperties": false
     }
   }

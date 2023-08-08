@@ -32,7 +32,7 @@ The brownout plan is a carefully orchestrated process that aims to gradually pha
 | July 05 - July 20          | No Brownout, Notifications Only            |
 | July 21 - July 27          | 2:00 - 3:00 and 14:00 - 15:00              |
 | July 28 - August 3         | 1:00 - 3:00, 13:00 - 15:00, 22:00 - 00:00  |
-| August 4 - August 10       | 1:00 - 5:00, 12:00 - 16:00, 22:00 - 02:00  |
+| August 4 - August 10       | 12:00 - 16:00, 22:00 - 05:00               |
 | August 11 - August 17      | 1:00 - 9:00                                |
 | August 18 - August 24      | 1:00 - 13:00                               |
 | August 25 - August 31      | 1:00 - 17:00                               |
