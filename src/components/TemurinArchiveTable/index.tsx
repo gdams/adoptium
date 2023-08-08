@@ -53,9 +53,10 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                             <table className="archive-platforms">
                                                 <tbody>
                                                     <tr>
-                                                        <td></td>
-                                                        <td className="fw-bold">Installer</td>
-                                                        <td className="fw-bold">Binary</td>
+                                                        <td className="fw-bold">OS / Architecture</td>
+                                                        <td className="fw-bold" style={{borderLeft: "1px solid #DDD"}}>Installer</td>
+                                                        <td className="fw-bold">SHA256</td>
+                                                        <td className="fw-bold" style={{borderLeft: "1px solid #DDD"}}>Binary</td>
                                                         <td className="fw-bold">SHA256</td>
                                                     </tr>
                                                     {Object.keys(release.platforms).map(function(key) {
@@ -63,13 +64,13 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                             release.platforms[key].assets.map(
                                                                 (asset, i): string | JSX.Element =>
                                                                     asset && (
-                                                                        <tr key={asset.checksum}>
+                                                                        <tr key={i}>
                                                                             <td>
                                                                             {i === 0 &&
                                                                                 `${capitalize(asset.os)} ${asset.architecture === 'x32' ? 'x86' : asset.architecture}`
                                                                             }
                                                                             </td>
-                                                                            <td>
+                                                                            <td style={{borderLeft: "1px solid #DDD", paddingLeft: "20px"}}>
                                                                                 {asset.installer_link ? (
                                                                                     <DownloadButton
                                                                                         link={asset.installer_link}
@@ -85,7 +86,13 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                                     </a>
                                                                                 }
                                                                             </td>
-                                                                            <td>
+                                                                            <td style={{paddingRight: "20px"}}>
+                                                                            {asset.installer_link ? (
+                                                                                <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.installer_checksum}><Trans>Checksum</Trans></a>
+                                                                            ): <></>
+                                                                            }
+                                                                            </td>
+                                                                            <td style={{borderLeft: "1px solid #DDD", paddingLeft: "20px"}}>
                                                                                 <DownloadButton
                                                                                     link={asset.link}
                                                                                     platform={key}
@@ -142,7 +149,7 @@ const DownloadButton = ({ link, type, size, platform, version, installer }: Down
     let os: string = capitalize(platform.split("-")[0])
     let arch: string = platform.split("-")[1]
     return (
-        <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: type, java_version: version }} className={installer ? `btn btn-primary` : `btn btn-secondary`} style={{width: "9em"}}>
+        <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: type, java_version: version }} className="btn btn-primary" style={{width: "9em"}}>
             {type} {!installer ? (size + " MB") : ""}
         </Link>
     )
