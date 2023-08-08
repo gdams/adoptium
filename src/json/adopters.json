@@ -2,46 +2,56 @@
     {
         "name": "OpenElements",
         "logo": "openelements.svg",
+        "url": "https://open-elements.com/",
         "tier": "adopter"
     },
     {
         "name": "Microsoft",
         "logo": "microsoft.svg",
+        "url": "https://opensource.microsoft.com/",
         "tier": "adopter"
     },
     {
         "name": "Red Hat",
         "logo": "redhat.svg",
+        "url": "https://www.redhat.com/",
         "tier": "adopter"
     },
     {
         "name": "Delphix",
         "logo": "delphix.svg",
+        "url": "https://www.delphix.com/",
         "tier": "adopter"
     },
     {
         "name": "GoCD",
         "logo": "adopters/logo-gocd.svg",
+        "logoPadding": "1em",
+        "url": "https://www.gocd.org/",
         "tier": "adopter"
     },
     {
         "name": "Tirasa",
         "logo": "adopters/logo-tirasa.svg",
+        "url": "https://www.tirasa.net/",
         "tier": "adopter"
     },
     {
         "name": "Radiant Logic",
         "logo": "adopters/logo-radiant-logic.png",
+        "url": "https://www.radiantlogic.com/",
         "tier": "adopter"
     },
     {
         "name": "Doping Technology",
         "logo": "adopters/logo-doping-tech.svg",
+        "url": "https://dopingtech.com/",
         "tier": "adopter"
     },
     {
         "name": "Total Validator",
         "logo": "adopters/logo-total-validator.svg",
+        "url": "https://www.totalvalidator.com/",
         "tier": "adopter"
     }
 ]
