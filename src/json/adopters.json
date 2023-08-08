@@ -69,6 +69,7 @@
     {
         "name": "R3m Score",
         "logo": "adopters/logo-r3m-score.png",
+        "logoPadding": "1em",
         "url": "https://r3mscore.com/",
         "tier": "adopter"
     }
