@@ -83,5 +83,11 @@
         "logo": "adopters/logo-timefold.png",
         "url": "https://timefold.ai/",
         "tier": "adopter"
+    },
+    {
+        "name": "Societe Generale",
+        "logo": "adopters/logo-societe-generale.svg",
+        "url": "https://www.societegenerale.com/",
+        "tier": "adopter"
     }
 ]
