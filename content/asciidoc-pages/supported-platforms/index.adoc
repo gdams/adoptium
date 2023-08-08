@@ -51,7 +51,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
-5+h| Linux (ARM 32-bit Hard-Float) footnote:glibc217[]
+5+h| Linux (ARM 32-bit Hard-Float) footnote:glibc223[These builds should work on any distribution with glibc version 2.23 or higher.]
 | Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[]
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[]
 | Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:times[]
