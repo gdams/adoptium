@@ -72,5 +72,17 @@
         "logoPadding": "1em",
         "url": "https://r3mscore.com/",
         "tier": "adopter"
+    },
+    {
+        "name": "Blockbax",
+        "logo": "adopters/logo-blockbax.svg",
+        "url": "https://blockbax.com/",
+        "tier": "adopter"
+    },
+    {
+        "name": "Timefold",
+        "logo": "adopters/logo-timefold.png",
+        "url": "https://timefold.ai/",
+        "tier": "adopter"
     }
 ]
