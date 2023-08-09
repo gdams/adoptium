@@ -94,7 +94,7 @@ Sep 2023
 | Sep 2021
 | 18 Jul 2023 +
 [.small]#jdk-17.0.8+7#
-| 18 Oct 2023 +
+| 17 Oct 2023 +
 [.small]#jdk-17.0.9#
 | At least Oct 2027
 
@@ -102,7 +102,7 @@ Sep 2023
 | Sep 2018
 | 18 Jul 2023 +
 [.small]#jdk-11.0.20+8#
-| 18 Oct 2023 +
+| 17 Oct 2023 +
 [.small]#jdk-11.0.21#
 | At least Oct 2024
 
@@ -110,7 +110,7 @@ Sep 2023
 | Mar 2014
 | 18 Jul 2023 +
 [.small]#jdk8u382-b05#
-| 18 Oct 2023 +
+| 17 Oct 2023 +
 [.small]#jdk8u392#
 | At least Nov 2026
 
