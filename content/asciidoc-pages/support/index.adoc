@@ -71,7 +71,7 @@ Sep 2023
 
 | Java 20
 | Mar 2023
-| 18 Jul 2023 +
+| 20 Jul 2023 +
 [.small]#jdk-20.0.2+9#
 | EOSL^[2]^
 | Expected Sep 2023
@@ -108,7 +108,7 @@ Sep 2023
 
 | Java 8 (LTS)
 | Mar 2014
-| 18 Jul 2023 +
+| 21 Jul 2023 +
 [.small]#jdk8u382-b05#
 | 17 Oct 2023 +
 [.small]#jdk8u392#
