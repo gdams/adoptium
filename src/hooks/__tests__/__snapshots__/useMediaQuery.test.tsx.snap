@@ -2,7 +2,7 @@
 
 exports[`useMediaQuery > should check for matchMedia support 1`] = `
 <div>
-  undefined
+  false
 </div>
 `;
 

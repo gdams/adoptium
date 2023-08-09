@@ -1,79 +1,61 @@
-import React, { useState, useEffect } from "react";
-import Carousel from "react-bootstrap/Carousel";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import React from "react";
+import Slider from "react-slick";
+
+import "./BrandCarousel.scss"
 
 const BrandCarousel = () => {
   const logos = [
     "microsoft.svg", // Replace with your logo image file names
     "ibm-logo.png",
-    "bloomberg.svg",
-    "huawei.svg",
-    "macstadium.png",
+    "adopters/logo-societe-generale.svg",
     "redhat.svg",
     "google.svg",
+    "adopters/logo-dynatrace.png",
+    "redhat.svg",
   ];
 
-  const [slidesToShow, setSlidesToShow] = useState(1);
-
-  const getSlidesToShow = () => {
-    // if window is defined, get the width of the screen else return 1200 for CI testing
-    const screenWidth =
-      typeof window !== "undefined" ? window.innerWidth : 1200;
-    if (screenWidth >= 992) {
-      return 6;
-    } else {
-      return 2;
-    }
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 2
+      }
+    }]
   };
 
-  useEffect(() => {
-    setSlidesToShow(getSlidesToShow());
-  }, []);
-
-  const interval = slidesToShow === 1 ? 2000 : 5000; // Set interval based on slidesToShow value
-  const logosToAdd =
-    (slidesToShow - (logos.length % slidesToShow)) % slidesToShow; // Calculate number of logos to add for complete row
-  const logosToDisplay = [...logos, ...logos.slice(0, logosToAdd)]; // Create new array with logos to display
-
   return (
-    <Carousel
-      interval={interval} // Time in ms to auto-slide to the next item
-      pause={false} // Disable pausing on mouseover when showing multiple slides
-      wrap={true} // Enable infinite loop
-      controls={false} // Hide the previous and next buttons
-    >
-      {logosToDisplay.map((logo, index) => {
-        if (index % slidesToShow === 0) {
-          return (
-            <Carousel.Item key={index}>
-              <Row className="justify-content-center">
-                {logosToDisplay
-                  .slice(index, index + slidesToShow)
-                  .map((logo, subIndex) => (
-                    <Col key={`${index}-${subIndex}`}>
-                      <img
-                        className="d-block px-3"
-                        style={{
-                          filter: "grayscale(100%)",
-                          opacity: "0.7",
-                          maxHeight: "4em",
-                          margin: "1rem auto",
-                        }}
-                        src={`/images/${logo}`}
-                        alt={`Brand logo ${index + subIndex + 1}`}
-                      />
-                    </Col>
-                  ))}
-              </Row>
-            </Carousel.Item>
-          );
-        } else {
-          return null;
-        }
-      })}
-    </Carousel>
-  );
+    <Slider {...settings}>
+      {logos.map((logo, logoIndex) => (
+        <div key={logoIndex}>
+          <img
+            src={`/images/${logo}`}
+            className="mx-auto d-block"
+            style={{
+              filter: "grayscale(100%)",
+              opacity: "0.7",
+              maxWidth: "10em",
+              transition: "filter 0.3s" 
+            }}
+            onMouseEnter={e => e.currentTarget.style.filter = "grayscale(0%)"}
+            onMouseLeave={e => e.currentTarget.style.filter = "grayscale(100%)"}
+            alt={`${logo} logo`}
+          />
+        </div>
+      ))}
+    </Slider>
+  )
 };
 
 export default BrandCarousel;

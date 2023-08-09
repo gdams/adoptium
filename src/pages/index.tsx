@@ -46,7 +46,7 @@ const IndexPage = ({data}) => {
         </div>
       </section>
       {/* align the below text in the center */}
-      <p className='text-center text-muted text-lead pt-3'>The largest companies in the world trust Eclipse Temurin for their Java workloads</p>
+      <p className='text-center fs-5 text-muted text-lead py-3'>The largest companies in the world trust Eclipse Temurin for their Java workloads</p>
       <BrandCarousel />
       <section id='about' className='about'>
         <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
