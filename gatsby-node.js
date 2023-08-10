@@ -66,6 +66,25 @@ exports.sourceNodes = async ({ actions, createNodeId }) => {
     }
   }
   createNode(node)
+
+  // Create a node for the most_recent_feature_version
+  const latestFeatureVersion = data.most_recent_feature_version
+  const nodeContentFeatureVersion = JSON.stringify(latestFeatureVersion)
+  const MostRecentFeatureVersion = {
+    id: createNodeId('adoptium-feature-version-most-recent'), // Unique identifier for each node
+    version: latestFeatureVersion,
+    parent: null,
+    children: [],
+    internal: {
+      type: 'MostRecentFeatureVersion',
+      content: nodeContentFeatureVersion,
+      contentDigest: crypto
+        .createHash('md5')
+        .update(nodeContentFeatureVersion)
+        .digest('hex')
+    }
+  }
+  createNode(MostRecentFeatureVersion)
 }
 
 exports.onCreatePage = ({ page, actions }) => {

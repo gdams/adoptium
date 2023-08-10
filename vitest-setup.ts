@@ -27,6 +27,9 @@ vi.mock('gatsby', async () => {
     mostRecentLts: {
       version: 1,
     },
+    mostRecentFeatureVersion: {
+      version: 2,
+    },
     allVersions: {
       edges: [
         {

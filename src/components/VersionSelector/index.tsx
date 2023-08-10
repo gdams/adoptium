@@ -24,10 +24,14 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       mostRecentLts {
         version
       }
+      mostRecentFeatureVersion {
+        version
+      }
     }
   `)
 
   const defaultVersion = data.mostRecentLts.version;
+  const mostRecentFeatureVersion = data.mostRecentFeatureVersion.version;
   const versions = data.allVersions.edges;
 
   const { language } = useI18next();
@@ -81,11 +85,15 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       <div className="input-group p-3 d-flex justify-content-center">
         <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
         <select data-testid="version-filter" aria-label="version-filter" id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm" style={{ maxWidth: '10em' }}>
+            {/* if releaseType is ea add another option */}
+            {releaseType === "ea" && (
+              <option key={mostRecentFeatureVersion} value={mostRecentFeatureVersion}>{`${mostRecentFeatureVersion} - EA`}</option>
+            )}
             {/* loop through versions array from graphql */}
             {versions.map(
-                (version, i): number | JSX.Element => version && (
-                    <option key={version.node.id} value={version.node.version}>{version.node.label}</option>
-                )
+              (version, i): number | JSX.Element => version && (
+                <option key={version.node.id} value={version.node.version}>{version.node.label}</option>
+              )
             )}
         </select>
       </div>
