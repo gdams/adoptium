@@ -89,5 +89,17 @@
         "logo": "adopters/logo-societe-generale.svg",
         "url": "https://www.societegenerale.com/",
         "tier": "adopter"
+    },
+    {
+        "name": "Scentbird",
+        "logo": "adopters/logo-scentbird.png",
+        "url": "https://www.scentbird.com",
+        "tier": "adopter"
+    },
+    {
+        "name": "T-Systems",
+        "logo": "adopters/logo-t-systems.svg",
+        "url": "https://www.t-systems.com/",
+        "tier": "adopter"
     }
 ]
