@@ -91,7 +91,7 @@
     "react-test-renderer": "^18.2.0",
     "vitest": "^0.34.1",
     "vitest-axe": "^0.1.0",
-    "vitest-canvas-mock": "^0.3.2"
+    "vitest-canvas-mock": "^0.3.3"
   },
   "overrides": {
     "gatsby-plugin-react-i18next": {
