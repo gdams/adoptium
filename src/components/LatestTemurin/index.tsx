@@ -83,15 +83,15 @@ const LatestTemurin = (props): JSX.Element => {
                     <br/>
                     <span style={{ fontSize: '.6em'}} className="font-weight-light">{binary.release_name}</span>
                 </Link>
-                <Link to="/temurin/releases" className="btn btn-outline-dark mt-3">
-                    <Trans>Other platforms and versions</Trans> <FaArrowCircleRight />
-                </Link>
               </>
             ) :
               <Link to="/temurin/releases" className="btn btn-lg btn-primary mt-3 py-3 text-white">
                   <FaDownload /> Latest LTS releases
               </Link>
             }
+            <Link to="/temurin/releases" className="btn btn-outline-dark mt-3">
+                <Trans>Other platforms and versions</Trans> <FaArrowCircleRight />
+            </Link>
             <Link to="/temurin/archive" className="btn btn-outline-dark mt-3">
                 <Trans>Release Archive</Trans> <FaArchive />
             </Link>
