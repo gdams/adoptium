@@ -11,7 +11,7 @@ exports[`getAssetsForVersion > returns valid JSON - ea 1`] = `
             {
               "architecture": "arch_mock",
               "checksum": "checksum_mock",
-              "extension": "tar.gz",
+              "extension": ".tar.gz",
               "link": "https://link_mock/",
               "os": "os_mock",
               "size": 0,
@@ -39,7 +39,7 @@ exports[`getAssetsForVersion > returns valid JSON - with installers 1`] = `
             {
               "architecture": "arch_mock",
               "checksum": "checksum_mock",
-              "extension": "tar.gz",
+              "extension": ".tar.gz",
               "installer_checksum": "installer_checksum_mock",
               "installer_extension": ".msi",
               "installer_link": "https://installer_link_mock/",
@@ -71,7 +71,7 @@ exports[`getAssetsForVersion > returns valid JSON - with release notes 1`] = `
             {
               "architecture": "arch_mock",
               "checksum": "checksum_mock",
-              "extension": "tar.gz",
+              "extension": ".tar.gz",
               "link": "https://link_mock/",
               "os": "os_mock",
               "size": 0,
@@ -100,7 +100,7 @@ exports[`getAssetsForVersion > returns valid JSON - with source 1`] = `
             {
               "architecture": "arch_mock",
               "checksum": "checksum_mock",
-              "extension": "tar.gz",
+              "extension": ".tar.gz",
               "link": "https://link_mock/",
               "os": "os_mock",
               "size": 0,
@@ -129,7 +129,7 @@ exports[`getAssetsForVersion > returns valid JSON 1`] = `
             {
               "architecture": "arch_mock",
               "checksum": "checksum_mock",
-              "extension": "tar.gz",
+              "extension": ".tar.gz",
               "link": "https://link_mock/",
               "os": "os_mock",
               "size": 0,
