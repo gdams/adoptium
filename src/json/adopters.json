@@ -102,5 +102,23 @@
         "logo": "adopters/logo-t-systems.svg",
         "url": "https://www.t-systems.com/",
         "tier": "adopter"
+    },
+    {
+        "name": "Apache SkyWalking",
+        "logo": "adopters/logo-apache-skywalking.svg",
+        "url": "https://skywalking.apache.org/",
+        "tier": "adopter"
+    },
+    {
+        "name": "gematik GmbH",
+        "logo": "adopters/logo-gematik.png",
+        "url": "https://www.gematik.de/",
+        "tier": "adopter"
+    },
+    {
+        "name": "MongoDB",
+        "logo": "adopters/logo-mongodb.svg",
+        "url": "https://mongodb.com/",
+        "tier": "adopter"
     }
 ]

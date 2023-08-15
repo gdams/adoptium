@@ -226,7 +226,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                       />
                     </svg>
                      
-                    tar.gz
+                    .tar.gz
                   </a>
                 </td>
               </tr>
@@ -407,7 +407,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                       />
                     </svg>
                      
-                    tar.gz
+                    .tar.gz
                   </a>
                 </td>
               </tr>

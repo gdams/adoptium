@@ -31,7 +31,7 @@ const DocumentationPage = ({ data }) => (
               Icon={FaQuestion}
               links={[
                 { name: 'Support Guide', link: '/support' },
-                { name: 'Commercial Support', link: 'temurin/commercial-support' },
+                { name: 'Commercial Support', link: '/temurin/commercial-support' },
                 { name: 'Migration Guide', link: '/docs/migration' },
                 { name: 'Supported Platforms', link: '/supported-platforms' },
                 { name: 'Submit an Issue', link: 'https://github.com/adoptium/adoptium-support/issues' }

@@ -45,6 +45,12 @@ This release contains the following fixes and updates.
 
 Temurin container images now have the ability to add additional Certificate Authority (CA) certificates to the truststore at runtime. This is useful for applications that wish to manage a custom list of CA's. This feature is being rolled out across all official images except Windows-based images.
 
+Further details about "Can I add my internal CA certificates to the truststore?" are described on the [Dockerhub documentation page](https://hub.docker.com/_/eclipse-temurin).
+
 ### No JDK 20 binaries for Linux PPC64le, s390x, arm32, and limited AIX ppc64 releases
 
 Adoptium is not releasing Temurin 20.0.2 for Linux PPC64le, s390x, arm32, and AIX ppc64 due to issues found in testing. In addition, Adoptium is only be releasing Temurin 8u832 for AIX ppc64 at present as other Java versions on AIX ppc64 have a known issue that is being resolved by a dependency. These platforms may be released at a later date if the issues are resolved in the upstream implementations.
+
+### New AIX version requirement
+
+From this release onwards, all Temurin versions published for AIX now require AIX OS version 7.1.

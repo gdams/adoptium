@@ -14,20 +14,23 @@ let defaultArch = 'any'
 
 const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     const data = useStaticQuery(graphql`
-        query VersionsQuery {
+      query VersionsQuery {
         allVersions(sort: {version: DESC}) {
-            edges {
+          edges {
             node {
-                version
-                label
-                lts
+              version
+              label
+              lts
             }
-            }
+          }
         }
         mostRecentLts {
-            version
+          version
         }
+        mostRecentFeatureVersion {
+          version
         }
+      }
     `)
 
     const defaultVersion = data.mostRecentLts.version;

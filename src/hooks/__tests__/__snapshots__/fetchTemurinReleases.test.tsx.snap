@@ -7,7 +7,7 @@ exports[`loadLatestAssets > returns valid JSON + installer 1`] = `
     "binaries": [
       {
         "checksum": "checksum_mock",
-        "extension": "tar.gz",
+        "extension": ".tar.gz",
         "installer_checksum": "installer_checksum_mock",
         "installer_extension": ".msi",
         "installer_link": "https://installer_link_mock/",
@@ -33,7 +33,7 @@ exports[`loadLatestAssets > returns valid JSON 1`] = `
     "binaries": [
       {
         "checksum": "checksum_mock",
-        "extension": "tar.gz",
+        "extension": ".tar.gz",
         "link": "https://link_mock/",
         "size": 0,
         "type": "JDK",
@@ -55,7 +55,7 @@ exports[`loadLatestAssets > source image is processed correctly 1`] = `
     "binaries": [
       {
         "checksum": "checksum_mock",
-        "extension": "tar.gz",
+        "extension": ".tar.gz",
         "link": "https://link_mock/",
         "size": 0,
         "type": "JDK",
