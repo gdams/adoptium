@@ -154,14 +154,3 @@ const IntersectionObserverMock = vi.fn(() => ({
 }))
 
 vi.stubGlobal('IntersectionObserver', IntersectionObserverMock)
-
-// Fix for "matchMedia not present, legacy browsers require a polyfill jest" error
-window.matchMedia =
-  window.matchMedia ||
-  function() {
-    return {
-      matches: false,
-      addListener: function() {},
-      removeListener: function() {}
-    };
-  };
