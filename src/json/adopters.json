@@ -120,5 +120,11 @@
         "logo": "adopters/logo-mongodb.svg",
         "url": "https://mongodb.com/",
         "tier": "adopter"
+    },
+    {
+        "name": "Mindus SARL",
+        "logo": "adopters/logo-mindus.svg",
+        "url": "https://www.mindus.co/",
+        "tier": "adopter"
     }
 ]
