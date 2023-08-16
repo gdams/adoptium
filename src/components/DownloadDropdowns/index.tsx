@@ -31,24 +31,28 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
       }
     `)
 
+    // init the default selected Operation System, if any from the param 'os'
     let defaultSelectedOS = 'any';
     const osParam = queryString.parse(useLocation().search).os;
     if (osParam) {
         defaultSelectedOS = osParam.toString();
     }
 
+    // init the default selected Architecture, if any from the param 'arch'
     let defaultSelectedArch = 'any';
     const archParam = queryString.parse(useLocation().search).arch;
     if (archParam) {
         defaultSelectedArch = archParam.toString();
     }
 
+    // init the default selected Package Type, if any from the param 'package'
     let defaultSelectedPackageType = 'any';
-    const packageTypeParam = queryString.parse(useLocation().search).packageType;
-    if (packageTypeParam) {
-        defaultSelectedPackageType = packageTypeParam.toString();
+    const packageParam = queryString.parse(useLocation().search).package;
+    if (packageParam) {
+        defaultSelectedPackageType = packageParam.toString();
     }
 
+    // init the default selected Version, if any from the param 'version' or from 'variant'
     let defaultSelectedVersion = data.mostRecentLts.version;
     const versionParam = queryString.parse(useLocation().search).version;
     if (versionParam) {
@@ -125,7 +129,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     }, []);
 
     const setPackageType = useCallback((packageType) => {
-        setURLParam('packageType', packageType)
+        setURLParam('package', packageType)
         updatePackageType(packageType);
     }, []);
 
