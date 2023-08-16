@@ -46,8 +46,11 @@ const updater = vi.fn().mockImplementation(() => {
 vi.mock('query-string', () => ({
   default: {
     parse: () => ({
-      version: 8,
-      variant: 'openjdk8',
+      os: 'linux',
+      arch: 'x64',
+      package: 'jdk',
+      version: 17,
+      variant: 'openjdk11',
     }),
   }
 }));
