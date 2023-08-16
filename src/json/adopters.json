@@ -1,26 +1,38 @@
 [
     {
-        "name": "OpenElements",
-        "logo": "openelements.svg",
-        "url": "https://open-elements.com/",
+        "name": "Apache SkyWalking",
+        "logo": "adopters/logo-apache-skywalking.svg",
+        "url": "https://skywalking.apache.org/",
         "tier": "adopter"
     },
     {
-        "name": "Microsoft",
-        "logo": "microsoft.svg",
-        "url": "https://opensource.microsoft.com/",
-        "tier": "adopter"
-    },
-    {
-        "name": "Red Hat",
-        "logo": "redhat.svg",
-        "url": "https://www.redhat.com/",
+        "name": "Blockbax",
+        "logo": "adopters/logo-blockbax.svg",
+        "url": "https://blockbax.com/",
         "tier": "adopter"
     },
     {
         "name": "Delphix",
         "logo": "delphix.svg",
         "url": "https://www.delphix.com/",
+        "tier": "adopter"
+    },
+    {
+        "name": "Doping Technology",
+        "logo": "adopters/logo-doping-tech.svg",
+        "url": "https://dopingtech.net/",
+        "tier": "adopter"
+    },
+    {
+        "name": "Dynatrace",
+        "logo": "adopters/logo-dynatrace.png",
+        "url": "https://www.dynatrace.com/",
+        "tier": "adopter"
+    },
+    {
+        "name": "gematik GmbH",
+        "logo": "adopters/logo-gematik.png",
+        "url": "https://www.gematik.de/",
         "tier": "adopter"
     },
     {
@@ -31,39 +43,27 @@
         "tier": "adopter"
     },
     {
-        "name": "Tirasa",
-        "logo": "adopters/logo-tirasa.svg",
-        "url": "https://www.tirasa.net/",
-        "tier": "adopter"
-    },
-    {
-        "name": "Radiant Logic",
-        "logo": "adopters/logo-radiant-logic.png",
-        "url": "https://www.radiantlogic.com/",
-        "tier": "adopter"
-    },
-    {
-        "name": "Doping Technology",
-        "logo": "adopters/logo-doping-tech.svg",
-        "url": "https://dopingtech.net/",
-        "tier": "adopter"
-    },
-    {
-        "name": "Total Validator",
-        "logo": "adopters/logo-total-validator.svg",
-        "url": "https://www.totalvalidator.com/",
-        "tier": "adopter"
-    },
-    {
-        "name": "Dynatrace",
-        "logo": "adopters/logo-dynatrace.png",
-        "url": "https://www.dynatrace.com/",
-        "tier": "adopter"
-    },
-    {
         "name": "Kestra",
         "logo": "adopters/logo-kestra.svg",
         "url": "https://kestra.io/",
+        "tier": "adopter"
+    },
+    {
+        "name": "Microsoft",
+        "logo": "microsoft.svg",
+        "url": "https://opensource.microsoft.com/",
+        "tier": "adopter"
+    },
+    {
+        "name": "Mindus SARL",
+        "logo": "adopters/logo-mindus.svg",
+        "url": "https://www.mindus.co/",
+        "tier": "adopter"
+    },
+    {
+        "name": "OpenElements",
+        "logo": "openelements.svg",
+        "url": "https://open-elements.com/",
         "tier": "adopter"
     },
     {
@@ -74,21 +74,15 @@
         "tier": "adopter"
     },
     {
-        "name": "Blockbax",
-        "logo": "adopters/logo-blockbax.svg",
-        "url": "https://blockbax.com/",
+        "name": "Radiant Logic",
+        "logo": "adopters/logo-radiant-logic.png",
+        "url": "https://www.radiantlogic.com/",
         "tier": "adopter"
     },
     {
-        "name": "Timefold",
-        "logo": "adopters/logo-timefold.png",
-        "url": "https://timefold.ai/",
-        "tier": "adopter"
-    },
-    {
-        "name": "Societe Generale",
-        "logo": "adopters/logo-societe-generale.svg",
-        "url": "https://www.societegenerale.com/",
+        "name": "Red Hat",
+        "logo": "redhat.svg",
+        "url": "https://www.redhat.com/",
         "tier": "adopter"
     },
     {
@@ -98,33 +92,33 @@
         "tier": "adopter"
     },
     {
+        "name": "Societe Generale",
+        "logo": "adopters/logo-societe-generale.svg",
+        "url": "https://www.societegenerale.com/",
+        "tier": "adopter"
+    },
+    {
         "name": "T-Systems",
         "logo": "adopters/logo-t-systems.svg",
         "url": "https://www.t-systems.com/",
         "tier": "adopter"
     },
     {
-        "name": "Apache SkyWalking",
-        "logo": "adopters/logo-apache-skywalking.svg",
-        "url": "https://skywalking.apache.org/",
+        "name": "Timefold",
+        "logo": "adopters/logo-timefold.png",
+        "url": "https://timefold.ai/",
         "tier": "adopter"
     },
     {
-        "name": "gematik GmbH",
-        "logo": "adopters/logo-gematik.png",
-        "url": "https://www.gematik.de/",
+        "name": "Tirasa",
+        "logo": "adopters/logo-tirasa.svg",
+        "url": "https://www.tirasa.net/",
         "tier": "adopter"
     },
     {
-        "name": "MongoDB",
-        "logo": "adopters/logo-mongodb.svg",
-        "url": "https://mongodb.com/",
-        "tier": "adopter"
-    },
-    {
-        "name": "Mindus SARL",
-        "logo": "adopters/logo-mindus.svg",
-        "url": "https://www.mindus.co/",
+        "name": "Total Validator",
+        "logo": "adopters/logo-total-validator.svg",
+        "url": "https://www.totalvalidator.com/",
         "tier": "adopter"
     }
 ]

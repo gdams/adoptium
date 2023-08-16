@@ -55,5 +55,7 @@ if temurin_project is not None:
 
     # Write the updated list of adopters to src/json/adopters.json
     with open("src/json/adopters.json", "w") as f:
+        # Sort the list of adopters alphabetically
+        current_adopters.sort(key=lambda x: x["name"].lower())
         # format JSON to be human readable
         json.dump(current_adopters, f, indent=4)
