@@ -83,9 +83,9 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
           Any
         </option>
         <option
-          value="jdk"
+          value="mock_jdk"
         >
-          jdk
+          mock_jdk
         </option>
       </select>
     </div>
@@ -198,9 +198,9 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
           Any
         </option>
         <option
-          value="jdk"
+          value="mock_jdk"
         >
-          jdk
+          mock_jdk
         </option>
       </select>
     </div>

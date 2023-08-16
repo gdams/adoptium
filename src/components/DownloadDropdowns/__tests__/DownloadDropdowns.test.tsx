@@ -26,7 +26,7 @@ vi.mock('../../../util/defaults', () => {
     versionsLTS: [1],
     defaultPackageType: 'jdk',
     defaultArchitecture: 'mock_arch',
-    packageTypes: ['jdk'],
+    packageTypes: ['mock_jdk'],
   }
 });
 
@@ -85,7 +85,7 @@ describe('DownloadDropdowns component', () => {
 
     select = getByTestId('package-type-filter');
     await act(async () => {
-      fireEvent.change(select, { target: { value: 'any' } });
+      fireEvent.change(select, { target: { value: 'mock_jdk' } });
     });
 
     expect(updater).toHaveBeenCalledTimes(4);

@@ -9,10 +9,8 @@ import { setURLParam } from '../../util/setURLParam';
 import { capitalize } from '../../util/capitalize';
 import { oses, arches, packageTypes, defaultArchitecture, defaultPackageType} from '../../util/defaults';
 
-let defaultOS = 'any'
-let defaultArch = 'any'
-
 const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
+
     const data = useStaticQuery(graphql`
       query VersionsQuery {
         allVersions(sort: {version: DESC}) {
@@ -33,33 +31,51 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
       }
     `)
 
-    const defaultVersion = data.mostRecentLts.version;
-    const versions = data.allVersions.edges;
+    let defaultSelectedOS = 'any';
+    const osParam = queryString.parse(useLocation().search).os;
+    if (osParam) {
+        defaultSelectedOS = osParam.toString();
+    }
 
-    let versionList = versions;
-    let selectedVersion = defaultVersion;
+    let defaultSelectedArch = 'any';
+    const archParam = queryString.parse(useLocation().search).arch;
+    if (archParam) {
+        defaultSelectedArch = archParam.toString();
+    }
+
+    let defaultSelectedPackageType = 'any';
+    const packageTypeParam = queryString.parse(useLocation().search).packageType;
+    if (packageTypeParam) {
+        defaultSelectedPackageType = packageTypeParam.toString();
+    }
+
+    let defaultSelectedVersion = data.mostRecentLts.version;
     const versionParam = queryString.parse(useLocation().search).version;
     if (versionParam) {
-        selectedVersion = Number(versionParam).toString();
+        defaultSelectedVersion = Number(versionParam).toString();
     }
     const variantParam = queryString.parse(useLocation().search).variant;
     if (variantParam) {
         // convert openjdk11 to 11
         const parsedVersion = variantParam.toString().replace(/\D/g, '')
-        setURLParam('version', parsedVersion)
-        selectedVersion = parsedVersion;
+        defaultSelectedVersion = parsedVersion;
     }
+
+    // prepare versions list
+    const versions = data.allVersions.edges;
+    let versionList = versions;
 
     if (marketplace) {
         // filter non LTS versions
         versionList = versions.filter((version) => {
             return version.node.lts === true;
         });
-        defaultArch = defaultArchitecture;
+        defaultSelectedArch = defaultArchitecture;
+        defaultSelectedPackageType = defaultPackageType;
         const userOS = detectOS();
         switch (userOS) {
             case UserOS.MAC:
-                defaultOS = 'mac'
+                defaultSelectedOS = 'mac'
                 if (typeof document !== 'undefined') {
                     let w = document.createElement("canvas").getContext("webgl");
                     // @ts-ignore
@@ -67,24 +83,24 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     // @ts-ignore
                     let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
                     if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
-                        defaultArch = 'aarch64'
+                        defaultSelectedArch = 'aarch64'
                     }
                 }
                 break;
             case UserOS.LINUX:
             case UserOS.UNIX:
-                defaultOS = 'linux'
+                defaultSelectedOS = 'linux'
             break;
         default:
-            defaultOS = 'windows'
+            defaultSelectedOS = 'windows'
             break;
         }
     }
 
-    const [os, updateOS] = useState(defaultOS);
-    const [arch, updateArch] = useState(defaultArch);
-    const [packageType, updatePackageType] = useState(defaultPackageType);
-    const [version, udateVersion] = useState(selectedVersion);
+    const [os, updateOS] = useState(defaultSelectedOS);
+    const [arch, updateArch] = useState(defaultSelectedArch);
+    const [packageType, updatePackageType] = useState(defaultSelectedPackageType);
+    const [version, udateVersion] = useState(defaultSelectedVersion);
 
     // Marketplace vendor selector only
     const checkboxRef = useRef({});
@@ -99,14 +115,17 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     }, [version, os, arch, packageType, checkbox]);
 
     const setOS = useCallback((os) => {
+        setURLParam('os', os)
         updateOS(os);
     }, []);
 
     const setArch = useCallback((arch) => {
+        setURLParam('arch', arch)
         updateArch(arch);
     }, []);
 
     const setPackageType = useCallback((packageType) => {
+        setURLParam('packageType', packageType)
         updatePackageType(packageType);
     }, []);
 
@@ -127,7 +146,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     <label className="px-2 fw-bold" htmlFor="os"><Trans>Operating System</Trans></label>
                     <select id="os-filter" aria-label="OS Filter" data-testid="os-filter" onChange={(e) => setOS(e.target.value)} value={os} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
-                        {oses.map(
+                        {oses.sort((os1, os2) => os1.localeCompare(os2)).map(
                             (os, i): string | JSX.Element => os && (
                                 <option key={os.toLowerCase()} value={os.toLowerCase()}>{capitalize(os)}</option>
                             )
@@ -138,7 +157,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     <label className="px-2 fw-bold" htmlFor="arch"><Trans>Architecture</Trans></label>
                     <select id="arch-filter" aria-label="Architecture Filter" data-testid="arch-filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
                         <option key="any" value="any">Any</option>
-                        {arches.map(
+                        {arches.sort((arch1, arch2) => arch1.localeCompare(arch2)).map(
                             (arch, i): string | JSX.Element => arch && (
                                 <option key={arch.toLowerCase()} value={arch.toLowerCase()}>{arch}</option>
                             )
