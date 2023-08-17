@@ -1,5 +1,5 @@
 = Commercial Support Options for Eclipse Temurin(TM)
-:page-authors: zdtsw
+:page-authors: zdtsw, tellison
 
 对于Eclipse Temurin，我们提供多种商业支持选项。
 需要注意的是，以下列举的供应商并未经过Adoptium(R)项目的评估，也没有得到Adoptium(R)项目正式认可。
