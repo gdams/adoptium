@@ -87,7 +87,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Solaris 11 | icon:check[] | icon:times[] | icon:times[] | icon:times[]
 | Solaris 10u11 | icon:check[] | icon:times[] | icon:times[] | icon:times[]
 
-5+h| AIX (PowerPC 64-bit Big Endian) footnote:aix71[AIX 7.1 is no longer supported. The last versions able to run on AIX 7.1 were 8u362, 11.0.18 and 17.0.8. Later versions require IBM XL C/C++ runtime package for link:https://www.ibm.com/support/pages/ibm-xl-cc-runtime-aix-131[AIX 13.1] for JDK8, and link:https://www.ibm.com/support/pages/ibm-xl-cc-runtime-aix-161[AIX 16.1] for JDK11+. ]
+5+h| AIX (PowerPC 64-bit Big Endian) footnote:aix71[AIX 7.1 is no longer supported. The last versions able to run on AIX 7.1 were 8u362, 11.0.18 and 17.0.8 ]
 | AIX 7.2 | icon:check[] | icon:check[] | icon:check[] | icon:times[]
 |===
 --
