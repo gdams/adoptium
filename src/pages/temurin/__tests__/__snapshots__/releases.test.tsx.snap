@@ -74,9 +74,9 @@ exports[`Releases page > renders correctly 1`] = `
             Any
           </option>
           <option
-            value="linux"
+            value="aix"
           >
-            Linux
+            AIX
           </option>
           <option
             value="alpine-linux"
@@ -84,9 +84,9 @@ exports[`Releases page > renders correctly 1`] = `
             Alpine Linux
           </option>
           <option
-            value="windows"
+            value="linux"
           >
-            Windows
+            Linux
           </option>
           <option
             value="mac"
@@ -94,14 +94,14 @@ exports[`Releases page > renders correctly 1`] = `
             macOS
           </option>
           <option
-            value="aix"
-          >
-            AIX
-          </option>
-          <option
             value="solaris"
           >
             Solaris
+          </option>
+          <option
+            value="windows"
+          >
+            Windows
           </option>
         </select>
       </div>
@@ -126,6 +126,36 @@ exports[`Releases page > renders correctly 1`] = `
             Any
           </option>
           <option
+            value="aarch64"
+          >
+            aarch64
+          </option>
+          <option
+            value="arm"
+          >
+            arm
+          </option>
+          <option
+            value="ppc64"
+          >
+            ppc64
+          </option>
+          <option
+            value="ppc64le"
+          >
+            ppc64le
+          </option>
+          <option
+            value="s390x"
+          >
+            s390x
+          </option>
+          <option
+            value="sparcv9"
+          >
+            sparcv9
+          </option>
+          <option
             value="x64"
           >
             x64
@@ -134,36 +164,6 @@ exports[`Releases page > renders correctly 1`] = `
             value="x86"
           >
             x86
-          </option>
-          <option
-            value="aarch64"
-          >
-            aarch64
-          </option>
-          <option
-            value="s390x"
-          >
-            s390x
-          </option>
-          <option
-            value="ppc64le"
-          >
-            ppc64le
-          </option>
-          <option
-            value="ppc64"
-          >
-            ppc64
-          </option>
-          <option
-            value="arm"
-          >
-            arm
-          </option>
-          <option
-            value="sparcv9"
-          >
-            sparcv9
           </option>
         </select>
       </div>
@@ -334,11 +334,31 @@ exports[`Releases page > renders correctly 1`] = `
         Text
       </p>
       <div
-        class="btn-group-vertical col-6 mx-auto"
+        class="btn-group"
       >
         <a
-          class="btn btn btn-primary mt-3"
+          class="btn btn-primary m-3"
           href="/temurin/archive"
+        >
+          Text
+           
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm-28.9 143.6l75.5 72.4H120c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24h182.6l-75.5 72.4c-9.7 9.3-9.9 24.8-.4 34.3l11 10.9c9.4 9.4 24.6 9.4 33.9 0L404.3 273c9.4-9.4 9.4-24.6 0-33.9L271.6 106.3c-9.4-9.4-24.6-9.4-33.9 0l-11 10.9c-9.5 9.6-9.3 25.1.4 34.4z"
+            />
+          </svg>
+        </a>
+        <a
+          class="btn btn-secondary m-3"
+          href="/temurin/nightly"
         >
           Text
            

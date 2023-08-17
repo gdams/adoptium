@@ -49,6 +49,12 @@
         "tier": "adopter"
     },
     {
+        "name": "Mercedes-Benz Tech Innovation GmbH",
+        "logo": "adopters/logo-mercedes-benz.png",
+        "url": "https://opensource.mercedes-benz.com/",
+        "tier": "adopter"
+    },
+    {
         "name": "Microsoft",
         "logo": "microsoft.svg",
         "url": "https://opensource.microsoft.com/",

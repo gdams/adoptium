@@ -53,9 +53,12 @@ const TemurinReleases = () => (
         <p className='text-center'>
           <Trans>Previous releases are available in the Temurin archive.</Trans>
         </p>
-        <div className='btn-group-vertical col-6 mx-auto'>
-          <Link to='/temurin/archive' className='btn btn btn-primary mt-3'>
+        <div className='btn-group'>
+          <Link to='/temurin/archive' className='btn btn-primary m-3'>
             <Trans>Release Archive</Trans> <FaArrowCircleRight />
+          </Link>
+          <Link to='/temurin/nightly' className='btn btn-secondary m-3'>
+            <Trans>Nightly Builds</Trans> <FaArrowCircleRight />
           </Link>
         </div>
       </div>
