@@ -89,7 +89,7 @@
     "jsdom": "^22.1.0",
     "prettier": "3.0.2",
     "react-test-renderer": "^18.2.0",
-    "vitest": "^0.34.1",
+    "vitest": "^0.34.2",
     "vitest-axe": "^0.1.0",
     "vitest-canvas-mock": "^0.3.3"
   },
