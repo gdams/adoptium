@@ -73,7 +73,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
 
         if(svp.toLowerCase() === 'latest') {
             // get the latest version of the list
-            defaultSelectedVersion = versions.sort((a, b) => b.node.version === a.node.version)[0].node.version;
+            defaultSelectedVersion = versions.sort((a, b) => b.node.version - a.node.version)[0].node.version;
         } else if(versions.findIndex(version => version.node.version === nvp) >= 0) {
             defaultSelectedVersion = nvp;
         }

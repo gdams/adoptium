@@ -4,6 +4,7 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { act } from 'react-test-renderer';
 import { createRandomTemurinReleases } from '../../../__fixtures__/hooks';
 import DownloadDropdowns from '..';
+import queryString from 'query-string';
 
 const Table = () => {
   return (
@@ -21,12 +22,9 @@ vi.mock('../../../util/defaults', () => {
   return {
     oses: ['mock_os'],
     arches: ['mock_arch'],
-    versions: [1],
-    defaultVersion: 1,
-    versionsLTS: [1],
-    defaultPackageType: 'jdk',
+    packageTypes: ['mock_pkg'],
+    defaultPackageType: 'mock_pkg',
     defaultArchitecture: 'mock_arch',
-    packageTypes: ['mock_jdk'],
   }
 });
 
@@ -49,7 +47,7 @@ vi.mock('query-string', () => ({
       os: 'linux',
       arch: 'x64',
       package: 'jdk',
-      version: 17,
+      version: 'latest',
       variant: 'openjdk11',
     }),
   }
@@ -88,18 +86,102 @@ describe('DownloadDropdowns component', () => {
 
     select = getByTestId('package-type-filter');
     await act(async () => {
-      fireEvent.change(select, { target: { value: 'mock_jdk' } });
+      fireEvent.change(select, { target: { value: 'mock_pkg' } });
     });
 
     expect(updater).toHaveBeenCalledTimes(4);
 
     select = getByTestId('version-filter');
     await act(async () => {
-      fireEvent.change(select, { target: { value: 1 } });
+      fireEvent.change(select, { target: { value: 2 } });
     });
 
     expect(updater).toHaveBeenCalledTimes(5);
     expect(container).toMatchSnapshot();
+  });
+
+  it('renders correctly - use URL param os=mock_os', async () => {
+    queryString.parse = vi.fn().mockReturnValue({'os': "mock_os"});
+
+    const { container, getByRole } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={false}
+        Table={Table}
+      />
+    );
+
+    expect(getByRole('option', { name: 'Mock_os' }).selected).toBeTruthy()
+  });
+
+  it('renders correctly - use URL param arch=mock_arch', async () => {
+    queryString.parse = vi.fn().mockReturnValue({'arch': "mock_arch"});
+
+    const { container, getByRole } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={false}
+        Table={Table}
+      />
+    );
+
+    expect(getByRole('option', { name: 'mock_arch' }).selected).toBeTruthy()
+  });
+
+  it('renders correctly - use URL param package=mock_pkg', async () => {
+    queryString.parse = vi.fn().mockReturnValue({'package': "mock_pkg"});
+
+    const { container, getByRole } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={false}
+        Table={Table}
+      />
+    );
+
+    expect(getByRole('option', { name: 'mock_pkg' }).selected).toBeTruthy()
+  });
+
+  it('renders correctly - use URL param version=2', async () => {
+    queryString.parse = vi.fn().mockReturnValue({'version': "2"});
+
+    const { container, getByRole } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={false}
+        Table={Table}
+      />
+    );
+
+    expect(getByRole('option', { name: '2' }).selected).toBeTruthy()
+  });
+
+  it('renders correctly - use URL param version=latest', async () => {
+    queryString.parse = vi.fn().mockReturnValue({'version': 'latest'});
+
+    const { container, getByRole } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={false}
+        Table={Table}
+      />
+    );
+
+    expect(getByRole('option', { name: '2' }).selected).toBeTruthy()
+  });
+
+  it('renders correctly - use URL paramvariant=openjdk2', async () => {
+    queryString.parse = vi.fn().mockReturnValue({'variant': "openjdk2"});
+
+    const { container, getByRole } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={false}
+        Table={Table}
+      />
+    );
+
+    expect(getByRole('option', { name: '2' }).selected).toBeTruthy()
   });
 
   it('renders correctly - marketplace', async () => {
