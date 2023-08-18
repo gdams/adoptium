@@ -1,5 +1,5 @@
 = Archive Installation
-:page-authors: gdams
+:page-authors: gdams, tellison
 :toc:
 
 == Linux
@@ -107,6 +107,13 @@ java -version
 
 == AIX
 
+. The last versions of Eclipse Temurin able to run on AIX 7.1 were 8u362,
+11.0.18 and 17.0.8. Later versions require IBM XL C/C++ runtime package,
+available with the compiler or standalone, for
+link:https://www.ibm.com/support/pages/ibm-xl-cc-runtime-aix-131[AIX 13.1]
+for JDK8, and
+link:https://www.ibm.com/support/pages/ibm-xl-cc-runtime-aix-161[AIX 16.1]
+for JDK11+. 
 . Make sure you have downloaded the latest link:/download[AIX binary]
 to a directory that will not move or be deleted, and use Terminal to cd
 into it.

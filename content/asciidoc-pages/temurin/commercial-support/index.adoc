@@ -11,6 +11,13 @@ In alphabetical order:
 | 
 
 ^.^|
+image:https://adoptium.net/images/azul-logo.png[Azul,150]
+|
+Azul is the largest commercial support provider for OpenJDK distributions, supporting multiple versions, platforms and configurations. For Eclipse Temurin, Azul provides support coverage backed by contractual SLAs with guaranteed timely access to TCK-tested updates (both full and security-only updates). Azul also provides application triage, root cause analysis, and production issue workarounds with out-of-cycle patches from our world-class Java engineering team. 
+
+For more details: please see the https://www.azul.com/newsroom/azul-announces-commercial-support-for-the-eclipse-temurin-openjdk-distribution/[Azul Temurin support announcement] and the https://www.azul.com/support-for-temurin/[Azul Temurin support website], or https://www.azul.com/contact/[Contact Us] for more information.
+
+^.^|
 image:https://adoptium.net/images/ibm-logo.png[IBM,150]
 |
 With more than two decades experience implementing, delivering, and supporting Java for enterprises of all sizes and industries, https://www.ibm.com[IBM] is a proud member of the Adoptium working group, supporting and contributing to the high quality community led delivery of Eclipse Temurin. Temurin consumers can receive cost effective and flexibly licensed enterprise-grade support for their mission critical Java workloads with IBM Runtimes for Business.

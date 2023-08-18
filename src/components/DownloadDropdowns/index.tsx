@@ -31,43 +31,65 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
       }
     `)
 
+    // prepare versions list
+    const versions = data.allVersions.edges;
+    let versionList = versions;
+
+    const queryStringParams = queryString.parse(useLocation().search);
+
     // init the default selected Operation System, if any from the param 'os'
     let defaultSelectedOS = 'any';
-    const osParam = queryString.parse(useLocation().search).os;
+    const osParam = queryStringParams.os;
     if (osParam) {
-        defaultSelectedOS = osParam.toString();
+        let sop = osParam.toString().toLowerCase();
+        if(oses.findIndex(os => os.toLowerCase() === sop) >= 0)
+            defaultSelectedOS = sop;
     }
 
     // init the default selected Architecture, if any from the param 'arch'
     let defaultSelectedArch = 'any';
-    const archParam = queryString.parse(useLocation().search).arch;
+    const archParam = queryStringParams.arch;
     if (archParam) {
-        defaultSelectedArch = archParam.toString();
+        let sap = archParam.toString().toLowerCase();
+        if(arches.findIndex(a => a.toLowerCase() === sap) >= 0)
+            defaultSelectedArch = sap;
     }
 
     // init the default selected Package Type, if any from the param 'package'
     let defaultSelectedPackageType = 'any';
-    const packageParam = queryString.parse(useLocation().search).package;
+    const packageParam = queryStringParams.package;
     if (packageParam) {
-        defaultSelectedPackageType = packageParam.toString();
+        let spp = packageParam.toString().toLowerCase();
+        if(packageTypes.findIndex(p => p.toLowerCase() === spp) >= 0)
+            defaultSelectedPackageType = spp;
     }
 
     // init the default selected Version, if any from the param 'version' or from 'variant'
     let defaultSelectedVersion = data.mostRecentLts.version;
-    const versionParam = queryString.parse(useLocation().search).version;
+    const versionParam = queryStringParams.version;
     if (versionParam) {
-        defaultSelectedVersion = Number(versionParam).toString();
+        let svp = versionParam.toString();
+        let nvp = Number(svp);
+
+        if(svp.toLowerCase() === 'latest') {
+            // get the latest version of the list
+            defaultSelectedVersion = versions.sort((a, b) => b.node.version - a.node.version)[0].node.version;
+        } else if(versions.findIndex(version => version.node.version === nvp) >= 0) {
+            defaultSelectedVersion = nvp;
+        }
     }
-    const variantParam = queryString.parse(useLocation().search).variant;
+
+    // init the default selected Version, if any from the param 'variant'
+    const variantParam = queryStringParams.variant;
     if (variantParam) {
         // convert openjdk11 to 11
         const parsedVersion = variantParam.toString().replace(/\D/g, '')
-        defaultSelectedVersion = parsedVersion;
-    }
+        let nvp = Number(parsedVersion);
 
-    // prepare versions list
-    const versions = data.allVersions.edges;
-    let versionList = versions;
+        if(versions.findIndex(version => version.node.version === nvp) >= 0) {
+            defaultSelectedVersion = nvp;
+        }
+    }
 
     if (marketplace) {
         // filter non LTS versions

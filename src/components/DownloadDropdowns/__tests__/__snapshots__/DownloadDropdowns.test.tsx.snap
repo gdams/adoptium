@@ -83,9 +83,9 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
           Any
         </option>
         <option
-          value="mock_jdk"
+          value="mock_pkg"
         >
-          mock_jdk
+          mock_pkg
         </option>
       </select>
     </div>
@@ -198,9 +198,9 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
           Any
         </option>
         <option
-          value="mock_jdk"
+          value="mock_pkg"
         >
-          mock_jdk
+          mock_pkg
         </option>
       </select>
     </div>
@@ -220,14 +220,14 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
         id="version-filter"
       >
         <option
-          value="1"
-        >
-          1 - LTS
-        </option>
-        <option
           value="2"
         >
           2
+        </option>
+        <option
+          value="1"
+        >
+          1 - LTS
         </option>
       </select>
     </div>

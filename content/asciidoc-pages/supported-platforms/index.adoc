@@ -87,7 +87,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Solaris 11 | icon:check[] | icon:times[] | icon:times[] | icon:times[]
 | Solaris 10u11 | icon:check[] | icon:times[] | icon:times[] | icon:times[]
 
-5+h| AIX (PowerPC 64-bit Big Endian) footnote:aix71[Running the latest versions on AIX 7.1 is no longer supported. The last versions which targetted able to run on AIX 7.1 were jdk8u362, jdk-11.0.18 and jdk-17.0.8] footnote:alxrt[Requires XLC runtime packages from the compiler or standalone for XLC 13 for JDK8: https://www.ibm.com/support/pages/ibm-xl-cc-runtime-aix-131 or XLC 16 for JDK11+: https://www.ibm.com/support/pages/ibm-xl-cc-runtime-aix-161]
+5+h| AIX (PowerPC 64-bit Big Endian) footnote:aix71[AIX 7.1 is no longer supported. The last versions able to run on AIX 7.1 were 8u362, 11.0.18 and 17.0.8 ]
 | AIX 7.2 | icon:check[] | icon:check[] | icon:check[] | icon:times[]
 |===
 --
