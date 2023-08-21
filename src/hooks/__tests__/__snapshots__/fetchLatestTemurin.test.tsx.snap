@@ -2,6 +2,7 @@
 
 exports[`fetchLatestForOS > binary URL is set correctly 1`] = `
 {
+  "checksum": "sha265sum_mock",
   "link": "https://link_mock/",
   "release_name": "release_name_mock",
 }
@@ -9,6 +10,7 @@ exports[`fetchLatestForOS > binary URL is set correctly 1`] = `
 
 exports[`fetchLatestForOS > installer is returned if available 1`] = `
 {
+  "checksum": "installer_sha265sum_mock",
   "link": "https://installer_link_mock/",
   "release_name": "release_name_mock",
 }
