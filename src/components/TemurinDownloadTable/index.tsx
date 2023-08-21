@@ -123,7 +123,7 @@ const BinaryTable = ({ checksum, link, extension, type, size, os, arch, version 
                 </tbody></table>
             </td>
             <td className="align-middle">
-                <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: type, java_version: version }} className="btn btn-primary" style={{width: "6em"}}>
+                <Link to="/download" state={{ link: link, checksum: checksum, os: os, arch: arch, pkg_type: type, java_version: version }} className="btn btn-primary" style={{width: "6em"}}>
                     <FaDownload /> {extension}
                 </Link>
             </td>

@@ -2,15 +2,18 @@ import React, { useEffect } from 'react'
 import { Link, graphql, navigate } from 'gatsby'
 import { BiDonateHeart } from 'react-icons/bi'
 import { SiGithubsponsors } from 'react-icons/si'
-
 import vendors from '../json/marketplace.json'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
+import { BsShieldCheck } from 'react-icons/bs'
+import { Trans } from 'gatsby-plugin-react-i18next';
+import ChecksumModal from '../components/ChecksumModal'
 
 const DownloadPage = ({ location }) => {
-  let link, os, arch, type, version, vendor, postDownload
+  let link, checksum, os, arch, type, version, vendor, postDownload;
   if (location.state && location.state.link) {
     link = location.state.link
+    checksum = location.state.checksum
     os = location.state.os
     arch = location.state.arch
     type = location.state.pkg_type
@@ -66,6 +69,19 @@ const DownloadPage = ({ location }) => {
                   )
             )}
 
+            {checksum &&
+              <>
+                <p className='text-muted py-3'>
+                   <a href="" className='btn btn-lg btn-outline-dark m-2'
+                        data-bs-toggle="modal"
+                        data-bs-target="#checksumModal"
+                        data-bs-checksum={checksum}>
+                        <small><BsShieldCheck/> <Trans>View checksum file</Trans></small>
+                    </a>
+                </p>
+              </>
+            }
+
             {link &&
               <>
                 <meta httpEquiv='refresh' content={`0; url=${link}`} />
@@ -85,6 +101,7 @@ const DownloadPage = ({ location }) => {
             <Link to='/members' className='btn btn-lg btn-primary m-2'>View our Members</Link>
           </div>
         </div>
+        <ChecksumModal />
       </section>
     </Layout>
   )
