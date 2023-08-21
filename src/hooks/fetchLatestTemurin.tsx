@@ -29,18 +29,22 @@ async function fetchLatestForOSRequest(version: number, os: string, arch: string
     const response = await fetch(url);
     const json: LatestTemurin = (await response.json())[0];
     let binary_link = json.binaries[0].package.link
+    let binary_checksum = json.binaries[0].package.checksum
     if (json.binaries[0].installer) {
-        binary_link = json.binaries[0].installer.link
+        binary_link = json.binaries[0].installer.link,
+        binary_checksum = json.binaries[0].installer.checksum
     }
     return {
         release_name: json.release_name,
-        link: binary_link
+        link: binary_link,
+        checksum: binary_checksum,
     };
 }
 
 export interface Binary {
   release_name: string;
   link: URL;
+  checksum: string;
 }
 
 export interface LatestTemurin {

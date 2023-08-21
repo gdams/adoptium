@@ -118,7 +118,7 @@ const BinaryTable = ({ checksum, link, filename, os, arch, pkgType, javaVersion,
                 </tbody></table>
             </td>
             <td className="align-middle">
-                <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: pkgType, java_version: javaVersion, vendor: vendor }} className="btn btn-primary" style={{width: "6em"}}>
+                <Link to="/download" state={{ link: link, checksum: checksum, os: os, arch: arch, pkg_type: pkgType, java_version: javaVersion, vendor: vendor }} className="btn btn-primary" style={{width: "6em"}}>
                     <FaDownload /> {fetchExtension(filename)}
                 </Link>
             </td>

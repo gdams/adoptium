@@ -74,6 +74,7 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                                 {asset.installer_link ? (
                                                                                     <DownloadButton
                                                                                         link={asset.installer_link}
+                                                                                        checksum={asset.installer_checksum}
                                                                                         platform={key}
                                                                                         type={asset.type}
                                                                                         version={release.release_name}
@@ -95,6 +96,7 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                             <td style={{borderLeft: "1px solid rgb(221, 221, 221)", paddingLeft: "20px"}}>
                                                                                 <DownloadButton
                                                                                     link={asset.link}
+                                                                                    checksum={asset.checksum}
                                                                                     platform={key}
                                                                                     type={asset.type}
                                                                                     version={release.release_name}
@@ -138,6 +140,7 @@ export default TemurinArchiveTable;
 
 interface DownloadProps {
     link: URL;
+    checksum: string,
     type: string;
     size: number;
     platform: string;
@@ -145,11 +148,11 @@ interface DownloadProps {
     installer: boolean;
 }
 
-const DownloadButton = ({ link, type, size, platform, version, installer }: DownloadProps): null | JSX.Element => {
+const DownloadButton = ({ link, checksum, type, size, platform, version, installer }: DownloadProps): null | JSX.Element => {
     let os: string = capitalize(platform.split("-")[0])
     let arch: string = platform.split("-")[1]
     return (
-        <Link to="/download" state={{ link: link, os: os, arch: arch, pkg_type: type, java_version: version }} className="btn btn-primary" style={{width: "9em"}}>
+        <Link to="/download" state={{ link: link, checksum: checksum, os: os, arch: arch, pkg_type: type, java_version: version }} className="btn btn-primary" style={{width: "9em"}}>
             {type} {!installer ? (size + " MB") : ""}
         </Link>
     )

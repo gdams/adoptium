@@ -33,9 +33,9 @@ const TemurinNightlyTable = ({results}) => {
                                                             <td>{capitalize(asset.os)} {asset.architecture === 'x32' ? 'x86' : asset.architecture}</td>
                                                             <td>{asset.type}</td>
                                                             <td>{localeDate(release.timestamp, language)}</td>
-                                                            <td><Link to="/download" state={{ link: asset.link, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: 'nightly' }}>{`${asset.extension} (${asset.size} MB)`}</Link></td>
+                                                            <td><Link to="/download" state={{ link: asset.link, checksum: asset.checksum, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: 'nightly' }}>{`${asset.extension} (${asset.size} MB)`}</Link></td>
                                                             {asset.installer_link ? (
-                                                                <td><Link to="/download" state={{ link: asset.installer_link }}>{asset.installer_extension}</Link></td>
+                                                                <td><Link to="/download" state={{ link: asset.installer_link, checksum: asset.installer_checksum }}>{asset.installer_extension}</Link></td>
                                                             ) :
                                                                 <td>Not Available</td>
                                                             }

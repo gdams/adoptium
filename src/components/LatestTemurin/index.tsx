@@ -1,7 +1,6 @@
 import React, { MutableRefObject, useRef } from 'react';
 import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import { FaArrowCircleRight, FaArchive, FaDownload } from 'react-icons/fa';
-
 import { detectOS, UserOS } from '../../util/detectOS';
 import { fetchLatestForOS, useOnScreen } from '../../hooks';
 
@@ -78,7 +77,7 @@ const LatestTemurin = (props): JSX.Element => {
         <div className={`btn-group-vertical mx-auto ${buttonClass}`}>
             {binary ? (
               <>
-                <Link to="/download" state={{ link: binary.link, os: userOSName, arch: arch, pkg_type: 'JDK', java_version: binary.release_name }} className="btn btn-lg btn-primary mt-3 py-3 text-white">
+                <Link to="/download" state={{ link: binary.link, checksum: binary.checksum, os: userOSName, arch: arch, pkg_type: 'JDK', java_version: binary.release_name }} className="btn btn-lg btn-primary mt-3 py-3 text-white">
                     <FaDownload /> <Trans>Latest LTS Release</Trans>
                     <br/>
                     <span style={{ fontSize: '.6em'}} className="font-weight-light">{binary.release_name}</span>
