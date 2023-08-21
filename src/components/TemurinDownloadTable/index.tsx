@@ -5,6 +5,7 @@ import { MdNotes } from 'react-icons/md';
 import { MdVerifiedUser } from 'react-icons/md';
 import { capitalize } from '../../util/capitalize';
 import { localeDate } from '../../util/localeDate';
+import { IoMdHelpBuoy } from 'react-icons/io';
 
 const TemurinDownloadTable = ({results}) => {
     const { language } = useI18next();
@@ -16,7 +17,10 @@ const TemurinDownloadTable = ({results}) => {
     return (
     <>
         {source &&
-            <p><Link to={`/temurin/release-notes?version=${source.release_name}`}><MdNotes /> <Trans>Release Notes</Trans></Link></p>
+            <p className='release-notes'>
+                <Link to={`/temurin/release-notes?version=${source.release_name}`} style={{paddingRight: '20px'}}><MdNotes /><Trans>See Release Notes</Trans></Link> 
+                <Link to="/installation/"><IoMdHelpBuoy /><Trans>Read how to install Eclipse Temurin™</Trans></Link>
+            </p>
         }
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
             <tbody className="table-light">
