@@ -155,13 +155,13 @@ iframe {
 }
 
 .release-notes {
-  padding: 5px 0 10px 0;
+  padding: 5px 0 10px;
   border-top: 4px solid #333;
-  background-color: #f8f9fa !important;  
+  background-color: #f8f9fa !important;
   margin-bottom: 5px;
   border-right: 1px solid var(--bs-border-color);
 
   a svg {
       margin-right: 5px;
-  } 
+  }
 }
