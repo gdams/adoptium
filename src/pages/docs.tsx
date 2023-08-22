@@ -112,7 +112,7 @@ const DocumentationPage = ({ data }) => (
               links={[
                 { name: 'Brand Guidelines', link: 'https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf' },
                 { name: 'Google Slide Template', link: 'https://docs.google.com/presentation/d/1ChGhqZrAHCdk5S2Ii5s5RROng1saTaTtjZzsxWJ_MPA/copy' },
-                { name: 'Download Buttons', link: 'temurin/buttons' },
+                { name: 'Download Buttons', link: '/temurin/buttons' },
                 { name: 'Marketing Criteria', link: '/docs/marketing-criteria' }
               ]}
             />
