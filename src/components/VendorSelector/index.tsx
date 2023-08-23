@@ -19,7 +19,7 @@ const VendorSelector = ({checkboxRef, setCheckbox}) => {
     };
 
     return (
-        <ul className="vendor-list pt-5" style={{minHeight: "164px"}}>
+        <ul className="vendor-list pt-5">
             {randomizedVendors.map(
                 (vendor, i): string | JSX.Element =>
                     vendor && (
