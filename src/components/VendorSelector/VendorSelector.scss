@@ -1,14 +1,13 @@
 .vendor-list {
-  ul.vendor-list {
-    list-style-type: none;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 40px;
-    min-height: 164px;
-  }
+  list-style-type: none;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 40px;
+  min-height: 164px;
+  min-height: 164px;
 
   li.vendor-li {
     display: inline-block;
