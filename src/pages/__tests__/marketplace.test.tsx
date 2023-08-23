@@ -8,15 +8,19 @@ vi.mock('../../util/shuffle', () => {
   return {
     shuffle: (array) => {
       array = [
-          {
-            "name": "Adoptium",
-            "icon": "vendor-adoptium.png",
-            "postDownload": null
+        {
+          name: "Adoptium",
+          icon: "vendor-adoptium.png",
+          postDownload: null
         }
       ]
       return array
     }
   };
+});
+
+afterEach(() => {
+  vi.clearAllMocks();
 });
 
 describe('Marketplace page', () => {

@@ -8,13 +8,13 @@ export async function getAllPkgsForVersion(
     package_type: string,
     checkboxRef: any,
 ): Promise<MarketplaceRelease[] | null> {
-    let microsoftSelected = checkboxRef.current.vendorMicrosoft.checked;
-    let temurinSelected = checkboxRef.current.vendorAdoptium.checked;
-    let redhatSelected = checkboxRef.current.vendorRedHat.checked;
-    let huaweiSelected = checkboxRef.current.vendorHuawei.checked;
-    let zuluSelected = checkboxRef.current.vendorAzul.checked;
-    let ibmSelected = checkboxRef.current.vendorIBM.checked;
-    let alibabaSelected = checkboxRef.current.vendorAlibaba.checked;
+    let microsoftSelected = checkboxRef.current.vendorMicrosoft && checkboxRef.current.vendorMicrosoft.checked;
+    let temurinSelected = checkboxRef.current.vendorAdoptium && checkboxRef.current.vendorAdoptium.checked;
+    let redhatSelected = checkboxRef.current.vendorRedHat && checkboxRef.current.vendorRedHat.checked;
+    let huaweiSelected = checkboxRef.current.vendorHuawei && checkboxRef.current.vendorHuawei.checked;
+    let zuluSelected = checkboxRef.current.vendorAzul && checkboxRef.current.vendorAzul.checked;
+    let ibmSelected = checkboxRef.current.vendorIBM && checkboxRef.current.vendorIBM.checked;
+    let alibabaSelected = checkboxRef.current.vendorAlibaba && checkboxRef.current.vendorAlibaba.checked;
 
     let params = '?'
     params += 'feature_version=' + version;
