@@ -1,18 +1,25 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { shuffle } from '../../util/shuffle'
 import vendors from '../../json/marketplace.json';
 import './VendorSelector.scss';
 
-let randomizedVendors = shuffle(vendors);
+const emptyVendors: VendorProps[] = [];
 
 const VendorSelector = ({checkboxRef, setCheckbox}) => {
+
+    const [randomizedVendors, setRandomizedVendors] = useState(emptyVendors);
+
+    useEffect(() => {
+        let vendorsCpy = [...vendors];
+        setRandomizedVendors(shuffle(vendorsCpy));
+    }, [])
 
     const handleChange = () => {
         setCheckbox(checkboxRef.current.checked)
     };
 
     return (
-        <ul className="vendor-list pt-5">
+        <ul className="vendor-list pt-5" style={{minHeight: "164px"}}>
             {randomizedVendors.map(
                 (vendor, i): string | JSX.Element =>
                     vendor && (
@@ -27,5 +34,12 @@ const VendorSelector = ({checkboxRef, setCheckbox}) => {
         </ul>
     );
 };
+
+interface VendorProps {
+    name: string;
+    icon: string;
+    iconPadding: string;
+    postDownload: string;
+}
 
 export default VendorSelector;
