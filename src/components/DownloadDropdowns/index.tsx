@@ -92,34 +92,44 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     }
 
     if (marketplace) {
+        // in marketplace we have to preselect some values in dropdowns if not given in parameters
+        if(defaultSelectedOS === 'any') {
+            const userOS = detectOS();
+            switch (userOS) {
+                case UserOS.MAC:
+                    defaultSelectedOS = 'mac'
+                    if (typeof document !== 'undefined') {
+                        let w = document.createElement("canvas").getContext("webgl");
+                        // @ts-ignore
+                        let d = w.getExtension('WEBGL_debug_renderer_info');
+                        // @ts-ignore
+                        let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
+                        if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+                            defaultSelectedArch = 'aarch64'
+                        }
+                    }
+                    break;
+                case UserOS.LINUX:
+                case UserOS.UNIX:
+                    defaultSelectedOS = 'linux'
+                break;
+            default:
+                defaultSelectedOS = 'windows'
+                break;
+            }
+        }
+        if(defaultSelectedArch === 'any') {
+            defaultSelectedArch = defaultArchitecture;
+        }
+        if(defaultSelectedPackageType === 'any') {
+            defaultSelectedPackageType = defaultPackageType;
+        }
         // filter non LTS versions
         versionList = versions.filter((version) => {
             return version.node.lts === true;
         });
-        defaultSelectedArch = defaultArchitecture;
-        defaultSelectedPackageType = defaultPackageType;
-        const userOS = detectOS();
-        switch (userOS) {
-            case UserOS.MAC:
-                defaultSelectedOS = 'mac'
-                if (typeof document !== 'undefined') {
-                    let w = document.createElement("canvas").getContext("webgl");
-                    // @ts-ignore
-                    let d = w.getExtension('WEBGL_debug_renderer_info');
-                    // @ts-ignore
-                    let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
-                    if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
-                        defaultSelectedArch = 'aarch64'
-                    }
-                }
-                break;
-            case UserOS.LINUX:
-            case UserOS.UNIX:
-                defaultSelectedOS = 'linux'
-            break;
-        default:
-            defaultSelectedOS = 'windows'
-            break;
+        if(versionList.findIndex(version => version.node.version === defaultSelectedVersion) < 0) {
+            defaultSelectedVersion = data.mostRecentLts.version;
         }
     }
 
