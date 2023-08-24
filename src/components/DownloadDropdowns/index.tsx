@@ -1,4 +1,4 @@
-import React, { useRef, useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
@@ -139,16 +139,15 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     const [version, udateVersion] = useState(defaultSelectedVersion);
 
     // Marketplace vendor selector only
-    const checkboxRef = useRef({});
-    const [checkbox, updateCheckbox] = useState({checkboxRef});
+    const [selectedVendors, updateSelectedVendors] = useState<string[]>([]);
 
     const [releases, setReleases] = useState(null);
 
     useEffect(() => {
         (async () => {
-          setReleases(await updaterAction(version, os, arch, packageType, checkboxRef));
+          setReleases(await updaterAction(version, os, arch, packageType, selectedVendors));
         })();
-    }, [version, os, arch, packageType, checkbox]);
+    }, [version, os, arch, packageType, selectedVendors]);
 
     const setOS = useCallback((os) => {
         setURLParam('os', os)
@@ -170,13 +169,14 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
         udateVersion(version);
     }, []);
 
-    const setCheckbox= useCallback(() => {
-        updateCheckbox({checkboxRef});
+    const refreshSelectedVendors= useCallback((newSelectedVendors) => {
+        // do not change the URL
+        updateSelectedVendors(newSelectedVendors);
     }, []);
 
     return (
         <>
-            {marketplace && <VendorSelector checkboxRef={checkboxRef} setCheckbox={setCheckbox} />}
+            {marketplace && <VendorSelector selectedVendors={selectedVendors} refreshSelectedVendors={refreshSelectedVendors} />}
             <div className="input-group mb-5 row g-2">
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="os"><Trans>Operating System</Trans></label>

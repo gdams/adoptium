@@ -51,16 +51,19 @@ exports[`Marketplace page > renders correctly 1`] = `
     >
       <li
         class="vendor-li"
+        data-testid="li-adoptium"
       >
         <input
           checked=""
-          data-testid="Adoptium"
-          id="vendorAdoptium"
+          class="vendor-name"
+          data-testid="checkbox-adoptium"
+          id="vendor-adoptium"
+          readonly=""
           type="checkbox"
         />
         <label
           class="vendor-label"
-          for="vendorAdoptium"
+          for="vendor-adoptium"
           title="Adoptium"
         >
           <img

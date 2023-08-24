@@ -6,16 +6,8 @@ export async function getAllPkgsForVersion(
     os: string,
     architecture: string,
     package_type: string,
-    checkboxRef: any,
+    vendors: string[]= [],
 ): Promise<MarketplaceRelease[] | null> {
-    let microsoftSelected = checkboxRef.current.vendorMicrosoft && checkboxRef.current.vendorMicrosoft.checked;
-    let temurinSelected = checkboxRef.current.vendorAdoptium && checkboxRef.current.vendorAdoptium.checked;
-    let redhatSelected = checkboxRef.current.vendorRedHat && checkboxRef.current.vendorRedHat.checked;
-    let huaweiSelected = checkboxRef.current.vendorHuawei && checkboxRef.current.vendorHuawei.checked;
-    let zuluSelected = checkboxRef.current.vendorAzul && checkboxRef.current.vendorAzul.checked;
-    let ibmSelected = checkboxRef.current.vendorIBM && checkboxRef.current.vendorIBM.checked;
-    let alibabaSelected = checkboxRef.current.vendorAlibaba && checkboxRef.current.vendorAlibaba.checked;
-
     let params = '?'
     params += 'feature_version=' + version;
 
@@ -37,31 +29,31 @@ export async function getAllPkgsForVersion(
         params += ('&image_type=' + package_type)
     }
 
-    if (temurinSelected) {
+    if (vendors.indexOf('adoptium') >= 0) {
         params += '&vendor=adoptium'
     }
 
-    if (redhatSelected) {
+    if (vendors.indexOf('redhat') >= 0) {
         params += '&vendor=redhat'
     }
 
-    if (huaweiSelected) {
+    if (vendors.indexOf('huawei') >= 0) {
         params += '&vendor=huawei'
     }
 
-    if (microsoftSelected) {
+    if (vendors.indexOf('microsoft') >= 0) {
         params += ('&vendor=microsoft')
     }
 
-    if (zuluSelected) {
+    if (vendors.indexOf('azul') >= 0) {
         params += ('&vendor=azul')
     }
 
-    if (ibmSelected) {
+    if (vendors.indexOf('ibm') >= 0) {
         params += ('&vendor=ibm')
     }
 
-    if (alibabaSelected) {
+    if (vendors.indexOf('alibaba') >= 0) {
         params += ('&vendor=alibaba')
     }
 

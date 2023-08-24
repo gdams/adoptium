@@ -5,11 +5,15 @@ import VendorSelector from '../index';
 import vendors from '../../../json/marketplace.json';
 
 describe('VendorSelector', () => {
-  const mockSetCheckbox = vi.fn();
-  const checkboxRef = { current: {} };
+  const mockRefreshSelectedVendors = vi.fn();
+  const mockSelectedVendors = vendors.map(v => v.key);
 
   beforeEach(() => {
-    render(<VendorSelector checkboxRef={checkboxRef} setCheckbox={mockSetCheckbox} />);
+    render(<VendorSelector selectedVendors={mockSelectedVendors} refreshSelectedVendors={mockRefreshSelectedVendors} />);
+  });
+
+  afterEach(() => {
+    jest.clearAllMocks();
   });
 
   test('renders component correctly', () => {
@@ -22,15 +26,16 @@ describe('VendorSelector', () => {
 
   vendors.forEach((vendor, i) => {
     test(`renders the input checkbox with correct attributes for vendor ${i}`, () => {
-      const checkbox = screen.getByTestId(vendor.name);
-      expect(checkbox).toHaveAttribute('id', `vendor${vendor.name}`);
+      const checkbox = screen.getByTestId(`checkbox-${vendor.key}`);
+      expect(checkbox).toHaveAttribute('id', `vendor-${vendor.key}`);
       expect(checkbox).toHaveAttribute('type', 'checkbox');
-      expect(checkbox).toHaveProperty('defaultChecked', true);
+      expect(checkbox).toHaveProperty('readOnly', true);
+      expect(checkbox).toHaveProperty('checked', true);
     });
 
     test(`renders the label element with correct attributes for vendor ${i}`, () => {
       const label = screen.getByTitle(vendor.name);
-      expect(label).toHaveAttribute('for', `vendor${vendor.name}`);
+      expect(label).toHaveAttribute('for', `vendor-${vendor.key}`);
     });
 
     test(`renders the img element with correct attributes for vendor ${i}`, () => {
@@ -41,8 +46,8 @@ describe('VendorSelector', () => {
   });
 
   test('calls handleChange function when a checkbox is toggled', () => {
-    const checkbox = screen.getByTitle(vendors[0].name);
-    fireEvent.click(checkbox);
-    expect(mockSetCheckbox).toHaveBeenCalledTimes(1);
+    const li = screen.getByTestId(`li-${mockSelectedVendors[0]}`);
+    fireEvent.click(li);
+    expect(mockRefreshSelectedVendors).toHaveBeenCalledTimes(2);
   });
 });

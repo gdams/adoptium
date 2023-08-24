@@ -7,6 +7,9 @@
         "name": {
           "type": "string"
         },
+        "key": {
+          "type": "string"
+        },
         "icon": {
           "type": "string"
         },
