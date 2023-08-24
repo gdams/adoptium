@@ -3,11 +3,9 @@ import { shuffle } from '../../util/shuffle'
 import vendors from '../../json/marketplace.json';
 import './VendorSelector.scss';
 
-const emptyVendors: VendorProps[] = [];
-
 const VendorSelector = ({checkboxRef, setCheckbox}) => {
 
-    const [randomizedVendors, setRandomizedVendors] = useState(emptyVendors);
+    const [randomizedVendors, setRandomizedVendors] = useState(vendors);
 
     useEffect(() => {
         let vendorsCpy = [...vendors];
@@ -34,12 +32,5 @@ const VendorSelector = ({checkboxRef, setCheckbox}) => {
         </ul>
     );
 };
-
-interface VendorProps {
-    name: string;
-    icon: string;
-    iconPadding: string;
-    postDownload: string;
-}
 
 export default VendorSelector;

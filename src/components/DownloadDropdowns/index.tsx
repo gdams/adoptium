@@ -174,7 +174,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                         <option key="any" value="any">Any</option>
                         {oses.sort((os1, os2) => os1.localeCompare(os2)).map(
                             (os, i): string | JSX.Element => os && (
-                                <option key={os.toLowerCase()} value={os.toLowerCase()}>{capitalize(os)}</option>
+                                <option key={`os-${i}`} value={os.toLowerCase()}>{capitalize(os)}</option>
                             )
                         )}
                     </select>
@@ -185,7 +185,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                         <option key="any" value="any">Any</option>
                         {arches.sort((arch1, arch2) => arch1.localeCompare(arch2)).map(
                             (arch, i): string | JSX.Element => arch && (
-                                <option key={arch.toLowerCase()} value={arch.toLowerCase()}>{arch}</option>
+                                <option key={`arch-${i}`} value={arch.toLowerCase()}>{arch}</option>
                             )
                         )}
                     </select>
@@ -196,7 +196,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                         <option key="any" value="any">Any</option>
                         {packageTypes.map(
                             (packageType, i): string | JSX.Element => packageType && (
-                                <option key={packageType.toLowerCase()} value={packageType.toLowerCase()}>{packageType}</option>
+                                <option key={`packageType-${i}`} value={packageType.toLowerCase()}>{packageType}</option>
                             )
                         )}
                     </select>
@@ -206,7 +206,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     <select id="version-filter" aria-label="Version Filter" data-testid="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm">
                         {versionList.map(
                             (version, i): number | JSX.Element => version && (
-                                <option key={version.node.id} value={version.node.version}>{version.node.label}</option>
+                                <option key={`version-${i}`} value={version.node.version}>{version.node.label}</option>
                             )
                         )}
                     </select>
