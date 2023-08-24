@@ -3,14 +3,14 @@ import { shuffle } from '../../util/shuffle'
 import vendors from '../../json/marketplace.json';
 import './VendorSelector.scss';
 
-const VendorSelector = ({selectedVendors, refreshSelectedVendors}) => {
+const VendorSelector = ({selectedVendors, setSelectedVendors}) => {
 
     const [randomizedVendors, setRandomizedVendors] = useState<VendorProps[]>([]);
 
     useEffect(() => {
         let vendorsCpy = [...vendors];
         setRandomizedVendors(shuffle(vendorsCpy));
-        refreshSelectedVendors(vendorsCpy.map(vendor => vendor.key))
+        setSelectedVendors(vendorsCpy.map(vendor => vendor.key))
     }, [])
 
     const handleChange = (e, key) => {
@@ -19,7 +19,7 @@ const VendorSelector = ({selectedVendors, refreshSelectedVendors}) => {
         let idx = newselectedVendors.indexOf(key);
         if(idx >= 0) newselectedVendors.splice(idx, 1);
         else newselectedVendors.push(key);
-        refreshSelectedVendors(newselectedVendors)
+        setSelectedVendors(newselectedVendors)
     };
 
     return (

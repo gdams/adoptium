@@ -5,11 +5,11 @@ import VendorSelector from '../index';
 import vendors from '../../../json/marketplace.json';
 
 describe('VendorSelector', () => {
-  const mockRefreshSelectedVendors = vi.fn();
+  const mockSetSelectedVendors = vi.fn();
   const mockSelectedVendors = vendors.map(v => v.key);
 
   beforeEach(() => {
-    render(<VendorSelector selectedVendors={mockSelectedVendors} refreshSelectedVendors={mockRefreshSelectedVendors} />);
+    render(<VendorSelector selectedVendors={mockSelectedVendors} setSelectedVendors={mockSetSelectedVendors} />);
   });
 
   afterEach(() => {
@@ -48,6 +48,6 @@ describe('VendorSelector', () => {
   test('calls handleChange function when a checkbox is toggled', () => {
     const li = screen.getByTestId(`li-${mockSelectedVendors[0]}`);
     fireEvent.click(li);
-    expect(mockRefreshSelectedVendors).toHaveBeenCalledTimes(2);
+    expect(mockSetSelectedVendors).toHaveBeenCalledTimes(2 /* 1 by the useEffec() and 1 by the onclick() */);
   });
 });

@@ -169,14 +169,14 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
         udateVersion(version);
     }, []);
 
-    const refreshSelectedVendors= useCallback((newSelectedVendors) => {
+    const setSelectedVendors= useCallback((newSelectedVendors) => {
         // do not change the URL
         updateSelectedVendors(newSelectedVendors);
     }, []);
 
     return (
         <>
-            {marketplace && <VendorSelector selectedVendors={selectedVendors} refreshSelectedVendors={refreshSelectedVendors} />}
+            {marketplace && <VendorSelector selectedVendors={selectedVendors} setSelectedVendors={setSelectedVendors} />}
             <div className="input-group mb-5 row g-2">
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="os"><Trans>Operating System</Trans></label>
