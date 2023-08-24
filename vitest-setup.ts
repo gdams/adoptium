@@ -1,7 +1,6 @@
 import { expect, vi } from 'vitest'
 import * as axeMatchers from 'vitest-axe/matchers'
 import React from 'react'
-import matchers from '@testing-library/jest-dom/matchers';
 import { configure } from '@testing-library/dom';
 configure({
   computedStyleSupportsPseudoElements: true
@@ -11,7 +10,6 @@ import '@testing-library/jest-dom'
 import 'vitest-canvas-mock'
 
 expect.extend(axeMatchers);
-expect.extend(matchers);
 
 vi.mock('gatsby', async () => {
   const gatsby = await vi.importActual<typeof import('gatsby')>('gatsby')
