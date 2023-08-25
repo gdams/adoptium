@@ -1,7 +1,6 @@
 import React from 'react';
-import { render, fireEvent, waitFor } from '@testing-library/react';
+import { act, render, fireEvent, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { act } from '@testing-library/react';
 import { createRandomTemurinReleases } from '../../../__fixtures__/hooks';
 import DownloadDropdowns from '..';
 import queryString from 'query-string';
