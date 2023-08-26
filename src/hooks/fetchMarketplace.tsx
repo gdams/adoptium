@@ -29,32 +29,8 @@ export async function getAllPkgsForVersion(
         params += ('&image_type=' + package_type)
     }
 
-    if (vendors.indexOf('adoptium') >= 0) {
-        params += '&vendor=adoptium'
-    }
-
-    if (vendors.indexOf('redhat') >= 0) {
-        params += '&vendor=redhat'
-    }
-
-    if (vendors.indexOf('huawei') >= 0) {
-        params += '&vendor=huawei'
-    }
-
-    if (vendors.indexOf('microsoft') >= 0) {
-        params += ('&vendor=microsoft')
-    }
-
-    if (vendors.indexOf('azul') >= 0) {
-        params += ('&vendor=azul')
-    }
-
-    if (vendors.indexOf('ibm') >= 0) {
-        params += ('&vendor=ibm')
-    }
-
-    if (vendors.indexOf('alibaba') >= 0) {
-        params += ('&vendor=alibaba')
+    for(const vendor of vendors) {
+        params += ('&vendor=' + vendor)
     }
 
     const url = new URL(baseUrl + '/v1/assets/latestForVendors' + params);
