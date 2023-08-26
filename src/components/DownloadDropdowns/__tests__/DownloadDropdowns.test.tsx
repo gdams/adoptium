@@ -1,7 +1,6 @@
 import React from 'react';
-import { render, fireEvent, waitFor } from '@testing-library/react';
+import { act, render, fireEvent, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { act } from 'react-test-renderer';
 import { createRandomTemurinReleases } from '../../../__fixtures__/hooks';
 import DownloadDropdowns from '..';
 import queryString from 'query-string';
@@ -103,13 +102,16 @@ describe('DownloadDropdowns component', () => {
   it('renders correctly - use URL param os=mock_os', async () => {
     queryString.parse = vi.fn().mockReturnValue({'os': "mock_os"});
 
-    const { container, getByRole } = render(
-      <DownloadDropdowns
-        updaterAction={updater}
-        marketplace={false}
-        Table={Table}
-      />
-    );
+    let getByRole;
+    await act(async () => {
+      ({ getByRole } = render(
+        <DownloadDropdowns
+          updaterAction={updater}
+          marketplace={false}
+          Table={Table}
+        />
+      ));
+    });
 
     expect(getByRole('option', { name: 'Mock_os' }).selected).toBeTruthy()
   });
@@ -117,13 +119,16 @@ describe('DownloadDropdowns component', () => {
   it('renders correctly - use URL param arch=mock_arch', async () => {
     queryString.parse = vi.fn().mockReturnValue({'arch': "mock_arch"});
 
-    const { container, getByRole } = render(
-      <DownloadDropdowns
-        updaterAction={updater}
-        marketplace={false}
-        Table={Table}
-      />
-    );
+    let getByRole;
+    await act(async () => {
+      ({ getByRole } = render(
+        <DownloadDropdowns
+          updaterAction={updater}
+          marketplace={false}
+          Table={Table}
+        />
+      ));
+    });
 
     expect(getByRole('option', { name: 'mock_arch' }).selected).toBeTruthy()
   });
@@ -131,13 +136,16 @@ describe('DownloadDropdowns component', () => {
   it('renders correctly - use URL param package=mock_pkg', async () => {
     queryString.parse = vi.fn().mockReturnValue({'package': "mock_pkg"});
 
-    const { container, getByRole } = render(
-      <DownloadDropdowns
-        updaterAction={updater}
-        marketplace={false}
-        Table={Table}
-      />
-    );
+    let getByRole;
+    await act(async () => {
+      ({ getByRole } = render(
+        <DownloadDropdowns
+          updaterAction={updater}
+          marketplace={false}
+          Table={Table}
+        />
+      ));
+    });
 
     expect(getByRole('option', { name: 'mock_pkg' }).selected).toBeTruthy()
   });
@@ -145,13 +153,16 @@ describe('DownloadDropdowns component', () => {
   it('renders correctly - use URL param version=2', async () => {
     queryString.parse = vi.fn().mockReturnValue({'version': "2"});
 
-    const { container, getByRole } = render(
-      <DownloadDropdowns
-        updaterAction={updater}
-        marketplace={false}
-        Table={Table}
-      />
-    );
+    let getByRole;
+    await act(async () => {
+      ({ getByRole } = render(
+        <DownloadDropdowns
+          updaterAction={updater}
+          marketplace={false}
+          Table={Table}
+        />
+      ));
+    });
 
     expect(getByRole('option', { name: '2' }).selected).toBeTruthy()
   });
@@ -159,13 +170,16 @@ describe('DownloadDropdowns component', () => {
   it('renders correctly - use URL param version=latest', async () => {
     queryString.parse = vi.fn().mockReturnValue({'version': 'latest'});
 
-    const { container, getByRole } = render(
-      <DownloadDropdowns
-        updaterAction={updater}
-        marketplace={false}
-        Table={Table}
-      />
-    );
+    let getByRole;
+    await act(async () => {
+      ({ getByRole } = render(
+        <DownloadDropdowns
+          updaterAction={updater}
+          marketplace={false}
+          Table={Table}
+        />
+      ));
+    });
 
     expect(getByRole('option', { name: '2' }).selected).toBeTruthy()
   });
@@ -173,13 +187,16 @@ describe('DownloadDropdowns component', () => {
   it('renders correctly - use URL paramvariant=openjdk2', async () => {
     queryString.parse = vi.fn().mockReturnValue({'variant': "openjdk2"});
 
-    const { container, getByRole } = render(
-      <DownloadDropdowns
-        updaterAction={updater}
-        marketplace={false}
-        Table={Table}
-      />
-    );
+    let getByRole;
+    await act(async () => {
+      ({ getByRole } = render(
+        <DownloadDropdowns
+          updaterAction={updater}
+          marketplace={false}
+          Table={Table}
+        />
+      ));
+    });
 
     expect(getByRole('option', { name: '2' }).selected).toBeTruthy()
   });
