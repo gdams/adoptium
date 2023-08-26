@@ -6,7 +6,7 @@ import vendors from '../../../json/marketplace.json';
 
 describe('VendorSelector', () => {
   const mockSetSelectedVendors = vi.fn();
-  const mockSelectedVendors = vendors.map(v => v.key);
+  const mockSelectedVendors = vendors.map(v => v.identifier);
 
   beforeEach(() => {
     render(<VendorSelector selectedVendors={mockSelectedVendors} setSelectedVendors={mockSetSelectedVendors} />);
@@ -26,8 +26,8 @@ describe('VendorSelector', () => {
 
   vendors.forEach((vendor, i) => {
     test(`renders the input checkbox with correct attributes for vendor ${i}`, () => {
-      const checkbox = screen.getByTestId(`checkbox-${vendor.key}`);
-      expect(checkbox).toHaveAttribute('id', `vendor-${vendor.key}`);
+      const checkbox = screen.getByTestId(`checkbox-${vendor.identifier}`);
+      expect(checkbox).toHaveAttribute('id', `vendor-${vendor.identifier}`);
       expect(checkbox).toHaveAttribute('type', 'checkbox');
       expect(checkbox).toHaveProperty('readOnly', true);
       expect(checkbox).toHaveProperty('checked', true);
@@ -35,7 +35,7 @@ describe('VendorSelector', () => {
 
     test(`renders the label element with correct attributes for vendor ${i}`, () => {
       const label = screen.getByTitle(vendor.name);
-      expect(label).toHaveAttribute('for', `vendor-${vendor.key}`);
+      expect(label).toHaveAttribute('for', `vendor-${vendor.identifier}`);
     });
 
     test(`renders the img element with correct attributes for vendor ${i}`, () => {

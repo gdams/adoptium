@@ -10,15 +10,15 @@ const VendorSelector = ({selectedVendors, setSelectedVendors}) => {
     useEffect(() => {
         let vendorsCpy = [...vendors];
         setRandomizedVendors(shuffle(vendorsCpy));
-        setSelectedVendors(vendorsCpy.map(vendor => vendor.key))
+        setSelectedVendors(vendorsCpy.map(vendor => vendor.identifier))
     }, [])
 
-    const handleChange = (e, key) => {
+    const handleChange = (e, identifier) => {
         e.preventDefault();
         let newselectedVendors = [...selectedVendors];
-        let idx = newselectedVendors.indexOf(key);
+        let idx = newselectedVendors.indexOf(identifier);
         if(idx >= 0) newselectedVendors.splice(idx, 1);
-        else newselectedVendors.push(key);
+        else newselectedVendors.push(identifier);
         setSelectedVendors(newselectedVendors)
     };
 
@@ -27,9 +27,9 @@ const VendorSelector = ({selectedVendors, setSelectedVendors}) => {
             {randomizedVendors.map(
                 (vendor, i): string | JSX.Element =>
                     vendor && (
-                        <li key={`vendor-${i}`} data-testid={`li-${vendor.key}`} className="vendor-li" onClick={(e) => handleChange(e, vendor.key)}>
-                            <input id={`vendor-${vendor.key}`} data-testid={`checkbox-${vendor.key}`} readOnly className="vendor-name" type="checkbox" checked={selectedVendors.indexOf(vendor.key) >= 0}/>
-                            <label className="vendor-label" htmlFor={`vendor-${vendor.key}`} title={vendor.name}>
+                        <li key={`vendor-${i}`} data-testid={`li-${vendor.identifier}`} className="vendor-li" onClick={(e) => handleChange(e, vendor.identifier)}>
+                            <input id={`vendor-${vendor.identifier}`} data-testid={`checkbox-${vendor.identifier}`} readOnly className="vendor-name" type="checkbox" checked={selectedVendors.indexOf(vendor.identifier) >= 0}/>
+                            <label className="vendor-label" htmlFor={`vendor-${vendor.identifier}`} title={vendor.name}>
                                 <img src={`/images/vendors/${vendor.icon}`} alt={`${vendor.name} icon`} style={ vendor.iconPadding ? { padding:vendor.iconPadding} : {}}/>
                             </label>
                         </li>
@@ -41,7 +41,7 @@ const VendorSelector = ({selectedVendors, setSelectedVendors}) => {
 
 export interface VendorProps {
     name: string;
-    key: string;
+    identifier: string;
     icon: string;
     iconPadding: string;
     postDownload: string;

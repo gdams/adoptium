@@ -5,7 +5,7 @@ import { createMockTemurinFeatureReleaseAPI  } from '../../__fixtures__/hooks';
 import vendors from '../../json/marketplace.json';
 
 let mockResponse = [createMockTemurinFeatureReleaseAPI(false)];
-let selectedVendors = vendors.map(v => v.key);
+let selectedVendors = vendors.map(v => v.identifier);
 
 global.fetch = vi.fn(() => Promise.resolve({
   json: () => Promise.resolve(mockResponse)

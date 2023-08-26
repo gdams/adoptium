@@ -1,44 +1,44 @@
 [
     {
         "name": "Adoptium",
-        "key": "adoptium",
+        "identifier": "adoptium",
         "icon": "vendor-adoptium.png",
         "postDownload": null
     },
     {
         "name": "Red Hat",
-        "key": "redhat",
+        "identifier": "redhat",
         "icon": "vendor-redhat.png",
         "postDownload": "https://access.redhat.com/products/openjdk"
     },
     {
         "name": "Microsoft",
-        "key": "microsoft",
+        "identifier": "microsoft",
         "icon": "vendor-microsoft.png",
         "postDownload": "https://learn.microsoft.com/java/openjdk/"
     },
     {
         "name": "Azul",
-        "key": "azul",
+        "identifier": "azul",
         "icon": "vendor-azul.png",
         "iconPadding": "0.7em",
         "postDownload": "https://www.azul.com/downloads"
     },
     {
         "name": "IBM",
-        "key": "ibm",
+        "identifier": "ibm",
         "icon": "vendor-ibm.png",
         "postDownload": "https://developer.ibm.com/languages/java/semeru-runtimes"
     },
     {
         "name": "Huawei",
-        "key": "huawei",
+        "identifier": "huawei",
         "icon": "vendor-huawei.png",
         "postDownload": "https://www.openeuler.org/en/other/projects/bishengjdk"
     },
     {
         "name": "Alibaba",
-        "key": "alibaba",
+        "identifier": "alibaba",
         "icon": "vendor-alibaba.png",
         "postDownload": "https://dragonwell-jdk.io/"
     }
