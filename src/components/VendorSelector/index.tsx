@@ -3,23 +3,23 @@ import { shuffle } from '../../util/shuffle'
 import vendors from '../../json/marketplace.json';
 import './VendorSelector.scss';
 
-const VendorSelector = ({selectedVendors, setSelectedVendors}) => {
+const VendorSelector = ({selectedVendorIdentifiers, setSelectedVendorIdentifiers}) => {
 
     const [randomizedVendors, setRandomizedVendors] = useState<VendorProps[]>([]);
 
     useEffect(() => {
         let vendorsCpy = [...vendors];
         setRandomizedVendors(shuffle(vendorsCpy));
-        setSelectedVendors(vendorsCpy.map(vendor => vendor.identifier))
+        setSelectedVendorIdentifiers(vendorsCpy.map(vendor => vendor.identifier))
     }, [])
 
     const handleChange = (e, identifier) => {
         e.preventDefault();
-        let newselectedVendors = [...selectedVendors];
-        let idx = newselectedVendors.indexOf(identifier);
-        if(idx >= 0) newselectedVendors.splice(idx, 1);
-        else newselectedVendors.push(identifier);
-        setSelectedVendors(newselectedVendors)
+        let newselectedVendorIdentifiers = [...selectedVendorIdentifiers];
+        let idx = newselectedVendorIdentifiers.indexOf(identifier);
+        if(idx >= 0) newselectedVendorIdentifiers.splice(idx, 1);
+        else newselectedVendorIdentifiers.push(identifier);
+        setSelectedVendorIdentifiers(newselectedVendorIdentifiers)
     };
 
     return (
@@ -28,7 +28,7 @@ const VendorSelector = ({selectedVendors, setSelectedVendors}) => {
                 (vendor, i): string | JSX.Element =>
                     vendor && (
                         <li key={`vendor-${i}`} data-testid={`li-${vendor.identifier}`} className="vendor-li" onClick={(e) => handleChange(e, vendor.identifier)}>
-                            <input id={`vendor-${vendor.identifier}`} data-testid={`checkbox-${vendor.identifier}`} readOnly className="vendor-name" type="checkbox" checked={selectedVendors.indexOf(vendor.identifier) >= 0}/>
+                            <input id={`vendor-${vendor.identifier}`} data-testid={`checkbox-${vendor.identifier}`} readOnly className="vendor-name" type="checkbox" checked={selectedVendorIdentifiers.indexOf(vendor.identifier) >= 0}/>
                             <label className="vendor-label" htmlFor={`vendor-${vendor.identifier}`} title={vendor.name}>
                                 <img src={`/images/vendors/${vendor.icon}`} alt={`${vendor.name} icon`} style={ vendor.iconPadding ? { padding:vendor.iconPadding} : {}}/>
                             </label>

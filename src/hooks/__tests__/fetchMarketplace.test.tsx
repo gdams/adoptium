@@ -5,7 +5,7 @@ import { createMockTemurinFeatureReleaseAPI  } from '../../__fixtures__/hooks';
 import vendors from '../../json/marketplace.json';
 
 let mockResponse = [createMockTemurinFeatureReleaseAPI(false)];
-let selectedVendors = vendors.map(v => v.identifier);
+let selectedVendorIdentifiers = vendors.map(v => v.identifier);
 
 global.fetch = vi.fn(() => Promise.resolve({
   json: () => Promise.resolve(mockResponse)
@@ -18,7 +18,7 @@ afterEach(() => {
 describe('getAllPkgsForVersion', () => {
   it('returns valid JSON', async() => {
     renderHook(async() => {
-      await getAllPkgsForVersion(8, 'linux', 'x64', 'jdk', selectedVendors).then((data) => {
+      await getAllPkgsForVersion(8, 'linux', 'x64', 'jdk', selectedVendorIdentifiers).then((data) => {
         expect(data).toMatchSnapshot()
       })
     });
@@ -26,7 +26,7 @@ describe('getAllPkgsForVersion', () => {
 
   it('returns valid JSON - Alpine Linux', async() => {
     renderHook(async() => {
-      await getAllPkgsForVersion(8, 'alpine-linux', 'x64', 'any', selectedVendors).then((data) => {
+      await getAllPkgsForVersion(8, 'alpine-linux', 'x64', 'any', selectedVendorIdentifiers).then((data) => {
         expect(data).toMatchSnapshot()
       })
     });
@@ -35,7 +35,7 @@ describe('getAllPkgsForVersion', () => {
   it('returns valid JSON - installer', async() => {
     mockResponse = [createMockTemurinFeatureReleaseAPI(true)];
     renderHook(async() => {
-      await getAllPkgsForVersion(8, 'linux', 'x64', 'jdk', selectedVendors).then((data) => {
+      await getAllPkgsForVersion(8, 'linux', 'x64', 'jdk', selectedVendorIdentifiers).then((data) => {
         expect(data).toMatchSnapshot()
       })
     });
