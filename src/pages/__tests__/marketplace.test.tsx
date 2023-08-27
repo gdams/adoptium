@@ -10,7 +10,6 @@ vi.mock('../../util/shuffle', () => {
       array = [
         {
           name: "Adoptium",
-          identifier: "adoptium",
           icon: "vendor-adoptium.png",
           postDownload: null
         }

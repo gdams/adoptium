@@ -7,9 +7,6 @@
         "name": {
           "type": "string"
         },
-        "identifier": {
-          "type": "string"
-        },
         "icon": {
           "type": "string"
         },

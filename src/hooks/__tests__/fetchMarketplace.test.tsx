@@ -3,9 +3,10 @@ import { describe, expect, it, vi } from 'vitest'
 import { getAllPkgsForVersion, getImageForDistribution } from '../fetchMarketplace';
 import { createMockTemurinFeatureReleaseAPI  } from '../../__fixtures__/hooks';
 import vendors from '../../json/marketplace.json';
+import getVendorIdentifier from '../../util/vendors';
 
 let mockResponse = [createMockTemurinFeatureReleaseAPI(false)];
-let selectedVendorIdentifiers = vendors.map(v => v.identifier);
+let selectedVendorIdentifiers = vendors.map(v => getVendorIdentifier(v));
 
 global.fetch = vi.fn(() => Promise.resolve({
   json: () => Promise.resolve(mockResponse)
