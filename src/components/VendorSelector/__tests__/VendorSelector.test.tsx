@@ -13,7 +13,7 @@ describe('VendorSelector', () => {
   });
 
   afterEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
   });
 
   test('renders component correctly', () => {
