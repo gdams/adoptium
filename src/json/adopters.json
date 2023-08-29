@@ -85,6 +85,12 @@
         "tier": "adopter"
     },
     {
+        "name": "MongoDB",
+        "logo": "adopters/logo-mongodb.svg",
+        "url": "https://mongodb.com/",
+        "tier": "adopter"
+    },
+    {
         "name": "OpenElements",
         "logo": "openelements.svg",
         "url": "https://open-elements.com/",
