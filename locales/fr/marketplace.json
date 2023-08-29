@@ -1,0 +1,6 @@
+{
+  "marketplace.marketplaceDescription": "Java™ est l'un des premiers langages de programmation et plate-formes logicielles au monde. La Marketplace Adoptium propose en téléchargement des environnements d'exécution Java de haute qualité, certifiés TCK et vérifiés AQAvit.",
+  "marketplace.aqavitDescription": "La suite open source AQAvit (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>assurance) est disponible <aqavitLink>ici</aqavitLink>. Il existe également un <blogPostLink>blog et une courte présentation</blogPostLink> expliquant quels tests sont exécutés et comment ils s'intègrent dans notre processus de livraison.",
+  "Installation guide": "Guide d'installation",
+  "Source Code": "Code source"
+}

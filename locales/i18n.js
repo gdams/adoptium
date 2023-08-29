@@ -18,6 +18,10 @@ module.exports = {
     locale: 'es-ES',
     path: 'es'
   },
+  fr: {
+    locale: 'fr-FR',
+    path: 'fr'
+  },
   'zh-CN': {
     locale: 'zh-CN',
     path: 'zh-CN'

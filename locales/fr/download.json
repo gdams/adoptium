@@ -1,0 +1,18 @@
+{
+  "Download Temurin for": "Télécharger Temurin™ pour {{userOSName}} {{arch}}",
+  "Latest LTS Release": "Dernière version LTS",
+  "Latest Releases": "Dernières versions",
+  "Nightly Builds": "Nightly Builds",
+  "Other platforms and versions": "Autres plateformes et versions",
+  "Release Archive": "Archives",
+  "Vendor":"Fournisseur",
+  "Operating System":"Système d'exploitation",
+  "Architecture":"Architecture",
+  "Download":"Télécharger",
+  "Checksum":"Checksum",
+  "Package Type":"Type de paquet",
+  "Source Code Archive": "Code source",
+  "Any": "Tout",
+  "Installation guide": "Guide d'installation",
+  "Source Code": "Code source"
+}

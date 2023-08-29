@@ -181,7 +181,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="os"><Trans>Operating System</Trans></label>
                     <select id="os-filter" aria-label="OS Filter" data-testid="os-filter" onChange={(e) => setOS(e.target.value)} value={os} className="form-select form-select-sm">
-                        <option key="any" value="any">Any</option>
+                        <option key="any" value="any"><Trans>Any</Trans></option>
                         {oses.sort((os1, os2) => os1.localeCompare(os2)).map(
                             (os, i): string | JSX.Element => os && (
                                 <option key={`os-${i}`} value={os.toLowerCase()}>{capitalize(os)}</option>
@@ -192,7 +192,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="arch"><Trans>Architecture</Trans></label>
                     <select id="arch-filter" aria-label="Architecture Filter" data-testid="arch-filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
-                        <option key="any" value="any">Any</option>
+                        <option key="any" value="any"><Trans>Any</Trans></option>
                         {arches.sort((arch1, arch2) => arch1.localeCompare(arch2)).map(
                             (arch, i): string | JSX.Element => arch && (
                                 <option key={`arch-${i}`} value={arch.toLowerCase()}>{arch}</option>
@@ -203,7 +203,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                 <div className="input-group-prepend flex-colunm col-12 col-md-3">
                     <label className="px-2 fw-bold" htmlFor="package-type"><Trans>Package Type</Trans></label>
                     <select id="package-type-filter" aria-label="Package Type Filter" data-testid="package-type-filter" onChange={(e) => setPackageType(e.target.value)} value={packageType} className="form-select form-select-sm">
-                        <option key="any" value="any">Any</option>
+                        <option key="any" value="any"><Trans>Any</Trans></option>
                         {packageTypes.map(
                             (packageType, i): string | JSX.Element => packageType && (
                                 <option key={`packageType-${i}`} value={packageType.toLowerCase()}>{packageType}</option>
