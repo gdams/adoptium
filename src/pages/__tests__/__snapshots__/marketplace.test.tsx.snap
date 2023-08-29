@@ -91,7 +91,7 @@ exports[`Marketplace page > renders correctly 1`] = `
           <option
             value="any"
           >
-            Any
+            Text
           </option>
           <option
             value="aix"
@@ -143,7 +143,7 @@ exports[`Marketplace page > renders correctly 1`] = `
           <option
             value="any"
           >
-            Any
+            Text
           </option>
           <option
             value="aarch64"
@@ -205,7 +205,7 @@ exports[`Marketplace page > renders correctly 1`] = `
           <option
             value="any"
           >
-            Any
+            Text
           </option>
           <option
             value="jdk"

@@ -71,7 +71,7 @@ exports[`Releases page > renders correctly 1`] = `
           <option
             value="any"
           >
-            Any
+            Text
           </option>
           <option
             value="aix"
@@ -123,7 +123,7 @@ exports[`Releases page > renders correctly 1`] = `
           <option
             value="any"
           >
-            Any
+            Text
           </option>
           <option
             value="aarch64"
@@ -185,7 +185,7 @@ exports[`Releases page > renders correctly 1`] = `
           <option
             value="any"
           >
-            Any
+            Text
           </option>
           <option
             value="jdk"

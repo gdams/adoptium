@@ -26,7 +26,7 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
         <option
           value="any"
         >
-          Any
+          Text
         </option>
         <option
           value="mock_os"
@@ -53,7 +53,7 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
         <option
           value="any"
         >
-          Any
+          Text
         </option>
         <option
           value="mock_arch"
@@ -80,7 +80,7 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
         <option
           value="any"
         >
-          Any
+          Text
         </option>
         <option
           value="mock_pkg"
@@ -141,7 +141,7 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
         <option
           value="any"
         >
-          Any
+          Text
         </option>
         <option
           value="mock_os"
@@ -168,7 +168,7 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
         <option
           value="any"
         >
-          Any
+          Text
         </option>
         <option
           value="mock_arch"
@@ -195,7 +195,7 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
         <option
           value="any"
         >
-          Any
+          Text
         </option>
         <option
           value="mock_pkg"
