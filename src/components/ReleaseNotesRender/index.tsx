@@ -2,7 +2,6 @@ import React, { useRef, MutableRefObject } from 'react';
 import { DataGrid, GridColDef, GridToolbarContainer, GridToolbarFilterButton, gridClasses } from '@mui/x-data-grid';
 import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
-
 import { fetchReleaseNotesForVersion, useOnScreen } from '../../hooks';
 import './ReleaseNotesRender.scss';
 
@@ -153,6 +152,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                     sortModel: [{ field: 'priority', sort: 'asc' }],
                   },
                 }}
+                sortingOrder={['desc', 'asc']}
                 pageSizeOptions={[20, 50, 75]}
                 pagination
                 isRowSelectable={() => false}

@@ -15,7 +15,21 @@ export function fetchReleaseNotesForVersion(
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            setReleaseNotes(await fetchReleaseNote(version));
+            let result = await fetchReleaseNote(version);
+            if(result && Array.isArray(result.release_notes)) {
+                // issues/1508: Should initially be by (a) priority then (b) component.
+                result.release_notes = result.release_notes.sort((v1: ReleaseNote, v2: ReleaseNote) => {
+                    let c = 0;
+                    if(v1.priority && v2.priority) {
+                        c = v1.priority.localeCompare(v2.priority);
+                    }
+                    if(c === 0 && v1.component && v2.component) {
+                        c = v1.component.localeCompare(v2.component);
+                    }
+                    return c;
+                  });
+            }
+            setReleaseNotes(result);
         })();
         }
     }, [isVisible]);
