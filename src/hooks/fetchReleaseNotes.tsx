@@ -25,7 +25,7 @@ export function fetchReleaseNotesForVersion(
 
     return releaseNotes;
 }
- 
+
 async function fetchReleaseNote(version) {
     const url = `${baseUrl}/${version}`;
     try {
