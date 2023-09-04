@@ -29,7 +29,7 @@ export const fetchTitle = (priority) => {
   return title;
 };
 
-export function sortReleaseNotesBy = (releaseNotes: ReleaseNoteAPIResponse) => {
+export const sortReleaseNotesBy = (releaseNotes: ReleaseNoteAPIResponse) => {
   // issues/1508: Should initially be sorted by (a) priority then (b) component.
   if(releaseNotes && Array.isArray(releaseNotes.release_notes)) {
       releaseNotes.release_notes = [...releaseNotes.release_notes].sort((v1, v2) => {

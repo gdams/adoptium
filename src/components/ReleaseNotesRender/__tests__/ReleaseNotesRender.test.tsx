@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
-import ReleaseNotesRender, { fetchTitle } from '../index';
-import { fetchReleaseNotesForVersion } from '../../../hooks/fetchReleaseNotes';
+import ReleaseNotesRender, { fetchTitle, sortReleaseNotesBy } from '../index';
+import { fetchReleaseNotesForVersion, ReleaseNoteAPIResponse } from '../../../hooks/fetchReleaseNotes';
 import { createMockReleaseNotesAPI  } from '../../../__fixtures__/hooks';
 import { DataGridProps } from "@mui/x-data-grid"
 import queryString from 'query-string';
@@ -116,5 +116,34 @@ describe('ReleaseNotesRender component', () => {
         );
         expect(fetchReleaseNotesForVersion).toHaveBeenCalledTimes(1);
         expect(container).toMatchSnapshot();
+    });
+
+    it('properly sort release notes', () => {
+        let unsortedReleaseNotes = {
+            "release_name": "jdk-19.0.2+7",
+            "release_notes": [
+                {
+                "id": "100",
+                "priority": "2",
+                "component": "component_b",
+                },
+                {
+                "id": "200",
+                "component": "component_a",
+                "priority": "2",
+                },
+                {
+                "id": "300",
+                "component": "component_a",
+                "priority": "1",
+                }
+            ]
+        };
+
+        let result = sortReleaseNotesBy(unsortedReleaseNotes);
+
+        expect(result.release_notes[0].id).toBe("300")
+        expect(result.release_notes[1].id).toBe("200")
+        expect(result.release_notes[2].id).toBe("100")
     });
 });
