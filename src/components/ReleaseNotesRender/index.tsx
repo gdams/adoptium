@@ -2,7 +2,7 @@ import React, { useRef, MutableRefObject } from 'react';
 import { DataGrid, GridColDef, GridToolbarContainer, GridToolbarFilterButton, gridClasses } from '@mui/x-data-grid';
 import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
-import { fetchReleaseNotesForVersion, useOnScreen } from '../../hooks';
+import { fetchReleaseNotesForVersion, useOnScreen, ReleaseNoteAPIResponse } from '../../hooks';
 import './ReleaseNotesRender.scss';
 
 export const fetchTitle = (priority) => {
@@ -27,6 +27,23 @@ export const fetchTitle = (priority) => {
       title = 'This issue is not publicly visible.'
   }
   return title;
+};
+
+export function sortReleaseNotesBy = (releaseNotes: ReleaseNoteAPIResponse) => {
+  // issues/1508: Should initially be sorted by (a) priority then (b) component.
+  if(releaseNotes && Array.isArray(releaseNotes.release_notes)) {
+      releaseNotes.release_notes = [...releaseNotes.release_notes].sort((v1, v2) => {
+          let c = 0;
+          if(v1.priority && v2.priority) {
+              c = v1.priority.localeCompare(v2.priority);
+          }
+          if(c === 0 && v1.component && v2.component) {
+              c = v1.component.localeCompare(v2.component);
+          }
+          return c;
+      });
+  }
+  return releaseNotes;
 };
 
 const CustomToolbar: React.FunctionComponent<{
@@ -87,7 +104,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
 
   const ref = useRef<HTMLDivElement | null>(null);
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
-  const releaseNotes = fetchReleaseNotesForVersion(isVisible, version);
+  const releaseNotes = fetchReleaseNotesForVersion(isVisible, version, sortReleaseNotesBy);
 
   // Set all priorities set as undefined to '?' to avoid errors
   releaseNotes?.release_notes?.forEach((note) => {

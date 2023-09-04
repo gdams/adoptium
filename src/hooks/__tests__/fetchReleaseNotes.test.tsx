@@ -14,9 +14,11 @@ afterEach(() => {
   vi.clearAllMocks();
 });
 
+let sortReleaseNotesByCallback = vi.fn();
+
 describe('fetchReleaseNotesForVersion', () => {
   it('returns valid JSON', async () => {
-    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version'));
+    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version', sortReleaseNotesByCallback));
     await waitFor(() => {
       expect(result.current?.release_name).toBe('release_name_mock')
     }, { interval: 1 });
@@ -29,7 +31,7 @@ describe('fetchReleaseNotesForVersion', () => {
 
   it('returns null if error is caught in fetch', async () => {
     global.fetch = vi.fn(() => Promise.reject('error'));
-    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version'));
+    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version', sortReleaseNotesByCallback));
     await waitFor(() => {
       expect(result.current).toBe(null)
     }, { interval: 1 });
@@ -40,7 +42,21 @@ describe('fetchReleaseNotesForVersion', () => {
   });
 
   it('returns null if version is not defined', async () => {
-    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, null));
+    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, null, sortReleaseNotesByCallback));
     expect(result.current).toBe(null)
+  });
+
+  it('checks sortReleaseNotesByCallback to be called', async () => {
+    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version', sortReleaseNotesByCallback));
+    await waitFor(() => {
+      expect(sortReleaseNotesByCallback).toHaveBeenCalledTimes(1)
+    }, { interval: 1 });
+  });
+
+  it('checks sortReleaseNotesByCallback NOT to be called', async () => {
+    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version'));
+    await waitFor(() => {
+      expect(sortReleaseNotesByCallback).toHaveBeenCalledTimes(0);
+    }, { interval: 1 });
   });
 });
