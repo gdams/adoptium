@@ -119,19 +119,19 @@ const ReleaseNotesRender = (): null | JSX.Element => {
   });
 
   if(releaseNotes && Array.isArray(releaseNotes.release_notes)) {
-    let priorities: string[]= [];
-    let types: string[]= [];
-    let components: string[]= [];
+    let priorities: string[] = [];
+    let types: string[] = [];
+    let components: string[] = [];
 
     releaseNotes.release_notes.forEach(release_note => {
-      if(release_note.priority) priorities.push(release_note.priority);
-      if(release_note.type) types.push(release_note.type);
-      if(release_note.component) components.push(release_note.component);
+      if(release_note.priority && priorities.indexOf(release_note.priority) < 0) priorities.push(release_note.priority);
+      if(release_note.type && types.indexOf(release_note.type) < 0) types.push(release_note.type);
+      if(release_note.component && components.indexOf(release_note.component) < 0) components.push(release_note.component);
     });
 
-    Array.prototype.push.apply(priorityValueOptions, [...new Set(priorities)]);
-    Array.prototype.push.apply(typeValueOptions, [...new Set(types)]);
-    Array.prototype.push.apply(componentValueOptions, [...new Set(components)]);
+    Array.prototype.push.apply(priorityValueOptions, priorities.sort((a, b) => a.localeCompare(b)));
+    Array.prototype.push.apply(typeValueOptions, types.sort((a, b) => a.localeCompare(b)));
+    Array.prototype.push.apply(componentValueOptions, components.sort((a, b) => a.localeCompare(b)));
   }
 
   interface FilterItem {
