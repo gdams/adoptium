@@ -54,12 +54,16 @@ const CustomToolbar: React.FunctionComponent<{
   </GridToolbarContainer>
 );
 
+const priorityValueOptions = [];
+const typeValueOptions = [];
+const componentValueOptions = [];
+
 const columns: GridColDef[] = [
   {
     field: 'priority',
-    type: 'singleSelect',
-    valueOptions: ['1', '2', '3', '4', '5'],
     headerName: 'Priority',
+    type: 'singleSelect',
+    valueOptions: priorityValueOptions,
     width: 100,
     renderCell: (params) => {
       const title = fetchTitle(params.value);
@@ -71,10 +75,9 @@ const columns: GridColDef[] = [
   },
   {
     field: 'type',
-    type: 'singleSelect',
-    // TODO: This needs automatically setting
-    valueOptions: ['Backport', 'Bug', 'Enhancement'],
     headerName: 'Type',
+    type: 'singleSelect',
+    valueOptions: typeValueOptions,
     width: 100,
     sortable: false,
     renderCell: (params) => (
@@ -84,6 +87,8 @@ const columns: GridColDef[] = [
   {
     field: 'component',
     headerName: 'Component',
+    type: 'singleSelect',
+    valueOptions: componentValueOptions,
     width: 150,
     sortable: false
   },
@@ -112,6 +117,22 @@ const ReleaseNotesRender = (): null | JSX.Element => {
       note.priority = '6';
     }
   });
+
+  if(releaseNotes && Array.isArray(releaseNotes.release_notes)) {
+    let priorities: string[]= [];
+    let types: string[]= [];
+    let components: string[]= [];
+
+    releaseNotes.release_notes.forEach(release_note => {
+      if(release_note.priority) priorities.push(release_note.priority);
+      if(release_note.type) types.push(release_note.type);
+      if(release_note.component) components.push(release_note.component);
+    });
+
+    Array.prototype.push.apply(priorityValueOptions, [...new Set(priorities)]);
+    Array.prototype.push.apply(typeValueOptions, [...new Set(types)]);
+    Array.prototype.push.apply(componentValueOptions, [...new Set(components)]);
+  }
 
   interface FilterItem {
     field: string;
