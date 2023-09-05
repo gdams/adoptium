@@ -87,7 +87,7 @@ exports[`VersionSelector > updates the number of builds and build date when the 
       [33mclass[39m=[32m\\"MuiFormControl-root MuiTextField-root css-1ku64c3-MuiFormControl-root-MuiTextField-root\\"[39m
     [36m>[39m
       [36m<label[39m
-        [33mclass[39m=[32m\\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root\\"[39m
+        [33mclass[39m=[32m\\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root\\"[39m
         [33mdata-shrink[39m=[32m\\"true\\"[39m
         [33mfor[39m=[32m\\":r2:\\"[39m
         [33mid[39m=[32m\\":r2:-label\\"[39m
