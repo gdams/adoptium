@@ -129,8 +129,11 @@ const ReleaseNotesRender = (): null | JSX.Element => {
       if(release_note.component && components.indexOf(release_note.component) < 0) components.push(release_note.component);
     });
 
+    priorityValueOptions.splice(0);
     Array.prototype.push.apply(priorityValueOptions, priorities.sort((a, b) => a.localeCompare(b)));
+    typeValueOptions.splice(0);
     Array.prototype.push.apply(typeValueOptions, types.sort((a, b) => a.localeCompare(b)));
+    componentValueOptions.splice(0);
     Array.prototype.push.apply(componentValueOptions, components.sort((a, b) => a.localeCompare(b)));
   }
 
