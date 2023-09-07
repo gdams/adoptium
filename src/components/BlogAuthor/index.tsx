@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'gatsby';
 
 import ProfilePic from '../ProfilePic';
@@ -20,7 +21,7 @@ export const TwitterLink = (props) => {
   }
 
   return (
-    <a className='no-underline' aria-label='Twitter Profile' href={`https://twitter.com/${props.name}`}><FaTwitter /></a>
+    <a className='no-underline' aria-label='Twitter Profile' href={`https://x.com/${props.name}`}><FaXTwitter /></a>
   );
 };
 

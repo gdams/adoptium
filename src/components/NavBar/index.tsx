@@ -2,7 +2,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link as Noni18nLink } from "gatsby"
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
-import { FaTwitter, FaLinkedin, FaYoutube, FaGithub, FaSlack, FaRss } from 'react-icons/fa';
+import { FaLinkedin, FaYoutube, FaGithub, FaSlack, FaRss } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 // @ts-ignore
 import Logo from '../../images/adoptium-logo-dark.svg';
@@ -95,7 +96,7 @@ const NavBar = (): JSX.Element => {
           { typeof window !== 'undefined' && window.location.href.includes('/blog') &&
             <li className="ms-3"><Noni18nLink style={navbarIcon} aria-label="Adoptium RSS Feed" to="/rss.xml"><FaRss size={25} /></Noni18nLink></li>
           }
-          <li className="ms-3"><a style={navbarIcon} target="_blank" aria-label="Adoptium Twitter Account" rel="noopener noreferrer" href="https://twitter.com/adoptium"><FaTwitter size={25} /></a></li>
+          <li className="ms-3"><a style={navbarIcon} target="_blank" aria-label="Adoptium Twitter Account" rel="noopener noreferrer" href="https://x.com/adoptium"><FaXTwitter size={25} /></a></li>
           <li className="ms-3">
           <a style={navbarIcon} target="_blank" aria-label="Adoptium LinkedIn Page" rel="noopener noreferrer" href="https://www.linkedin.com/showcase/adoptium/">
           <FaLinkedin size={25} /></a></li>
