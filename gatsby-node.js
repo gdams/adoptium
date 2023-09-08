@@ -111,7 +111,7 @@ exports.onCreatePage = ({ page, actions, getNodes }) => {
           : `${locales[lang].path}${page.path}`
 
         let locale = 'en'
-        let defaultGitSHA 
+        let defaultGitSHA
 
         if (fs.existsSync(`./content/asciidoc-pages${page.path}index.${lang}.adoc`)) {
           locale = lang
@@ -131,7 +131,7 @@ exports.onCreatePage = ({ page, actions, getNodes }) => {
           context: {
             ...page.context,
             locale,
-            defaultGitSHA: defaultGitSHA,
+            defaultGitSHA,
             language: lang,
             i18n: {
               ...page.context.i18n,
@@ -177,7 +177,7 @@ exports.onCreateNode = async ({ node, actions, getNode, getNodes }) => {
     if (isDefault) {
       // Get Git SHA of the last commit to the file and add it as a field
       const gitLastCommitCMD = `git log -1 --format=%H ${fetchFilePath.absolutePath}`
-      const { stdout, stderr } = await exec(gitLastCommitCMD);
+      const { stdout, stderr } = await exec(gitLastCommitCMD)
       if (stderr) {
         console.error(stderr)
       }
