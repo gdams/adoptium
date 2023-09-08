@@ -12,6 +12,12 @@
         "tier": "adopter"
     },
     {
+        "name": "cosmoONE",
+        "logo": "adopters/logo-cosmoone.png",
+        "url": "https://www.cosmo-one.gr/",
+        "tier": "adopter"
+    },
+    {
         "name": "Delphix",
         "logo": "delphix.svg",
         "url": "https://www.delphix.com/",
@@ -82,6 +88,12 @@
         "name": "Mindus SARL",
         "logo": "adopters/logo-mindus.svg",
         "url": "https://www.mindus.co/",
+        "tier": "adopter"
+    },
+    {
+        "name": "MongoDB",
+        "logo": "adopters/logo-mongodb.svg",
+        "url": "https://mongodb.com/",
         "tier": "adopter"
     },
     {
