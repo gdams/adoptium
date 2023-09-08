@@ -2,30 +2,30 @@
 :page-authors: xavierfacq
 
 Nous avons rassemblé quelques questions fréquemment posées (FAQ) dans ce document.
-Si vous souhaitez nous parler de ces sujets, ou poser des questions supplémentaires
+Si vous souhaitez nous parler de ces sujets ou poser des questions supplémentaires, 
 le meilleur endroit est via https://adoptium.net/slack.html[Slack] ou en déclarant un problème dans le https://github.com/adoptium/adoptium-support[canal d'assistance].
 
-== Où se trouvent les derniers JDK Adoptium(R)?
+== Où se trouvent les derniers JDK Adoptium(R) ?
 
-Les JDK d'Adoptium s'appellent Eclipse Temurin, et les versions que nous recommandons d'utiliser sont 
+Les JDK d'Adoptium s'appellent Eclipse Temurin et les versions que nous recommandons d'utiliser sont 
 disponibles sur notre page des https://adoptium.net/temurin/releases/[dernières versions].
 
-Nous figurons également dans tous les gestionnaires d'installation de Java courants tels que https://formulae.brew.sh/cask/temurin[Homebrew], https://sdkman.io/[SDKMAN],
-https://github.com/microsoft/winget-cli[winget] et https://chocolatey.org/[Chocolatey], nous apparaissons dans les 
+Nous figurons également dans tous les gestionnaires d'installation de Java tels que https://formulae.brew.sh/cask/temurin[Homebrew], https://sdkman.io/[SDKMAN],
+https://github.com/microsoft/winget-cli[winget] et https://chocolatey.org/[Chocolatey], nous apparaissons également dans les 
 https://hub.docker.com/_/eclipse-temurin[images officielles de Docker], 
 vous pouvez aussi utiliser Temurin grâce à l'action Github https://github.com/marketplace/actions/setup-java-jdk#basic["setup-java"], 
 ou encore dans la plupart des fournisseurs de cloud proposant Java.
 
-Les installateurs Linux sont disponibles sur packages.adoptium.net.
+Les installeurs Linux sont disponibles sur packages.adoptium.net.
 Pour plus d'informations, voir link:/installation/linux[ce guide].
 
-== Comment puis-je créer un lien vers les dernières versions de Temurin(TM)?
+== Comment puis-je créer un lien vers les dernières versions de Temurin(TM) ?
 
 Le https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.adoc#example-two-linking-to-the-latest-jdk-or-jre[Cookbook de l'API Adoptium]
 contient des exemples d'URL stables qui renvoient vers des version spécifiques ou les dernières du JDK et du JRE de Temurin. 
 Vous pouvez également promouvoir Temurin en intégrant un https://adoptium.net/en-GB/temurin/buttons/[bouton HTML]  grâce au code disponible.
 
-== L'utilisation de Temurin est-elle gratuite?
+== L'utilisation de Temurin est-elle gratuite ?
 
 Oui. Les binaires d'Eclipse Temurin sont fournis gratuitement par Adoptium pour que vous puissiez les utiliser, pour toujours, 
 selon les termes de la "GNU General Public License, version 2 avec le Classpath Exception". Vous pouvez librement utiliser, 
@@ -43,7 +43,7 @@ et à exprimer leur voix quand à la direction du projet.
 
 * Nous apprécions l'aide technique et créative sur le projet pour faire avancer nos objectifs, grâce à la promotion et au marketing, 
 la rédaction de blogs sur votre expérience avec Adoptium, en répondant aux questions dans notre link:/slack[communauté Slack], en aidant à tester le
-logiciel ou à diagnostiquer des problèmes, et en aidant à link:/docs/first-timer-support[résoudre les problèmes] qui ont été signalés.
+logiciel ou à diagnostiquer des problèmes, et en aidant à link:/docs/first-timer-support[résoudre les problèmes] qui sont signalés.
 
 * De nombreuses autres façons, soit en tant qu'aide ponctuelle, soit en tant que membre d'une équipe à plus long terme, 
 rejoignez-nous et faites-nous part de vos idées, tout simplement !
@@ -58,8 +58,8 @@ Oui. Chaque version de Temurin a passé avec succès le kit de compatibilité Or
 pour démontrer qu'il s'agit d'une implémentation compatible de la spécification Java.
 De plus, les versions de Temurin doivent passer les tests de link:/aqavit[vérification de la qualité AQAvit] pour s'assurer qu'ils sont 
 prêts à être utilisés en production. 
-Les tests AQAvit vérifient que la version fait preuve d'excellentes performances, la sécurité, la résilience et endurance, 
-ainsi que la capacité de passer une large variété de tests de compatibilité avec des applications.
+Les tests AQAvit vérifient que la version fait preuve d'excellentes performances, de sécurité, de résilience et d'endurance, 
+ainsi que de la capacité à passer une large variété de tests de compatibilité avec des applications.
 
 == Où puis-je signaler un bug ou un problème avec Eclipse Temurin ?
 
@@ -69,12 +69,12 @@ qui gérera et suivra le problème en privé jusqu'à ce qu'il soit résolu.
 
 Si quelque chose ne se comporte pas comme prévu ou que vous avez des questions au sujet de
 comment configurer Temurin, veuillez-nous le faire savoir publiquement en ouvrant une https://github.com/adoptium/adoptium-support/issues/new/choose[demande de support] 
-et nous verrons ensemble pour trouver une solution. Notre support est basé sur une lien:/support["communauté"] donc les problèmes sont résolus dans la mesure du possible. 
+et nous verrons ensemble pour trouver une solution. Notre support est basé sur une link:/support["communauté"] donc les problèmes sont résolus dans la mesure du possible. 
 Vous devriez vous rapprocher des organisations qui offrent un support commercial si vous avez besoin d'une garantie de service pour votre utilisation de Java.
 
 == Pouvez-vous intégrer Temurin avec l'image Docker de mon système d'exploitation préféré ?
 
-Nous avons une liste de variantes dans notre https://hub.docker.com/_/eclipse-temurin[dépôt officiel Docker] pour assurer la livraison de nouvelles images contenant Temurin.
+Nous avons une liste variée dans notre https://hub.docker.com/_/eclipse-temurin[dépôt officiel Docker] pour assurer la livraison de nouvelles images contenant Temurin.
 Docker collabore avec Adoptium pour décider quelles versions de système d'exploitation supporteront Temurin.
 
 Les utilisateurs qui souhaitent une distribution Linux conteneurisée que nous ne fournissons pas, peuvent 
@@ -115,7 +115,7 @@ dans le https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.ado
 
 == Que représente le nom de "Eclipse Temurin" ?
 
-Il s'agit du projet et du nom de marque des binaires que La Fondation Eclipse produit.
+Il s'agit du projet et de la marque des binaires que La Fondation Eclipse produit.
 
 Bien que nous reconnaissons que le nom Adoptium/Temurin soit plus déroutant que juste "Adoptium", 
 c'est finalement identique à la façon dont d'autres fournisseurs marquent leurs binaires, par ex. Amazon a Corretto, Azul a Zulu
@@ -126,10 +126,10 @@ il est donc important de maintenir cette distinction.
 
 Les versions AdoptOpenJDK sont désormais connues sous le nom de «Eclipse Temurin by Adoptium" (https://adoptium.net/blog/2021/08/adoptium-celebrates-first-release/[lire l'article du blog]).
 Ne vous inquiétez pas, malgré les changements de marque, il s'agit des mêmes processus de build, des tests AQAvit et principalement la même équipe 
-qui les produit qu'avant, mais il y a un link:/des membres[plus de grandes entreprises] apportant leur expertise au groupe de travail.
+qui les produit qu'avant, mais il y a link:/members[plus de grandes entreprises] apportant leur expertise au groupe de travail.
 
 Pour assurer une transition en douceur, nous avons laissé l'ancien site actif. 
-Cependant, les liens vers les dernières versions de l'ancien site vous amèneront désormais à celles de Temurin. 
+Cependant, les liens vers les dernières versions de l'ancien site vous amèneront désormais vers celles de Temurin. 
 Avec le temps, l’ancien site sera complètement retiré.
 
 Certains éléments, tels que les https://adoptopenjdk.net/upstream.html[Upstream builds]
@@ -137,14 +137,14 @@ et https://adoptopenjdk.net/icedtea-web.html[IcedTea-WEB] restent uniquement dis
 
 == Où sont les builds OpenJ9?
 
-Le passage à Adoptium fait que nous n'avons malheureusement pas pu continuer à distribuer les versions des builds d'Eclipse OpenJ9. 
+Le passage à Adoptium fait que nous n'avons malheureusement pas pu continuer à distribuer les versions d'Eclipse OpenJ9. 
 
 IBM les a désormais repris et ils sont maintenant disponibles sous le nom de "https://developer.ibm.com/linguals/java/semeru-runtimes/[IBM Semeru]".
 Il n'y a pas lieu de s'inquiéter du changement, ils sont toujours gratuits.
 
 == Pourquoi les installeurs n'incluent-ils pas IcedTea-Web ?
 
-Les accords, que nous avons depuis passés sous la Fondation Eclipse, signifient que nous ne pouvons plus inclure IcedTea-Web dans nos installeurs.
+Les accords, que nous avons depuis passés via la Fondation Eclipse, signifient que nous ne pouvons plus inclure IcedTea-Web dans nos installeurs.
 Cependant, vous pouvez toujours ajouter la fonctionnalité, si vous en avez besoin, 
 en utilisant les https://blog.adoptopenjdk.net/2018/10/using-icedtea-web-browser-plug-in-with-adoptopenjdk/[instructions ici].
 
@@ -153,4 +153,4 @@ en utilisant les https://blog.adoptopenjdk.net/2018/10/using-icedtea-web-browser
 Les personnes impliquées dans le projet sont passionnées par sa promotion et 
 nous souhaitons trouver des moyens de promouvoir le travail que nous effectuons chez Adoptium et avec les binaires Temurin ; 
 alors n'hésitez pas à nous contacter si vous avez un forum auquel vous souhaitez que nous participions et nous verrons ce que nous pourons faire. 
-De manière générale, contacter l'équipe via Slack est le meilleur moyen de dialoguer avec nous.
+De manière générale, contacter l'équipe via Slack est encore le meilleur moyen de discuter avec nous.
