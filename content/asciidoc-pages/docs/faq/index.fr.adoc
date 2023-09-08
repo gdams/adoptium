@@ -122,7 +122,7 @@ c'est finalement identique à la façon dont d'autres fournisseurs marquent leur
 (et d'autres). Le projet et le groupe de travail "Adoptium" est amené à travailler sur d'autres sujets que Temurin, 
 il est donc important de maintenir cette distinction.
 
-== Qu'est-il arrivé à AdoptOpenJDK?
+== Qu'est-il arrivé à AdoptOpenJDK ?
 
 Les versions AdoptOpenJDK sont désormais connues sous le nom de «Eclipse Temurin by Adoptium" (https://adoptium.net/blog/2021/08/adoptium-celebrates-first-release/[lire l'article du blog]).
 Ne vous inquiétez pas, malgré les changements de marque, il s'agit des mêmes processus de build, des tests AQAvit et principalement la même équipe 
@@ -135,7 +135,7 @@ Avec le temps, l’ancien site sera complètement retiré.
 Certains éléments, tels que les https://adoptopenjdk.net/upstream.html[Upstream builds]
 et https://adoptopenjdk.net/icedtea-web.html[IcedTea-WEB] restent uniquement disponibles via AdoptOpenJDK.
 
-== Où sont les builds OpenJ9?
+== Où sont les builds OpenJ9 ?
 
 Le passage à Adoptium fait que nous n'avons malheureusement pas pu continuer à distribuer les versions d'Eclipse OpenJ9. 
 
