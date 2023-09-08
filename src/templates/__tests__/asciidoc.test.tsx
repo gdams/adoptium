@@ -6,10 +6,14 @@ import { axe } from 'vitest-axe';
 import { createAsciidocData } from '../../__fixtures__/page';
 
 let mockData = createAsciidocData();
+const pageContext = {
+  locale: 'en',
+  defaultGitSHA: '1234567890',
+}
 
 describe('Asciidoc pages', () => {
   it('renders correctly', () => {
-    const { container } = render(<AllAsciidocPages data={mockData} />);
+    const { container } = render(<AllAsciidocPages data={mockData} pageContext />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -25,7 +29,7 @@ describe('Asciidoc pages', () => {
 
   it('renders correctly - installation slug', () => {
     mockData.asciidoc.fields.slug = '/installation/';
-    const { container } = render(<AllAsciidocPages data={mockData} />);
+    const { container } = render(<AllAsciidocPages data={mockData} pageContext />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -33,7 +37,7 @@ describe('Asciidoc pages', () => {
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<AllAsciidocPages data={mockData} />);
+    const { container } = render(<AllAsciidocPages data={mockData} pageContext />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
