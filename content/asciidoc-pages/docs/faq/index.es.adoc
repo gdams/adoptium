@@ -1,5 +1,6 @@
 = Frequently Asked Questions
 :page-authors: eddumelendez, czelabueno, jdluna, raulmj, tellison, gdams
+:page-based-on: 50dc526fadcdd7dd03b386f112ac1ab4043bb554
 
 Hemos reunido unas cuantas preguntas frecuentes (FAQs) en este documento.
 Si quieres conversar con nosotros sobre estos tópicos, o realizar preguntas adicionales 
@@ -21,6 +22,8 @@ action, y parte del soporte de Java de los proveedores de la nube.
 
 Los instaladores de Linux están disponibles en packages.adoptium.net. Para más
 información ver link:/installation/linux[esta guía].
+
+== ¿Temurin(TM) es de uso gratuito?
 
 Sí. Los binarios de Eclipse Temurin son proporcionados para su uso sin ningún costo por Adoptium, por siempre, bajo los términos de la "GNU General Public License, version 2 with the
 Classpath Exception". Usted puede utilizar, modificar y compartir libremente el código como se describe en las licencias incluidas en la descarga.

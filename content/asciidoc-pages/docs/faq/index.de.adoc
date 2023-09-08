@@ -1,5 +1,6 @@
 = Frequently Asked Questions
 :page-authors: gdams, HanSolo, sw-fox, aumann, hendrikebbers
+:page-based-on: 56f8f9b0dd04a8cadd21fa9b68ee86430949c0b7
 
 Auf dieser Seite haben wir versucht häufig gestellte Fragen (FAQs) für die Community zu beantworten.
 Alle weiteren Fragen können jederzeit gerne in unsere https://adoptium.net/slack.html[Slack-Channel] gestellt

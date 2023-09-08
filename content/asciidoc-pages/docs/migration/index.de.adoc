@@ -1,5 +1,6 @@
 = Migration Guide
 :page-authors: gdams, HanSolo, MBoegers, hendrikebbers, ojuschugh1
+:page-based-on: e0bae585804689459af34ceecc98fe74e8cfc3d6
 :icons: font
 
 == Migration zu Eclipse Temurin

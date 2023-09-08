@@ -2,6 +2,8 @@ const crypto = require('crypto')
 const path = require('path')
 const fetch = require('node-fetch')
 const fs = require('fs')
+const util = require('node:util')
+const exec = util.promisify(require('node:child_process').exec)
 const { pipeline } = require('stream')
 const { promisify } = require('util')
 const { createFilePath } = require('gatsby-source-filesystem')
@@ -87,7 +89,7 @@ exports.sourceNodes = async ({ actions, createNodeId }) => {
   createNode(MostRecentFeatureVersion)
 }
 
-exports.onCreatePage = ({ page, actions }) => {
+exports.onCreatePage = ({ page, actions, getNodes }) => {
   const { createPage, deletePage } = actions
 
   // Delete pages such as /about/index.de
@@ -109,9 +111,12 @@ exports.onCreatePage = ({ page, actions }) => {
           : `${locales[lang].path}${page.path}`
 
         let locale = 'en'
+        let defaultGitSHA 
 
         if (fs.existsSync(`./content/asciidoc-pages${page.path}index.${lang}.adoc`)) {
           locale = lang
+          // fetch fields.gitSHA from the default language file
+          defaultGitSHA = getNodes().find(n => n.fields && n.fields.slug === page.path).fields.gitSHA || null
         }
 
         return createPage({
@@ -126,6 +131,7 @@ exports.onCreatePage = ({ page, actions }) => {
           context: {
             ...page.context,
             locale,
+            defaultGitSHA: defaultGitSHA,
             language: lang,
             i18n: {
               ...page.context.i18n,
@@ -167,6 +173,17 @@ exports.onCreateNode = async ({ node, actions, getNode, getNodes }) => {
 
     // Find the key that has "default: true" set (in this case it returns "en")
     const defaultKey = findKey(locales, o => o.default === true)
+
+    if (isDefault) {
+      // Get Git SHA of the last commit to the file and add it as a field
+      const gitLastCommitCMD = `git log -1 --format=%H ${fetchFilePath.absolutePath}`
+      const { stdout, stderr } = await exec(gitLastCommitCMD);
+      if (stderr) {
+        console.error(stderr)
+      }
+      const gitLastCommit = stdout.trim() || null
+      gitLastCommit && createNodeField({ node, name: 'gitSHA', value: gitLastCommit })
+    }
 
     // Files are defined with "name-with-dashes.lang.adoc"
     // name returns "name-with-dashes.lang"

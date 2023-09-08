@@ -13,7 +13,7 @@ import Seo from '../components/Seo'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@fortawesome/fontawesome-free/css/v4-shims.min.css'
 
-const AsciidocTemplate = ({ data }) => {
+const AsciidocTemplate = ({ data, pageContext }) => {
   useEffect(() => {
     asciidocFormatter()
     highlightCode()
@@ -21,7 +21,10 @@ const AsciidocTemplate = ({ data }) => {
   const { asciidoc } = data // data.asciidoc holds our data
   const { document, fields, html, pageAttributes } = asciidoc
   const pageAuthorList = pageAttributes.authors || ''
-  const { relativePath } = fields
+  const basedOnSha = pageAttributes.based_on || ''
+  const { relativePath, slug } = fields
+  const { defaultGitSHA, locale } = pageContext
+
   return (
     <Layout>
       <section className='py-5 px-3'>
@@ -31,7 +34,15 @@ const AsciidocTemplate = ({ data }) => {
           </div>
           <div className='asciidoc col-lg-6 col-md-12'>
             <h1 className='pb-4 fw-light text-center' dangerouslySetInnerHTML={{ __html: document.title }} />
-            {fields.slug === '/installation/' && (
+            {basedOnSha && defaultGitSHA !== basedOnSha && (
+              <div className='alert alert-warning'>
+                <i className='fas fa-exclamation-triangle' />
+                This localized page is based on a <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/${basedOnSha}/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>previous version of the English page</a> and might be inaccurate.
+                Please help us by updating this page to match the <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/main/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>latest version of the English page</a>.
+                See our <a target='_blank' rel='noopener noreferrer' href='https://github.com/adoptium/adoptium.net/tree/main/content/asciidoc-pages#localising-documentation'>translation guide</a> for more information.
+              </div>
+            )}
+            {slug === '/installation/' && (
               <section className='adopt-demo-container hide-on-mobile my-5'>
                 <div className='adopt-demo mx-auto'>
                   <InstallTabs />
@@ -77,6 +88,7 @@ export const pageQuery = graphql`
       }
       pageAttributes {
         authors
+        based_on
       }
     }
     locales: allLocale(filter: {language: {eq: $language}}) {
