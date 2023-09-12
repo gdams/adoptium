@@ -3,7 +3,7 @@
 :keywords: adoptium AQAvit quality policy
 :orgname: Eclipse Adoptium
 :lang: en
-:page-authors: gdams, HanSolo
+:page-authors: gdams, HanSolo, hendrikebbers, xavierfacq
 :page-based-on: edd131f41d548b815a7edbcf59848b8161fbc9e6
 
 == Überblick

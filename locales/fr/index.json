@@ -1,5 +1,5 @@
 {
   "Prebuilt OpenJDK": "OpenJDK précompilé",
-  "Binaries for Free!": "Binaires gratuits !",
-  "Intro": "Java™ est l'un des premiers langages de programmation et plate-formes logicielles au monde. Le groupe de travail Adoptium promeut et prend en charge des environnements d'exécution de haute qualité certifiés TCK et la technologie associée à utiliser dans l'ensemble de l'écosystème Java. Eclipse Temurin est le nom de la distribution OpenJDK d'Adoptium."
+  "Binaries for Free!": "Des binaires gratuits !",
+  "Intro": "Java™ est le premier langage de programmation et la première plate-forme de développement au monde. Le groupe de travail Adoptium supporte et produit des environnements d'exécution de haute qualité, certifiés TCK ainsi que les technologies associées, à utiliser dans l'ensemble de l'écosystème Java. Eclipse Temurin est le nom de la distribution OpenJDK d'Adoptium."
 }
