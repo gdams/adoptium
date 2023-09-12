@@ -23,7 +23,10 @@ const AsciidocTemplate = ({ data, pageContext }) => {
   const pageAuthorList = pageAttributes.authors || ''
   const basedOnSha = pageAttributes.based_on || ''
   const { relativePath, slug } = fields
-  const { defaultGitSHA, locale } = pageContext
+  const { defaultGitSHA, locale, language } = pageContext
+
+  const displayDefaultLocaleWarning = locale !== language;  // because the version in the 'language' doesn't exist
+  const displayOutdatedWarning = basedOnSha && defaultGitSHA !== basedOnSha;
 
   return (
     <Layout>
@@ -34,7 +37,15 @@ const AsciidocTemplate = ({ data, pageContext }) => {
           </div>
           <div className='asciidoc col-lg-6 col-md-12'>
             <h1 className='pb-4 fw-light text-center' dangerouslySetInnerHTML={{ __html: document.title }} />
-            {basedOnSha && defaultGitSHA !== basedOnSha && (
+            {displayDefaultLocaleWarning && (
+              <div className='alert alert-warning'>
+                <i className='fas fa-exclamation-triangle' />
+                This page is the <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/${basedOnSha}/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>the English version</a> because it is not available in your language.
+                Please help us by translating this page to match the <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/main/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>latest version of the English page</a>.
+                See our <a target='_blank' rel='noopener noreferrer' href='https://github.com/adoptium/adoptium.net/tree/main/content/asciidoc-pages#localising-documentation'>translation guide</a> for more information.
+              </div>
+            )}
+            {displayOutdatedWarning && (
               <div className='alert alert-warning'>
                 <i className='fas fa-exclamation-triangle' />
                 This localized page is based on a <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/${basedOnSha}/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>previous version of the English page</a> and might be inaccurate.

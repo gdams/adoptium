@@ -43,30 +43,44 @@ describe('Asciidoc pages', () => {
     expect(results).toHaveNoViolations();
   });
 
-  it('renders correctly - no warning translation is up-to-date', () => {
-    let noWarningMockData = createAsciidocData();
-    noWarningMockData.asciidoc.pageAttributes.based_on = '1234567890';
+  it('renders correctly - no warning when translation is up-to-date', () => {
+    let customMockData = createAsciidocData();
+    customMockData.asciidoc.pageAttributes.based_on = '1234567890';
 
-    let noWarningPageContext = {
+    let customPageContext = {
       locale: 'fr',
+      language: 'fr',
       defaultGitSHA: '1234567890',
     }
 
-    const { container } = render(<AllAsciidocPages data={noWarningMockData} pageContext={noWarningPageContext} />);
+    const { container } = render(<AllAsciidocPages data={customMockData} pageContext={customPageContext} />);
 
     expect(container.getElementsByClassName('alert-warning').length).toBe(0);
   });
 
-  it('renders correctly - display warning translation is outdated', () => {
-    let warningMockData = createAsciidocData();
-    warningMockData.asciidoc.pageAttributes.based_on = '0987654321';
+  it('renders correctly - display warning when translation is outdated', () => {
+    let customMockData = createAsciidocData();
+    customMockData.asciidoc.pageAttributes.based_on = '0987654321';
 
-    let warningPageContext = {
+    let customPageContext = {
       locale: 'fr',
+      language: 'fr',
       defaultGitSHA: '1234567890',
     }
 
-    const { container } = render(<AllAsciidocPages data={warningMockData} pageContext={warningPageContext} />);
+    const { container } = render(<AllAsciidocPages data={customMockData} pageContext={customPageContext} />);
+
+    expect(container.getElementsByClassName('alert-warning').length).toBe(1);
+  });
+
+  it('renders correctly - display warning when translation is the default one', () => {
+    let customPageContext = {
+      locale: 'en',
+      language: 'fr',
+      defaultGitSHA: '1234567890',
+    }
+
+    const { container } = render(<AllAsciidocPages data={mockData} pageContext={customPageContext} />);
 
     expect(container.getElementsByClassName('alert-warning').length).toBe(1);
   });
