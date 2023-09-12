@@ -11,6 +11,7 @@ const pageContext = {
   defaultGitSHA: '1234567890',
 }
 
+
 describe('Asciidoc pages', () => {
   it('renders correctly', () => {
     const { container } = render(<AllAsciidocPages data={mockData} pageContext />);
@@ -40,5 +41,33 @@ describe('Asciidoc pages', () => {
     const { container } = render(<AllAsciidocPages data={mockData} pageContext />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
+  });
+
+  it('renders correctly - no warning translation is up-to-date', () => {
+    let noWarningMockData = createAsciidocData();
+    noWarningMockData.asciidoc.pageAttributes.based_on = '1234567890';
+
+    let noWarningPageContext = {
+      locale: 'fr',
+      defaultGitSHA: '1234567890',
+    }
+
+    const { container } = render(<AllAsciidocPages data={noWarningMockData} pageContext={noWarningPageContext} />);
+
+    expect(container.getElementsByClassName('alert-warning').length).toBe(0);
+  });
+
+  it('renders correctly - display warning translation is outdated', () => {
+    let warningMockData = createAsciidocData();
+    warningMockData.asciidoc.pageAttributes.based_on = '0987654321';
+
+    let warningPageContext = {
+      locale: 'fr',
+      defaultGitSHA: '1234567890',
+    }
+
+    const { container } = render(<AllAsciidocPages data={warningMockData} pageContext={warningPageContext} />);
+
+    expect(container.getElementsByClassName('alert-warning').length).toBe(1);
   });
 });
