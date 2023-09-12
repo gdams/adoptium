@@ -88,6 +88,8 @@ def main():
                     outdated_locales.append(locale)
 
         if outdated_locales:
+            # Print the list of outdated locales
+            print(f"Outdated locales for {english_file}: {outdated_locales}")
             # Check if an issue already exists for this file
             check_issue = (
                 os.popen(

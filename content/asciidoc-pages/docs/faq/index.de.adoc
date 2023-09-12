@@ -1,12 +1,12 @@
 = Frequently Asked Questions
 :page-authors: gdams, HanSolo, sw-fox, aumann, hendrikebbers, xavierfacq
-:page-based-on: 50dc526fadcdd7dd03b386f112ac1ab4043bb554
+:page-based-on: 7ca352f4545cad6fd03722c9206d31da76063d4a
 
 Auf dieser Seite haben wir versucht häufig gestellte Fragen (FAQs) für die Community zu beantworten.
 Alle weiteren Fragen können jederzeit gerne in unsere https://adoptium.net/slack.html[Slack-Channel] gestellt
 oder per Ticket im https://github.com/adoptium/adoptium-support[Support-Kanal] eingereicht werden.
 
-== Wo kann man die neuesten Adoptium® JDKs finden?
+== Wo kann man die neuesten Adoptium(R) JDKs finden?
 
 Die JDKs von Adoptium heißen Eclipse Temurin. Die von uns empfohlenen Versionen kann man direkt 
 https://adoptium.net/temurin/releases/[auf unserer Seite] finden.
@@ -19,7 +19,7 @@ von Cloud-Anbietern zu verwenden.
 
 Linux-Installationsprogramme sind unter `packages.adoptium.net` verfügbar. Weitere Informationen hierzu finden Sie https://adoptium.net/installation/linux[in diesem Leitfaden].
 
-== Gibt es statische Links für Temurin™ Builds?
+== Gibt es statische Links für Temurin(TM) Builds?
 
 Das https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.adoc#example-two-linking-to-the-latest-jdk-or-jre[Adoptium API cookbook] beinhatet Beispiele zu statischen und stabilen URLs die zu spezifischen Temurin Versionen verlinken. Zusätzlich bieten wir https://adoptium.net/en-GB/temurin/buttons/[HTML Buttons] an, die auf Temurin downloads verweisen.
 
