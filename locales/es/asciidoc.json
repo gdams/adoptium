@@ -1,0 +1,4 @@
+{
+    "asciidoc.template.warn.default.locale": "Esta página es la <englishVersionLink>versión en inglés</englishVersionLink> porque no está disponible en su idioma. Por favor, ayudenos traduciendo esta página a su idioma. Para más información, visite nuestra <translationGuideLink>guía de traducción</translationGuideLink>",
+    "asciidoc.template.warn.outdated": "La traducción de esta página está basada en una <previousEnglishVersionLink>versión anterior de la página en inglés</previousEnglishVersionLink> y puede ser inexacta. Por favor, ayúdenos actualizando esta página para que coincida con la <lastEnglishVersionLink>última versión de la pagina en inglés</lastEnglishVersionLink>. Para más información, visite nuestra <translationGuideLink>guía de traducción</translationGuideLink>."
+}

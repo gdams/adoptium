@@ -11,6 +11,7 @@ export interface AsciidocPage {
     },
     pageAttributes: {
         authors: string;
+        based_on?: string;
     }
 }
 

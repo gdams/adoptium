@@ -1,0 +1,4 @@
+{
+    "asciidoc.template.warn.default.locale": "Dies ist die <englishVersionLink>englische Version</englishVersionLink> der Seite, da aktuell noch keine deutsche Übersetzung verfügbar ist. Du kannst uns helfen diese Seite in deutsch bereitzustellen. In unserem <translationGuideLink>Leitfaden zu Übersetzungen</translationGuideLink> findest du mehr Informationen.",
+    "asciidoc.template.warn.outdated": "Die deutsche Übersetzung dieser Seite basiert auf einem <previousEnglishVersionLink>nicht mehr aktuellen englischen Text</previousEnglishVersionLink>. Daher ist es Möglich, dass Teile des Textes nicht mehr zutreffen. Du kannst helfen die Seite aktuell zu halten und eine überarbeitete Übersetzung der <lastEnglishVersionLink>aktuellen englischen Seite/lastEnglishVersionLink> bereitzustellen. In unserem <translationGuideLink>Leitfaden zu Übersetzungen</translationGuideLink> findest du mehr Informationen."
+}

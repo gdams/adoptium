@@ -27,7 +27,8 @@ const AsciidocTemplate = ({ data, pageContext }) => {
   const { relativePath, slug } = fields
   const { defaultGitSHA, locale, language } = pageContext
 
-  const displayDefaultLocaleWarning = locale !== language;  // because the version in the 'language' doesn't exist
+  // Translated version of the page doesn't exist and isn't en-GB
+  const displayDefaultLocaleWarning = locale !== language && language !== 'en-GB';
   const displayOutdatedWarning = defaultGitSHA && basedOnSha && defaultGitSHA !== basedOnSha;
 
   return (
@@ -41,7 +42,7 @@ const AsciidocTemplate = ({ data, pageContext }) => {
             <h1 className='pb-4 fw-light text-center' dangerouslySetInnerHTML={{ __html: document.title }} />
             {displayDefaultLocaleWarning && (
               <div className='alert alert-warning'>
-                <i className='fas fa-exclamation-triangle' />
+                <i className='fas fa-exclamation-triangle pe-1' />
                 <Trans 
                   i18nKey='asciidoc.template.warn.default.locale' 
                   defaults='This page is the <englishVersionLink>English version</englishVersionLink> because it is not available in your language. Please help us by translating this page into your language. See our <translationGuideLink>translation guide</translationGuideLink> for more information.'
@@ -54,7 +55,7 @@ const AsciidocTemplate = ({ data, pageContext }) => {
             )}
             {displayOutdatedWarning && (
               <div className='alert alert-warning'>
-                <i className='fas fa-exclamation-triangle' />
+                <i className='fas fa-exclamation-triangle pe-1' />
                 <Trans 
                   i18nKey='asciidoc.template.warn.outdated' 
                   defaults='This localized page is based on a <previousEnglishVersionLink>previous version of the English page</previousEnglishVersionLink> and might be inaccurate. Please help us by updating this page to match the <lastEnglishVersionLink>latest version of the English page</lastEnglishVersionLink>. See our <translationGuideLink>translation guide</translationGuideLink> for more information.'
