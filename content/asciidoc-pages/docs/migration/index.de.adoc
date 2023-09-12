@@ -1,5 +1,5 @@
 = Migration Guide
-:page-authors: gdams, HanSolo, MBoegers, hendrikebbers, ojuschugh1
+:page-authors: gdams, HanSolo, MBoegers, hendrikebbers, ojuschugh1, xavierfacq
 :page-based-on: e0bae585804689459af34ceecc98fe74e8cfc3d6
 :icons: font
 
