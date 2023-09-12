@@ -6,7 +6,7 @@
 :icons: font
 
 
-Wir bei Adoptium wollen Menschen helfen, in OpenSource, Java und die Java Community einzusteigen.
+Wir bei Adoptium wollen Menschen unterstützen, in OpenSource, Java und die Java Community einzusteigen.
 Deshalb ist es für uns wichtig, Menschen, die mit OpenSource arbeiten wollen, zu unterstützen.
 
 [NOTE]
