@@ -9,6 +9,8 @@ import EditLink from '../components/EditLink'
 import AuthorsList from '../components/AuthorList'
 import InstallTabs from '../components/InstallTabs'
 import Seo from '../components/Seo'
+import { Trans } from 'gatsby-plugin-react-i18next';
+import LinkText from '../components/LinkText'
 
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@fortawesome/fontawesome-free/css/v4-shims.min.css'
@@ -26,7 +28,7 @@ const AsciidocTemplate = ({ data, pageContext }) => {
   const { defaultGitSHA, locale, language } = pageContext
 
   const displayDefaultLocaleWarning = locale !== language;  // because the version in the 'language' doesn't exist
-  const displayOutdatedWarning = basedOnSha && defaultGitSHA !== basedOnSha;
+  const displayOutdatedWarning = defaultGitSHA && basedOnSha && defaultGitSHA !== basedOnSha;
 
   return (
     <Layout>
@@ -40,17 +42,28 @@ const AsciidocTemplate = ({ data, pageContext }) => {
             {displayDefaultLocaleWarning && (
               <div className='alert alert-warning'>
                 <i className='fas fa-exclamation-triangle' />
-                This page is the <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/${basedOnSha}/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>the English version</a> because it is not available in your language.
-                Please help us by translating this page to match the <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/main/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>latest version of the English page</a>.
-                See our <a target='_blank' rel='noopener noreferrer' href='https://github.com/adoptium/adoptium.net/tree/main/content/asciidoc-pages#localising-documentation'>translation guide</a> for more information.
+                <Trans 
+                  i18nKey='asciidoc.template.warn.default.locale' 
+                  defaults='This page is the <englishVersionLink>English version</englishVersionLink> because it is not available in your language. Please help us by translating this page into your language. See our <translationGuideLink>translation guide</translationGuideLink> for more information.'
+                  components={{
+                    englishVersionLink: <LinkText href={`https://github.com/adoptium/adoptium.net/blob/main/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`} />,
+                    translationGuideLink: <LinkText href='https://github.com/adoptium/adoptium.net/tree/main/content/asciidoc-pages#localising-documentation' />
+                  }}
+                />
               </div>
             )}
             {displayOutdatedWarning && (
               <div className='alert alert-warning'>
                 <i className='fas fa-exclamation-triangle' />
-                This localized page is based on a <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/${basedOnSha}/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>previous version of the English page</a> and might be inaccurate.
-                Please help us by updating this page to match the <a target='_blank' rel='noopener noreferrer' href={`https://github.com/adoptium/adoptium.net/blob/main/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`}>latest version of the English page</a>.
-                See our <a target='_blank' rel='noopener noreferrer' href='https://github.com/adoptium/adoptium.net/tree/main/content/asciidoc-pages#localising-documentation'>translation guide</a> for more information.
+                <Trans 
+                  i18nKey='asciidoc.template.warn.outdated' 
+                  defaults='This localized page is based on a <previousEnglishVersionLink>previous version of the English page</previousEnglishVersionLink> and might be inaccurate. Please help us by updating this page to match the <lastEnglishVersionLink>latest version of the English page</lastEnglishVersionLink>. See our <translationGuideLink>translation guide</translationGuideLink> for more information.'
+                  components={{
+                    previousEnglishVersionLink: <LinkText href={`https://github.com/adoptium/adoptium.net/blob/${basedOnSha}/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`} />,
+                    lastEnglishVersionLink: <LinkText href={`https://github.com/adoptium/adoptium.net/blob/main/content/asciidoc-pages/${relativePath.replace(`.${locale}`, '')}`} />,
+                    translationGuideLink: <LinkText href='https://github.com/adoptium/adoptium.net/tree/main/content/asciidoc-pages#localising-documentation' />
+                  }}
+                />
               </div>
             )}
             {slug === '/installation/' && (

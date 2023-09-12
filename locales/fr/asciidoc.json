@@ -1,0 +1,4 @@
+{
+    "asciidoc.template.warn.default.locale": "Cette page est la <englishVersionLink>version en anglais</englishVersionLink> car elle n'existe pas dans votre langue. Aidez-nous à la traduire en français. Consultez notre <translationGuideLink>guide de traduction</translationGuideLink> pour plus d'informations.",
+    "asciidoc.template.warn.outdated": "Cette page est la <englishVersionLink>version en anglais</englishVersionLink> car elle n'existe pas dans votre langue. Aidez-nous à traduire la dernière <englishVersionLink>version en anglais</englishVersionLink>. Consultez notre <translationGuideLink>guide de traduction</translationGuideLink> pour plus d'informations."
+}
