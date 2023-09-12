@@ -1,5 +1,6 @@
 = About Eclipse Adoptium(R)
 :page-authors: zdtsw, gdams
+:page-based-on: 50e5dbed709fcbf4e2b5f225c9da68a17ebb301e
 
 Eclipse Adoptium 作为顶级项目的使命是生产高质量的 Java 运行时和相关技术，以应用于 Java 生态系统。
 
@@ -35,4 +36,3 @@ Eclipse Adoptium 提供高性能的运行时二进制文件，这些文件符合
 
 * 构建脚本和其他用来生成二进制文件、门户网站和构建基础架构的代码已获得 https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0] 许可.
 * OpenJDK 代码本身已获得 https://openjdk.java.net/legal/gplv2+ce.html[GPL v2 with Classpath Exception] (GPLv2+CE) 和 https://openjdk.java.net/legal/assembly-exception.html[GPL v2 with Assembly Exception] (GPLv2+Assembly) 许可.
-:page-based-on: 50e5dbed709fcbf4e2b5f225c9da68a17ebb301e

@@ -1,5 +1,6 @@
 = Commercial Support Options for Eclipse Temurin(TM)
 :page-authors: zdtsw, tellison
+:page-based-on: 4f7e0d66e577a9c619e38c6d670d86f9c4736874
 
 对于Eclipse Temurin，我们提供多种商业支持选项。
 需要注意的是，以下列举的供应商并未经过Adoptium(R)项目的评估，也没有得到Adoptium(R)项目正式认可。
@@ -46,4 +47,3 @@ Red Hat的客户可以通过订阅获得对关键的Java生产环境提供的24x
 |===
 
 商业支持供应商可以通过 https://github.com/adoptium/adoptium.net/issues/new/choose[提交请求] 以加入此列表。
-:page-based-on: 4f7e0d66e577a9c619e38c6d670d86f9c4736874
