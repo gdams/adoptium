@@ -92,10 +92,11 @@ def main():
             check_issue = (
                 os.popen(
                     # split this line into two to avoid a bug in the GitHub CLI
-                    "gh issue list " +
-                    f"-R {REPO} " +
-                    f"--search 'Translation review required after updates to {os.path.relpath(english_file, CONTENT_DIR)}' " +
-                    "--state open"
+                    "gh issue list "
+                    + f"-R {REPO} "
+                    + "--search 'Translation review required after updates to "
+                    + f"{os.path.relpath(english_file, CONTENT_DIR)}' "
+                    + "--state open"
                 )
                 .read()
                 .strip()
@@ -126,7 +127,8 @@ def main():
                 ] = f"{localized_shasum} {locale}"
                 body += f"+ {localized_shasum} ({locale})\n"
             body += "```\n\n"
-            body += f"View the Latest version of the file [here](https://github.com/{REPO}/blob/main/{english_file}).\n\n"
+            body += "View the Latest version of the file "
+            body += f"[here](https://github.com/{REPO}/blob/main/{english_file}).\n\n"
             body += "| Locale | File | Locale Lead |\n"
             body += "| ------ | ---- | ----------- |\n"
             for locale in outdated_locales:
@@ -136,7 +138,10 @@ def main():
                 locale_lead = locale_leads.get(locale)
                 if locale_lead is None:
                     locale_lead = "n/a"
-                body += f'| {locale} | [{f"index.{locale}.adoc"}](https://github.com/{REPO}/blob/main/{os.path.join(root, f"index.{locale}.adoc")}) | {locale_lead}\n'
+                url = f"https://github.com/{REPO}/blob/main/{os.path.join(root, f'index.{locale}.adoc')}"
+                body += (
+                    f'| {locale} | [{f"index.{locale}.adoc"}]({url}) | {locale_lead}\n'
+                )
             body += "\n"
             body += "---\n\n"
 
