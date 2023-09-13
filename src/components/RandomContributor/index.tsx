@@ -30,7 +30,7 @@ const RandomContributor = (): JSX.Element => {
           <div className="random-contributor__thank">
             <Trans 
               i18nKey="asciidoc.random.contributor.text" 
-              defaults='Thank you <profileUri>{{login}}</profileUri> for making <commitsListUri>{{contributionsCount}} contributions</commitsListUri> to <repoUri>{{repo}}</repoUri>' 
+              defaults='Thank you <profileUri>{{login}}</profileUri> for making <commitsListUri>{{contributionsCount}} contribution(s)</commitsListUri> to <repoUri>{{repo}}</repoUri>' 
               components={{
                 profileUri: <Link href={contributor.profileUri} target="_blank" rel="nofollow noopener noreferrer" />, 
                 commitsListUri: <Link href={contributor.commitsListUri} target="_blank" rel="nofollow noopener noreferrer"/>,

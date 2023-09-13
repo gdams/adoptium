@@ -6,5 +6,5 @@
     "asciidoc.edit.link.content": "Tous les documents Adoptium sont open source. Vous voyez quelque chose qui ne va pas ou qui n'est pas clair ?",
     "asciidoc.edit.link.button": "Modifier cette page",
     "asciidoc.table.of.contents": "Table des matières",
-    "asciidoc.random.contributor.text": "Merci <profileUri>{{login}}</profileUri> d'avoir faire <commitsListUri>{{contributionsCount}} contributions</commitsListUri> dans <repoUri>{{repo}}</repoUri>"
+    "asciidoc.random.contributor.text": "Merci <profileUri>{{login}}</profileUri> d'avoir faire <commitsListUri>{{contributionsCount}} contribution(s)</commitsListUri> dans <repoUri>{{repo}}</repoUri>"
 }
