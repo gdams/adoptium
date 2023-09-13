@@ -8,6 +8,7 @@
     {
         "name": "Arm",
         "logo": "adopters/logo-arm.svg",
+        "logoPadding": "1em",
         "url": "https://www.arm.com/",
         "tier": "adopter"
     },
