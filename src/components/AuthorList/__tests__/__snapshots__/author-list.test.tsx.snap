@@ -5,7 +5,7 @@ exports[`AuthorsList component > renders correctly 1`] = `
   <div
     class="_authorList_b2bb3b"
   >
-    DOCUMENTATION AUTHORS
+    Text
     <ul>
       <li>
         <a
