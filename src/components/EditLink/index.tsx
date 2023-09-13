@@ -18,20 +18,20 @@ const EditLink = ({ relativePath }: Props) => {
     <div className='mx-auto pt-5'>
       <span className='fw-bold'>
         <Trans 
-          i18nKey='edit.link.title' 
+          i18nKey='asciidoc.edit.link.title' 
           defaults='Help us make these docs great!'
         />
       </span><br/>
       <span>
         <Trans 
-          i18nKey='edit.link.content' 
+          i18nKey='asciidoc.edit.link.content' 
           defaults="All Adoptium docs are open source. See something that's wrong or unclear?"
         />
       </span><br/>
       <a href={href} className='btn btn-secondary mt-2' style={{borderColor: '#0869DA', backgroundColor: '#f6f8fa'}} target='_blank' rel='noopener noreferrer'>
         <IoMdGitPullRequest size={18} style={{ marginRight: '.3em' }} />
         <Trans 
-          i18nKey='edit.link.button' 
+          i18nKey='asciidoc.edit.link.button' 
           defaults='Edit this page'
         />
       </a>
