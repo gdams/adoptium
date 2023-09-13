@@ -2,8 +2,7 @@ import React, { MutableRefObject, useRef } from 'react';
 import { useAdoptiumContributorsApi, useOnScreen } from '../../hooks';
 import './RandomContributor.scss';
 import AnimatedPlaceholder from '../AnimatedPlaceholder';
-import { Trans } from 'gatsby-plugin-react-i18next';
-import Link from '@mui/material/Link';
+import { Trans, Link } from 'gatsby-plugin-react-i18next';
 
 const RandomContributor = (): JSX.Element => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -32,9 +31,9 @@ const RandomContributor = (): JSX.Element => {
               i18nKey="asciidoc.random.contributor.text" 
               defaults='Thank you <profileUri>{{login}}</profileUri> for making <commitsListUri>{{contributionsCount}} contribution(s)</commitsListUri> to <repoUri>{{repo}}</repoUri>' 
               components={{
-                profileUri: <Link href={contributor.profileUri} target="_blank" rel="nofollow noopener noreferrer" />, 
-                commitsListUri: <Link href={contributor.commitsListUri} target="_blank" rel="nofollow noopener noreferrer"/>,
-                repoUri: <Link href={`https://github.com/adoptium/${contributor.repo}`} target="_blank" rel="nofollow noopener noreferrer"/>,
+                profileUri: <Link to={contributor.profileUri} target="_blank" rel="nofollow noopener noreferrer" />, 
+                commitsListUri: <Link to={contributor.commitsListUri} target="_blank" rel="nofollow noopener noreferrer"/>,
+                repoUri: <Link to={`https://github.com/adoptium/${contributor.repo}`} target="_blank" rel="nofollow noopener noreferrer"/>,
               }}
               values={{
                 'login': contributor.login, 
