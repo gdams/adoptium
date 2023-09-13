@@ -1,4 +1,4 @@
-export default function asciidocFormatter () {
+export default function asciidocFormatter (t /* 't' from useI18next to retrieve translations */) {
   const tables = document.querySelectorAll('table')
   tables.forEach(table => {
     table.className = 'table table-hover py-2'
@@ -48,7 +48,7 @@ export default function asciidocFormatter () {
       const tocDetails = document.createElement('details')
       tocDetails.className = 'p-3 my-3 bg-grey'
       const tocSummary = document.createElement('summary')
-      tocSummary.innerHTML = 'Table of Contents'
+      tocSummary.innerHTML = t('asciidoc.table.of.contents', 'Table of Contents')
       tocSummary.className = 'lead'
       tocDetails.appendChild(tocSummary)
       const tocList = div.getElementsByClassName('sectlevel1')[0]

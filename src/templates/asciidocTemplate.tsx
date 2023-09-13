@@ -9,17 +9,21 @@ import EditLink from '../components/EditLink'
 import AuthorsList from '../components/AuthorList'
 import InstallTabs from '../components/InstallTabs'
 import Seo from '../components/Seo'
-import { Trans } from 'gatsby-plugin-react-i18next';
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import LinkText from '../components/LinkText'
 
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import '@fortawesome/fontawesome-free/css/v4-shims.min.css'
 
 const AsciidocTemplate = ({ data, pageContext }) => {
+
+  const {t} = useI18next();
+
   useEffect(() => {
-    asciidocFormatter()
+    asciidocFormatter(t)
     highlightCode()
   })
+
   const { asciidoc } = data // data.asciidoc holds our data
   const { document, fields, html, pageAttributes } = asciidoc
   const pageAuthorList = pageAttributes.authors || ''
