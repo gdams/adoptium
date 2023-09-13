@@ -22,40 +22,7 @@ exports[`RandomContributor component > 1 contribution should render as contribut
     <div
       class="random-contributor__thank"
     >
-      Thank you
-       
-      <a
-        href="profileUri_mock"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        login_mock
-      </a>
-       
-      for making
-       
-      <a
-        href="commitsListUri_mock"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        <span>
-          1
-           contribution
-        </span>
-      </a>
-       
-      to
-       
-      <a
-        href="https://github.com/adoptium/reponame_mock"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        <span>
-          reponame_mock
-        </span>
-      </a>
+      Text
     </div>
   </div>
 </div>
@@ -83,40 +50,7 @@ exports[`RandomContributor component > should render correctly 1`] = `
     <div
       class="random-contributor__thank"
     >
-      Thank you
-       
-      <a
-        href="profileUri_mock"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        login_mock
-      </a>
-       
-      for making
-       
-      <a
-        href="commitsListUri_mock"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        <span>
-          0
-           contributions
-        </span>
-      </a>
-       
-      to
-       
-      <a
-        href="https://github.com/adoptium/reponame_mock"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        <span>
-          reponame_mock
-        </span>
-      </a>
+      Text
     </div>
   </div>
 </div>

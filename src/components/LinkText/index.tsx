@@ -4,11 +4,13 @@ import React from 'react';
 type LinkTextProps = {
     href: string;
     children?: React.ReactNode;
+    target?: string,
+    rel?: string
 };
 
-const LinkText = ({ href, children }: LinkTextProps) => {
+const LinkText = ({ href, children, target, rel }: LinkTextProps) => {
     return (
-        href.startsWith('http') ? <a href={href} target='_blank' rel='noreferrer'>{children}</a> : <Link to={href}>{children}</Link>
+        href.startsWith('http') ? <a href={href} target={target ? target : '_blank'} rel={rel ? rel : 'noreferrer'}>{children}</a> : <Link to={href}>{children}</Link>
     )
 }
 
