@@ -6,6 +6,12 @@
         "tier": "adopter"
     },
     {
+        "name": "Arm",
+        "logo": "adopters/logo-arm.svg",
+        "url": "https://www.arm.com/",
+        "tier": "adopter"
+    },
+    {
         "name": "Blockbax",
         "logo": "adopters/logo-blockbax.svg",
         "url": "https://blockbax.com/",
