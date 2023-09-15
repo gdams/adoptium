@@ -1,5 +1,5 @@
 = Frequently Asked Questions
-:page-authors: xavierfacq
+:page-authors: xavierfacq, gdams
 :page-based-on: 56f8f9b0dd04a8cadd21fa9b68ee86430949c0b7
 
 Nous avons rassemblé quelques questions fréquemment posées (FAQ) dans ce document.

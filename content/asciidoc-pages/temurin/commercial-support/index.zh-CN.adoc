@@ -1,5 +1,5 @@
 = Commercial Support Options for Eclipse Temurin(TM)
-:page-authors: zdtsw, tellison
+:page-authors: zdtsw, tellison, gdams
 :page-based-on: 4f7e0d66e577a9c619e38c6d670d86f9c4736874
 
 对于Eclipse Temurin，我们提供多种商业支持选项。
