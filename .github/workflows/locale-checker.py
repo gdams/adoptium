@@ -14,6 +14,8 @@ locale_leads = {
 
 
 def get_shasum(file_path):
+    if not os.path.exists(file_path):
+        return None
     with open(file_path, "r") as f:
         content = f.read()
         match = re.search(r":page-based-on:\s+(\S+)", content)
@@ -134,8 +136,8 @@ def main():
             body += "| Locale | File | Locale Lead |\n"
             body += "| ------ | ---- | ----------- |\n"
             for locale in outdated_locales:
-                localized_shasum = locale.split(" ")[0].strip()
-                locale = locale.split(" ")[1]
+                localized_shasum = locale.split()[0].strip()
+                locale = locale.split()[1].strip()
                 # get locale lead
                 locale_lead = locale_leads.get(locale)
                 if locale_lead is None:
@@ -148,8 +150,8 @@ def main():
             body += "---\n\n"
 
             for locale in outdated_locales:
-                localized_shasum = locale.split(" ")[0]
-                locale = locale.split(" ")[1]
+                localized_shasum = locale.split()[0].strip()
+                locale = locale.split()[1].strip()
                 body += f"### View the changes to the English file since the last {locale} update\n\n"
                 body += "<details>\n"
                 body += "<summary>View Diff</summary>\n\n"
