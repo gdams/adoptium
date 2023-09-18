@@ -15,7 +15,6 @@ Note that this is not meant to be a substitute for the [existing triage document
 
 And now, without further ado, I present:
 
-
 ## The Triage Rhyme
 
 <details>
@@ -34,25 +33,25 @@ And now, without further ado, I present:
 </details>
 <details>
 <summary>![I](I.png) gets you Issues, or maybe gets none. Un problem, un issue; you only need one.</summary>
-- Search repositories for related issues. 
+- Search repositories for related issues.
 - An existing issue means further triage is not needed.
 - Put a link to your failure in any existing issues, to keep the issue up-to-date.
 </details>
 <details>
 <summary>![A](A.png) checks the Archives, dig till you drop. You will find the cause, for this unforeseen stop.</summary>
-- Do some digging to find the general source of the issue. 
+- Do some digging to find the general source of the issue.
 - Frequent offenders are changesets and test/build framework updates.
 </details>
 <details>
 <summary>![G](G.png) will be Gather, with many a fact! Make an issue on git, help the bug fixer act.</summary>
 - Raise an issue in the relevant repository.
-- Be sure to add job links, log files, and a copy of the error message. 
+- Be sure to add job links, log files, and a copy of the error message.
 - Always start with a summary of the problem, to help bug fixers grasp the issue quickly.
 </details>
 <details>
 <summary>![E](E.png) brings an End, so go rest your eyes. Triage is a quest, with knowledge the prize.</summary>
 - Triage is about creating a knowledge base before task prioritization.
-- Always look for bigger fish before trying to solve anything. 
+- Always look for bigger fish before trying to solve anything.
 - Work smarter, not harder. :)
 </details>
 
