@@ -23,7 +23,7 @@ We're perusing a mess, of pipelines [red](## "Red means a job has failed. Framew
 
 ![R](R.png) means Results, a [text file](## "Search failed job output for error keywords.") conniption! 
 Search \"[Error: ](## "Often associated with errors.")\"! 
-Search \"[FAILURE](## "Usually means a subjob failed, like Smoke Tests after a build.")\"!] 
+Search \"[FAILURE](## "Usually means a subjob failed, like Smoke Tests after a build.")\"! 
 Search [Donner and Blitzen](## "Donner and Blitzen are Santa's reindeer. They are a metaphor for: search for everything.")!
 
 ![I](I.png) gets you [Issues](## "Search repositories for related issues."), or maybe gets none. 
