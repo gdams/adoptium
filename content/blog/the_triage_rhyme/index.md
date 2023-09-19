@@ -19,16 +19,16 @@ And now, without further ado, I present:
 
 ![T](T.png) is for TReSS, so go take a [gander](## "Identify failed pipelines via TRSS."). 
 We're perusing a mess, of pipelines [red](## "Red means a job has failed. Framework errors, build failures, etc.")/
-amber](## "Amber often means that a unit test failed, but the test framework completed.").
+[amber](## "Amber often means that a unit test failed, but the test framework completed.").
 
 ![R](R.png) means Results, a [text file](## "Search failed job output for error keywords.") conniption! 
-[Search "Error:"!]("\"Error:\" is often associated with errors.") 
-[Search "FAILURE"!]("\"FAILURE\" usually means a subjob failed, like Smoke Tests after a build.") 
+[Search \"Error:\"!]("\"Error:\" is often associated with errors.") 
+[Search \"FAILURE\"!]("\"FAILURE\" usually means a subjob failed, like Smoke Tests after a build.") 
 [Search Donner and Blitzen!](## "Donner and Blitzen are Santa's reindeer. They are a metaphor for \"search for everything\".")
 
-![I](I.png) [gets you Issues, or maybe gets none.](## "Search repositories for related issues.") 
+![I](I.png) gets you [Issues](## "Search repositories for related issues."), or maybe gets none. 
 [Un problem, un issue;](## "Put a link to your failure in any existing issues, to keep the issue up-to-date.") 
-[you only need one.](## "An existing issue means further triage is not needed.")
+you only need [one](## "An existing issue means further triage is not needed.").
 
 ![A](A.png) checks the Archives, [dig till you drop](## "Do some digging to find the general source of the issue."). 
 You will find the [cause](## "Frequent offenders are upstream changesets and test/build framework updates."), for this unforeseen stop.
