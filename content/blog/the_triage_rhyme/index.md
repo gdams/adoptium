@@ -17,9 +17,7 @@ And now, without further ado, I present:
 
 ## The Triage Rhyme
 
-![T](T.png) is for TReSS, so go take a [gander](## "Identify failed pipelines via TRSS."). We're perusing a mess, of pipelines [red][t2]/[amber][t3].
-[t2]: . "Red means a job has failed. Framework errors, build failures, etc."
-[t3]: . "Amber often means that a unit test failed, but the test framework completed."
+![T](T.png) is for TReSS, so go take a [gander](## "Identify failed pipelines via TRSS."). We're perusing a mess, of pipelines [red][## "Red means a job has failed. Framework errors, build failures, etc."]/[amber](## "Amber often means that a unit test failed, but the test framework completed.").
 ![R](R.png) means Results, a text file conniption! Search "Error: "! Search "FAILURE"! Search Donner and Blitzen!
 - Search failed job output for error keywords.
 - "Error:" is often associated with errors.
