@@ -34,8 +34,8 @@ you only need [one](## "An existing issue means further triage is not needed.").
 You will find the [cause](## "Frequent offenders are upstream changesets and test/build framework updates."), for this unforeseen stop.
 
 ![G](G.png) will be Gather, with [many a fact](## "Be sure to gather job links, log files, and a copy of the error message.")! 
-[Make an issue on git](## "Raise an issue in the relevant repository."), 
-[help the bug fixer act](## "Always start with a summary of the problem, to help bug fixers grasp the issue quickly.").
+Make an [issue on git](## "Raise an issue in the relevant repository."), 
+help the bug fixer [act](## "Always start with a summary of the problem, to help bug fixers grasp the issue quickly.").
 
 ![E](E.png) brings an End, so go rest your eyes. Triage is a [quest](## "Always look for bigger fish before trying to solve anything."), 
 with [knowledge](## "Triage is about creating a knowledge base *before* task prioritization.") 
