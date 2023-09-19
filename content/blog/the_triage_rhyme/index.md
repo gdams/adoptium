@@ -22,7 +22,7 @@ And now, without further ado, I present:
 [amber](./index.md "Amber often means that a unit test failed, but the test framework completed.").
 
 ![R](R.png) means Results, a [text file](./index.md "Search failed job output for error keywords.") conniption!
- Search \"[Error: ](./index.md "Often associated with errors.")\"!
+ Search \"[Error:](./index.md "Often associated with errors.") \"!
  Search \"[FAILURE](./index.md "Usually means a subjob failed, like Smoke Tests after a build.")\"!
  Search [Donner and Blitzen](./index.md "Donner and Blitzen are Santa's reindeer. They are a metaphor for: search for everything.")!
 
