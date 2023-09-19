@@ -17,31 +17,28 @@ And now, without further ado, I present:
 
 ## The Triage Rhyme
 
-![T](T.png) is for TReSS, so go take a [gander](## "Identify failed pipelines via TRSS."). We're perusing a mess, of pipelines [red](## "Red means a job has failed. Framework errors, build failures, etc.")/[amber](## "Amber often means that a unit test failed, but the test framework completed.").
+![T](T.png) is for TReSS, so go take a [gander](## "Identify failed pipelines via TRSS."). 
+We're perusing a mess, of pipelines [red](## "Red means a job has failed. Framework errors, build failures, etc.")/
+amber](## "Amber often means that a unit test failed, but the test framework completed.").
 
-![R](R.png) means Results, a text file conniption! Search "Error: "! Search "FAILURE"! Search Donner and Blitzen!
-- Search failed job output for error keywords.
-- "Error:" is often associated with errors.
-- "FAILURE" usually means a subjob failed, like Smoke Tests after a build.
-- Donner and Blitzen are Santa's reindeer. They are a metaphor for "search for everything".
+![R](R.png) means Results, a [text file](## "Search failed job output for error keywords.") conniption! 
+[Search "Error:"!]("\"Error:\" is often associated with errors.") 
+[Search "FAILURE"!]("\"FAILURE\" usually means a subjob failed, like Smoke Tests after a build.") 
+[Search Donner and Blitzen!](## "Donner and Blitzen are Santa's reindeer. They are a metaphor for \"search for everything\".")
 
-![I](I.png) gets you Issues, or maybe gets none. Un problem, un issue; you only need one.
-- Search repositories for related issues.
-- An existing issue means further triage is not needed.
-- Put a link to your failure in any existing issues, to keep the issue up-to-date.
+![I](I.png) [gets you Issues, or maybe gets none.](## "Search repositories for related issues.") 
+[Un problem, un issue;](## "Put a link to your failure in any existing issues, to keep the issue up-to-date.") 
+[you only need one.](## "An existing issue means further triage is not needed.")
 
-![A](A.png) checks the Archives, dig till you drop. You will find the cause, for this unforeseen stop.
-- Do some digging to find the general source of the issue.
-- Frequent offenders are changesets and test/build framework updates.
+![A](A.png) checks the Archives, [dig till you drop](## "Do some digging to find the general source of the issue."). 
+You will find the [cause](## "Frequent offenders are upstream changesets and test/build framework updates."), for this unforeseen stop.
 
-![G](G.png) will be Gather, with many a fact! Make an issue on git, help the bug fixer act.
-- Raise an issue in the relevant repository.
-- Be sure to add job links, log files, and a copy of the error message.
-- Always start with a summary of the problem, to help bug fixers grasp the issue quickly.
+![G](G.png) will be Gather, with [many a fact](## "Be sure to gather job links, log files, and a copy of the error message.")! 
+[Make an issue on git](## "Raise an issue in the relevant repository."), 
+[help the bug fixer act](## "Always start with a summary of the problem, to help bug fixers grasp the issue quickly.").
 
-![E](E.png) brings an End, so go rest your eyes. Triage is a quest, with knowledge the prize.
-- Triage is about creating a knowledge base before task prioritization.
-- Always look for bigger fish before trying to solve anything.
-- Work smarter, not harder. :)
+![E](E.png) brings an End, so go rest your eyes. Triage is a [quest](## "Always look for bigger fish before trying to solve anything."), 
+with [knowledge](## "Triage is about creating a knowledge base *before* task prioritization.") 
+the [prize](## "Work smarter, not harder. :)").
 
 ## The End
