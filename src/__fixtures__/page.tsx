@@ -17,8 +17,8 @@ export const createAsciidocData = (): {
             }</code></pre>
             <table><thead><td>Header 1</td><td>Header 2</td></thead><tbody><tr><td>Cell 1</td><td class="icon">Cell 2</td></tr></tbody></table>
             <a href="https://www.eclipse.org">Eclipse</a>
-            <span class="icon">[docker]</span>
-            <span class="icon">[check]</span>
+            <i class="fa fa-docker"></i>
+            <i class="fa fa-check"></i>
             <div class="toc">
                 <ul class="sectlevel1">
                     <li><a href="#section-1">Section 1</a></li>

@@ -18,19 +18,11 @@ export default function asciidocFormatter (t /* 't' from useI18next to retrieve 
       link.append(anchorIcon)
     }
   })
-  // Hack to get fontawesome to render correctly
-  const spans = document.querySelectorAll('span')
-  spans.forEach(span => {
-    if (span.className === 'icon') {
-      const iconName = span.innerHTML.substring(1, span.innerHTML.length - 1)
-      let iconClass = 'fa'
-      if (iconName === 'docker') {
-        iconClass = 'fab'
-      }
-      const archiveTypeIcon = document.createElement('i')
-      archiveTypeIcon.className = `${iconClass} fa-${iconName}`
-      archiveTypeIcon.ariaHidden = true
-      span.replaceWith(archiveTypeIcon)
+  // Look for i class="fa fa-docker" and replace with fab fa-docker
+  const icons = asciidocContent.querySelectorAll('i')
+  icons.forEach(icon => {
+    if (icon.className.includes('fa-docker')) {
+      icon.className = icon.className.replace('fa', 'fab')
     }
   })
   const tds = document.querySelectorAll('td')
