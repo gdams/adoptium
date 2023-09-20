@@ -96,10 +96,12 @@ async function fetchRandomContributor() {
   let needToRefetch = false;
   const ONE_MONTH_MS = 2592000000;
 
+  const wlsMaxContributors = `${repoToCheck}_max_contributors`;
+  const wlsFetchDate = `${repoToCheck}_fetch_date`;
+
   if (window.localStorage) {
-    const maxContributorsStored =
-      window.localStorage.getItem('max_contributors');
-    const fetchDateStored = window.localStorage.getItem('fetch_date');
+    const maxContributorsStored = window.localStorage.getItem(wlsMaxContributors);
+    const fetchDateStored = window.localStorage.getItem(wlsFetchDate);
 
     maxContributors = maxContributorsStored
       ? parseInt(maxContributorsStored, 10)
@@ -126,8 +128,8 @@ async function fetchRandomContributor() {
     }
 
     if (window.localStorage) {
-      window.localStorage.setItem('fetch_date', String(Date.now()));
-      window.localStorage.setItem('max_contributors', String(lastPage));
+      window.localStorage.setItem(wlsFetchDate, String(Date.now()));
+      window.localStorage.setItem(wlsMaxContributors, String(lastPage));
     }
 
     return contributor;
