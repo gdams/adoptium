@@ -17,7 +17,7 @@ As a community of open source developers, our commitment is to triage
 any issues raised and champion them in the appropriate source code
 project. Of course, if the problem arises from the way we build and test
 the code we can fix that directly. For dedicated support with service
-level agreements you should contact commercial companies offering
+level agreements, you should contact commercial companies offering
 support on Temurin binaries. Read
 https://medium.com/@javachampions/java-is-still-free-3-0-0-ocrt-2021-bca75c88d23b[Java Is Still Free (3.0.0)]
 for some background information about Java support options.
