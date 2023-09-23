@@ -34,7 +34,7 @@ dependencies.
 OpenJDK provide a new feature release every six months, and a
 maintenance/security update based upon each active release every three
 months. The release dates for those from the OpenJDK project are typically the
-https://www.oracle.com/security-alerts/[Tuesdays closest to the 17th] of
+https://www.oracle.com/security-alerts/[third Tuesday] of
 January, April, July and October. We will follow this schedule for
 publishing binary releases from Adoptium to ensure you get the latest,
 most secure builds.
