@@ -21,8 +21,8 @@ const TemurinDownloadTable = ({results}) => {
         {source &&
             <p className='release-notes'>
                 <Link to={`/temurin/release-notes?version=${source.release_name}`}><MdNotes /><Trans>Release Notes</Trans></Link> 
-                <Link to="/installation/"><IoMdHelpBuoy /><Trans>Installation Guide</Trans></Link>
-                <Link to={source.binary.package.link}><PiFiles /><Trans>Source Code</Trans></Link> 
+                <Link to="/installation/"><IoMdHelpBuoy /><Trans>Installation Guide</Trans></Link> 
+                <a href={source.binary.package.link}><PiFiles /><Trans>Source Code</Trans></a>
             </p>
         }
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
