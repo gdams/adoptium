@@ -63,6 +63,8 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
     </a>
     <a
       href="https://mock-link"
+      rel="noreferrer"
+      target="_blank"
     >
       <svg
         fill="currentColor"

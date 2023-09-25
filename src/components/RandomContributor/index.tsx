@@ -3,6 +3,7 @@ import { useAdoptiumContributorsApi, useOnScreen } from '../../hooks';
 import './RandomContributor.scss';
 import AnimatedPlaceholder from '../AnimatedPlaceholder';
 import { Trans } from 'gatsby-plugin-react-i18next';
+import LinkText from '../LinkText'
 
 const RandomContributor = (): JSX.Element => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -31,9 +32,9 @@ const RandomContributor = (): JSX.Element => {
               i18nKey="asciidoc.random.contributor.text" 
               defaults='Thank you <profileUri>{{login}}</profileUri> for making <commitsListUri>{{contributionsCount}} contribution(s)</commitsListUri> to <repoUri>{{repo}}</repoUri>' 
               components={{
-                profileUri: <a href={contributor.profileUri} target="_blank" rel="nofollow noopener noreferrer" />, 
-                commitsListUri: <a href={contributor.commitsListUri} target="_blank" rel="nofollow noopener noreferrer"/>,
-                repoUri: <a href={`https://github.com/adoptium/${contributor.repo}`} target="_blank" rel="nofollow noopener noreferrer"/>,
+                profileUri: <LinkText href={contributor.profileUri} />, 
+                commitsListUri: <LinkText href={contributor.commitsListUri} />,
+                repoUri: <LinkText href={`https://github.com/adoptium/${contributor.repo}`} />,
               }}
               values={{
                 'login': contributor.login, 

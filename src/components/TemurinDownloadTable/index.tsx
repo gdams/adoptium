@@ -7,6 +7,7 @@ import { capitalize } from '../../util/capitalize';
 import { localeDate } from '../../util/localeDate';
 import { IoMdHelpBuoy } from 'react-icons/io';
 import { PiFiles } from 'react-icons/pi';
+import LinkText from '../LinkText'
 
 const TemurinDownloadTable = ({results}) => {
     const { language } = useI18next();
@@ -22,7 +23,7 @@ const TemurinDownloadTable = ({results}) => {
             <p className='release-notes'>
                 <Link to={`/temurin/release-notes?version=${source.release_name}`}><MdNotes /><Trans>Release Notes</Trans></Link> 
                 <Link to="/installation/"><IoMdHelpBuoy /><Trans>Installation Guide</Trans></Link> 
-                <a href={source.binary.package.link}><PiFiles /><Trans>Source Code</Trans></a>
+                <LinkText href={source.binary.package.link}><PiFiles /><Trans>Source Code</Trans></LinkText>
             </p>
         }
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
