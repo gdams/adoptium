@@ -1,6 +1,6 @@
 ---
 title: Verifying GPG signatures for Temurin downloads
-date: "2022-07-27T16:00:00+00:00"
+date: "2023-09-28T18:26:15Z"
 author: sxa
 description: How to verify GPG signatures of the Temurin artifacts using the Eclipse public key
 tags:
