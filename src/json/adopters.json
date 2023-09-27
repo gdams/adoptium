@@ -25,6 +25,12 @@
         "tier": "adopter"
     },
     {
+        "name": "CarGurus",
+        "logo": "adopters/logo-cargurus.png",
+        "url": "https://www.cargurus.com/",
+        "tier": "adopter"
+    },
+    {
         "name": "cosmoONE",
         "logo": "adopters/logo-cosmoone.png",
         "url": "https://www.cosmo-one.gr/",
