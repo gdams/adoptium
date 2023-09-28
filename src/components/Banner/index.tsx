@@ -12,7 +12,7 @@ const Banner = () => {
          We are awaiting access to the new Java 21's specification tests
          before formally releasing Eclipse Temurin 21.<br/>
          For further information including how to use our early access builds, please
-         read <a href="/blog/2023/10/temurin21-delay">our blog</a>.
+         read <a href="/blog/2023/09/temurin21-delay">our blog</a>.
       <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
      </div>
    );
