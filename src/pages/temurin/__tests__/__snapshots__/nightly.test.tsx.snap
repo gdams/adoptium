@@ -181,7 +181,7 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
         nightly builds prior to:
       </span>
       <div
-        class="MuiFormControl-root MuiTextField-root css-1ku64c3-MuiFormControl-root-MuiTextField-root"
+        class="MuiFormControl-root MuiTextField-root css-qixv09-MuiFormControl-root-MuiTextField-root"
       >
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
