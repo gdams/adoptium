@@ -1,5 +1,5 @@
 ---
-title: Reproducible Comparsion Builds
+title: Reproducible Comparison Builds
 date: "2023-09-29T14:17:09Z"
 author: sophiaguo
 description: What are reproducible comparison builds addressed and how are they implemented in Adoptium.
@@ -26,7 +26,7 @@ The Adoptium project produces high quality Java runtimes for use in mission-crit
 
 Now that we understand the significance of reproducibility, let’s dive into the importance of tracking reproducibility.
 
-- Security Auditingin - In the context of security, comparison builds are essential for verifying that security patches have been applied correctly and that no new vulnerabilities have been introduced.
+- Security Auditing - In the context of security, comparison builds are essential for verifying that security patches have been applied correctly and that no new vulnerabilities have been introduced.
 
 - Regressions Caused by Changes to Build Process or Dependencies - While we are comparing 2 builds built from identical source, we also know that many other factors can impact whether 2 builds are identical. For example, if a different version of a compiler is used, or other implicit inputs to the build pipeline, these changes can directly affect whether 2 builds are identical. Comparison builds help in detecting these types of regressions—instances where build script or dependency changes can break reproducibility.
 
@@ -36,7 +36,7 @@ Now that we understand the significance of reproducibility, let’s dive into th
 
 At Eclipse Adoptium extensive work has been done to achieve identical OpenJDK binaries, has involved in-depth build comparison debugging to identify non-deterministic build issues. There are more variations expected to be seen to affect the reproducibility.
 Currently the reproducible comparison builds are at an early stage, which rebuild the nightly JDK binaries with stringent controls, compare the two JDKs and generate the diff results with unreproducible files excluded.
-To be specific, in Adoptium JDK binary is built by jenkins job with stringent controls and a Software Bill of Materials (SBOM) is generated at the same time. The SBOM includes the secure hashes (SHAs) of all the component parts, the versions and SHAs of dependent components and the tooling. By parsing the jenkins job parameters and SBOM a duplicate JDK binary build of jenkins job can be easily triggered. Based on this, in Adoptium dedicated reproducible jenkins jobs per jdk version, platforms are set up by the [Jenkinsfile](https://github.com/adoptium/ci-jenkins-pipelines/blob/master/tools/reproduce_comparison/Jenkinsfile) and are triggered correspondingly by nightly jdk binary build jobs.
+To be specific, the Adoptium JDK binary is built by jenkins job with stringent controls and a Software Bill of Materials (SBOM) is generated at the same time. The SBOM includes the secure hashes (SHAs) of all the component parts, the versions and SHAs of dependent components and the tooling. By parsing the jenkins job parameters and SBOM a duplicate JDK binary build of jenkins job can be easily triggered. Based on this, dedicated reproducible jenkins jobs per jdk version and platforms are set up by the [Jenkinsfile](https://github.com/adoptium/ci-jenkins-pipelines/blob/master/tools/reproduce_comparison/Jenkinsfile) and are triggered correspondingly by nightly jdk binary build jobs.
 
 The job does:
 
