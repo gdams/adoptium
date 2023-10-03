@@ -1,8 +1,17 @@
 import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 import ShellBox from '../../ShellBox';
 import '../InstallTabs.scss';
 
 export const PureMacOSPanel = (): JSX.Element => {
+  const data = useStaticQuery(graphql`
+    query LatestLTS {
+      mostRecentLts {
+        version
+      }
+    }
+  `)
+  const mostRecentLts = data.mostRecentLts.version;
   return (
     <div>
       <ShellBox>
@@ -22,7 +31,7 @@ export const PureMacOSPanel = (): JSX.Element => {
         <span className="install-text-command">brew install --cask </span>temurin8
        <br />
         <span className="install__text__no-select">$</span>
-        <span className="install-text-command">brew install --cask </span>temurin11
+        <span className="install-text-command">brew install --cask </span>temurin{mostRecentLts}
       </ShellBox>
       <br />
       <br />

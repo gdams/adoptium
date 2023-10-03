@@ -28,7 +28,9 @@ exports[`Tests for WindowsPanel component > renders correctly 1`] = `
         >
           winget install 
         </span>
-        EclipseAdoptium.Temurin.17.JDK
+        EclipseAdoptium.Temurin.
+        1
+        .JDK
       </code>
     </pre>
     <br />
@@ -86,7 +88,9 @@ exports[`Tests for WindowsPanel component > renders correctly 1`] = `
         >
           winget upgrade 
         </span>
-        EclipseAdoptium.Temurin.17.JDK
+        EclipseAdoptium.Temurin.
+        1
+        .JDK
       </code>
     </pre>
     <br />
@@ -115,7 +119,9 @@ exports[`Tests for WindowsPanel component > renders correctly 1`] = `
         >
           winget uninstall 
         </span>
-        EclipseAdoptium.Temurin.17.JDK
+        EclipseAdoptium.Temurin.
+        1
+        .JDK
       </code>
     </pre>
     <a

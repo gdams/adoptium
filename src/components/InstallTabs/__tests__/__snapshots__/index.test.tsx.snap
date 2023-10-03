@@ -102,7 +102,9 @@ exports[`Tests for InstallTabs component > renders correctly 1`] = `
               >
                 winget install 
               </span>
-              EclipseAdoptium.Temurin.17.JDK
+              EclipseAdoptium.Temurin.
+              1
+              .JDK
             </code>
           </pre>
           <br />
@@ -160,7 +162,9 @@ exports[`Tests for InstallTabs component > renders correctly 1`] = `
               >
                 winget upgrade 
               </span>
-              EclipseAdoptium.Temurin.17.JDK
+              EclipseAdoptium.Temurin.
+              1
+              .JDK
             </code>
           </pre>
           <br />
@@ -189,7 +193,9 @@ exports[`Tests for InstallTabs component > renders correctly 1`] = `
               >
                 winget uninstall 
               </span>
-              EclipseAdoptium.Temurin.17.JDK
+              EclipseAdoptium.Temurin.
+              1
+              .JDK
             </code>
           </pre>
           <a
@@ -319,7 +325,9 @@ exports[`Tests for InstallTabs component > renders correctly for Linux 1`] = `
               >
                 apt-get install 
               </span>
-              temurin-17-jdk
+              temurin-
+              1
+              -jdk
             </code>
           </pre>
           <br />
@@ -348,7 +356,9 @@ exports[`Tests for InstallTabs component > renders correctly for Linux 1`] = `
               >
                 yum install 
               </span>
-              temurin-17-jdk
+              temurin-
+              1
+              -jdk
             </code>
           </pre>
           <br />
@@ -377,7 +387,9 @@ exports[`Tests for InstallTabs component > renders correctly for Linux 1`] = `
               >
                 zypper install 
               </span>
-              temurin-17-jdk
+              temurin-
+              1
+              -jdk
             </code>
           </pre>
           <a
@@ -507,7 +519,9 @@ exports[`Tests for InstallTabs component > renders correctly for Unix 1`] = `
               >
                 apt-get install 
               </span>
-              temurin-17-jdk
+              temurin-
+              1
+              -jdk
             </code>
           </pre>
           <br />
@@ -536,7 +550,9 @@ exports[`Tests for InstallTabs component > renders correctly for Unix 1`] = `
               >
                 yum install 
               </span>
-              temurin-17-jdk
+              temurin-
+              1
+              -jdk
             </code>
           </pre>
           <br />
@@ -565,7 +581,9 @@ exports[`Tests for InstallTabs component > renders correctly for Unix 1`] = `
               >
                 zypper install 
               </span>
-              temurin-17-jdk
+              temurin-
+              1
+              -jdk
             </code>
           </pre>
           <a
@@ -748,7 +766,8 @@ exports[`Tests for InstallTabs component > renders correctly for macOS 1`] = `
               >
                 brew install --cask 
               </span>
-              temurin11
+              temurin
+              1
             </code>
           </pre>
           <br />
@@ -911,7 +930,9 @@ exports[`Tests for InstallTabs component > renders correctly for other 1`] = `
               >
                 winget install 
               </span>
-              EclipseAdoptium.Temurin.17.JDK
+              EclipseAdoptium.Temurin.
+              1
+              .JDK
             </code>
           </pre>
           <br />
@@ -969,7 +990,9 @@ exports[`Tests for InstallTabs component > renders correctly for other 1`] = `
               >
                 winget upgrade 
               </span>
-              EclipseAdoptium.Temurin.17.JDK
+              EclipseAdoptium.Temurin.
+              1
+              .JDK
             </code>
           </pre>
           <br />
@@ -998,7 +1021,9 @@ exports[`Tests for InstallTabs component > renders correctly for other 1`] = `
               >
                 winget uninstall 
               </span>
-              EclipseAdoptium.Temurin.17.JDK
+              EclipseAdoptium.Temurin.
+              1
+              .JDK
             </code>
           </pre>
           <a

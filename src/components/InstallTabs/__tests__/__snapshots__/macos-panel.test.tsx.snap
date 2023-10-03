@@ -81,7 +81,8 @@ exports[`Tests for MacOSPanel component > renders correctly 1`] = `
         >
           brew install --cask 
         </span>
-        temurin11
+        temurin
+        1
       </code>
     </pre>
     <br />
