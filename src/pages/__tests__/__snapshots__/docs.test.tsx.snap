@@ -9,12 +9,12 @@ exports[`Docs page > renders correctly 1`] = `
       class="container"
     >
       <h1>
-        Documentation
+        Text
       </h1>
       <div
         class="lead"
       >
-        Everything you need to get started with Adoptium technology
+        Text
       </div>
       <div
         class="main-search-box pt-3 d-block mx-auto"
@@ -32,7 +32,7 @@ exports[`Docs page > renders correctly 1`] = `
               for="combo-box-demo"
               id="combo-box-demo-label"
             >
-              Start typing to search the docs...
+              Text
             </label>
             <div
               class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root"
@@ -84,7 +84,7 @@ exports[`Docs page > renders correctly 1`] = `
                   class="css-yjsfm1"
                 >
                   <span>
-                    Start typing to search the docs...
+                    Text
                   </span>
                 </legend>
               </fieldset>

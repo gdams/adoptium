@@ -1,4 +1,8 @@
 {
+    "docs.documentation.title": "Documentation",
+    "docs.documentation.tagline": "Tout ce dont vous avez besoin pour démarrer avec la technologie Adoptium",
+    "docs.documentation.placeholder": "Commencez à taper pour rechercher dans la documentation...",
+
     "docs.get.temurin": "Obtenir Temurin",
     "docs.install.temurin": "Installer Temurin",
     "docs.download.temurin": "Télécharger Temurin",

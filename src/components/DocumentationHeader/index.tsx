@@ -3,6 +3,7 @@ import { convert } from 'html-to-text'
 import { useFlexSearch } from "react-use-flexsearch";
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 import './DocumentationHeader.scss';
 
@@ -43,8 +44,8 @@ const DocumentationHeader = ({
   return (
     <div className="docs-header p-5 text-center">
 	    <div className="container">
-		    <h1>Documentation</h1>
-		    <div className="lead">Everything you need to get started with Adoptium technology</div>
+		    <h1><Trans i18nKey='docs.documentation.title' defaults="Documentation"/></h1>
+		    <div className="lead"><Trans i18nKey='docs.documentation.tagline' defaults="Everything you need to get started with Adoptium technology" /></div>
 		      <div className="main-search-box pt-3 d-block mx-auto">
             <Autocomplete
               disablePortal
@@ -57,7 +58,7 @@ const DocumentationHeader = ({
               renderInput={(params) => 
                 <TextField {...params}
                   onChange={e => setSearchQuery(e.target.value)}
-                  label="Start typing to search the docs..."
+                  label={<Trans i18nKey='docs.documentation.placeholder' defaults="Start typing to search the docs..." />}
                 />
               }
             />
