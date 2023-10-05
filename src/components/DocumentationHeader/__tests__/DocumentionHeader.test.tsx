@@ -44,7 +44,7 @@ describe('DocumentationHeader', () => {
   });
 
   test('renders component correctly', () => {
-    expect(screen.getByText('Documentation')).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
   });
 
   test('renders Autocomplete component', () => {
@@ -52,13 +52,14 @@ describe('DocumentationHeader', () => {
   });
 
   test('renders TextField component', () => {
-    expect(screen.getByLabelText('Start typing to search the docs...')).toBeInTheDocument();
+    const autocomplete = screen.getByTestId('autocomplete');
+    expect(within(autocomplete).getByLabelText('Text')).toBeInTheDocument();
   });
 
   test("filters search results based on search query", () => {
     const autocomplete = screen.getByTestId('autocomplete');
     const input: HTMLInputElement = within(autocomplete).getByLabelText(
-        "Start typing to search the docs..."
+        "Text"
       ) as HTMLInputElement;
 
     autocomplete.focus();
@@ -80,7 +81,7 @@ describe('DocumentationHeader', () => {
   test("redirects the user to the selected option's link on Autocomplete onChange event", () => {
     const autocomplete = screen.getByTestId('autocomplete');
     const input: HTMLInputElement = within(autocomplete).getByLabelText(
-        "Start typing to search the docs..."
+        "Text"
       ) as HTMLInputElement;
 
     autocomplete.focus();
