@@ -138,7 +138,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Get Temurin
+                    docs.get.temurin
                   </span>
                 </p>
                 <div
@@ -151,13 +151,13 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/installation"
                     >
-                      Install Temurin
+                      docs.install.temurin
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/temurin/releases"
                     >
-                      Download Temurin
+                      docs.download.temurin
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -165,7 +165,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Container Images
+                      docs.container.images
                        
                       <svg
                         fill="currentColor"
@@ -185,7 +185,7 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/temurin/archive"
                     >
-                      Release Archive
+                      docs.release.archive
                     </a>
                   </div>
                 </div>
@@ -224,7 +224,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Temurin Support
+                    docs.temurin.support
                   </span>
                 </p>
                 <div
@@ -237,25 +237,25 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/support"
                     >
-                      Support Guide
+                      docs.support.guide
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/temurin/commercial-support"
                     >
-                      Commercial Support
+                      docs.commercial.support
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/docs/migration"
                     >
-                      Migration Guide
+                      docs.migration.guide
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/supported-platforms"
                     >
-                      Supported Platforms
+                      docs.supported.platforms
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -263,7 +263,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Submit an Issue
+                      docs.submit.an.issue
                        
                       <svg
                         fill="currentColor"
@@ -316,7 +316,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    AQAvit Quality
+                    docs.aqavit.quality
                   </span>
                 </p>
                 <div
@@ -329,19 +329,19 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/aqavit"
                     >
-                      About Eclipse AQAvit
+                      docs.about.eclipse.aqavit
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/docs/qvs-policy"
                     >
-                      AQAvit Quality Verification
+                      docs.aqavit.quality.verification
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/docs/aqavit-verification"
                     >
-                      AQAvit Verification Guide
+                      docs.aqavit.verification.guide
                     </a>
                   </div>
                 </div>
@@ -380,7 +380,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Marketplace
+                    docs.marketplace
                   </span>
                 </p>
                 <div
@@ -393,19 +393,19 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/marketplace"
                     >
-                      Marketplace Downloads
+                      docs.marketplace.downloads
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/docs/marketplace-policy"
                     >
-                      Marketplace Listing Information
+                      docs.marketplace.listing.information
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/docs/marketplace-guide"
                     >
-                      Marketplace Publisher Guide
+                      docs.marketplace.publisher.guide
                     </a>
                   </div>
                 </div>
@@ -444,7 +444,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Contributing
+                    docs.contributing
                   </span>
                 </p>
                 <div
@@ -457,25 +457,25 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/contributing"
                     >
-                      How To Contribute
+                      docs.how.to.contribute
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/docs/first-timer-support"
                     >
-                      First Timer Support
+                      docs.first.time.support
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/temurin/nightly"
                     >
-                      Developer Nightly Builds
+                      docs.developer.nightly.builds
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/slack"
                     >
-                      Join our Slack Channel
+                      docs.join.our.slack.channel
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -483,7 +483,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Code of Conduct
+                      docs.code.of.conduct
                        
                       <svg
                         fill="currentColor"
@@ -536,7 +536,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Secure Software
+                    docs.secure.software
                   </span>
                 </p>
                 <div
@@ -549,13 +549,13 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/docs/secure-software"
                     >
-                      Secure Software Practices
+                      docs.secure.software.pratices
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/docs/slsa"
                     >
-                      SLSA Secure Supply Chain
+                      docs.slsa.secure.supply.chain
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -563,7 +563,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Vulnerability Reporting
+                      docs.vulnerability.reporting
                        
                       <svg
                         fill="currentColor"
@@ -616,7 +616,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Governance
+                    docs.governance
                   </span>
                 </p>
                 <div
@@ -629,19 +629,19 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/about"
                     >
-                      About Eclipse Adoptium
+                      docs.about.eclipse.adoptium
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/members"
                     >
-                      Working Group Members
+                      docs.working.group.members
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/join"
                     >
-                      Join the Working Group
+                      docs.join.the.working.group
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -649,7 +649,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Sponsor the Project
+                      docs.sponsor.the.project
                        
                       <svg
                         fill="currentColor"
@@ -702,7 +702,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Source Code
+                    docs.source.code
                   </span>
                 </p>
                 <div
@@ -717,7 +717,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Adoptium on GitHub
+                      docs.adoptium.on.github
                        
                       <svg
                         fill="currentColor"
@@ -739,7 +739,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Repository Overview
+                      docs.repository.overview
                        
                       <svg
                         fill="currentColor"
@@ -761,7 +761,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Build Scripts
+                      docs.build.scripts
                        
                       <svg
                         fill="currentColor"
@@ -783,7 +783,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Installer Code
+                      docs.installer.code
                        
                       <svg
                         fill="currentColor"
@@ -805,7 +805,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Mission Control Build
+                      docs.mission.control.build
                        
                       <svg
                         fill="currentColor"
@@ -858,7 +858,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Other Resources
+                    docs.other.resources
                   </span>
                 </p>
                 <div
@@ -871,7 +871,7 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/docs/faq"
                     >
-                      Frequently Asked Questions
+                      docs.frequently.asked.questions
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
@@ -879,7 +879,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Adoptium API
+                      docs.adoptium.api
                        
                       <svg
                         fill="currentColor"
@@ -901,7 +901,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Adoptium Blog
+                      docs.adoptium.blog
                        
                       <svg
                         fill="currentColor"
@@ -921,7 +921,7 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/support-us"
                     >
-                      Support Us
+                      docs.support.us
                     </a>
                   </div>
                 </div>
@@ -960,7 +960,7 @@ exports[`Docs page > renders correctly 1`] = `
                   <span
                     class="card-title-text"
                   >
-                    Branding
+                    docs.branding
                   </span>
                 </p>
                 <div
@@ -975,7 +975,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Brand Guidelines
+                      docs.brand.guidelines
                        
                       <svg
                         fill="currentColor"
@@ -997,7 +997,7 @@ exports[`Docs page > renders correctly 1`] = `
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      Google Slide Template
+                      docs.google.slide.template
                        
                       <svg
                         fill="currentColor"
@@ -1017,13 +1017,13 @@ exports[`Docs page > renders correctly 1`] = `
                       class="list-group-item list-group-item-action"
                       href="/temurin/buttons"
                     >
-                      Download Buttons
+                      docs.download.buttons
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
                       href="/docs/marketing-criteria"
                     >
-                      Marketing Criteria
+                      docs.marketing.criteria
                     </a>
                   </div>
                 </div>

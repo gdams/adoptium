@@ -7,8 +7,14 @@ import Seo from '../components/Seo'
 import DocumentationHeader from '../components/DocumentationHeader'
 import DocumentationCard from '../components/DocumentationCard'
 
-const DocumentationPage = ({ data }) => (
-  <Layout>
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+
+const DocumentationPage = ({ data }) => {
+
+  const {t} = useTranslation();
+
+  return (
+    <Layout>
 
     <DocumentationHeader data={data} />
 
@@ -17,103 +23,103 @@ const DocumentationPage = ({ data }) => (
         <div className='docs-overview py-5'>
           <div className='row justify-content-center'>
             <DocumentationCard
-              title='Get Temurin'
+              title={t('docs.get.temurin', 'Get Temurin')}
               Icon={FaDownload}
               links={[
-                { name: 'Install Temurin', link: '/installation' },
-                { name: 'Download Temurin', link: '/temurin/releases' },
-                { name: 'Container Images', link: 'https://hub.docker.com/_/eclipse-temurin' },
-                { name: 'Release Archive', link: '/temurin/archive' }
+                { name: t('docs.install.temurin', 'Install Temurin'), link: '/installation' },
+                { name: t('docs.download.temurin', 'Download Temurin'), link: '/temurin/releases' },
+                { name: t('docs.container.images', 'Container Images'), link: 'https://hub.docker.com/_/eclipse-temurin' },
+                { name: t('docs.release.archive', 'Release Archive'), link: '/temurin/archive' }
               ]}
             />
             <DocumentationCard
-              title='Temurin Support'
+              title={t('docs.temurin.support', 'Temurin Support')}
               Icon={FaQuestion}
               links={[
-                { name: 'Support Guide', link: '/support' },
-                { name: 'Commercial Support', link: '/temurin/commercial-support' },
-                { name: 'Migration Guide', link: '/docs/migration' },
-                { name: 'Supported Platforms', link: '/supported-platforms' },
-                { name: 'Submit an Issue', link: 'https://github.com/adoptium/adoptium-support/issues' }
+                { name: t('docs.support.guide', 'Support Guide'), link: '/support' },
+                { name: t('docs.commercial.support', 'Commercial Support'), link: '/temurin/commercial-support' },
+                { name: t('docs.migration.guide', 'Migration Guide'), link: '/docs/migration' },
+                { name: t('docs.supported.platforms', 'Supported Platforms'), link: '/supported-platforms' },
+                { name: t('docs.submit.an.issue', 'Submit an Issue'), link: 'https://github.com/adoptium/adoptium-support/issues' }
               ]}
             />
             <DocumentationCard
-              title='AQAvit Quality'
+              title={t('docs.aqavit.quality', 'AQAvit Quality')}
               Icon={FaGem}
               links={[
-                { name: 'About Eclipse AQAvit', link: '/aqavit' },
-                { name: 'AQAvit Quality Verification', link: '/docs/qvs-policy' },
-                { name: 'AQAvit Verification Guide', link: '/docs/aqavit-verification' }
+                { name: t('docs.about.eclipse.aqavit', 'About Eclipse AQAvit'), link: '/aqavit' },
+                { name: t('docs.aqavit.quality.verification', 'AQAvit Quality Verification'), link: '/docs/qvs-policy' },
+                { name: t('docs.aqavit.verification.guide', 'AQAvit Verification Guide'), link: '/docs/aqavit-verification' }
               ]}
             />
             <DocumentationCard
-              title='Marketplace'
+              title={t('docs.marketplace', 'Marketplace')}
               Icon={FaBox}
               links={[
-                { name: 'Marketplace Downloads', link: '/marketplace' },
-                { name: 'Marketplace Listing Information', link: '/docs/marketplace-policy' },
-                { name: 'Marketplace Publisher Guide', link: '/docs/marketplace-guide' }
+                { name: t('docs.marketplace.downloads', 'Marketplace Downloads'), link: '/marketplace' },
+                { name: t('docs.marketplace.listing.information', 'Marketplace Listing Information'), link: '/docs/marketplace-policy' },
+                { name: t('docs.marketplace.publisher.guide', 'Marketplace Publisher Guide'), link: '/docs/marketplace-guide' }
               ]}
             />
             <DocumentationCard
-              title='Contributing'
+              title={t('docs.contributing', 'Contributing')}
               Icon={FaUserFriends}
               links={[
-                { name: 'How To Contribute', link: '/contributing' },
-                { name: 'First Timer Support', link: '/docs/first-timer-support' },
-                { name: 'Developer Nightly Builds', link: '/temurin/nightly' },
-                { name: 'Join our Slack Channel', link: '/slack' },
-                { name: 'Code of Conduct', link: 'https://github.com/adoptium/.github/blob/main/CODE_OF_CONDUCT.md' }
+                { name: t('docs.how.to.contribute', 'How To Contribute'), link: '/contributing' },
+                { name: t('docs.first.time.support', 'First Timer Support'), link: '/docs/first-timer-support' },
+                { name: t('docs.developer.nightly.builds', 'Developer Nightly Builds'), link: '/temurin/nightly' },
+                { name: t('docs.join.our.slack.channel', 'Join our Slack Channel'), link: '/slack' },
+                { name: t('docs.code.of.conduct', 'Code of Conduct'), link: 'https://github.com/adoptium/.github/blob/main/CODE_OF_CONDUCT.md' }
               ]}
             />
             <DocumentationCard
-              title='Secure Software'
+              title={t('docs.secure.software', 'Secure Software')}
               Icon={FaLock}
               links={[
-                { name: 'Secure Software Practices', link: '/docs/secure-software' },
-                { name: 'SLSA Secure Supply Chain', link: '/docs/slsa' },
-                { name: 'Vulnerability Reporting', link: 'https://github.com/adoptium/adoptium/security/policy' }
+                { name: t('docs.secure.software.pratices', 'Secure Software Practices'), link: '/docs/secure-software' },
+                { name: t('docs.slsa.secure.supply.chain', 'SLSA Secure Supply Chain'), link: '/docs/slsa' },
+                { name: t('docs.vulnerability.reporting', 'Vulnerability Reporting'), link: 'https://github.com/adoptium/adoptium/security/policy' }
               ]}
             />
             <DocumentationCard
-              title='Governance'
+              title={t('docs.governance', 'Governance')}
               Icon={FaGlobe}
               links={[
-                { name: 'About Eclipse Adoptium', link: '/about' },
-                { name: 'Working Group Members', link: '/members' },
-                { name: 'Join the Working Group', link: '/join' },
-                { name: 'Sponsor the Project', link: 'https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' }
+                { name: t('docs.about.eclipse.adoptium', 'About Eclipse Adoptium'), link: '/about' },
+                { name: t('docs.working.group.members', 'Working Group Members'), link: '/members' },
+                { name: t('docs.join.the.working.group', 'Join the Working Group'), link: '/join' },
+                { name: t('docs.sponsor.the.project', 'Sponsor the Project'), link: 'https://www.eclipse.org/org/workinggroups/sponsorship/working-group-sponsorship-agreement.pdf' }
               ]}
             />
             <DocumentationCard
-              title='Source Code'
+              title={t('docs.source.code', 'Source Code')}
               Icon={FaGithub}
               links={[
-                { name: 'Adoptium on GitHub', link: 'https://github.com/adoptium' },
-                { name: 'Repository Overview', link: 'https://github.com/adoptium/adoptium/blob/main/README.md' },
-                { name: 'Build Scripts', link: 'https://github.com/adoptium/temurin-build' },
-                { name: 'Installer Code', link: 'https://github.com/adoptium/installer' },
-                { name: 'Mission Control Build', link: 'https://github.com/adoptium/jmc-build' }
+                { name: t('docs.adoptium.on.github', 'Adoptium on GitHub'), link: 'https://github.com/adoptium' },
+                { name: t('docs.repository.overview', 'Repository Overview'), link: 'https://github.com/adoptium/adoptium/blob/main/README.md' },
+                { name: t('docs.build.scripts', 'Build Scripts'), link: 'https://github.com/adoptium/temurin-build' },
+                { name: t('docs.installer.code', 'Installer Code'), link: 'https://github.com/adoptium/installer' },
+                { name: t('docs.mission.control.build', 'Mission Control Build'), link: 'https://github.com/adoptium/jmc-build' }
               ]}
             />
             <DocumentationCard
-              title='Other Resources'
+              title={t('docs.other.resources', 'Other Resources')}
               Icon={FaInfoCircle}
               links={[
-                { name: 'Frequently Asked Questions', link: '/docs/faq' },
-                { name: 'Adoptium API', link: 'https://api.adoptium.net' },
-                { name: 'Adoptium Blog', link: 'https://adoptium.net/blog' },
-                { name: 'Support Us', link: '/support-us' }
+                { name: t('docs.frequently.asked.questions', 'Frequently Asked Questions'), link: '/docs/faq' },
+                { name: t('docs.adoptium.api', 'Adoptium API'), link: 'https://api.adoptium.net' },
+                { name: t('docs.adoptium.blog', 'Adoptium Blog'), link: 'https://adoptium.net/blog' },
+                { name: t('docs.support.us', 'Support Us'), link: '/support-us' }
               ]}
             />
             <DocumentationCard
-              title='Branding'
+              title={t('docs.branding', 'Branding')}
               Icon={FaRocket}
               links={[
-                { name: 'Brand Guidelines', link: 'https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf' },
-                { name: 'Google Slide Template', link: 'https://docs.google.com/presentation/d/1ChGhqZrAHCdk5S2Ii5s5RROng1saTaTtjZzsxWJ_MPA/copy' },
-                { name: 'Download Buttons', link: '/temurin/buttons' },
-                { name: 'Marketing Criteria', link: '/docs/marketing-criteria' }
+                { name: t('docs.brand.guidelines', 'Brand Guidelines'), link: 'https://www.eclipse.org/org/artwork/guidelines/adoptium-brand-guidelines.pdf' },
+                { name: t('docs.google.slide.template', 'Google Slide Template'), link: 'https://docs.google.com/presentation/d/1ChGhqZrAHCdk5S2Ii5s5RROng1saTaTtjZzsxWJ_MPA/copy' },
+                { name: t('docs.download.buttons', 'Download Buttons'), link: '/temurin/buttons' },
+                { name: t('docs.marketing.criteria', 'Marketing Criteria'), link: '/docs/marketing-criteria' }
               ]}
             />
           </div>
@@ -122,7 +128,8 @@ const DocumentationPage = ({ data }) => (
     </div>
 
   </Layout>
-)
+  )
+}
 
 export default DocumentationPage
 
