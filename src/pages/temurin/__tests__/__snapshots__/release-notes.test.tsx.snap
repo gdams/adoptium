@@ -36,7 +36,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
             aria-label="Release Notes"
             aria-multiselectable="false"
             aria-rowcount="2"
-            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-g8lvwq-MuiDataGrid-root"
+            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-1q29sq1-MuiDataGrid-root"
             role="grid"
           >
             <div
