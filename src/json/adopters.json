@@ -13,6 +13,12 @@
         "tier": "adopter"
     },
     {
+        "name": "Atlassian",
+        "logo": "adopters/logo-atlassian.svg",
+        "url": "https://www.atlassian.com/",
+        "tier": "adopter"
+    },
+    {
         "name": "Binero Group",
         "logo": "adopters/logo-binero.png",
         "url": "https://binero.com/en",
