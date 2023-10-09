@@ -11,8 +11,8 @@ const Banner = () => {
      <strong className='p-1'>9th of October 2023:</strong>
          We have received the new Java 21 specification tests
          and expect to formally release Eclipse Temurin 21 shortly.<br/>
-         For further information, please read the update in
-         <a href="/blog/2023/09/temurin21-delay">our blog</a>.
+         For further information, please read the update
+         in <a href="/blog/2023/09/temurin21-delay">our blog</a>.
       <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
      </div>
    );
