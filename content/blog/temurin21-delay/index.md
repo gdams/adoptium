@@ -28,4 +28,3 @@ Running all the TCK tests takes some time, and as usual we will prioritise those
 In the meantime there have been a number of fixes made to the OpenJDK 21 codebase as part of the regular update release train. We expect sources for the next update of OpenJDK versions 8, 11, 17, and 21 to be available on or around October 17, 2023. As such, the project will prioritise picking up and publishing these new updated fixes, including 21.0.1, ahead of completing the full set of platforms on the original OpenJDK 21 GA code, which will then become obsolete.
 
 Everyone at Adoptium works hard to bring you the best, high quality, compliant Java binaries at all times. We recognise the disappointment shared in the unexpected delay to bringing you the latest Java version binaries as soon as possible, and appreciate the support and understanding we have been shown while ensuring that promise of quality is maintained.
-
