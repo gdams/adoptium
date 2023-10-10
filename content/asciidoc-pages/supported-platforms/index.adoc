@@ -44,7 +44,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 5+h| Linux (ARM 64-bit) footnote:glibc217[These builds should work on any distribution with glibc version 2.17 or higher.]
-| Alpine Linux 3.5 or later (Headless) | icon:times[] | icon:times[] | icon:times[] | icon:check[] icon:docker[]
+| Alpine Linux 3.5 or later (Headless) | icon:times[] | icon:times[] | icon:times[] | icon:check[] icon:docker[] 
 | RHEL / UBI 9.x | icon:check[] | icon:check[] | icon:check[] | icon:check[] icon:docker[]
 | RHEL / UBI 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[]
