@@ -156,5 +156,11 @@
     "logo": "jfrog.svg",
     "url": "https://jfrog.com",
     "tier": "infra"
+  },
+  {
+    "name": "Fastly",
+    "logo": "fastly.svg",
+    "url": "https://fastly.com",
+    "tier": "infra"
   }
 ]
