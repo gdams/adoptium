@@ -1,11 +1,12 @@
 import React from 'react';
 
 const Banner = () => {
-  // return null;
+  return null;
 
-  // The following is an example that can be used for future code freezes
+  // The following is an example that can be used for future banner alert
   // Comment Out The Above Line ( return null ; ) and uncomment the below
 
+  /*
    return (
      <div className="alert text-white alert-dismissible fade show mb-0 text-center" style={{ backgroundColor: '#ff1464' }} role="alert">
      <strong className='p-1'>9th October 2023:</strong>
@@ -18,6 +19,7 @@ const Banner = () => {
       <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
      </div>
    );
+  */
 };
 
 export default Banner;
