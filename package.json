@@ -22,7 +22,7 @@
     "flexsearch": "^0.7.31",
     "gatsby": "^5.12.8",
     "gatsby-adapter-netlify": "^1.0.1",
-    "gatsby-plugin-feed": "^5.12.1",
+    "gatsby-plugin-feed": "^5.12.2",
     "gatsby-plugin-google-gtag": "^5.12.2",
     "gatsby-plugin-google-tagmanager": "^5.12.2",
     "gatsby-plugin-image": "^3.12.2",
