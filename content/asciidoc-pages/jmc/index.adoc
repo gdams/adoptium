@@ -41,8 +41,12 @@ https://github.com/thegreystone/jmc-tutorial[Marcus Hirt’s tutorial].
 |macOS (aarch_64) |{snapshot}-SNAPSHOT
 |https://github.com/adoptium/jmc-build/releases/download/{snapshot}-SNAPSHOT/org.openjdk.jmc-{snapshot}-SNAPSHOT-macosx.cocoa.aarch64.tar.gz[org.openjdk.jmc-{snapshot}-SNAPSHOT-macosx.cocoa.aarch_64.tar.gz]
 
-|Linux |{snapshot}-SNAPSHOT
+|Linux (x86_64)|{snapshot}-SNAPSHOT
 |https://github.com/adoptium/jmc-build/releases/download/{snapshot}-SNAPSHOT/org.openjdk.jmc-{snapshot}-SNAPSHOT-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-{snapshot}-SNAPSHOT-linux.gtk.x86_64.tar.gz]
+
+|Linux (aarch64)|{snapshot}-SNAPSHOT
+|https://github.com/adoptium/jmc-build/releases/download/{snapshot}-SNAPSHOT/org.openjdk.jmc-{snapshot}-SNAPSHOT-linux.gtk.aarch64.tar.gz[org.openjdk.jmc-{snapshot}-SNAPSHOT-linux.gtk.aarch64.tar.gz]
+
 |=======================================================================
 
 == Note (MacOS X)
