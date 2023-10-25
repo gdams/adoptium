@@ -74,7 +74,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 18.04 | icon:times[] footnote:nojit[] | icon:check[] | icon:check[] | icon:times[]
 
 5+h| macOS (x64) footnote:[These builds should work on macOS 10.12 or higher.]
-| macOS 13 | icon:times[] | icon:check[] | icon:check[] | icon:check[]
+| macOS 14 | icon:times[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 13 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 12 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
