@@ -35,7 +35,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 
 5+h| Linux (x64) footnote:[These builds should work on any distribution with glibc version 2.17 or higher. Versions up to 17 will work with glibc 2.12]
 | Alpine Linux 3.5 or later (Headless) | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| RHEL / UBI 9.x | icon:check[] | icon:check[] | icon:check[] | icon:check[] icon:docker[]
+| RHEL / UBI 9.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | RHEL / UBI 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[]
 | SUSE Linux Enterprise Server (SLES) 12 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
@@ -45,7 +45,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 
 5+h| Linux (ARM 64-bit) footnote:glibc217[These builds should work on any distribution with glibc version 2.17 or higher.]
 | Alpine Linux 3.5 or later (Headless) | icon:times[] | icon:times[] | icon:times[] | icon:check[] icon:docker[] 
-| RHEL / UBI 9.x | icon:check[] | icon:check[] | icon:check[] | icon:check[] icon:docker[]
+| RHEL / UBI 9.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | RHEL / UBI 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[]
 | Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
@@ -58,12 +58,12 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:times[]
 
 5+h| Linux (PowerPC 64-bit Little Endian) footnote:glibc217[]
-| RHEL / UBI 9.x | icon:check[] | icon:check[] | icon:check[] | icon:times[]
-| RHEL / UBI 8.x | icon:check[] | icon:check[] | icon:check[] | icon:times[]
-| RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[]
-| Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[]
-| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[]
-| Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:times[]
+| RHEL / UBI 9.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| RHEL / UBI 8.x | icon:check[] | icon:check[] | icon:check[] | icon:check[]
+| RHEL / CentOS 7.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:check[] | icon:check[]
+| Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
+| Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 5+h| Linux (s390x) footnote:glibc217[]
 | RHEL / UBI 9.x | icon:times[] footnote:nojit[JDK8 on s390x has no JIT so is unsupported.] | icon:check[] | icon:check[] | icon:times[]
