@@ -28,7 +28,7 @@
     "gatsby-plugin-image": "^3.12.2",
     "gatsby-plugin-local-search": "^2.0.1",
     "gatsby-plugin-manifest": "^5.12.2",
-    "gatsby-plugin-mdx": "^5.12.2",
+    "gatsby-plugin-mdx": "^5.12.3",
     "gatsby-plugin-offline": "^6.12.2",
     "gatsby-plugin-react-i18next": "^3.0.1",
     "gatsby-plugin-react-svg": "^3.3.0",
