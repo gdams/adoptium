@@ -21,7 +21,7 @@
     "date-fns": "^2.30.0",
     "flexsearch": "^0.7.31",
     "gatsby": "^5.12.9",
-    "gatsby-adapter-netlify": "^1.0.2",
+    "gatsby-adapter-netlify": "^1.0.3",
     "gatsby-plugin-feed": "^5.12.3",
     "gatsby-plugin-google-gtag": "^5.12.3",
     "gatsby-plugin-google-tagmanager": "^5.12.3",
