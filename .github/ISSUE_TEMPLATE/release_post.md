@@ -26,13 +26,13 @@ Users should follow the [Adoptium policy for reporting vulnerability concerns](h
 
 This release contains the following fixes and updates.
 
-* [Temurin 8u382 release notes](https://adoptium.net/temurin/release-notes/?version=jdk8u382-b05), including [fixes in OpenJDK 8u382](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+openjdk8u382)
+* [Temurin 8uxxx release notes](https://adoptium.net/temurin/release-notes/?version=jdk8uxxx-xxx), including [fixes in OpenJDK 8uxxx](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+openjdk8uxxx)
 
-* [Temurin 11.0.20 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-11.0.20+8), including [fixes in OpenJDK 11.0.20](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+11.0.20)
+* [Temurin 11.x.x release notes](https://adoptium.net/temurin/release-notes/?version=jdk-11.x.x+x), including [fixes in OpenJDK 11.x.x](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+11.x.x)
 
-* [Temurin 17.0.8 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-17.0.8+7), including [fixes in OpenJDK 17.0.8](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+17.0.8)
+* [Temurin 17.x.x release notes](https://adoptium.net/temurin/release-notes/?version=jdk-17.x.x+x), including [fixes in OpenJDK 17.x.x](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+17.x.x)
 
-* [Temurin 20.0.2 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-20.0.2+9), including [fixes in OpenJDK 20.0.2](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+20.0.2)
+* [Temurin 21.x.x release notes](https://adoptium.net/temurin/release-notes/?version=jdk-21.x.x+x), including [fixes in OpenJDK 21.x.x](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+21.x.x)
 
 ## New and Noteworthy
 
