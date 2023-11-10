@@ -24,7 +24,7 @@ exports[`Footer component > renders correctly 1`] = `
           <p
             class="h5 pb-1"
           >
-            Eclipse Foundation
+            Text
           </p>
           <ul
             class="nav flex-column"
@@ -36,7 +36,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/org/"
               >
-                About Us
+                Text
               </a>
             </li>
             <li
@@ -46,7 +46,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/org/foundation/contact.php"
               >
-                Contact Us
+                Text
               </a>
             </li>
             <li
@@ -56,7 +56,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/donate/adoptium"
               >
-                Donate
+                Text
               </a>
             </li>
             <li
@@ -66,7 +66,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/membership"
               >
-                Members
+                Text
               </a>
             </li>
             <li
@@ -76,7 +76,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/org/documents/"
               >
-                Governance
+                Text
               </a>
             </li>
             <li
@@ -86,7 +86,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/org/documents/Community_Code_of_Conduct.php"
               >
-                Code of Conduct
+                Text
               </a>
             </li>
             <li
@@ -96,7 +96,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/artwork/"
               >
-                Logo and Artwork
+                Text
               </a>
             </li>
             <li
@@ -106,7 +106,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/org/foundation/directors.php"
               >
-                Board of Directors
+                Text
               </a>
             </li>
           </ul>
@@ -117,7 +117,7 @@ exports[`Footer component > renders correctly 1`] = `
           <p
             class="h5 pb-1"
           >
-            Legal
+            Text
           </p>
           <ul
             class="nav flex-column"
@@ -129,7 +129,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/legal/privacy.php"
               >
-                Privacy Policy
+                Text
               </a>
             </li>
             <li
@@ -139,7 +139,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/legal/termsofuse.php"
               >
-                Terms of Use
+                Text
               </a>
             </li>
             <li
@@ -149,7 +149,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/legal/copyright.php"
               >
-                Copyright Agent
+                Text
               </a>
             </li>
             <li
@@ -159,7 +159,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/legal/epl-2.0/"
               >
-                Eclipse Public License
+                Text
               </a>
             </li>
             <li
@@ -169,7 +169,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/legal/"
               >
-                Legal Resources
+                Text
               </a>
             </li>
           </ul>
@@ -180,7 +180,7 @@ exports[`Footer component > renders correctly 1`] = `
           <p
             class="h5 pb-1"
           >
-            Useful Links
+            Text
           </p>
           <ul
             class="nav flex-column"
@@ -192,7 +192,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://github.com/adoptium/adoptium-support/issues"
               >
-                Report a Bug
+                Text
               </a>
             </li>
             <li
@@ -202,7 +202,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="/docs"
               >
-                Documentation
+                Text
               </a>
             </li>
             <li
@@ -212,7 +212,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="/contributing"
               >
-                How to Contribute
+                Text
               </a>
             </li>
             <li
@@ -222,7 +222,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/mail/"
               >
-                Mailing Lists
+                Text
               </a>
             </li>
             <li
@@ -232,7 +232,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/forums/"
               >
-                Forums
+                Text
               </a>
             </li>
             <li
@@ -242,7 +242,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://marketplace.eclipse.org/"
               >
-                Marketplace
+                Text
               </a>
             </li>
             <li
@@ -252,7 +252,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://store.adoptium.net/"
               >
-                Swag Store
+                Text
               </a>
             </li>
           </ul>
@@ -263,7 +263,7 @@ exports[`Footer component > renders correctly 1`] = `
           <p
             class="h5 pb-1"
           >
-            Other
+            Text
           </p>
           <ul
             class="nav flex-column"
@@ -275,7 +275,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/ide/"
               >
-                IDE and Tools
+                Text
               </a>
             </li>
             <li
@@ -285,7 +285,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/projects"
               >
-                Projects
+                Text
               </a>
             </li>
             <li
@@ -295,7 +295,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/org/workinggroups/"
               >
-                Working Groups
+                Text
               </a>
             </li>
             <li
@@ -305,7 +305,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/org/research/"
               >
-                Research@Eclipse
+                Text
               </a>
             </li>
             <li
@@ -315,7 +315,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://www.eclipse.org/security/"
               >
-                Report a Vulnerability
+                Text
               </a>
             </li>
             <li
@@ -325,7 +325,7 @@ exports[`Footer component > renders correctly 1`] = `
                 class="nav-link p-0 text-muted"
                 href="https://status.eclipse.org/"
               >
-                Service Status
+                Text
               </a>
             </li>
           </ul>
@@ -336,7 +336,7 @@ exports[`Footer component > renders correctly 1`] = `
           <span
             class="text-muted"
           >
-            Copyright © Eclipse Foundation. All Rights Reserved.
+            Text
           </span>
         </div>
         <ul
@@ -479,7 +479,7 @@ exports[`Footer component > renders correctly 1`] = `
           <span
             class="text-muted"
           >
-            Java and OpenJDK are trademarks or registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
+            Text
           </span>
         </div>
       </footer>
