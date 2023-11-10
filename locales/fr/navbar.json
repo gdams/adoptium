@@ -1,0 +1,19 @@
+{
+    "navbar.home":"Accueil",
+    "navbar.marketplace": "Marketplace",
+    "navbar.documentation": "Documentation",
+    "navbar.faq":"FAQ",
+    "navbar.projects": "Projets",
+    "navbar.further.information": "Plus d'informations",
+    "navbar.further.support": "Support",
+    "navbar.news.and.events": "Nouvelles et événements",
+    "navbar.about": "À propos",
+    "navbar.members":"Membres",
+    "navbar.sponsors":"Sponsors",
+    "navbar.temurin.adopters":"Temurin Adopters",
+    "navbar.promote":"Promouvoir",
+    "navbar.api":"API",
+    "navbar.blog":"Blog",
+    "navbar.support.us":"Soutenez-nous",
+    "navbar.status":"Status"
+}

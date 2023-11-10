@@ -45,7 +45,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
             <a
               href="/"
             >
-              Home
+              Text
             </a>
           </li>
           <li
@@ -54,7 +54,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
             <a
               href="/marketplace"
             >
-              Marketplace
+              Text
             </a>
           </li>
           <li
@@ -63,7 +63,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
             <a
               href="/docs"
             >
-              Documentation
+              Text
             </a>
           </li>
           <li
@@ -72,7 +72,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
             <a
               href="/docs/faq"
             >
-              FAQ
+              Text
             </a>
           </li>
           <li
@@ -86,7 +86,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
               id="navbarDropdown"
               role="button"
             >
-              Projects
+              Text
             </a>
             <ul
               aria-labelledby="navbarDropdown"
@@ -129,7 +129,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
               id="navbarDropdown2"
               role="button"
             >
-              Further Information
+              Text
             </a>
             <ul
               aria-labelledby="navbarDropdown2"
@@ -140,7 +140,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/support"
                 >
-                  Support
+                  Text
                 </a>
               </li>
               <li>
@@ -148,7 +148,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/news"
                 >
-                  News & Events
+                  Text
                 </a>
               </li>
               <li>
@@ -156,7 +156,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/about"
                 >
-                  About
+                  Text
                 </a>
               </li>
               <li>
@@ -164,7 +164,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/members"
                 >
-                  Members
+                  Text
                 </a>
               </li>
               <li>
@@ -172,7 +172,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/sponsors"
                 >
-                  Sponsors
+                  Text
                 </a>
               </li>
               <li>
@@ -180,7 +180,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/adopters"
                 >
-                  Temurin Adopters
+                  Text
                 </a>
               </li>
               <li>
@@ -188,7 +188,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/temurin/buttons"
                 >
-                  Promote
+                  Text
                 </a>
               </li>
               <li>
@@ -196,7 +196,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="nav-link"
                   href="https://api.adoptium.net"
                 >
-                  API
+                  Text
                 </a>
               </li>
               <li>
@@ -204,7 +204,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/blog"
                 >
-                  Blog
+                  Text
                 </a>
               </li>
               <li>
@@ -212,7 +212,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="dropdown-item"
                   href="/support-us"
                 >
-                  Support Us
+                  Text
                 </a>
               </li>
               <li>
@@ -220,7 +220,7 @@ exports[`NavBar component > navbar renders correctly 1`] = `
                   class="nav-link"
                   href="https://status.adoptium.net"
                 >
-                  Status
+                  Text
                 </a>
               </li>
             </ul>

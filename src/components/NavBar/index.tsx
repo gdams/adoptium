@@ -4,6 +4,7 @@ import { Link as Noni18nLink } from "gatsby"
 import { Link, useTranslation } from 'gatsby-plugin-react-i18next';
 import { FaLinkedin, FaYoutube, FaGithub, FaSlack, FaRss } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 // @ts-ignore
 import Logo from '../../images/adoptium-logo-dark.svg';
@@ -17,7 +18,6 @@ const ExactNavLink = props => (
 )
 
 const NavBar = (): JSX.Element => {
-  const {t} = useTranslation();
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-purple"
@@ -38,33 +38,33 @@ const NavBar = (): JSX.Element => {
               <ExactNavLink
                 to="/"
               >
-                {t('Home')}
+                <Trans i18nKey="navbar.home" defaults="Home" />
               </ExactNavLink>
             </li>
             <li className="nav-item">
               <ExactNavLink
                 to="/marketplace"
               >
-                Marketplace
+                <Trans i18nKey="navbar.marketplace" defaults="Marketplace" />
               </ExactNavLink>
             </li>
             <li className="nav-item">
               <ExactNavLink
                 to="/docs"
               >
-                Documentation
+                <Trans i18nKey="navbar.documentation" defaults="Documentation" />
               </ExactNavLink>
             </li>
             <li className="nav-item">
               <ExactNavLink
                 to="/docs/faq"
               >
-                FAQ
+                <Trans i18nKey="navbar.faq" defaults="FAQ" />
               </ExactNavLink>
             </li>
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Projects
+                <Trans i18nKey="navbar.projects" defaults="Projects" />
               </Link>
               <ul className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                 <li><ExactNavLink className="dropdown-item" to="/temurin">Eclipse Temurin</ExactNavLink></li>
@@ -74,20 +74,20 @@ const NavBar = (): JSX.Element => {
             </li>
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Further Information
+                <Trans i18nKey="navbar.further.information" defaults="Further Information" />
               </Link>
               <ul className="dropdown-menu bg-primary" aria-labelledby="navbarDropdown2">
-                <li><ExactNavLink className="dropdown-item" to="/support">Support</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/news">News & Events</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/about">About</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/members">Members</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/sponsors">Sponsors</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/adopters">Temurin Adopters</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/temurin/buttons">Promote</ExactNavLink></li>
-                <li><a className="nav-link" href="https://api.adoptium.net">API</a></li>
-                <li><ExactNavLink className="dropdown-item" to="/blog">Blog</ExactNavLink></li>
-                <li><ExactNavLink className="dropdown-item" to="/support-us">Support Us</ExactNavLink></li>
-                <li><a className="nav-link" href="https://status.adoptium.net">Status</a></li>
+                <li><ExactNavLink className="dropdown-item" to="/support"><Trans i18nKey="navbar.further.support" defaults="Support" /></ExactNavLink></li>
+                <li><ExactNavLink className="dropdown-item" to="/news"><Trans i18nKey="navbar.news.and.events" defaults="News & Events" /></ExactNavLink></li>
+                <li><ExactNavLink className="dropdown-item" to="/about"><Trans i18nKey="navbar.about" defaults="About" /></ExactNavLink></li>
+                <li><ExactNavLink className="dropdown-item" to="/members"><Trans i18nKey="navbar.members" defaults="Members" /></ExactNavLink></li>
+                <li><ExactNavLink className="dropdown-item" to="/sponsors"><Trans i18nKey="navbar.sponsors" defaults="Sponsors" /></ExactNavLink></li>
+                <li><ExactNavLink className="dropdown-item" to="/adopters"><Trans i18nKey="navbar.temurin.adopters" defaults="Temurin Adopters" /></ExactNavLink></li>
+                <li><ExactNavLink className="dropdown-item" to="/temurin/buttons"><Trans i18nKey="navbar.promote" defaults="Promote" /></ExactNavLink></li>
+                <li><a className="nav-link" href="https://api.adoptium.net"><Trans i18nKey="navbar.api" defaults="API" /></a></li>
+                <li><ExactNavLink className="dropdown-item" to="/blog"><Trans i18nKey="navbar.blog" defaults="Blog" /></ExactNavLink></li>
+                <li><ExactNavLink className="dropdown-item" to="/support-us"><Trans i18nKey="navbar.support.us" defaults="Support Us" /></ExactNavLink></li>
+                <li><a className="nav-link" href="https://status.adoptium.net"><Trans i18nKey="navbar.status" defaults="Status" /></a></li>
               </ul>
             </li>
           </ul>
