@@ -128,9 +128,7 @@ def main():
                 if locale_lead is None:
                     locale_lead = "n/a"
                 url = f"https://github.com/{REPO}/blob/main/{os.path.join(root, f'index.{locale}.adoc')}"
-                body += (
-                    f'| {locale.upper()} | [{f"index.{locale}.adoc"}]({url}) | {locale_lead}\n'
-                )
+                body += f'| {locale.upper()} | [{f"index.{locale}.adoc"}]({url}) | {locale_lead}\n'
             body += "\n"
             body += "```diff\n"
             body += f"- {english_shasum} (English latest)\n"
@@ -152,7 +150,7 @@ def main():
             for locale in outdated_locales:
                 localized_shasum = locale.split()[0].strip()
                 locale = locale.split()[1].strip()
-                body += f"### View the changes to the English file since the last \"{locale.upper()}\" update\n\n"
+                body += f'### View the changes to the English file since the last "{locale.upper()}" update\n\n'
                 body += "<details>\n"
                 body += "<summary>View Diff</summary>\n\n"
                 # Generate diff between English file and the English version of the localized file
