@@ -38,6 +38,10 @@ This release contains the following fixes and updates.
 
 ## New and Noteworthy
 
-### Noteworthy Change 1
+### PPC64le on JDK21 Shipped
 
-Eclipse Temurin 17.0.9 Windows are in a separate release at https://github.com/adoptium/temurin17-binaries/releases/tag/jdk-17.0.9%2B9.1 .
+Eclipse Temurin 21.0.1 PPC64le is shipped for the first time on JDK21.
+
+### Windows Binary Respin
+
+Eclipse Temurin 17.0.9 Windows are in a separate release at https://github.com/adoptium/temurin17-binaries/releases/tag/jdk-17.0.9%2B9.1 due to the respin.
