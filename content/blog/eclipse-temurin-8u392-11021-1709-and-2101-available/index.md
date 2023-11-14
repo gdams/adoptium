@@ -44,4 +44,4 @@ Eclipse Temurin 21.0.1 PPC64le is shipped for the first time on JDK21.
 
 ### Windows Binary Respin
 
-Eclipse Temurin 17.0.9 Windows are in a separate release at https://github.com/adoptium/temurin17-binaries/releases/tag/jdk-17.0.9%2B9.1 due to the respin.
+Eclipse Temurin 17.0.9 Windows are in a separate release nameds jdk-17.0.9+9.1 due to a respin that was required to fix a signing issue.
