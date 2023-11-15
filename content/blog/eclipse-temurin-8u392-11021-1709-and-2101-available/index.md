@@ -1,8 +1,7 @@
 ---
 title: Eclipse Temurin 8u392, 11.0.21, 17.0.9 and 21.0.1 Available
-date: "2023-11-13T12:00:00+00:00"
+date: "2023-11-15T12:00:00+00:00"
 author: pmc
-about: Create a new release post
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u392, 11.0.21, 17.0.9 and 21.0.1. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
   - temurin
@@ -19,8 +18,8 @@ The following table summaries security vulnerabilities fixed in this release cyc
 | CVE Identifier  | Component | CVSS Score | v8 | v11 | v17 | v21 |
 | :---                                                              | :---                |  :----:      |  :----:   | :----:     | :----:     | :----:     |
 | [CVE-2023-22067](https://nvd.nist.gov/vuln/detail/CVE-2023-22067) | other-libs/corba    | Medium ([5.3](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N))    | X          |            |           |           |
-| [CVE-2023-22081](https://nvd.nist.gov/vuln/detail/CVE-2023-22081) | security-libs/javax.net.ssl    | Medium ([5.3](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L))    | X          |            |           |           |
-| [CVE-2023-22025](https://nvd.nist.gov/vuln/detail/CVE-2023-22025) | hotspot/compiler    | Low ([3.7](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N))    | X          |            |           |           |
+| [CVE-2023-22081](https://nvd.nist.gov/vuln/detail/CVE-2023-22081) | security-libs/javax.net.ssl    | Medium ([5.3](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L))    | X          | X           | X          | X          |
+| [CVE-2023-22025](https://nvd.nist.gov/vuln/detail/CVE-2023-22025) | hotspot/compiler    | Low ([3.7](https://www.first.org/cvss/calculator/3.1#CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N))    |           |            | X          | X          |
 
 Users should follow the [Adoptium policy for reporting vulnerability concerns](https://github.com/adoptium/adoptium/security/policy#security-policies-and-procedures) with this release.
 
