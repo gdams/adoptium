@@ -55,4 +55,4 @@ Windows Server 2012 is no longer officially supported as Microsoft ended it exte
 
 ### Macos Changes
 
-Macos 14 is supported for both MacOS x64 and Apple Silicon.  Macos x64 10.15 is no longer supported.
+Macos 14 is supported for both MacOS x64 and Apple Silicon. Macos x64 10.15 is no longer supported.
