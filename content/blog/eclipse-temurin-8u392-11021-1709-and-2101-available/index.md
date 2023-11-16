@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 8u392, 11.0.21, 17.0.9 and 21.0.1 Available
-date: "2023-11-15T12:00:00+00:00"
+date: "2023-11-16T12:00:00+00:00"
 author: pmc
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u392, 11.0.21, 17.0.9 and 21.0.1. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
@@ -44,3 +44,15 @@ Eclipse Temurin 21.0.1 PPC64le is shipped for the first time on JDK21.
 ### Windows Binary Respin
 
 Eclipse Temurin 17.0.9 Windows are in a separate release named jdk-17.0.9+9.1 due to a respin that was required to fix a signing issue.
+
+### AIX JDK11 and JDK17 Unavailable
+
+Temurin 11 and 17 on AIX are not yet available due to [an issue with Harfbuzz](https://bugs.openjdk.org/browse/JDK-8313643) that will be resolved in the future with an update to the version of Harfbuzz included in the build.
+
+### Windows Server 2012 not supported
+
+Windows Server 2012 is no longer officially supported as Microsoft ended it extended support on October 10, 2023.
+
+### Macos Changes
+
+Macos 14 is supported for both MacOS x64 and Apple Silicon.  Macos x64 10.15 is no longer supported.
