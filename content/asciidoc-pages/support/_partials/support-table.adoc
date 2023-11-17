@@ -5,11 +5,11 @@
 
 | Java 21 (LTS)
 | Sep 2023
-| 27 octobre 2023 +
+| 24 Oct 2023 +
 [.small]#jdk-21.0.1+12#
-| 21 Jan 2024 +
-[.small]#jdk-21.0.6#
-| Sep 2031
+| 16 Jan 2024 +
+[.small]#jdk-21.0.2#
+| Sep 2029
 
 | Java 20
 | Mar 2023
