@@ -17,7 +17,7 @@ Mar 2024
 [.small]#jdk-21.0.1+12#
 | 16 Jan 2024 +
 [.small]#jdk-21.0.2#
-| At least Sep 2029
+| At least Dec 2029
 
 | Java 20
 | Mar 2023
