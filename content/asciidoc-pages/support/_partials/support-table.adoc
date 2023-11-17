@@ -3,6 +3,14 @@
 
 | Java Version  | First Availability | Latest Release | Next Release Due | End of Availability ^[1]^
 
+| Java 22
+| Expected +
+Mar 2024
+| Not available
+| Expected +
+Mar 2024
+| Expected Sep 2024
+
 | Java 21 (LTS)
 | Sep 2023
 | 24 Oct 2023 +
