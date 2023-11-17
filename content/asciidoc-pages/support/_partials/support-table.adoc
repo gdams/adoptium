@@ -61,7 +61,7 @@ Mar 2024
 | 17 Oct 2023 +
 [.small]#jdk8u392-b08#
 | 16 Jan 2024 +
-[.small]#jdk8u401#
+[.small]#jdk8u402#
 | At least Nov 2026
 
 |===
