@@ -42,11 +42,11 @@ Mar 2024
 
 | Java 17 (LTS)
 | Sep 2021
-| 27 Oct 2023 +
+| 17 Oct 2023 +
 [.small]#jdk-17.0.9+9.1#
-| 21 Jan 2024 +
-[.small]#jdk-17.0.14#
-| Sep 2029
+| 16 Jan 2024 +
+[.small]#jdk-17.0.10#
+| At least Oct 2027
 
 | Java 11 (LTS)
 | Sep 2018
