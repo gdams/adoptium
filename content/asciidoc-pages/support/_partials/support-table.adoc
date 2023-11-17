@@ -21,7 +21,7 @@ Mar 2024
 
 | Java 20
 | Mar 2023
-| 25 Jul 2023 +
+| 18 Jul 2023 +
 [.small]#jdk-20.0.2+9#
 | EOSL^[2]^
 | Sep 2023
