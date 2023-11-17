@@ -4,11 +4,11 @@
 | Java Version  | First Availability | Latest Release | Next Release Due | End of Availability ^[1]^
 
 | Java 21 (LTS)
-| Expected +
-Sep 2023
-| Not available
-| Expected +
-Sep 2023
+| Sep 2023
+| 27 octobre 2023 +
+[.small]#jdk-21.0.1+12#
+| 21 Jan 2024 +
+[.small]#21.0.6#
 | Expected Sep 2029
 
 | Java 20
@@ -16,7 +16,7 @@ Sep 2023
 | 20 Jul 2023 +
 [.small]#jdk-20.0.2+9#
 | EOSL^[2]^
-| Expected Sep 2023
+| Sep 2023
 
 | Java 19
 | Sep 2022
@@ -34,26 +34,26 @@ Sep 2023
 
 | Java 17 (LTS)
 | Sep 2021
-| 18 Jul 2023 +
-[.small]#jdk-17.0.8+7#
-| 17 Oct 2023 +
-[.small]#jdk-17.0.9#
+| 27 Oct 2023 +
+[.small]#jdk-17.0.9+9.1#
+| 21 Jan 2024 +
+[.small]#17.0.14#
 | At least Oct 2027
 
 | Java 11 (LTS)
 | Sep 2018
 | 18 Jul 2023 +
 [.small]#jdk-11.0.20+8#
-| 17 Oct 2023 +
-[.small]#jdk-11.0.21#
+| 21 Jan 2024 +
+[.small]#11.0.26#
 | At least Oct 2024
 
 | Java 8 (LTS)
 | Mar 2014
 | 21 Jul 2023 +
 [.small]#jdk8u382-b05#
-| 17 Oct 2023 +
-[.small]#jdk8u392#
+| 21 Jan 2024 +
+[.small]#jdk8u441#
 | At least Nov 2026
 
 |===
