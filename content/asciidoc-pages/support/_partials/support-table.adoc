@@ -58,10 +58,10 @@ Mar 2024
 
 | Java 8 (LTS)
 | Mar 2014
-| 1 Nov 2023 +
+| 17 Oct 2023 +
 [.small]#jdk8u392-b08#
-| 21 Jan 2024 +
-[.small]#jdk8u441#
-| Dec 2030
+| 16 Jan 2024 +
+[.small]#jdk8u401#
+| At least Nov 2026
 
 |===
