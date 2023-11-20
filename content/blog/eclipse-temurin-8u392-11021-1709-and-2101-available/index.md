@@ -49,9 +49,9 @@ Eclipse Temurin 17.0.9 Windows are in a separate release named jdk-17.0.9+9.1 du
 
 Temurin 11 and 17 on AIX are not yet available due to [an issue with Harfbuzz](https://bugs.openjdk.org/browse/JDK-8313643) that will be resolved in the future with an update to the version of Harfbuzz included in the build.
 
-### Windows Server 2012 not supported
+### Windows Server 2012 and 2012 R2 not supported
 
-Windows Server 2012 is no longer officially supported as Microsoft ended it extended support on October 10, 2023.
+Windows Server 2012 and 2012 R2, which have reached End of Life (EOL) on October 10, 2023, are no longer officially supported.
 
 ### MacOS Changes
 
