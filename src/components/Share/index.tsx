@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   TwitterShareButton,
-  TwitterIcon,
+  XIcon,
   EmailShareButton,
   EmailIcon,
   FacebookShareButton,
@@ -25,23 +25,23 @@ const ShareButton = (props) => {
 
   return (
     <>
-      <TwitterShareButton url={url} title={post.title} hashtags={post.tags} related={twitter} style={iconStyle}>
-        <TwitterIcon size={iconSize}/>
+      <TwitterShareButton aria-label='x' url={url} title={post.title} hashtags={post.tags} related={twitter} style={iconStyle}>
+        <XIcon size={iconSize}/>
       </TwitterShareButton>
 
-      <LinkedinShareButton url={url} title={post.title} source={siteMetadata.siteUrl} style={iconStyle}>
+      <LinkedinShareButton aria-label='linkedin' url={url} title={post.title} source={siteMetadata.siteUrl} style={iconStyle}>
         <LinkedinIcon size={iconSize}/>
       </LinkedinShareButton>
 
-      <FacebookShareButton url={url} quote={url} style={iconStyle}>
+      <FacebookShareButton aria-label='facebook' url={url} style={iconStyle}>
         <FacebookIcon size={iconSize}/>
       </FacebookShareButton>
 
-      <RedditShareButton url={url} title={post.title} style={iconStyle}>
+      <RedditShareButton aria-label='reddit' url={url} title={post.title} style={iconStyle}>
         <RedditIcon size={iconSize}/>
       </RedditShareButton>
 
-      <EmailShareButton url={url} subject={post.title} style={iconStyle}>
+      <EmailShareButton aria-label='email' url={url} subject={post.title} style={iconStyle}>
         <EmailIcon size={iconSize}/>
       </EmailShareButton>
     </>
