@@ -1,5 +1,5 @@
 = Temurin(TM) Supported Platforms
-:page-authors: gdams, karianna, SueChaplain, sxa, KalyanJoseph, sxa555, ParkerM, hendrikebbers, aahlenst, MBoegers, luozhenyu, tellison, andrew-m-leonard
+:page-authors: gdams, karianna, SueChaplain, sxa, KalyanJoseph, sxa555, ParkerM, hendrikebbers, aahlenst, MBoegers, luozhenyu, tellison, andrew-m-leonard, sophia-guo
 :icons: font
 
 [lead text-muted]
