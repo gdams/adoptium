@@ -54,7 +54,7 @@ Mar 2024
 [.small]#jdk-11.0.21+9#
 | 16 Jan 2024 +
 [.small]#jdk-11.0.22#
-| At least Oct 2024
+| At least Oct 2027
 
 | Java 8 (LTS)
 | Mar 2014
