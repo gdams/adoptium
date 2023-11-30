@@ -216,7 +216,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":r7:"
+                          id=":r8:"
                           tabindex="-1"
                           type="button"
                         >
@@ -294,7 +294,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rd:"
+                          id=":re:"
                           tabindex="-1"
                           type="button"
                         >
@@ -372,7 +372,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rj:"
+                          id=":rk:"
                           tabindex="-1"
                           type="button"
                         >
@@ -450,7 +450,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rp:"
+                          id=":rq:"
                           tabindex="-1"
                           type="button"
                         >
@@ -528,7 +528,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rv:"
+                          id=":r10:"
                           tabindex="-1"
                           type="button"
                         >
@@ -816,6 +816,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                     aria-hidden="true"
                     aria-invalid="false"
                     class="MuiSelect-nativeInput css-yf8vq0-MuiSelect-nativeInput"
+                    name=":r6:"
                     tabindex="-1"
                     value="20"
                   />
