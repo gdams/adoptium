@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { useFlexSearch } from 'react-use-flexsearch';
-import Docs, { Head } from '../docs';
+import Docs, { Head } from '../pages/docs';
 import { vi, describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 

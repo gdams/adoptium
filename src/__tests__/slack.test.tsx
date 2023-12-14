@@ -1,29 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
-import Adopters, { Head } from '../adopters';
+import Slack, { Head } from '../pages/slack';
 
-vi.mock('../../util/shuffle', () => {
-  return {
-    shuffle: (array) => {
-      array = [
-        {
-          name: 'mock_member',
-          logo: 'mock_logo.png',
-          url: 'https://mock.com',
-          tier: 'mock_tier',
-        }
-      ]
-      return array
-    }
-  };
-});
-
-describe('Adopters page', () => {
+describe('Slack page', () => {
   it('renders correctly', () => {
-    const { container } = render(<Adopters />);
-
+    const { container } = render(<Slack />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -34,11 +17,11 @@ describe('Adopters page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-    expect(title?.textContent).toEqual('Eclipse Temurin Adopters | Adoptium');
+    expect(title?.textContent).toEqual('Slack Signup | Adoptium');
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Adopters />);
+    const { container } = render(<Slack />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

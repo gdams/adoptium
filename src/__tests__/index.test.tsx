@@ -1,12 +1,18 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
-import Slack, { Head } from '../slack';
+import Index, { Head } from '../pages/index';
 
-describe('Slack page', () => {
+const mockLatestLTS = {
+  mostRecentLts: {
+    version: 1
+  }
+};
+
+describe('Index page', () => {
   it('renders correctly', () => {
-    const { container } = render(<Slack />);
+    const { container } = render(<Index data={mockLatestLTS} />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -17,11 +23,11 @@ describe('Slack page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-    expect(title?.textContent).toEqual('Slack Signup | Adoptium');
+    expect(title?.textContent).toEqual('Home | Adoptium');
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Slack />);
+    const { container } = render(<Index data={mockLatestLTS} />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

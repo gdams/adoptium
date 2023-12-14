@@ -2,17 +2,16 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
-import Members, { Head } from '../members';
+import Marketplace, { Head } from '../pages/marketplace';
 
-vi.mock('../../util/shuffle', () => {
+vi.mock('../util/shuffle', () => {
   return {
     shuffle: (array) => {
       array = [
         {
-          name: 'mock_member',
-          logo: 'mock_logo.png',
-          url: 'https://mock.com',
-          tier: 'mock_tier',
+          name: "Adoptium",
+          icon: "vendor-adoptium.png",
+          postDownload: null
         }
       ]
       return array
@@ -20,13 +19,15 @@ vi.mock('../../util/shuffle', () => {
   };
 });
 
-describe('Members page', () => {
-  it('renders correctly', () => {
-    const { container } = render(<Members />);
+afterEach(() => {
+  vi.clearAllMocks();
+});
 
+describe('Marketplace page', () => {
+  it('renders correctly', () => {
+    const { container } = render(<Marketplace />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
-
     expect(pageContent).toMatchSnapshot();
   });
 
@@ -34,11 +35,11 @@ describe('Members page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-    expect(title?.textContent).toEqual('Adoptium Working Group Members | Adoptium');
+    expect(title?.textContent).toEqual('Marketplace | Adoptium');
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Members />);
+    const { container } = render(<Marketplace />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

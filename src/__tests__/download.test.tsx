@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
-import Download, { Head } from '../download';
+import Download, { Head } from '../pages/download';
 
 const location = {
   state: {

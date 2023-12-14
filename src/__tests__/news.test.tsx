@@ -1,14 +1,14 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { useOnScreen } from '../../hooks/useOnScreen';
+import { useOnScreen } from '../hooks/useOnScreen';
 import { describe, expect, it, vi } from 'vitest'
-import { fetchNewsItems } from '../../hooks/fetchNews';
-import { createRandomNewsAndEventsData } from '../../__fixtures__/hooks';
+import { fetchNewsItems } from '../hooks/fetchNews';
+import { createRandomNewsAndEventsData } from '../__fixtures__/hooks';
 import { axe } from 'vitest-axe';
-import News, { Head } from '../news';
+import News, { Head } from '../pages/news';
 
-vi.mock('../../hooks/useOnScreen');
-vi.mock('../../hooks/fetchNews');
+vi.mock('../hooks/useOnScreen');
+vi.mock('../hooks/fetchNews');
 
 describe('News page', () => {
   it('renders correctly', () => {

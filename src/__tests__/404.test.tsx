@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { axe } from 'vitest-axe';
 import { describe, expect, it } from 'vitest'
-import NotFound, { Head } from '../404';
+import NotFound, { Head } from '../pages/404';
 
 describe('404 page', () => {
   it('renders correctly', () => {

@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import BlogIndex, { Head } from '../blog';
+import BlogIndex, { Head } from '../pages/blog';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
-import { createMDXData } from '../../__fixtures__/page';
+import { createMDXData } from '../__fixtures__/page';
 
 let mockData = createMDXData();
 

@@ -12,7 +12,7 @@
     "@gatsbyjs/reach-router": "^2.0.1",
     "@mdx-js/react": "^2.3.0",
     "@mui/lab": "^5.0.0-alpha.97",
-    "@mui/material": "^5.14.20",
+    "@mui/material": "^5.15.00",
     "@mui/x-data-grid": "^6.18.4",
     "@mui/x-date-pickers": "^6.18.4",
     "@popperjs/core": "^2.11.8",
@@ -106,7 +106,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "vitest run",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "update-snapshots": "vitest -u"
   },
   "repository": {
     "type": "git",
