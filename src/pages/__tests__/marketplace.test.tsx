@@ -4,7 +4,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
 import Marketplace, { Head } from '../marketplace';
 
-vi.mock('../util/shuffle', () => {
+vi.mock('../../util/shuffle', () => {
   return {
     shuffle: (array) => {
       array = [
