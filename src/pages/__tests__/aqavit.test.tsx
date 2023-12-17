@@ -2,11 +2,11 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
-import Join, { Head } from '../pages/join';
+import AQAvit, { Head } from '../aqavit';
 
-describe('Join page', () => {
+describe('AQAvit page', () => {
   it('renders correctly', () => {
-    const { container } = render(<Join />);
+    const { container } = render(<AQAvit />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -17,11 +17,11 @@ describe('Join page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-    expect(title?.textContent).toEqual('Join | Adoptium');
+    expect(title?.textContent).toEqual('Eclipse AQAvit | Adoptium');
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Join />);
+    const { container } = render(<AQAvit />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

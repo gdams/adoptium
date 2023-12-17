@@ -2,14 +2,14 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
-import Adopters, { Head } from '../pages/adopters';
+import Sponsors, { Head } from '../sponsors';
 
-vi.mock('../util/shuffle', () => {
+vi.mock('../../util/shuffle', () => {
   return {
     shuffle: (array) => {
       array = [
         {
-          name: 'mock_member',
+          name: 'mock_sponsor',
           logo: 'mock_logo.png',
           url: 'https://mock.com',
           tier: 'mock_tier',
@@ -20,9 +20,9 @@ vi.mock('../util/shuffle', () => {
   };
 });
 
-describe('Adopters page', () => {
+describe('Sponsors page', () => {
   it('renders correctly', () => {
-    const { container } = render(<Adopters />);
+    const { container } = render(<Sponsors />);
 
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
@@ -34,11 +34,11 @@ describe('Adopters page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-    expect(title?.textContent).toEqual('Eclipse Temurin Adopters | Adoptium');
+    expect(title?.textContent).toEqual('Adoptium Project Sponsors | Adoptium');
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Adopters />);
+    const { container } = render(<Sponsors />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

@@ -1,29 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { describe, expect, it, vi } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
-import Members, { Head } from '../pages/members';
+import Join, { Head } from '../join';
 
-vi.mock('../util/shuffle', () => {
-  return {
-    shuffle: (array) => {
-      array = [
-        {
-          name: 'mock_member',
-          logo: 'mock_logo.png',
-          url: 'https://mock.com',
-          tier: 'mock_tier',
-        }
-      ]
-      return array
-    }
-  };
-});
-
-describe('Members page', () => {
+describe('Join page', () => {
   it('renders correctly', () => {
-    const { container } = render(<Members />);
-
+    const { container } = render(<Join />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
 
@@ -34,11 +17,11 @@ describe('Members page', () => {
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
-    expect(title?.textContent).toEqual('Adoptium Working Group Members | Adoptium');
+    expect(title?.textContent).toEqual('Join | Adoptium');
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Members />);
+    const { container } = render(<Join />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });

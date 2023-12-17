@@ -51,6 +51,99 @@ exports[`Marketplace page > renders correctly 1`] = `
     >
       <li
         class="vendor-li"
+        data-testid="li-azul"
+      >
+        <input
+          checked=""
+          class="vendor-name"
+          data-testid="checkbox-azul"
+          id="vendor-azul"
+          readonly=""
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendor-azul"
+          title="Azul"
+        >
+          <img
+            alt="Azul icon"
+            src="/images/vendors/vendor-azul.png"
+            style="padding: 0.7em;"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
+        data-testid="li-alibaba"
+      >
+        <input
+          checked=""
+          class="vendor-name"
+          data-testid="checkbox-alibaba"
+          id="vendor-alibaba"
+          readonly=""
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendor-alibaba"
+          title="Alibaba"
+        >
+          <img
+            alt="Alibaba icon"
+            src="/images/vendors/vendor-alibaba.png"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
+        data-testid="li-microsoft"
+      >
+        <input
+          checked=""
+          class="vendor-name"
+          data-testid="checkbox-microsoft"
+          id="vendor-microsoft"
+          readonly=""
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendor-microsoft"
+          title="Microsoft"
+        >
+          <img
+            alt="Microsoft icon"
+            src="/images/vendors/vendor-microsoft.png"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
+        data-testid="li-ibm"
+      >
+        <input
+          checked=""
+          class="vendor-name"
+          data-testid="checkbox-ibm"
+          id="vendor-ibm"
+          readonly=""
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendor-ibm"
+          title="IBM"
+        >
+          <img
+            alt="IBM icon"
+            src="/images/vendors/vendor-ibm.png"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
         data-testid="li-adoptium"
       >
         <input
@@ -69,6 +162,52 @@ exports[`Marketplace page > renders correctly 1`] = `
           <img
             alt="Adoptium icon"
             src="/images/vendors/vendor-adoptium.png"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
+        data-testid="li-redhat"
+      >
+        <input
+          checked=""
+          class="vendor-name"
+          data-testid="checkbox-redhat"
+          id="vendor-redhat"
+          readonly=""
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendor-redhat"
+          title="Red Hat"
+        >
+          <img
+            alt="Red Hat icon"
+            src="/images/vendors/vendor-redhat.png"
+          />
+        </label>
+      </li>
+      <li
+        class="vendor-li"
+        data-testid="li-huawei"
+      >
+        <input
+          checked=""
+          class="vendor-name"
+          data-testid="checkbox-huawei"
+          id="vendor-huawei"
+          readonly=""
+          type="checkbox"
+        />
+        <label
+          class="vendor-label"
+          for="vendor-huawei"
+          title="Huawei"
+        >
+          <img
+            alt="Huawei icon"
+            src="/images/vendors/vendor-huawei.png"
           />
         </label>
       </li>

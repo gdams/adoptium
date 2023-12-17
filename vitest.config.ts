@@ -33,16 +33,5 @@ export default defineConfig({
       exclude: ['src/types/**', 'src/**/__tests__/**', 'src/**/__mocks__/**'],
       reporter: ['text', 'json', 'html']
     },
-    // >= 0.1.0
-    poolOptions: {
-      threads: {
-        singleThread: true,
-      },
-    },
-    environmentOptions: {
-      jsdom: {
-        resources: 'usable',
-      },
-    },  
   }
 })
