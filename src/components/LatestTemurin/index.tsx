@@ -13,7 +13,6 @@ const LatestTemurin = (props): JSX.Element => {
   const defaultVersion = props.latestLTS
 
   const userOS = detectOS();
-  console.info("STEP 111 = " + userOS)
   switch (userOS) {
     case UserOS.MAC:
       userOSName = 'macOS'
