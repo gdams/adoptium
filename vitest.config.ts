@@ -16,9 +16,14 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    optimizer: {
-      web: {
-        include: ['vitest-canvas-mock'],
+    deps: {
+      // vitest < 0.34
+      inline: ['vitest-canvas-mock'],
+      // >= 0.34
+      optimizer: {
+        web: {
+          include: ['vitest-canvas-mock']
+        }
       }
     },
     setupFiles: './vitest-setup.ts',
@@ -27,6 +32,17 @@ export default defineConfig({
       include: ['src/**/*.{ts,tsx}'],
       exclude: ['src/types/**', 'src/**/__tests__/**', 'src/**/__mocks__/**'],
       reporter: ['text', 'json', 'html']
-    }
+    },
+    // >= 0.1.0
+    poolOptions: {
+      threads: {
+        singleThread: true,
+      },
+    },
+    environmentOptions: {
+      jsdom: {
+        resources: 'usable',
+      },
+    },  
   }
 })
