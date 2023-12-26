@@ -223,7 +223,7 @@ exports[`News page > renders correctly 1`] = `
             class="MuiTimeline-root MuiTimeline-positionAlternate css-55vwbm-MuiTimeline-root"
           >
             <li
-              class="MuiTimelineItem-root MuiTimelineItem-positionAlternate MuiTimelineItem-missingOppositeContent css-1v6o2d9-MuiTimelineItem-root"
+              class="MuiTimelineItem-root MuiTimelineItem-positionAlternate MuiTimelineItem-missingOppositeContent css-423au0-MuiTimelineItem-root"
             >
               <div
                 class="MuiTimelineSeparator-root css-1fe7e6p-MuiTimelineSeparator-root"
