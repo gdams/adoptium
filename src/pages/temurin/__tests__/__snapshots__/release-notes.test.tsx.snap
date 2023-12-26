@@ -70,7 +70,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       />
                     </svg>
                     <span
-                      class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-1pi4uwz-MuiBadge-badge"
+                      class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-y2h6q0-MuiBadge-badge"
                     >
                       0
                     </span>
