@@ -26,19 +26,15 @@ export async function getAssetsForVersion(
     url.searchParams.append('show_page_count', 'true');
   }
   releases = []
-  const response = await getPkgs(url)
-  const packages = await response.json()
+
+  const response = await fetch(url)
+  const packages = await response.json();
   const pagecount = Number(response.headers.get('pagecount'))
   let pkgsFound: TemurinReleases[] = []
   for (let pkg of packages) {
       pkgsFound.push(pkg);
   }
   return renderReleases(pkgsFound, pagecount, releaseType);
-}
-
-async function getPkgs(url: URL) {
-  let response = await fetch(url)
-  return response;
 }
 
 function renderReleases(pkgs, pagecount, releaseType) {
