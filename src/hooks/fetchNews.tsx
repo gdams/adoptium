@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const baseUrl = 'https://newsroom.eclipse.org/api';
 
@@ -6,8 +7,10 @@ export function fetchNewsItems(
     isVisible: boolean,
     page: number,
 ): News | null {
+
     const [news, setNews] = useState<NewsResponse>({news: [], pagination: null});
     const [events, setEvents] = useState<EventItem[]>([]);
+
     useEffect(() => {
         if (isVisible) {
         (async () => {
@@ -30,17 +33,29 @@ async function fetchLatestNews(page) {
     url.searchParams.append('parameters[publish_to]', 'adoptium');
     url.searchParams.append('page', page);
     url.searchParams.append('pagesize', '5');
-    const response = await fetch(url);
-    const json = (await response.json());
-    return json
+
+    return axios.get(url.toString())
+        .then(function (response) {
+            return response.data;
+        })
+        .catch(function (error) {
+            console.error(error);
+            return []
+        });
 }
 
 async function fetchLatestEvents() {
     const url = new URL(`${baseUrl}/events`);
     url.searchParams.append('parameters[publish_to]', 'adoptium');
-    const response = await fetch(url);
-    const json = (await response.json());
-    return json.events
+
+    return axios.get(url.toString())
+        .then(function (response) {
+            return response.data.events;
+        })
+        .catch(function (error) {
+            console.error(error);
+            return []
+        });
 }
 
 export interface News {

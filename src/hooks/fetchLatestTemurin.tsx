@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { VersionMetaData } from ".";
+import axios from 'axios';
 
 const baseUrl = 'https://api.adoptium.net/v3';
 
@@ -9,36 +10,46 @@ export function fetchLatestForOS(
     os: string,
     arch: string
 ): Binary | null {
+
     if (!os) {
         return null
     }
+
     const [binary, setBinary] = useState<Binary | null>(null);
+
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            setBinary(await fetchLatestForOSRequest(version, os, arch));
+            const url = `${baseUrl}/assets/feature_releases/${version}/ga?os=${os}&architecture=${arch}&image_type=jdk&jvm_impl=hotspot&page_size=1&vendor=eclipse`;
+
+            axios.get(url)
+                .then(function (response) {
+                    const json: LatestTemurin = response.data[0];
+
+                    let binary_link = json.binaries[0].package.link
+                    let binary_checksum = json.binaries[0].package.checksum
+
+                    if (json.binaries[0].installer) {
+                        binary_link = json.binaries[0].installer.link,
+                        binary_checksum = json.binaries[0].installer.checksum
+                    }
+
+                    const binary = {
+                        release_name: json.release_name,
+                        link: binary_link,
+                        checksum: binary_checksum,
+                    };
+                    setBinary(binary);
+                })
+                .catch(function (error) {
+                    console.error(error);
+                    setBinary(null);
+                });
         })();
         }
-    }, [isVisible]);
+    }, [isVisible, version, os, arch]);
 
     return binary;
-}
-
-async function fetchLatestForOSRequest(version: number, os: string, arch: string) {
-    const url = `${baseUrl}/assets/feature_releases/${version}/ga?os=${os}&architecture=${arch}&image_type=jdk&jvm_impl=hotspot&page_size=1&vendor=eclipse`;
-    const response = await fetch(url);
-    const json: LatestTemurin = (await response.json())[0];
-    let binary_link = json.binaries[0].package.link
-    let binary_checksum = json.binaries[0].package.checksum
-    if (json.binaries[0].installer) {
-        binary_link = json.binaries[0].installer.link,
-        binary_checksum = json.binaries[0].installer.checksum
-    }
-    return {
-        release_name: json.release_name,
-        link: binary_link,
-        checksum: binary_checksum,
-    };
 }
 
 export interface Binary {

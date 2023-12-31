@@ -1,5 +1,6 @@
 import { VersionMetaData } from '.';
 import { fetchExtension } from '../util/fetchExtension';
+import axios from 'axios';
 
 const baseUrl = 'https://api.adoptium.net/v3';
 
@@ -16,25 +17,30 @@ export async function loadLatestAssets(
     if (architecture !== 'any') {
         url.searchParams.append('architecture', architecture);
     }
-    let data = await getPkgs(url);
-
-    // Filter JDK/JRE if necessary
-    if (packageType === 'jdk') {
-        data = data.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jre');
-    } else if (packageType === 'jre') {
-        data = data.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jdk');
-    }
 
     let pkgsFound: TemurinRelease[] = []
-    for (let pkg of data) {
-        pkgsFound.push(pkg);
-    }
-    return renderReleases(pkgsFound);
-}
 
-async function getPkgs(url: URL) {
-    let response = await fetch(url)
-    return response.json();
+    await axios.get(url.toString())
+        .then(function (response) {
+            let data = response.data;
+
+            // Filter JDK/JRE if necessary
+            if (packageType === 'jdk') {
+                data = data.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jre');
+            } else if (packageType === 'jre') {
+                data = data.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jdk');
+            }
+
+            for (let pkg of data) {
+                pkgsFound.push(pkg);
+            }
+        })
+        .catch(function (error) {
+            console.error(error);
+            pkgsFound = []
+        });
+
+    return renderReleases(pkgsFound);
 }
 
 function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {

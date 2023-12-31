@@ -1,5 +1,6 @@
 import { VersionMetaData } from '.';
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const baseUrl = 'https://api.adoptium.net/v3/info/release_notes';
 
@@ -13,28 +14,27 @@ export function fetchReleaseNotesForVersion(
     }
 
     const [releaseNotes, setReleaseNotes] = useState<ReleaseNoteAPIResponse | null>(null);
+
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            let result = await fetchReleaseNote(version);
-            if(sortReleaseNotesByCallback) sortReleaseNotesByCallback(result);
-            setReleaseNotes(result);
+            const url = `${baseUrl}/${version}`;
+
+            await axios.get(url.toString())
+                .then(function (response) {
+                    let result = response.data
+                    if(sortReleaseNotesByCallback) sortReleaseNotesByCallback(result);
+                    setReleaseNotes(result)
+                })
+                .catch(function (error) {
+                    console.error(error);
+                    setReleaseNotes(null)
+                });
         })();
         }
-    }, [isVisible]);
+    }, [isVisible, version]);
 
     return releaseNotes;
-}
-
-async function fetchReleaseNote(version) {
-    const url = `${baseUrl}/${version}`;
-    try {
-        // fetch the data from the API
-        const response = await fetch(url);
-        return await response.json();
-    } catch (error) {
-        return { release_notes: null };
-    }
 }
 
 export interface ReleaseNoteAPIResponse {

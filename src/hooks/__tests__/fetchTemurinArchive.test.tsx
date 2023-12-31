@@ -2,16 +2,9 @@ import { renderHook } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import { getAssetsForVersion } from '../fetchTemurinArchive';
 import { createMockTemurinFeatureReleaseAPI  } from '../../__fixtures__/hooks';
+import AxiosInstance from 'axios'
 
 let mockResponse = [createMockTemurinFeatureReleaseAPI(false)];
-
-// @ts-ignore
-global.fetch = vi.fn(() => Promise.resolve({
-  json: () => Promise.resolve(mockResponse),
-  headers: {
-    get: () => '3'
-  }
-}));
 
 afterEach(() => {
   vi.clearAllMocks();
@@ -20,6 +13,10 @@ afterEach(() => {
 
 describe('getAssetsForVersion', () => {
   it('returns valid JSON', async() => {
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse,
+      headers: { 'pagecount': '3' },
+    });
     renderHook(async() => {
       await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
         expect(data).toMatchSnapshot()
@@ -46,6 +43,11 @@ describe('getAssetsForVersion', () => {
     // add a second binary same as the first but with invalid image_type
     mockResponse[0].binaries.push(newBinary);
     
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse,
+      headers: { 'pagecount': '3' },
+    });
+
     renderHook(async() => {
       await getAssetsForVersion(8, 'ea', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
         expect(data).toMatchSnapshot()
@@ -59,6 +61,12 @@ describe('getAssetsForVersion', () => {
       size: 100,
       link: new URL('https://source_mock/')
     }
+    
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse,
+      headers: { 'pagecount': '3' },
+    });
+
     renderHook(async() => {
       await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
         expect(data).toMatchSnapshot()
@@ -72,6 +80,12 @@ describe('getAssetsForVersion', () => {
       size: 100,
       link: new URL('https://release_notes_mock/')
     }
+
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse,
+      headers: { 'pagecount': '3' },
+    });
+
     renderHook(async() => {
       await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
         expect(data).toMatchSnapshot()
@@ -81,6 +95,12 @@ describe('getAssetsForVersion', () => {
 
   it('returns valid JSON - invalid image_type', async() => {
     mockResponse[0].binaries[0].image_type = 'foobar';
+
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse,
+      headers: { 'pagecount': '3' },
+    });
+
     renderHook(async() => {
       await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
         expect(data?.releases[0].platforms).toStrictEqual({})
@@ -90,6 +110,12 @@ describe('getAssetsForVersion', () => {
 
   it('returns valid JSON - with installers', async() => {
     mockResponse = [createMockTemurinFeatureReleaseAPI(true)];
+
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse,
+      headers: { 'pagecount': '3' },
+    });
+
     renderHook(async() => {
       await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
         expect(data).toMatchSnapshot()

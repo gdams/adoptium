@@ -1,6 +1,7 @@
 import moment from 'moment';
 import { VersionMetaData } from '.';
 import { fetchExtension } from '../util/fetchExtension';
+import axios from 'axios';
 
 const baseUrl = 'https://api.adoptium.net/v3';
 
@@ -27,13 +28,22 @@ export async function getAssetsForVersion(
   }
   releases = []
 
-  const response = await fetch(url)
-  const packages = await response.json();
-  const pagecount = Number(response.headers.get('pagecount'))
+  let pagecount = 0;
   let pkgsFound: TemurinReleases[] = []
-  for (let pkg of packages) {
-      pkgsFound.push(pkg);
-  }
+
+  await axios.get(url.toString())
+    .then(function (response) {
+      for (let pkg of response.data) {
+        pkgsFound.push(pkg);
+      }
+      pagecount = Number(response.headers.pagecount)
+    })
+    .catch(function (error) {
+        console.error(error);
+        pagecount = 0;
+        pkgsFound = [];
+    });
+
   return renderReleases(pkgsFound, pagecount, releaseType);
 }
 

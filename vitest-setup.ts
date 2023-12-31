@@ -140,6 +140,29 @@ vi.mock('gatsby-plugin-react-i18next', async () => {
   }
 })
 
+// mock all axios call
+vi.mock('axios', () => {
+  return {
+    default: {
+      post: vi.fn(),
+      get: vi.fn(),
+      delete: vi.fn(),
+      put: vi.fn(),
+      create: vi.fn().mockReturnThis(),
+      interceptors: {
+        request: {
+          use: vi.fn(),
+          eject: vi.fn(),
+        },
+        response: {
+          use: vi.fn(),
+          eject: vi.fn(),
+        },
+      },
+    },
+  };
+});
+
 const IntersectionObserverMock = vi.fn(() => ({
   disconnect: vi.fn(),
   observe: vi.fn(),
