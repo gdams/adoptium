@@ -2,13 +2,9 @@ import { renderHook } from '@testing-library/react'
 import { describe, expect, it, vi } from 'vitest'
 import { loadLatestAssets } from '../fetchTemurinReleases';
 import { createMockTemurinReleaseAPI  } from '../../__fixtures__/hooks';
+import AxiosInstance from 'axios'
 
 let mockResponse = [createMockTemurinReleaseAPI(false, 'jdk')];
-
-// @ts-ignore
-global.fetch = vi.fn(() => Promise.resolve({
-  json: () => Promise.resolve(mockResponse)
-}));
 
 afterEach(() => {
   vi.clearAllMocks();
@@ -16,6 +12,10 @@ afterEach(() => {
 
 describe('loadLatestAssets', () => {
   it('returns valid JSON', async() => {
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse
+    });
+
     renderHook(async() => {
       await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {
         expect(data).toMatchSnapshot()
@@ -28,6 +28,11 @@ describe('loadLatestAssets', () => {
       createMockTemurinReleaseAPI(false, 'sources'),
       createMockTemurinReleaseAPI(false, 'jdk')
     ];
+
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse
+    });
+
     renderHook(async() => {
       await loadLatestAssets(8, 'linux', 'x64', 'any').then((data) => {
         expect(data).toMatchSnapshot()
@@ -40,6 +45,11 @@ describe('loadLatestAssets', () => {
       createMockTemurinReleaseAPI(true, 'jdk'),
       createMockTemurinReleaseAPI(true, 'jre')
     ]
+
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse
+    });
+
     renderHook(async() => {
       await loadLatestAssets(8, 'linux', 'x64', 'jre').then((data) => {
         expect(data).toMatchSnapshot()

@@ -2,6 +2,8 @@ import { renderHook, waitFor } from '@testing-library/react'
 import { vi } from 'vitest';
 import { useAdoptiumContributorsApi } from '../useAdoptiumContributorsApi';
 import { createMockAdoptiumContributorsApi } from '../../__fixtures__/hooks';
+import AxiosInstance from 'axios'
+import axios from 'axios';
 
 const mockResponse = [createMockAdoptiumContributorsApi()];
 
@@ -34,18 +36,13 @@ describe('useAdoptiumContributorsApi hook', () => {
   });
 
   it('fetches data when isVisible is true', async () => {
-    // @ts-ignore
-    global.fetch = vi.fn(() => Promise.resolve({
-      json: () => Promise.resolve(mockResponse),
+    AxiosInstance.get.mockResolvedValue({
+      data: mockResponse,
       headers: {
-        get: (header: string) => {
-          if (header === 'Link') {
-            return '<https://api.github.com/repositories/1/contributors?per_page=1&page=2>; rel="next", <https://api.github.com/repositories/1/contributors?per_page=1&page=50>; rel="last"';
-          }
-          return null;
-        }
+        'Link': '<https://api.github.com/repositories/1/contributors?per_page=1&page=2>; rel="next", <https://api.github.com/repositories/1/contributors?per_page=1&page=50>; rel="last"'
       }
-    }));
+    });
+
     const { result } = renderHook(() => useAdoptiumContributorsApi(true));
 
     await waitFor(() => {
@@ -69,11 +66,14 @@ describe('useAdoptiumContributorsApi hook', () => {
 
   it('returns null if error is caught in fetch', async () => {
     global.fetch = vi.fn(() => Promise.reject('error'));
+    AxiosInstance.get.mockImplementation((url: String) => {
+      return Promise.reject('error')
+    });
     
     const { result } = renderHook(() => useAdoptiumContributorsApi(true));
     
     await waitFor(() => {
-      expect(global.fetch).toHaveBeenCalledTimes(1);
+      expect(axios.get).toHaveBeenCalledTimes(1);
     });
 
     expect(result.current).toBeNull();

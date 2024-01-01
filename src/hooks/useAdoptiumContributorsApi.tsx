@@ -55,7 +55,7 @@ function linkParser(linkHeader: string): {
 async function getMaxContributors(): Promise<[number, number]> {
   const linksHeaderValue = await axios.get(CONTRIBUTORS_API_URI)
     .then(function (response) {
-      return response.headers.get('Link')
+      return response.headers.Link
     })
     .catch(function (error) {
         console.error(error);

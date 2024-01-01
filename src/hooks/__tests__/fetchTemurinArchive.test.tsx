@@ -17,6 +17,7 @@ describe('getAssetsForVersion', () => {
       data: mockResponse,
       headers: { 'pagecount': '3' },
     });
+
     renderHook(async() => {
       await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
         expect(data).toMatchSnapshot()

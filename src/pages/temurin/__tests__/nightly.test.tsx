@@ -4,9 +4,14 @@ import { act, screen, fireEvent } from '@testing-library/react';
 import { describe, expect, it } from 'vitest'
 import { axe } from 'vitest-axe';
 import Nightly, { Head } from '../nightly';
+import AxiosInstance from 'axios'
 
 describe('Temurin Nightly page', () => {
   it('renders correctly', async () => {
+    AxiosInstance.get.mockResolvedValue({
+      data: {}
+    });
+
     const { container } = render(<Nightly />);
     // eslint-disable-next-line
     const pageContent = container.querySelector('main');
@@ -21,6 +26,10 @@ describe('Temurin Nightly page', () => {
   });
 
   it('head renders correctly', () => {
+    AxiosInstance.get.mockResolvedValue({
+      data: {}
+    });
+
     const { container } = render(<Head />);
     // eslint-disable-next-line
     const title = container.querySelector('title');
@@ -28,6 +37,10 @@ describe('Temurin Nightly page', () => {
   });
 
   it('has no accessibility violations', async () => {
+    AxiosInstance.get.mockResolvedValue({
+      data: {}
+    });
+
     const { container } = render(<Nightly />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();

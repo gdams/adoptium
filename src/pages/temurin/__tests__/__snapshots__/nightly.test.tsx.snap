@@ -283,9 +283,7 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
         </thead>
         <tbody
           class="table-light"
-        >
-          <tr />
-        </tbody>
+        />
       </table>
     </div>
     <div
