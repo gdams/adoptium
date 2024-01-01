@@ -8,7 +8,10 @@ import AxiosInstance from 'axios'
 describe('Releases page', () => {
   it('renders correctly', () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Releases />);
@@ -20,7 +23,10 @@ describe('Releases page', () => {
 
   it('head renders correctly', () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Head />);
@@ -31,7 +37,10 @@ describe('Releases page', () => {
 
   it('has no accessibility violations', async () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Releases />);

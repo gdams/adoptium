@@ -9,7 +9,10 @@ import AxiosInstance from 'axios'
 describe('Temurin Nightly page', () => {
   it('renders correctly', async () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Nightly />);
@@ -27,7 +30,10 @@ describe('Temurin Nightly page', () => {
 
   it('head renders correctly', () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Head />);
@@ -38,7 +44,10 @@ describe('Temurin Nightly page', () => {
 
   it('has no accessibility violations', async () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Nightly />);

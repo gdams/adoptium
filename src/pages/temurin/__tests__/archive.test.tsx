@@ -8,7 +8,10 @@ import AxiosInstance from 'axios'
 describe('Temurin Archive page', () => {
   it('renders correctly', () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Archive />);
@@ -20,7 +23,10 @@ describe('Temurin Archive page', () => {
 
   it('head renders correctly', () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Head />);
@@ -31,7 +37,10 @@ describe('Temurin Archive page', () => {
 
   it('has no accessibility violations', async () => {
     AxiosInstance.get.mockResolvedValue({
-      data: {}
+      data: [],
+      headers: {
+        'pagecount': 0
+      }
     });
 
     const { container } = render(<Archive />);
