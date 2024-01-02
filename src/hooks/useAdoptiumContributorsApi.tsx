@@ -53,9 +53,11 @@ function linkParser(linkHeader: string): {
  * Returns array with random contributor index and max contributors found.
  */
 async function getMaxContributors(): Promise<[number, number]> {
+  // this call is used to know how many contributors there are in this repo
+  // check the Link header to compute first and last
   const linksHeaderValue = await axios.get(CONTRIBUTORS_API_URI)
     .then(function (response) {
-      return response.headers['Link']
+      return response.headers.get('Link')
     })
     .catch(function (error) {
         return undefined
@@ -118,9 +120,7 @@ async function fetchRandomContributor() {
     const maxContributorsStored = window.localStorage.getItem(wlsMaxContributors);
     const fetchDateStored = window.localStorage.getItem(wlsFetchDate);
 
-    maxContributors = maxContributorsStored
-      ? parseInt(maxContributorsStored, 10)
-      : null;
+    maxContributors = maxContributorsStored ? parseInt(maxContributorsStored, 10) : null;
     fetchDate = fetchDateStored ? parseInt(fetchDateStored, 10) : null;
   }
 

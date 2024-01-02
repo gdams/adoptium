@@ -36,7 +36,7 @@ export async function getAssetsForVersion(
       for (let pkg of response.data) {
         pkgsFound.push(pkg);
       }
-      pagecount = Number(response.headers['pagecount'])
+      pagecount = Number(response.headers.get('pagecount'))
     })
     .catch(function (error) {
         pagecount = 0;
