@@ -77,4 +77,42 @@ describe('useAdoptiumContributorsApi hook', () => {
 
     expect(result.current).toBeNull();
   });
+
+  it('getMaxContributors fails on error', async () => {
+    AxiosInstance.get.mockImplementation((url: String) => {
+      return Promise.reject('error')
+    });
+    
+    const { result } = renderHook(() => useAdoptiumContributorsApi(true));
+    
+    await waitFor(() => {
+      expect(axios.get).toHaveBeenCalledTimes(1);
+    });
+
+    expect(result.current).toBeNull();
+  });
+
+  it('getContributor fails on error', async () => {
+    AxiosInstance.get.mockImplementation((url: String) => {
+      // OK for getMaxContributors
+      if(url.endsWith('/contributors?per_page=1')) {
+        return Promise.resolve ({
+          data: mockResponse,
+          headers: {
+            'Link': '<https://api.github.com/repositories/1/contributors?per_page=1&page=2>; rel="next", <https://api.github.com/repositories/1/contributors?per_page=1&page=50>; rel="last"'
+          }})
+      }
+
+      // error for getContributor call
+      return Promise.reject('error')
+    });
+
+    const { result } = renderHook(() => useAdoptiumContributorsApi(true));
+
+    await waitFor(() => {
+      expect(axios.get).toHaveBeenCalledTimes(2);
+    });
+
+    expect(result.current).toBeNull();
+  });
 });
