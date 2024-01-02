@@ -60,4 +60,16 @@ describe('getAllPkgsForVersion', () => {
     expect(getImageForDistribution('zulu')).toBe('/images/azul-logo.png');
     expect(getImageForDistribution('semeru')).toBe('/images/ibm-logo.png');
   });
+
+  it('MarketplaceReleases to be null on error', async() => {
+    AxiosInstance.get.mockImplementation((url: String) => {
+      return Promise.reject('error')
+    });
+
+    renderHook(async() => {
+      await getAllPkgsForVersion(8, 'linux', 'x64', 'jdk', selectedVendorIdentifiers).then((data) => {
+        expect(data).toBeNull
+      })
+    });
+  })
 });

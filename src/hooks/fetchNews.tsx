@@ -39,7 +39,6 @@ async function fetchLatestNews(page) {
             return response.data;
         })
         .catch(function (error) {
-            console.error(error);
             return []
         });
 }
@@ -53,7 +52,6 @@ async function fetchLatestEvents() {
             return response.data.events;
         })
         .catch(function (error) {
-            console.error(error);
             return []
         });
 }

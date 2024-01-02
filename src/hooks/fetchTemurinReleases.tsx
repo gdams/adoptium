@@ -36,7 +36,6 @@ export async function loadLatestAssets(
             }
         })
         .catch(function (error) {
-            console.error(error);
             pkgsFound = []
         });
 

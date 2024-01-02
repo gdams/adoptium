@@ -39,7 +39,6 @@ export async function getAssetsForVersion(
       pagecount = Number(response.headers.pagecount)
     })
     .catch(function (error) {
-        console.error(error);
         pagecount = 0;
         pkgsFound = [];
     });

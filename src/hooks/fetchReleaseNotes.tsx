@@ -27,7 +27,6 @@ export function fetchReleaseNotesForVersion(
                     setReleaseNotes(result)
                 })
                 .catch(function (error) {
-                    console.error(error);
                     setReleaseNotes(null)
                 });
         })();

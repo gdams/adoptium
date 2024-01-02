@@ -123,4 +123,17 @@ describe('getAssetsForVersion', () => {
       })
     });
   });
+
+  it('ReturnedReleases to be empty on error', async() => {
+    AxiosInstance.get.mockImplementation((url: String) => {
+      return Promise.reject('error')
+    });
+
+    renderHook(async() => {
+      await getAssetsForVersion(8, 'ga', 5, new Date(Date.UTC(2020, 0, 1)), 0).then((data) => {
+        expect(data?.releases).toStrictEqual([])
+        expect(data?.pagecount).toBe(0)
+      })
+    });
+  })
 });

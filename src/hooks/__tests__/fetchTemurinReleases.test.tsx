@@ -56,4 +56,16 @@ describe('loadLatestAssets', () => {
       })
     });
   });
+
+  it('pkgsFound to be empty on error', async() => {
+    AxiosInstance.get.mockImplementation((url: String) => {
+      return Promise.reject('error')
+    });
+
+    renderHook(async() => {
+      await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {
+        expect(data).toStrictEqual([])
+      })
+    });
+  })
 });

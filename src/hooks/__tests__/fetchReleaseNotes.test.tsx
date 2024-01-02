@@ -74,4 +74,16 @@ describe('fetchReleaseNotesForVersion', () => {
       expect(sortReleaseNotesByCallback).toHaveBeenCalledTimes(0);
     }, { interval: 1 });
   });
+
+  it('releaseNotes to be null on error', async() => {
+    AxiosInstance.get.mockImplementation((url: String) => {
+      return Promise.reject('error')
+    });
+
+    const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version'));
+    await waitFor(() => {
+      expect(result).toBeNull
+    }, { interval: 1 });
+    expect(axios.get).toHaveBeenCalledTimes(1)
+  })
 });

@@ -65,7 +65,6 @@ describe('useAdoptiumContributorsApi hook', () => {
   });
 
   it('returns null if error is caught in fetch', async () => {
-    global.fetch = vi.fn(() => Promise.reject('error'));
     AxiosInstance.get.mockImplementation((url: String) => {
       return Promise.reject('error')
     });

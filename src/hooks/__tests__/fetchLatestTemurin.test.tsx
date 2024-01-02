@@ -42,4 +42,16 @@ describe('fetchLatestForOS', () => {
     expect(axios.get).toHaveBeenCalledTimes(1)
     expect(result.current).toMatchSnapshot()
   })
+
+  it('binary to be null on error', async() => {
+    AxiosInstance.get.mockImplementation((url: String) => {
+      return Promise.reject('error')
+    });
+
+    const { result } = renderHook(() => fetchLatestForOS(true, 11, 'linux', 'x64'));
+    await waitFor(() => {
+      expect(result).toBeNull
+    }, { interval: 1 });
+    expect(axios.get).toHaveBeenCalledTimes(1)
+  })
 });

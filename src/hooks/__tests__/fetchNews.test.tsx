@@ -29,4 +29,17 @@ describe('fetchNewsItems', () => {
     expect(axios.get).toHaveBeenCalledTimes(2)
     expect(result.current).toMatchSnapshot()
   })
+
+  it('newsAndEvents to be empty on error', async() => {
+    AxiosInstance.get.mockImplementation((url: String) => {
+      return Promise.reject('error')
+    });
+
+    const { result } = renderHook(() => fetchNewsItems(true, 1));
+    await waitFor(() => {
+      expect(result.current?.news.news).toStrictEqual([])
+      expect(result.current?.events).toStrictEqual([])
+    }, { interval: 1 });
+    expect(axios.get).toHaveBeenCalledTimes(2)
+  })
 });

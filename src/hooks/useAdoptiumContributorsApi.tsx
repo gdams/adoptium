@@ -58,7 +58,6 @@ async function getMaxContributors(): Promise<[number, number]> {
       return response.headers.Link
     })
     .catch(function (error) {
-        console.error(error);
         return undefined
     });
 
@@ -85,7 +84,6 @@ async function getContributor(randomPage: number): Promise<Contributor | null> {
       return response.data[0] as ContributorApiResponse;
     })
     .catch(function (error) {
-        console.error(error);
         return undefined
     });
 

@@ -42,7 +42,6 @@ export function fetchLatestForOS(
                     setBinary(binary);
                 })
                 .catch(function (error) {
-                    console.error(error);
                     setBinary(null);
                 });
         })();

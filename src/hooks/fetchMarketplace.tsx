@@ -41,7 +41,6 @@ export async function getAllPkgsForVersion(
             return response.data;
         })
         .catch(function (error) {
-            console.error(error);
             return null;
         });
 
