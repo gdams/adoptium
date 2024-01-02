@@ -4,15 +4,17 @@ import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
 import Archive, { Head } from '../archive';
 import AxiosInstance from 'axios'
+import MockAdapter from 'axios-mock-adapter';
+
+const mock = new MockAdapter(AxiosInstance);
+
+afterEach(() => {
+  vi.clearAllMocks();
+});
 
 describe('Temurin Archive page', () => {
   it('renders correctly', () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Archive />);
     // eslint-disable-next-line
@@ -22,12 +24,7 @@ describe('Temurin Archive page', () => {
   });
 
   it('head renders correctly', () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Head />);
     // eslint-disable-next-line
@@ -36,12 +33,7 @@ describe('Temurin Archive page', () => {
   });
 
   it('has no accessibility violations', async () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Archive />);
     const results = await axe(container);

@@ -3,7 +3,9 @@ import { describe, expect, it, vi } from 'vitest'
 import { loadLatestAssets } from '../fetchTemurinReleases';
 import { createMockTemurinReleaseAPI  } from '../../__fixtures__/hooks';
 import AxiosInstance from 'axios'
+import MockAdapter from 'axios-mock-adapter';
 
+const mock = new MockAdapter(AxiosInstance);
 let mockResponse = [createMockTemurinReleaseAPI(false, 'jdk')];
 
 afterEach(() => {
@@ -12,9 +14,7 @@ afterEach(() => {
 
 describe('loadLatestAssets', () => {
   it('returns valid JSON', async() => {
-    AxiosInstance.get.mockResolvedValue({
-      data: mockResponse
-    });
+    mock.onGet().reply(200, mockResponse);
 
     renderHook(async() => {
       await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {
@@ -29,9 +29,7 @@ describe('loadLatestAssets', () => {
       createMockTemurinReleaseAPI(false, 'jdk')
     ];
 
-    AxiosInstance.get.mockResolvedValue({
-      data: mockResponse
-    });
+    mock.onGet().reply(200, mockResponse);
 
     renderHook(async() => {
       await loadLatestAssets(8, 'linux', 'x64', 'any').then((data) => {
@@ -46,9 +44,7 @@ describe('loadLatestAssets', () => {
       createMockTemurinReleaseAPI(true, 'jre')
     ]
 
-    AxiosInstance.get.mockResolvedValue({
-      data: mockResponse
-    });
+    mock.onGet().reply(200, mockResponse);
 
     renderHook(async() => {
       await loadLatestAssets(8, 'linux', 'x64', 'jre').then((data) => {
@@ -58,9 +54,7 @@ describe('loadLatestAssets', () => {
   });
 
   it('pkgsFound to be empty on error', async() => {
-    AxiosInstance.get.mockImplementation((url: String) => {
-      return Promise.reject('error')
-    });
+    mock.onGet().reply(500);
 
     renderHook(async() => {
       await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {

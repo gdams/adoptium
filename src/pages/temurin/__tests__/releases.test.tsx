@@ -1,18 +1,20 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
 import Releases, { Head } from '../releases';
 import AxiosInstance from 'axios'
+import MockAdapter from 'axios-mock-adapter';
+
+const mock = new MockAdapter(AxiosInstance);
+
+afterEach(() => {
+  vi.clearAllMocks();
+});
 
 describe('Releases page', () => {
   it('renders correctly', () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Releases />);
     // eslint-disable-next-line
@@ -22,12 +24,7 @@ describe('Releases page', () => {
   });
 
   it('head renders correctly', () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Head />);
     // eslint-disable-next-line
@@ -36,12 +33,7 @@ describe('Releases page', () => {
   });
 
   it('has no accessibility violations', async () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Releases />);
     const results = await axe(container);

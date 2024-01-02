@@ -4,9 +4,9 @@ import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
 import Marketplace, { Head } from '../marketplace';
 import AxiosInstance from 'axios'
-import { createMockTemurinFeatureReleaseAPI  } from '../../__fixtures__/hooks';
+import MockAdapter from 'axios-mock-adapter';
 
-let mockResponse = [createMockTemurinFeatureReleaseAPI(false)];
+const mock = new MockAdapter(AxiosInstance);
 
 vi.mock('../../util/shuffle', () => {
   return {
@@ -29,9 +29,7 @@ afterEach(() => {
 
 describe('Marketplace page', () => {
   it('renders correctly', () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: mockResponse
-    });
+    mock.onGet().reply(200, []);
 
     const { container } = render(<Marketplace />);
     // eslint-disable-next-line
@@ -40,9 +38,7 @@ describe('Marketplace page', () => {
   });
 
   it('head renders correctly', () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: mockResponse
-    });
+    mock.onGet().reply(200, []);
 
     const { container } = render(<Head />);
     // eslint-disable-next-line
@@ -51,9 +47,7 @@ describe('Marketplace page', () => {
   });
 
   it('has no accessibility violations', async () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: []
-    });
+    mock.onGet().reply(200, []);
 
     const { container } = render(<Marketplace />);
     const results = await axe(container);

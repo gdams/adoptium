@@ -1,19 +1,21 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { act, screen, fireEvent } from '@testing-library/react';
-import { describe, expect, it } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { axe } from 'vitest-axe';
 import Nightly, { Head } from '../nightly';
 import AxiosInstance from 'axios'
+import MockAdapter from 'axios-mock-adapter';
+
+const mock = new MockAdapter(AxiosInstance);
+
+afterEach(() => {
+  vi.clearAllMocks();
+});
 
 describe('Temurin Nightly page', () => {
   it('renders correctly', async () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Nightly />);
     // eslint-disable-next-line
@@ -29,12 +31,7 @@ describe('Temurin Nightly page', () => {
   });
 
   it('head renders correctly', () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Head />);
     // eslint-disable-next-line
@@ -43,12 +40,7 @@ describe('Temurin Nightly page', () => {
   });
 
   it('has no accessibility violations', async () => {
-    AxiosInstance.get.mockResolvedValue({
-      data: [],
-      headers: {
-        'pagecount': 0
-      }
-    });
+    mock.onGet().reply(200, [], {'pagecount': 0});
 
     const { container } = render(<Nightly />);
     const results = await axe(container);
