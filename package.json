@@ -128,8 +128,5 @@
     ]
   },
   "homepage": "https://adoptium.net",
-  "main": "gatsby-browser.js",
-  "jest": {
-    "setupFiles": ["jest-canvas-mock.ts"]
-  }
+  "main": "gatsby-browser.js"
 }
