@@ -33,6 +33,7 @@
       "**/*.{ts,tsx,mdx}",
       "gatsby-node.ts",
       "gatsby-config.ts",
+      "jest-canvas-mock.ts",
       "vitest.config.ts",
       "vitest-setup.ts"
     ]
