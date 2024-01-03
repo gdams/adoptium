@@ -124,7 +124,8 @@
       "vitest-setup.ts",
       "vitest.config.ts",
       "gatsby-node.ts",
-      "gatsby-config.ts"
+      "gatsby-config.ts",
+      "jest-canvas-mock.ts"
     ]
   },
   "homepage": "https://adoptium.net",
