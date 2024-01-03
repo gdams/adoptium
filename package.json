@@ -83,12 +83,12 @@
     "axios-mock-adapter": "^1.22.0",
     "babel-preset-gatsby": "^3.12.1",
     "gatsby-cli": "^5.12.4",
+    "jest-canvas-mock": "^2.5.2",
     "jsdom": "^22.1.0",
     "prettier": "3.1.1",
     "vitest": "^1.0.4",
     "vitest-axe": "^1.0.0-pre.3",
-    "vitest-canvas-mock": "0.3.3",
-    "jest-canvas-mock": "2.5.2"
+    "vitest-canvas-mock": "0.3.3"
   },
   "overrides": {
     "gatsby-plugin-react-i18next": {
@@ -128,5 +128,8 @@
     ]
   },
   "homepage": "https://adoptium.net",
-  "main": "gatsby-browser.js"
+  "main": "gatsby-browser.js",
+  "jest": {
+    "setupFiles": ["jest-canvas-mock.ts"]
+  }
 }
