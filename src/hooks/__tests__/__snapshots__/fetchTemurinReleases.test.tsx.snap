@@ -69,3 +69,129 @@ exports[`loadLatestAssets > source image is processed correctly 1`] = `
   },
 ]
 `;
+
+exports[`loadLatestAssets > verify that releases are well sorted 1`] = `
+[
+  {
+    "architecture": "aarch64",
+    "binaries": [
+      {
+        "checksum": "checksum_mock",
+        "extension": ".tar.gz",
+        "installer_checksum": "installer_checksum_mock",
+        "installer_extension": ".msi",
+        "installer_link": "https://installer_link_mock/",
+        "installer_size": 0,
+        "link": "https://link_mock/",
+        "size": 0,
+        "type": "JDK",
+      },
+    ],
+    "os": "os_mock",
+    "platform_name": "os_mock-aarch64",
+    "release_date": 2020-01-01T00:00:00.000Z,
+    "release_link": "https://release_link_mock/",
+    "release_name": "release_name_mock",
+  },
+  {
+    "architecture": "ppc64le",
+    "binaries": [
+      {
+        "checksum": "checksum_mock",
+        "extension": ".tar.gz",
+        "installer_checksum": "installer_checksum_mock",
+        "installer_extension": ".msi",
+        "installer_link": "https://installer_link_mock/",
+        "installer_size": 0,
+        "link": "https://link_mock/",
+        "size": 0,
+        "type": "JDK",
+      },
+    ],
+    "os": "os_mock",
+    "platform_name": "os_mock-ppc64le",
+    "release_date": 2020-01-01T00:00:00.000Z,
+    "release_link": "https://release_link_mock/",
+    "release_name": "release_name_mock",
+  },
+  {
+    "architecture": "x64",
+    "binaries": [
+      {
+        "checksum": "checksum_mock",
+        "extension": ".tar.gz",
+        "installer_checksum": "installer_checksum_mock",
+        "installer_extension": ".msi",
+        "installer_link": "https://installer_link_mock/",
+        "installer_size": 0,
+        "link": "https://link_mock/",
+        "size": 0,
+        "type": "JDK",
+      },
+    ],
+    "os": "os_mock",
+    "platform_name": "os_mock-x64",
+    "release_date": 2020-01-01T00:00:00.000Z,
+    "release_link": "https://release_link_mock/",
+    "release_name": "release_name_mock",
+  },
+  {
+    "architecture": "x32",
+    "binaries": [
+      {
+        "checksum": "checksum_mock",
+        "extension": ".tar.gz",
+        "installer_checksum": "installer_checksum_mock",
+        "installer_extension": ".msi",
+        "installer_link": "https://installer_link_mock/",
+        "installer_size": 0,
+        "link": "https://link_mock/",
+        "size": 0,
+        "type": "JDK",
+      },
+    ],
+    "os": "os_mock",
+    "platform_name": "os_mock-x32",
+    "release_date": 2020-01-01T00:00:00.000Z,
+    "release_link": "https://release_link_mock/",
+    "release_name": "release_name_mock",
+  },
+]
+`;
+
+exports[`loadLatestAssets > verify update the release date if this asset is newer 1`] = `
+[
+  {
+    "architecture": "arch_mock",
+    "binaries": [
+      {
+        "checksum": "checksum_mock",
+        "extension": ".tar.gz",
+        "installer_checksum": "installer_checksum_mock",
+        "installer_extension": ".msi",
+        "installer_link": "https://installer_link_mock/",
+        "installer_size": 0,
+        "link": "https://link_mock/",
+        "size": 0,
+        "type": "JDK",
+      },
+      {
+        "checksum": "checksum_mock",
+        "extension": ".tar.gz",
+        "installer_checksum": "installer_checksum_mock",
+        "installer_extension": ".msi",
+        "installer_link": "https://installer_link_mock/",
+        "installer_size": 0,
+        "link": "https://link_mock/",
+        "size": 0,
+        "type": "JDK",
+      },
+    ],
+    "os": "os_mock",
+    "platform_name": "os_mock-arch_mock",
+    "release_date": 2020-01-02T00:00:00.000Z,
+    "release_link": "https://release_link_mock/",
+    "release_name": "release_name_mock",
+  },
+]
+`;
