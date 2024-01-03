@@ -29,7 +29,7 @@ const TemurinDownloadTable = ({results}) => {
         <table id="download-table" className="table table-bordered releases-table" style={{borderSpacing: '0 10px', borderCollapse: 'separate'}}>
             <tbody className="table-light">
             {results ? (
-                results.sort((pkg1, pkg2) => pkg2.release_date - pkg1.release_date).map(
+                results.map(
                     (pkg, i): string | JSX.Element =>
                         pkg && (
                             <tr key={i}>

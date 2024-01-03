@@ -4,6 +4,12 @@ import axios from 'axios';
 
 const baseUrl = 'https://api.adoptium.net/v3';
 
+Date.prototype.withoutTime = function () {
+    var d = new Date(this);
+    d.setHours(0, 0, 0, 0);
+    return d;
+};
+
 export async function loadLatestAssets(
     version: number,
     os: string,
@@ -11,6 +17,7 @@ export async function loadLatestAssets(
     packageType: string
 ): Promise<ReleaseAsset[]> {
     let url = new URL(`${baseUrl}/assets/latest/${version}/hotspot?`);
+
     if (os !== 'any') {
         url.searchParams.append('os', os);
     }
@@ -18,38 +25,36 @@ export async function loadLatestAssets(
         url.searchParams.append('architecture', architecture);
     }
 
-    let pkgsFound: TemurinRelease[] = []
+    // NOTE: Do not filter the query by 'image_type' because we need to have 'sources
+    // to display the Release Notes and source download (cf src/components/TemurinDownloadTable/index.tsx)
 
-    await axios.get(url.toString())
+    let pkgsFound: TemurinRelease[] = await axios.get(url.toString())
         .then(function (response) {
-            let data = response.data;
-
-            // Filter JDK/JRE if necessary
-            if (packageType === 'jdk') {
-                data = data.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jre');
-            } else if (packageType === 'jre') {
-                data = data.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jdk');
-            }
-
-            for (let pkg of data) {
-                pkgsFound.push(pkg);
-            }
+            return response.data;
         })
         .catch(function (error) {
-            pkgsFound = []
+            return []
         });
+
+    // Filter JDK/JRE if necessary
+    if (packageType === 'jdk') {
+        pkgsFound = pkgsFound.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jre');
+    } else if (packageType === 'jre') {
+        pkgsFound = pkgsFound.filter((pkg: TemurinRelease) => pkg.binary.image_type !== 'jdk');
+    }
 
     return renderReleases(pkgsFound);
 }
 
 function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
     let releases: ReleaseAsset[] = []
+
     pkgs.forEach((releaseAsset: TemurinRelease) => {
         const platform = `${releaseAsset.binary.os}-${releaseAsset.binary.architecture}`
 
         // Skip this asset if it's not a binary type we're interested in displaying
         const binary_type = releaseAsset.binary.image_type.toUpperCase();
-        if (binary_type == 'SOURCES') {
+        if (binary_type === 'SOURCES') {
             releases['source'] = releaseAsset;
         }
         if (!['INSTALLER', 'JDK', 'JRE'].includes(binary_type)) {
@@ -67,6 +72,12 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
                 release_date: new Date(releaseAsset.binary.updated_at),
                 binaries: []
             };
+        } else {
+            // update the release date if this asset is newer
+            const rabua = new Date(releaseAsset.binary.updated_at);
+            if(release.release_date < rabua) {
+                release.release_date = rabua;
+            }
         }
 
         let binary_constructor: Binary = {
@@ -91,11 +102,30 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
         if (release.binaries.length === 1) {
             releases.push(release);
         }
-
-        releases.forEach((release) => {
-            release.binaries.sort((binaryA, binaryB) => binaryA.type > binaryB.type ? 1 : binaryA.type < binaryB.type ? -1 : 0);
-        });
     })
+
+    // well sort releases
+    releases.sort((pkg1: ReleaseAsset, pkg2: ReleaseAsset) => {
+        // order by date DESC
+        let c = pkg2.release_date.withoutTime() - pkg1.release_date.withoutTime();
+        if(c === 0) {
+            // for the same date, sort by OS ASC
+            c = pkg1.os.localeCompare(pkg2.os);
+            if(c ===  0) {
+                // for the same OS, sort by architecture ASC
+                const arch1 = pkg1.architecture === 'x32' ? 'x86' : pkg1.architecture
+                const arch2 = pkg2.architecture === 'x32' ? 'x86' : pkg2.architecture
+                c = arch1.localeCompare(arch2);
+            }
+        }
+        return c;
+    });
+
+    // sort binaries inside releases
+    releases.forEach((release) => {
+        release.binaries.sort((binaryA, binaryB) => binaryA.type > binaryB.type ? 1 : binaryA.type < binaryB.type ? -1 : 0);
+    });
+
     return releases
 }
 
