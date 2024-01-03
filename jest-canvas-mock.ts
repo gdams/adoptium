@@ -1,7 +1,9 @@
-import 'jest-canvas-mock';
-import { setupJestCanvasMock } from 'jest-canvas-mock';
+// https://github.com/vitest-dev/vitest/discussions/395
 
-beforeEach(() => {
-  jest.resetAllMocks();
-  setupJestCanvasMock();
-});
+import 'jest-canvas-mock';
+// import { setupJestCanvasMock } from 'jest-canvas-mock';
+
+// beforeEach(() => {
+//   jest.resetAllMocks();
+//   setupJestCanvasMock();
+// });
