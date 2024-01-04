@@ -107,18 +107,18 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
     // well sort releases
     releases.sort((pkg1: ReleaseAsset, pkg2: ReleaseAsset) => {
         // order by date DESC
-        let c = pkg2.release_date.withoutTime() - pkg1.release_date.withoutTime();
-        if (c === 0) {
+        let comparison = pkg2.release_date.withoutTime() - pkg1.release_date.withoutTime();
+        if (comparison === 0) {
             // for the same date, sort by OS ASC
-            c = pkg1.os.localeCompare(pkg2.os);
-            if (c ===  0) {
+            comparison = pkg1.os.localeCompare(pkg2.os);
+            if (comparison ===  0) {
                 // for the same OS, sort by architecture ASC
                 const arch1 = pkg1.architecture === 'x32' ? 'x86' : pkg1.architecture
                 const arch2 = pkg2.architecture === 'x32' ? 'x86' : pkg2.architecture
-                c = arch1.localeCompare(arch2);
+                comparison = arch1.localeCompare(arch2);
             }
         }
-        return c;
+        return comparison;
     });
 
     // sort binaries inside releases
