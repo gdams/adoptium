@@ -111,7 +111,7 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
         if (c === 0) {
             // for the same date, sort by OS ASC
             c = pkg1.os.localeCompare(pkg2.os);
-            if(c ===  0) {
+            if (c ===  0) {
                 // for the same OS, sort by architecture ASC
                 const arch1 = pkg1.architecture === 'x32' ? 'x86' : pkg1.architecture
                 const arch2 = pkg2.architecture === 'x32' ? 'x86' : pkg2.architecture
