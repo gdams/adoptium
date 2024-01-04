@@ -75,7 +75,7 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
         } else {
             // update the release date if this asset is newer
             const rabua = new Date(releaseAsset.binary.updated_at);
-            if(release.release_date < rabua) {
+            if (release.release_date < rabua) {
                 release.release_date = rabua;
             }
         }
