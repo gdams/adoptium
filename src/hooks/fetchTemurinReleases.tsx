@@ -108,7 +108,7 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
     releases.sort((pkg1: ReleaseAsset, pkg2: ReleaseAsset) => {
         // order by date DESC
         let c = pkg2.release_date.withoutTime() - pkg1.release_date.withoutTime();
-        if(c === 0) {
+        if (c === 0) {
             // for the same date, sort by OS ASC
             c = pkg1.os.localeCompare(pkg2.os);
             if(c ===  0) {
