@@ -412,6 +412,7 @@ exports[`Asciidoc pages > renders correctly - installation slug 1`] = `
                 >
                   Cell 2
                   <i
+                    aria-hidden="true"
                     class="fa fa-circle-info fa-xl"
                   />
                 </td>
@@ -735,6 +736,7 @@ exports[`Asciidoc pages > renders correctly 1`] = `
                 >
                   Cell 2
                   <i
+                    aria-hidden="true"
                     class="fa fa-circle-info fa-xl"
                   />
                 </td>
