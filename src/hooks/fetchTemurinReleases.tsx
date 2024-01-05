@@ -4,6 +4,14 @@ import axios from 'axios';
 
 const baseUrl = 'https://api.adoptium.net/v3';
 
+const getConfig = {
+    // query URL without using browser cache
+    headers: {
+      'Cache-Control': 'no-cache',
+      'Pragma': 'no-cache',
+      'Expires': '0',
+    },
+  };
 export async function loadLatestAssets(
     version: number,
     os: string,
@@ -22,7 +30,7 @@ export async function loadLatestAssets(
     // NOTE: Do not filter the query by 'image_type' because we need to have 'sources
     // to display the Release Notes and source download (cf src/components/TemurinDownloadTable/index.tsx)
 
-    let pkgsFound: TemurinRelease[] = await axios.get(url.toString())
+    let pkgsFound: TemurinRelease[] = await axios.get(url.toString(), getConfig)
         .then(function (response) {
             return response.data;
         })
@@ -64,13 +72,15 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
                 release_name: releaseAsset.release_name,
                 release_link: new URL(releaseAsset.release_link),
                 release_date: new Date(releaseAsset.binary.updated_at),
-                binaries: []
+                binaries: [],
+                checksum : releaseAsset.binary.package.checksum
             };
         } else {
             // update the release date if this asset is newer
             const rabua = new Date(releaseAsset.binary.updated_at);
             if (release.release_date < rabua) {
                 release.release_date = rabua;
+                release.checksum = releaseAsset.binary.package.checksum;
             }
         }
 
@@ -100,22 +110,25 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
 
     // well sort releases
     releases.sort((pkg1: ReleaseAsset, pkg2: ReleaseAsset) => {
-        console.info("STEP 1 pkg1.release_date = " + pkg1.release_date)
-        console.info("STEP 2 pkg2.release_date = " + pkg2.release_date)
         // order by date DESC
         const releaseDateUTCInMillis1 = Date.UTC(pkg1.release_date.getFullYear(), pkg1.release_date.getMonth(), pkg1.release_date.getDate(), 0, 0, 0, 0);
         const releaseDateUTCInMillis2 = Date.UTC(pkg2.release_date.getFullYear(), pkg2.release_date.getMonth(), pkg2.release_date.getDate(), 0, 0, 0, 0);
-        console.info("STEP 10 releaseDate1 = " + releaseDateUTCInMillis1)
-        console.info("STEP 20 releaseDate2 = " + releaseDateUTCInMillis2)
+
+        console.info("STEP 1.0 pkg1.checksum = " + pkg1.checksum);
+        console.info("STEP 1.1 pkg1.release_date = " + pkg1.release_date);
+        console.info("STEP 1.2 releaseDate1 = " + releaseDateUTCInMillis1);
+        console.info("STEP 2.0 pkg2.checksum = " + pkg2.checksum);
+        console.info("STEP 2.1 pkg2.release_date = " + pkg2.release_date);
+        console.info("STEP 2.2 releaseDate2 = " + releaseDateUTCInMillis2);
 
         let comparison = releaseDateUTCInMillis2 - releaseDateUTCInMillis1;
         if (comparison === 0) {
             // for the same date, sort by OS ASC
             comparison = pkg1.os.localeCompare(pkg2.os);
-            if (comparison ===  0) {
+            if (comparison === 0) {
                 // for the same OS, sort by architecture ASC
-                const arch1 = pkg1.architecture === 'x32' ? 'x86' : pkg1.architecture
-                const arch2 = pkg2.architecture === 'x32' ? 'x86' : pkg2.architecture
+                const arch1 = pkg1.architecture === 'x32' ? 'x86' : pkg1.architecture;
+                const arch2 = pkg2.architecture === 'x32' ? 'x86' : pkg2.architecture;
                 comparison = arch1.localeCompare(arch2);
             }
         }
@@ -137,6 +150,7 @@ export interface ReleaseAsset {
     release_name: string;
     release_link: URL;
     release_date: Date;
+    checksum: string,
     binaries: Array<Binary>;
 }
 
