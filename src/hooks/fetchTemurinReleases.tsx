@@ -103,12 +103,12 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
         console.info("STEP 1 pkg1.release_date = " + pkg1.release_date)
         console.info("STEP 2 pkg2.release_date = " + pkg2.release_date)
         // order by date DESC
-        const releaseDate1 = new Date(Date.UTC(pkg1.release_date.getFullYear(), pkg1.release_date.getMonth(), pkg1.release_date.getDate(), 0, 0, 0, 0));
-        const releaseDate2 = new Date(Date.UTC(pkg2.release_date.getFullYear(), pkg2.release_date.getMonth(), pkg2.release_date.getDate(), 0, 0, 0, 0));
-        console.info("STEP 10 releaseDate1 = " + releaseDate1)
-        console.info("STEP 20 releaseDate2 = " + releaseDate2)
+        const releaseDateUTCInMillis1 = Date.UTC(pkg1.release_date.getFullYear(), pkg1.release_date.getMonth(), pkg1.release_date.getDate(), 0, 0, 0, 0);
+        const releaseDateUTCInMillis2 = Date.UTC(pkg2.release_date.getFullYear(), pkg2.release_date.getMonth(), pkg2.release_date.getDate(), 0, 0, 0, 0);
+        console.info("STEP 10 releaseDate1 = " + releaseDateUTCInMillis1)
+        console.info("STEP 20 releaseDate2 = " + releaseDateUTCInMillis2)
 
-        let comparison = releaseDate2.getTime() - releaseDate1.getTime();
+        let comparison = releaseDateUTCInMillis2 - releaseDateUTCInMillis1;
         if (comparison === 0) {
             // for the same date, sort by OS ASC
             comparison = pkg1.os.localeCompare(pkg2.os);
