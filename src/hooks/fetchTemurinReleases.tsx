@@ -4,14 +4,6 @@ import axios from 'axios';
 
 const baseUrl = 'https://api.adoptium.net/v3';
 
-const getConfig = {
-    // query URL without using browser cache
-    headers: {
-      'Cache-Control': 'no-cache',
-      'Pragma': 'no-cache',
-      'Expires': '0',
-    },
-  };
 export async function loadLatestAssets(
     version: number,
     os: string,
@@ -30,7 +22,7 @@ export async function loadLatestAssets(
     // NOTE: Do not filter the query by 'image_type' because we need to have 'sources
     // to display the Release Notes and source download (cf src/components/TemurinDownloadTable/index.tsx)
 
-    let pkgsFound: TemurinRelease[] = await axios.get(url.toString(), getConfig)
+    let pkgsFound: TemurinRelease[] = await axios.get(url.toString())
         .then(function (response) {
             return response.data;
         })
@@ -111,15 +103,15 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
     // well sort releases
     releases.sort((pkg1: ReleaseAsset, pkg2: ReleaseAsset) => {
         // order by date DESC
-        const releaseDateUTCInMillis1 = Date.UTC(pkg1.release_date.getFullYear(), pkg1.release_date.getMonth(), pkg1.release_date.getDate(), 0, 0, 0, 0);
-        const releaseDateUTCInMillis2 = Date.UTC(pkg2.release_date.getFullYear(), pkg2.release_date.getMonth(), pkg2.release_date.getDate(), 0, 0, 0, 0);
+        const releaseDateUTCInMillis1 = Date.UTC(pkg1.release_date.getUTCFullYear(), pkg1.release_date.getUTCMonth(), pkg1.release_date.getUTCDay(), 0, 0, 0, 0);
+        const releaseDateUTCInMillis2 = Date.UTC(pkg2.release_date.getUTCFullYear(), pkg2.release_date.getUTCMonth(), pkg2.release_date.getUTCDay(), 0, 0, 0, 0);
 
         console.info("STEP 1.0 pkg1.checksum = " + pkg1.checksum);
         console.info("STEP 1.1 pkg1.release_date = " + pkg1.release_date);
-        console.info("STEP 1.2 releaseDate1 = " + releaseDateUTCInMillis1);
+        console.info("STEP 1.2 releaseDate1 UTC = " + releaseDateUTCInMillis1);
         console.info("STEP 2.0 pkg2.checksum = " + pkg2.checksum);
         console.info("STEP 2.1 pkg2.release_date = " + pkg2.release_date);
-        console.info("STEP 2.2 releaseDate2 = " + releaseDateUTCInMillis2);
+        console.info("STEP 2.2 releaseDate2 UTC = " + releaseDateUTCInMillis2);
 
         let comparison = releaseDateUTCInMillis2 - releaseDateUTCInMillis1;
         if (comparison === 0) {
