@@ -103,15 +103,24 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
     // well sort releases
     releases.sort((pkg1: ReleaseAsset, pkg2: ReleaseAsset) => {
         // order by date DESC
-        const releaseDateUTCInMillis1 = Date.UTC(pkg1.release_date.getUTCFullYear(), pkg1.release_date.getUTCMonth(), pkg1.release_date.getUTCDay(), 0, 0, 0, 0);
-        const releaseDateUTCInMillis2 = Date.UTC(pkg2.release_date.getUTCFullYear(), pkg2.release_date.getUTCMonth(), pkg2.release_date.getUTCDay(), 0, 0, 0, 0);
+        const releaseDateUTCInMillis1 = Date.UTC(pkg1.release_date.getUTCFullYear(), pkg1.release_date.getUTCMonth(), pkg1.release_date.getUTCDate(), 0, 0, 0, 0);
+        const releaseDateUTCInMillis2 = Date.UTC(pkg2.release_date.getUTCFullYear(), pkg2.release_date.getUTCMonth(), pkg2.release_date.getUTCDate(), 0, 0, 0, 0);
 
-        console.info("STEP 1.0 pkg1.checksum = " + pkg1.checksum);
-        console.info("STEP 1.1 pkg1.release_date = " + pkg1.release_date);
-        console.info("STEP 1.2 releaseDate1 UTC = " + releaseDateUTCInMillis1);
-        console.info("STEP 2.0 pkg2.checksum = " + pkg2.checksum);
-        console.info("STEP 2.1 pkg2.release_date = " + pkg2.release_date);
-        console.info("STEP 2.2 releaseDate2 UTC = " + releaseDateUTCInMillis2);
+if(pkg1.os === 'windows') {
+    console.info("STEP 1.0 pkg1.checksum = " + pkg1.checksum);
+    console.info("STEP 1.1 pkg1.release_date = " + pkg1.release_date);
+    console.info("STEP 1.2 releaseDate1 UTC = " + releaseDateUTCInMillis1);
+    console.info("STEP 2.0 pkg2.checksum = " + pkg2.checksum);
+    console.info("STEP 2.1 pkg2.release_date = " + pkg2.release_date);
+    console.info("STEP 2.2 releaseDate2 UTC = " + releaseDateUTCInMillis2);
+
+    console.info("STEP 10.1 releaseDate2 UTC = " + pkg1.release_date.getUTCFullYear());
+    console.info("STEP 10.2 releaseDate2 UTC = " + pkg1.release_date.getUTCMonth());
+    console.info("STEP 10.3 releaseDate2 UTC = " + pkg1.release_date.getUTCDate());
+    console.info("STEP 20.1 releaseDate2 UTC = " + pkg2.release_date.getUTCFullYear());
+    console.info("STEP 20.2 releaseDate2 UTC = " + pkg2.release_date.getUTCMonth());
+    console.info("STEP 20.3 releaseDate2 UTC = " + pkg2.release_date.getUTCDate());
+}
 
         let comparison = releaseDateUTCInMillis2 - releaseDateUTCInMillis1;
         if (comparison === 0) {
