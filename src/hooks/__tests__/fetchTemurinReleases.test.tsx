@@ -4,6 +4,7 @@ import { loadLatestAssets } from '../fetchTemurinReleases';
 import { createMockTemurinReleaseAPI  } from '../../__fixtures__/hooks';
 import AxiosInstance from 'axios'
 import MockAdapter from 'axios-mock-adapter';
+import {getVersionAsString} from '../index'
 
 const mock = new MockAdapter(AxiosInstance);
 let mockResponse = [createMockTemurinReleaseAPI(false, 'jdk')];
@@ -69,6 +70,31 @@ describe('loadLatestAssets', () => {
     });
   });
 
+  it('verify update the version if this asset is newer', async() => {
+    const r1 = createMockTemurinReleaseAPI(true, 'jdk');
+    r1.version.major = 17;
+    r1.version.minor = 0;
+    r1.version.security = 9;
+    r1.version.build = 9;
+    r1.version.adopt_build_number = 1;
+    const r2 = createMockTemurinReleaseAPI(true, 'jdk');
+    r2.version.major = 17;
+    r2.version.minor = 0;
+    r2.version.security = 9;
+    r2.version.build = 9;
+    r2.version.adopt_build_number = 2;
+
+    mockResponse = [r1, r2]
+
+    mock.onGet().reply(200, mockResponse);
+
+    renderHook(async() => {
+      await loadLatestAssets(8, 'linux', 'x64', 'jdk').then((data) => {
+        expect(data).toMatchSnapshot()
+      })
+    });
+  });
+
   it('verify that releases are well sorted', async() => {
     const r1 = createMockTemurinReleaseAPI(true, 'jdk');
     r1.binary.architecture = 'x32';
@@ -98,5 +124,15 @@ describe('loadLatestAssets', () => {
         expect(data).toStrictEqual([])
       })
     });
+  })
+
+  it('Test that getVersionAsString() works correclty', async() => {
+    const r1 = createMockTemurinReleaseAPI(true, 'jdk');
+    r1.version.major = 17;
+    r1.version.minor = 0;
+    r1.version.security = 9;
+    r1.version.build = 9;
+    r1.version.adopt_build_number = 1;
+    expect(getVersionAsString(r1.version)).equals('17.0.9+9.1');
   })
 });

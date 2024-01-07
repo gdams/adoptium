@@ -259,3 +259,49 @@ exports[`loadLatestAssets > verify update the release date if this asset is newe
   },
 ]
 `;
+
+exports[`loadLatestAssets > verify update the version if this asset is newer 1`] = `
+[
+  {
+    "architecture": "arch_mock",
+    "binaries": [
+      {
+        "checksum": "checksum_mock",
+        "extension": ".tar.gz",
+        "installer_checksum": "installer_checksum_mock",
+        "installer_extension": ".msi",
+        "installer_link": "https://installer_link_mock/",
+        "installer_size": 0,
+        "link": "https://link_mock/",
+        "size": 0,
+        "type": "JDK",
+      },
+      {
+        "checksum": "checksum_mock",
+        "extension": ".tar.gz",
+        "installer_checksum": "installer_checksum_mock",
+        "installer_extension": ".msi",
+        "installer_link": "https://installer_link_mock/",
+        "installer_size": 0,
+        "link": "https://link_mock/",
+        "size": 0,
+        "type": "JDK",
+      },
+    ],
+    "os": "os_mock",
+    "platform_name": "os_mock-arch_mock",
+    "release_date": 2020-01-01T00:00:00.000Z,
+    "release_link": "https://release_link_mock/",
+    "release_name": "17.0.9+9.2",
+    "version": {
+      "adopt_build_number": 2,
+      "build": 9,
+      "major": 17,
+      "minor": 0,
+      "openjdk_version": "openjdk_version_mock",
+      "patch": 0,
+      "security": 9,
+    },
+  },
+]
+`;
