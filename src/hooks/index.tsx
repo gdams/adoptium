@@ -47,8 +47,15 @@ export function compareVersions(versionA: VersionMetaData, versionB: VersionMeta
     return comparison;
 }
 
-export function getVersionAsString(version: VersionMetaData) : string {
+export function getVersionAsString(version: VersionMetaData, allowShortNotation: boolean = false) : string {
     let result = `${version.major}.${version.minor}.${version.security}`;
+    if(allowShortNotation && !version.minor && !version.security && !version.patch) {
+        // when minor, security & patch are 0 => do not print .0.0.0
+        result = `${version.major}`;
+    }
+    if(version.patch) {
+        result += `.${version.patch}`;
+    }
     if(version.build) {
         result += `+${version.build}`;
         if(version.adopt_build_number) result += `.${version.adopt_build_number}`;

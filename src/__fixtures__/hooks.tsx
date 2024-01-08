@@ -89,9 +89,9 @@ export const mockLatestTemurin = (installer): LatestTemurin => ({
   updated_at: new Date(Date.UTC(2020, 0, 1)),
   vendor: 'vendor_mock',
   version_data: {
-    major: 0,
+    major: 21,
     minor: 0,
-    security: 0,
+    security: 1,
     patch: 0,
     build: 0,
     openjdk_version: 'openjdk_version_mock',
@@ -167,9 +167,9 @@ export const createMockTemurinReleaseAPI = (installer, image_type): MockTemurinR
   release_name: 'release_name_mock',
   vendor: 'vendor_mock',
   version: {
-    major: 0,
+    major: 21,
     minor: 0,
-    security: 0,
+    security: 12,
     patch: 0,
     build: 0,
     openjdk_version: 'openjdk_version_mock',

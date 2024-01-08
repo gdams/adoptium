@@ -135,4 +135,34 @@ describe('loadLatestAssets', () => {
     r1.version.adopt_build_number = 1;
     expect(getVersionAsString(r1.version)).equals('17.0.9+9.1');
   })
+
+  it('Test that getVersionAsString() works correclty with short not allowed', async() => {
+    const r1 = createMockTemurinReleaseAPI(true, 'jdk');
+    r1.version.major = 20;
+    r1.version.minor = 0;
+    r1.version.security = 0;
+    r1.version.build = 36;
+    r1.version.patch = 0;
+    expect(getVersionAsString(r1.version)).equals('20.0.0+36');
+  })
+
+  it('Test that getVersionAsString() works correclty with short allowed', async() => {
+    const r1 = createMockTemurinReleaseAPI(true, 'jdk');
+    r1.version.major = 20;
+    r1.version.minor = 0;
+    r1.version.security = 0;
+    r1.version.build = 36;
+    r1.version.patch = 0;
+    expect(getVersionAsString(r1.version, true)).equals('20+36');
+  })
+
+  it('Test that getVersionAsString() works correclty with patch', async() => {
+    const r1 = createMockTemurinReleaseAPI(true, 'jdk');
+    r1.version.major = 18;
+    r1.version.minor = 0;
+    r1.version.security = 2;
+    r1.version.build = 1;
+    r1.version.patch = 1;
+    expect(getVersionAsString(r1.version)).equals('18.0.2.1+1');
+  })
 });
