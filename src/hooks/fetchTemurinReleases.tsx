@@ -111,11 +111,11 @@ function renderReleases(pkgs: Array<TemurinRelease>): ReleaseAsset[] {
         // let comparison = 0;
 
         if (comparison === 0) {
+            // NOTE: Ordering by date DESC is disabled because it's less intuitive than by version done previously
             // order by date DESC
             // const releaseDateUTCInMillis1 = Date.UTC(pkg1.release_date.getUTCFullYear(), pkg1.release_date.getUTCMonth(), pkg1.release_date.getUTCDate(), 0, 0, 0, 0);
             // const releaseDateUTCInMillis2 = Date.UTC(pkg2.release_date.getUTCFullYear(), pkg2.release_date.getUTCMonth(), pkg2.release_date.getUTCDate(), 0, 0, 0, 0);
             // comparison = releaseDateUTCInMillis2 - releaseDateUTCInMillis1;
-            // NOTE: le tri par date de livraison DESC n'est pas intuitif
 
             if (comparison === 0) {
                 // for the same date, sort by OS ASC
