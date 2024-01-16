@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Banner = () => {
-  return null;
+  // return null;
 
   // The following is an example that can be used for future banner alert
   // Comment Out The Above Line ( return null ; ) and uncomment the below
