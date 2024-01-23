@@ -25,7 +25,7 @@
     "gatsby-adapter-netlify": "^1.1.1",
     "gatsby-plugin-feed": "^5.13.0",
     "gatsby-plugin-google-gtag": "^5.13.0",
-    "gatsby-plugin-google-tagmanager": "^5.13.0",
+    "gatsby-plugin-google-tagmanager": "^5.13.1",
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-local-search": "^2.0.1",
     "gatsby-plugin-manifest": "^5.13.0",
