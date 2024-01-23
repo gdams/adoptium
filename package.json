@@ -12,7 +12,7 @@
     "@gatsbyjs/reach-router": "^2.0.1",
     "@mdx-js/react": "^2.3.0",
     "@mui/lab": "^5.0.0-alpha.97",
-    "@mui/material": "^5.15.5",
+    "@mui/material": "^5.15.6",
     "@mui/x-data-grid": "^6.19.1",
     "@mui/x-date-pickers": "^6.19.0",
     "@popperjs/core": "^2.11.8",
