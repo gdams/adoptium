@@ -26,16 +26,25 @@ Users should follow the [Adoptium policy for reporting vulnerability concerns](h
 
 This release contains the following fixes and updates.
 
-* [Temurin 8u401 release notes](https://adoptium.net/temurin/release-notes/?version=jdk8uxxx-xxx), including [fixes in OpenJDK 8uxxx](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+openjdk8uxxx)
+* [Temurin 8u401 release notes](https://adoptium.net/temurin/release-notes/?version=jdk8402-b06), including [fixes in OpenJDK 8u402](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+openjdk8u402)
 
-* [Temurin 11.0.22 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-11.x.x+x), including [fixes in OpenJDK 11.x.x](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+11.x.x)
+* [Temurin 11.0.22 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-11.0.22+7), including [fixes in OpenJDK 11.0.22](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+11.0.22)
 
-* [Temurin 17.0.10 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-17.x.x+x), including [fixes in OpenJDK 17.x.x](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+17.x.x)
+* [Temurin 17.0.10 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-17.0.10+7), including [fixes in OpenJDK 17.0.10](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+17.0.10)
 
-* [Temurin 21.0.2 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-21.x.x+x), including [fixes in OpenJDK 21.x.x](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+21.x.x)
+* [Temurin 21.0.2 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-21.0.2+13), including [fixes in OpenJDK 21.0.2](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+21.0.2)
 
 ## New and Noteworthy
 
-### Noteworthy Change 1
+### Dropping Temurin ARM 32bit Linux binaries for JDK 21 and up
+As per the Eclipse Adoptium PMC decision (minuted here), the project will not produce Temurin binaries for ARM 32bit Linux for JDK 21 and up.  This decision is based on several criteria, including download statistics, level of support for the platform in the upstream OpenJDK project and interest from Adoptium Working Group members.  
 
-### Noteworthy Change 2
+### Refinements to SBOM Contents
+As of this release, extra details relating to Windows and Mac compiler versions are being recorded in the Software Bill of Materials (SBOM) for those platforms (details can be found in temurin-build [PR 3606](https://github.com/adoptium/temurin-build/pull/3606)).
+
+### Confirmation of Reproducible Builds for JDK 21 Temurin binaries
+Now that we have created pipelines that verify the Temurin binaries we produce are reproducible, we have an effective way to confirm that this 'feature' does not regress.  As per Diagram X, for all primary platforms on JDK 21.0.2+13, we confirm those binaries are reproducible.
+
+### SLSA Level 3 for Majority of platforms
+Since our previous release, we have been diligently been working at closing the last issues required for us to declare [SLSA Level 3 compliance for Linux and macOS Temurin binaries](https://adoptium.net/blog/2024/01/slsabuild3-temurin/).  This is a lauded accomplishment for the project, though our work is on-going.  Our 2024 plan sees us continue to focus on secure development best practices.   
+
