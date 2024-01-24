@@ -17,7 +17,13 @@ The following table summaries security vulnerabilities fixed in this release cyc
 
 | CVE Identifier  | Component | CVSS Score | v8 | v11 | v17 | v21 |
 | :---                                                              | :---                |  :----:      |  :----:   | :----:     | :----:     | :----:     |
-| [CVE-2023-xxxxx](https://nvd.nist.gov/vuln/detail/CVE-2023-xxxxx) | example/component    |     |           |            | X          | X          |
+| [CVE-2024-20932](https://nvd.nist.gov/vuln/detail/CVE-2024-20932) | security-libs/java.security    |   7.5  |           |            | X          |            |
+| [CVE-2024-20918](https://nvd.nist.gov/vuln/detail/CVE-2024-20918) | hotspot/compiler    |  7.4   |     X      |      X      | X          | X          |
+| [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) | security-libs/java.security    |  7.4   |    X       |      X      | X          | X          |
+| [CVE-2024-20926](https://nvd.nist.gov/vuln/detail/CVE-2024-20926) | core-libs/javax.script    | 5.9    |      X     |       X     |           |            |
+| [CVE-2024-20919](https://nvd.nist.gov/vuln/detail/CVE-2024-20919) | hotspot/runtime    |  5.9   |     X     |    X       | X          | X          |
+| [CVE-2024-20921](https://nvd.nist.gov/vuln/detail/CVE-2024-20921) | hotspot/runtime    |  5.9   |     X     |    X       | X          | X          |
+| [CVE-2024-20945](https://nvd.nist.gov/vuln/detail/CVE-2024-20945) | security-libs/javax.xml.crypto    |  4.7   |     X     |    X       | X          | X          |
 
 
 Users should follow the [Adoptium policy for reporting vulnerability concerns](https://github.com/adoptium/adoptium/security/policy#security-policies-and-procedures) with this release.
@@ -43,7 +49,7 @@ As per the Eclipse Adoptium PMC decision (minuted here), the project will not pr
 We are pleased to announce the availability of these 2 platforms for JDK 21.0.2+13.  We were unable to release them during our October 2023 release period, so this is the first time that production-ready JDK 21 Temurin binaries have been published out of the project.
 
 ### aarch64 macOS Respin 
-Eclipse Temurin 11.0.22 aarch64 macOS binaries are in a separate release named jdk-11.0.22+7.1 due to a respin that was required to fix a linking issue introduced in a compiler upgrade for that platform.
+Eclipse Temurin 11.0.22 aarch64 macOS binaries are in a separate release named jdk-11.0.22+7.1 due to a respin that was required to fix a [linking issue](https://github.com/adoptium/infrastructure/issues/3353) introduced in a compiler upgrade for that platform.
 
 ### AIX JDK11 and JDK17 Unavailable
 Temurin 11 and 17 on AIX remain unavailable due to an [issue with Harfbuzz](https://bugs.openjdk.org/browse/JDK-8313643).  Fortunately, an update to the version of Harfbuzz is targeted for April 2024.
