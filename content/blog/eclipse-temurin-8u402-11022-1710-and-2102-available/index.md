@@ -1,5 +1,5 @@
 ---
-title: Eclipse Temurin 8u401, 11.0.22, 17.0.10 and 21.0.2 Available
+title: Eclipse Temurin 8u402, 11.0.22, 17.0.10 and 21.0.2 Available
 date: "2024-01-26"
 author: pmc
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u402, 11.0.22, 17.0.10 and 21.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
@@ -32,7 +32,7 @@ Users should follow the [Adoptium policy for reporting vulnerability concerns](h
 
 This release contains the following fixes and updates.
 
-* [Temurin 8u401 release notes](https://adoptium.net/temurin/release-notes/?version=jdk8u402-b06), including [fixes in OpenJDK 8u402](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+openjdk8u402)
+* [Temurin 8u402 release notes](https://adoptium.net/temurin/release-notes/?version=jdk8u402-b06), including [fixes in OpenJDK 8u402](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+openjdk8u402)
 
 * [Temurin 11.0.22 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-11.0.22+7), including [fixes in OpenJDK 11.0.22](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+11.0.22)
 
