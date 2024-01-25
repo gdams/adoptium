@@ -21,9 +21,9 @@ The following table summaries security vulnerabilities fixed in this release cyc
 | [CVE-2024-20918](https://nvd.nist.gov/vuln/detail/CVE-2024-20918) | hotspot/compiler    |  High ([7.4](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20918&vector=AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N&version=3.1))   |     X      |      X      | X          | X          |
 | [CVE-2024-20952](https://nvd.nist.gov/vuln/detail/CVE-2024-20952) | security-libs/java.security    |  High ([7.4](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20952&vector=AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N&version=3.1))   |    X       |      X      | X          | X          |
 | [CVE-2024-20926](https://nvd.nist.gov/vuln/detail/CVE-2024-20926) | core-libs/javax.script    | Medium ([5.9](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator?name=CVE-2024-20926&vector=AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N&version=3.1))    |      X     |       X     |           |            |
-| [CVE-2024-20919](https://nvd.nist.gov/vuln/detail/CVE-2024-22919) | hotspot/runtime    |  Medium ([5.9]())   |     X     |    X       | X          | X          |
-| [CVE-2024-20921](https://nvd.nist.gov/vuln/detail/CVE-2024-20921) | hotspot/runtime    |  Medium ([5.9]())   |     X     |    X       | X          | X          |
-| [CVE-2024-20945](https://nvd.nist.gov/vuln/detail/CVE-2024-20945) | security-libs/javax.xml.crypto    |  4.7   |     X     |    X       | X          | X          |
+| [CVE-2024-20919](https://nvd.nist.gov/vuln/detail/CVE-2024-22919) | hotspot/runtime    |  Reserved (5.9)   |     X     |    X       | X          | X          |
+| [CVE-2024-20921](https://nvd.nist.gov/vuln/detail/CVE-2024-20921) | hotspot/runtime    |  Reserved (5.9)   |     X     |    X       | X          | X          |
+| [CVE-2024-20945](https://nvd.nist.gov/vuln/detail/CVE-2024-20945) | security-libs/javax.xml.crypto    | Reserved (4.7)   |     X     |    X       | X          | X          |
 
 
 Users should follow the [Adoptium policy for reporting vulnerability concerns](https://github.com/adoptium/adoptium/security/policy#security-policies-and-procedures) with this release.
