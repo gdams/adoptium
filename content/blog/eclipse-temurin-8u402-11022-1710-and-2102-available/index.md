@@ -42,16 +42,16 @@ This release contains the following fixes and updates.
 
 ## New and Noteworthy
 
-### Dropping Temurin Arm 32-bit Linux binaries for JDK 21 and up
+### No Temurin Arm 32-bit Linux binaries for JDK 21 and up
 As per the Eclipse Adoptium PMC decision, the project will not produce Temurin binaries for Arm 32-bit Linux for JDK 21 and up.  This decision is based on several criteria, including download statistics, level of support for the platform in the upstream OpenJDK project and interest from Adoptium Working Group members.  
 
-### Availability of s390x Linux and ppc64 AIX platforms in JDK 21.0.2+13 
+### Availability of s390x Linux and ppc64 AIX in JDK 21.0.2+13 
 We are pleased to announce the availability of these 2 platforms for JDK 21.0.2+13.  We were unable to release them during our October 2023 release period, so this is the first time that production-ready JDK 21 Temurin binaries have been published out of the project.
 
 ### aarch64 macOS Respin 
 Eclipse Temurin 11.0.22 aarch64 macOS binaries are in a separate release named jdk-11.0.22+7.1 due to a respin that was required to fix a [linking issue](https://github.com/adoptium/infrastructure/issues/3353) introduced in a compiler upgrade for that platform.
 
-### AIX JDK11 and JDK17 Unavailable
+### ppc64 AIX JDK11 and JDK17 Unavailable
 Temurin 11 and 17 on AIX remain unavailable due to an [issue with Harfbuzz](https://bugs.openjdk.org/browse/JDK-8313643).  Fortunately, an update to the version of Harfbuzz is targeted for April 2024.
 
 ### Refinements to SBOM Contents
