@@ -2,14 +2,14 @@
 title: Eclipse Temurin 8u401, 11.0.22, 17.0.10 and 21.0.2 Available
 date: "2024-01-26"
 author: pmc
-description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8uxxx, 11.x.x, 17.x.x and 21.x.x. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
+description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u402, 11.0.22, 17.0.10 and 21.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
   - temurin
   - announcement
   - release-notes
 ---
 
-Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u401, 11.0.22, 17.0.10 and 21.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. Binaries, installers, and source code are available from the [Temurin download page](https://adoptium.net/temurin/releases), [official container images](https://hub.docker.com/_/eclipse-temurin) are available at DockerHub, and [installable packages](https://adoptium.net/installation/) are available for various operating systems.
+Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u402, 11.0.22, 17.0.10 and 21.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. Binaries, installers, and source code are available from the [Temurin download page](https://adoptium.net/temurin/releases), [official container images](https://hub.docker.com/_/eclipse-temurin) are available at DockerHub, and [installable packages](https://adoptium.net/installation/) are available for various operating systems.
 
 ## Security Vulerabilities Resolved
 
@@ -43,7 +43,7 @@ This release contains the following fixes and updates.
 ## New and Noteworthy
 
 ### Dropping Temurin Arm 32-bit Linux binaries for JDK 21 and up
-As per the Eclipse Adoptium PMC decision (minuted here), the project will not produce Temurin binaries for Arm 32-bit Linux for JDK 21 and up.  This decision is based on several criteria, including download statistics, level of support for the platform in the upstream OpenJDK project and interest from Adoptium Working Group members.  
+As per the Eclipse Adoptium PMC decision, the project will not produce Temurin binaries for Arm 32-bit Linux for JDK 21 and up.  This decision is based on several criteria, including download statistics, level of support for the platform in the upstream OpenJDK project and interest from Adoptium Working Group members.  
 
 ### Availability of s390x Linux and ppc64 AIX platforms in JDK 21.0.2+13 
 We are pleased to announce the availability of these 2 platforms for JDK 21.0.2+13.  We were unable to release them during our October 2023 release period, so this is the first time that production-ready JDK 21 Temurin binaries have been published out of the project.
