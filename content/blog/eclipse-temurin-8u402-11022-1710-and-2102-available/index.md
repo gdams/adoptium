@@ -69,4 +69,4 @@ Now that we have created pipelines that verify the Temurin binaries we produce a
 
 ### SLSA Level 3 for Majority of platforms
 
-Since our previous release, we have been diligently been working at closing the last issues required for us to declare [SLSA Level 3 compliance for Linux and macOS Temurin binaries](https://adoptium.net/blog/2024/01/slsabuild3-temurin/).  This is a lauded accomplishment for the project, though our work is ongoing.  Our 2024 plan sees us continue to focus on secure development best practices.   
+Since our previous release, we have been diligently been working at closing the last issues required for us to declare [SLSA Level 3 compliance for Linux and macOS Temurin binaries](https://adoptium.net/blog/2024/01/slsabuild3-temurin/).  This is a lauded accomplishment for the project, though our work is ongoing.  Our 2024 plan sees us continue to focus on secure development best practices.
