@@ -25,7 +25,6 @@ The following table summaries security vulnerabilities fixed in this release cyc
 | [CVE-2024-20921](https://nvd.nist.gov/vuln/detail/CVE-2024-20921) | hotspot/runtime    |  Reserved (5.9)   |     X     |    X       | X          | X          |
 | [CVE-2024-20945](https://nvd.nist.gov/vuln/detail/CVE-2024-20945) | security-libs/javax.xml.crypto    | Reserved (4.7)   |     X     |    X       | X          | X          |
 
-
 Users should follow the [Adoptium policy for reporting vulnerability concerns](https://github.com/adoptium/adoptium/security/policy#security-policies-and-procedures) with this release.
 
 ## Fixes and Updates
@@ -43,25 +42,31 @@ This release contains the following fixes and updates.
 ## New and Noteworthy
 
 ### No Temurin Arm 32-bit Linux binaries for JDK 21 and up
+
 As per the Eclipse Adoptium PMC decision, the project will not produce Temurin binaries for Arm 32-bit Linux for JDK 21 and up.  This decision is based on several criteria, including download statistics, level of support for the platform in the upstream OpenJDK project and interest from Adoptium Working Group members.  
 
-### Availability of s390x Linux and ppc64 AIX in JDK 21.0.2+13 
+### Availability of s390x Linux and ppc64 AIX in JDK 21.0.2+13
+
 We are pleased to announce the availability of these 2 platforms for JDK 21.0.2+13.  We were unable to release them during our October 2023 release period, so this is the first time that production-ready JDK 21 Temurin binaries have been published out of the project.
 
-### aarch64 macOS Respin 
+### aarch64 macOS Respin
+
 Eclipse Temurin 11.0.22 aarch64 macOS binaries are in a separate release named jdk-11.0.22+7.1 due to a respin that was required to fix a [linking issue](https://github.com/adoptium/infrastructure/issues/3353) introduced in a compiler upgrade for that platform.
 
 ### ppc64 AIX JDK11 and JDK17 Unavailable
+
 Temurin 11 and 17 on AIX remain unavailable due to an [issue with Harfbuzz](https://bugs.openjdk.org/browse/JDK-8313643).  Fortunately, an update to the version of Harfbuzz is targeted for April 2024.
 
 ### Refinements to SBOM Contents
+
 As of this release, extra details relating to Windows and Mac compiler versions are being recorded in the Software Bill of Materials (SBOM) for those platforms (details can be found in temurin-build [PR 3606](https://github.com/adoptium/temurin-build/pull/3606)).
 
 ### Confirmation of Reproducible Builds for JDK 21 Temurin binaries
+
 Now that we have created pipelines that verify the Temurin binaries we produce are reproducible, we have an effective way to confirm that this 'feature' does not regress.  As indicated in the diagram below, for all primary platforms on JDK 21.0.2+13, we confirm those binaries are reproducible.
 
 ![Reproducible jdk21u](./jdk21uDiff.png)
 
 ### SLSA Level 3 for Majority of platforms
-Since our previous release, we have been diligently been working at closing the last issues required for us to declare [SLSA Level 3 compliance for Linux and macOS Temurin binaries](https://adoptium.net/blog/2024/01/slsabuild3-temurin/).  This is a lauded accomplishment for the project, though our work is ongoing.  Our 2024 plan sees us continue to focus on secure development best practices.   
 
+Since our previous release, we have been diligently been working at closing the last issues required for us to declare [SLSA Level 3 compliance for Linux and macOS Temurin binaries](https://adoptium.net/blog/2024/01/slsabuild3-temurin/).  This is a lauded accomplishment for the project, though our work is ongoing.  Our 2024 plan sees us continue to focus on secure development best practices.   
