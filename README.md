@@ -26,6 +26,12 @@ This assumes you already have Node.js and npm installed. Node.js version 18 or a
     npm start
     ```
 
+1. If you need more memory (FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory)
+
+    ```bash
+    export NODE_OPTIONS=--max-old-space-size=4096
+    ```
+
 1. **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
