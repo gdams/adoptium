@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { VersionMetaData } from '.';
+import { VersionMetaData, getVersionAsString } from '.';
 import { fetchExtension } from '../util/fetchExtension';
 import axios from 'axios';
 
@@ -29,7 +29,7 @@ export async function getAssetsForVersion(
   releases = []
 
   let pagecount = 0;
-  let pkgsFound: TemurinReleases[] = []
+  let pkgsFound: MockTemurinFeatureReleaseAPI[] = []
 
   await axios.get(url.toString())
     .then(function (response) {
@@ -46,10 +46,10 @@ export async function getAssetsForVersion(
   return renderReleases(pkgsFound, pagecount, releaseType);
 }
 
-function renderReleases(pkgs, pagecount, releaseType) {
+function renderReleases(pkgs: MockTemurinFeatureReleaseAPI[], pagecount: number, releaseType: ReleaseType) {
   pkgs.forEach((aRelease) => {
     const release: TemurinReleases = {
-        release_name: aRelease.release_name,
+        release_name: getVersionAsString(aRelease.version_data),
         release_link: aRelease.release_link,
         timestamp: aRelease.timestamp,
         platforms: {},
