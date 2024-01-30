@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { Trans, useI18next } from 'gatsby-plugin-react-i18next'
 import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
@@ -40,7 +40,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
 
   // import the correct date locale for the language
   if (language !== 'en') {
-    locale = require(`date-fns/locale/${language}/index.js`);
+    locale = require(`date-fns/locale/${language}/index.js`).default;
   }
 
   let selectedVersion = defaultVersion
