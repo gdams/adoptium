@@ -1,5 +1,5 @@
 = Temurin(TM) Support
-:page-authors: gdams, karianna, sxa, tellison, SueChaplain, sxa555, mvitz, ParkerM, M-Davies, Malax, lasombra, jeffalder, hendrikebbers, douph1, andrew-m-leonard, mr-david-owens, DanHeidinga, sophia-guo, zdtsw, adamfarley, garydgregory, mtughan
+:page-authors: gdams, karianna, sxa, tellison, SueChaplain, sxa555, mvitz, ParkerM, M-Davies, Malax, lasombra, jeffalder, hendrikebbers, douph1, andrew-m-leonard, mr-david-owens, DanHeidinga, sophia-guo, zdtsw, adamfarley, garydgregory, mtughan, xavierfacq
 :toc:
 :partialDir: _partials
 
