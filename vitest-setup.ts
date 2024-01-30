@@ -149,3 +149,6 @@ const IntersectionObserverMock = vi.fn(() => ({
 }))
 
 vi.stubGlobal('IntersectionObserver', IntersectionObserverMock)
+
+vi.stubGlobal("jest", vi);
+
