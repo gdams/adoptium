@@ -22,24 +22,20 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
           <div
             class="callout callout-default text-start"
           >
-            Please be aware that this archive contains intermediate builds created as a development step towards a 
-            <a
-              href="/temurin/releases"
-            >
-              full release
-            </a>
-            . Intermediate builds are ephemeral, and may disappear in the future.
+            Text
             <br />
             <br />
-            The following notice applies to intermediate builds:
+            Text
             <br />
-            “This is an intermediate build made available for testing purposes only. The code is untested and presumed incompatible with the Java SE specification. You should not deploy or write to this code, but instead use the tested and certified Java SE compatible version of the code. Redistribution of this build must retain this notice.”
+            “
+            Text
+            ”
             <br />
             <br />
             <p
               class="text-warning"
             >
-              These builds are unsupported and not for use in production.
+              Text
             </p>
           </div>
           <div
@@ -129,11 +125,12 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
     </div>
     <div
       class="input-group pb-5 d-flex justify-content-center"
+      style="line-height: 36px;"
     >
       <span
         class="p-2"
       >
-        View
+        Text
       </span>
       <select
         aria-label="Filter by number of builds"
@@ -172,7 +169,7 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
       <span
         class="p-2"
       >
-        nightly builds prior to:
+        Text
       </span>
       <div
         class="MuiFormControl-root MuiTextField-root css-qixv09-MuiFormControl-root-MuiTextField-root"

@@ -9,6 +9,7 @@ import VersionSelector from '../../components/VersionSelector'
 import ChecksumModal from '../../components/ChecksumModal'
 import TemurinArchiveTable from '../../components/TemurinArchiveTable'
 import { getAssetsForVersion } from '../../hooks'
+import LinkText from '../../components/LinkText'
 
 const TemurinReleases = () => (
   <Layout>
@@ -18,10 +19,14 @@ const TemurinReleases = () => (
           <h1 className='fw-light'>Archive</h1>
           <div className='row align-items-center pt-2'>
             <div className='callout callout-default text-start'>
-              Please be aware that this archive contains old releases of Eclipse Temurin kept for reference. The <Link to='/temurin/releases'>latest releases</Link> should be used in development and production.
+              <Trans i18nKey='archive.be.aware' defaults="Please be aware that this archive contains old releases of Eclipse Temurin kept for reference. The <latestReleasesLink>latest releases</latestReleasesLink> should be used in development and production."
+                  components={{
+                    latestReleasesLink: <LinkText href='/temurin/releases' />
+                  }}
+              />
               <br />
               <br />
-              <p className='text-warning'>Using old, superseded, or otherwise unsupported builds is not recommended.</p>
+              <p className='text-warning'><Trans i18nKey='archive.do.not.use.unsupported' defaults="Using old, superseded, or otherwise unsupported builds is not recommended." /></p>
             </div>
             <div className='btn-group'>
               <Link to='/temurin/releases' className='btn btn-primary m-3'>

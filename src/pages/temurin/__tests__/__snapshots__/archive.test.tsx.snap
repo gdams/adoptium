@@ -22,19 +22,13 @@ exports[`Temurin Archive page > renders correctly 1`] = `
           <div
             class="callout callout-default text-start"
           >
-            Please be aware that this archive contains old releases of Eclipse Temurin kept for reference. The 
-            <a
-              href="/temurin/releases"
-            >
-              latest releases
-            </a>
-             should be used in development and production.
+            Text
             <br />
             <br />
             <p
               class="text-warning"
             >
-              Using old, superseded, or otherwise unsupported builds is not recommended.
+              Text
             </p>
           </div>
           <div

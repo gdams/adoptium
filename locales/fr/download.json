@@ -14,5 +14,14 @@
   "Source Code Archive": "Code source",
   "Any": "Tout",
   "Installation guide": "Guide d'installation",
-  "Source Code": "Code source"
+  "Source Code": "Code source",
+  "archive.do.not.use.unsupported": "L’utilisation de versions anciennes, modifiées ou non prises en charge n’est pas recommandée.",
+  "archive.be.aware": "Veuillez noter que cette page contient d'anciennes versions d'Eclipse Temurin conservées à titre de référence. Les <latestReleasesLink>dernières versions</latestReleasesLink> doivent être utilisées pour le développement et la production.",
+  "download.not.available": "Non disponible",
+  "nightly.builds.unsupported.in.production": "Ces versions ne sont pas prises en charge et ne sont pas destinées à être utilisées en production.",
+  "vendor.selector.view": "Voir",
+  "vendor.selector.prior.to": "nightly builds avant le :",
+  "nightly.builds.be.aware": "Veuillez noter que cette archive contient des versions intermédiaires créées comme étape de développement vers une <fullReleaseLink>version officielle</fullReleaseLink>. Les builds intermédiaires sont éphémères et peuvent disparaître dans le futur.",
+  "nightly.builds.notice.title": "La note suivante s'applique aux versions intermédiaires :",
+  "nightly.builds.quoted.notice": "Il s'agit d'une version intermédiaire mise à disposition à des fins de test uniquement. Le code n'est pas testé et présumé incompatible avec la spécification Java SE. Vous ne devez pas déployer ou écrire dans ce code, mais plutôt utiliser la version testée et certifiée compatible Java SE du code. La redistribution de cette version doit conserver cet avis."
 }

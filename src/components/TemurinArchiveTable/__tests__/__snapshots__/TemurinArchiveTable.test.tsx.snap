@@ -189,7 +189,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                       class="btn"
                       style="width: 9em; background-color: rgb(215, 222, 233);"
                     >
-                      Not Available
+                      Text
                     </a>
                   </td>
                   <td

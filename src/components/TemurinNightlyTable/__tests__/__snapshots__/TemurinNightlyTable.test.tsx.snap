@@ -126,7 +126,7 @@ exports[`TemurinNightlyTable component > renders correctly 1`] = `
             </a>
           </td>
           <td>
-            Not Available
+            Text
           </td>
           <td>
             <a

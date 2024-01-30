@@ -37,7 +37,7 @@ const TemurinNightlyTable = ({results}) => {
                                                             {asset.installer_link ? (
                                                                 <td><Link to="/download" state={{ link: asset.installer_link, checksum: asset.installer_checksum }}>{asset.installer_extension}</Link></td>
                                                             ) :
-                                                                <td>Not Available</td>
+                                                                <td><Trans i18nKey='download.not.available' default='Not Available' /></td>
                                                             }
                                                             <td><a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}><Trans>Checksum</Trans></a></td>
                                                         </tr>

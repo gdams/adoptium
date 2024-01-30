@@ -38,12 +38,11 @@ exports[`VersionSelector > updates the number of builds and build date when the 
   [36m</div>[39m
   [36m<div[39m
     [33mclass[39m=[32m"input-group pb-5 d-flex justify-content-center"[39m
+    [33mstyle[39m=[32m"line-height: 36px;"[39m
   [36m>[39m
     [36m<span[39m
       [33mclass[39m=[32m"p-2"[39m
-    [36m>[39m
-      [0mView[0m
-    [36m</span>[39m
+    [36m/>[39m
     [36m<select[39m
       [33maria-label[39m=[32m"Filter by number of builds"[39m
       [33mclass[39m=[32m"form-select form-select-sm"[39m
@@ -80,9 +79,7 @@ exports[`VersionSelector > updates the number of builds and build date when the 
     [36m</select>[39m
     [36m<span[39m
       [33mclass[39m=[32m"p-2"[39m
-    [36m>[39m
-      [0mnightly builds prior to:[0m
-    [36m</span>[39m
+    [36m/>[39m
     [36m<div[39m
       [33mclass[39m=[32m"MuiFormControl-root MuiTextField-root css-qixv09-MuiFormControl-root-MuiTextField-root"[39m
     [36m>[39m

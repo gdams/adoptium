@@ -9,6 +9,7 @@ import VersionSelector from '../../components/VersionSelector'
 import ChecksumModal from '../../components/ChecksumModal'
 import TemurinNightlyTable from '../../components/TemurinNightlyTable'
 import { getAssetsForVersion } from '../../hooks'
+import LinkText from '../../components/LinkText'
 
 const TemurinReleases = () => (
   <Layout>
@@ -18,17 +19,22 @@ const TemurinReleases = () => (
           <h1 className='fw-light'>Nightly builds</h1>
           <div className='row align-items-center pt-2'>
             <div className='callout callout-default text-start'>
-              Please be aware that this archive contains intermediate builds created as a development step towards a <Link to='/temurin/releases'>full release</Link>. Intermediate builds are ephemeral, and may disappear in the future.
+              <Trans i18nKey='nightly.builds.be.aware' default='Please be aware that this archive contains intermediate builds created as a development step towards a <fullReleaseLink>full release</fullReleaseLink>. Intermediate builds are ephemeral, and may disappear in the future.' 
+                components= {{
+                  fullReleaseLink: <LinkText href='/temurin/releases' />
+                }}
+              />
               <br />
               <br />
-              The following notice applies to intermediate builds:
+              <Trans i18nKey='nightly.builds.notice.title' default='The following notice applies to intermediate builds:' />
               <br />
-              &ldquo;This is an intermediate build made available for testing purposes only. The code is untested and presumed incompatible with the Java SE specification.
+              &ldquo;<Trans i18nKey='nightly.builds.quoted.notice' default='This is an intermediate build made available for testing purposes only. The code is untested and presumed incompatible with the Java SE specification.
               You should not deploy or write to this code, but instead use the tested and certified Java SE compatible version of the code.
-              Redistribution of this build must retain this notice.&rdquo;
+              Redistribution of this build must retain this notice.' />&rdquo;
               <br />
               <br />
-              <p className='text-warning'>These builds are unsupported and not for use in production.</p>
+              <p className='text-warning'>
+                <Trans i18nKey='nightly.builds.unsupported.in.production' default='These builds are unsupported and not for use in production.' /></p>
             </div>
             <div className='btn-group'>
               <Link to='/temurin/releases' className='btn btn-primary m-3'>
