@@ -1,10 +1,15 @@
-import { expect, vi } from 'vitest'
-import * as axeMatchers from 'vitest-axe/matchers'
 import React from 'react'
-import 'vitest-axe/extend-expect'
+import { expect, vi } from 'vitest'
+
 import '@testing-library/jest-dom'
+
 import 'vitest-canvas-mock'
-import 'jest-canvas-mock';
+import 'vitest-axe/extend-expect'
+import * as axeMatchers from 'vitest-axe/matchers'
+
+//import 'jest-canvas-mock';
+
+vi.stubGlobal("jest", vi);
 
 expect.extend(axeMatchers);
 
@@ -149,6 +154,3 @@ const IntersectionObserverMock = vi.fn(() => ({
 }))
 
 vi.stubGlobal('IntersectionObserver', IntersectionObserverMock)
-
-vi.stubGlobal("jest", vi);
-
