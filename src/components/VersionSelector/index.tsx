@@ -99,7 +99,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       </div>
       {releaseType === "ea" && (
         <div className="input-group pb-5 d-flex justify-content-center" style={{lineHeight: '36px'}}>
-          <span className='p-2'><Trans i18nKey='vendor.selector.view' default='View'/></span>
+          <span className='p-2'><Trans i18nKey='vendor.selector.view' defaults='View'/></span>
           <select data-testid="build-num-filter" aria-label="Filter by number of builds" id="build-num-filter" onChange={(e) => setNumBuilds(e.target.value)} defaultValue={numBuilds} className="form-select form-select-sm" style={{ maxWidth: '5em' }}>
             <option key={1} value={1}>1</option>
             <option key={5} value={5}>5</option>
@@ -107,7 +107,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
             <option key={20} value={20}>20</option>
             <option key={50} value={50}>50</option>
           </select>
-          <span className='p-2'><Trans i18nKey='vendor.selector.prior.to' default='nightly builds prior to:'/></span>
+          <span className='p-2'><Trans i18nKey='vendor.selector.prior.to' defaults='nightly builds prior to:'/></span>
           <LocalizationProvider dateAdapter={AdapterDateFns} adapterLocale={locale}>
             <DesktopDatePicker
               label="Build Date"

@@ -83,7 +83,7 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                                     />
                                                                                 ) :
                                                                                     <a className="btn" style={{width: "9em", backgroundColor: "#D7DEE9"}}>
-                                                                                        <Trans i18nKey='download.not.available' default='Not Available' />
+                                                                                        <Trans i18nKey='download.not.available' defaults='Not Available' />
                                                                                     </a>
                                                                                 }
                                                                             </td>
