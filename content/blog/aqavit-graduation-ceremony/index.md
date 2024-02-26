@@ -26,4 +26,3 @@ Having the Eclipse release process look at the metadata and legal aspects of a p
 ## Summary
 
 The takeaway is that the AQAvit project is delivering value to developers, JDK distributors and enterprise consumers by not only delivering high-value tests, tools and processes to ensure robust, high-quality runtimes are distributed into the hands of Java developers and users, but the AQAvit project is doing so in compliance with excellent governance guidance provided by the Eclipse Foundation.  As an extra bonus to Eclipse project leads, in particular those of us who may be tired and grumpy, the Eclipse review process which leads up to graduation is streamlined and is not an imposition at all.
-
