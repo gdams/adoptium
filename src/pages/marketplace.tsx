@@ -38,10 +38,10 @@ const DownloadPage = () => (
               <p className='text-start'>
                 <Trans
                   i18nKey='marketplace.aqavitDescription'
-                  defaults='The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <aqavitLink>here</aqavitLink>. There is also a <blogPostLink>blog post and brief presentation</blogPostLink> that explains what testing is run and how it fits into the overall delivery pipeline.'
+                  defaults='The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <aqavitLink>here</aqavitLink>. There is also <blogPostLink>documentation</blogPostLink> that explains what testing is run and how AQAvit verification fits into the overall delivery pipeline.'
                   components={{
                     aqavitLink: <LinkText href='https://github.com/Adoptium/aqa-tests' />,
-                    blogPostLink: <LinkText href='https://blog.adoptopenjdk.net/2017/12/testing-java-help-count-ways' />
+                    blogPostLink: <LinkText href='https://github.com/adoptium/aqa-tests/tree/master/docs/pages/AQAvitVerification.md' />
                   }}
                 />
               </p>
