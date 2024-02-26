@@ -41,7 +41,7 @@ const DownloadPage = () => (
                   defaults='The AQAvit open source test suite (<strong>A</strong>doptium <strong>Q</strong>uality <strong>A</strong>ssurance) can be found <aqavitLink>here</aqavitLink>. There is also <blogPostLink>documentation</blogPostLink> that explains what testing is run and how AQAvit verification fits into the overall delivery pipeline.'
                   components={{
                     aqavitLink: <LinkText href='https://github.com/Adoptium/aqa-tests' />,
-                    blogPostLink: <LinkText href='https://github.com/adoptium/aqa-tests/tree/master/docs/pages/AQAvitVerification.md' />
+                    blogPostLink: <LinkText href='https://adoptium.net/docs/aqavit-verification/' />
                   }}
                 />
               </p>
