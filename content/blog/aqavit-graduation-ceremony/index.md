@@ -1,7 +1,7 @@
 ---
 title: AQAvit Graduation Ceremony
 date: "2024-02-27T12:00:00+00:00"
-author: smlambert
+author: shelleylambert
 description: How the AQAvit project continues to evolve
 tags:
   - aqavit
