@@ -15,7 +15,7 @@ I am pleased to announce the [Eclipse AQAvit 1.0.0 release](https://github.com/a
 
 ## Opinionated Comments about the Eclipse Foundation release process
 
-The [Eclipse Foundation release process](https://www.eclipse.org/projects/handbook/#release) looks at best practices for project's to follow to ensure they comply with good governance requirements.  A project can graduate out of incubator status when it passes its first Eclipse release review.  This process is then only required to be revisited on a yearly basis.
+The [Eclipse Foundation release process](https://www.eclipse.org/projects/handbook/#release) looks at best practices for projects to follow to ensure they comply with good governance requirements.  A project can graduate out of incubator status when it passes its first Eclipse release review.  This process is then only required to be revisited on a yearly basis.
 
 I am not a fan of unnecessary process.  As a project lead of the AQAvit project, I had been putting off doing what I considered to be some unwelcome extra 'paperwork' imposed upon me by the Eclipse Foundation. I had considered the Eclipse Foundation release an arbitrary and disconnected statement about the maturity and readiness of a project, especially given that AQAvit has been actively delivering GitHub releases.
 
