@@ -75,7 +75,7 @@
     "@types/gatsbyjs__reach-router": "^2.0.4",
     "@types/prismjs": "^1.26.3",
     "@types/react": "^18.2.63",
-    "@types/react-dom": "^18.2.19",
+    "@types/react-dom": "^18.2.20",
     "@types/react-world-flags": "^1.4.5",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.3.1",
