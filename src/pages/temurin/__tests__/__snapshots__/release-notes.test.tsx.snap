@@ -46,14 +46,14 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="Show filters"
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-1knaqv7-MuiButtonBase-root-MuiButton-root"
                 data-mui-internal-clone-element="true"
                 id=":r0:"
                 tabindex="0"
                 type="button"
               >
                 <span
-                  class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
+                  class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
                 >
                   <span
                     class="MuiBadge-root css-1c32n2y-MuiBadge-root"
