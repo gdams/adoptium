@@ -1,17 +1,21 @@
-import { Link } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import { FaYoutube, FaGithub, FaSlack, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import RandomContributor from '../RandomContributor';
 import LanguageSelector from '../LanguageSelector';
-import { Trans } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import LeavingSiteDisclaimerModal from '../LeavingSiteDisclaimerModal';
 import './Footer.scss';
 
 const Footer = (): JSX.Element => {
+
+  const {t} = useTranslation();
+
   return (
     <>
     <section className="bottom-info">
       <RandomContributor />
+      <LeavingSiteDisclaimerModal />
     </section>
       <div className="bg-grey">
         <div className="container mt-5">
@@ -51,7 +55,12 @@ const Footer = (): JSX.Element => {
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/mail/" className="nav-link p-0 text-muted"><Trans i18nKey='footer.mailing.lists' defaults='Mailing Lists'/></a></li>
                 <li className="nav-item mb-2"><a href="https://www.eclipse.org/forums/" className="nav-link p-0 text-muted"><Trans i18nKey='footer.forums' defaults='Forums'/></a></li>
                 <li className="nav-item mb-2"><a href="https://marketplace.eclipse.org/" className="nav-link p-0 text-muted"><Trans i18nKey='footer.marketplace' defaults='Marketplace'/></a></li>
-                <li className="nav-item mb-2"><a href="https://store.adoptium.net/" className="nav-link p-0 text-muted"><Trans i18nKey='footer.swag.store' defaults='Swag Store'/></a></li>
+                <li className="nav-item mb-2"><a href="https://eclipse-foundation.store/collections/eclipse-adoptium" className="nav-link p-0 text-muted"
+                  data-bs-toggle="modal"
+                  data-bs-target="#leavingSiteDisclaimerModal"
+                  data-bs-message={t('swag.store.disclaimer', 'By clicking the continue button, you will leave our website. Please be aware that new terms of use will apply to the Eclipse Foundation store, powered by Fourthwall: https://eclipse-foundation.store/.')}
+                  data-bs-location="https://eclipse-foundation.store/collections/eclipse-adoptium"
+                  ><Trans i18nKey='footer.swag.store' defaults='Swag Store'/></a></li>
               </ul>
             </div>
 
