@@ -278,6 +278,7 @@ export const createRandomTemurinReleases = (installer): TemurinReleases => ({
   release_link: new URL('https://release_link_mock'),
   source_url: new URL('https://source_url_mock'),
   release_notes: true,
+  release_notes_name: 'release_name_mock',
   timestamp: new Date(Date.UTC(2020, 0, 1)),
   platforms: {
     'platform_mock': {
