@@ -119,7 +119,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
               <p>
                 <a
                   class="link-light"
-                  href="/temurin/release-notes?version=release_name_mock"
+                  href="/temurin/release-notes?version=release_notes_name_mock"
                 >
                   <svg
                     fill="currentColor"
@@ -310,7 +310,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
               <p>
                 <a
                   class="link-light"
-                  href="/temurin/release-notes?version=release_name_mock"
+                  href="/temurin/release-notes?version=release_notes_name_mock"
                 >
                   <svg
                     fill="currentColor"
