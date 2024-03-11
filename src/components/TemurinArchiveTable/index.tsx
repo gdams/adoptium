@@ -44,8 +44,8 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                 {release.source_url &&
                                                     <p><a href={release.source_url} className="link-light"><FaDownload /> <Trans>Source Code Archive</Trans></a></p>
                                                 }
-                                                {release.release_notes &&
-                                                    <p><Link to={`/temurin/release-notes?version=${release.release_name}`} className="link-light"><MdNotes /> <Trans>Release Notes</Trans></Link></p>
+                                                {release.release_notes && 
+                                                    <p><Link to={`/temurin/release-notes?version=${release.release_notes_name}`} className="link-light"><MdNotes /> <Trans>Release Notes</Trans></Link></p>
                                                 }
                                             </div>
                                         </td>
