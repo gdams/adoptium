@@ -1,0 +1,61 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`LeavingSiteDisclaimerModal component > LeavingSiteDisclaimerModal renders correctly 1`] = `
+<div>
+  <div
+    aria-hidden="true"
+    aria-labelledby="leavingSiteDisclaimerLabel"
+    class="modal fade"
+    id="leavingSiteDisclaimerModal"
+    style="z-index: 10000;"
+    tabindex="-1"
+  >
+    <div
+      class="modal-dialog modal-lg"
+    >
+      <div
+        class="modal-content"
+      >
+        <div
+          class="modal-header"
+        >
+          <h5
+            class="modal-title"
+            id="leavingSiteDisclaimerLabel"
+          >
+            Text
+          </h5>
+          <button
+            aria-label="Close"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            type="button"
+          />
+        </div>
+        <div
+          class="modal-body text-start"
+        >
+          <p />
+        </div>
+        <div
+          class="modal-footer"
+        >
+          <button
+            class="btn btn-primary"
+            type="button"
+          >
+            Text
+          </button>
+          <button
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+            type="button"
+          >
+            Text
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
