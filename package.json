@@ -110,7 +110,7 @@
     "clean": "gatsby clean",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
-    "update-snapshots": "vitest -u"
+    "update-snapshots": "vitest --run -u"
   },
   "repository": {
     "type": "git",
