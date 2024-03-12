@@ -1,6 +1,7 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { describe, expect, it } from 'vitest'
+import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
+import { describe, expect, it, vi } from 'vitest'
 import LeavingSiteDisclaimerModal from '..';
 
 describe('LeavingSiteDisclaimerModal component', () => {
@@ -9,5 +10,17 @@ describe('LeavingSiteDisclaimerModal component', () => {
       <LeavingSiteDisclaimerModal />
     );
     expect(container).toMatchSnapshot();
+  });
+
+  it('LeavingSiteDisclaimerModal continue correctly', async () => {
+    const { container } = render(
+      <LeavingSiteDisclaimerModal />
+    );
+
+    const cancelButton = container.querySelector('button[class="btn btn-primary"]');
+
+    await userEvent.click(cancelButton).then(async() => {
+      expect(container).toMatchSnapshot();
+    });
   });
 });
