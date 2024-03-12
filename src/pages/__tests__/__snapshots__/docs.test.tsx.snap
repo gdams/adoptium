@@ -1015,6 +1015,12 @@ exports[`Docs page > renders correctly 1`] = `
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
+                      href="/docs/logo-styleguide/"
+                    >
+                      footer.logo.and.artwork
+                    </a>
+                    <a
+                      class="list-group-item list-group-item-action"
                       href="/temurin/buttons"
                     >
                       docs.download.buttons
