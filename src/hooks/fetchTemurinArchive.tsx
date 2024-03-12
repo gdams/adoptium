@@ -66,6 +66,7 @@ function renderReleases(pkgs: MockTemurinFeatureReleaseAPI[], pagecount: number,
         }
         if (aRelease.release_notes) {
           release.release_notes = true;
+          release.release_notes_name = aRelease.release_name;
         }
 
         if (releaseType === 'ga' && !['INSTALLER', 'JDK', 'JRE'].includes(binary_type)) {
@@ -126,6 +127,7 @@ export interface TemurinReleases {
     };
   };
   release_notes?: boolean;
+  release_notes_name?: string;
 }
 
 interface ReleaseAsset {
