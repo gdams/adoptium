@@ -169,6 +169,11 @@ exports[`Marketplace page > renders correctly 1`] = `
             ppc64le
           </option>
           <option
+            value="riscv64"
+          >
+            riscv64
+          </option>
+          <option
             value="s390x"
           >
             s390x
