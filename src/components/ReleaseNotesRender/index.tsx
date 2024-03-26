@@ -197,8 +197,8 @@ const ReleaseNotesRender = (): null | JSX.Element => {
                 pageSizeOptions={[20, 50, 75]}
                 pagination
                 isRowSelectable={() => false}
-                components={{
-                  Toolbar: CustomToolbar,
+                slots={{
+                  toolbar: CustomToolbar,
                 }}
                 getRowHeight={() => 'auto'}
                 sx={{

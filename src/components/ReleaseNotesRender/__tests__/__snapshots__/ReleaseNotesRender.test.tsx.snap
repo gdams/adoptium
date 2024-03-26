@@ -92,6 +92,49 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
             role="presentation"
           />
           <div
+            class="MuiDataGrid-toolbarContainer css-128fb87-MuiDataGrid-toolbarContainer"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="true"
+              aria-label="Show filters"
+              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+              data-mui-internal-clone-element="true"
+              id=":r0:"
+              tabindex="0"
+              type="button"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
+              >
+                <span
+                  class="MuiBadge-root css-1c32n2y-MuiBadge-root"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                    data-testid="FilterListIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
+                    />
+                  </svg>
+                  <span
+                    class="MuiBadge-badge MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightRectangular MuiBadge-overlapRectangular MuiBadge-colorPrimary css-y2h6q0-MuiBadge-badge"
+                  >
+                    0
+                  </span>
+                </span>
+              </span>
+              Filters
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
             aria-colcount="5"
             aria-multiselectable="false"
             aria-rowcount="3"
@@ -188,7 +231,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":r4:"
+                            id=":r7:"
                             tabindex="-1"
                             type="button"
                           >
@@ -266,7 +309,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":ra:"
+                            id=":rd:"
                             tabindex="-1"
                             type="button"
                           >
@@ -344,7 +387,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":rg:"
+                            id=":rj:"
                             tabindex="-1"
                             type="button"
                           >
@@ -422,7 +465,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":rm:"
+                            id=":rp:"
                             tabindex="-1"
                             type="button"
                           >
@@ -500,7 +543,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":rs:"
+                            id=":rv:"
                             tabindex="-1"
                             type="button"
                           >
@@ -770,7 +813,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                 />
                 <p
                   class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-                  id=":r1:"
+                  id=":r4:"
                 >
                   Rows per page:
                 </p>
@@ -778,12 +821,12 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                   class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-16c50h-MuiInputBase-root-MuiTablePagination-select"
                 >
                   <div
-                    aria-controls=":r2:"
+                    aria-controls=":r5:"
                     aria-expanded="false"
                     aria-haspopup="listbox"
-                    aria-labelledby=":r1: :r0:"
+                    aria-labelledby=":r4: :r3:"
                     class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
-                    id=":r0:"
+                    id=":r3:"
                     role="combobox"
                     tabindex="0"
                   >
