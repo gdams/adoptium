@@ -21,9 +21,12 @@ jobs:
       with:
         persist-credentials: false
 
-    - id: files
-      uses: jitterbit/get-changed-files@b17fbb00bdc0c0f63fcf166580804b4d2cdc2a42 # v1
+    - name: Get changed files
       if: github.event_name == 'push'
+      id: files
+      run: |
+        changed_files=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}")
+        echo "all=$changed_files" >> "$GITHUB_OUTPUT"
       
     - run: pip3 install bs4
 
@@ -64,7 +67,7 @@ jobs:
           done
         fi
 
-    - uses: gr2m/create-or-update-pull-request-action@dc1726cbf4dd3ce766af4ec29cfb660e0125e8ee # v1
+    - uses: gr2m/create-or-update-pull-request-action@73b5860c078571041abd2e438b8377a24dbc2465 # v1
       env:
         GITHUB_TOKEN: ${{ secrets.ADOPTIUM_BOT_TOKEN }}
       with:

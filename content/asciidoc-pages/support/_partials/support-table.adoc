@@ -13,8 +13,8 @@ Mar 2024
 
 | Java 21 (LTS)
 | Sep 2023
-| 17 Oct 2023 +
-[.small]#jdk-21.0.1+12#
+| 24 Jan 2024 +
+[.small]#jdk-21.0.2+13#
 | 16 Jan 2024 +
 [.small]#jdk-21.0.2#
 | At least Dec 2029
@@ -42,26 +42,26 @@ Mar 2024
 
 | Java 17 (LTS)
 | Sep 2021
-| 17 Oct 2023 +
-[.small]#jdk-17.0.9+9.1#
+| 23 Jan 2024 +
+[.small]#jdk-17.0.10+7#
 | 16 Jan 2024 +
 [.small]#jdk-17.0.10#
 | At least Oct 2027
 
 | Java 11 (LTS)
 | Sep 2018
-| 17 Oct 2023 +
-[.small]#jdk-11.0.21+9#
+| 22 Jan 2024 +
+[.small]#jdk-11.0.22+7#
 | 16 Jan 2024 +
 [.small]#jdk-11.0.22#
 | At least Oct 2027
 
 | Java 8 (LTS)
 | Mar 2014
-| 17 Oct 2023 +
-[.small]#jdk8u392-b08#
-| 16 Jan 2024 +
-[.small]#jdk8u402#
+| 19 Jan 2024 +
+[.small]#jdk8u402b06#
+|  +
+[.small]##
 | At least Nov 2026
 
 |===
