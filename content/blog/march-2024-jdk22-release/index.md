@@ -36,7 +36,7 @@ Please refer to the [Temurin jdk-22+36 release notes](https://adoptium.net/temur
 
 As per [JDK-8317970](https://bugs.openjdk.org/browse/JDK-8317970), the target macOS version for macosx-x64 is moved up to 11.x since macOS 10.x is no longer receiving updates and in alignment with macosx aarch64.
 
-### ppc64 AIX and s390x Linux Unavailable for JDK 22
+### ppc64 AIX and s390x Linux unavailable for JDK 22
 
 Temurin jdk-22+36 for the AIX and s390x Linux platform are unavailable.  A small number of test failures indicated that there is need to investigate and update the upstream code base.  We hope that these platforms on JDK 22 will be ready for release for the April CPU.
 
