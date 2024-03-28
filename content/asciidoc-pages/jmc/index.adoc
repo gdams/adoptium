@@ -1,5 +1,5 @@
 = Eclipse Mission Control
-:page-authors: reinhapa, thegreystone, gdams, karianna, jiekang, hendrikebbers, ggam
+:page-authors: reinhapa, thegreystone, gdams, karianna, jiekang, hendrikebbers, ggam, xavierfacq
 :stable: 8.3.0
 :snapshot: 9.0.0
 
