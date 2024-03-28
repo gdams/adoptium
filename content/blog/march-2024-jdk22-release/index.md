@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 22 Available
-date: "2024-01-26"
+date: "2024-01-28"
 author: pmc
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 22.0.0+36. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
@@ -28,7 +28,7 @@ This release contains the set of features and updates listed at the [OpenJDK JDK
 - [JEP 463](https://openjdk.org/jeps/463):	Implicitly Declared Classes and Instance Main Methods (Second Preview)
 - [JEP 464](https://openjdk.org/jeps/464):	Scoped Values (Second Preview)
 
-* [Temurin jdk-22+36 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-22+36), including [changes listed in OpenJDK jdk-22+36](https://bugs.openjdk.org/browse/JDK-8325999?jql=project%20%3D%20JDK%20AND%20fixVersion%20%3D%2022%20AND%20status%20%3D%20Resolved).
+Please refer to the [Temurin jdk-22+36 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-22+36) which include [changes listed in OpenJDK jdk-22+36](https://bugs.openjdk.org/browse/JDK-8325999?jql=project%20%3D%20JDK%20AND%20fixVersion%20%3D%2022%20AND%20status%20%3D%20Resolved) for further details of features and updates found in this release.
 
 ## New and Noteworthy
 
