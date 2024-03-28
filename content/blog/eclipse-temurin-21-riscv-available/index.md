@@ -21,7 +21,7 @@ As we celebrate Eclipse Temurin’s availability on RISC-V, our focus shifts to 
 
 ## How to Get Started
 
-Getting started with Java on RISC-V is now easier than ever. Visit the Adoptium website to access the [latest Java 21 distribution tailored for RISC-V architecture](https://adoptium.net/temurin/releases/?arch=riscv64), and expect the availability of .deb and .rpm packages very soon. Whether you're an experienced Java developer or exploring new territories, Adoptium provides the tools and support you need to embark on your journey confidently.
+Getting started with Java on RISC-V is now easier than ever. Visit the Adoptium site to access the [latest Java 21 distribution tailored for RISC-V architecture](https://adoptium.net/temurin/releases/?arch=riscv64), and expect the availability of .deb and .rpm packages very soon. Whether you're an experienced Java developer or exploring new territories, Adoptium provides the tools and support you need to embark on your journey confidently.
 
 In conclusion, the availability of Java on RISC-V architecture marks a significant milestone in Java's evolution. Through collaboration and innovation, Adoptium and RISE have opened doors to new possibilities, empowering developers to leverage Java's power on diverse computing systems. Looking ahead, we're committed to advancing Java's compatibility and performance on RISC-V, ensuring its versatility and accessibility for the global developer community.
 
