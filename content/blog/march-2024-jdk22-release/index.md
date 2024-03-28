@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 22 Available
-date: "2024-01-28"
+date: "2024-03-28"
 author: pmc
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 22.0.0+36. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
@@ -15,18 +15,18 @@ Adoptium announces the availability of Eclipse Temurin 22.0.0+36. As always, all
 
 This release contains the set of features and updates listed at the [OpenJDK JDK 22 project](https://openjdk.org/projects/jdk/22/) page, summarized and linked below, as well as some additional notes.
 
-- [JEP 423](https://openjdk.org/jeps/423):	Region Pinning for G1
-- [JEP 447](https://openjdk.org/jeps/447):	Statements before super(...) (Preview)
-- [JEP 454](https://openjdk.org/jeps/454):	Foreign Function & Memory API
-- [JEP 456](https://openjdk.org/jeps/456):	Unnamed Variables & Patterns
-- [JEP 457](https://openjdk.org/jeps/457):	Class-File API (Preview)
-- [JEP 458](https://openjdk.org/jeps/458):	Launch Multi-File Source-Code Programs
-- [JEP 459](https://openjdk.org/jeps/459):	String Templates (Second Preview)
-- [JEP 460](https://openjdk.org/jeps/460):	Vector API (Seventh Incubator)
-- [JEP 461](https://openjdk.org/jeps/461):	Stream Gatherers (Preview)
-- [JEP 462](https://openjdk.org/jeps/462):	Structured Concurrency (Second Preview)
-- [JEP 463](https://openjdk.org/jeps/463):	Implicitly Declared Classes and Instance Main Methods (Second Preview)
-- [JEP 464](https://openjdk.org/jeps/464):	Scoped Values (Second Preview)
+* [JEP 423](https://openjdk.org/jeps/423):	Region Pinning for G1
+* [JEP 447](https://openjdk.org/jeps/447):	Statements before super(...) (Preview)
+* [JEP 454](https://openjdk.org/jeps/454):	Foreign Function & Memory API
+* [JEP 456](https://openjdk.org/jeps/456):	Unnamed Variables & Patterns
+* [JEP 457](https://openjdk.org/jeps/457):	Class-File API (Preview)
+* [JEP 458](https://openjdk.org/jeps/458):	Launch Multi-File Source-Code Programs
+* [JEP 459](https://openjdk.org/jeps/459):	String Templates (Second Preview)
+* [JEP 460](https://openjdk.org/jeps/460):	Vector API (Seventh Incubator)
+* [JEP 461](https://openjdk.org/jeps/461):	Stream Gatherers (Preview)
+* [JEP 462](https://openjdk.org/jeps/462):	Structured Concurrency (Second Preview)
+* [JEP 463](https://openjdk.org/jeps/463):	Implicitly Declared Classes and Instance Main Methods (Second Preview)
+* [JEP 464](https://openjdk.org/jeps/464):	Scoped Values (Second Preview)
 
 Please refer to the [Temurin jdk-22+36 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-22+36) which include [changes listed in OpenJDK jdk-22+36](https://bugs.openjdk.org/browse/JDK-8325999?jql=project%20%3D%20JDK%20AND%20fixVersion%20%3D%2022%20AND%20status%20%3D%20Resolved) for further details of features and updates found in this release.
 
