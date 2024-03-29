@@ -14,7 +14,7 @@
     "@mui/lab": "^5.0.0-alpha.97",
     "@mui/material": "^5.15.14",
     "@mui/x-data-grid": "^7.1.0",
-    "@mui/x-date-pickers": "^7.0.0",
+    "@mui/x-date-pickers": "^7.1.0",
     "@popperjs/core": "^2.11.8",
     "@react-icons/all-files": "^4.1.0",
     "axios": "^1.6.8",
