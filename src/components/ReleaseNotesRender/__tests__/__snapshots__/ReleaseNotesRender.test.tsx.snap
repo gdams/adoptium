@@ -138,7 +138,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
             aria-colcount="5"
             aria-multiselectable="false"
             aria-rowcount="3"
-            class="MuiDataGrid-main css-jdaxyo"
+            class="MuiDataGrid-main css-3eek4p-MuiDataGrid-main"
             role="grid"
             tabindex="-1"
           >
@@ -149,7 +149,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
               tabindex="-1"
             >
               <div
-                class="MuiDataGrid-topContainer MuiDataGrid-container--top css-jmgi9p"
+                class="MuiDataGrid-topContainer MuiDataGrid-container--top css-1oudwrl"
                 role="presentation"
               >
                 <div
