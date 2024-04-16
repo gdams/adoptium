@@ -33,7 +33,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
           </p>
           <div
             aria-label="Release Notes"
-            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-jt255j-MuiDataGrid-root"
+            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-6pbxqq-MuiDataGrid-root"
             style="--DataGrid-width: 0px; --DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 1300px; --DataGrid-columnsTotalWidth: 1300px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
           >
             <div
@@ -204,7 +204,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         </div>
                         <div
                           class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                          style="min-height: 56px; opacity: 1;"
+                          style="min-height: 56px; opacity: 0;"
                         >
                           <svg
                             aria-hidden="true"
@@ -282,7 +282,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         </div>
                         <div
                           class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                          style="min-height: 56px; opacity: 1;"
+                          style="min-height: 56px; opacity: 0;"
                         >
                           <svg
                             aria-hidden="true"
@@ -360,7 +360,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         </div>
                         <div
                           class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                          style="min-height: 56px; opacity: 1;"
+                          style="min-height: 56px; opacity: 0;"
                         >
                           <svg
                             aria-hidden="true"
@@ -438,7 +438,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         </div>
                         <div
                           class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                          style="min-height: 56px; opacity: 1;"
+                          style="min-height: 56px; opacity: 0;"
                         >
                           <svg
                             aria-hidden="true"
@@ -516,7 +516,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         </div>
                         <div
                           class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                          style="min-height: 56px; opacity: 1;"
+                          style="min-height: 56px; opacity: 0;"
                         >
                           <svg
                             aria-hidden="true"
