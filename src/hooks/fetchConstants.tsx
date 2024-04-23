@@ -10,7 +10,7 @@ export function fetchOses(isVisible: boolean): OperatingSystem[] {
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            const url = `${baseUrl}/info/available/operating-systems`;
+            const url = `${baseUrl}/info/available/operating_systems`;
 
             axios.get(url)
                 .then(function (response) {

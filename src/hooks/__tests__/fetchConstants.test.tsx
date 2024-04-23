@@ -61,7 +61,7 @@ describe('fetchOses', () => {
       }, { interval: 1 });
       expect(spy).toHaveBeenCalledTimes(1)
       expect(spy).toHaveBeenCalledWith(
-        "https://api.adoptium.net/v3/info/available/operating-systems"
+        "https://api.adoptium.net/v3/info/available/operating_systems"
       );
       expect(result.current).toMatchSnapshot()
     })
