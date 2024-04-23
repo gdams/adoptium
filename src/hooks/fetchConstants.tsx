@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const baseUrl = 'https://staging-api.adoptium.net/v3';
-//const baseUrl = 'https://api.adoptium.net/v3';
+const baseUrl = 'https://api.adoptium.net/v3';
 
 export function fetchOses(isVisible: boolean): OperatingSystem[] {
 

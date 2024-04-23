@@ -47,7 +47,7 @@ describe('fetchArches', () => {
     })
 });
 
-describe('fetchArches', () => {
+describe('fetchOses', () => {
     it('URL is set correctly', async () => {
       const mockResponse = [mockOsesAPI()];
   

@@ -18,7 +18,7 @@ exports[`fetchArches > URL is set correctly 1`] = `
 ]
 `;
 
-exports[`fetchArches > URL is set correctly 2`] = `
+exports[`fetchOses > URL is set correctly 1`] = `
 [
   {
     "name": [
