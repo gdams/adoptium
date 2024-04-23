@@ -1,7 +1,7 @@
 import React from 'react';
 import { act, render, fireEvent, waitFor } from '@testing-library/react';
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { createRandomTemurinReleases } from '../../../__fixtures__/hooks';
+import { createRandomTemurinReleases, mockOsesAPI, mockArchesAPI } from '../../../__fixtures__/hooks';
 import DownloadDropdowns from '..';
 import queryString from 'query-string';
 
@@ -11,6 +11,17 @@ const Table = () => {
   );
 };
 
+vi.mock('../../../hooks/fetchConstants', () => {
+  return {
+    fetchOses: () => {
+      return mockOsesAPI();
+    },
+    fetchArches: () => {
+      return mockArchesAPI();
+    }
+  };
+});
+
 vi.mock('../../VendorSelector', () => {
   return {
     default: () => <div>vendor-selector</div>,
@@ -19,8 +30,6 @@ vi.mock('../../VendorSelector', () => {
 
 vi.mock('../../../util/defaults', () => {
   return {
-    oses: ['mock_os'],
-    arches: ['mock_arch'],
     packageTypes: ['mock_pkg'],
     defaultPackageType: 'mock_pkg',
     defaultArchitecture: 'mock_arch',
@@ -71,14 +80,14 @@ describe('DownloadDropdowns component', () => {
     // Simulate a user using dropdowns
     select = getByTestId('os-filter');
     await act(async () => {
-      fireEvent.change(select, { target: { value: 'mock_os' } });
+      fireEvent.change(select, { target: { value: 'mock_linux' } });
     });
 
     expect(updater).toHaveBeenCalledTimes(2);
 
     select = getByTestId('arch-filter');
     await act(async () => {
-      fireEvent.change(select, { target: { value: 'mock_arch' } });
+      fireEvent.change(select, { target: { value: 'mock_x64' } });
     });
 
     expect(updater).toHaveBeenCalledTimes(3);
@@ -100,7 +109,7 @@ describe('DownloadDropdowns component', () => {
   });
 
   it('renders correctly - use URL param os=mock_os', async () => {
-    queryString.parse = vi.fn().mockReturnValue({'os': "mock_os"});
+    queryString.parse = vi.fn().mockReturnValue({'os': "mock_linux"});
 
     let getByRole;
     await act(async () => {
@@ -113,11 +122,11 @@ describe('DownloadDropdowns component', () => {
       ));
     });
 
-    expect(getByRole('option', { name: 'Mock_os' }).selected).toBeTruthy()
+    expect(getByRole('option', { name: 'Mock_linux' }).selected).toBeTruthy()
   });
 
   it('renders correctly - use URL param arch=mock_arch', async () => {
-    queryString.parse = vi.fn().mockReturnValue({'arch': "mock_arch"});
+    queryString.parse = vi.fn().mockReturnValue({'arch': "mock_x64"});
 
     let getByRole;
     await act(async () => {
@@ -130,7 +139,7 @@ describe('DownloadDropdowns component', () => {
       ));
     });
 
-    expect(getByRole('option', { name: 'mock_arch' }).selected).toBeTruthy()
+    expect(getByRole('option', { name: 'mock_x64' }).selected).toBeTruthy()
   });
 
   it('renders correctly - use URL param package=mock_pkg', async () => {

@@ -2,19 +2,25 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const baseUrl = 'https://staging-api.adoptium.net/v3';
+//const baseUrl = 'https://api.adoptium.net/v3';
 
-export function fetchOses(isVisible: boolean): String[] {
+export function fetchOses(isVisible: boolean): OperatingSystem[] {
 
-    const [oses, setOses] = useState<String[]>([]);
+    const [oses, setOses] = useState<OperatingSystem[]>([]);
 
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            const url = `${baseUrl}/info/available_operating-systems`;
+            const url = `${baseUrl}/info/available/operating-systems`;
 
             axios.get(url)
                 .then(function (response) {
-                    setOses(response.data);
+                    const newOses = response.data.map(s => {
+                        const o: OperatingSystem = { name: s }
+                        return o
+                    })
+
+                    setOses(newOses);
                 })
                 .catch(function (error) {
                     setOses([]);
@@ -26,21 +32,24 @@ export function fetchOses(isVisible: boolean): String[] {
     return oses;
 }
 
-export function fetchArches(isVisible: boolean): String[] {
+export function fetchArches(isVisible: boolean): Architecture[] {
 
-    const [arches, setArches] = useState<String[]>([]);
+    const [arches, setArches] = useState<Architecture[]>([]);
 
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            const url = `${baseUrl}/info/available_architectures`;
+            const url = `${baseUrl}/info/available/architectures`;
 
             axios.get(url)
                 .then(function (response) {
-                    const results:String[] = response.data;
-                    const idx = results.findIndex(it => it === 'x32');
-                    if(idx >= 0) results.splice(idx, 1, 'x86');
-                    setArches(results);
+                    const newArches = response.data.map(s => {
+                        const a: Architecture = { name: s }
+                        if(a.name === 'x32') a.name = 'x86'
+                        return a;
+                    })
+
+                    setArches(newArches);
                 })
                 .catch(function (error) {
                     setArches([]);
@@ -50,4 +59,12 @@ export function fetchArches(isVisible: boolean): String[] {
     }, [isVisible]);
 
     return arches;
+}
+
+export interface OperatingSystem {
+    name: string;
+}
+
+export interface Architecture {
+    name: string;
 }

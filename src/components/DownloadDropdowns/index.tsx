@@ -7,7 +7,7 @@ import VendorSelector from '../VendorSelector'
 import { detectOS, UserOS } from '../../util/detectOS';
 import { setURLParam } from '../../util/setURLParam';
 import { capitalize } from '../../util/capitalize';
-import { oses, arches, packageTypes, defaultArchitecture, defaultPackageType} from '../../util/defaults';
+import { packageTypes, defaultArchitecture, defaultPackageType} from '../../util/defaults';
 import { fetchOses, fetchArches} from '../../hooks/fetchConstants';
 
 const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
@@ -43,7 +43,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     const osParam = queryStringParams.os;
     if (osParam) {
         let sop = osParam.toString().toLowerCase();
-        if(fetchOses(true).findIndex(os => os.toLowerCase() === sop) >= 0)
+        if(fetchOses(true).findIndex(os => os.name.toLowerCase() === sop) >= 0)
             defaultSelectedOS = sop;
     }
 
@@ -52,7 +52,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
     const archParam = queryStringParams.arch;
     if (archParam) {
         let sap = archParam.toString().toLowerCase();
-        if(fetchArches(true).findIndex(a => a.toLowerCase() === sap) >= 0)
+        if(fetchArches(true).findIndex(a => a.name.toLowerCase() === sap) >= 0)
             defaultSelectedArch = sap;
     }
 
@@ -183,9 +183,9 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     <label className="px-2 fw-bold" htmlFor="os"><Trans>Operating System</Trans></label>
                     <select id="os-filter" aria-label="OS Filter" data-testid="os-filter" onChange={(e) => setOS(e.target.value)} value={os} className="form-select form-select-sm">
                         <option key="any" value="any"><Trans>Any</Trans></option>
-                        {fetchOses(true).sort((os1, os2) => os1.localeCompare(os2)).map(
+                        {fetchOses(true).sort((os1, os2) => os1.name.localeCompare(os2.name)).map(
                             (os, i): string | JSX.Element => os && (
-                                <option key={`os-${i}`} value={os.toLowerCase()}>{capitalize(os)}</option>
+                                <option key={`os-${i}`} value={os.name.toLowerCase()}>{capitalize(os.name)}</option>
                             )
                         )}
                     </select>
@@ -194,9 +194,9 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     <label className="px-2 fw-bold" htmlFor="arch"><Trans>Architecture</Trans></label>
                     <select id="arch-filter" aria-label="Architecture Filter" data-testid="arch-filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
                         <option key="any" value="any"><Trans>Any</Trans></option>
-                        {fetchArches(true).sort((arch1, arch2) => arch1.localeCompare(arch2)).map(
+                        {fetchArches(true).sort((arch1, arch2) => arch1.name.localeCompare(arch2.name)).map(
                             (arch, i): string | JSX.Element => arch && (
-                                <option key={`arch-${i}`} value={arch.toLowerCase()}>{arch}</option>
+                                <option key={`arch-${i}`} value={arch.name.toLowerCase()}>{arch.name}</option>
                             )
                         )}
                     </select>

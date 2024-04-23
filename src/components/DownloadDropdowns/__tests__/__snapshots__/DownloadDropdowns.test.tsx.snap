@@ -29,9 +29,19 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
           Text
         </option>
         <option
-          value="mock_os"
+          value="mock_linux"
         >
-          Mock_os
+          Mock_linux
+        </option>
+        <option
+          value="mock_macos"
+        >
+          Mock_macos
+        </option>
+        <option
+          value="mock_windows"
+        >
+          Mock_windows
         </option>
       </select>
     </div>
@@ -56,9 +66,19 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
           Text
         </option>
         <option
-          value="mock_arch"
+          value="mock_aarch64"
         >
-          mock_arch
+          mock_aarch64
+        </option>
+        <option
+          value="mock_ppc64"
+        >
+          mock_ppc64
+        </option>
+        <option
+          value="mock_x64"
+        >
+          mock_x64
         </option>
       </select>
     </div>
@@ -144,9 +164,19 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
           Text
         </option>
         <option
-          value="mock_os"
+          value="mock_linux"
         >
-          Mock_os
+          Mock_linux
+        </option>
+        <option
+          value="mock_macos"
+        >
+          Mock_macos
+        </option>
+        <option
+          value="mock_windows"
+        >
+          Mock_windows
         </option>
       </select>
     </div>
@@ -171,9 +201,19 @@ exports[`DownloadDropdowns component > renders correctly 1`] = `
           Text
         </option>
         <option
-          value="mock_arch"
+          value="mock_aarch64"
         >
-          mock_arch
+          mock_aarch64
+        </option>
+        <option
+          value="mock_ppc64"
+        >
+          mock_ppc64
+        </option>
+        <option
+          value="mock_x64"
+        >
+          mock_x64
         </option>
       </select>
     </div>

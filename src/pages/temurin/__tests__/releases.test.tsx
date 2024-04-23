@@ -5,8 +5,20 @@ import { axe } from 'vitest-axe';
 import Releases, { Head } from '../releases';
 import AxiosInstance from 'axios'
 import MockAdapter from 'axios-mock-adapter';
+import { mockOsesAPI, mockArchesAPI } from '../../../__fixtures__/hooks';
 
 const mock = new MockAdapter(AxiosInstance);
+
+vi.mock('../../../hooks/fetchConstants', () => {
+  return {
+    fetchOses: () => {
+      return mockOsesAPI();
+    },
+    fetchArches: () => {
+      return mockArchesAPI();
+    }
+  };
+});
 
 afterEach(() => {
   vi.clearAllMocks();
