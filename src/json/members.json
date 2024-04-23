@@ -162,5 +162,11 @@
     "logo": "fastly.svg",
     "url": "https://fastly.com",
     "tier": "infra"
+  },
+  {
+    "name": "RISE",
+    "logo": "rise.svg",
+    "url": "https://riseproject.dev",
+    "tier": "infra"
   }
 ]
