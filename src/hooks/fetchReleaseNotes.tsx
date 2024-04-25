@@ -8,12 +8,12 @@ export function fetchReleaseNotesForVersion(
     isVisible: boolean,
     version: any,
     sortReleaseNotesByCallback?: Function,
-): ReleaseNoteAPIResponse | null {
+): ReleaseNoteDataBag | null {
     if (!version) {
         return null
     }
 
-    const [releaseNotes, setReleaseNotes] = useState<ReleaseNoteAPIResponse | null>(null);
+    const [releaseNotes, setReleaseNotes] = useState<ReleaseNoteDataBag | null>(null);
 
     useEffect(() => {
         if (isVisible) {
@@ -22,18 +22,30 @@ export function fetchReleaseNotesForVersion(
 
             await axios.get(url.toString())
                 .then(function (response) {
-                    let result = response.data
+                    let result = response.data;
                     if(sortReleaseNotesByCallback) sortReleaseNotesByCallback(result);
-                    setReleaseNotes(result)
+                    let releaseNoteDataBag: ReleaseNoteDataBag = {
+                        releaseNoteAPIResponse: result, 
+                        isValid: (result.release_notes !== null)
+                    };
+                    setReleaseNotes(releaseNoteDataBag);
                 })
                 .catch(function (error) {
-                    setReleaseNotes(null)
+                    let releaseNoteDataBag: ReleaseNoteDataBag = {
+                        isValid: false
+                    };
+                    setReleaseNotes(releaseNoteDataBag);
                 });
         })();
         }
     }, [isVisible, version]);
 
     return releaseNotes;
+}
+
+export interface ReleaseNoteDataBag {
+    releaseNoteAPIResponse?: ReleaseNoteAPIResponse
+    isValid: boolean
 }
 
 export interface ReleaseNoteAPIResponse {

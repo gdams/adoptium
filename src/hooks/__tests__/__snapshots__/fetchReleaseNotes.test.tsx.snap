@@ -2,26 +2,29 @@
 
 exports[`fetchReleaseNotesForVersion > returns valid JSON 1`] = `
 {
-  "id": "id_mock",
-  "release_name": "release_name_mock",
-  "release_notes": [
-    {
-      "component": "component_mock",
-      "id": "0",
-      "link": "https://link_mock/",
-      "priority": "1",
-      "title": "title_mock",
-      "type": "Bug",
+  "isValid": true,
+  "releaseNoteAPIResponse": {
+    "id": "id_mock",
+    "release_name": "release_name_mock",
+    "release_notes": [
+      {
+        "component": "component_mock",
+        "id": "0",
+        "link": "https://link_mock/",
+        "priority": "1",
+        "title": "title_mock",
+        "type": "Bug",
+      },
+    ],
+    "vendor": "vendor_mock",
+    "version_data": {
+      "build": 0,
+      "major": 0,
+      "minor": 0,
+      "openjdk_version": "openjdk_version_mock",
+      "patch": 0,
+      "security": 0,
     },
-  ],
-  "vendor": "vendor_mock",
-  "version_data": {
-    "build": 0,
-    "major": 0,
-    "minor": 0,
-    "openjdk_version": "openjdk_version_mock",
-    "patch": 0,
-    "security": 0,
   },
 }
 `;

@@ -2,7 +2,7 @@ import React, { useRef, MutableRefObject } from 'react';
 import { DataGrid, GridColDef, GridToolbarContainer, GridToolbarFilterButton, gridClasses } from '@mui/x-data-grid';
 import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
-import { fetchReleaseNotesForVersion, useOnScreen, ReleaseNoteAPIResponse } from '../../hooks';
+import { fetchReleaseNotesForVersion, useOnScreen, ReleaseNoteAPIResponse, ReleaseNoteDataBag } from '../../hooks';
 import './ReleaseNotesRender.scss';
 
 export const fetchTitle = (priority) => {
@@ -109,8 +109,10 @@ const ReleaseNotesRender = (): null | JSX.Element => {
 
   const ref = useRef<HTMLDivElement | null>(null);
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
-  const releaseNotes = fetchReleaseNotesForVersion(isVisible, version, sortReleaseNotesBy);
 
+  const releaseNoteDataBag = fetchReleaseNotesForVersion(isVisible, version, sortReleaseNotesBy);
+  const releaseNotes = releaseNoteDataBag ? releaseNoteDataBag.releaseNoteAPIResponse : null;
+  
   // Set all priorities set as undefined to '?' to avoid errors
   releaseNotes?.release_notes?.forEach((note) => {
     if (note.priority === undefined) {
@@ -163,7 +165,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
     <h2>{version}</h2>
       <div className='pt-3' style={{ display: 'flex', height: '100%' }}>
         <div style={{ flexGrow: 1 }}>
-          {!version || releaseNotes?.release_notes === null ? (
+          {!version || releaseNoteDataBag?.isValid === false ? (
             <>
             <h2>Oops... We couldn't find those release notes</h2>
             <span>Please ensure that you have a specified a version using the version URL parameter: <code>?version=x.x.x</code></span>
@@ -175,7 +177,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
               <DataGrid
                 aria-label='Release Notes'
                 autoHeight
-                rows={releaseNotes && releaseNotes.release_notes? releaseNotes.release_notes : []}
+                rows={releaseNotes && releaseNotes.release_notes ? releaseNotes.release_notes : []}
                 loading={releaseNotes === null}
                 columns={columns}
                 initialState={{
