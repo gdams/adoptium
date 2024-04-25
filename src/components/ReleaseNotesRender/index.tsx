@@ -2,7 +2,7 @@ import React, { useRef, MutableRefObject } from 'react';
 import { DataGrid, GridColDef, GridToolbarContainer, GridToolbarFilterButton, gridClasses } from '@mui/x-data-grid';
 import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
-import { fetchReleaseNotesForVersion, useOnScreen, ReleaseNoteAPIResponse, ReleaseNoteDataBag } from '../../hooks';
+import { fetchReleaseNotesForVersion, useOnScreen, ReleaseNoteAPIResponse } from '../../hooks';
 import './ReleaseNotesRender.scss';
 
 export const fetchTitle = (priority) => {

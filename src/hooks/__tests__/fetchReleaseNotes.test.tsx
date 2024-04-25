@@ -26,7 +26,6 @@ describe('fetchReleaseNotesForVersion', () => {
 
     const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version', sortReleaseNotesByCallback));
 
-
     await waitFor(() => {
       expect(result.current?.releaseNoteAPIResponse?.release_name).toBe('release_name_mock')
     }, { interval: 1 });
