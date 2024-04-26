@@ -4,6 +4,7 @@ import { useLocation } from '@gatsbyjs/reach-router';
 import queryString from 'query-string';
 import { fetchReleaseNotesForVersion, useOnScreen, ReleaseNoteAPIResponse } from '../../hooks';
 import './ReleaseNotesRender.scss';
+import CircularProgress from '@mui/material/CircularProgress';
 
 export const fetchTitle = (priority) => {
   let title
@@ -109,14 +110,9 @@ const ReleaseNotesRender = (): null | JSX.Element => {
 
   const ref = useRef<HTMLDivElement | null>(null);
   const isVisible = useOnScreen(ref as MutableRefObject<Element>, true);
-  const releaseNotes = fetchReleaseNotesForVersion(isVisible, version, sortReleaseNotesBy);
 
-  // Set all priorities set as undefined to '?' to avoid errors
-  releaseNotes?.release_notes?.forEach((note) => {
-    if (note.priority === undefined) {
-      note.priority = '6';
-    }
-  });
+  const releaseNoteDataBag = fetchReleaseNotesForVersion(isVisible, version, sortReleaseNotesBy);
+  const releaseNotes = releaseNoteDataBag ? releaseNoteDataBag.releaseNoteAPIResponse : null;
 
   if(releaseNotes && Array.isArray(releaseNotes.release_notes)) {
     let priorities: string[] = [];
@@ -124,6 +120,11 @@ const ReleaseNotesRender = (): null | JSX.Element => {
     let components: string[] = [];
 
     releaseNotes.release_notes.forEach(release_note => {
+      // Set all priorities set as undefined to '?' to avoid errors
+      if (release_note.priority === undefined) {
+        release_note.priority = '6';
+      }
+
       if(release_note.priority && priorities.indexOf(release_note.priority) < 0) priorities.push(release_note.priority);
       if(release_note.type && types.indexOf(release_note.type) < 0) types.push(release_note.type);
       if(release_note.component && components.indexOf(release_note.component) < 0) components.push(release_note.component);
@@ -162,8 +163,9 @@ const ReleaseNotesRender = (): null | JSX.Element => {
 	  <div ref={ref} className='text-center'>
     <h2>{version}</h2>
       <div className='pt-3' style={{ display: 'flex', height: '100%' }}>
-        <div style={{ flexGrow: 1 }}>
-          {!version || releaseNotes?.release_notes === null ? (
+        {!releaseNoteDataBag ? <div style={{ flexGrow: 1 }}><CircularProgress aria-label='loading spinner' /></div> :
+        (<div style={{ flexGrow: 1 }}>
+          {!version || releaseNoteDataBag?.isValid === false ? (
             <>
             <h2>Oops... We couldn't find those release notes</h2>
             <span>Please ensure that you have a specified a version using the version URL parameter: <code>?version=x.x.x</code></span>
@@ -175,7 +177,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
               <DataGrid
                 aria-label='Release Notes'
                 autoHeight
-                rows={releaseNotes && releaseNotes.release_notes? releaseNotes.release_notes : []}
+                rows={releaseNotes && releaseNotes.release_notes ? releaseNotes.release_notes : []}
                 loading={releaseNotes === null}
                 columns={columns}
                 initialState={{
@@ -209,7 +211,7 @@ const ReleaseNotesRender = (): null | JSX.Element => {
               />
             </>
           )}
-        </div>
+        </div>)}
       </div>
     </div>
   );
