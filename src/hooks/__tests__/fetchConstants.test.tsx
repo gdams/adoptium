@@ -30,7 +30,7 @@ describe('fetchArches', () => {
       }, { interval: 1 });
       expect(spy).toHaveBeenCalledTimes(1)
       expect(spy).toHaveBeenCalledWith(
-        "https://api.adoptium.net/v3/info/available/architectures"
+        "https://api.adoptium.net/v3/types/architectures"
       );
       expect(result.current).toMatchSnapshot()
     })
@@ -61,7 +61,7 @@ describe('fetchOses', () => {
       }, { interval: 1 });
       expect(spy).toHaveBeenCalledTimes(1)
       expect(spy).toHaveBeenCalledWith(
-        "https://api.adoptium.net/v3/info/available/operating_systems"
+        "https://api.adoptium.net/v3/types/operating_systems"
       );
       expect(result.current).toMatchSnapshot()
     })

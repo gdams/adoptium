@@ -10,7 +10,7 @@ export function fetchOses(isVisible: boolean): OperatingSystem[] {
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            const url = `${baseUrl}/info/available/operating_systems`;
+            const url = `${baseUrl}/types/operating_systems`;
 
             axios.get(url)
                 .then(function (response) {
@@ -38,7 +38,7 @@ export function fetchArches(isVisible: boolean): Architecture[] {
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            const url = `${baseUrl}/info/available/architectures`;
+            const url = `${baseUrl}/types/architectures`;
 
             axios.get(url)
                 .then(function (response) {
