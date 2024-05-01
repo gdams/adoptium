@@ -17,7 +17,7 @@ Sep 2024
 [.small]#jdk-22+0.1+9#
 | 16 Jul 2024 +
 [.small]#jdk-22.0.2#
-| Sep 2023
+| Sep 2024
 
 | Java 21 (LTS)
 | Sep 2023
