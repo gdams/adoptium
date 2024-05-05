@@ -4,6 +4,8 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { createRandomTemurinReleases, mockOsesAPI, mockArchesAPI } from '../../../__fixtures__/hooks';
 import DownloadDropdowns from '..';
 import queryString from 'query-string';
+import * as detectOSModule from '../../../util/detectOS';
+import { UserOS } from '../../../util/detectOS';
 
 const Table = () => {
   return (
@@ -211,6 +213,40 @@ describe('DownloadDropdowns component', () => {
   });
 
   it('renders correctly - marketplace', async () => {
+    const { container } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={true}
+        Table={Table}
+      />
+    );
+    await waitFor(() => {
+      expect(updater).toHaveBeenCalledTimes(1);
+    });
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders correctly - marketplace fake LINUX', async () => {
+    vi.spyOn(detectOSModule, 'detectOS').mockReturnValue(UserOS.LINUX);
+
+    const { container } = render(
+      <DownloadDropdowns
+        updaterAction={updater}
+        marketplace={true}
+        Table={Table}
+      />
+    );
+    await waitFor(() => {
+      expect(updater).toHaveBeenCalledTimes(1);
+    });
+
+    expect(container).toMatchSnapshot();
+  });
+
+  it('renders correctly - marketplace fake MAC', async () => {
+    vi.spyOn(detectOSModule, 'detectOS').mockReturnValue(UserOS.MAC);
+
     const { container } = render(
       <DownloadDropdowns
         updaterAction={updater}

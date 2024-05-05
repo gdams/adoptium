@@ -123,12 +123,12 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                         case UserOS.MAC:
                             defaultSelectedOS = 'mac'
                             if (typeof document !== 'undefined') {
-                                let w = document.createElement("canvas").getContext("webgl");
+                                let gl = document.createElement("canvas").getContext("webgl");
                                 // @ts-ignore
-                                let d = w.getExtension('WEBGL_debug_renderer_info');
+                                let ext = gl && gl.getExtension('WEBGL_debug_renderer_info');
                                 // @ts-ignore
-                                let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
-                                if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+                                let param = ext && ext.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
+                                if (param.match(/Apple/) && !param.match(/Apple GPU/)) {
                                     defaultSelectedArch = 'aarch64'
                                 }
                             }

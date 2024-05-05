@@ -143,6 +143,292 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
 </div>
 `;
 
+exports[`DownloadDropdowns component > renders correctly - marketplace fake LINUX 1`] = `
+<div>
+  <div>
+    vendor-selector
+  </div>
+  <div
+    class="input-group mb-5 row g-2"
+  >
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="os"
+      >
+        Text
+      </label>
+      <select
+        aria-label="OS Filter"
+        class="form-select form-select-sm"
+        data-testid="os-filter"
+        id="os-filter"
+      >
+        <option
+          value="any"
+        >
+          Text
+        </option>
+        <option
+          value="mock_linux"
+        >
+          Mock_linux
+        </option>
+        <option
+          value="mock_macos"
+        >
+          Mock_macos
+        </option>
+        <option
+          value="mock_windows"
+        >
+          Mock_windows
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="arch"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Architecture Filter"
+        class="form-select form-select-sm"
+        data-testid="arch-filter"
+        id="arch-filter"
+      >
+        <option
+          value="any"
+        >
+          Text
+        </option>
+        <option
+          value="mock_aarch64"
+        >
+          mock_aarch64
+        </option>
+        <option
+          value="mock_ppc64"
+        >
+          mock_ppc64
+        </option>
+        <option
+          value="mock_x64"
+        >
+          mock_x64
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="package-type"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Package Type Filter"
+        class="form-select form-select-sm"
+        data-testid="package-type-filter"
+        id="package-type-filter"
+      >
+        <option
+          value="any"
+        >
+          Text
+        </option>
+        <option
+          value="mock_pkg"
+        >
+          mock_pkg
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="version"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Version Filter"
+        class="form-select form-select-sm"
+        data-testid="version-filter"
+        id="version-filter"
+      >
+        <option
+          value="2"
+        >
+          2
+        </option>
+        <option
+          value="1"
+        >
+          1 - LTS
+        </option>
+      </select>
+    </div>
+  </div>
+  <div>
+    table
+  </div>
+</div>
+`;
+
+exports[`DownloadDropdowns component > renders correctly - marketplace fake MAC 1`] = `
+<div>
+  <div>
+    vendor-selector
+  </div>
+  <div
+    class="input-group mb-5 row g-2"
+  >
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="os"
+      >
+        Text
+      </label>
+      <select
+        aria-label="OS Filter"
+        class="form-select form-select-sm"
+        data-testid="os-filter"
+        id="os-filter"
+      >
+        <option
+          value="any"
+        >
+          Text
+        </option>
+        <option
+          value="mock_linux"
+        >
+          Mock_linux
+        </option>
+        <option
+          value="mock_macos"
+        >
+          Mock_macos
+        </option>
+        <option
+          value="mock_windows"
+        >
+          Mock_windows
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="arch"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Architecture Filter"
+        class="form-select form-select-sm"
+        data-testid="arch-filter"
+        id="arch-filter"
+      >
+        <option
+          value="any"
+        >
+          Text
+        </option>
+        <option
+          value="mock_aarch64"
+        >
+          mock_aarch64
+        </option>
+        <option
+          value="mock_ppc64"
+        >
+          mock_ppc64
+        </option>
+        <option
+          value="mock_x64"
+        >
+          mock_x64
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="package-type"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Package Type Filter"
+        class="form-select form-select-sm"
+        data-testid="package-type-filter"
+        id="package-type-filter"
+      >
+        <option
+          value="any"
+        >
+          Text
+        </option>
+        <option
+          value="mock_pkg"
+        >
+          mock_pkg
+        </option>
+      </select>
+    </div>
+    <div
+      class="input-group-prepend flex-colunm col-12 col-md-3"
+    >
+      <label
+        class="px-2 fw-bold"
+        for="version"
+      >
+        Text
+      </label>
+      <select
+        aria-label="Version Filter"
+        class="form-select form-select-sm"
+        data-testid="version-filter"
+        id="version-filter"
+      >
+        <option
+          value="2"
+        >
+          2
+        </option>
+        <option
+          value="1"
+        >
+          1 - LTS
+        </option>
+      </select>
+    </div>
+  </div>
+  <div>
+    table
+  </div>
+</div>
+`;
+
 exports[`DownloadDropdowns component > renders correctly 1`] = `
 <div>
   <div
