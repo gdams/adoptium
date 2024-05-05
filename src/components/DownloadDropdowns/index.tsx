@@ -7,8 +7,8 @@ import VendorSelector from '../VendorSelector'
 import { detectOS, UserOS } from '../../util/detectOS';
 import { setURLParam } from '../../util/setURLParam';
 import { capitalize } from '../../util/capitalize';
-import { packageTypes, defaultArchitecture, defaultPackageType} from '../../util/defaults';
-import { fetchOses, fetchArches} from '../../hooks/fetchConstants';
+import { packageTypes, defaultArchitecture, defaultPackageType } from '../../util/defaults';
+import { fetchOses, fetchArches } from '../../hooks/fetchConstants';
 
 const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
 
@@ -32,123 +32,152 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
       }
     `)
 
+    // load OS and Arches from API
+    const oses = fetchOses(true);
+    const arches = fetchArches(true);
+    const [ready, setReady] = useState(false)
+
     // prepare versions list
     const versions = data.allVersions.edges;
     let versionList = versions;
 
     const queryStringParams = queryString.parse(useLocation().search);
 
-    // init the default selected Operation System, if any from the param 'os'
-    let defaultSelectedOS = 'any';
-    const osParam = queryStringParams.os;
-    if (osParam) {
-        let sop = osParam.toString().toLowerCase();
-        if(fetchOses(true).findIndex(os => os.name.toLowerCase() === sop) >= 0)
-            defaultSelectedOS = sop;
-    }
-
-    // init the default selected Architecture, if any from the param 'arch'
-    let defaultSelectedArch = 'any';
-    const archParam = queryStringParams.arch;
-    if (archParam) {
-        let sap = archParam.toString().toLowerCase();
-        if(fetchArches(true).findIndex(a => a.name.toLowerCase() === sap) >= 0)
-            defaultSelectedArch = sap;
-    }
-
-    // init the default selected Package Type, if any from the param 'package'
-    let defaultSelectedPackageType = 'any';
-    const packageParam = queryStringParams.package;
-    if (packageParam) {
-        let spp = packageParam.toString().toLowerCase();
-        if(packageTypes.findIndex(p => p.toLowerCase() === spp) >= 0)
-            defaultSelectedPackageType = spp;
-    }
-
-    // init the default selected Version, if any from the param 'version' or from 'variant'
-    let defaultSelectedVersion = data.mostRecentLts.version;
-    const versionParam = queryStringParams.version;
-    if (versionParam) {
-        let svp = versionParam.toString();
-        let nvp = Number(svp);
-
-        if(svp.toLowerCase() === 'latest') {
-            // get the latest version of the list
-            defaultSelectedVersion = versions.sort((a, b) => b.node.version - a.node.version)[0].node.version;
-        } else if(versions.findIndex(version => version.node.version === nvp) >= 0) {
-            defaultSelectedVersion = nvp;
-        }
-    }
-
-    // init the default selected Version, if any from the param 'variant'
-    const variantParam = queryStringParams.variant;
-    if (variantParam) {
-        // convert openjdk11 to 11
-        const parsedVersion = variantParam.toString().replace(/\D/g, '')
-        let nvp = Number(parsedVersion);
-
-        if(versions.findIndex(version => version.node.version === nvp) >= 0) {
-            defaultSelectedVersion = nvp;
-        }
-    }
-
-    if (marketplace) {
-        // in marketplace we have to preselect some values in dropdowns if not given in parameters
-        if(defaultSelectedOS === 'any') {
-            const userOS = detectOS();
-            switch (userOS) {
-                case UserOS.MAC:
-                    defaultSelectedOS = 'mac'
-                    if (typeof document !== 'undefined') {
-                        let w = document.createElement("canvas").getContext("webgl");
-                        // @ts-ignore
-                        let d = w.getExtension('WEBGL_debug_renderer_info');
-                        // @ts-ignore
-                        let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
-                        if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
-                            defaultSelectedArch = 'aarch64'
-                        }
-                    }
-                    break;
-                case UserOS.LINUX:
-                case UserOS.UNIX:
-                    defaultSelectedOS = 'linux'
-                break;
-            default:
-                defaultSelectedOS = 'windows'
-                break;
-            }
-        }
-        if(defaultSelectedArch === 'any') {
-            defaultSelectedArch = defaultArchitecture;
-        }
-        if(defaultSelectedPackageType === 'any') {
-            defaultSelectedPackageType = defaultPackageType;
-        }
-        // filter non LTS versions
-        versionList = versions.filter((version) => {
-            return version.node.lts === true;
-        });
-        if(versionList.findIndex(version => version.node.version === defaultSelectedVersion) < 0) {
-            defaultSelectedVersion = data.mostRecentLts.version;
-        }
-    }
-
-    const [os, updateOS] = useState(defaultSelectedOS);
-    const [arch, updateArch] = useState(defaultSelectedArch);
-    const [packageType, updatePackageType] = useState(defaultSelectedPackageType);
-    const [version, udateVersion] = useState(defaultSelectedVersion);
+    const [os, updateOS] = useState('any');
+    const [arch, updateArch] = useState('any');
+    const [packageType, updatePackageType] = useState('any');
+    const [version, udateVersion] = useState(data.mostRecentLts.version);
 
     // Marketplace vendor selector only
     const [selectedVendorIdentifiers, updateSelectedVendorIdentifiers] = useState<string[]>([]);
 
     const [releases, setReleases] = useState(null);
 
+    /**
+     * This useEffect() is called when OS and arches are finaly loaded
+     */ 
     useEffect(() => {
+        // do nothing while OS and arches are not loaded
+        if(oses.length === 0 || arches.length === 0) return;
+
         (async () => {
-          setReleases(await updaterAction(version, os, arch, packageType, selectedVendorIdentifiers));
+            // init the default selected Operation System, if any from the param 'os'
+            let defaultSelectedOS = 'any';
+            const osParam = queryStringParams.os;
+            if (osParam) {
+                let sop = osParam.toString().toLowerCase();
+                if(oses.findIndex(os => os.name.toLowerCase() === sop) >= 0)
+                    defaultSelectedOS = sop;
+            }
+
+            // init the default selected Architecture, if any from the param 'arch'
+            let defaultSelectedArch = 'any';
+            const archParam = queryStringParams.arch;
+            if (archParam) {
+                let sap = archParam.toString().toLowerCase();
+                if(arches.findIndex(a => a.name.toLowerCase() === sap) >= 0)
+                    defaultSelectedArch = sap;
+            }
+
+            // init the default selected Package Type, if any from the param 'package'
+            let defaultSelectedPackageType = 'any';
+            const packageParam = queryStringParams.package;
+            if (packageParam) {
+                let spp = packageParam.toString().toLowerCase();
+                if(packageTypes.findIndex(p => p.toLowerCase() === spp) >= 0)
+                    defaultSelectedPackageType = spp;
+            }
+
+            // init the default selected Version, if any from the param 'version' or from 'variant'
+            let defaultSelectedVersion = data.mostRecentLts.version;
+            const versionParam = queryStringParams.version;
+            if (versionParam) {
+                let svp = versionParam.toString();
+                let nvp = Number(svp);
+
+                if(svp.toLowerCase() === 'latest') {
+                    // get the latest version of the list
+                    defaultSelectedVersion = versions.sort((a, b) => b.node.version - a.node.version)[0].node.version;
+                } else if(versions.findIndex(version => version.node.version === nvp) >= 0) {
+                    defaultSelectedVersion = nvp;
+                }
+            }
+
+            // init the default selected Version, if any from the param 'variant'
+            const variantParam = queryStringParams.variant;
+            if (variantParam) {
+                // convert openjdk11 to 11
+                const parsedVersion = variantParam.toString().replace(/\D/g, '')
+                let nvp = Number(parsedVersion);
+
+                if(versions.findIndex(version => version.node.version === nvp) >= 0) {
+                    defaultSelectedVersion = nvp;
+                }
+            }
+
+            if (marketplace) {
+                // in marketplace we have to preselect some values in dropdowns if not given in parameters
+                if(defaultSelectedOS === 'any') {
+                    const userOS = detectOS();
+                    switch (userOS) {
+                        case UserOS.MAC:
+                            defaultSelectedOS = 'mac'
+                            if (typeof document !== 'undefined') {
+                                let w = document.createElement("canvas").getContext("webgl");
+                                // @ts-ignore
+                                let d = w.getExtension('WEBGL_debug_renderer_info');
+                                // @ts-ignore
+                                let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
+                                if (g.match(/Apple/) && !g.match(/Apple GPU/)) {
+                                    defaultSelectedArch = 'aarch64'
+                                }
+                            }
+                            break;
+                        case UserOS.LINUX:
+                        case UserOS.UNIX:
+                            defaultSelectedOS = 'linux'
+                        break;
+                    default:
+                        defaultSelectedOS = 'windows'
+                        break;
+                    }
+                }
+                if(defaultSelectedArch === 'any') {
+                    defaultSelectedArch = defaultArchitecture;
+                }
+                if(defaultSelectedPackageType === 'any') {
+                    defaultSelectedPackageType = defaultPackageType;
+                }
+                // filter non LTS versions
+                versionList = versions.filter((version) => {
+                    return version.node.lts === true;
+                });
+                if(versionList.findIndex(version => version.node.version === defaultSelectedVersion) < 0) {
+                    defaultSelectedVersion = data.mostRecentLts.version;
+                }
+            }
+
+            updateOS(defaultSelectedOS);
+            updateArch(defaultSelectedArch);
+            udateVersion(defaultSelectedVersion);
+            updatePackageType(defaultSelectedPackageType);
+
+            // OK we can loaded elements
+            setReady(true)
         })();
-    }, [version, os, arch, packageType, selectedVendorIdentifiers]);
+    }, [oses, arches]);
+
+    /**
+     * This useEffect() is called when a parameter is changed
+     */
+    useEffect(() => {
+        // do nothing while params are not ready
+        if(!ready) return
+
+        (async () => {
+            setReleases(await updaterAction(version, os, arch, packageType, selectedVendorIdentifiers));
+        })();
+    }, [ready, version, os, arch, packageType, selectedVendorIdentifiers]);
 
     const setOS = useCallback((os) => {
         setURLParam('os', os)
@@ -183,7 +212,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     <label className="px-2 fw-bold" htmlFor="os"><Trans>Operating System</Trans></label>
                     <select id="os-filter" aria-label="OS Filter" data-testid="os-filter" onChange={(e) => setOS(e.target.value)} value={os} className="form-select form-select-sm">
                         <option key="any" value="any"><Trans>Any</Trans></option>
-                        {fetchOses(true).sort((os1, os2) => os1.name.localeCompare(os2.name)).map(
+                        {oses.sort((os1, os2) => os1.name.localeCompare(os2.name)).map(
                             (os, i): string | JSX.Element => os && (
                                 <option key={`os-${i}`} value={os.name.toLowerCase()}>{capitalize(os.name)}</option>
                             )
@@ -194,7 +223,7 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
                     <label className="px-2 fw-bold" htmlFor="arch"><Trans>Architecture</Trans></label>
                     <select id="arch-filter" aria-label="Architecture Filter" data-testid="arch-filter" onChange={(e) => setArch(e.target.value)} value={arch} className="form-select form-select-sm">
                         <option key="any" value="any"><Trans>Any</Trans></option>
-                        {fetchArches(true).sort((arch1, arch2) => arch1.name.localeCompare(arch2.name)).map(
+                        {arches.sort((arch1, arch2) => arch1.name.localeCompare(arch2.name)).map(
                             (arch, i): string | JSX.Element => arch && (
                                 <option key={`arch-${i}`} value={arch.name.toLowerCase()}>{arch.name}</option>
                             )

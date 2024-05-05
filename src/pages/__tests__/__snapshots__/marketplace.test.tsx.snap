@@ -202,6 +202,11 @@ exports[`Marketplace page > renders correctly 1`] = `
           >
             1 - LTS
           </option>
+          <option
+            value="2"
+          >
+            2
+          </option>
         </select>
       </div>
     </div>

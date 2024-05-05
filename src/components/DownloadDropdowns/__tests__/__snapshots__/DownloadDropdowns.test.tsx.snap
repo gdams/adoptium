@@ -125,6 +125,11 @@ exports[`DownloadDropdowns component > renders correctly - marketplace 1`] = `
         id="version-filter"
       >
         <option
+          value="2"
+        >
+          2
+        </option>
+        <option
           value="1"
         >
           1 - LTS
