@@ -6,6 +6,7 @@ import queryString from 'query-string';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFnsV3';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
+import * as Locales from 'date-fns/locale';
 
 import { setURLParam } from '../../util/setURLParam';
 
@@ -40,7 +41,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
 
   // import the correct date locale for the language
   if (language !== 'en') {
-    locale = require(`date-fns/locale/${language}`).default;
+    locale = Locales[language] ?? Locales[language.substring(0, 2)] ?? Locales.enUS
   }
 
   let selectedVersion = defaultVersion
