@@ -5,7 +5,6 @@ import { createRandomTemurinReleases, mockOsesAPI, mockArchesAPI } from '../../.
 import DownloadDropdowns from '..';
 import queryString from 'query-string';
 import * as detectOSModule from '../../../util/detectOS';
-import { UserOS } from '../../../util/detectOS';
 
 const Table = () => {
   return (
@@ -228,7 +227,7 @@ describe('DownloadDropdowns component', () => {
   });
 
   it('renders correctly - marketplace fake LINUX', async () => {
-    vi.spyOn(detectOSModule, 'detectOS').mockReturnValue(UserOS.LINUX);
+    vi.spyOn(detectOSModule, 'detectOS').mockReturnValue(detectOSModule.UserOS.LINUX);
 
     const { container } = render(
       <DownloadDropdowns
@@ -245,7 +244,7 @@ describe('DownloadDropdowns component', () => {
   });
 
   it('renders correctly - marketplace fake MAC', async () => {
-    vi.spyOn(detectOSModule, 'detectOS').mockReturnValue(UserOS.MAC);
+    vi.spyOn(detectOSModule, 'detectOS').mockReturnValue(detectOSModule.UserOS.MAC);
 
     const { container } = render(
       <DownloadDropdowns

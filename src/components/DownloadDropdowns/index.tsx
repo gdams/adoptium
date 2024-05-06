@@ -65,53 +65,53 @@ const DownloadDropdowns = ({updaterAction, marketplace, Table}) => {
             let defaultSelectedOS = 'any';
             const osParam = queryStringParams.os;
             if (osParam) {
-                let sop = osParam.toString().toLowerCase();
-                if(oses.findIndex(os => os.name.toLowerCase() === sop) >= 0)
-                    defaultSelectedOS = sop;
+                let osParamStr = osParam.toString().toLowerCase();
+                if(oses.findIndex(os => os.name.toLowerCase() === osParamStr) >= 0)
+                    defaultSelectedOS = osParamStr;
             }
 
             // init the default selected Architecture, if any from the param 'arch'
             let defaultSelectedArch = 'any';
             const archParam = queryStringParams.arch;
             if (archParam) {
-                let sap = archParam.toString().toLowerCase();
-                if(arches.findIndex(a => a.name.toLowerCase() === sap) >= 0)
-                    defaultSelectedArch = sap;
+                let archParamStr = archParam.toString().toLowerCase();
+                if(arches.findIndex(a => a.name.toLowerCase() === archParamStr) >= 0)
+                    defaultSelectedArch = archParamStr;
             }
 
             // init the default selected Package Type, if any from the param 'package'
             let defaultSelectedPackageType = 'any';
             const packageParam = queryStringParams.package;
             if (packageParam) {
-                let spp = packageParam.toString().toLowerCase();
-                if(packageTypes.findIndex(p => p.toLowerCase() === spp) >= 0)
-                    defaultSelectedPackageType = spp;
+                let packageParamStr = packageParam.toString().toLowerCase();
+                if(packageTypes.findIndex(p => p.toLowerCase() === packageParamStr) >= 0)
+                    defaultSelectedPackageType = packageParamStr;
             }
 
             // init the default selected Version, if any from the param 'version' or from 'variant'
             let defaultSelectedVersion = data.mostRecentLts.version;
             const versionParam = queryStringParams.version;
             if (versionParam) {
-                let svp = versionParam.toString();
-                let nvp = Number(svp);
+                let versionParamStr = versionParam.toString();
+                let versionParamNum = Number(versionParamStr);
 
-                if(svp.toLowerCase() === 'latest') {
+                if(versionParamStr.toLowerCase() === 'latest') {
                     // get the latest version of the list
                     defaultSelectedVersion = versions.sort((a, b) => b.node.version - a.node.version)[0].node.version;
-                } else if(versions.findIndex(version => version.node.version === nvp) >= 0) {
-                    defaultSelectedVersion = nvp;
+                } else if(versions.findIndex(version => version.node.version === versionParamNum) >= 0) {
+                    defaultSelectedVersion = versionParamNum;
                 }
             }
 
             // init the default selected Version, if any from the param 'variant'
             const variantParam = queryStringParams.variant;
             if (variantParam) {
-                // convert openjdk11 to 11
+                // convert openjdk<version> to <version> (e.g openjdk11 => 11)
                 const parsedVersion = variantParam.toString().replace(/\D/g, '')
-                let nvp = Number(parsedVersion);
+                let variantParamNum = Number(parsedVersion);
 
-                if(versions.findIndex(version => version.node.version === nvp) >= 0) {
-                    defaultSelectedVersion = nvp;
+                if(versions.findIndex(version => version.node.version === variantParamNum) >= 0) {
+                    defaultSelectedVersion = variantParamNum;
                 }
             }
 
