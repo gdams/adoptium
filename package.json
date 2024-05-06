@@ -19,7 +19,7 @@
     "@react-icons/all-files": "^4.1.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
-    "date-fns": "^2.30.0",
+    "date-fns": "^3.6.0",
     "flexsearch": "^0.7.43",
     "gatsby": "^5.13.4",
     "gatsby-adapter-netlify": "^1.1.4",
