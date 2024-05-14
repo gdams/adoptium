@@ -1,5 +1,5 @@
 ---
-title: AQAvit Scope
+title: The Scope of AQAvit
 date: "2024-03-27T12:00:00+00:00"
 author: shelleylambert
 description: What are the main user stories the AQAvit project covers.
@@ -19,6 +19,13 @@ Since AQAvit has developed both a consistent and open approach to measuring qual
 At this time, there are a good number of vendors listed in the Adoptium marketplace.  The marketplace API includes links to AQAvit results for the different distributions.  This serves as direct evidence of the quality of the binaries listed in the marketplace as well as an indicator of the open and transparent nature of the work.
 
 ![Adoptium Marketplace Vendors](marketplaceVendors.png)
+
+The Adoptium project uses AQAvit verification for the release activities for its Temurin binaries.  Since Temurin covers a broad set of platforms and versions, this is an ambitious effort.  An overview of the activities of AQAvit testing and triage is covered by this [presentation](https://youtu.be/TWD_b8cwIVg), which takes a look at the January and April CPU triage as examples.
+
+![April AQAvit Triage](1PlatformSH.png)
+![April AQAvit Triage](54PlatformsSH.png)
+
+In summary, millions of tests are run during a release.  The test pipelines produce artifacts to show details about what product is under test, what tests were run against it, including where the test material was sourced and whether they passed, what machines were the tests run on and so forth.  These artifacts are then uploaded and available via the Adoptium marketplace API for reference alongside the JDK binaries.
 
 ### Developer Support
 
