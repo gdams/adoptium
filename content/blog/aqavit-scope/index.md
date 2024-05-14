@@ -1,6 +1,6 @@
 ---
 title: The Scope of AQAvit
-date: "2024-03-27T12:00:00+00:00"
+date: "2024-05-15T12:00:00+00:00"
 author: shelleylambert
 description: What are the main user stories the AQAvit project covers.
 tags:
