@@ -29,7 +29,7 @@ In summary, millions of tests are run during a release! The test pipelines produ
 
 ### Developer Support
 
-AQAvit provides [developer support](https://github.com/adoptium/aqa-tests/blob/master/docs/pages/Scope.md#2-developer-support) both JDK developers and Java application developers through its  publicly visible regular test runs, parameterization and bug tracking.  It is also a flexible system that allows for addition of new test material and for tuning to specific development needs.  [AQAvit was designed](https://github.com/adoptium/aqa-tests/blob/master/docs/pages/LayeredDesign.md) to integrate with various CI/CD tools, including GitHub Actions, making it a great choice for pull request testing and offering a continuous lens on the quality of code commits.
+AQAvit provides [developer support](https://github.com/adoptium/aqa-tests/blob/master/docs/pages/Scope.md#2-developer-support) for JDK and Java application developers through its regular, publicly visible test runs, and bug tracking. The developer support also includes a flexible system that allows for addition of new test material, and for tuning to a specific development need. [AQAvit was designed](https://github.com/adoptium/aqa-tests/blob/master/docs/pages/LayeredDesign.md) to integrate with various CI/CD tools, including GitHub Actions, making it a great choice for pull request testing and offering a continuous lens on the quality of code commits.
 
 ## 2024 AQAvit Plan
 
