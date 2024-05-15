@@ -9,7 +9,7 @@ tags:
 
 ## Eclipse AQAvit Project Scope
 
-Eclipse AQAvit is a very active subproject of Eclipse Adoptium.  It is a project where a broad set of contributors come together around the topic of quality assurance.  By working together in an open-source project, the goal is to share in the workload and activities around testing OpenJDK distributions while additionally deduplicating effort, and freeing resources to innovate.  
+Eclipse AQAvit is a very active subproject with the Eclipse Adoptium Working Group. It is a project where a broad set of contributors come together around the topic of quality assurance for OpenJDK builds. By working together in an open-source project, the goal is to share in the workload and activities around testing OpenJDK distributions with the additional goals of deduplicating effort, and freeing folks to work on more innovation!
 Within the [scope of AQAvit](https://github.com/adoptium/aqa-tests/blob/master/docs/pages/Scope.md) falls both AQAvit verification, which is really a quality bar for OpenJDK binaries, and development support especially for JDK developers.
 
 ### AQAvit Verification
