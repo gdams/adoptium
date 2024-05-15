@@ -20,7 +20,7 @@ At this time, there are a number of vendors listed in the [Adoptium marketplace]
 
 ![Adoptium Marketplace Vendors](marketplaceVendors.png)
 
-The Adoptium project uses AQAvit verification for the release activities for its Temurin binaries.  Since Temurin covers a broad set of platforms and versions, this is an ambitious effort.  An overview of the activities of AQAvit testing and triage is covered by this [presentation](https://youtu.be/TWD_b8cwIVg), which takes a look at the January and April CPU triage as examples.
+The Adoptium project uses AQAvit verification for the release activities for its Eclipse Temurin binaries. Since Temurin covers a broad set of platforms and versions, this is an ambitious effort! An overview of the activities of AQAvit testing and triage is covered by this [presentation](https://youtu.be/TWD_b8cwIVg), which takes a look at the January and April 2024 Critical Patch Update (CPU) triage activities.
 
 ![April AQAvit Triage](1PlatformSH.png)
 ![April AQAvit Triage](54PlatformsSH.png)
