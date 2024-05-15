@@ -25,7 +25,7 @@ The Adoptium project uses AQAvit verification for the release activities for its
 ![April AQAvit Triage](1PlatformSH.png)
 ![April AQAvit Triage](54PlatformsSH.png)
 
-In summary, millions of tests are run during a release.  The test pipelines produce artifacts to show details about what product is under test, what tests were run against it, including where the test material was sourced and whether they passed, what machines were the tests run on and so forth.  These artifacts are then uploaded and available via the Adoptium marketplace API for reference alongside the JDK binaries.
+In summary, millions of tests are run during a release! The test pipelines produce artifacts to show details about which binary is under test, what tests were run against that product, noting where the test material was sourced, whether the product passed those tests, what machines the tests were run on and so forth. These artifacts are then uploaded and made available via the Adoptium marketplace API for reference alongside the binaries.
 
 ### Developer Support
 
