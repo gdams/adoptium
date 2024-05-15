@@ -28,10 +28,10 @@ export const PureMacOSPanel = (): JSX.Element => {
         <span className="install-text-command">brew tap </span>homebrew/cask-versions
         <br />
         <span className="install__text__no-select">$</span>
-        <span className="install-text-command">brew install --cask </span>temurin8
+        <span className="install-text-command">brew install --cask </span>temurin@8
        <br />
         <span className="install__text__no-select">$</span>
-        <span className="install-text-command">brew install --cask </span>temurin{mostRecentLts}
+        <span className="install-text-command">brew install --cask </span>temurin@{mostRecentLts}
       </ShellBox>
       <br />
       <br />

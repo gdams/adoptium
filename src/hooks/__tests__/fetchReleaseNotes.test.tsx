@@ -25,8 +25,9 @@ describe('fetchReleaseNotesForVersion', () => {
     let spy = vi.spyOn(axios, "get");
 
     const { result } = renderHook(() => fetchReleaseNotesForVersion(true, 'sample_version', sortReleaseNotesByCallback));
+
     await waitFor(() => {
-      expect(result.current?.release_name).toBe('release_name_mock')
+      expect(result.current?.releaseNoteAPIResponse?.release_name).toBe('release_name_mock')
     }, { interval: 1 });
     expect(spy).toHaveBeenCalledTimes(1)
     expect(spy).toHaveBeenCalledWith(

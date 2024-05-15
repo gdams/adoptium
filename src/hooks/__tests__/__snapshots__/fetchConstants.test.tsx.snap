@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`fetchArches > URL is set correctly 1`] = `
+[
+  {
+    "name": [
+      {
+        "name": "mock_aarch64",
+      },
+      {
+        "name": "mock_ppc64",
+      },
+      {
+        "name": "mock_x64",
+      },
+    ],
+  },
+]
+`;
+
+exports[`fetchOses > URL is set correctly 1`] = `
+[
+  {
+    "name": [
+      {
+        "name": "mock_macos",
+      },
+      {
+        "name": "mock_linux",
+      },
+      {
+        "name": "mock_windows",
+      },
+    ],
+  },
+]
+`;

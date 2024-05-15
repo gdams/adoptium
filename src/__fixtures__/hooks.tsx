@@ -12,6 +12,8 @@ import {
   NewsResponse,
   ReleaseAsset,
   TemurinReleases,
+  OperatingSystem,
+  Architecture
 } from '../hooks';
 
 export const createRandomTemurinRelease = (installer): ReleaseAsset => ({
@@ -232,7 +234,6 @@ export const createMockReleaseNotesAPI = (number): ReleaseNoteAPIResponse => ({
   }))
 });
 
-
 export const createMockTemurinFeatureReleaseAPI = (installer): MockTemurinFeatureReleaseAPI => ({
   id: 'id_mock',
   download_count: 0,
@@ -377,3 +378,11 @@ export const createMockAdoptiumContributorsApi = (): ContributorApiResponse => (
     site_admin: false
   }
 );
+
+export const mockOsesAPI = (): OperatingSystem[] => (
+  [{name: "mock_macos"}, {name: "mock_linux"}, {name: "mock_windows"}]
+);
+
+export const mockArchesAPI = (): Architecture[] => (
+  [{name: "mock_aarch64"}, {name: "mock_ppc64"}, {name: "mock_x64"}
+]);

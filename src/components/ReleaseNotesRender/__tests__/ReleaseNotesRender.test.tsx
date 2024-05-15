@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { describe, expect, it, vi } from 'vitest'
 import ReleaseNotesRender, { fetchTitle, sortReleaseNotesBy } from '../index';
-import { fetchReleaseNotesForVersion, ReleaseNoteAPIResponse } from '../../../hooks/fetchReleaseNotes';
+import { fetchReleaseNotesForVersion } from '../../../hooks/fetchReleaseNotes';
 import { createMockReleaseNotesAPI  } from '../../../__fixtures__/hooks';
 import { DataGridProps } from "@mui/x-data-grid"
 import queryString from 'query-string';
@@ -32,7 +32,7 @@ describe('ReleaseNotesRender component', () => {
         queryString.parse = vi.fn().mockReturnValue({'version': 'jdk-17.0.1+12'});
 
         // @ts-ignore
-        fetchReleaseNotesForVersion.mockReturnValue(createMockReleaseNotesAPI(2));
+        fetchReleaseNotesForVersion.mockReturnValue({ releaseNoteAPIResponse :createMockReleaseNotesAPI(2), isValid: true });
 
         const { container } = render(
             <ReleaseNotesRender />
@@ -72,9 +72,9 @@ describe('ReleaseNotesRender component', () => {
         queryString.parse = vi.fn().mockReturnValue({'version': 'jdk-20+36'});
 
         function mockReleaseNotes(num: number) {
-            let mockReleaseNotesAPI = createMockReleaseNotesAPI(num);
-            mockReleaseNotesAPI.release_notes[0].type = 'Enhancement';
-            return mockReleaseNotesAPI;
+            let releaseNoteDataBag = { releaseNoteAPIResponse :createMockReleaseNotesAPI(num), isValid: true };
+            releaseNoteDataBag.releaseNoteAPIResponse.release_notes[0].type = 'Enhancement';
+            return releaseNoteDataBag;
         }
 
         // @ts-ignore
@@ -91,9 +91,9 @@ describe('ReleaseNotesRender component', () => {
     it('should render correctly - priority not defined', () => {
         queryString.parse = vi.fn().mockReturnValue({'version': 'version'});
         function mockReleaseNotes() {
-            let mockReleaseNotesAPI = createMockReleaseNotesAPI(1);
-            mockReleaseNotesAPI.release_notes[0].priority = undefined;
-            return mockReleaseNotesAPI;
+            let releaseNoteDataBag = { releaseNoteAPIResponse :createMockReleaseNotesAPI(1), isValid: true };
+            releaseNoteDataBag.releaseNoteAPIResponse.release_notes[0].priority = undefined;
+            return releaseNoteDataBag;
         }
 
         // @ts-ignore
@@ -110,7 +110,7 @@ describe('ReleaseNotesRender component', () => {
         queryString.parse = vi.fn().mockReturnValue({'version': 'version'});
 
         // @ts-ignore
-        fetchReleaseNotesForVersion.mockReturnValue({ release_notes: null});
+        fetchReleaseNotesForVersion.mockReturnValue({ releaseNoteAPIResponse :createMockReleaseNotesAPI(0), isValid: false });
         const { container } = render(
             <ReleaseNotesRender />
         );

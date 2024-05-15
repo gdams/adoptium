@@ -6,6 +6,7 @@ export * from './fetchTemurinArchive';
 export * from './fetchLatestTemurin';
 export * from './fetchNews';
 export * from './fetchReleaseNotes';
+export * from './fetchConstants';
 
 export interface VersionMetaData {
     major: number;
