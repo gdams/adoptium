@@ -16,7 +16,7 @@ Within the [scope of AQAvit](https://github.com/adoptium/aqa-tests/blob/master/d
 
 AQAvit has rapidly become the de facto standard by which companies can measure whether they trust the quality of the OpenJDK distribution they are selecting. This trust is earned because AQAvit has developed a consistent and open approach to measuring quality, as well providing an open toolset that any JDK distributor can use to demonstrate that they meet the AQAvit quality bar. This is why one of the criteria for listing a distribution in the [Adoptium marketplace](https://adoptium.net/marketplace/) includes the requirement to run and pass the [AQAvit verification suite](https://adoptium.net/docs/aqavit-verification/).
 
-At this time, there are a good number of vendors listed in the Adoptium marketplace.  The marketplace API includes links to AQAvit results for the different distributions.  This serves as direct evidence of the quality of the binaries listed in the marketplace as well as an indicator of the open and transparent nature of the work.
+At this time, there are a number of vendors listed in the [Adoptium marketplace](https://adoptium.net/marketplace/). The marketplace API includes links to AQAvit results for the different distributions. This serves as direct evidence of the quality of the binaries listed in the marketplace as well as an indicator of the open and transparent nature of their quality assurance work.
 
 ![Adoptium Marketplace Vendors](marketplaceVendors.png)
 
