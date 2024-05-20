@@ -17,14 +17,14 @@ Sep 2024
 [.small]#jdk-22+0.1+9#
 | 16 Jul 2024 +
 [.small]#jdk-22.0.2#
-| Sep 2023
+| Sep 2024
 
 | Java 21 (LTS)
 | Sep 2023
-| 24 Jan 2024 +
-[.small]#jdk-21.0.2+13#
 | 16 Apr 2024 +
-[.small]#jdk-21.0.3#
+[.small]#jdk-21.0.3+9#
+| 16 Jul 2024 +
+[.small]#jdk-21.0.4#
 | At least Dec 2029
 
 | Java 20

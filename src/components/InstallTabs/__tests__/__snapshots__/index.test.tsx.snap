@@ -754,7 +754,7 @@ exports[`Tests for InstallTabs component > renders correctly for macOS 1`] = `
               >
                 brew install --cask 
               </span>
-              temurin8
+              temurin@8
               <br />
               <span
                 class="install__text__no-select"
@@ -766,7 +766,7 @@ exports[`Tests for InstallTabs component > renders correctly for macOS 1`] = `
               >
                 brew install --cask 
               </span>
-              temurin
+              temurin@
               1
             </code>
           </pre>

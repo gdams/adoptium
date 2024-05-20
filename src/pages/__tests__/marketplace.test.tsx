@@ -5,8 +5,20 @@ import { axe } from 'vitest-axe';
 import Marketplace, { Head } from '../marketplace';
 import AxiosInstance from 'axios'
 import MockAdapter from 'axios-mock-adapter';
+import { mockOsesAPI, mockArchesAPI } from '../../__fixtures__/hooks';
 
 const mock = new MockAdapter(AxiosInstance);
+
+vi.mock('../../hooks/fetchConstants', () => {
+  return {
+    fetchOses: () => {
+      return mockOsesAPI();
+    },
+    fetchArches: () => {
+      return mockArchesAPI();
+    }
+  };
+});
 
 vi.mock('../../util/shuffle', () => {
   return {
