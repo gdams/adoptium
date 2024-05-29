@@ -44,9 +44,7 @@ const IndexPage = ({data}) => {
             </div>
           </div>
         </div>
-        <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
-          <AdoptiumNews />
-        </div>
+        <AdoptiumNews />
         <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
           <div className='container py-5'>
             <h2 className='text-pink'><Trans>The Adoptium&reg; Working Group</Trans></h2>
