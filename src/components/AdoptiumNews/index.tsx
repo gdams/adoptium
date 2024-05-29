@@ -21,9 +21,9 @@ const AdoptiumNews = () => {
     return (
         <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
             <div className='container py-5'>
-                <h2>{adoptiumNews.title}</h2>
+                <h2 className='text-pink'>{adoptiumNews.title}</h2>
                 <div>
-                    <p className='m-0 fw-bold'>{moment(adoptiumNews.date).format('D MMMM YYYY')}</p>
+                    {adoptiumNews.date && <p className='m-0 fw-bold'>{moment(adoptiumNews.date).format('D MMMM YYYY')}</p>}
                     <p className='text-muted lh-sm'>
                         <Trans 
                             defaults={adoptiumNews.body} 
@@ -43,7 +43,7 @@ export default AdoptiumNews;
 export interface AdoptiumNewsItem {
     title: string;
     body: string;
-    date: Date;
+    date?: Date;
     link?: string;
     startDisplayAt: Date;
     stopDisplayAfter: Date;
