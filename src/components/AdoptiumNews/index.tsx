@@ -5,12 +5,15 @@ import LinkText from '../LinkText'
 
 const AdoptiumNews = () => {
 
+    // NOTES: 
+    // - You can add a <callToActionLink /> tag to create a link in the body
+    // - Dates must be with the format: "YYYY-MM-dd"
+
     const adoptiumNews = {
         title: "Adoptium Summit 2024", 
-        body: "Be a part of the first-ever Adoptium Summit on September, 10<br/>Connect with peers to exchange knowledge on Temurin, AQAvit and other Adoptium's projects. <link>Register here</link>", 
-        link: 'https://www.eclipse.org/events/2024/adoptium-summit/', 
-        // NOTE: Dates below are with the format: "YYYY-MM-dd"
-        date: new Date('2024-05-30'),
+        body: "Be a part of the first-ever Adoptium Summit on September, 10.<br/>Connect with peers to exchange knowledge on Temurin, AQAvit and other Adoptium's projects.<br/><callToActionLink>Register here</callToActionLink>", 
+        callToActionLink: 'https://www.eclipse.org/events/2024/adoptium-summit/', 
+        date: new Date('2024-09-10'),
         startDisplayAt: new Date('2024-05-15'),
         stopDisplayAfter: new Date('2024-06-30'),
     }
@@ -28,7 +31,7 @@ const AdoptiumNews = () => {
                         <Trans 
                             defaults={adoptiumNews.body} 
                             components={{
-                                link: <LinkText href={adoptiumNews.link||''} />
+                                callToActionLink: <LinkText href={adoptiumNews.callToActionLink||''} />
                             }}
                         />
                     </p>
@@ -44,7 +47,7 @@ export interface AdoptiumNewsItem {
     title: string;
     body: string;
     date?: Date;
-    link?: string;
+    callToActionLink?: string;
     startDisplayAt: Date;
     stopDisplayAfter: Date;
 }
