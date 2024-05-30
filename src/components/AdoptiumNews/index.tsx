@@ -6,13 +6,13 @@ import LinkText from '../LinkText'
 const AdoptiumNews = () => {
 
     const adoptiumNews = {
-        title: "Case Study: Building the World's Most Secure OpenJDK Distribution", 
-        body: "Find out how the Eclipse Foundation and Adoptium Working Group are pioneering software supply chain security with Eclipse Temurin: <callToActionLink>Download now</callToActionLink>", 
-        link: 'https://outreach.eclipse.foundation/adoptium-temurin-supply-chain-security?utm_campaign=Temurin%20Case%20Study&utm_source=website&utm_medium=adoptium%20docs', 
+        title: "Be a part of the first-ever Adoptium Summit on September, 10", 
+        body: "Connect with peers to exchange knowledge on Temurin, AQAvit and other Adoptium's projects. <link>Register here</link>", 
+        link: 'https://www.eclipse.org/events/2024/adoptium-summit/', 
         // NOTE: Dates below are with the format: "YYYY-MM-dd"
-        date: new Date('2024-05-01'),
+        date: new Date('2024-05-30'),
         startDisplayAt: new Date('2024-05-15'),
-        stopDisplayAfter: new Date('2024-05-31'),
+        stopDisplayAfter: new Date('2024-06-30'),
     }
 
     const now = Date.now();
@@ -28,7 +28,7 @@ const AdoptiumNews = () => {
                         <Trans 
                             defaults={adoptiumNews.body} 
                             components={{
-                                callToActionLink: <LinkText href={adoptiumNews.link||''} />
+                                link: <LinkText href={adoptiumNews.link||''} />
                             }}
                         />
                     </p>
