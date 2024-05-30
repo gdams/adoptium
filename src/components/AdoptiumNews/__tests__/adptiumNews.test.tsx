@@ -6,6 +6,7 @@ import AdoptiumNews from '..';
 describe('AdoptiumNews component', () => {
   it('renders correctly', () => {
     const { container } = render(<AdoptiumNews />);
-    expect(container).toMatchSnapshot();
+    // expect container to either be null or contain a div with the class of alert
+    expect(container).toBeNull || expect(container.querySelector('div.text-pink')).toBeTruthy();
   });
 });

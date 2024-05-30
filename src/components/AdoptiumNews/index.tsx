@@ -6,8 +6,8 @@ import LinkText from '../LinkText'
 const AdoptiumNews = () => {
 
     const adoptiumNews = {
-        title: "Be a part of the first-ever Adoptium Summit on September, 10", 
-        body: "Connect with peers to exchange knowledge on Temurin, AQAvit and other Adoptium's projects. <link>Register here</link>", 
+        title: "Adoptium Summit 2024", 
+        body: "Be a part of the first-ever Adoptium Summit on September, 10<br/>Connect with peers to exchange knowledge on Temurin, AQAvit and other Adoptium's projects. <link>Register here</link>", 
         link: 'https://www.eclipse.org/events/2024/adoptium-summit/', 
         // NOTE: Dates below are with the format: "YYYY-MM-dd"
         date: new Date('2024-05-30'),
