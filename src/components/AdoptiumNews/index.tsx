@@ -1,9 +1,10 @@
 import React from 'react';
-import moment from 'moment';
-import { Trans } from 'gatsby-plugin-react-i18next';
+import { Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import LinkText from '../LinkText'
 
 const AdoptiumNews = () => {
+
+    const { language } = useI18next();
 
     // NOTES: 
     // - You can add a <callToActionLink /> tag to create a link in the body
@@ -26,7 +27,7 @@ const AdoptiumNews = () => {
             <div className='container py-5'>
                 <h2 className='text-pink'>{adoptiumNews.title}</h2>
                 <div>
-                    {adoptiumNews.date && <p className='m-0 fw-bold'>{moment(adoptiumNews.date).format('D MMMM YYYY')}</p>}
+                    {adoptiumNews.date && <p className='m-0 fw-bold'>{(adoptiumNews.date.toLocaleDateString(language))}</p>}
                     <p className='text-muted lh-sm'>
                         <Trans 
                             defaults={adoptiumNews.body} 
