@@ -14,7 +14,12 @@ const adoptiumNews = {
     stopDisplayAfter: new Date('2024-06-30'),
 }
 
-const eventDateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+const eventDateOptions = { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric', 
+    timeZone: "UTC"
+}
 
 const AdoptiumNews = () => {
 
