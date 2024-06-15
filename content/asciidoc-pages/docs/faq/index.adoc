@@ -8,6 +8,39 @@ the best place is via
 https://adoptium.net/slack.html[Slack] or by raising an issue in the
 https://github.com/adoptium/adoptium-support[support channel].
 
+
+== What is Eclipse Temurin?
+
+*Eclipse Adoptium* (Earlier known as AdoptOpenJDK) Project was started as a means to  promote and support free and open-source high-quality runtimes and associated technology for use across the Java ecosystem. +
+*Eclipse Temurin* (/ˈtɛmjərɪn/), are certified high quality binary builds of OpenJDK.
+
+The name Temurin is an anagram of runtime. Interestingly Temurin is also a chemical component (also known as Theacrine) that is structurally similar to caffeine but is safer for humans to consume (non-habituating effects). So a small nod to Java as well.
+
+This is the project and brand name for the binaries that the Eclipse
+Foundation produces.
+While we appreciate that the Adoptium/Temurin name split
+is more confusing than just "Adoptium", this is similar to how other
+vendors brand their binaries, e.g. Amazon has Corretto, Azul has Zulu
+(and others). The "Adoptium" project and working group will deal with
+more than just Temurin so the distinction is important to maintain.
+
+== What happened to AdoptOpenJDK?
+
+The AdoptOpenJDK builds are now known as "Eclipse Temurin by
+Adoptium"(https://adoptium.net/blog/2021/08/adoptium-celebrates-first-release/[read the blog post]).
+Don’t worry though - despite the branding changes it is the same open build processes,
+AQAvit test suites and primarily the same team producing them as before, but
+there are link:/members[more larger companies] bringing their expertise
+to the working group.
+
+To ensure a smooth transition we have left the old site active, however,
+the links to latest builds on the old site will now bring you to the
+Temurin builds. In time the old website will be fully retired.
+
+Some items, such as the https://adoptopenjdk.net/upstream.html[Upstream builds]
+and https://adoptopenjdk.net/icedtea-web.html[IcedTea-WEB] remain only available
+via AdoptOpenJDK.
+
 == Where are the latest Adoptium(R) JDKs?
 
 Adoptium's JDKs are called Eclipse Temurin, and the releases we recommend for
@@ -144,33 +177,6 @@ We provide
 https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.adoc#example-three-scripting-a-download-using-the-adoptium-api[an example of automating a download]
 in the
 https://github.com/adoptium/api.adoptium.net/blob/main/docs/cookbook.adoc#adoptium-api-cookbook[Adoptium API cookbook].
-
-== What is this "Eclipse Temurin" name?
-
-This is the project and brand name for the binaries that the Eclipse
-Foundation produces.
-While we appreciate that the Adoptium/Temurin name split
-is more confusing than just "Adoptium", this is similar to how other
-vendors brand their binaries, e.g. Amazon has Corretto, Azul has Zulu
-(and others). The "Adoptium" project and working group will deal with
-more than just Temurin so the distinction is important to maintain.
-
-== What happened to AdoptOpenJDK?
-
-The AdoptOpenJDK builds are now known as "Eclipse Temurin by
-Adoptium"(https://adoptium.net/blog/2021/08/adoptium-celebrates-first-release/[read the blog post]).
-Don’t worry though - despite the branding changes it is the same open build processes,
-AQAvit test suites and primarily the same team producing them as before, but
-there are link:/members[more larger companies] bringing their expertise
-to the working group.
-
-To ensure a smooth transition we have left the old site active, however,
-the links to latest builds on the old site will now bring you to the
-Temurin builds. In time the old website will be fully retired.
-
-Some items, such as the https://adoptopenjdk.net/upstream.html[Upstream builds]
-and https://adoptopenjdk.net/icedtea-web.html[IcedTea-WEB] remain only available
-via AdoptOpenJDK.
 
 == Where are the OpenJ9 builds?
 
