@@ -57,9 +57,15 @@ export function getVersionAsString(version: VersionMetaData, allowShortNotation:
     if(version.patch) {
         result += `.${version.patch}`;
     }
+    if(version.pre) {
+        result += `-${version.pre}`;
+    }
     if(version.build) {
         result += `+${version.build}`;
         if(version.adopt_build_number) result += `.${version.adopt_build_number}`;
+    }
+    if(version.optional) {
+        result += `-${version.optional}`;
     }
     return result;
 }
