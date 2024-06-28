@@ -3,13 +3,13 @@ import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { capitalize } from '../../util/capitalize';
 import { localeDate } from '../../util/localeDate';
 
-const getFileName = (link: string) => {
-    return link.split('/').slice(-1);
+const getFileName = (link: URL) => {
+    return link.toString().split('/').slice(-1);
 }
 
 const TemurinNightlyTable = ({results}) => {
     const { language } = useI18next();
-console.info(JSON.stringify(results))
+
     return (
         <div id="nightly-list">
             <table id='nightly-table' className='table table-hover text-start table-striped'>
@@ -36,7 +36,7 @@ console.info(JSON.stringify(results))
                                                     asset && (
                                                         <tr key={`${key}-${asset.type}`} className="nightly-row">
                                                             <td>{capitalize(asset.os)} {asset.architecture === 'x32' ? 'x86' : asset.architecture}</td>
-                                                            <td>{release.type}</td>
+                                                            <td>{asset.type}</td>
                                                             <td>{release.release_name}</td>
                                                             <td>{localeDate(release.timestamp, language)}</td>
                                                             <td><Link 
