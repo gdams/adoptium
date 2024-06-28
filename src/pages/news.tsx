@@ -1,4 +1,4 @@
-import React, { MutableRefObject, useRef, useState, useEffect } from 'react';
+import React, { MutableRefObject, useRef, useState } from 'react';
 import Timeline from '@mui/lab/Timeline'
 import TimelineItem from '@mui/lab/TimelineItem'
 import TimelineSeparator from '@mui/lab/TimelineSeparator'
@@ -44,18 +44,15 @@ const NewsPage = (): JSX.Element => {
                   )
               ) : <CircularProgress aria-label='loading spinner' />}
               {news && news.pager ? 
-                <>
                 <Pagination
                   className='pt-3 d-flex justify-content-center'
-                  count={Math.ceil(news.pager.total_items / news.pager.total_pages)}
+                  count={news.pager.total_pages}
                   onChange={handlePageClick}
                   showFirstButton
                   showLastButton
                 />
-                |
-                <a href="https://newsroom.eclipse.org/eclipse/community-news" target='_blank' rel='noreferrer' className='px-2'>View all</a>
-                </>
               : null}           
+              <a href="https://newsroom.eclipse.org/eclipse/community-news" target='_blank' rel='noreferrer' className='px-2'>View all</a>
             </div>
             <div className='col-md-1' />
             <div className='col-md-6'>
