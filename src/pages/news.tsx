@@ -44,6 +44,7 @@ const NewsPage = (): JSX.Element => {
                   )
               ) : <CircularProgress aria-label='loading spinner' />}
               {news && news.pager ? 
+                <>
                 <Pagination
                   className='pt-3 d-flex justify-content-center'
                   count={Math.ceil(news.pager.total_items / news.pager.total_pages)}
@@ -51,6 +52,9 @@ const NewsPage = (): JSX.Element => {
                   showFirstButton
                   showLastButton
                 />
+                |
+                <a href="https://newsroom.eclipse.org/eclipse/community-news" target='_blank' rel='noreferrer' className='px-2'>View all</a>
+                </>
               : null}           
             </div>
             <div className='col-md-1' />

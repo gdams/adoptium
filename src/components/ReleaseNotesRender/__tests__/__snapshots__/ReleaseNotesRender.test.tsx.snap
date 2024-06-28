@@ -595,7 +595,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
               <div
                 class="MuiDataGrid-virtualScrollerContent css-1kwdphh-MuiDataGrid-virtualScrollerContent"
                 role="presentation"
-                style="width: auto; height: 0px;"
+                style="width: auto; height: 104px;"
               >
                 <div
                   class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"

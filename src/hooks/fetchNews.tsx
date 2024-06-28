@@ -32,7 +32,7 @@ async function fetchLatestNews(page) {
     const url = new URL(`${baseUrl}/news`);
     url.searchParams.append('parameters[publish_to]', 'adoptium');
     url.searchParams.append('page', page);
-    url.searchParams.append('pagesize', '5');
+    url.searchParams.append('pagesize', '20');
 
     return axios.get(url.toString())
         .then(function (response) {
@@ -46,6 +46,7 @@ async function fetchLatestNews(page) {
 async function fetchLatestEvents() {
     const url = new URL(`${baseUrl}/events`);
     url.searchParams.append('parameters[publish_to]', 'adoptium');
+    url.searchParams.append('pagesize', '20');
 
     return axios.get(url.toString())
         .then(function (response) {

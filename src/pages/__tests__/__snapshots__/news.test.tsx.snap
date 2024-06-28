@@ -222,6 +222,15 @@ exports[`News page > renders correctly 1`] = `
               </li>
             </ul>
           </nav>
+          |
+          <a
+            class="px-2"
+            href="https://newsroom.eclipse.org/eclipse/community-news"
+            rel="noreferrer"
+            target="_blank"
+          >
+            View all
+          </a>
         </div>
         <div
           class="col-md-1"

@@ -327,11 +327,11 @@ export const createRandomNewsAndEventsData = (): News => ({
         link: new URL('https://link_mock'),
       },
     ],
-    pager: {
-      current_page: 1,
+    pager: {     
+      current_page: 0,
       items_per_page: 5,
-      total_items: 5,
-      total_pages: 1,
+      total_items: 54,
+      total_pages: 11,
     }
   },
   events: [
