@@ -20,7 +20,7 @@ exports[`Docs page > renders correctly 1`] = `
         class="main-search-box pt-3 d-block mx-auto"
       >
         <div
-          class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-ka7ti6-MuiAutocomplete-root"
+          class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-1j0qgw8-MuiAutocomplete-root"
           data-testid="autocomplete"
         >
           <div

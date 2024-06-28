@@ -545,7 +545,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 <div
                   class="MuiDataGrid-virtualScrollerContent css-1kwdphh-MuiDataGrid-virtualScrollerContent"
                   role="presentation"
-                  style="width: auto; height: 52px;"
+                  style="width: auto; height: 0px;"
                 >
                   <div
                     class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"

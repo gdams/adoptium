@@ -63,13 +63,11 @@ export interface News {
 
 export interface NewsResponse {
     news: NewsItem[];
-    pagination: {
-        page: number;
-        pagesize: number;
-        result_start: number;
-        result_end: number;
-        result_size: number;
-        total_result_size: number;
+    pager: {
+        current_page: number;
+        items_per_page: number;
+        total_items: number;
+        total_pages: number;
     } | null;
 }
 

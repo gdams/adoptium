@@ -43,10 +43,10 @@ const NewsPage = (): JSX.Element => {
                     </div>
                   )
               ) : <CircularProgress aria-label='loading spinner' />}
-              {news && news.pagination ? 
+              {news && news.pager ? 
                 <Pagination
                   className='pt-3 d-flex justify-content-center'
-                  count={Math.ceil(news.pagination.total_result_size / news.pagination.pagesize)}
+                  count={Math.ceil(news.pager.total_items / news.pager.total_pages)}
                   onChange={handlePageClick}
                   showFirstButton
                   showLastButton
