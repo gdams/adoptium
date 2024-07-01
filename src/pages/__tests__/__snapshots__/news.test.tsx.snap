@@ -250,6 +250,15 @@ exports[`News page > renders correctly 1`] = `
           >
             View all
           </a>
+          |
+          <a
+            class="px-2"
+            href="https://newsroom.eclipse.org/node/add/news"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Submit news
+          </a>
         </div>
         <div
           class="col-md-1"
@@ -389,6 +398,15 @@ exports[`News page > renders spinner when news not loaded 1`] = `
             target="_blank"
           >
             View all
+          </a>
+          |
+          <a
+            class="px-2"
+            href="https://newsroom.eclipse.org/node/add/news"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Submit news
           </a>
         </div>
         <div
