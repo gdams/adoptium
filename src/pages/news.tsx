@@ -53,6 +53,8 @@ const NewsPage = (): JSX.Element => {
                 />
               : null}           
               <a href="https://newsroom.eclipse.org/eclipse/community-news" target='_blank' rel='noreferrer' className='px-2'>View all</a>
+              |
+              <a href="https://newsroom.eclipse.org/node/add/news" target='_blank' rel='noreferrer' className='px-2'>Submit news</a>
             </div>
             <div className='col-md-1' />
             <div className='col-md-6'>
