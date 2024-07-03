@@ -9,13 +9,13 @@ tags:
   - "containers"
 ---
 
-We would like to inform our users that as of the next PSU release on July 16th, Eclipse Temurin images with the CentOS 7 base will be removed. This decision comes in light of CentOS 7 reaching its End of Life (EOL) on June 30th, 2024. No further updates or support will be provided for CentOS 7, and to ensure the continued security and stability of your applications, we recommend migrating to the UBI9-minimal images.
+We would like to inform our users that as of July 16th, Eclipse Temurin images with the CentOS 7 base will be removed. This decision comes in light of CentOS 7 reaching its End of Life (EOL) on June 30th, 2024. No further updates or support will be provided for CentOS 7, and to ensure the continued security and stability of your applications, we recommend migrating to the UBI9-minimal images.
 
 ## Key Changes
 
 - **CentOS 7 EOL**: As CentOS 7 has reached its EOL, it will no longer receive updates or support.
 - **Removal Date**: CentOS 7 based Eclipse Temurin images will be removed in the PSU release on July 16th.
-- **New Base Image**: All users should migrate to the UBI9-minimal images.
+- **New Base Image**: All users should migrate to the ubi9-minimal images.
 
 ### Migration Guide
 
