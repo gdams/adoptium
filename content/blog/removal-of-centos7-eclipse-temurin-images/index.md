@@ -1,6 +1,6 @@
 ---
 title: Important Update: Removal of CentOS 7 Eclipse Temurin Images
-date: "2024-07-03T12:00:00+00:00"
+date: "2024-07-03T16:00:00+00:00"
 author: georgeadams
 description: We would like to inform our users that as of the next PSU release on July 16th, Eclipse Temurin images with the CentOS 7 base will be removed.
 tags:
