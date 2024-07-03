@@ -24,6 +24,7 @@ To assist with this transition, here is a simple migration guide. If you are cur
 #### Example Migration
 
 **Old Dockerfile using CentOS 7:**
+
 ```Dockerfile
 FROM eclipse-temurin:17-jdk-centos7
 
@@ -31,6 +32,7 @@ FROM eclipse-temurin:17-jdk-centos7
 ```
 
 **New Dockerfile using UBI9-minimal:**
+
 ```Dockerfile
 FROM eclipse-temurin:17-jdk-ubi9-minimal
 
