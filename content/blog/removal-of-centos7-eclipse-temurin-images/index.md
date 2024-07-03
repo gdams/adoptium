@@ -41,7 +41,7 @@ FROM eclipse-temurin:17-jdk-ubi9-minimal
 
 ### Important Note on Package Manager
 
-When migrating to UBI9-minimal, note that the package manager differs from CentOS 7. Instead of yum, you will need to use microdnf.
+When migrating to UBI9-minimal, note that the package manager differs from CentOS 7. Instead of yum, you will need to use microdnf. While we encourage the transition to UBI9-minimal, it is important to note that there may be fewer packages available in the UBI9-minimal repositories compared to CentOS 7. This could potentially impact the migration of some applications. We recommend reviewing your application's dependencies and verifying the availability of required packages in UBI9-minimal ahead of the migration.
 
 #### Example Package Installation
 
