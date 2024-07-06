@@ -20,17 +20,16 @@ utilizados por empresas en sistemas integrados, escritorios, servidores
 tradicionales, plataformas modernas en la nube,
 y grandes computadores centrales. El proyecto Eclipse Adoptium es la continuación de la misión original de AdoptOpenJDK.
 
-== Scope
+== Alcance
 
-Eclipse Adoptium provides runtime binaries that are high performance,
-enterprise-caliber, cross-platform, open-source licensed, Java SE
-TCK-tested and compliant for general use across the Java ecosystem.
-Eclipse Adoptium also provides artifacts including open-source
-infrastructure as code, a comprehensive continuous integration build and
-test farm, and extensive quality assurance tests. These artifacts may be
-used by Eclipse Adoptium projects and other runtime technology builders
-to ensure the provision of secure, Java SE TCK-tested and compliant,
-production-ready runtimes.
+Eclipse Adoptium provee binarios del entorno de ejecución de un alto rendimiento,
+calibre empresarial, multiplataforma, con licencia de código abierto, aprobados por Java SE
+TCK y compatible para uso general en el ecosistema de Java.
+Eclipse Adoptium tambien provee recursos incluyendo infraestructura de código libre, 
+un completo sistema de integración continua de compilación  y
+pruebas, y extensas pruebas de control de calidad. estos recursos pueden ser utilizados
+pro proyectos de Eclipse Adoptium y otros constructores de tecnología de entornos de ejecución
+para asegurar la provisión de entornos de ejecución seguros, probados y conformes con Java SE TCK, listos para producción.
 
 The scope of the project includes developing, managing, promoting, and
 supporting technologies such as:
