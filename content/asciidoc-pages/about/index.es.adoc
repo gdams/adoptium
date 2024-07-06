@@ -1,4 +1,4 @@
-= About Eclipse Adoptium(R)
+= Acerca de Eclipse Adoptium(R)
 :page-authors: gdams, karianna, tellison, parkerm, lasombra, hendrikebbers, davew16, akdsco
 
 La misión del proyecto de alto nivel Eclipse Adoptium es producir entornos
@@ -11,14 +11,14 @@ usuarios generales de los entornos de ejecución, proporcionando un conjunto
 completo de tecnologías para aplicaciones Java que operan conforme a los 
 estándares existentes, infraestructuras y plataformas en la nube.
 
-The AdoptOpenJDK project was established in 2017 following years of
-discussions about the general lack of an open and reproducible build and
-test system for OpenJDK source across multiple platforms. Since then it
-has grown to become a leading provider of high-quality OpenJDK-based
-binaries used by enterprises in embedded systems, desktops, traditional
-servers, modern cloud platforms, and large mainframes. The Eclipse
-Adoptium project is the continuation of the original AdoptOpenJDK
-mission.
+El proyecto AdoptOpenJDK fue establecido en 2017 luego de años de discuciones
+sobre la falta general de un sistema abierto de compilación y prueba para el 
+código fuente de OpenJDK en múltiples plataformas. Desde entonces
+ha crecido hasta convertirse en un proveedor lider de 
+software de alta calidad basado en los binarios de OpenJDK
+utilizados por empresas en sistemas integrados, escritorios, servidores
+tradicionales, plataformas modernas en la nube,
+y grandes computadores centrales. El proyecto Eclipse Adoptium es la continuación de la misión original de AdoptOpenJDK.
 
 == Scope
 
