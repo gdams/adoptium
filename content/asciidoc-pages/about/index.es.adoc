@@ -1,1 +1,65 @@
+= About Eclipse Adoptium(R)
+:page-authors: gdams, karianna, tellison, parkerm, lasombra, hendrikebbers, davew16, akdsco
+
+La misión del proyecto de alto nivel Eclipse Adoptium es producir entornos
+de ejecución de alta calidad y la tecnología asociada para su uso en el ecosistema
+de Java. Logramos esto a través de un conjunto de proyectos bajo el Adoptium PMC
+y una estrecha colaboración con proyectos externos, especialmente con OpenJDK, 
+que proporciona la implementación del entorno de ejecución Java SE. Nuestro 
+objetivo es satisfacer las necesidades tanto de la comunidad Eclipse como de los
+usuarios generales de los entornos de ejecución, proporcionando un conjunto 
+completo de tecnologías para aplicaciones Java que operan conforme a los 
+estándares existentes, infraestructuras y plataformas en la nube.
+
+The AdoptOpenJDK project was established in 2017 following years of
+discussions about the general lack of an open and reproducible build and
+test system for OpenJDK source across multiple platforms. Since then it
+has grown to become a leading provider of high-quality OpenJDK-based
+binaries used by enterprises in embedded systems, desktops, traditional
+servers, modern cloud platforms, and large mainframes. The Eclipse
+Adoptium project is the continuation of the original AdoptOpenJDK
+mission.
+
+== Scope
+
+Eclipse Adoptium provides runtime binaries that are high performance,
+enterprise-caliber, cross-platform, open-source licensed, Java SE
+TCK-tested and compliant for general use across the Java ecosystem.
+Eclipse Adoptium also provides artifacts including open-source
+infrastructure as code, a comprehensive continuous integration build and
+test farm, and extensive quality assurance tests. These artifacts may be
+used by Eclipse Adoptium projects and other runtime technology builders
+to ensure the provision of secure, Java SE TCK-tested and compliant,
+production-ready runtimes.
+
+The scope of the project includes developing, managing, promoting, and
+supporting technologies such as:
+
+* Runtimes and Development Kits: supporting the breadth of APIs
+specified by various versions of Java SE, and available on a wide
+variety of processor architecture and operating system combinations.
+* TCK Testing Infrastructure: providing infrastructure for running Java
+SE TCKs to ensure compliance and compatibility.
+* JDK Mission Control: low-overhead profiling and diagnostics tools
+suite for the JVM.
+* Installers and repositories: various mechanisms for obtaining and
+managing the installation of runtime technology, such as platform native
+installers, container images, download servers, a website, and artifact
+repositories.
+
+In addition to providing a reliable source of contemporary Java runtime
+binaries, the Eclipse Adoptium project is a platform for experimentation
+by developers, academics, and researchers. This provides a place to try
+out new runtime, build, test, and infrastructure ideas. Examples of
+projects that fall under this top-level project include "jlink.online"
+for serving right-sized runtimes to application developers, "Github
+actions" to obtain and test with runtimes within Git’s workflow,
+"TKG" the test-kit generation framework, "Bumblebench" the
+microbenchmarking framework, and more.
+
+== License(s)
+
+* Build scripts and other code to produce the binaries, the website and
+other build infrastructure are licensed under https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0].
+* OpenJDK code itself is licensed under https://openjdk.java.net/legal/gplv2+ce.html[GPL v2 with Classpath Exception] (GPLv2+CE) and https://openjdk.java.net/legal/assembly-exception.html[GPL v2 with Assembly Exception] (GPLv2+Assembly).
 
