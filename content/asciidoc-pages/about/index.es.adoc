@@ -31,34 +31,31 @@ pruebas, y extensas pruebas de control de calidad. estos recursos pueden ser uti
 pro proyectos de Eclipse Adoptium y otros constructores de tecnología de entornos de ejecución
 para asegurar la provisión de entornos de ejecución seguros, probados y conformes con Java SE TCK, listos para producción.
 
-The scope of the project includes developing, managing, promoting, and
-supporting technologies such as:
+El alcance del proyecto incluye el desarrollo, gestión, promoción
+y tecnologías de soporte como:
 
-* Runtimes and Development Kits: supporting the breadth of APIs
-specified by various versions of Java SE, and available on a wide
-variety of processor architecture and operating system combinations.
-* TCK Testing Infrastructure: providing infrastructure for running Java
-SE TCKs to ensure compliance and compatibility.
-* JDK Mission Control: low-overhead profiling and diagnostics tools
-suite for the JVM.
-* Installers and repositories: various mechanisms for obtaining and
-managing the installation of runtime technology, such as platform native
-installers, container images, download servers, a website, and artifact
-repositories.
+* Kits de desarrollo y entornos de ejecucion: respaldado por la amplia gama de API
+especificadas por las versiones de Java SE, disponibles en diversas de combinaciones de arquitectura de procesador y sistema operativo.
+* Infraestructura de pruebas TCK: Proporcionar infraestructura para ejecutar pruebas
+de conformidad y la compatibilidad de Java SE .
+* Control de misión JDK: herramientas de diagnóstico y perfilado de bajo consumo para la suite JVM.
+* instaladores y repositorios: varios mecanismos para obtener y
+manejar la instalacion de la  tecnologia del entorno ejecucio, como instaladores nativos
+de la plataforma, contenedores de imágenes, servidores de descarga, un sitio web
+y repositorios de recursos.
 
-In addition to providing a reliable source of contemporary Java runtime
-binaries, the Eclipse Adoptium project is a platform for experimentation
-by developers, academics, and researchers. This provides a place to try
-out new runtime, build, test, and infrastructure ideas. Examples of
-projects that fall under this top-level project include "jlink.online"
-for serving right-sized runtimes to application developers, "Github
-actions" to obtain and test with runtimes within Git’s workflow,
-"TKG" the test-kit generation framework, "Bumblebench" the
-microbenchmarking framework, and more.
+además de proporcionar una fuente confiable de los binarios contemporáneos del
+entorno de ejecucion de Java, el proyecto Eclipse Adoptium es una plataforma para la experimentación de desarrolladores, academicos e investigadores. esto proporciona
+un lugar para probar nuevas ideas de infraestrucutra, 
+desarrollo, compilacion, pruebas y infraestrutura de ideas. ejemplos de
+proyectos que se incluyen en este proyecto de alto nivel "jlink.online"
+para ofrecer entornos de ejecucion del tamaño adecuado a los desarrolladores de aplicaciones,
+"Github actions" para obtener y probar tiempos de ejecucion dentro de Git workflow,
+"TKG" el framework de generacion de kits de prueba, "Bumblebench" el framework de microbenchmarking, y más.
 
-== License(s)
+== Licencia(s)
 
-* Build scripts and other code to produce the binaries, the website and
-other build infrastructure are licensed under https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0].
-* OpenJDK code itself is licensed under https://openjdk.java.net/legal/gplv2+ce.html[GPL v2 with Classpath Exception] (GPLv2+CE) and https://openjdk.java.net/legal/assembly-exception.html[GPL v2 with Assembly Exception] (GPLv2+Assembly).
+* construir scripts y otros códigos para producir los binarios, el sitio web y
+otras infraestructuras de construcción bajo licencia https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0].
+* El código OpenJDK licenciado bajo  https://openjdk.java.net/legal/gplv2+ce.html[GPL v2 with Classpath Exception] (GPLv2+CE) and https://openjdk.java.net/legal/assembly-exception.html[GPL v2 with Assembly Exception] (GPLv2+Assembly).
 
