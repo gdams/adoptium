@@ -57,5 +57,5 @@ para ofrecer entornos de ejecución del tamaño adecuado a los desarrolladores d
 
 * construir scripts y otros códigos para producir los binarios, el sitio web y
 otras infraestructuras de construcción bajo licencia https://www.apache.org/licenses/LICENSE-2.0[Apache License, Version 2.0].
-* El código OpenJDK bajo licencia  https://openjdk.java.net/legal/gplv2+ce.html[GPL v2 with Classpath Exception] (GPLv2+CE) and https://openjdk.java.net/legal/assembly-exception.html[GPL v2 with Assembly Exception] (GPLv2+Assembly).
+* El código OpenJDK bajo licencia  https://openjdk.java.net/legal/gplv2+ce.html[GPL v2 with Classpath Exception] (GPLv2+CE) y https://openjdk.java.net/legal/assembly-exception.html[GPL v2 with Assembly Exception] (GPLv2+Assembly).
 
