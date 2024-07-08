@@ -1,5 +1,5 @@
 = Acerca de Eclipse Adoptium(R)
-:page-authors: gdams, karianna, tellison, parkerm, lasombra, hendrikebbers, davew16, akdsco
+:page-authors: Thebyren
 
 La misión del proyecto de alto nivel Eclipse Adoptium es producir entornos
 de ejecución de alta calidad y la tecnología asociada para su uso en el ecosistema
