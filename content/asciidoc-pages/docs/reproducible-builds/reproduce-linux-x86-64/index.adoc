@@ -1,0 +1,72 @@
+= Reproducible Verification Build on Linux x86-64
+:description: Reproducible Verification Build on Linux x86-64
+:keywords: Reproducible Builds Secure Supply Chain
+:orgname: Eclipse Adoptium
+:lang: en
+:page-authors: andrew-m-leonard
+
+The following instructions detail the process of rebuilding identically from "source" in a secure build environment, a reproducible build for a given Eclipse Temurin release on the Linux x86-64 platform. The process is performed in a secure manner, using only the upstream sources and securely verified build tooling, so as to provide a mechanism to securely verify the given Eclipse Temurin release binary. This verification then helps determine the security of the supply chains used to build the Eclipse Temurin official release binaries.
+
+== Linux x86-64 reproducible verification build procedure
+
+. Build Environment
++
+To re-build identically Eclipse Temurin on Linux x86-64, a suitable Centos or RHEL, of version 7 or 8, is required.
+
+. Install EPEL Tools
++
+Centos7/8:
++
+[source,]
+----
+yum install epel-release
+----
++
+RHEL7:
++
+[source,]
+----
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+----
++
+RHEL8:
++
+[source,]
+----
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+----
+
+. Install Build Tools
++
+[source,]
+----
+yum install -y git patch gcc gcc-c++ wget bison texinfo lbzip2 zip unzip glibc.x86_64 glibc-devel.x86_64 glibc.i686 glibc-devel.i686 libgcc.i686
+----
+
+. GNU make version >= 4 ?
++
+GNU make must be at least version 4, in order to build the gcc DevKit.
++
+Check the GNU make version
++
+[source,]
+----
+make --version
+----
++
+If not at least version 4, then download and build GNU make 4.3:
+[source,]
+----
+curl -O -L https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
+curl -O -L https://ftp.gnu.org/gnu/make/make-4.3.tar.gz.sig
+# Verify download:
+gpg --keyserver keyserver.ubuntu.com --recv-keys 6D4EEB02AD834703510B117680CB727A20C79BB2
+# Reference: https://lists.gnu.org/archive/html/bug-make/2016-12/msg00002.html
+gpg --verify make-4.3.tar.gz.sig make-4.3.tar.gz
+# Check “Good signature” ?
+tar -xf make-4.3.tar.gz
+(cd make-4.3 && ./configure --prefix=/usr/local && make clean && make && make install)
+ln -s /usr/local/bin/make /usr/local/bin/gmake
+----
+
+
