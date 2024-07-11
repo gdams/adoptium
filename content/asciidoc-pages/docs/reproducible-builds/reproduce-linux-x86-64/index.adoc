@@ -1,5 +1,5 @@
-= Reproducible Verification Build on Linux x86-64
-:description: Reproducible Verification Build on Linux x86-64
+= Temurin Reproducible Verification Build on Linux x86-64
+:description: Temurin Reproducible Verification Build on Linux x86-64
 :keywords: Reproducible Builds Secure Supply Chain
 :orgname: Eclipse Adoptium
 :lang: en
