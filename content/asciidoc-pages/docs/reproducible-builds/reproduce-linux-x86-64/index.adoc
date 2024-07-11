@@ -56,6 +56,7 @@ make --version
 ----
 +
 If not at least version 4, then download and build GNU make 4.3
++
 [source,]
 ----
 curl -O -L https://ftp.gnu.org/gnu/make/make-4.3.tar.gz
