@@ -55,7 +55,7 @@ Check the GNU make version
 make --version
 ----
 +
-If not at least version 4, then download and build GNU make 4.3
+If not at least version 4, then download and build GNU make 4.3 as follows:
 +
 [source,]
 ----
