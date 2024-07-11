@@ -1,4 +1,4 @@
-= Acerca de Eclipse Adoptium(R)
+= About Eclipse Adoptium(R)
 :page-authors: Thebyren
 
 La misión del proyecto de alto nivel Eclipse Adoptium es producir entornos
