@@ -74,6 +74,7 @@ ln -s /usr/local/bin/make /usr/local/bin/gmake
 
 . Set Timezone to UTC
 + For identical builds, the build timezone must be UTC to ensure exact binary build output
++
 [source,]
 ----
 timedatectl set-timezone UTC
@@ -82,6 +83,7 @@ timedatectl set-timezone UTC
 . Download Adoptium DevKit Toolchain make script files
 +
 In order to securely and identically build a gcc DevKit Toolchain, securely download the following scripts from the Eclipse Adoptium repository
++
 [source,]
 ----
 curl -L -O https://raw.githubusercontent.com/adoptium/ci-jenkins-pipelines/master/pipelines/build/devkit/make_devkit.sh
@@ -120,7 +122,6 @@ Open the SBOM json file and determine the "SCM Ref" the release was built from
 ----
 +
 The upstream OpenJDK tag is this value without the "_adopt", eg. "jdk-21.0.3+9"
-+
 
 . Determine the configure arguments for this build
 +
@@ -134,6 +135,7 @@ grep "using configure arguments" <SBOM-metadata.json> | sed -n -e "s/^.*using co
 . Download a suitable Boot JDK
 +
 To build Temurin you need a suitable Boot JDK, open the SBOM json file and determine the version used to build the release
++
 [source,]
 ----
       {
@@ -168,6 +170,7 @@ tar -xf OpenJDK20U-jdk_x64_linux_hotspot_20.0.2_9.tar.gz
 . Clone required upstream OpenJDK source
 +
 Replace jdk21u with the upstream release being built
++
 [source,]
 ----
 git clone https://github.com/openjdk/jdk21u.git jdk21u_bld
