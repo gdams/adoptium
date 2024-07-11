@@ -73,7 +73,8 @@ ln -s /usr/local/bin/make /usr/local/bin/gmake
 ----
 
 . Set Timezone to UTC
-+ For identical builds, the build timezone must be UTC to ensure exact binary build output
++
+For identical builds, the build timezone must be UTC to ensure exact binary build output
 +
 [source,]
 ----
