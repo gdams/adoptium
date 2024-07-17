@@ -17,7 +17,7 @@ Eclipse Temurin RPM、DEB 和 APK 软件包现在可以安装在您最喜欢的 
 ----
 echo "deb [arch=amd64] https://some.repository.url focal main" | sudo tee /etc/apt/sources.list.d/adoptium.list > /dev/null
 ----
-通过使用 `sudo tee`` ，您可以使用提升的权限将存储库记录写入相应的文件，从而防止任何写入权限错误。这确保了安装过程的顺利进行。
+通过使用 `sudo tee` ，您可以使用提升的权限将存储库记录写入相应的文件，从而防止任何写入权限错误。这确保了安装过程的顺利进行。
 ====
 
 == Eclipse Temurin 包名
