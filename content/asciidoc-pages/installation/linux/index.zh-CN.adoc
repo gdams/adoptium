@@ -1,4 +1,4 @@
-= Linux (RPM/DEB/APK) 安装程序包
+= Linux (RPM/DEB/APK) installer packages
 :page-authors: tzzs
 :toc:
 :icons: font
