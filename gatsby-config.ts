@@ -95,6 +95,10 @@ const config: GatsbyConfig = {
           {
             matchPath: '/:lang?/about/',
             getLanguageFromPath: true
+          },
+          {
+            matchPath: '/:lang?/installation/:uid',
+            getLanguageFromPath: true
           }
         ]
       }
