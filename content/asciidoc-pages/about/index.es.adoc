@@ -11,10 +11,10 @@ usuarios generales de los entornos de ejecución, proporcionando un conjunto
 completo de tecnologías para aplicaciones Java que operan conforme a los 
 estándares existentes, infraestructuras y plataformas en la nube.
 
-El proyecto AdoptOpenJDK fue establecido en 2017 luego de años de discuciones
+El proyecto AdoptOpenJDK fue establecido en 2017 luego de años de discusiones
 sobre la falta general de un sistema abierto de compilación y prueba para el 
 código fuente de OpenJDK en múltiples plataformas. Desde entonces
-ha crecido hasta convertirse en un proveedor lider de 
+ha crecido hasta convertirse en un proveedor líder de 
 software de alta calidad basado en los binarios de OpenJDK
 utilizados por empresas en sistemas integrados, escritorios, servidores
 tradicionales, plataformas modernas en la nube,
@@ -25,29 +25,29 @@ y grandes computadores centrales. El proyecto Eclipse Adoptium es la continuaci�
 Eclipse Adoptium provee binarios del entorno de ejecución de un alto rendimiento,
 calibre empresarial, multiplataforma, con licencia de código abierto, aprobados por Java SE
 TCK y compatible para uso general en el ecosistema de Java.
-Eclipse Adoptium tambien provee recursos incluyendo infraestructura de código libre, 
+Eclipse Adoptium también provee recursos incluyendo infraestructura de código libre, 
 un completo sistema de integración continua de compilación  y
 pruebas, y extensas pruebas de control de calidad. Estos recursos pueden ser utilizados
-pro proyectos de Eclipse Adoptium y otros constructores de tecnología de entornos de ejecución
+por proyectos de Eclipse Adoptium y otros constructores de tecnología de entornos de ejecución
 para asegurar la provisión de entornos de ejecución seguros, probados y conformes con Java SE TCK, listos para producción.
 
 El alcance del proyecto incluye el desarrollo, gestión, promoción
 y tecnologías de soporte como:
 
-* Kits de desarrollo y entornos de ejecucion: respaldado por la amplia gama de API
+* Kits de desarrollo y entornos de ejecución: respaldado por la amplia gama de API
 especificadas por las versiones de Java SE, disponibles en diversas de combinaciones de arquitectura de procesador y sistema operativo.
 * Infraestructura de pruebas TCK: Proporcionar infraestructura para ejecutar pruebas
 de conformidad y la compatibilidad de Java SE.
 * Control de misión JDK: herramientas de diagnóstico y perfilado de bajo consumo para la suite JVM.
 * instaladores y repositorios: varios mecanismos para obtener y
-manejar la instalacion de la  tecnologia del entorno ejecucio, como instaladores nativos
+manejar la instalación de la  tecnología del entorno ejecución, como instaladores nativos
 de la plataforma, contenedores de imágenes, servidores de descarga, un sitio web
 y repositorios de recursos.
 
 además de proporcionar una fuente confiable de los binarios contemporáneos del
-entorno de ejecucion de Java, el proyecto Eclipse Adoptium es una plataforma para la experimentación de desarrolladores, academicos e investigadores. Esto proporciona
-un lugar para probar nuevas ideas de infraestrucutra, 
-desarrollo, compilación, pruebas y infraestrutura de ideas. ejemplos de
+entorno de ejecución de Java, el proyecto Eclipse Adoptium es una plataforma para la experimentación de desarrolladores, académicos e investigadores. Esto proporciona
+un lugar para probar nuevas ideas de infraestructra, 
+desarrollo, compilación, pruebas y infraestructura de ideas. ejemplos de
 proyectos que se incluyen en este proyecto de alto nivel "jlink.online"
 para ofrecer entornos de ejecución del tamaño adecuado a los desarrolladores de aplicaciones,
 "Github actions" para obtener y probar tiempos de ejecución dentro de Git workflow,
