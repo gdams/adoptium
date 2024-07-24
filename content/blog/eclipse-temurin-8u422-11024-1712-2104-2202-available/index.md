@@ -1,0 +1,64 @@
+---
+title: Eclipse Temurin 8u422, 11.0.24, 17.0.12, 21.0.4 and 22.0.2 Available
+date: "2024-07-24"
+author: pmc
+description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u422, 11.0.24, 17.0.12 21.0.4 and 22.0.2 - surpassing April's release as the largest set of platforms published. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
+tags:
+  - temurin
+  - announcement
+  - release-notes
+---
+
+Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u422-b05, 11.0.24+8, 17.0.12+7, 21.0.4+7 and 22.0.2+9. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. Binaries, installers, and source code are available from the [Temurin download page](https://adoptium.net/temurin/releases), [official container images](https://hub.docker.com/_/eclipse-temurin) are available at DockerHub, and [installable packages](https://adoptium.net/installation/) are available for various operating systems.
+
+This is by far our biggest release to date with 56 version/platform combinations with five major versions of OpenJDK currently being supported for the first time. By comparison, the April release had 54 combinations. There was also a ~50% decrease in the number of people available to help with the July release activities due to vacations and other commitments. Despite this, we still managed to complete the releases more quickly than in the previous cycles.
+
+## Security Vulnerabilities Resolved
+
+The following table summarizes security vulnerabilities fixed in this release cycle. The affected Temurin version streams are noted by an 'X' in the table. Each line shows the [Common Vulnerabilities and Exposures (CVE) vulnerability database](https://nvd.nist.gov/vuln) reference and [Common Vulnerability Scoring System (CVSS) v3.1 base score](https://www.first.org/cvss/v3.1/specification-document) provided by the [OpenJDK Vulnerability Group](https://openjdk.org/groups/vulnerability/). Note that defense-in-depth issues are not assigned CVEs.
+
+| CVE Identifier  | Component | CVSS Score | v8 | v11 | v17 | v21 | v22 |
+| :---                                                              | :---                | :----:      |  :----:   | :----:     | :----:     | :----:     |  :----:     |
+| [CVE-2024-21147](https://nvd.nist.gov/vuln/detail/CVE-2024-21147) | hotspot/compiler    | High ([7.4](https://nvd.nist.gov/vuln/detail/CVE-2024-21147))   |  X    | X      |  X    |   X |  X |
+| [CVE-2024-21145](https://nvd.nist.gov/vuln/detail/CVE-2024-21145) | client-libs/2d    | Medium ([4.8](https://nvd.nist.gov/vuln/detail/CVE-2024-21145))   |  X    | X      |  X    |   X |  X |
+| [CVE-2024-21140](https://nvd.nist.gov/vuln/detail/CVE-2024-21140) | hotspot/compiler    | Medium ([4.8](https://nvd.nist.gov/vuln/detail/CVE-2024-21140))   |  X    | X      |  X    |   X |  X |
+| [CVE-2024-21144](https://nvd.nist.gov/vuln/detail/CVE-2024-21144) | core-libs/java.util   | Low ([3.7](https://nvd.nist.gov/vuln/detail/CVE-2024-21144))   |  X    | X      |      |    |   |
+| [CVE-2024-21131](https://nvd.nist.gov/vuln/detail/CVE-2024-21131) | hotspot/runtime  | Low ([3.7](https://nvd.nist.gov/vuln/detail/CVE-2024-21131))   |  X    | X      | X     |  X  |  X |
+| [CVE-2024-21138](https://nvd.nist.gov/vuln/detail/CVE-2024-21138) | hotspot/runtime  | Low ([3.7](https://nvd.nist.gov/vuln/detail/CVE-2024-21138))   |  X    | X      | X     |  X  |  X |
+
+Users should follow the [Adoptium policy for reporting vulnerability concerns](https://github.com/adoptium/adoptium/security/policy#security-policies-and-procedures) with this release.
+
+## Fixes and Updates
+
+This release contains the following fixes and updates.
+
+* [Temurin 8u422 release notes](https://adoptium.net/temurin/release-notes/?version=jdk8u422-b05), including [fixes in OpenJDK 8u422](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+openjdk8u422)
+
+* [Temurin 11.0.24 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-11.0.24+8), including [fixes in OpenJDK 11.0.24](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+11.0.24)
+
+* [Temurin 17.0.11 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-17.0.12+7), including [fixes in OpenJDK 17.0.12](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+17.0.12)
+
+* [Temurin 21.0.4 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-21.0.4+7), including [fixes in OpenJDK 21.0.4](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+21.0.4)
+
+* [Temurin 22.0.2 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-22.0.2+9), including [fixes in OpenJDK 22.0.2](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+22.0.2)
+
+## New and Noteworthy
+
+### Container Updates
+#### Changes to Docker image external CA certs handling
+
+There are slightly modified instructions to answer the question 'Can I add my internal CA certificates to the truststore?' in my Temurin container, especially when running your containers in a restricted-by-default non-root environment.  
+
+If this describes your use case, please take a look at the [updated documentation](https://github.com/docker-library/docs/pull/2445/).
+
+#### Removal of CentOS 7 Eclipse Temurin Images
+CentOS 7 reached its End of Life (EOL) on June 30th, 2024. Given that end date, no further updates or support will be provided for CentOS 7, and to ensure the continued security and stability of your applications, we recommend migrating to the UBI9-minimal images.  For additional details, please read our recent [blog post](https://adoptium.net/blog/2024/07/removal-of-centos7-eclipse-temurin-images/) regarding this update.
+
+#### Ubuntu Noble (24.04) Support
+Add support for Ubuntu Noble (24.04) in the next PSU alongside the others, with a view to making it the only option for Temurin 23. Noble is now the default latest tag.
+
+### Elevated security for Windows Installers now using Wix5 
+Windows installer to start using Wix5 and implement other security-related fixes.  
+
+### ppc64 AIX JDK22 now available
+We are pleased to announce the availability of JDK22 on ppc64 AIX.  It was awaiting a compiler update in our infrastructure to allow being built on OpenXL 17.  Since [Infrastructure issue 3208](https://github.com/adoptium/infrastructure/issues/3208) was addressed, we were able to build, test, and deliver this platform.  For those planning on using this binary, it should be noted that it requires XLC 17, a later version of XLC than that required by JDK8 - JDK21 binaries, in order to run.
