@@ -76,9 +76,9 @@ The three ways to work around are:
 
 All are valid options but it may be beneficial for users start updating Dockerfiles to use the `adduser` command where possible to increase compatibility with a range of glibc-based base images. Fedora, for example, has an `adduser` command which is a symlink to useradd which operates in the same way as the Ubuntu `useradd`.
 
-### Elevated security for Windows Installers now using Wix5 
+### Elevated security for Windows Installers now using Wix5
 
-There are updates to the Temurin Windows installer to implement some security-related fixes and as part of these, the installer is now using Wix5.  There should be no behavioural differences, but users are asked to report any unknown side-effects by raising an [adoptium-support](https://github.com/adoptium/adoptium-support) issue.   
+There are updates to the Temurin Windows installer to implement some security-related fixes and as part of these, the installer is now using Wix5.  There should be no behavioural differences, but users are asked to report any unknown side-effects by raising an [adoptium-support](https://github.com/adoptium/adoptium-support) issue.
 
 ### ppc64 AIX JDK22 now available
 
