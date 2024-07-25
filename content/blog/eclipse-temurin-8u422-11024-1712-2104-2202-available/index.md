@@ -67,9 +67,13 @@ Support for Ubuntu Noble (24.04) was added alongside the others, with a view to 
 This change could impact users as Ubuntu are no longer including the `adduser` package by default in the container images for 24.04 (Noble) where they were present in 22.04 (Jammy) so our switch from presenting 24.04 as the default for our images now has shown this issue.
 
 The three ways to work around are:
+
 1. Switch to using `useradd` - it is there by default and supplied as part of in the passwd package.
+
 2. Install the `adduser` package in your images - though this requires an apt update in your Dockerfile first to pull down the repository information (which will add about 35MB to the size of your image) then `apt install adduser` to add in the package containing adduser (and addgroup).
+
 3. Switch back to explicitly use the eclipse-temurin -jammy images, by appending `-jammy` to the end of their tag, for example, `eclipse-temurin:21-jdk-jammy`.
+
 All are valid options but it may be beneficial for users start updating Dockerfiles to use the `adduser` command where possible to increase compatibility with a range of glibc-based base images. Fedora, for example, has an `adduser` command which is a symlink to useradd which operates in the same way as the Ubuntu `useradd`.
 
 ### Elevated security for Windows Installers now using Wix5 
