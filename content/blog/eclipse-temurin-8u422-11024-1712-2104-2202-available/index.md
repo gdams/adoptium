@@ -44,7 +44,12 @@ This release contains the following fixes and updates.
 
 ## New and Noteworthy
 
+### JDK8 x64 MacOS Respin
+
+A pkg file that was not signed was inadvertently published during this release (reported in this adoptium-support [issue](https://github.com/adoptium/adoptium-support/issues/1139)).  Due to this, we needed to respin the JDK8 x64 MacOS binary.
+
 ### Container Updates
+
 #### Changes to Docker image external CA certs handling
 
 There are slightly modified instructions to answer the question 'Can I add my internal CA certificates to the truststore?' in my Temurin container, especially when running your containers in a restricted-by-default non-root environment.  
@@ -52,13 +57,19 @@ There are slightly modified instructions to answer the question 'Can I add my in
 If this describes your use case, please take a look at the [updated documentation](https://github.com/docker-library/docs/pull/2445/).
 
 #### Removal of CentOS 7 Eclipse Temurin Images
+
 CentOS 7 reached its End of Life (EOL) on June 30th, 2024. Given that end date, no further updates or support will be provided for CentOS 7, and to ensure the continued security and stability of your applications, we recommend migrating to the UBI9-minimal images.  For additional details, please read our recent [blog post](https://adoptium.net/blog/2024/07/removal-of-centos7-eclipse-temurin-images/) regarding this update.
 
 #### Ubuntu Noble (24.04) Support
-Add support for Ubuntu Noble (24.04) in the next PSU alongside the others, with a view to making it the only option for Temurin 23. Noble is now the default latest tag.
+
+Support for Ubuntu Noble (24.04) was added alongside the others, with a view to making it the only option for Temurin 23. Noble is now the default latest tag.  This change in the default could impact users since `adduser` and `addgroup` has been removed in the default Ubuntu Noble container images that we base on.  Users should change any occurrences of that to use `useradd` instead, or install the `adduser` package inside their dockerfile first before using those commands.
+
+Another option is to not use the default latest tag.  Users can continue to use the jammy images by appending `-jammy` to the end of their tag. E.g `eclipse-temurin:21-jdk-jammy`.
 
 ### Elevated security for Windows Installers now using Wix5 
+
 Windows installer to start using Wix5 and implement other security-related fixes.  
 
 ### ppc64 AIX JDK22 now available
-We are pleased to announce the availability of JDK22 on ppc64 AIX.  It was awaiting a compiler update in our infrastructure to allow being built on OpenXL 17.  Since [Infrastructure issue 3208](https://github.com/adoptium/infrastructure/issues/3208) was addressed, we were able to build, test, and deliver this platform.  For those planning on using this binary, it should be noted that it requires XLC 17, a later version of XLC than that required by JDK8 - JDK21 binaries, in order to run.
+
+We are pleased to announce the availability of JDK22 on ppc64 AIX.  It was awaiting a compiler update in our infrastructure to allow being built on OpenXL 17.  Since [Infrastructure issue 3208](https://github.com/adoptium/infrastructure/issues/3208) was addressed, we were able to build, test, and deliver this platform.  For those planning on using this binary, it should be noted that it requires XLC 17, a later version of XLC than that required by JDK8 through JDK21 binaries, in order to run.
