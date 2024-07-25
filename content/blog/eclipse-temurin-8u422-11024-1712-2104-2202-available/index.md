@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 8u422, 11.0.24, 17.0.12, 21.0.4 and 22.0.2 Available
-date: "2024-07-24"
+date: "2024-07-26"
 author: pmc
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u422, 11.0.24, 17.0.12 21.0.4 and 22.0.2 - surpassing April's release as the largest set of platforms published. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
@@ -11,7 +11,7 @@ tags:
 
 Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u422-b05, 11.0.24+8, 17.0.12+7, 21.0.4+7 and 22.0.2+9. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms. Binaries, installers, and source code are available from the [Temurin download page](https://adoptium.net/temurin/releases), [official container images](https://hub.docker.com/_/eclipse-temurin) are available at DockerHub, and [installable packages](https://adoptium.net/installation/) are available for various operating systems.
 
-This is by far our biggest release to date with 56 version/platform combinations with five major versions of OpenJDK currently being supported for the first time. By comparison, the April release had 54 combinations. There was also a ~50% decrease in the number of people available to help with the July release activities due to vacations and other commitments. Despite this, we still managed to complete the releases more quickly than in the previous cycles.
+This is by far our biggest release to date with 56 version/platform combinations with five major versions of OpenJDK currently being supported where JDK17 has 12 platforms and the other versions have 11 platforms being delivered. By comparison, the April release had 54 combinations. There was also a ~50% decrease in the number of people available to help with the July release activities due to vacations and other commitments. Despite this, we still managed to complete the releases more quickly than in the previous cycles.
 
 ## Security Vulnerabilities Resolved
 
@@ -46,7 +46,7 @@ This release contains the following fixes and updates.
 
 ### JDK8 x64 macOS Respin
 
-A pkg file that was not signed was inadvertently published during this release (reported in this adoptium-support [issue](https://github.com/adoptium/adoptium-support/issues/1139)).  Due to this, we needed to respin the JDK8 x64 macOS binary.
+Eclipse Temurin jdk8u422 x64 macOS are in a separate release named jdk8u422-b05.1 due to a respin that was required to fix a signing issue.
 
 ### Container Updates
 
@@ -60,7 +60,8 @@ If this describes your use case, please take a look at the [updated documentatio
 
 CentOS 7 reached its End of Life (EOL) on June 30th, 2024. Given that end date, no further updates or support will be provided for CentOS 7, and to ensure the continued security and stability of your applications, we recommend migrating to the UBI9-minimal images.  For additional details, please read our recent [blog post](https://adoptium.net/blog/2024/07/removal-of-centos7-eclipse-temurin-images/) regarding this update.
 
-#### Ubuntu Noble (24.04) Support
+#### Ubuntu Noble (24.04) is included and is now the default
+
 Support for Ubuntu Noble (24.04) was added alongside the others, with a view to making it the only option for Temurin 23. Noble is now the default latest tag for Temurin containers.
 
 This change could impact users as Ubuntu are no longer including the `adduser` package by default in the container images for 24.04 (Noble) where they were present in 22.04 (Jammy) so our switch from presenting 24.04 as the default for our images now has shown this issue.
@@ -77,4 +78,8 @@ There are updates to the Temurin Windows installer to implement some security-re
 
 ### ppc64 AIX JDK22 now available
 
-We are pleased to announce the availability of JDK22 on ppc64 AIX.  It was awaiting a compiler update in our infrastructure to allow being built on OpenXL 17.  Since [Infrastructure issue 3208](https://github.com/adoptium/infrastructure/issues/3208) was addressed, we were able to build, test, and deliver this platform.  For those planning on using this binary, it should be noted that it requires XLC 17, a later version of XLC than that required by JDK8 through JDK21 binaries, in order to run.
+We are pleased to announce the availability of JDK22 on ppc64 AIX.  It was awaiting a compiler update in our infrastructure to allow being built on OpenXL 17.  Since [Infrastructure issue 3208](https://github.com/adoptium/infrastructure/issues/3208) was addressed, we were able to build, test, and deliver this platform.  For those planning on using this binary, it should be noted that it requires the [OpenXL 17 runtime](https://www.ibm.com/docs/en/openxl-c-and-cpp-aix/17.1.1?topic=reference-open-xl-cc-runtime-environment-filesets) (which also requires AIX 7.2 TL5 SP3 or later), as opposed to the XLC16 runtime required by JDK8 through JDK21.
+
+### Ubuntu 24.04 added as a supported platform
+
+Ubuntu 24.04 is added as a [supported platform](https://adoptium.net/supported-platforms/) after extensive testing on our Temurin build on it.  It is also available as an Temurin Docker image, as mentioned in the Container Updates section above.
