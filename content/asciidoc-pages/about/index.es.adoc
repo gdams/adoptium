@@ -46,7 +46,7 @@ y repositorios de recursos.
 
 además de proporcionar una fuente confiable de los binarios contemporáneos del
 entorno de ejecución de Java, el proyecto Eclipse Adoptium es una plataforma para la experimentación de desarrolladores, académicos e investigadores. Esto proporciona
-un lugar para probar nuevas ideas de infraestructra, 
+un lugar para probar nuevas ideas de infraestructura, 
 desarrollo, compilación, pruebas y infraestructura de ideas. ejemplos de
 proyectos que se incluyen en este proyecto de alto nivel "jlink.online"
 para ofrecer entornos de ejecución del tamaño adecuado a los desarrolladores de aplicaciones,
