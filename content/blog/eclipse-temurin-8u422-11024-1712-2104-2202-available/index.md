@@ -44,9 +44,9 @@ This release contains the following fixes and updates.
 
 ## New and Noteworthy
 
-### JDK8 x64 MacOS Respin
+### JDK8 x64 macOS Respin
 
-A pkg file that was not signed was inadvertently published during this release (reported in this adoptium-support [issue](https://github.com/adoptium/adoptium-support/issues/1139)).  Due to this, we needed to respin the JDK8 x64 MacOS binary.
+A pkg file that was not signed was inadvertently published during this release (reported in this adoptium-support [issue](https://github.com/adoptium/adoptium-support/issues/1139)).  Due to this, we needed to respin the JDK8 x64 macOS binary.
 
 ### Container Updates
 
@@ -61,14 +61,19 @@ If this describes your use case, please take a look at the [updated documentatio
 CentOS 7 reached its End of Life (EOL) on June 30th, 2024. Given that end date, no further updates or support will be provided for CentOS 7, and to ensure the continued security and stability of your applications, we recommend migrating to the UBI9-minimal images.  For additional details, please read our recent [blog post](https://adoptium.net/blog/2024/07/removal-of-centos7-eclipse-temurin-images/) regarding this update.
 
 #### Ubuntu Noble (24.04) Support
+Support for Ubuntu Noble (24.04) was added alongside the others, with a view to making it the only option for Temurin 23. Noble is now the default latest tag for Temurin containers.
 
-Support for Ubuntu Noble (24.04) was added alongside the others, with a view to making it the only option for Temurin 23. Noble is now the default latest tag.  This change in the default could impact users since `adduser` and `addgroup` has been removed in the default Ubuntu Noble container images that we base on.  Users should change any occurrences of that to use `useradd` instead, or install the `adduser` package inside their dockerfile first before using those commands.
+This change could impact users as Ubuntu are no longer including the `adduser` package by default in the container images for 24.04 (Noble) where they were present in 22.04 (Jammy) so our switch from presenting 24.04 as the default for our images now has shown this issue.
 
-Another option is to not use the default latest tag.  Users can continue to use the jammy images by appending `-jammy` to the end of their tag. E.g `eclipse-temurin:21-jdk-jammy`.
+The three ways to work around are:
+1. Switch to using `useradd` - it is there by default and supplied as part of in the passwd package.
+2. Install the `adduser` package in your images - though this requires an apt update in your Dockerfile first to pull down the repository information (which will add about 35MB to the size of your image) then `apt install adduser` to add in the package containing adduser (and addgroup).
+3. Switch back to explicitly use the eclipse-temurin -jammy images, by appending `-jammy` to the end of their tag, for example, `eclipse-temurin:21-jdk-jammy`.
+All are valid options but it may be beneficial for users start updating Dockerfiles to use the `adduser` command where possible to increase compatibility with a range of glibc-based base images. Fedora, for example, has an `adduser` command which is a symlink to useradd which operates in the same way as the Ubuntu `useradd`.
 
 ### Elevated security for Windows Installers now using Wix5 
 
-Windows installer to start using Wix5 and implement other security-related fixes.  
+There are updates to the Temurin Windows installer to implement some security-related fixes and as part of these, the installer is now using Wix5.  There should be no behavioural differences, but users are asked to report any unknown side-effects by raising an [adoptium-support](https://github.com/adoptium/adoptium-support) issue.   
 
 ### ppc64 AIX JDK22 now available
 
