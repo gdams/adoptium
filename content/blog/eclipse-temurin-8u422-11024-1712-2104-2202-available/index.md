@@ -46,7 +46,7 @@ This release contains the following fixes and updates.
 
 ### JDK8 x64 macOS Respin
 
-Eclipse Temurin jdk8u422 x64 macOS are in a separate release named jdk8u422-b05.1 due to a respin that was required to fix a signing issue.
+Eclipse Temurin jdk8u422 x64 macOS is in a separate release named jdk8u422-b05.1 due to a respin that was required to fix a signing issue.
 
 ### Container Updates
 
