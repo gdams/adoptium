@@ -82,7 +82,7 @@ There are updates to the Temurin Windows installer to implement some security-re
 
 ### ppc64 AIX JDK22 now available
 
-We are pleased to announce the availability of JDK22 on ppc64 AIX.  It was awaiting a compiler update in our infrastructure to allow being built on OpenXL 17.  Since [Infrastructure issue 3208](https://github.com/adoptium/infrastructure/issues/3208) was addressed, we were able to build, test, and deliver this platform.  For those planning on using this binary, it should be noted that it requires the [OpenXL 17 runtime](https://www.ibm.com/docs/en/openxl-c-and-cpp-aix/17.1.1?topic=reference-open-xl-cc-runtime-environment-filesets) (which also requires AIX 7.2 TL5 SP3 or later), as opposed to the XLC16 runtime required by JDK8 through JDK21.
+We are pleased to announce the availability of JDK22 on ppc64 AIX.  It was awaiting a compiler update in our infrastructure to allow being built on OpenXL 17.  Since [Infrastructure issue 3208](https://github.com/adoptium/infrastructure/issues/3208) was addressed, we were able to build, test, and deliver this platform.  For those planning on using this binary, it should be noted that it requires the [OpenXL 17 runtime](https://www.ibm.com/docs/en/openxl-c-and-cpp-aix/17.1.2?topic=reference-open-xl-cc-runtime-environment-filesets) (which also requires AIX 7.2 TL5 SP3 or later), as opposed to the XLC16 runtime required by JDK8 through JDK21.
 
 ### Ubuntu 24.04 added as a supported platform
 
