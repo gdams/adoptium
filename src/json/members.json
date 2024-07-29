@@ -62,6 +62,12 @@
     "tier": "enterprise"
   },
   {
+    "name": "Fujitsu",
+    "logo": "fujitso-logo.png",
+    "url": "https://www.fujitsu.com",
+    "tier": "enterprise"
+  },
+  {
     "name": "iJUG",
     "logo": "ijug.png",
     "url": "https://www.ijug.eu",
