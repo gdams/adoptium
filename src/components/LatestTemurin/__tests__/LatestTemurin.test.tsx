@@ -52,4 +52,18 @@ describe('RandomContributor component', () => {
     const { container } = render(<LatestTemurin />);
     expect(container).toMatchSnapshot();
   });
+
+  it('should render correctly - MAC', () => {
+    vi.spyOn(detectOSModule, 'detectOS').mockReturnValue(UserOS.MAC);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    useOnScreen.mockReturnValue(true);
+
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    fetchLatestForOS.mockReturnValue(createRandomLatestForOSData());
+
+    const { container } = render(<LatestTemurin />);
+    expect(container).toMatchSnapshot();
+  });
 });
