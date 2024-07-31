@@ -56,6 +56,12 @@
     "tier": "enterprise"
   },
   {
+    "name": "Fujitsu",
+    "logo": "fujitsu-logo.png",
+    "url": "https://www.fujitsu.com",
+    "tier": "enterprise"
+  },
+  {
     "name": "IBM",
     "logo": "ibm-logo.png",
     "url": "https://ibm.com",
