@@ -240,19 +240,19 @@ Download and unpack the Temurin JDK to be verified from https://github.com/adopt
 +
 [source,]
 ----
-curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz
-tar -xf OpenJDK21U-jdk_x64_linux_hotspot_21.0.3_9.tar.gz
+curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz
+tar -xf OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz
 ----
 
 . Remove the same non-relevant files
 +
 [source,]
 ----
-rm -f jdk-21.0.3+9/lib/security/cacerts
-rm -f jdk-21.0.3+9/release
-rm -f jdk-21.0.3+9/NOTICE
-(mkdir jdk-21.0.3+9/jmods/java.base_expanded && jmod extract --dir jdk-21.0.3+9/jmods/java.base_expanded jdk-21.0.3+9/jmods/java.base.jmod && rm -f jdk-21.0.3+9/jmods/java.base.jmod)
-rm -f jdk-21.0.3+9/jmods/java.base_expanded/lib/security/cacerts
+rm -f jdk-21.0.4+7/lib/security/cacerts
+rm -f jdk-21.0.4+7/release
+rm -f jdk-21.0.4+7/NOTICE
+(mkdir jdk-21.0.4+7/jmods/java.base_expanded && jmod extract --dir jdk-21.0.4+7/jmods/java.base_expanded jdk-21.0.4+7/jmods/java.base.jmod && rm -f jdk-21.0.4+7/jmods/java.base.jmod)
+rm -f jdk-21.0.4+7/jmods/java.base_expanded/lib/security/cacerts
 ----
 
 . Verify the local secure re-build is identical to the official Eclipse Temurin binary
@@ -261,7 +261,7 @@ Compare the two images
 +
 [source,]
 ----
-diff -r openjdk_build/images/jdk jdk-21.0.3+9
+diff -r openjdk_build/images/jdk jdk-21.0.4+7
 ----
 +
 For a successful verification there should be no differences.
