@@ -174,6 +174,13 @@ Unpack into a suitable folder
 ----
 tar -xf OpenJDK20U-jdk_x64_linux_hotspot_20.0.2_9.tar.gz
 ----
++
+Add to PATH environment
++
+[source,]
+----
+export PATH=<bootjdk>/bin:$PATH
+----
 
 . Clone required upstream OpenJDK source
 +
