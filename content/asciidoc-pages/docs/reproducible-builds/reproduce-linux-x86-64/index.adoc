@@ -107,7 +107,14 @@ curl -L -O https://raw.githubusercontent.com/adoptium/ci-jenkins-pipelines/maste
 bash ./make_devkit.sh jdk21u x86_64 Centos 7.9.2009
 ----
 +
-The built DevKit will be in folder jdk21u/build/devkit/result/x86_64-linux-gnu-to-x86_64-linux-gnu
+The built "DevKit path" will be in folder jdk21u/build/devkit/result/x86_64-linux-gnu-to-x86_64-linux-gnu
++
+Set LD_LIBRARY_PATH to locate the newly built DevKit libraries
++
+[source,]
+----
+        export LD_LIBRARY_PATH=<DevKit path>/lib64:<DevKit path>/lib
+----
 
 . Download SBOM of Eclipse Temurin build to be verified
 +
