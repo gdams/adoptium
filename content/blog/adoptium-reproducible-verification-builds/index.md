@@ -62,4 +62,3 @@ Today's Enterprise Software needs to be more secure and safe from vulnerability 
 for ensuring the security of the supply chain and ways of demonstrating the quality of the products delivered are essential.
 The ability to perform secure verification using a third-party Eclipse Temurin reproducible build greatly extends the security
 and confidence in the supply chains used by the Eclipse Adoptium community.
-
