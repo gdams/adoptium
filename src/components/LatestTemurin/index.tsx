@@ -18,14 +18,14 @@ const LatestTemurin = (props): JSX.Element => {
       userOSName = 'macOS'
       userOSAPIName = 'mac'
       if (typeof document !== 'undefined') {
-        let w = document.createElement("canvas").getContext("webgl");
+        let gl = document.createElement("canvas").getContext("webgl");
         // @ts-ignore
-        let d = w.getExtension('WEBGL_debug_renderer_info');
+        let ext = gl && gl.getExtension('WEBGL_debug_renderer_info');
         // @ts-ignore
-        let g = d && w.getParameter(d.UNMASKED_RENDERER_WEBGL) || "";
+        let param = ext && gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) || "";
         isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         //Detect if the user is using a Apple GPU (M1)
-        if (isSafari || (g.match(/Apple/) && !g.match(/Apple GPU/))) {
+        if (isSafari || (param.match(/Apple/) && !param.match(/Apple GPU/))) {
           arch = 'aarch64'
         }
       }
