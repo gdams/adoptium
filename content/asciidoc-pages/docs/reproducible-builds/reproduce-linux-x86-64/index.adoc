@@ -246,6 +246,8 @@ rm -rf images/jdk/demo
 find "images/jdk" -type f -name "*.debuginfo" -delete
 (mkdir images/jdk/jmods/java.base_expanded && jmod extract --dir images/jdk/jmods/java.base_expanded images/jdk/jmods/java.base.jmod && rm -f images/jdk/jmods/java.base.jmod)
 rm -f images/jdk/jmods/java.base_expanded/lib/security/cacerts
+# Change back to root directory
+cd ..
 ----
 
 . Download offical Eclipse Temurin release for "Verification"
