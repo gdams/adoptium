@@ -48,7 +48,7 @@ yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.r
 +
 [source,]
 ----
-yum install -y git patch gcc gcc-c++ wget bison texinfo lbzip2 zip unzip glibc.x86_64 glibc-devel.x86_64 glibc.i686 glibc-devel.i686 libgcc.i686
+yum install -y tar git patch gcc gcc-c++ wget bison texinfo lbzip2 zip unzip glibc.x86_64 glibc-devel.x86_64 glibc.i686 glibc-devel.i686 libgcc.i686
 yum install -y autoconf systemtap systemtap-sdt-devel
 ----
 
@@ -111,12 +111,12 @@ The built DevKit will be in folder jdk21u/build/devkit/result/x86_64-linux-gnu-t
 
 . Download SBOM of Eclipse Temurin build to be verified
 +
-For example, to download the SBOM and SBOM-metadata for release jdk-21.0.3+9
+For example, to download the SBOM and SBOM-metadata for release jdk-21.0.4+7
 +
 [source,]
 ----
-curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-sbom_x64_linux_hotspot_21.0.3_9.json
-curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-sbom_x64_linux_hotspot_21.0.3_9-metadata.json
+curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-sbom_x64_linux_hotspot_21.0.4_7.json
+curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-sbom_x64_linux_hotspot_21.0.4_7-metadata.json
 ----
 
 . Determine upstream OpenJDK source tag to be built
@@ -127,20 +127,11 @@ Open the SBOM json file and determine the "SCM Ref" the release was built from
 ----
         {
           "name" : "SCM Ref",
-          "value" : "jdk-21.0.3+9_adopt"
+          "value" : "jdk-21.0.4+7_adopt"
         },
 ----
 +
-The upstream OpenJDK tag is this value without the "_adopt", eg. "jdk-21.0.3+9"
-
-. Determine the configure arguments for this build
-+
-Use the following grep to find the required configure arguments from the SBOM-metadata.json
-+
-[source,]
-----
-grep "using configure arguments" <SBOM-metadata.json> | sed -n -e "s/^.*using configure arguments '\(.*\)'\..*/\1/p"
-----
+The upstream OpenJDK tag is this value without the "_adopt", eg. "jdk-21.0.4+7"
 
 . Download a suitable Boot JDK
 +
@@ -197,8 +188,16 @@ mkdir openjdk_build
 
 . Configure build
 +
-Edit the "configure args" determined above to match your local environment
+Determine and edit the "configure args" to match your local environment
 +
+.. Determine the configure arguments for this build
++
+Use the following grep to find the required configure arguments from the SBOM-metadata.json
++
+[source,]
+----
+grep "using configure arguments" <SBOM-metadata.json> | sed -n -e "s/^.*using configure arguments '\(.*\)'\..*/\1/p"
+----
 .. Replace -–with-devkit=<path>, with path to the local built gcc DevKit "<path>/jdk21u/build/devkit/result/x86_64-linux-gnu-to-x86_64-linux-gnu".
 .. Remove -–with-cacerts-src=<path>, as Temurin is built with Mozilla CA certs, whereas the local build will use the standard OpenJDK CA certs.
 .. Replace -–with-boot-jdk=<path>, with the path to your local un-tared boot jdk from above.
