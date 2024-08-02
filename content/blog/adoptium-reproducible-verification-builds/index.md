@@ -41,8 +41,8 @@ subsequently used to build the Eclipse Temurin binaries.
 
 ## Independently fully reproducible Eclipse Temurin
 
-Combining the use of the "gcc DevKit", the well defined Eclipse Temurin build pipeline and the output of the secure development Software Bill
-of Materials (SBOM), then allows a documented and independent method for third-parties to perform an identical reproducible build.
+Combining the use of the "gcc DevKit", the well defined Eclipse Temurin build pipeline and the generated secure development Software Bill
+of Materials (SBOM), allows a documented and independent method for third-parties to perform an identical reproducible build.
 By comparing the independently built binary with the official Eclipse Temurin release, any discrepancies or tampering can be detected,
 ensuring that the Temurin JDK has been securely and correctly built. These third-party Reproducible builds help maintain trust in the supply chain
 by providing a mechanism for independent verification of software integrity of the Eclipse Temurin release binaries.
