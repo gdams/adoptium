@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin Reproducible Verifications Builds for Secure Development
-date: "2024-08-01T12:00:00+00:00"
+date: "2024-08-09T12:00:00+00:00"
 author: andrewleonard
 description: Eclipse Temurin jdk-21+ builds are fully reproducible build. This blog explains how
  third-party users can perform an independent secure identical verification of an Eclipse Temurin build,
