@@ -9,7 +9,14 @@ tags:
   - temurin
 ---
 
-## What is a third-party Reproducible Verification Build?
+### What is a third-party Reproducible Verification Build?
+
+A third-party reproducible build helps maintain trust in the supply chain by providing a mechanism for independent verification of
+the software integrity of the official releases. An important aspect for performing an independent reproducible build is the security
+and source of the build environment, and the source of tooling. As much as possible the upstream product source, build scripts and toolchain
+must be original securely obtained source, and any system binaries must be securely verified by signatures. Once completed, a bit-for-bit identical
+comparison with the official Eclipse Temurin release binaries will then validate to a very high degree the secure supply chain used and that the official
+Eclipse Temurin binary is secure and not been tampered with.
 
 ### Eclipse Temurin jdk-21+ now "Fully Reproducible"
 
@@ -18,13 +25,6 @@ how the Adoptium community has been working to achieve fully "Reproducible Build
 and how that helps provide better secure supply chain validation, and improved build pipeline quality and script verification.
 Eclipse Temurin jdk-21+ releases are now fully reproducible for the primary platforms (x86_64 Linux, aarch64 Linux, Windows and Mac),
 and we have introduced new AQAVit reproducible compare tests to track and monitor the reproducibility.
-
-### Why independently re-building Eclipse Temurin is useful
-
-The idea behind a "third-party Reproducible Verification Build", is that an independent party can re-build identically purely from source and
-securely obtained tooling, using their own secure build environment. This re-build can then be compared bit-for-bit to be identical
-to the official Eclipse Temurin release. This then provides a very high degree of secure supply chain validation that the official
-Eclipse Temurin binary is good and securely built.
 
 ### Using a "gcc DevKit" to build Eclipse Temurin
 
@@ -35,7 +35,7 @@ in relying on the very same gcc compiler binary. As of Eclipse Temurin jdk-21.0.
 gcc build platforms, have been upgraded to use an "gcc DevKit". This defines an absolute definition of a gcc toolchain,
 the gcc and dependency source versions, the sysroot used, and how it is exactly built. Eclipse Adoptium publishes the DevKits that are
 used to build with in the [https://github.com/adoptium/devkit-binaries/releases](https://github.com/adoptium/devkit-binaries/releases), but
-due to the way DevKit is defined, a third-party can re-build the very same toolchain purely from source and securely verified sysroot rpms.
+due to the way DevKit is defined, a third-party can re-build the exact same toolchain purely from source and securely verified sysroot rpms.
 This independent build of the gcc toolchain allows another secure level of validation of the supply chain used to build the compiler,
 subsequently used to build the Eclipse Temurin binaries.
 
