@@ -49,9 +49,9 @@ by providing a mechanism for independent verification of software integrity of t
 
 ## How to perform a third-party Reproducible Verification Build
 
-To perform your own Reproducible Verification Build, we have prepared a set of instructions for each platform that will guide you through
-the process of re-building the selected jdk-21+ Eclipse Temurin builds from upstream OpenJDK community source and with your own securely built
-toolchains and dependencies.
+To perform your own Reproducible Verification Build of an Eclipse Temurin jdk-21+ official release, we have prepared a set of instructions
+for each platform that will guide you through the process of re-building the selected jdk-21+ Eclipse Temurin builds from upstream
+OpenJDK community source and with your own securely built toolchains and dependencies.
 
 - [jdk-21+ Linux x86_64](/docs/reproducible-builds/reproduce-linux-x86-64)
 - [jdk-21+ Linux aarch64](/docs/reproducible-builds/reproduce-linux-aarch64)
