@@ -34,8 +34,8 @@ source build nature, would mean in order for a third-party to identically re-bui
 in relying on the very same gcc compiler binary. As of Eclipse Temurin jdk-21.0.3, the Adoptium build scripts and pipelines for the Linux
 gcc build platforms, have been upgraded to use an "gcc DevKit". This defines an absolute definition of a gcc toolchain,
 the gcc and dependency source versions, the sysroot used, and how it is exactly built. Eclipse Adoptium publishes the DevKits that are
-used to build with in the [https://github.com/adoptium/devkit-binaries/releases](https://github.com/adoptium/devkit-binaries/releases), but
-due to the way DevKit is defined, a third-party can re-build the exact same toolchain purely from source and securely verified sysroot rpms.
+used to build with in the repository [https://github.com/adoptium/devkit-binaries/releases](https://github.com/adoptium/devkit-binaries/releases).
+Due to the way DevKit is defined, a third-party can re-build the exact same toolchain purely from source and securely verified sysroot rpms.
 This independent build of the gcc toolchain allows another secure level of validation of the supply chain used to build the compiler,
 subsequently used to build the Eclipse Temurin binaries.
 
