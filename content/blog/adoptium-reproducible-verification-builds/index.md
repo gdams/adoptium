@@ -56,6 +56,7 @@ OpenJDK community source and with your own securely built toolchains and depende
 
 - [jdk-21+ Linux x86_64](/docs/reproducible-builds/reproduce-linux-x86-64)
 - [jdk-21+ Linux aarch64](/docs/reproducible-builds/reproduce-linux-aarch64)
+- [jdk-21+ Windows x64](/docs/reproducible-builds/reproduce-windows-x64)
 
 ### Summary
 
