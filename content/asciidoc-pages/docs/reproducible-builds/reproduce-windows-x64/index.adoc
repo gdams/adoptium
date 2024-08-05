@@ -204,23 +204,27 @@ Due to the Temurin “signing signatures” of the Windows .exe/dll’s, process
 +
 - git clone https://github.com/adoptium/temurin-build.git
 - cd temurin-build/tooling
-- Compile BinUtils.java : 
+- Compile BinUtils.java :
++
 [source,]
 ----
 javac src/java/temurin/tools/BinRepl.java
 ----
 - Find “signtool.exe” and add to PATH, eg:
++
 [source,]
 ---- 
 export PATH=/cygdrive/c/progra~2/wi3cf2~1/10/bin/10.0.22621.0/x64:$PATH
 ----
 - Find “dumpbin.exe” and add to PATH, eg:
++
 [source,]
 ----
 export PATH=/cygdrive/c/progra~2/micros~2/2022/BuildTools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64:$PATH
 ----
 - cd reproducible
 - Set CLASSPATH to find the compiled BinRepl.class, eg.
++
 [source,]
 ---- 
 export CLASSPATH=../src/java
