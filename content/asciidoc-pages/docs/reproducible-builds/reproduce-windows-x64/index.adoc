@@ -19,7 +19,7 @@ The procedure consists of the following steps:
 
 . Build Environment
 +
-To re-build identically Eclipse Temurin on Windows x64, a suitable Windows build environment with the exact same required Microsoft Visual Studio Build Tools is required, and it is necessary to remove any previous existing potential conflicting versions:
+To re-build identically Eclipse Temurin on Windows x64, a suitable Windows build environment with the exact same required Microsoft Visual Studio Build Tools is required, and it is necessary to remove any previous existing potential conflicting versions.
 +
 Ensure any previous Microsoft Visual Studio components are uninstalled using Windows Settings->"Add and Remove Programs", including:
 +
@@ -33,9 +33,7 @@ Ensure any previous Microsoft Visual Studio components are uninstalled using Win
 +
 Set the Windows Time Zone is set to UTC, by checking the Windows Settings->"Date and Time"
 
-. Re-boot Windows machine after any changes
-+
-Re-boot the machine after uninstalling any programs or changing the Time Zone.
+. Re-boot the Windows machine after uninstalling any programs or changing the Time Zone.
 
 . Install the required version of Microsoft Visual Studio
 +
@@ -52,6 +50,17 @@ Install Cygwin with required dependencies to build OpenJDK :
 [source,]
 ----
 curl -L -O https://cygwin.com/setup-x86_64.exe
+curl -l -O https://cygwin.com/setup-x86_64.exe.sig
+# Verify download: Import "Cygwin <cygwin@cygwin.com>" GPG key
+gpg --keyserver keyserver.ubuntu.com --recv-keys 1A698DE9E2E56300
+gpg --verify setup-x86_64.exe.sig setup-x86_64.exe
+# Check “Good signature” ?
+----
++
+Assuming setup-x86_64.exe is secure and GPG verify reports "Good signature", then install Cygwin :
++
+[source,]
+----
 setup-x86_64.exe --packages autoconf,automake,bsdtar,cmake,cpio,curl,gcc-core,git,gnupg,grep,jq,libtool,make,mingw64-x86_64-gcc-core,perl,rsync,unzip,wget,zip --quiet-mode --download --local-install --delete-orphans --site https://mirrors.kernel.org/sourceware/cygwin/ --local-package-dir C:\cygwin_packages --root C:\cygwin64
 ----
 
