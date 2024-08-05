@@ -212,7 +212,7 @@ Use the following grep to find the required configure arguments from the SBOM-me
 ----
 grep "using configure arguments" <SBOM-metadata.json> | sed -n -e "s/^.*using configure arguments '\(.*\)'\..*/\1/p"
 ----
-.. Replace -–with-devkit=<path>, with path to the local built gcc DevKit "<path>/jdk21u/build/devkit/result/x86_64-linux-gnu-to-x86_64-linux-gnu".
+.. Replace -–with-devkit=<path>, with path to the local built gcc DevKit "<path>/jdk21u/build/devkit/result/aarch64-linux-gnu-to-aarch64-linux-gnu".
 .. Remove -–with-cacerts-src=<path>, as Temurin is built with Mozilla CA certs, whereas the local build will use the standard OpenJDK CA certs.
 .. Replace -–with-boot-jdk=<path>, with the path to your local un-tared boot jdk from above.
 +
