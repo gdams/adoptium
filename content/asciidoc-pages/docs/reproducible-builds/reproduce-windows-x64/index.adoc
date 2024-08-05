@@ -69,7 +69,7 @@ setup-x86_64.exe --packages autoconf,automake,bsdtar,cmake,cpio,curl,gcc-core,gi
 Double click the "Cygwin Terminal" desktop icon to open a new Cygwin terminal
 
 . Determine required build configuration for reproducing the target Eclipse Temurin release
-*
++
 For the required Eclipse Temurin release version, download the SBOM and SBOM-metadata from the official Adoptium release binaries repository, eg.for jdk-21.0.4+7 :
 +
 [source,]
