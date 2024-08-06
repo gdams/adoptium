@@ -200,7 +200,9 @@ unzip OpenJDK21U-jdk_x64_windows_hotspot_21.0.4_7.zip
 
 . Download and setup the Adoptium temurin-build reproducible build comparison tooling for Windows
 +
-Due to the Temurin “signing signatures” of the Windows .exe/dll’s, processing is necessary to remove the unique digital signatures using the Windows signtool.exe tool. To aid this process and perform the comparison the Adoptium temurin-build tooling provides a reproducible compare script
+Due to the Temurin “signing signatures” of the Windows .exe/dll’s, processing is necessary to remove the unique digital signatures using the Windows signtool.exe tool. To aid this process and perform the comparison the Adoptium temurin-build tooling provides a reproducible compare script.
++
+Perform the following steps to clone and setup your environment to run the temurin-build reproducible compare script :
 +
 - git clone https://github.com/adoptium/temurin-build.git
 - cd temurin-build/tooling
