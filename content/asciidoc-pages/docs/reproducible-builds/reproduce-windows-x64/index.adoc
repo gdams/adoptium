@@ -21,17 +21,17 @@ The procedure consists of the following steps:
 +
 To re-build identically Eclipse Temurin on Windows x64, a suitable Windows build environment with the exact same required Microsoft Visual Studio Build Tools is required, and it is necessary to remove any previous existing potential conflicting versions.
 +
-Ensure any previous Microsoft Visual Studio components are uninstalled using Windows Settings->"Add and Remove Programs", including:
+Ensure any previous Microsoft Visual Studio components are uninstalled using Windows Settings->"Add or remove programs", including:
 +
+- Visual Studio <Edition> 20xx ...
 - Microsoft C++ <year..year> Redistributables
-- Visual Studio Community 20xx ...
-- Visual Studio Installer
+- Microsoft Visual Studio Installer
 - Windows Software Development Kit
 - Windows SDK Addon
 
-. Ensure Windows system Time Zone is UTC to ensure an identical build
+. Ensure Windows system Time zone is UTC to ensure an identical build
 +
-Set the Windows Time Zone is set to UTC, by checking the Windows Settings->"Date and Time"
+Set the Windows "Time zone" to UTC, by checking the Windows Settings->"Date and time settings", "Time zone" value.
 
 . Re-boot the Windows machine after uninstalling any programs or changing the Time Zone.
 
@@ -40,7 +40,7 @@ Set the Windows Time Zone is set to UTC, by checking the Windows Settings->"Date
 Install Microsoft Visual Studio VS2022 “Build Tools” edition version 17.7.3 :
 +
 - Download and execute: https://download.visualstudio.microsoft.com/download/pr/1d66edfe-3c83-476b-bf05-e8901c62ba7f/bac71effb5a23d7cd1a81e5f628a0c8dcb7e8a07e0aa7077c853ed84a862dceb/vs_BuildTools.exe
-- Select “Workloads” - “Desktop development with c++”
+- Select “Workloads” - “Desktop development with C++”
 - “Install”
 
 . Install required build dependencies:
