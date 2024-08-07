@@ -242,4 +242,11 @@ bash ./repro_compare.sh temurin ~/jdk-21.0.4+7 openjdk /cygdrive/c/workspace/ope
 ----
 +
 For a successful verification the script should report a reproducible result of 100%.
++
+[source,]
+----
+Comparing /home/user/jdk-21.0.4+7 with /cygdrive/c/workspace/openjdk-build/workspace/build/openjdkbuild/images/jdk ... output to file: reprotest.diff
+Number of differences: 0
+ReproduciblePercent = 100 %
+----
 
