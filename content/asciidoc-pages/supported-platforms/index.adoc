@@ -21,7 +21,6 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Windows Server 2016 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | Windows 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | Windows 10 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| Windows 8.1| icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| Windows (x86)
 | Windows Server 2022 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[] | icon:times[]
@@ -29,7 +28,6 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Windows Server 2016 | icon:check[] | icon:check[] | icon:check[] | icon:times[] | icon:times[]
 | Windows 11 | icon:check[] | icon:check[] | icon:check[] | icon:times[] | icon:times[]
 | Windows 10 | icon:check[] | icon:check[] | icon:check[] | icon:times[] | icon:times[]
-| Windows 8.1| icon:check[] | icon:check[] | icon:check[] | icon:times[] | icon:times[]
 
 6+h| Linux (x64) footnote:[These builds should work on any distribution with glibc version 2.17 or higher. Versions up to 17 will work with glibc 2.12]
 | Alpine Linux 3.5 or later (Headless) | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
@@ -40,7 +38,6 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 24.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| Linux (ARM 64-bit) footnote:glibc217[These builds should work on any distribution with glibc version 2.17 or higher.]
 | Alpine Linux 3.5 or later (Headless) | icon:times[] | icon:times[] | icon:times[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] 
@@ -50,13 +47,11 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 24.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| Linux (ARM 32-bit Hard-Float) footnote:glibc223[These builds should work on any distribution with glibc version 2.23 or higher.]
 | Ubuntu 24.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[] | icon:times[]
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[] | icon:times[]
-| Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:times[] | icon:times[]
 
 6+h| Linux (PowerPC 64-bit Little Endian) footnote:glibc217[]
 | RHEL / UBI 9.x | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
@@ -65,7 +60,6 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 24.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 22.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 20.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Ubuntu 18.04 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| Linux (s390x) footnote:glibc217[]
 | RHEL / UBI 9.x | icon:times[] footnote:nojit[JDK8 on s390x has no JIT so is unsupported.] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
@@ -76,7 +70,6 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 24.04 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 22.04 | icon:times[] footnote:nojit[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 20.04 | icon:times[] footnote:nojit[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
-| Ubuntu 18.04 | icon:times[] footnote:nojit[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| Linux (riscv64) footnote:glibc231[These builds should work on any distribution with glibc version 2.31 or higher.]
 | Ubuntu 22.04 | icon:times[] | icon:times[] | icon:times[] | icon:check[] | icon:check[]
@@ -92,7 +85,6 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | macOS 14 | icon:times[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 13 | icon:times[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 12 | icon:times[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| macOS 11 | icon:times[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| Solaris (x64 and Sparc)
 | Solaris 11 | icon:check[] | icon:times[] | icon:times[] | icon:times[] | icon:times[]
