@@ -601,6 +601,12 @@ exports[`Docs page > renders correctly 1`] = `
                         />
                       </svg>
                     </a>
+                    <a
+                      class="list-group-item list-group-item-action"
+                      href="/docs/reproducible-builds"
+                    >
+                      docs.reproducible.builds
+                    </a>
                   </div>
                 </div>
               </div>
