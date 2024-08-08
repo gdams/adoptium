@@ -1,11 +1,11 @@
-= Temurin Reproducible Verification Build on Linux x86-64
-:description: Temurin Reproducible Verification Build on Linux x86-64
+= Temurin Reproducible Verification Build on Linux x64
+:description: Temurin Reproducible Verification Build on Linux x64
 :keywords: Reproducible Builds Secure Supply Chain
 :orgname: Eclipse Adoptium
 :lang: en
 :page-authors: andrew-m-leonard
 
-The following instructions detail the process of rebuilding identically from "source" in a secure build environment, a reproducible build for a given Eclipse Temurin release on the Linux x86-64 platform. The process is performed in a secure manner, using only the upstream sources and securely verified build tooling, so as to provide a mechanism to securely verify the given Eclipse Temurin release binary. This verification then helps determine the security of the supply chains used to build the Eclipse Temurin official release binaries.
+The following instructions detail the process of rebuilding identically from "source" in a secure build environment, a reproducible build for a given Eclipse Temurin release on the Linux x64 platform. The process is performed in a secure manner, using only the upstream sources and securely verified build tooling, so as to provide a mechanism to securely verify the given Eclipse Temurin release binary. This verification then helps determine the security of the supply chains used to build the Eclipse Temurin official release binaries.
 
 The procedure consists of the following steps:
 
@@ -15,11 +15,11 @@ The procedure consists of the following steps:
 - Build the local Eclipse Temurin JDK
 - Compare the secure local Eclipse Temurin re-build to the official Eclipse Temurin binary
 
-== Linux x86-64 reproducible verification build procedure
+== Linux x64 reproducible verification build procedure
 
 . Build Environment
 +
-To re-build identically Eclipse Temurin on Linux x86-64, a suitable Centos or RHEL, of version 7 or 8, is required.
+To re-build identically Eclipse Temurin on Linux x64, a suitable Centos or RHEL, of version 7 or 8, is required.
 
 . Install EPEL Tools
 +
