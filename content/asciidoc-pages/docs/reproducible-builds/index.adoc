@@ -1,0 +1,15 @@
+= Third Party Reproducible Verification Build Instructions
+:description: Instructions for independently reproducing an Eclipse Temurin release as part of a reproducible verification build
+:keywords: Reproducible Builds SLSA Security Supply Chain
+:orgname: Eclipse Adoptium
+:lang: en
+:page-authors: anleonar
+
+To perform your own reproducible verification build of an Eclipse Temurin JDK 21+ official release, we have prepared a set of instructions for each platform that will guide you through the process of re-building the selected JDK 21+ Eclipse Temurin builds from upstream OpenJDK community source and with your own securely built toolchains and dependencies.
+
+Select your required platform instructions for the Eclipse Temurin release you wish to reproduce:
+
+- [JDK 21+ Linux x64](/docs/reproducible-builds/reproduce-linux-x64)
+- [JDK 21+ Linux aarch64](/docs/reproducible-builds/reproduce-linux-aarch64)
+- [JDK 21+ Windows x64](/docs/reproducible-builds/reproduce-windows-x64)
+
