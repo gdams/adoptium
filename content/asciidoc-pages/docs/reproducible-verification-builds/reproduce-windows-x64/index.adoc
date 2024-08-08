@@ -196,12 +196,12 @@ The built image will be available under directory: /cygdrive/c/workspace/openjdk
 
 . Download offical Eclipse Temurin release to be verified
 +
-Download and unpack the Temurin JDK to be verified from https://github.com/adoptium/temurin<NN>-binaries/releases.
+Download and unpack the Temurin JDK to be verified :
 +
 [source,]
 ----
 curl -L -o temurin-windows-x64-jdk-21.0.4+7.zip https://api.adoptium.net/v3/binary/version/jdk-21.0.4+7/windows/x64/jdk/hotspot/normal/adoptium
-unzip temurin-windows-x64-jdk-21.0.4+7.zip 
+unzip temurin-windows-x64-jdk-21.0.4+7.zip
 ----
 
 . Download and setup the Adoptium temurin-build reproducible build comparison tooling for Windows

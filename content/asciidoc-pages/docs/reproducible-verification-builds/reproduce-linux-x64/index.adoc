@@ -252,12 +252,12 @@ cd ..
 
 . Download offical Eclipse Temurin release for "Verification"
 +
-Download and unpack the Temurin JDK to be verified from https://github.com/adoptium/temurin<NN>-binaries/releases.
+Download and unpack the Temurin JDK to be verified :
 +
 [source,]
 ----
-curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz
-tar -xf OpenJDK21U-jdk_x64_linux_hotspot_21.0.4_7.tar.gz
+curl -L -o temurin-linux-x64-jdk-21.0.4+7.tar.gz https://api.adoptium.net/v3/binary/version/jdk-21.0.4+7/linux/x64/jdk/hotspot/normal/adoptium
+tar -xf temurin-linux-x64-jdk-21.0.4+7.tar.gz
 ----
 
 . Remove the same non-relevant files
