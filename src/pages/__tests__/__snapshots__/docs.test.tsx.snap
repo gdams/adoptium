@@ -603,9 +603,9 @@ exports[`Docs page > renders correctly 1`] = `
                     </a>
                     <a
                       class="list-group-item list-group-item-action"
-                      href="/docs/reproducible-builds"
+                      href="/docs/reproducible-verification-builds"
                     >
-                      docs.reproducible.builds
+                      docs.reproducible.verification.builds
                     </a>
                   </div>
                 </div>
