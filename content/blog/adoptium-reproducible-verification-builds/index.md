@@ -54,9 +54,9 @@ To perform your own reproducible verification build of an Eclipse Temurin JDK 21
 for each platform that will guide you through the process of re-building the selected JDK 21+ Eclipse Temurin builds from upstream
 OpenJDK community sources and with your own securely built toolchains and dependencies.
 
-- [JDK 21+ Linux x64](/docs/reproducible-builds/reproduce-linux-x64)
-- [JDK 21+ Linux aarch64](/docs/reproducible-builds/reproduce-linux-aarch64)
-- [JDK 21+ Windows x64](/docs/reproducible-builds/reproduce-windows-x64)
+- [JDK 21+ Linux x64](/docs/reproducible-verification-builds/reproduce-linux-x64)
+- [JDK 21+ Linux aarch64](/docs/reproducible-verification-builds/reproduce-linux-aarch64)
+- [JDK 21+ Windows x64](/docs/reproducible-verification-builds/reproduce-windows-x64)
 
 ### Summary
 
