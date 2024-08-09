@@ -37,7 +37,7 @@ Set the Windows "Time zone" to UTC, by checking the Windows Settings->"Time & La
 
 . Install the required version of Microsoft Visual Studio
 +
-Install Microsoft Visual Studio VS2022 “Build Tools” edition version 17.7.3 which contains version 19.37.32822 of the C/C++ compiler :
+Install Microsoft Visual Studio VS2022 “Build Tools” edition version 17.7.3 which contains version 19.37.32822 of the C/C++ compiler:
 +
 - Download and execute: https://download.visualstudio.microsoft.com/download/pr/1d66edfe-3c83-476b-bf05-e8901c62ba7f/bac71effb5a23d7cd1a81e5f628a0c8dcb7e8a07e0aa7077c853ed84a862dceb/vs_BuildTools.exe
 - Select “Workloads” - “Desktop development with C++”
@@ -45,7 +45,7 @@ Install Microsoft Visual Studio VS2022 “Build Tools” edition version 17.7.3 
 
 . Install required build dependencies:
 +
-Install Cygwin with required dependencies to build OpenJDK :
+Install Cygwin with required dependencies to build OpenJDK:
 +
 [source,]
 ----
@@ -57,7 +57,7 @@ gpg --verify setup-x86_64.exe.sig setup-x86_64.exe
 # Check for “Good signature”
 ----
 +
-Assuming setup-x86_64.exe is secure and GPG verify reports "Good signature", then install Cygwin :
+Assuming setup-x86_64.exe is secure and GPG verify reports "Good signature", then install Cygwin:
 +
 [source,]
 ----
@@ -70,7 +70,7 @@ Double click the "Cygwin Terminal" desktop icon to open a new Cygwin terminal ru
 
 . Determine required build configuration for reproducing the target Eclipse Temurin release
 +
-For the required Eclipse Temurin release version, download the SBOM and SBOM-metadata from the official Adoptium release binaries repository, eg.for jdk-21.0.4+7 :
+For the required Eclipse Temurin release version, download the SBOM and SBOM-metadata from the official Adoptium release binaries repository, eg.for jdk-21.0.4+7:
 +
 [source,]
 ----
@@ -196,7 +196,7 @@ The built image will be available under directory: /cygdrive/c/workspace/openjdk
 
 . Download offical Eclipse Temurin release to be verified
 +
-Download and unpack the Temurin JDK to be verified :
+Download and unpack the Temurin JDK to be verified:
 +
 [source,]
 ----
@@ -208,11 +208,11 @@ unzip temurin-windows-x64-jdk-21.0.4+7.zip
 +
 Due to the Temurin “signing signatures” of the Windows .exe/dll’s, processing is necessary to remove the unique digital signatures using the Windows signtool.exe tool. To aid this process and perform the comparison the Adoptium temurin-build tooling provides a reproducible compare script.
 +
-Perform the following steps to clone and setup your environment to run the temurin-build reproducible compare script :
+Perform the following steps to clone and setup your environment to run the temurin-build reproducible compare script:
 +
 - git clone https://github.com/adoptium/temurin-build.git
 - cd temurin-build/tooling
-- Compile BinRepl.java :
+- Compile BinRepl.java:
 +
 [source,]
 ----
@@ -240,7 +240,7 @@ export CLASSPATH=../src/java
 
 . Verify the local secure re-build is identical to the official Eclipse Temurin binary
 +
-Compare the local re-build to the Eclipse Temurin official JDK. This script involves unpacking the jmod's and removing all the unique Temurin signing "Signatures", this process takes a while to complete (roughly 30 minutes) :
+Compare the local re-build to the Eclipse Temurin official JDK. This script involves unpacking the jmod's and removing all the unique Temurin signing "Signatures", this process takes a while to complete (roughly 30 minutes):
 +
 [source,]
 ----
