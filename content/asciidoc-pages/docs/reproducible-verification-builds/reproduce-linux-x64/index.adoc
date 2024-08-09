@@ -73,7 +73,7 @@ curl -O -L https://ftp.gnu.org/gnu/make/make-4.3.tar.gz.sig
 gpg --keyserver keyserver.ubuntu.com --recv-keys 6D4EEB02AD834703510B117680CB727A20C79BB2
 # Reference: https://lists.gnu.org/archive/html/bug-make/2016-12/msg00002.html
 gpg --verify make-4.3.tar.gz.sig make-4.3.tar.gz
-# Check “Good signature” ?
+# Check for “Good signature”
 # Build
 tar -xf make-4.3.tar.gz
 (cd make-4.3 && ./configure --prefix=/usr/local && make clean && make && make install)
@@ -166,7 +166,7 @@ echo -e "5\ny\n" |  gpg --batch --command-fd 0 --expert --edit-key 3B04D753C9050
 gpg --verify OpenJDK20U-jdk_x64_linux_hotspot_20.0.2_9.tar.gz.sig OpenJDK20U-jdk_x64_linux_hotspot_20.0.2_9.tar.gz
 ----
 +
-Ensure "Good signature from Adoptium GPG Key (DEB/RPM Signing Key)" ?
+Ensure "Good signature from Adoptium GPG Key (DEB/RPM Signing Key)"
 +
 Unpack into a suitable folder
 +

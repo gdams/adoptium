@@ -54,7 +54,7 @@ curl -l -O https://cygwin.com/setup-x86_64.exe.sig
 # Verify download: Import "Cygwin <cygwin@cygwin.com>" GPG key
 gpg --keyserver keyserver.ubuntu.com --recv-keys 1A698DE9E2E56300
 gpg --verify setup-x86_64.exe.sig setup-x86_64.exe
-# Check “Good signature” ?
+# Check for “Good signature”
 ----
 +
 Assuming setup-x86_64.exe is secure and GPG verify reports "Good signature", then install Cygwin :
@@ -118,7 +118,7 @@ echo -e "5\ny\n" |  gpg --batch --command-fd 0 --expert --edit-key 3B04D753C9050
 gpg --verify OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip.sig OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip
 ----
 +
-Ensure "Good signature from Adoptium GPG Key (DEB/RPM Signing Key)" ?
+Ensure "Good signature from Adoptium GPG Key (DEB/RPM Signing Key)"
 +
 Unzip into a suitable folder
 +
