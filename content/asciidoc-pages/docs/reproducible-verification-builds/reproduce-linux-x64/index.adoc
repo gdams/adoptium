@@ -91,7 +91,8 @@ timedatectl set-timezone UTC
 
 . Download Adoptium DevKit Toolchain make script files
 +
-In order to securely and identically build a gcc DevKit Toolchain, securely download the following scripts from the Eclipse Adoptium repository
+In order to securely and identically build a gcc DevKit Toolchain, securely download the following scripts from the Eclipse Adoptium repository. These scripts
+and patches enable the DevKit make process to build with a Centos sysroot and also enables GPG verified downloading of the Centos RPMs for additional integrity checking.
 +
 [source,]
 ----

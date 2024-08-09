@@ -13,7 +13,10 @@ tags:
 
 A third-party reproducible verification build is a re-build of an official software product release, built purely from upstream sources and
 securely obtained and verified tooling, in a secure and well defined build environment. Its purpose is to help maintain trust in the supply chain
-by providing a mechanism for independent verification of the software integrity of the official releases. An important aspect for performing an
+by providing a mechanism for independent verification of the software integrity of the official releases. The trust of the supply chain is very
+important from the perspective of ensuring no vulnerabilities or malware affect the offocial releases software.
+
+An important aspect for performing an
 independent reproducible build is the security and source of the build environment. The upstream product sources, build scripts and toolchain
 must be original securely obtained sources, and any system binaries must be securely verified by signatures. Once completed, a byte-for-byte identical
 comparison with the official software product release binaries will then validate to a very high degree the security of the supply chain used and that the official
