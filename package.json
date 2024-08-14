@@ -17,7 +17,7 @@
     "@mui/x-date-pickers": "^7.12.1",
     "@popperjs/core": "^2.11.8",
     "@react-icons/all-files": "^4.1.0",
-    "axios": "^1.7.3",
+    "axios": "^1.7.4",
     "bootstrap": "^5.3.3",
     "date-fns": "^3.6.0",
     "flexsearch": "^0.7.43",
