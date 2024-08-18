@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+    - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
       with:
         persist-credentials: false
 
@@ -30,7 +30,7 @@ jobs:
         # shellcheck disable=2043
         for added_file in ${{ steps.files.outputs.added }}; do
           if [[ ${added_file} =~ ^content/blog.*.md ]]; then
-            blog_date=$(grep 'date:' "${added_file}" | sed -n -e 's/^.*date: //p' | tr -d '"')
+            blog_date=$(grep '^date:' "${added_file}" | sed -n -e 's/^.*date: //p' | tr -d '"')
             # Return difference in days between today and blog date
             diff=$(( ($(date +%s) - $(date --date "${blog_date}" +%s)) / (60*60*24) ))
             if [[ ${diff} -gt 0 ]]; then
@@ -53,6 +53,8 @@ jobs:
               "security"
               "announcement"
               "release-notes"
+              "docker"
+              "containers"
             )
             invalid_tags=()
             IFS=", " read -r -a tag_array <<< "$tags"

@@ -26,6 +26,11 @@ exports[`TemurinNightlyTable component > renders correctly - no data 1`] = `
           <td
             class="fw-bold"
           >
+            Build/Tag
+          </td>
+          <td
+            class="fw-bold"
+          >
             Date
           </td>
           <td
@@ -81,6 +86,11 @@ exports[`TemurinNightlyTable component > renders correctly 1`] = `
           <td
             class="fw-bold"
           >
+            Build/Tag
+          </td>
+          <td
+            class="fw-bold"
+          >
             Date
           </td>
           <td
@@ -115,12 +125,16 @@ exports[`TemurinNightlyTable component > renders correctly 1`] = `
             type_mock
           </td>
           <td>
+            release_name_mock
+          </td>
+          <td>
             January 1, 2020
           </td>
           <td>
             <a
               href="/download"
               state="[object Object]"
+              title=""
             >
               extension_mock (0 MB)
             </a>
@@ -151,12 +165,16 @@ exports[`TemurinNightlyTable component > renders correctly 1`] = `
             type_mock
           </td>
           <td>
+            release_name_mock
+          </td>
+          <td>
             January 1, 2020
           </td>
           <td>
             <a
               href="/download"
               state="[object Object]"
+              title=""
             >
               extension_mock (0 MB)
             </a>
@@ -165,6 +183,7 @@ exports[`TemurinNightlyTable component > renders correctly 1`] = `
             <a
               href="/download"
               state="[object Object]"
+              title=""
             >
               installer_extension_mock
             </a>

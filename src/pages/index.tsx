@@ -6,6 +6,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import LatestTemurin from '../components/LatestTemurin'
+import AdoptiumNews from '../components/AdoptiumNews'
+import { Slice } from 'gatsby'
 
 const IndexPage = ({data}) => {
   const latestLTS = data.mostRecentLts.version
@@ -43,6 +45,7 @@ const IndexPage = ({data}) => {
             </div>
           </div>
         </div>
+        <Slice alias='adoptiumNews' />
         <div className='p-3 mt-4 mb-4 bg-light rounded-3 text-start'>
           <div className='container py-5'>
             <h2 className='text-pink'><Trans>The Adoptium&reg; Working Group</Trans></h2>

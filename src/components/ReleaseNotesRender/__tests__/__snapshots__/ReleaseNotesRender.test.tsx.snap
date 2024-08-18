@@ -83,14 +83,9 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
         </p>
         <div
           aria-label="Release Notes"
-          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-13spggd-MuiDataGrid-root"
+          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-igst0y-MuiDataGrid-root"
           style="--DataGrid-width: 0px; --DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 1300px; --DataGrid-columnsTotalWidth: 1300px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
         >
-          <div
-            class="css-qtdhae"
-            data-id="gridPanelAnchor"
-            role="presentation"
-          />
           <div
             class="MuiDataGrid-toolbarContainer css-128fb87-MuiDataGrid-toolbarContainer"
           >
@@ -143,13 +138,17 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
             tabindex="-1"
           >
             <div
+              class="css-qtdhae"
+              data-id="gridPanelAnchor"
+              role="presentation"
+            />
+            <div
               class="MuiDataGrid-virtualScroller css-1793420-MuiDataGrid-virtualScroller"
               role="presentation"
               style="overflow-x: hidden; overflow-y: hidden;"
-              tabindex="-1"
             >
               <div
-                class="MuiDataGrid-topContainer MuiDataGrid-container--top css-1oudwrl"
+                class="MuiDataGrid-topContainer MuiDataGrid-container--top css-2sp4oa"
                 role="presentation"
               >
                 <div
@@ -158,7 +157,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                 >
                   <div
                     aria-rowindex="1"
-                    class="css-yrdy0g-MuiDataGrid-columnHeaderRow"
+                    class="MuiDataGrid-row--borderBottom css-yrdy0g-MuiDataGrid-columnHeaderRow"
                     role="row"
                   >
                     <div
@@ -201,6 +200,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             <button
                               aria-label="Sort"
                               class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                              field="priority"
                               tabindex="-1"
                               title="Sort"
                               type="button"
@@ -595,7 +595,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
               <div
                 class="MuiDataGrid-virtualScrollerContent css-1kwdphh-MuiDataGrid-virtualScrollerContent"
                 role="presentation"
-                style="width: auto; height: 0px;"
+                style="width: auto; height: 104px;"
               >
                 <div
                   class="MuiDataGrid-virtualScrollerRenderZone css-s1v7zr-MuiDataGrid-virtualScrollerRenderZone"
@@ -604,7 +604,6 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                 >
                   <div
                     aria-rowindex="2"
-                    aria-selected="false"
                     class="MuiDataGrid-row MuiDataGrid-row--firstVisible MuiDataGrid-row--dynamicHeight"
                     data-id="0"
                     data-rowindex="0"
@@ -694,7 +693,6 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                   </div>
                   <div
                     aria-rowindex="3"
-                    aria-selected="false"
                     class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
                     data-id="1"
                     data-rowindex="1"
@@ -790,6 +788,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
               />
             </div>
             <div
+              aria-hidden="true"
               class="MuiDataGrid-scrollbar MuiDataGrid-scrollbar--horizontal css-1rtad1"
               tabindex="-1"
             >
@@ -803,7 +802,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
           >
             <div />
             <div
-              class="MuiTablePagination-root css-rtrcn9-MuiTablePagination-root"
+              class="MuiTablePagination-root css-16mfp94-MuiTablePagination-root"
             >
               <div
                 class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar"

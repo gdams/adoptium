@@ -79,7 +79,8 @@ const DocumentationPage = ({ data }) => {
                 { name: t('docs.secure.software.pratices', 'Secure Software Practices'), link: '/docs/secure-software' },
                 { name: t('docs.slsa.secure.supply.chain', 'SLSA Secure Supply Chain'), link: '/docs/slsa' },
                 { name: t('docs.vulnerability.reporting', 'Vulnerability Reporting'), link: 'https://github.com/adoptium/adoptium/security/policy' },
-                { name: t('docs.temurin.security.case.study', 'Temurin Security Case Study'), link: 'https://outreach.eclipse.foundation/adoptium-temurin-supply-chain-security?utm_campaign=Temurin%20Case%20Study&utm_source=website&utm_medium=adoptium%20docs' }
+                { name: t('docs.temurin.security.case.study', 'Temurin Security Case Study'), link: 'https://outreach.eclipse.foundation/adoptium-temurin-supply-chain-security?utm_campaign=Temurin%20Case%20Study&utm_source=website&utm_medium=adoptium%20docs' },
+                { name: t('docs.reproducible.verification.builds', 'Reproducible Verification Builds'), link: '/docs/reproducible-verification-builds' }
               ]}
             />
             <DocumentationCard

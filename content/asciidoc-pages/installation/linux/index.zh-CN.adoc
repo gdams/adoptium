@@ -1,0 +1,141 @@
+= Linux (RPM/DEB/APK) installer packages
+:page-authors: tzzs
+:toc:
+:icons: font
+
+Eclipse Temurin RPM、DEB 和 APK 软件包现在可以安装在您最喜欢的 Linux 发行版上。
+
+[NOTE]
+====
+请参阅 link:/supported-platforms[支持的平台] 查看官方支持的 Linux 发行版 / 版本安装程序列表。其他 Linux 发行版/版本将尽量支持。
+====
+
+[TIP]
+====
+请注意，在大多数 Linux 系统上，安装 Temurin 等软件包需要超级用户权限。为了确保成功执行以下命令，您可能需要在它们前面加上 `sudo` 前缀。此外，添加存储库时，请考虑使用 `sudo tee` 以避免潜在的权限问题。例如：
+[source, bash]
+----
+echo "deb [arch=amd64] https://some.repository.url focal main" | sudo tee /etc/apt/sources.list.d/adoptium.list > /dev/null
+----
+通过使用 `sudo tee` ，您可以使用提升的权限将存储库记录写入相应的文件，从而防止任何写入权限错误。这确保了安装过程的顺利进行。
+====
+
+== Eclipse Temurin 包名
+
+
+目前使用的名称如下：
+
+....
+temurin-<version>-jdk
+e.g temurin-17-jdk or temurin-8-jdk
+....
+
+== 在 Debian 或 Ubuntu 上安装 Deb 软件包
+
+. 确保存在必要的软件包
++
+[source, bash]
+----
+apt install -y wget apt-transport-https gpg
+----
++
+. 下载 Eclipse Adoptium GPG 密钥:
++
+[source, bash]
+----
+wget -qO - https://packages.adoptium.net/artifactory/api/gpg/key/public | gpg --dearmor | tee /etc/apt/trusted.gpg.d/adoptium.gpg > /dev/null
+----
++
+. 配置 Eclipse Adoptium apt 仓库源，要检查支持的所有版本，请查看 https://packages.adoptium.net/ui/native/deb/dists/ 列表。
++
+[source, bash]
+----
+echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
+----
+TIP: 对于 Linux Mint (基于 Ubuntu) 您必须将 `VERSION_CODENAME` 替换为 `UBUNTU_CODENAME`.
++
+. 安装您需要的 Temurin 版本:
++
+[source, bash]
+----
+apt update # update if you haven't already
+apt install temurin-17-jdk
+----
+
+== CentOS/RHEL/Fedora 安装说明
+
+. 将 RPM 存储库添加到 `/etc/yum.repos.d/adoptium.repo`， 如果您不使用 CentOS/RHEL/Fedora，请确认修改发行版名称。要检查支持的所有版本，请查看 https://packages.adoptium.net/ui/native/rpm/ 列表.
++
+[source, bash]
+----
+# 如果您不使用 CentOS/RHEL/Fedora，请确认修改发行版名称
+# DISTRIBUTION_NAME=centos
+
+cat <<EOF > /etc/yum.repos.d/adoptium.repo
+[Adoptium]
+name=Adoptium
+baseurl=https://packages.adoptium.net/artifactory/rpm/${DISTRIBUTION_NAME:-$(. /etc/os-release; echo $ID)}/\$releasever/\$basearch
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
+EOF
+----
++
+. 使用 `dnf` 安装您需要的 Temurin 版本:
++
+[source, bash]
+----
+dnf install temurin-17-jdk
+----
+或者，如果您想使用 `yum` 安装:
++
+[source, bash]
+----
+yum install temurin-17-jdk
+----
+
+== openSUSE/SLES 安装说明
+
+. 按如下方式导入 RPM 存储库。RPM 也使用与 SLES 12 和 15。要检查支持的所有版本，请查看 
+https://packages.adoptium.net/ui/native/rpm/ 清单。这些存储库可能适用于其它版本，但不能保证并且未经测试。
++
+[source, bash]
+----
+zypper ar -f https://packages.adoptium.net/artifactory/rpm/opensuse/$(. /etc/os-release; echo $VERSION_ID)/$(uname -m) adoptium
+----
++
+. 安装您需要的 Temurin 版本：
++
+[source, bash]
+----
+zypper install temurin-17-jdk
+----
+
+
+== Alpine Linux 安装说明
+
+. 下载 Eclipse Adoptium RSA 密钥:
++
+[source, bash]
+----
+wget -O /etc/apk/keys/adoptium.rsa.pub https://packages.adoptium.net/artifactory/api/security/keypair/public/repositories/apk
+----
++
+. 配置 Eclipse Adoptium APK 存储库:
++
+[source, bash]
+----
+echo 'https://packages.adoptium.net/artifactory/apk/alpine/main' >> /etc/apk/repositories
+----
++
+. 安装您需要的 Temurin 版本:
++
+[source, bash]
+----
+apk add temurin-17-jdk
+----
+
+您可以在
+https://github.com/adoptium/installer/issues 提出遇到的任何问题.
+
+

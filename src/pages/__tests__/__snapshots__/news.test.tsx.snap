@@ -163,6 +163,39 @@ exports[`News page > renders correctly 1`] = `
               </li>
               <li>
                 <button
+                  aria-label="Go to page 5"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  5
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <div
+                  class="MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-ellipsis css-1v2lvtn-MuiPaginationItem-root"
+                >
+                  …
+                </div>
+              </li>
+              <li>
+                <button
+                  aria-label="Go to page 11"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  tabindex="0"
+                  type="button"
+                >
+                  11
+                  <span
+                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                  />
+                </button>
+              </li>
+              <li>
+                <button
                   aria-label="Go to next page"
                   class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
@@ -209,6 +242,23 @@ exports[`News page > renders correctly 1`] = `
               </li>
             </ul>
           </nav>
+          <a
+            class="px-2"
+            href="https://newsroom.eclipse.org/eclipse/community-news"
+            rel="noreferrer"
+            target="_blank"
+          >
+            View all
+          </a>
+          |
+          <a
+            class="px-2"
+            href="https://newsroom.eclipse.org/node/add/news"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Submit news
+          </a>
         </div>
         <div
           class="col-md-1"
@@ -341,6 +391,23 @@ exports[`News page > renders spinner when news not loaded 1`] = `
               />
             </svg>
           </span>
+          <a
+            class="px-2"
+            href="https://newsroom.eclipse.org/eclipse/community-news"
+            rel="noreferrer"
+            target="_blank"
+          >
+            View all
+          </a>
+          |
+          <a
+            class="px-2"
+            href="https://newsroom.eclipse.org/node/add/news"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Submit news
+          </a>
         </div>
         <div
           class="col-md-1"

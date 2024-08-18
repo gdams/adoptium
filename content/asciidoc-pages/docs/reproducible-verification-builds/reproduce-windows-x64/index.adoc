@@ -1,0 +1,258 @@
+= Temurin Reproducible Verification Build on Windows x64
+:description: Temurin Reproducible Verification Build on Windows x64
+:keywords: Reproducible Builds Secure Supply Chain
+:orgname: Eclipse Adoptium
+:lang: en
+:page-authors: andrew-m-leonard
+
+The following instructions detail the process of rebuilding identically from "source" in a secure build environment, a reproducible build for a given Eclipse Temurin release on the Windows x64 platform. The process is performed in a secure manner, using only the upstream sources and official Microsoft Visual Studio build tooling, so as to provide a mechanism to securely verify the given Eclipse Temurin release binary. This verification then helps determine the security of the supply chains used to build the Eclipse Temurin official release binaries.
+
+The procedure consists of the following steps:
+
+- Build environment setup
+- Install the required version of Microsoft Visual Studio Builds Tools edition for the C/C++ compiler
+- Determine the OpenJDK make configuration arguments matching the Eclipse Temurin options
+- Build the local Eclipse Temurin JDK
+- Compare the secure local Eclipse Temurin re-build to the official Eclipse Temurin binary, using the Adoptium temurin-build comparison script that adjusts for comparing against "signed" native executables
+
+== Windows x64 reproducible verification build procedure
+
+. Build Environment
++
+To re-build identically Eclipse Temurin on Windows x64, a suitable Windows build environment with the exact same required Microsoft Visual Studio Build Tools is required, and it is necessary to remove any previous existing potential conflicting versions.
++
+Ensure any previous Microsoft Visual Studio components are uninstalled using Windows Settings->"Add or remove programs", including:
++
+- Visual Studio <Edition> 20xx ...
+- Microsoft C++ <year..year> Redistributables
+- Microsoft Visual Studio Installer
+- Windows Software Development Kit
+- Windows SDK Addon
+
+. Ensure Windows system Time zone is UTC to ensure an identical build
++
+Set the Windows "Time zone" to UTC, by checking the Windows Settings->"Time & Language" -> "Date & time" -> "Time zone" value.
+
+. Re-boot the Windows machine after uninstalling any programs or changing the Time Zone.
+
+. Install the required version of Microsoft Visual Studio
++
+Install Microsoft Visual Studio VS2022 “Build Tools” edition version 17.7.3 which contains version 19.37.32822 of the C/C++ compiler:
++
+- Download and execute: https://download.visualstudio.microsoft.com/download/pr/1d66edfe-3c83-476b-bf05-e8901c62ba7f/bac71effb5a23d7cd1a81e5f628a0c8dcb7e8a07e0aa7077c853ed84a862dceb/vs_BuildTools.exe
+- Select “Workloads” - “Desktop development with C++”
+- “Install”
+
+. Install required build dependencies:
++
+Install Cygwin with required dependencies to build OpenJDK:
++
+[source,]
+----
+curl -L -O https://cygwin.com/setup-x86_64.exe
+curl -l -O https://cygwin.com/setup-x86_64.exe.sig
+# Verify download: Import "Cygwin <cygwin@cygwin.com>" GPG key
+gpg --keyserver keyserver.ubuntu.com --recv-keys 1A698DE9E2E56300
+gpg --verify setup-x86_64.exe.sig setup-x86_64.exe
+# Check for “Good signature”
+----
++
+Assuming setup-x86_64.exe is secure and GPG verify reports "Good signature", then install Cygwin:
++
+[source,]
+----
+setup-x86_64.exe --packages autoconf,automake,bsdtar,cmake,cpio,curl,gcc-core,git,gnupg,grep,jq,libtool,make,mingw64-x86_64-gcc-core,perl,rsync,unzip,wget,zip --download --local-install --delete-orphans --site https://mirrors.kernel.org/sourceware/cygwin/ --local-package-dir C:\cygwin_packages --root C:\cygwin64
+----
+
+. Start a Cygwin terminal windows to perform the build from within
++
+Double click the "Cygwin Terminal" desktop icon to open a new Cygwin terminal running the bash shell
+
+. Determine required build configuration for reproducing the target Eclipse Temurin release
++
+For the required Eclipse Temurin release version, download the SBOM and SBOM-metadata from the official Adoptium release binaries repository, eg.for jdk-21.0.4+7:
++
+[source,]
+----
+curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-sbom_x64_windows_hotspot_21.0.4_7.json
+curl -L -O https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-sbom_x64_windows_hotspot_21.0.4_7-metadata.json
+----
+
+. Determine upstream OpenJDK source tag to be built
++
+Open the SBOM json file and determine the "SCM Ref" the release was built from
++
+[source,]
+----
+        {
+          "name" : "SCM Ref",
+          "value" : "jdk-21.0.4+7_adopt"
+        },
+----
++
+The upstream OpenJDK tag is this value without the "_adopt", eg. "jdk-21.0.4+7"
+
+. Download a suitable Boot JDK
++
+To build Temurin you need a suitable Boot JDK, open the SBOM json file and determine the version used to build the release
++
+[source,]
+----
+      {
+        "name" : "BOOTJDK",
+        "version" : "20.0.2+9"
+      },
+----
++
+Securely download and verify the required version from the https://github.com/adoptium/temurin<NN>-binaries/releases
++
+[source,]
+----
+# Download JDK zip
+curl -L -O https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip
+# Download GPG sig file to verify
+curl -L -O https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip.sig
+# Verify JDK using Adoptium GPG key
+gpg --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B
+echo -e "5\ny\n" |  gpg --batch --command-fd 0 --expert --edit-key 3B04D753C9050D9A5D343F39843C48A565F8F04B trust;
+gpg --verify OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip.sig OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip
+----
++
+Ensure "Good signature from Adoptium GPG Key (DEB/RPM Signing Key)"
++
+Unzip into a suitable folder
++
+[source,]
+----
+unzip OpenJDK20U-jdk_x64_windows_hotspot_20.0.2_9.zip
+----
++
+Add to the PATH environment, so that java and javac tooling are available to scripts used later in these instructions.
++
+[source,]
+----
+export PATH=<bootjdk>/bin:$PATH
+----
+
+. Clone required upstream OpenJDK source
++
+Replace jdk21u with the upstream release being built
++
+[source,]
+----
+git clone https://github.com/openjdk/jdk21u.git
+# Checkout required tag to build
+(cd jdk21u && git checkout <OpenJDK tag to build>)
+----
+
+. Create a specific local build directory
++
+Note: This is required ONLY for jdk-21.0.4+7 due to a reproducible build issue (https://github.com/adoptium/temurin-build/issues/3790). For later versions this is unnecessary.
++
+Create the following exact local build directory for the build, the path must match this for the build to be identically reproducible.
++
+[source,]
+----
+mkdir -p C:/workspace/openjdk-build/workspace/build/openjdkbuild
+----
+
+. Configure build
++
+Determine and edit the "configure args" to match your local environment
++
+.. Determine the configure arguments for this build
++
+Use the following grep to find the required configure arguments from the SBOM-metadata.json
++
+[source,]
+----
+grep "using configure arguments" <SBOM-metadata.json> | sed -n -e "s/^.*using configure arguments '\(.*\)'\..*/\1/p"
+----
+.. Remove -–with-cacerts-src=<path>, as Temurin is built with Mozilla CA certs, whereas the local build will use the standard OpenJDK CA certs.
+.. Update --with-ucrt-dll-dir=<path>, to ensure it matches location on your local machine, specify:
++
+[source,]
+----
+--with-ucrt-dll-dir='C:/Program Files (x86)/Windows Kits/10/Redist/10.0.22621.0/ucrt/DLLs/x64'
+----
+.. Replace -–with-boot-jdk=<path>, with the path to your local unzipped boot jdk from above.
++
+Configure from the "C:/workspace/openjdk-build/workspace/build/openjdkbuild" directory
++
+[source,]
+----
+cd C:/workspace/openjdk-build/workspace/build/openjdkbuild
+bash ~/jdk21u/configure <edited configure args>
+----
+
+. Build Temurin
++
+[source,]
+----
+make images
+----
++
+The built image will be available under directory: /cygdrive/c/workspace/openjdk-build/workspace/build/openjdkbuild/images/jdk
+
+. Download offical Eclipse Temurin release to be verified
++
+Download and unpack the Temurin JDK to be verified:
++
+[source,]
+----
+curl -L -o temurin-windows-x64-jdk-21.0.4+7.zip https://api.adoptium.net/v3/binary/version/jdk-21.0.4+7/windows/x64/jdk/hotspot/normal/adoptium
+unzip temurin-windows-x64-jdk-21.0.4+7.zip
+----
+
+. Download and setup the Adoptium temurin-build reproducible build comparison tooling for Windows
++
+Due to the Temurin “signing signatures” of the Windows .exe/dll’s, processing is necessary to remove the unique digital signatures using the Windows signtool.exe tool. To aid this process and perform the comparison the Adoptium temurin-build tooling provides a reproducible compare script.
++
+Perform the following steps to clone and setup your environment to run the temurin-build reproducible compare script:
++
+- git clone https://github.com/adoptium/temurin-build.git
+- cd temurin-build/tooling
+- Compile BinRepl.java:
++
+[source,]
+----
+javac src/java/temurin/tools/BinRepl.java
+----
+- Find “signtool.exe” and add to PATH, eg:
++
+[source,]
+---- 
+export PATH=/cygdrive/c/progra~2/wi3cf2~1/10/bin/10.0.22621.0/x64:$PATH
+----
+- Find “dumpbin.exe” and add to PATH, eg:
++
+[source,]
+----
+export PATH=/cygdrive/c/progra~2/micros~2/2022/BuildTools/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64:$PATH
+----
+- cd reproducible
+- Set CLASSPATH to find the compiled BinRepl.class, eg.
++
+[source,]
+---- 
+export CLASSPATH=../src/java
+----
+
+. Verify the local secure re-build is identical to the official Eclipse Temurin binary
++
+Compare the local re-build to the Eclipse Temurin official JDK. This script involves unpacking the jmod's and removing all the unique Temurin signing "Signatures", this process takes a while to complete (roughly 30 minutes):
++
+[source,]
+----
+bash ./repro_compare.sh temurin ~/jdk-21.0.4+7 openjdk /cygdrive/c/workspace/openjdk-build/workspace/build/openjdkbuild/images/jdk CYGWIN
+----
++
+For a successful verification the script should report a reproducible result of 100%.
++
+[source,]
+----
+Comparing /home/user/jdk-21.0.4+7 with /cygdrive/c/workspace/openjdk-build/workspace/build/openjdkbuild/images/jdk ... output to file: reprotest.diff
+Number of differences: 0
+ReproduciblePercent = 100 %
+----
+

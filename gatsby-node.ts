@@ -292,6 +292,11 @@ export const createPages: GatsbyNode['createPages'] = async ({ graphql, actions 
     component: path.resolve('src', 'components', 'Banner', 'index.tsx'),
   })
 
+  createSlice({
+    id: 'adoptiumNews',
+    component: path.resolve('src', 'components', 'AdoptiumNews', 'index.tsx'),
+  })
+
   // create slice for AuthorBio
   for (const author of Object.keys(authors)) {
     createSlice({

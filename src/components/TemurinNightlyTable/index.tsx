@@ -3,6 +3,10 @@ import { Link, Trans, useI18next } from 'gatsby-plugin-react-i18next';
 import { capitalize } from '../../util/capitalize';
 import { localeDate } from '../../util/localeDate';
 
+const getFileName = (link: URL) => {
+    return link.toString().split('/').slice(-1);
+}
+
 const TemurinNightlyTable = ({results}) => {
     const { language } = useI18next();
 
@@ -13,6 +17,7 @@ const TemurinNightlyTable = ({results}) => {
                     <tr>
                         <td className="fw-bold">Platform</td>
                         <td className="fw-bold">Type</td>
+                        <td className="fw-bold">Build/Tag</td>
                         <td className="fw-bold">Date</td>
                         <td className="fw-bold">Binary</td>
                         <td className="fw-bold">Installer</td>
@@ -32,10 +37,13 @@ const TemurinNightlyTable = ({results}) => {
                                                         <tr key={`${key}-${asset.type}`} className="nightly-row">
                                                             <td>{capitalize(asset.os)} {asset.architecture === 'x32' ? 'x86' : asset.architecture}</td>
                                                             <td>{asset.type}</td>
+                                                            <td>{release.release_name}</td>
                                                             <td>{localeDate(release.timestamp, language)}</td>
-                                                            <td><Link to="/download" state={{ link: asset.link, checksum: asset.checksum, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: 'nightly' }}>{`${asset.extension} (${asset.size} MB)`}</Link></td>
+                                                            <td><Link 
+                                                            title={getFileName(asset.link)}
+                                                            to="/download" state={{ link: asset.link, checksum: asset.checksum, os: capitalize(key.split("-")[0]), arch: key.split("-")[1], pkg_type: asset.type, java_version: 'nightly' }}>{`${asset.extension} (${asset.size} MB)`}</Link></td>
                                                             {asset.installer_link ? (
-                                                                <td><Link to="/download" state={{ link: asset.installer_link, checksum: asset.installer_checksum }}>{asset.installer_extension}</Link></td>
+                                                                <td><Link title={getFileName(asset.installer_link)} to="/download" state={{ link: asset.installer_link, checksum: asset.installer_checksum }}>{asset.installer_extension}</Link></td>
                                                             ) :
                                                                 <td><Trans i18nKey='download.not.available' defaults='Not Available' /></td>
                                                             }

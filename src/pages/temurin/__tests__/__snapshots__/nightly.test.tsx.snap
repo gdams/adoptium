@@ -259,6 +259,11 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
             <td
               class="fw-bold"
             >
+              Build/Tag
+            </td>
+            <td
+              class="fw-bold"
+            >
               Date
             </td>
             <td
