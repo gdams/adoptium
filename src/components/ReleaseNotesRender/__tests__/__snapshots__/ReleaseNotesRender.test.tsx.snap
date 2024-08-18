@@ -83,7 +83,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
         </p>
         <div
           aria-label="Release Notes"
-          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-ybnjbb-MuiDataGrid-root"
+          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-igst0y-MuiDataGrid-root"
           style="--DataGrid-width: 0px; --DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 1300px; --DataGrid-columnsTotalWidth: 1300px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
         >
           <div
@@ -604,7 +604,6 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                 >
                   <div
                     aria-rowindex="2"
-                    aria-selected="false"
                     class="MuiDataGrid-row MuiDataGrid-row--firstVisible MuiDataGrid-row--dynamicHeight"
                     data-id="0"
                     data-rowindex="0"
@@ -694,7 +693,6 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                   </div>
                   <div
                     aria-rowindex="3"
-                    aria-selected="false"
                     class="MuiDataGrid-row MuiDataGrid-row--lastVisible MuiDataGrid-row--dynamicHeight"
                     data-id="1"
                     data-rowindex="1"
