@@ -38,7 +38,7 @@
     "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-remark-autolink-headers": "^6.13.1",
     "gatsby-remark-code-titles": "^1.1.0",
-    "gatsby-remark-copy-linked-files": "^6.13.1",
+    "gatsby-remark-copy-linked-files": "^6.13.2",
     "gatsby-remark-images": "^7.13.2",
     "gatsby-remark-prismjs": "^7.13.2",
     "gatsby-remark-smartypants": "^6.13.1",
