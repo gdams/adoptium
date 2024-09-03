@@ -43,21 +43,21 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 aria-expanded="false"
                 aria-haspopup="true"
                 aria-label="Show filters"
-                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-8iab9z-MuiButtonBase-root-MuiButton-root"
                 data-mui-internal-clone-element="true"
                 id=":r0:"
                 tabindex="0"
                 type="button"
               >
                 <span
-                  class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
+                  class="MuiButton-icon MuiButton-startIcon MuiButton-iconSizeSmall css-d8i980-MuiButton-startIcon"
                 >
                   <span
                     class="MuiBadge-root css-1c32n2y-MuiBadge-root"
                   >
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
                       data-testid="FilterListIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -74,9 +74,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                   </span>
                 </span>
                 Filters
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
               </button>
             </div>
             <div
@@ -149,7 +146,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                             >
                               <button
                                 aria-label="Sort"
-                                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                                 field="priority"
                                 tabindex="-1"
                                 title="Sort"
@@ -157,7 +154,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               >
                                 <svg
                                   aria-hidden="true"
-                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-ptiqhd-MuiSvgIcon-root"
+                                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall MuiDataGrid-sortIcon css-18w7uxr-MuiSvgIcon-root"
                                   data-testid="ArrowUpwardIcon"
                                   focusable="false"
                                   viewBox="0 0 24 24"
@@ -166,9 +163,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                                     d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"
                                   />
                                 </svg>
-                                <span
-                                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                                />
                               </button>
                             </div>
                           </div>
@@ -179,7 +173,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               aria-expanded="false"
                               aria-haspopup="menu"
                               aria-label="Menu"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                               data-mui-internal-clone-element="true"
                               id=":r7:"
                               tabindex="-1"
@@ -187,7 +181,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                             >
                               <svg
                                 aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
                                 data-testid="TripleDotsVerticalIcon"
                                 focusable="false"
                                 viewBox="0 0 24 24"
@@ -196,9 +190,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                                   d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
                                 />
                               </svg>
-                              <span
-                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                              />
                             </button>
                           </div>
                         </div>
@@ -208,7 +199,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-20bmp1-MuiSvgIcon-root"
                             data-testid="SeparatorIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -257,7 +248,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               aria-expanded="false"
                               aria-haspopup="menu"
                               aria-label="Menu"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                               data-mui-internal-clone-element="true"
                               id=":rd:"
                               tabindex="-1"
@@ -265,7 +256,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                             >
                               <svg
                                 aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
                                 data-testid="TripleDotsVerticalIcon"
                                 focusable="false"
                                 viewBox="0 0 24 24"
@@ -274,9 +265,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                                   d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
                                 />
                               </svg>
-                              <span
-                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                              />
                             </button>
                           </div>
                         </div>
@@ -286,7 +274,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-20bmp1-MuiSvgIcon-root"
                             data-testid="SeparatorIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -335,7 +323,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               aria-expanded="false"
                               aria-haspopup="menu"
                               aria-label="Menu"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                               data-mui-internal-clone-element="true"
                               id=":rj:"
                               tabindex="-1"
@@ -343,7 +331,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                             >
                               <svg
                                 aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
                                 data-testid="TripleDotsVerticalIcon"
                                 focusable="false"
                                 viewBox="0 0 24 24"
@@ -352,9 +340,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                                   d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
                                 />
                               </svg>
-                              <span
-                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                              />
                             </button>
                           </div>
                         </div>
@@ -364,7 +349,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-20bmp1-MuiSvgIcon-root"
                             data-testid="SeparatorIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -413,7 +398,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               aria-expanded="false"
                               aria-haspopup="menu"
                               aria-label="Menu"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                               data-mui-internal-clone-element="true"
                               id=":rp:"
                               tabindex="-1"
@@ -421,7 +406,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                             >
                               <svg
                                 aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
                                 data-testid="TripleDotsVerticalIcon"
                                 focusable="false"
                                 viewBox="0 0 24 24"
@@ -430,9 +415,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                                   d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
                                 />
                               </svg>
-                              <span
-                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                              />
                             </button>
                           </div>
                         </div>
@@ -442,7 +424,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-20bmp1-MuiSvgIcon-root"
                             data-testid="SeparatorIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -491,7 +473,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               aria-expanded="false"
                               aria-haspopup="menu"
                               aria-label="Menu"
-                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
+                              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                               data-mui-internal-clone-element="true"
                               id=":rv:"
                               tabindex="-1"
@@ -499,7 +481,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                             >
                               <svg
                                 aria-hidden="true"
-                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-ptiqhd-MuiSvgIcon-root"
+                                class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
                                 data-testid="TripleDotsVerticalIcon"
                                 focusable="false"
                                 viewBox="0 0 24 24"
@@ -508,9 +490,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                                   d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
                                 />
                               </svg>
-                              <span
-                                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                              />
                             </button>
                           </div>
                         </div>
@@ -520,7 +499,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiDataGrid-iconSeparator css-20bmp1-MuiSvgIcon-root"
                             data-testid="SeparatorIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -666,7 +645,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 class="MuiTablePagination-root css-16mfp94-MuiTablePagination-root"
               >
                 <div
-                  class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-78c6dr-MuiToolbar-root-MuiTablePagination-toolbar"
+                  class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-16og44m-MuiToolbar-root-MuiTablePagination-toolbar"
                 >
                   <div
                     class="MuiTablePagination-spacer css-1psng7p-MuiTablePagination-spacer"
@@ -685,7 +664,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       aria-expanded="false"
                       aria-haspopup="listbox"
                       aria-labelledby=":r4: :r3:"
-                      class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
+                      class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-141c2s2-MuiSelect-select-MuiInputBase-input"
                       id=":r3:"
                       role="combobox"
                       tabindex="0"
@@ -701,7 +680,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                     />
                     <svg
                       aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-rm9hue-MuiSvgIcon-root-MuiSelect-icon"
                       data-testid="ArrowDropDownIcon"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -721,7 +700,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                   >
                     <button
                       aria-label="Go to previous page"
-                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1kcqes5-MuiButtonBase-root-MuiIconButton-root"
                       disabled=""
                       tabindex="-1"
                       title="Go to previous page"
@@ -729,7 +708,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
                         data-testid="KeyboardArrowLeftIcon"
                         focusable="false"
                         viewBox="0 0 24 24"
@@ -741,7 +720,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                     </button>
                     <button
                       aria-label="Go to next page"
-                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-zylse7-MuiButtonBase-root-MuiIconButton-root"
+                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1kcqes5-MuiButtonBase-root-MuiIconButton-root"
                       disabled=""
                       tabindex="-1"
                       title="Go to next page"
@@ -749,7 +728,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
                         data-testid="KeyboardArrowRightIcon"
                         focusable="false"
                         viewBox="0 0 24 24"

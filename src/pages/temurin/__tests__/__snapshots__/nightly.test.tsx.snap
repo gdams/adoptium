@@ -175,7 +175,7 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
         class="MuiFormControl-root MuiTextField-root css-qixv09-MuiFormControl-root-MuiTextField-root"
       >
         <label
-          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-1jy569b-MuiFormLabel-root-MuiInputLabel-root"
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-18pjc51-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
           for=":r0:"
           id=":r0:-label"
@@ -183,12 +183,12 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
           Build Date
         </label>
         <div
-          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root"
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-lxfshk-MuiInputBase-root-MuiOutlinedInput-root"
         >
           <input
             aria-invalid="false"
             autocomplete="off"
-            class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-nxo287-MuiInputBase-input-MuiOutlinedInput-input"
+            class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-lc42l8-MuiInputBase-input-MuiOutlinedInput-input"
             id=":r0:"
             inputmode="text"
             placeholder="MM/DD/YYYY"
@@ -196,17 +196,17 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
             value="01/01/2022"
           />
           <div
-            class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1laqsz7-MuiInputAdornment-root"
+            class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1i2hsuj-MuiInputAdornment-root"
           >
             <button
               aria-label="Choose date, selected date is Jan 1, 2022"
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root"
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-1a7z5rc-MuiButtonBase-root-MuiIconButton-root"
               tabindex="0"
               type="button"
             >
               <svg
                 aria-hidden="true"
-                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"
                 data-testid="CalendarIcon"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -215,9 +215,6 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
                   d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
                 />
               </svg>
-              <span
-                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-              />
             </button>
           </div>
           <fieldset
@@ -225,7 +222,7 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
             class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
           >
             <legend
-              class="css-14lo706"
+              class="css-kg5swy"
             >
               <span>
                 Build Date

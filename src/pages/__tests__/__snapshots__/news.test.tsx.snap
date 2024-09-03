@@ -69,14 +69,14 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to first page"
-                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-firstLast css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-firstLast css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   disabled=""
                   tabindex="-1"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
                     data-testid="FirstPageIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -90,14 +90,14 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to previous page"
-                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-previousNext css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-previousNext css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   disabled=""
                   tabindex="-1"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
                     data-testid="NavigateBeforeIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -112,66 +112,51 @@ exports[`News page > renders correctly 1`] = `
                 <button
                   aria-current="true"
                   aria-label="page 1"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   1
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </li>
               <li>
                 <button
                   aria-label="Go to page 2"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   2
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </li>
               <li>
                 <button
                   aria-label="Go to page 3"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   3
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </li>
               <li>
                 <button
                   aria-label="Go to page 4"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   4
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </li>
               <li>
                 <button
                   aria-label="Go to page 5"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   5
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </li>
               <li>
@@ -184,26 +169,23 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to page 11"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   11
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </li>
               <li>
                 <button
                   aria-label="Go to next page"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
                     data-testid="NavigateNextIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -212,21 +194,18 @@ exports[`News page > renders correctly 1`] = `
                       d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
                     />
                   </svg>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </li>
               <li>
                 <button
                   aria-label="Go to last page"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-firstLast css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-firstLast css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-g2z002-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
                     data-testid="LastPageIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -235,9 +214,6 @@ exports[`News page > renders correctly 1`] = `
                       d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
                     />
                   </svg>
-                  <span
-                    class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                  />
                 </button>
               </li>
             </ul>
@@ -286,7 +262,7 @@ exports[`News page > renders correctly 1`] = `
                 />
               </div>
               <div
-                class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionAlternate css-ghevlx-MuiTypography-root-MuiTimelineContent-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionAlternate css-knvazm-MuiTypography-root-MuiTimelineContent-root"
               >
                 <p
                   class="text-muted lh-1"
@@ -373,7 +349,7 @@ exports[`News page > renders spinner when news not loaded 1`] = `
           </h2>
           <span
             aria-label="loading spinner"
-            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-18lrjg1-MuiCircularProgress-root"
+            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
             role="progressbar"
             style="width: 40px; height: 40px;"
           >
@@ -382,7 +358,7 @@ exports[`News page > renders spinner when news not loaded 1`] = `
               viewBox="22 22 44 44"
             >
               <circle
-                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
+                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
                 cx="44"
                 cy="44"
                 fill="none"
