@@ -5,7 +5,7 @@ import LinkText from '../LinkText'
 // NOTES: 
 // - You can add a <callToActionLink /> tag to create a link in the body
 // - Dates must be with the format: "YYYY-MM-DD"
-const adoptiumNewsList = [
+const predefinedAdoptiumNewsList = [
     {
         title: "Adoptium Summit 2024", 
         body: "Be a part of the first-ever Adoptium Summit on September, 10.<br/>Connect with peers to exchange knowledge on Temurin, AQAvit and other Adoptium's projects.<br/><callToActionLink>Register here</callToActionLink>", 
@@ -32,16 +32,16 @@ const eventDateOptions = {
 }
 
 interface Props {
-    providedAdoptiumNewsList?: AdoptiumNewsItem[];
+    adoptiumNewsList?: AdoptiumNewsItem[];
   }
   
 function compareNewsByStartDisplayAt(a: AdoptiumNewsItem, b: AdoptiumNewsItem) {
     return a.startDisplayAt.getTime() - b.startDisplayAt.getTime();
 }
 
-const AdoptiumNews = ({ providedAdoptiumNewsList }: Props) => {
+const AdoptiumNews = ({ adoptiumNewsList }: Props) => {
 
-    const adoptiumNewsListToDisplay = providedAdoptiumNewsList ? providedAdoptiumNewsList : adoptiumNewsList;
+    const adoptiumNewsListToDisplay = adoptiumNewsList ? adoptiumNewsList : predefinedAdoptiumNewsList;
 
     const { language } = useI18next();
 

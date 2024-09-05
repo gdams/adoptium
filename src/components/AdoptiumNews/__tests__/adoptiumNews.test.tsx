@@ -29,7 +29,7 @@ describe('AdoptiumNews component', () => {
   });
 
   it('renders correctly with provided news', () => {
-    const { container } = render(<AdoptiumNews items={mockedItems} />);
+    const { container } = render(<AdoptiumNews adoptiumNewsList={mockedItems} />);
 
     expect(container).toMatchSnapshot();
   });

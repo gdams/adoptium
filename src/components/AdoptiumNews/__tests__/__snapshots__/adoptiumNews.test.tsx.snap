@@ -11,7 +11,32 @@ exports[`AdoptiumNews component > renders correctly with provided news 1`] = `
       <h2
         class="text-pink"
       >
-        Adoptium Summit 2024
+        Mocked News 1
+      </h2>
+      <div>
+        <p
+          class="m-0 fw-bold"
+        >
+          September 10, 2024
+        </p>
+        <p
+          class="text-muted lh-sm"
+        >
+          Text
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="p-3 mt-4 mb-4 bg-light rounded-3 text-start"
+  >
+    <div
+      class="container py-5"
+    >
+      <h2
+        class="text-pink"
+      >
+        Mocked News 2
       </h2>
       <div>
         <p
