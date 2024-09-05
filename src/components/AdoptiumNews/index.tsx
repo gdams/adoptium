@@ -4,7 +4,7 @@ import LinkText from '../LinkText'
 
 // NOTES: 
 // - You can add a <callToActionLink /> tag to create a link in the body
-// - Dates must be with the format: "YYYY-MM-dd"
+// - Dates must be with the format: "YYYY-MM-DD"
 const adoptiumNewsList = [
     {
         title: "Adoptium Summit 2024", 
