@@ -31,18 +31,24 @@ const eventDateOptions = {
     timeZone: "UTC"
 }
 
+interface Props {
+    providedAdoptiumNewsList?: AdoptiumNewsItem[];
+  }
+  
 function compareNewsByStartDisplayAt(a: AdoptiumNewsItem, b: AdoptiumNewsItem) {
     return a.startDisplayAt.getTime() - b.startDisplayAt.getTime();
 }
 
-const AdoptiumNews = () => {
+const AdoptiumNews = ({ providedAdoptiumNewsList }: Props) => {
+
+    const adoptiumNewsListToDisplay = providedAdoptiumNewsList ? providedAdoptiumNewsList : adoptiumNewsList;
 
     const { language } = useI18next();
 
     const now = Date.now();
 
     return (
-        adoptiumNewsList
+        adoptiumNewsListToDisplay
             .filter(adoptiumNews => adoptiumNews.startDisplayAt.getTime() <= now && adoptiumNews.stopDisplayAfter.getTime() > now)
             .sort(compareNewsByStartDisplayAt)
             .map((adoptiumNews, index) => {
