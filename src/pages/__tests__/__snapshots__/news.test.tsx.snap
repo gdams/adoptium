@@ -246,23 +246,23 @@ exports[`News page > renders correctly 1`] = `
             Upcoming Events
           </h2>
           <ul
-            class="MuiTimeline-root MuiTimeline-positionAlternate css-55vwbm-MuiTimeline-root"
+            class="MuiTimeline-root MuiTimeline-positionAlternate  css-55vwbm-MuiTimeline-root"
           >
             <li
-              class="MuiTimelineItem-root MuiTimelineItem-positionAlternate MuiTimelineItem-missingOppositeContent css-423au0-MuiTimelineItem-root"
+              class="MuiTimelineItem-root MuiTimelineItem-positionAlternate MuiTimelineItem-missingOppositeContent  css-423au0-MuiTimelineItem-root"
             >
               <div
-                class="MuiTimelineSeparator-root css-1fe7e6p-MuiTimelineSeparator-root"
+                class="MuiTimelineSeparator-root  css-1fe7e6p-MuiTimelineSeparator-root"
               >
                 <span
-                  class="MuiTimelineDot-root MuiTimelineDot-filled MuiTimelineDot-filledGrey css-v6mo1y-MuiTimelineDot-root"
+                  class="MuiTimelineDot-root MuiTimelineDot-filled MuiTimelineDot-filledGrey  css-v6mo1y-MuiTimelineDot-root"
                 />
                 <span
-                  class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
+                  class="MuiTimelineConnector-root  css-1ami7lv-MuiTimelineConnector-root"
                 />
               </div>
               <div
-                class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionAlternate css-knvazm-MuiTypography-root-MuiTimelineContent-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionAlternate  css-knvazm-MuiTypography-root-MuiTimelineContent-root"
               >
                 <p
                   class="text-muted lh-1"
@@ -395,7 +395,7 @@ exports[`News page > renders spinner when news not loaded 1`] = `
             Upcoming Events
           </h2>
           <ul
-            class="MuiTimeline-root MuiTimeline-positionAlternate css-55vwbm-MuiTimeline-root"
+            class="MuiTimeline-root MuiTimeline-positionAlternate  css-55vwbm-MuiTimeline-root"
           />
           <a
             class="px-2"
