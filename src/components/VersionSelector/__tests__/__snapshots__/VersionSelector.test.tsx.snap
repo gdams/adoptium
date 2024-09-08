@@ -22,17 +22,12 @@ exports[`VersionSelector > updates the number of builds and build date when the 
       [36m<option[39m
         [33mvalue[39m=[32m"2"[39m
       [36m>[39m
-        [0m2 - EA[0m
+        [0m2[0m
       [36m</option>[39m
       [36m<option[39m
         [33mvalue[39m=[32m"1"[39m
       [36m>[39m
         [0m1 - LTS[0m
-      [36m</option>[39m
-      [36m<option[39m
-        [33mvalue[39m=[32m"2"[39m
-      [36m>[39m
-        [0m2[0m
       [36m</option>[39m
     [36m</select>[39m
   [36m</div>[39m
