@@ -83,7 +83,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
         </p>
         <div
           aria-label="Release Notes"
-          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-igst0y-MuiDataGrid-root"
+          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-1e4tlmm-MuiDataGrid-root"
           style="--DataGrid-width: 0px; --DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 1300px; --DataGrid-columnsTotalWidth: 1300px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
         >
           <div
@@ -140,7 +140,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
               role="presentation"
             />
             <div
-              class="MuiDataGrid-virtualScroller css-1793420-MuiDataGrid-virtualScroller"
+              class="MuiDataGrid-virtualScroller MuiDataGrid-virtualScroller--hasScrollX css-1793420-MuiDataGrid-virtualScroller"
               role="presentation"
               style="overflow-x: hidden; overflow-y: hidden;"
             >
@@ -168,7 +168,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-columnHeader--sorted MuiDataGrid-withBorderColor"
                       data-field="priority"
                       role="columnheader"
-                      style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"
+                      style="height: 56px; width: 100px;"
                       tabindex="0"
                     >
                       <div
@@ -185,7 +185,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Priority
@@ -225,13 +225,13 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":r7:"
+                            id=":r4:"
                             tabindex="-1"
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1lzspe0-MuiSvgIcon-root"
                               data-testid="TripleDotsVerticalIcon"
                               focusable="false"
                               viewBox="0 0 24 24"
@@ -245,7 +245,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       </div>
                       <div
                         class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                        style="min-height: 56px; opacity: 1;"
+                        style="min-height: 56px;"
                       >
                         <svg
                           aria-hidden="true"
@@ -254,8 +254,11 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           focusable="false"
                           viewBox="0 0 24 24"
                         >
-                          <path
-                            d="M11 19V5h2v14z"
+                          <rect
+                            height="24"
+                            rx="0.5"
+                            width="1"
+                            x="11.5"
                           />
                         </svg>
                       </div>
@@ -267,7 +270,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                       data-field="type"
                       role="columnheader"
-                      style="height: 56px; width: 100px; min-width: 100px; max-width: 100px;"
+                      style="height: 56px; width: 100px;"
                       tabindex="-1"
                     >
                       <div
@@ -284,7 +287,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Type
@@ -300,13 +303,13 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":rd:"
+                            id=":ra:"
                             tabindex="-1"
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1lzspe0-MuiSvgIcon-root"
                               data-testid="TripleDotsVerticalIcon"
                               focusable="false"
                               viewBox="0 0 24 24"
@@ -320,7 +323,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       </div>
                       <div
                         class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                        style="min-height: 56px; opacity: 1;"
+                        style="min-height: 56px;"
                       >
                         <svg
                           aria-hidden="true"
@@ -329,8 +332,11 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           focusable="false"
                           viewBox="0 0 24 24"
                         >
-                          <path
-                            d="M11 19V5h2v14z"
+                          <rect
+                            height="24"
+                            rx="0.5"
+                            width="1"
+                            x="11.5"
                           />
                         </svg>
                       </div>
@@ -342,7 +348,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                       data-field="component"
                       role="columnheader"
-                      style="height: 56px; width: 150px; min-width: 150px; max-width: 150px;"
+                      style="height: 56px; width: 150px;"
                       tabindex="-1"
                     >
                       <div
@@ -359,7 +365,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Component
@@ -375,13 +381,13 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":rj:"
+                            id=":rg:"
                             tabindex="-1"
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1lzspe0-MuiSvgIcon-root"
                               data-testid="TripleDotsVerticalIcon"
                               focusable="false"
                               viewBox="0 0 24 24"
@@ -395,7 +401,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       </div>
                       <div
                         class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                        style="min-height: 56px; opacity: 1;"
+                        style="min-height: 56px;"
                       >
                         <svg
                           aria-hidden="true"
@@ -404,8 +410,11 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           focusable="false"
                           viewBox="0 0 24 24"
                         >
-                          <path
-                            d="M11 19V5h2v14z"
+                          <rect
+                            height="24"
+                            rx="0.5"
+                            width="1"
+                            x="11.5"
                           />
                         </svg>
                       </div>
@@ -417,7 +426,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                       data-field="id"
                       role="columnheader"
-                      style="height: 56px; width: 150px; min-width: 150px; max-width: 150px;"
+                      style="height: 56px; width: 150px;"
                       tabindex="-1"
                     >
                       <div
@@ -434,7 +443,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Issue
@@ -450,13 +459,13 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":rp:"
+                            id=":rm:"
                             tabindex="-1"
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1lzspe0-MuiSvgIcon-root"
                               data-testid="TripleDotsVerticalIcon"
                               focusable="false"
                               viewBox="0 0 24 24"
@@ -470,7 +479,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       </div>
                       <div
                         class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                        style="min-height: 56px; opacity: 1;"
+                        style="min-height: 56px;"
                       >
                         <svg
                           aria-hidden="true"
@@ -479,8 +488,11 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           focusable="false"
                           viewBox="0 0 24 24"
                         >
-                          <path
-                            d="M11 19V5h2v14z"
+                          <rect
+                            height="24"
+                            rx="0.5"
+                            width="1"
+                            x="11.5"
                           />
                         </svg>
                       </div>
@@ -492,7 +504,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor MuiDataGrid-columnHeader--last"
                       data-field="title"
                       role="columnheader"
-                      style="height: 56px; width: 800px; min-width: 800px; max-width: 800px;"
+                      style="height: 56px; width: 800px;"
                       tabindex="-1"
                     >
                       <div
@@ -509,7 +521,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           >
                             <div
                               aria-label=""
-                              class="MuiDataGrid-columnHeaderTitle css-t89xny-MuiDataGrid-columnHeaderTitle"
+                              class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                               data-mui-internal-clone-element="true"
                             >
                               Title
@@ -525,13 +537,13 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                             aria-label="Menu"
                             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-hizwh9-MuiButtonBase-root-MuiIconButton-root"
                             data-mui-internal-clone-element="true"
-                            id=":rv:"
+                            id=":rs:"
                             tabindex="-1"
                             type="button"
                           >
                             <svg
                               aria-hidden="true"
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-18w7uxr-MuiSvgIcon-root"
+                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit css-1lzspe0-MuiSvgIcon-root"
                               data-testid="TripleDotsVerticalIcon"
                               focusable="false"
                               viewBox="0 0 24 24"
@@ -545,7 +557,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                       </div>
                       <div
                         class="MuiDataGrid-columnSeparator MuiDataGrid-columnSeparator--resizable MuiDataGrid-columnSeparator--sideRight"
-                        style="min-height: 56px; opacity: 1;"
+                        style="min-height: 56px;"
                       >
                         <svg
                           aria-hidden="true"
@@ -554,8 +566,11 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                           focusable="false"
                           viewBox="0 0 24 24"
                         >
-                          <path
-                            d="M11 19V5h2v14z"
+                          <rect
+                            height="24"
+                            rx="0.5"
+                            width="1"
+                            x="11.5"
                           />
                         </svg>
                       </div>
@@ -791,7 +806,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                 />
                 <p
                   class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-                  id=":r4:"
+                  id=":r12:"
                 >
                   Rows per page:
                 </p>
@@ -799,12 +814,12 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
                   class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-16c50h-MuiInputBase-root-MuiTablePagination-select"
                 >
                   <div
-                    aria-controls=":r5:"
+                    aria-controls=":r13:"
                     aria-expanded="false"
                     aria-haspopup="listbox"
-                    aria-labelledby=":r4: :r3:"
+                    aria-labelledby=":r12: :r11:"
                     class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-141c2s2-MuiSelect-select-MuiInputBase-input"
-                    id=":r3:"
+                    id=":r11:"
                     role="combobox"
                     tabindex="0"
                   >
