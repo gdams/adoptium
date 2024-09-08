@@ -78,6 +78,35 @@ const VersionSelector = ({updater, releaseType, Table}) => {
     udateNumBuilds(number);
   }, []);
 
+  const versionsToDisplay = [...versions]
+
+  if(releaseType === "ea") {
+    // if releaseType is ea, add missing versions up to mostRecentFeatureVersion (as EA for the last)
+    const range = (start: number, stop: number, step: number) =>
+      Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + i * step);
+
+    // https://github.com/adoptium/adoptium.net/issues/3016
+    // johnoliver: "assume that there are EA versions for versions between 16 and most_recent_feature_version"
+    const sixteenToLastEA = range(16, mostRecentFeatureVersion, 1);
+
+    sixteenToLastEA.forEach(version => {
+      if(versionsToDisplay.findIndex(v => v.node.version === version) < 0) {
+        // this version number is missing, append to the version list
+        const v = {
+          node: {
+            id: version,
+            version: version,
+            label: `${version}${version === mostRecentFeatureVersion ? ' - EA' : ''}`
+          }
+        }
+        versionsToDisplay.push(v)
+      }
+    })
+
+    // sort by version DESC
+    versionsToDisplay.sort((v1, v2) => v2.node.version - v1.node.version)
+  }
+
   return (
     <>
       <p className='text-center'>
@@ -86,12 +115,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
       <div className="input-group p-3 d-flex justify-content-center">
         <label className="px-2 fw-bold" htmlFor="version"><Trans>Version</Trans></label>
         <select data-testid="version-filter" aria-label="version-filter" id="version-filter" onChange={(e) => setVersion(e.target.value)} value={version} className="form-select form-select-sm" style={{ maxWidth: '10em' }}>
-            {/* if releaseType is ea add another option */}
-            {releaseType === "ea" && (
-              <option key={mostRecentFeatureVersion} value={mostRecentFeatureVersion}>{`${mostRecentFeatureVersion} - EA`}</option>
-            )}
-            {/* loop through versions array from graphql */}
-            {versions.map(
+            {versionsToDisplay.map(
               (version, i): number | JSX.Element => version && (
                 <option key={version.node.id} value={version.node.version}>{version.node.label}</option>
               )
