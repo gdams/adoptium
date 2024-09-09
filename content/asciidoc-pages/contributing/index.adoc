@@ -1,5 +1,5 @@
 = Contributing to Adoptium(R)
-:page-authors: Ndacyayisenga-droid
+:page-authors: Ndacyayisenga-droid, andrew-m-leonard
 
 Thanks for your interest in this project.
 
