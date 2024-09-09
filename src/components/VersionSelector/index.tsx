@@ -81,7 +81,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
   const versionsToDisplay = [...versions]
 
   if(releaseType === "ea") {
-    // if releaseType is ea, add missing versions up to mostRecentFeatureVersion (as EA for the last)
+    // if releaseType is "ea", add missing "ea" versions up to mostRecentFeatureVersion
     const range = (start: number, stop: number, step: number) =>
       Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + i * step);
 
@@ -96,7 +96,7 @@ const VersionSelector = ({updater, releaseType, Table}) => {
           node: {
             id: version,
             version: version,
-            label: `${version}${version === mostRecentFeatureVersion ? ' - EA' : ''}`
+            label: `${version} - EA`
           }
         }
         versionsToDisplay.push(v)
