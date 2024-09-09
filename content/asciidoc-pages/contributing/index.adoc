@@ -41,7 +41,11 @@ For more information, please see the https://www.eclipse.org/projects/handbook/#
 
 == Submitting a contribution to Adoptium
 
-After signing the ECA, you can propose contributions by sending pull requests (PRs) through GitHub.
+After signing the ECA, you can propose contributions by sending pull requests (PRs) through GitHub. Pull requests
+should be accompanied by a GitHub issue that documents the problem or feature that the change is addressing. The
+Eclipse Adoptium project uses the Agile methodology for planning and developing fixes and new features, the
+https://github.com/adoptium/adoptium/wiki/Adoptium-Agile-Guidelines[Adoptium Agile Guidelines] documents what is
+required for GitHub issues and contributions.
 
 **Note:** Assume we are contributing to the `aqa-tests` repo
 
