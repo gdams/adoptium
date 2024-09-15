@@ -107,19 +107,59 @@ exports[`Temurin Nightly page > renders correctly 1`] = `
         style="max-width: 10em;"
       >
         <option
-          value="2"
+          value="24"
         >
-          2 - EA
+          24 - EA
         </option>
         <option
-          value="1"
+          value="23"
         >
-          1 - LTS
+          23 - EA
+        </option>
+        <option
+          value="22"
+        >
+          22 - EA
+        </option>
+        <option
+          value="21"
+        >
+          21 - EA
+        </option>
+        <option
+          value="20"
+        >
+          20 - EA
+        </option>
+        <option
+          value="19"
+        >
+          19 - EA
+        </option>
+        <option
+          value="18"
+        >
+          18 - EA
+        </option>
+        <option
+          value="17"
+        >
+          17 - EA
+        </option>
+        <option
+          value="16"
+        >
+          16 - EA
         </option>
         <option
           value="2"
         >
           2
+        </option>
+        <option
+          value="1"
+        >
+          1 - LTS
         </option>
       </select>
     </div>
