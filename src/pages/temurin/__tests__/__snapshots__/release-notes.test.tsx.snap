@@ -33,7 +33,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
           </p>
           <div
             aria-label="Release Notes"
-            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-1e4tlmm-MuiDataGrid-root"
+            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-s5gzfh-MuiDataGrid-root"
             style="--DataGrid-width: 0px; --DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 1300px; --DataGrid-columnsTotalWidth: 1300px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
           >
             <div
@@ -113,7 +113,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       />
                       <div
                         aria-colindex="1"
-                        aria-label="Priority"
                         aria-sort="ascending"
                         class="MuiDataGrid-columnHeader MuiDataGrid-columnHeader--sortable MuiDataGrid-columnHeader--sorted MuiDataGrid-withBorderColor"
                         data-field="priority"
@@ -134,7 +133,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               class="MuiDataGrid-columnHeaderTitleContainerContent"
                             >
                               <div
-                                aria-label=""
                                 class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                                 data-mui-internal-clone-element="true"
                               >
@@ -215,7 +213,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       </div>
                       <div
                         aria-colindex="2"
-                        aria-label="Type"
                         aria-sort="none"
                         class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                         data-field="type"
@@ -236,7 +233,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               class="MuiDataGrid-columnHeaderTitleContainerContent"
                             >
                               <div
-                                aria-label=""
                                 class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                                 data-mui-internal-clone-element="true"
                               >
@@ -293,7 +289,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       </div>
                       <div
                         aria-colindex="3"
-                        aria-label="Component"
                         aria-sort="none"
                         class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                         data-field="component"
@@ -314,7 +309,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               class="MuiDataGrid-columnHeaderTitleContainerContent"
                             >
                               <div
-                                aria-label=""
                                 class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                                 data-mui-internal-clone-element="true"
                               >
@@ -371,7 +365,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       </div>
                       <div
                         aria-colindex="4"
-                        aria-label="Issue"
                         aria-sort="none"
                         class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor"
                         data-field="id"
@@ -392,7 +385,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               class="MuiDataGrid-columnHeaderTitleContainerContent"
                             >
                               <div
-                                aria-label=""
                                 class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                                 data-mui-internal-clone-element="true"
                               >
@@ -449,9 +441,8 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       </div>
                       <div
                         aria-colindex="5"
-                        aria-label="Title"
                         aria-sort="none"
-                        class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor MuiDataGrid-columnHeader--last"
+                        class="MuiDataGrid-columnHeader MuiDataGrid-withBorderColor MuiDataGrid-columnHeader--lastUnpinned MuiDataGrid-columnHeader--last"
                         data-field="title"
                         role="columnheader"
                         style="height: 56px; width: 800px;"
@@ -470,7 +461,6 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                               class="MuiDataGrid-columnHeaderTitleContainerContent"
                             >
                               <div
-                                aria-label=""
                                 class="MuiDataGrid-columnHeaderTitle css-1qb993p-MuiDataGrid-columnHeaderTitle"
                                 data-mui-internal-clone-element="true"
                               >
