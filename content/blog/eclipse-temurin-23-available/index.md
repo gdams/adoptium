@@ -39,6 +39,6 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 23+3
 
 * [JEP 481: Scoped Values (Third Preview)](https://openjdk.org/jeps/481)
 
-*[JEP 482: Flexible Constructor Bodies (Second Preview)](https://openjdk.org/jeps/482)
+* [JEP 482: Flexible Constructor Bodies (Second Preview)](https://openjdk.org/jeps/482)
 
 For a complete list of the enhancements (including ones that only impact developers of OpenJDK), [see the JDK 23 overview over at OpenJDK](https://openjdk.org/projects/jdk/23/).
