@@ -552,6 +552,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         aria-colindex="1"
                         aria-colspan="1"
+                        aria-rowspan="1"
                         class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                         data-colindex="0"
                         data-field="priority"
@@ -569,6 +570,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         aria-colindex="2"
                         aria-colspan="1"
+                        aria-rowspan="1"
                         class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                         data-colindex="1"
                         data-field="type"
@@ -583,6 +585,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         aria-colindex="3"
                         aria-colspan="1"
+                        aria-rowspan="1"
                         class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                         data-colindex="2"
                         data-field="component"
@@ -596,6 +599,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         aria-colindex="4"
                         aria-colspan="1"
+                        aria-rowspan="1"
                         class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                         data-colindex="3"
                         data-field="id"
@@ -614,6 +618,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                       <div
                         aria-colindex="5"
                         aria-colspan="1"
+                        aria-rowspan="1"
                         class="MuiDataGrid-cell MuiDataGrid-cell--textLeft"
                         data-colindex="4"
                         data-field="title"
