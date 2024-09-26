@@ -8,19 +8,18 @@ import LinkText from '../LinkText'
 const predefinedAdoptiumNewsList = [
     {
         title: "Adoptium Summit 2024", 
-        body: "Be a part of the first-ever Adoptium Summit on September, 10.<br/>Connect with peers to exchange knowledge on Temurin, AQAvit and other Adoptium's projects.<br/><callToActionLink>Register here</callToActionLink>", 
-        callToActionLink: 'https://www.eclipse.org/events/2024/adoptium-summit/', 
-        date: new Date('2024-09-10'),
-        startDisplayAt: new Date('2024-08-01'),
-        stopDisplayAfter: new Date('2024-09-10'),
-    },
-    {
-        title: "Adoptium Summit 2024", 
         body: "Join us Today for the first-ever Adoptium Summit.<br/>An opportunity to connect with other Adoptium community members.<br/><callToActionLink>Register here</callToActionLink>", 
         callToActionLink: 'https://www.eclipse.org/events/2024/adoptium-summit/', 
         date: new Date('2024-09-10'),
         startDisplayAt: new Date('2024-09-10'),
         stopDisplayAfter: new Date('2024-09-11'),
+    },
+    {
+        title: "OCX 24: Join Us at Open Community for Java", 
+        body: "Join the Adoptium community at the Eclipse Foundation's flagship developer conference, held 22-24 October in Mainz, Germany. Java.OCXConf.org", 
+        date: new Date('2024-09-10'),
+        startDisplayAt: new Date('2024-09-15'),
+        stopDisplayAfter: new Date('2024-10-24'),
     }
 ]
 
