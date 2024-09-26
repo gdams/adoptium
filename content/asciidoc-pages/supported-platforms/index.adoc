@@ -14,7 +14,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 |===
 .2+h|Operating System 5+h|Eclipse Temurin Version h|
 
-{nbsp} 8 h|11 h|17 h|21 h|22
+{nbsp} 8 h|11 h|17 h|21 h|23
 6+h| Windows (x64)
 | Windows Server 2022 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Windows Server 2019 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]| icon:check[] icon:docker[]
@@ -72,6 +72,7 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 20.04 | icon:times[] footnote:nojit[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 
 6+h| Linux (riscv64) footnote:glibc231[These builds should work on any distribution with glibc version 2.31 or higher.]
+| Ubuntu 24.04 | icon:times[] | icon:times[] | icon:times[] | icon:check[] icon:docker[] | icon:check[] icon:docker[]
 | Ubuntu 22.04 | icon:times[] | icon:times[] | icon:times[] | icon:check[] | icon:check[]
 | Ubuntu 20.04 | icon:times[] | icon:times[] | icon:times[] | icon:check[] | icon:check[]
 

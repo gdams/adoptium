@@ -4,11 +4,11 @@
 | Java Version  | First Availability | Latest Release | Next Release Due | End of Availability ^[1]^
 
 | Java 23
-| Expected +
-Sep 2024
-| Not available
-| Expected +
-Sep 2024
+| Sep 2024
+| 17 Sep 2024 +
+[.small]#jdk-23+37#
+| 15 Oct 2024 +
+[.small]#jdk-23.0.1#
 | Expected Mar 2025
 
 | Java 22
