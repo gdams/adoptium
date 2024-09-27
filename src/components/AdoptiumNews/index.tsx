@@ -15,8 +15,9 @@ const predefinedAdoptiumNewsList = [
         stopDisplayAfter: new Date('2024-09-11'),
     },
     {
-        title: "OCX 24: Join Us at Open Community for Java", 
-        body: "Join the Adoptium community at the Eclipse Foundation's flagship developer conference, held 22-24 October in Mainz, Germany. Java.OCXConf.org", 
+        title: "OCX 24: Join us at Open Community for Java", 
+        body: "Join the Adoptium community at the Eclipse Foundation's flagship developer conference, held 22-24 October in Mainz, Germany. Register here: <callToActionLink>Java.OCXConf.org</callToActionLink>", 
+        callToActionLink: 'https://www.ocxconf.org/event/778b82cc-6834-48a4-a58e-f883c5a7b8c9/websitePage:77f60b73-336c-43be-827d-8d8fcb1aaf64', 
         date: new Date('2024-09-10'),
         startDisplayAt: new Date('2024-09-15'),
         stopDisplayAfter: new Date('2024-10-24'),
