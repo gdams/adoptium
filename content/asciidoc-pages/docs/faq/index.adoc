@@ -168,7 +168,7 @@ set of platforms we target in our build and test process is listed link:/support
 
 == Why is my favorite architecture and operating system no longer supported?
 
-The link:/supported-platforms[supported-platforms] list reflects the intersection of what is supported in the upstream OpenJDK project and what the Adoptium project chooses to build, test and support.  The choice to drop support is determined by a number of criteria, including consumer demand, available funding through sponsorship, and support for machines and engineers to help at the project.  
+The link:/supported-platforms[supported-platforms] list reflects the intersection of what is supported in the upstream OpenJDK project and what the Adoptium project chooses to build, test and support.  The choice to drop support is determined by a number of criteria, including consumer demand, available funding through sponsorship, resource support for machines, and engineers to help at the project.  
 
 The most common reason a platform is no longer supported is it's deprecation in the upstream OpenJDK project.  For example, in answer to the question "why is Windows x86 32bit no longer supported in Java 21+?", one can see https://openjdk.org/jeps/449[JEP 449] where that port is deprecated for removal.
 
