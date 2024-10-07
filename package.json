@@ -13,7 +13,7 @@
     "@mdx-js/react": "^2.3.0",
     "@mui/lab": "^6.0.0-beta.10",
     "@mui/material": "^6.1.2",
-    "@mui/x-data-grid": "^7.18.0",
+    "@mui/x-data-grid": "^7.19.0",
     "@mui/x-date-pickers": "^7.19.0",
     "@popperjs/core": "^2.11.8",
     "@react-icons/all-files": "^4.1.0",
