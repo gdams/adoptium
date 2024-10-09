@@ -11,7 +11,7 @@
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@gatsbyjs/reach-router": "^2.0.1",
     "@mdx-js/react": "^2.3.0",
-    "@mui/lab": "^6.0.0-beta.10",
+    "@mui/lab": "^6.0.0-beta.11",
     "@mui/material": "^6.1.2",
     "@mui/x-data-grid": "^7.19.0",
     "@mui/x-date-pickers": "^7.19.0",
