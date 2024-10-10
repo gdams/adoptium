@@ -1,5 +1,11 @@
 [
     {
+        "name": "AiP Safe",
+        "logo": "adopters/logo-aipsafe.png",
+        "url": "https://www.aipsafe.cz/",
+        "tier": "adopter"
+    },
+    {
         "name": "Apache SkyWalking",
         "logo": "adopters/logo-apache-skywalking.svg",
         "url": "https://skywalking.apache.org/",
