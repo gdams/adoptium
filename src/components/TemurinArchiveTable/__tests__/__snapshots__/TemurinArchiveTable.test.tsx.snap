@@ -431,22 +431,22 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
     </table>
     <nav
       aria-label="pagination navigation"
-      class="MuiPagination-root MuiPagination-text pt-3 d-flex justify-content-center css-1oj2twp-MuiPagination-root"
+      class="MuiPagination-root MuiPagination-text pt-3 d-flex justify-content-center css-1xra8g6-MuiPagination-root"
     >
       <ul
-        class="MuiPagination-ul css-wjh20t-MuiPagination-ul"
+        class="MuiPagination-ul css-1c5o7vy-MuiPagination-ul"
       >
         <li>
           <button
             aria-label="Go to first page"
-            class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-firstLast css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+            class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-firstLast css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
             disabled=""
             tabindex="-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
               data-testid="FirstPageIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -460,14 +460,14 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
         <li>
           <button
             aria-label="Go to previous page"
-            class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-previousNext css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+            class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-previousNext css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
             disabled=""
             tabindex="-1"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
               data-testid="NavigateBeforeIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -482,7 +482,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
           <button
             aria-current="true"
             aria-label="page 1"
-            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
             tabindex="0"
             type="button"
           >
@@ -492,7 +492,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
         <li>
           <button
             aria-label="Go to page 2"
-            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
             tabindex="0"
             type="button"
           >
@@ -502,13 +502,13 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
         <li>
           <button
             aria-label="Go to next page"
-            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
               data-testid="NavigateNextIcon"
               focusable="false"
               viewBox="0 0 24 24"
@@ -522,13 +522,13 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
         <li>
           <button
             aria-label="Go to last page"
-            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-firstLast css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+            class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-firstLast css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
             tabindex="0"
             type="button"
           >
             <svg
               aria-hidden="true"
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
               data-testid="LastPageIcon"
               focusable="false"
               viewBox="0 0 24 24"
