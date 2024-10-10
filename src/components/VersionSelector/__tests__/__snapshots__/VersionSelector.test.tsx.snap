@@ -121,10 +121,10 @@ exports[`VersionSelector > updates the number of builds and build date when the 
       [33mclass[39m=[32m"p-2"[39m
     [36m/>[39m
     [36m<div[39m
-      [33mclass[39m=[32m"MuiFormControl-root MuiTextField-root css-qixv09-MuiFormControl-root-MuiTextField-root"[39m
+      [33mclass[39m=[32m"MuiFormControl-root MuiTextField-root css-b8bldw-MuiFormControl-root-MuiTextField-root"[39m
     [36m>[39m
       [36m<label[39m
-        [33mclass[39m=[32m"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-18pjc51-MuiFormLabel-root-MuiInputLabel-root"[39m
+        [33mclass[39m=[32m"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeMedium MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"[39m
         [33mdata-shrink[39m=[32m"true"[39m
         [33mfor[39m=[32m":r2:"[39m
         [33mid[39m=[32m":r2:-label"[39m
@@ -132,12 +132,12 @@ exports[`VersionSelector > updates the number of builds and build date when the 
         [0mBuild Date[0m
       [36m</label>[39m
       [36m<div[39m
-        [33mclass[39m=[32m"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-lxfshk-MuiInputBase-root-MuiOutlinedInput-root"[39m
+        [33mclass[39m=[32m"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-adornedEnd css-jupps9-MuiInputBase-root-MuiOutlinedInput-root"[39m
       [36m>[39m
         [36m<input[39m
           [33maria-invalid[39m=[32m"false"[39m
           [33mautocomplete[39m=[32m"off"[39m
-          [33mclass[39m=[32m"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-lc42l8-MuiInputBase-input-MuiOutlinedInput-input"[39m
+          [33mclass[39m=[32m"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedEnd css-1dune0f-MuiInputBase-input-MuiOutlinedInput-input"[39m
           [33mid[39m=[32m":r2:"[39m
           [33minputmode[39m=[32m"text"[39m
           [33mplaceholder[39m=[32m"MM/DD/YYYY"[39m
@@ -145,17 +145,17 @@ exports[`VersionSelector > updates the number of builds and build date when the 
           [33mvalue[39m=[32m"01/01/2022"[39m
         [36m/>[39m
         [36m<div[39m
-          [33mclass[39m=[32m"MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1i2hsuj-MuiInputAdornment-root"[39m
+          [33mclass[39m=[32m"MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-elo8k2-MuiInputAdornment-root"[39m
         [36m>[39m
           [36m<button[39m
             [33maria-label[39m=[32m"Choose date, selected date is Jan 1, 2022"[39m
-            [33mclass[39m=[32m"MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-1a7z5rc-MuiButtonBase-root-MuiIconButton-root"[39m
+            [33mclass[39m=[32m"MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-179dbev-MuiButtonBase-root-MuiIconButton-root"[39m
             [33mtabindex[39m=[32m"0"[39m
             [33mtype[39m=[32m"button"[39m
           [36m>[39m
             [36m<svg[39m
               [33maria-hidden[39m=[32m"true"[39m
-              [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-20bmp1-MuiSvgIcon-root"[39m
+              [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"[39m
               [33mdata-testid[39m=[32m"CalendarIcon"[39m
               [33mfocusable[39m=[32m"false"[39m
               [33mviewBox[39m=[32m"0 0 24 24"[39m
@@ -168,10 +168,10 @@ exports[`VersionSelector > updates the number of builds and build date when the 
         [36m</div>[39m
         [36m<fieldset[39m
           [33maria-hidden[39m=[32m"true"[39m
-          [33mclass[39m=[32m"MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"[39m
+          [33mclass[39m=[32m"MuiOutlinedInput-notchedOutline css-1ll44ll-MuiOutlinedInput-notchedOutline"[39m
         [36m>[39m
           [36m<legend[39m
-            [33mclass[39m=[32m"css-kg5swy"[39m
+            [33mclass[39m=[32m"css-w1u3ce"[39m
           [36m>[39m
             [36m<span>[39m
               [0mBuild Date[0m
