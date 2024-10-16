@@ -187,5 +187,11 @@
         "logo": "adopters/logo-total-validator.svg",
         "url": "https://www.totalvalidator.com/",
         "tier": "adopter"
+    },
+    {
+        "name": "Trend Micro",
+        "logo": "adopters/logo-trend-micro.png",
+        "url": "https://www.trendmicro.com/",
+        "tier": "adopter"
     }
 ]
