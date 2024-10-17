@@ -55,7 +55,7 @@ exports[`Docs page > renders correctly 1`] = `
               >
                 <button
                   aria-label="Open"
-                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-102j2wg-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-1puztro-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator"
                   tabindex="-1"
                   title="Open"
                   type="button"

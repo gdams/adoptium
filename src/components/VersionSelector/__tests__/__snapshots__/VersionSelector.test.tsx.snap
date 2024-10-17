@@ -149,7 +149,7 @@ exports[`VersionSelector > updates the number of builds and build date when the 
         [36m>[39m
           [36m<button[39m
             [33maria-label[39m=[32m"Choose date, selected date is Jan 1, 2022"[39m
-            [33mclass[39m=[32m"MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-179dbev-MuiButtonBase-root-MuiIconButton-root"[39m
+            [33mclass[39m=[32m"MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-oeq6yz-MuiButtonBase-root-MuiIconButton-root"[39m
             [33mtabindex[39m=[32m"0"[39m
             [33mtype[39m=[32m"button"[39m
           [36m>[39m
