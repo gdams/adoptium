@@ -165,6 +165,12 @@
         "tier": "adopter"
     },
     {
+        "name": "Starburst",
+        "logo": "adopters/logo-starburst.svg",
+        "url": "https://starburst.io/",
+        "tier": "adopter"
+    },
+    {
         "name": "T-Systems",
         "logo": "adopters/logo-t-systems.svg",
         "url": "https://www.t-systems.com/",
