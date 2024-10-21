@@ -83,7 +83,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
         </p>
         <div
           aria-label="Release Notes"
-          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-1rfg99c-MuiDataGrid-root"
+          class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-6zi7zu-MuiDataGrid-root"
           style="--DataGrid-width: 0px; --DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 1300px; --DataGrid-columnsTotalWidth: 1300px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
         >
           <div
@@ -797,7 +797,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
           >
             <div />
             <div
-              class="MuiTablePagination-root css-19ewyh7-MuiTablePagination-root"
+              class="MuiTablePagination-root css-1hr2sou-MuiTablePagination-root"
             >
               <div
                 class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-1gak8h1-MuiToolbar-root-MuiTablePagination-toolbar"
