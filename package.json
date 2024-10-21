@@ -65,7 +65,7 @@
     "react-use-flexsearch": "^0.1.1",
     "react-world-flags": "^1.6.0",
     "remark-gfm": "^1.0.0",
-    "sass": "1.80.2",
+    "sass": "1.80.3",
     "typescript-plugin-css-modules": "^5.1.0"
   },
   "devDependencies": {
