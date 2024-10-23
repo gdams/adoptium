@@ -1,5 +1,5 @@
 = Eclipse Adoptium(R) First Timers Support
-:page-authors: gdams, HanSolo, hendrikebbers, tellison, xavierfacq
+:page-authors: gdams, HanSolo, hendrikebbers, tellison, xavierfacq, LemongrabThree
 :page-based-on: 50dc526fadcdd7dd03b386f112ac1ab4043bb554
 :description: Support with first time contributions
 :keywords: adoptium documentation contribute first-time
