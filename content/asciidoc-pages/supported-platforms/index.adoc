@@ -22,6 +22,10 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Windows 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | Windows 10 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
+6+h| Windows (aarch64)
+| Windows Server 2022 | icon:times[] | icon:times[] | icon:times[] | icon:check[] | icon:check[]
+| Windows 11 | icon:times[] | icon:times[] | icon:times[] | icon:check[] | icon:check[]
+
 6+h| Windows (x86)
 | Windows Server 2022 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[] | icon:times[]
 | Windows Server 2019 | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:check[] icon:docker[] | icon:times[] | icon:times[]
