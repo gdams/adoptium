@@ -51,7 +51,7 @@ const NewsPage = (): JSX.Element => {
                   showFirstButton
                   showLastButton
                 />
-              : null}           
+              : null}
               <a href="https://newsroom.eclipse.org/eclipse/community-news" target='_blank' rel='noreferrer' className='px-2'>View all</a>
               |
               <a href="https://newsroom.eclipse.org/node/add/news" target='_blank' rel='noreferrer' className='px-2'>Submit news</a>

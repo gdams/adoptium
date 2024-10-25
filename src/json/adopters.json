@@ -1,5 +1,11 @@
 [
     {
+        "name": "AiP Safe",
+        "logo": "adopters/logo-aipsafe.png",
+        "url": "https://www.aipsafe.cz/",
+        "tier": "adopter"
+    },
+    {
         "name": "Apache SkyWalking",
         "logo": "adopters/logo-apache-skywalking.svg",
         "url": "https://skywalking.apache.org/",
@@ -159,6 +165,12 @@
         "tier": "adopter"
     },
     {
+        "name": "Starburst",
+        "logo": "adopters/logo-starburst.svg",
+        "url": "https://starburst.io/",
+        "tier": "adopter"
+    },
+    {
         "name": "T-Systems",
         "logo": "adopters/logo-t-systems.svg",
         "url": "https://www.t-systems.com/",
@@ -180,6 +192,12 @@
         "name": "Total Validator",
         "logo": "adopters/logo-total-validator.svg",
         "url": "https://www.totalvalidator.com/",
+        "tier": "adopter"
+    },
+    {
+        "name": "Trend Micro",
+        "logo": "adopters/logo-trend-micro.png",
+        "url": "https://www.trendmicro.com/",
         "tier": "adopter"
     }
 ]

@@ -1,5 +1,5 @@
 = Eclipse Adoptium(R) First Timers Support
-:page-authors: gdams, HanSolo, hendrikebbers, tellison, xavierfacq
+:page-authors: gdams, HanSolo, hendrikebbers, tellison, xavierfacq, LemongrabThree
 :page-based-on: 50dc526fadcdd7dd03b386f112ac1ab4043bb554
 :description: Support with first time contributions
 :keywords: adoptium documentation contribute first-time
@@ -14,7 +14,7 @@ Deshalb ist es für uns wichtig, Menschen, die mit OpenSource arbeiten wollen, z
 Diese Dokumentation is noch in Arbeit und einige Punkte, welche erwähnt werden, sind Ideen für die Zukunft und heute noch nicht final definiert.
 ====
 
-Adoptium bietet mehrere Issues an, welche als **`good first issue`** markiert sind.
+Adoptium bietet mehrere Issues an, welche als https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Aadoptium+archived%3Afalse+label%3A%22good+first+issue%22[good first issue] markiert sind.
 Alle diese Issues sind perfekt dafür geeignet, um mit der Arbeit an einem Open-Source-Projekt zu beginnen.
 Die Issues bieten benutzerfreundliche Beschreibungen und viele hilfreiche Links zu Dokumentationen und Tutorials, um direkt mit der Arbeit
 an einem solchen Issue beginnen zu können.
@@ -27,29 +27,29 @@ In GitHub finden Sie https://github.com/issues?q=org%3AAdoptium+label%3A%22good+
 
 == Vorlagen
 
-Wir arbeiten derzeit an einer Vorlage für Issues welche als **`good first issue`** gekennzeichnet sind.
+Wir arbeiten derzeit an einer Vorlage für Issues welche als https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Aadoptium+archived%3Afalse+label%3A%22good+first+issue%22[good first issue] gekennzeichnet sind.
 https://gist.github.com/hendrikebbers/8e4dec9ddea5e2a420080d1314af025f[Die aktuelle Version der Vorlage] und
 https://gist.github.com/hendrikebbers/0f9cdd18076343b3bbe5f2d162733b6e[ein Abschnitt über die "Unterstützung für Anfänger"]
 sind zur Zeit in der Entwicklung.
 
 == Arbeitsablauf zur Erstellung eines "good first issues"
 
-Wann immer Sie davon ausgehen dass ein Thema ein **`good first issue`** sein könnte, sollten Sie es mit dem Label **`good first issue - candidate`** versehen.
-Auf diese Weise kann es überprüft und geändert werden, damit es ein **`good first issue`** wird.
+Wann immer Sie davon ausgehen dass ein Thema ein https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Aadoptium+archived%3Afalse+label%3A%22good+first+issue%22[good first issue] sein könnte, sollten Sie es mit dem Label **`good first issue - candidate`** versehen.
+Auf diese Weise kann es überprüft und geändert werden, damit es ein https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Aadoptium+archived%3Afalse+label%3A%22good+first+issue%22[good first issue] wird.
 
 In GitHub finden Sie https://github.com/issues?q=org%3AAdoptium+label%3A%22good+first+issue+-+candidate%22+is%3Aopen[eine Liste aller Issues, welche mit **`good first issue - candidate`** gekennzeichnet sind].
 
-Alle Issues, die als **`good first issue - candidate`** gekennzeichnet sind, sollten überprüft und eventuell überarbeitet werden, um als **`good first issue`** gekennzeichnet werden zu können.
+Alle Issues, die als **`good first issue - candidate`** gekennzeichnet sind, sollten überprüft und eventuell überarbeitet werden, um als https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Aadoptium+archived%3Afalse+label%3A%22good+first+issue%22[good first issue] gekennzeichnet werden zu können.
 Dabei sollten folgende Regeln beachtet werden:
 
 - Der Titel des Issues muss das Problem beschreiben
 - Die Beschreibung des Issues muss auf https://gist.github.com/hendrikebbers/0f9cdd18076343b3bbe5f2d162733b6e[unserer **`good first issue`** Vorlage basieren]
 - Das Issue sollte keine Kommentare enthalten. Kommentare machen es für einen Neuling schwerer den Issue zu verstehen. Alle relevanten Informationen, welche in den Kommentaren stehen, sollten in die Beschreibung des Problems aufgenommen werden. Die Kommentare sollten anschließend entfernt werden.
-Wenn dieses nicht möglich ist, ist die beste Lösung, einen neuen Issue für den **`good first issue`** anzulegen, diesen mit dem ursprünglichen Issue zu verknüpfen und den ursprünglichen
+Wenn dieses nicht möglich ist, ist die beste Lösung, einen neuen Issue für den https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Aadoptium+archived%3Afalse+label%3A%22good+first+issue%22[good first issue] anzulegen, diesen mit dem ursprünglichen Issue zu verknüpfen und den ursprünglichen
 Issue zu schließen.
 - Bei der Beschreibung des Problems ist es immer sinnvoll, auf Dokumentationen oder hilfreiche Dateien zu verlinken (eventuell sogar direkt auf den Code) um einem Neuling zu helfen den richtigen Ausgangspunkt für die Arbeit an dem Problem zu finden.
 
-Sobald das Problem überarbeitet und überprüft wurde, sollte es als **`good first issue`** gekennzeichnet werden und die Kennzeichnung **`good first issue - candidate`** sollte entfernt werden.
+Sobald das Problem überarbeitet und überprüft wurde, sollte es als https://github.com/issues?q=is%3Aopen+is%3Aissue+org%3Aadoptium+archived%3Afalse+label%3A%22good+first+issue%22[good first issue] gekennzeichnet werden und die Kennzeichnung **`good first issue - candidate`** sollte entfernt werden.
 Außerdem sollten wir alle diese Probleme mit **`help wanted`** und **`Hacktoberfest`** kennzeichnen.
 
 == Links & Resources

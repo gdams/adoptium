@@ -22,7 +22,7 @@ const LatestTemurin = (props): JSX.Element => {
         // @ts-ignore
         let ext = gl && gl.getExtension('WEBGL_debug_renderer_info');
         // @ts-ignore
-        let param = ext && gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) || "";
+        let param = (ext && gl.getParameter(ext.UNMASKED_RENDERER_WEBGL)) || "";
         isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
         //Detect if the user is using a Apple GPU (M1)
         if (isSafari || (param.match(/Apple/) && !param.match(/Apple GPU/))) {

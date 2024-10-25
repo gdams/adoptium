@@ -104,6 +104,12 @@
     "tier": "infra"
   },
   {
+    "name": "Cloudflare",
+    "logo": "cloudflare.svg",
+    "url": "https://www.cloudflare.com/",
+    "tier": "infra"
+  },
+  {
     "name": "Skytap",
     "logo": "skytap.png",
     "url": "https://skytap.com",

@@ -61,22 +61,22 @@ exports[`News page > renders correctly 1`] = `
           </div>
           <nav
             aria-label="pagination navigation"
-            class="MuiPagination-root MuiPagination-text pt-3 d-flex justify-content-center css-1oj2twp-MuiPagination-root"
+            class="MuiPagination-root MuiPagination-text pt-3 d-flex justify-content-center css-1xra8g6-MuiPagination-root"
           >
             <ul
-              class="MuiPagination-ul css-wjh20t-MuiPagination-ul"
+              class="MuiPagination-ul css-1c5o7vy-MuiPagination-ul"
             >
               <li>
                 <button
                   aria-label="Go to first page"
-                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-firstLast css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-firstLast css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   disabled=""
                   tabindex="-1"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
                     data-testid="FirstPageIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -90,14 +90,14 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to previous page"
-                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-previousNext css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root Mui-disabled MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-disabled MuiPaginationItem-previousNext css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   disabled=""
                   tabindex="-1"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
                     data-testid="NavigateBeforeIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -112,7 +112,7 @@ exports[`News page > renders correctly 1`] = `
                 <button
                   aria-current="true"
                   aria-label="page 1"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
@@ -122,7 +122,7 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to page 2"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
@@ -132,7 +132,7 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to page 3"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
@@ -142,7 +142,7 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to page 4"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
@@ -152,7 +152,7 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to page 5"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
@@ -161,7 +161,7 @@ exports[`News page > renders correctly 1`] = `
               </li>
               <li>
                 <div
-                  class="MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-ellipsis css-1v2lvtn-MuiPaginationItem-root"
+                  class="MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-ellipsis css-btxnvc-MuiPaginationItem-root"
                 >
                   …
                 </div>
@@ -169,7 +169,7 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to page 11"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
@@ -179,13 +179,13 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to next page"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-previousNext css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
                     data-testid="NavigateNextIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -199,13 +199,13 @@ exports[`News page > renders correctly 1`] = `
               <li>
                 <button
                   aria-label="Go to last page"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-firstLast css-q7jpt8-MuiButtonBase-root-MuiPaginationItem-root"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-firstLast css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
                   tabindex="0"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-l65soe-MuiSvgIcon-root-MuiPaginationItem-icon"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiPaginationItem-icon css-8uzxat-MuiSvgIcon-root-MuiPaginationItem-icon"
                     data-testid="LastPageIcon"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -246,23 +246,23 @@ exports[`News page > renders correctly 1`] = `
             Upcoming Events
           </h2>
           <ul
-            class="MuiTimeline-root MuiTimeline-positionAlternate  css-55vwbm-MuiTimeline-root"
+            class="MuiTimeline-root MuiTimeline-positionAlternate css-i6popu-MuiTimeline-root"
           >
             <li
-              class="MuiTimelineItem-root MuiTimelineItem-positionAlternate MuiTimelineItem-missingOppositeContent  css-423au0-MuiTimelineItem-root"
+              class="MuiTimelineItem-root MuiTimelineItem-positionAlternate MuiTimelineItem-missingOppositeContent css-423au0-MuiTimelineItem-root"
             >
               <div
-                class="MuiTimelineSeparator-root  css-1fe7e6p-MuiTimelineSeparator-root"
+                class="MuiTimelineSeparator-root css-1muvgbz-MuiTimelineSeparator-root"
               >
                 <span
-                  class="MuiTimelineDot-root MuiTimelineDot-filled MuiTimelineDot-filledGrey  css-v6mo1y-MuiTimelineDot-root"
+                  class="MuiTimelineDot-root MuiTimelineDot-filled MuiTimelineDot-filledGrey css-v6mo1y-MuiTimelineDot-root"
                 />
                 <span
-                  class="MuiTimelineConnector-root  css-1ami7lv-MuiTimelineConnector-root"
+                  class="MuiTimelineConnector-root css-1ami7lv-MuiTimelineConnector-root"
                 />
               </div>
               <div
-                class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionAlternate  css-knvazm-MuiTypography-root-MuiTimelineContent-root"
+                class="MuiTypography-root MuiTypography-body1 MuiTimelineContent-root MuiTimelineContent-positionAlternate css-l73f8l-MuiTypography-root-MuiTimelineContent-root"
               >
                 <p
                   class="text-muted lh-1"
@@ -349,16 +349,16 @@ exports[`News page > renders spinner when news not loaded 1`] = `
           </h2>
           <span
             aria-label="loading spinner"
-            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1yonwsg-MuiCircularProgress-root"
+            class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorPrimary css-1wxecgq-MuiCircularProgress-root"
             role="progressbar"
             style="width: 40px; height: 40px;"
           >
             <svg
-              class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+              class="MuiCircularProgress-svg css-54pwck-MuiCircularProgress-svg"
               viewBox="22 22 44 44"
             >
               <circle
-                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-1a8epmm-MuiCircularProgress-circle"
+                class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-960umw-MuiCircularProgress-circle"
                 cx="44"
                 cy="44"
                 fill="none"
@@ -395,7 +395,7 @@ exports[`News page > renders spinner when news not loaded 1`] = `
             Upcoming Events
           </h2>
           <ul
-            class="MuiTimeline-root MuiTimeline-positionAlternate  css-55vwbm-MuiTimeline-root"
+            class="MuiTimeline-root MuiTimeline-positionAlternate css-i6popu-MuiTimeline-root"
           />
           <a
             class="px-2"

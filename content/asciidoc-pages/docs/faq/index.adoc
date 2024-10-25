@@ -1,5 +1,5 @@
 = Frequently Asked Questions
-:page-authors: gdams, karianna, sxa555, aahlenst, sxa, tellison, kemitix, Fishbowler, Saurabh-Daware, xavierfacq
+:page-authors: gdams, karianna, sxa555, aahlenst, sxa, tellison, kemitix, Fishbowler, Saurabh-Daware, xavierfacq, smlambert
 
 We have gathered together a few frequently asked questions (FAQs) into
 this document.
@@ -165,6 +165,12 @@ versions. Each new platform incurs further cost and demand on the project's
 resources so we constantly review the download and usage demand to ensure we
 are releasing on platforms relevant to a large set of users. The current
 set of platforms we target in our build and test process is listed link:/supported-platforms[here].
+
+== Why is my favorite architecture and operating system no longer supported?
+
+The link:/supported-platforms[supported-platforms] list reflects the intersection of what is supported in the upstream OpenJDK project and what the Adoptium project chooses to build, test and support.  The choice to drop support is determined by a number of criteria, including consumer demand, available funding through sponsorship, resource support for machines, and engineers to help at the project.  
+
+The most common reason a platform is no longer supported is it's deprecation in the upstream OpenJDK project.  For example, in answer to the question "why is Windows x86 32bit no longer supported in Java 21+?", one can see https://openjdk.org/jeps/449[JEP 449] where that port is deprecated for removal.
 
 == Can I automate the download of Temurin binaries?
 
