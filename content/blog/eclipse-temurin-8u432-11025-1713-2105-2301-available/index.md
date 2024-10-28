@@ -62,9 +62,9 @@ See more details about the fix [here](https://github.com/adoptium/containers/pul
 
 #### (Re)Introduction of Windows Nanoserver images for JDK23
 
-With the release of Eclipse Temurin 23.0.1, we are pleased to announce that Windows NanoServer images are now available, though this was skipped for the initial JDK 23 release. Currently, when running JDK 23+37 on Windows NanoServer containers, users may encounter the warning: 
+With the release of Eclipse Temurin 23.0.1, we are pleased to announce that Windows NanoServer images are now available, though this was skipped for the initial JDK 23 release. Currently, when running JDK 23+37 on Windows NanoServer containers, users may encounter the warning:
 
-```
+```output
 OpenJDK 64-Bit Server VM warning: Failed to determine whether the OS can retrieve version information from kernel32.dll: The system cannot find the file specified
 ```
 
