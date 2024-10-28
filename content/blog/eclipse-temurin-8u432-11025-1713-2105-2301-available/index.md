@@ -46,6 +46,10 @@ Starting with Eclipse Temurin versions 21.0.5 and 23.0.1, Windows aarch64 (ARM64
 
 ### Container Updates
 
+#### GPG Verification Added to Eclipse Temurin images
+
+This release introduces GPG verification for Eclipse Temurin container downloads, adding integrity and authenticity checks for greater security. As part of this enhancement, the `gnupg` package is now included in all Ubuntu and Alpine-based container images, which could be a breaking change for some workflows. This adjustment ensures that users receive verified binaries but may impact containers that previously operated without gnupg installed. For further details, refer to [PR #673](https://github.com/adoptium/containers/pull/673).
+
 #### General availability of RISC-V container images
 
 In this release, we are introducing support for RISC-V (riscv64) architecture with new Docker images for Eclipse Temurin, available from JDK 17 onwards. This addition enables broader compatibility and performance on RISC-V platforms, furthering our commitment to supporting diverse architectures in the open-source ecosystem.
