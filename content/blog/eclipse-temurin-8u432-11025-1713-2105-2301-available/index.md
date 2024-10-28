@@ -44,6 +44,14 @@ This release contains the following fixes and updates.
 
 Starting with Eclipse Temurin versions 21.0.5 and 23.0.1, Windows aarch64 (ARM64) is now officially supported. This addition brings enhanced flexibility and performance improvements for developers working on ARM-based Windows systems. Users can now benefit from Temurin’s robust, high-performance JDK distribution on an expanded range of Windows hardware, continuing our commitment to broad platform compatibility and support for modern architectures.
 
+### Windows Updated Microsoft STL Redistributable Included in Eclipse Temurin
+
+We have addressed an issue in Eclipse Temurin regarding the inclusion of an outdated Microsoft STL redistributable (`msvcp140.dll`) in the JDK's bin directory, as noted in [issue #3887](https://github.com/adoptium/temurin-build/issues/3887). This issue led to crashes for applications using C++ libraries from Java that relied on the updated mutex behavior in the latest Microsoft toolset. The outdated DLL version caused mutex initialization errors, impacting multi-threaded functionality. With this fix, Temurin now includes the latest Microsoft redistributables, ensuring compatibility and stability for applications requiring the updated runtime.
+
+### Missing AIX 8u432 Release
+
+The AIX build for Eclipse Temurin 8u342 has been temporarily skipped due to a compilation error introduced in the upstream OpenJDK codebase. We have reported the issue in [JDK-8342822](https://bugs.openjdk.org/browse/JDK-8342822) and are actively working toward a resolution. We anticipate that the AIX JDK8u build will be available in the next quarterly release.
+
 ### Container Updates
 
 #### GPG Verification Added to Eclipse Temurin images
