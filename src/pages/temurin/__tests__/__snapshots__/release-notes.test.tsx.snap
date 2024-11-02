@@ -14,7 +14,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
       class="text-center"
     >
       <h2>
-        version
+        release_name_mock
       </h2>
       <div
         class="pt-3"
