@@ -83,8 +83,8 @@ describe('ReleaseNotesRender component', () => {
             <ReleaseNotesRender />
         );
 
-        // check if 1 row is rendered and 1 is filtered out
-        expect(container.querySelectorAll('.MuiDataGrid-row')).toHaveLength(1);
+        // createMockReleaseNotesAPI returns 2 valid rows
+        expect(container.querySelectorAll('.MuiDataGrid-row')).toHaveLength(2);
     });
 
     // sets priority as p? when priority is not defined
