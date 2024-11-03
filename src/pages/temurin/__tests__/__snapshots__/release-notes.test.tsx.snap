@@ -33,7 +33,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
           </p>
           <div
             aria-label="Release Notes"
-            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-13jlfxe-MuiDataGrid-root"
+            class="MuiDataGrid-root MuiDataGrid-autoHeight MuiDataGrid-root--densityStandard MuiDataGrid-withBorderColor css-6zi7zu-MuiDataGrid-root"
             style="--DataGrid-width: 0px; --DataGrid-hasScrollX: 1; --DataGrid-hasScrollY: 0; --DataGrid-scrollbarSize: 0px; --DataGrid-rowWidth: 1300px; --DataGrid-columnsTotalWidth: 1300px; --DataGrid-leftPinnedWidth: 0px; --DataGrid-rightPinnedWidth: 0px; --DataGrid-headerHeight: 56px; --DataGrid-headersTotalHeight: 56px; --DataGrid-topContainerHeight: 56px; --DataGrid-bottomContainerHeight: 0px; --height: 52px;"
           >
             <div
@@ -85,12 +85,12 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
               tabindex="-1"
             >
               <div
-                class="css-18l11qw"
+                class="css-19vp370"
                 data-id="gridPanelAnchor"
                 role="presentation"
               />
               <div
-                class="MuiDataGrid-virtualScroller MuiDataGrid-virtualScroller--hasScrollX css-1vigakz-MuiDataGrid-virtualScroller"
+                class="MuiDataGrid-virtualScroller MuiDataGrid-virtualScroller--hasScrollX css-1iqthua-MuiDataGrid-virtualScroller"
                 role="presentation"
                 style="overflow-x: hidden; overflow-y: hidden;"
               >
@@ -529,7 +529,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 <div
                   class="MuiDataGrid-virtualScrollerContent css-aymtem-MuiDataGrid-virtualScrollerContent"
                   role="presentation"
-                  style="width: auto; flex-basis: 52px; flex-shrink: 0;"
+                  style="width: auto; height: 52px;"
                 >
                   <div
                     class="MuiDataGrid-virtualScrollerRenderZone css-11dqcl8-MuiDataGrid-virtualScrollerRenderZone"
@@ -635,6 +635,7 @@ exports[`Temurin Release Notes page > renders correctly 1`] = `
                 <div
                   class="MuiDataGrid-bottomContainer MuiDataGrid-container--bottom css-kkb6k7"
                   role="presentation"
+                  style="transform: translateY(0px);"
                 />
               </div>
               <div
