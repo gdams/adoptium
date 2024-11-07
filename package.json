@@ -82,7 +82,7 @@
     "ajv": "^8.17.1",
     "axios-mock-adapter": "^2.1.0",
     "babel-preset-gatsby": "^3.14.0",
-    "gatsby-cli": "^5.13.3",
+    "gatsby-cli": "^5.14.0",
     "jest-canvas-mock": "^2.5.2",
     "jsdom": "^25.0.1",
     "prettier": "3.3.3",
