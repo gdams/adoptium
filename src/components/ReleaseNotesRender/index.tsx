@@ -174,6 +174,9 @@ const ReleaseNotesRender = (): null | JSX.Element => {
           ) : (
             <>
               <p>This section organizes the changes in the selected update release by the main component under which each issue is filed.</p>
+              {version !== releaseNotesVersion && 
+              <p><strong>NOTE:</strong> These are the release notes for the latest LTS version. If you need a different version, please visit the <a href='/temurin/releases/'>download page</a> to select another one.</p>
+              }
               <p><strong>{`The total number of fixes marked as P1 is: ${totalP1}`}</strong></p>
               <DataGrid
                 aria-label='Release Notes'
