@@ -1,0 +1,452 @@
+
+# gatsby-adapter-netlify start
+/*
+  cache-control: public, max-age=0, must-revalidate
+  x-xss-protection: 1; mode=block
+  x-content-type-options: nosniff
+  referrer-policy: same-origin
+  x-frame-options: DENY
+/static/*
+  cache-control: public, max-age=31536000, immutable
+/5d142d41-c5118fd17b3ac6c54c4c.js
+  cache-control: public, max-age=31536000, immutable
+/5d142d41-c5118fd17b3ac6c54c4c.js.map
+  cache-control: public, max-age=31536000, immutable
+/79759df238302b9654b631a00df695f3a3bd5f43-8531f2ed87fd2c210234.js
+  cache-control: public, max-age=31536000, immutable
+/79759df238302b9654b631a00df695f3a3bd5f43-8531f2ed87fd2c210234.js.map
+  cache-control: public, max-age=31536000, immutable
+/styles.8d34c6f8ed7cf09b0578.css/
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-release-notes-tsx-19f8114c1f1202d68b07.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-release-notes-tsx-19f8114c1f1202d68b07.js.map
+  cache-control: public, max-age=31536000, immutable
+/app-96bfcdb53fa14a0d60b8.js
+  cache-control: public, max-age=31536000, immutable
+/app-96bfcdb53fa14a0d60b8.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/app-96bfcdb53fa14a0d60b8.js.map
+  cache-control: public, max-age=31536000, immutable
+/framework-1c643b66b4ea391f66eb.js
+  cache-control: public, max-age=31536000, immutable
+/framework-1c643b66b4ea391f66eb.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/framework-1c643b66b4ea391f66eb.js.map
+  cache-control: public, max-age=31536000, immutable
+/0a82037f3f6b0ea44081075e29b55d8dc190c4d7-b5139e98f8f3a862ab2b.js
+  cache-control: public, max-age=31536000, immutable
+/0a82037f3f6b0ea44081075e29b55d8dc190c4d7-b5139e98f8f3a862ab2b.js.map
+  cache-control: public, max-age=31536000, immutable
+/5d80443bef22a885a98d49c3757d3a2cbdb0f667-1996ab3f4d51958163b4.js
+  cache-control: public, max-age=31536000, immutable
+/5d80443bef22a885a98d49c3757d3a2cbdb0f667-1996ab3f4d51958163b4.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/5d80443bef22a885a98d49c3757d3a2cbdb0f667-1996ab3f4d51958163b4.js.map
+  cache-control: public, max-age=31536000, immutable
+/c65958503c6214f286aa688d5709e8a9868b8627-c7771c63944e1e6456e1.js
+  cache-control: public, max-age=31536000, immutable
+/c65958503c6214f286aa688d5709e8a9868b8627-c7771c63944e1e6456e1.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/c65958503c6214f286aa688d5709e8a9868b8627-c7771c63944e1e6456e1.js.map
+  cache-control: public, max-age=31536000, immutable
+/1108-9e818efd96189a3c612f.js
+  cache-control: public, max-age=31536000, immutable
+/1108-9e818efd96189a3c612f.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/1108-9e818efd96189a3c612f.js.map
+  cache-control: public, max-age=31536000, immutable
+/75fc9c18-26fcaa7c05ab63ea531d.js
+  cache-control: public, max-age=31536000, immutable
+/75fc9c18-26fcaa7c05ab63ea531d.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/75fc9c18-26fcaa7c05ab63ea531d.js.map
+  cache-control: public, max-age=31536000, immutable
+/8dbe104c5ea704c1d3b92554ccf3121ebfe2d3f3-533763af86076cb23aee.js
+  cache-control: public, max-age=31536000, immutable
+/8dbe104c5ea704c1d3b92554ccf3121ebfe2d3f3-533763af86076cb23aee.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/8dbe104c5ea704c1d3b92554ccf3121ebfe2d3f3-533763af86076cb23aee.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-asciidoc-template-tsx-1b999bb0e676472f2200.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-asciidoc-template-tsx-1b999bb0e676472f2200.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-asciidoc-template-tsx-1b999bb0e676472f2200.js.map
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-footer-index-tsx-d8188f1a0bf37d7f30dc.js
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-footer-index-tsx-d8188f1a0bf37d7f30dc.js.LICENSE.txt
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-footer-index-tsx-d8188f1a0bf37d7f30dc.js.map
+  cache-control: public, max-age=31536000, immutable
+/11011f53d80f9cbe6298e05a6b08a0c591727558-850ced4e9f9c3926189d.js
+  cache-control: public, max-age=31536000, immutable
+/11011f53d80f9cbe6298e05a6b08a0c591727558-850ced4e9f9c3926189d.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-a-month-after-eclipsecon-adoptium-community-day-summary-and-more-index-md-5c4b2487216330a1b130.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-a-month-after-eclipsecon-adoptium-community-day-summary-and-more-index-md-5c4b2487216330a1b130.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-emt-4-j-an-easier-upgrade-for-java-applications-index-md-97b302edd9cbf30af025.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-emt-4-j-an-easier-upgrade-for-java-applications-index-md-97b302edd9cbf30af025.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-docs-tsx-244d9cbdf60f7670eaeb.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-docs-tsx-244d9cbdf60f7670eaeb.js.map
+  cache-control: public, max-age=31536000, immutable
+/53b999d3cf15b8501dae9e4fddebe6c29d866aef-c0f4465d07db360f1d4b.js
+  cache-control: public, max-age=31536000, immutable
+/53b999d3cf15b8501dae9e4fddebe6c29d866aef-c0f4465d07db360f1d4b.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-a-summary-of-the-july-2022-retrospectives-index-md-88f000d7a991389e4b1a.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-a-summary-of-the-july-2022-retrospectives-index-md-88f000d7a991389e4b1a.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-reproducible-comparison-builds-index-md-3dc7e6ea8afb61f8efd5.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-reproducible-comparison-builds-index-md-3dc7e6ea8afb61f8efd5.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-infrastructure-management-with-nagios-index-md-36f7e22f56748e0a666f.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-infrastructure-management-with-nagios-index-md-36f7e22f56748e0a666f.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-422-11024-1712-2104-2202-available-index-md-e0f993dcce2496dc1196.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-422-11024-1712-2104-2202-available-index-md-e0f993dcce2496dc1196.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-a-short-exploration-of-java-class-pre-initialization-index-md-f73c9441c5324dc89753.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-a-short-exploration-of-java-class-pre-initialization-index-md-f73c9441c5324dc89753.js.map
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-nav-bar-index-tsx-1f7634f132399b3a6a3d.js
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-nav-bar-index-tsx-1f7634f132399b3a6a3d.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-402-11022-1710-and-2102-available-index-md-e2edbf2e5b60ef20f1a4.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-402-11022-1710-and-2102-available-index-md-e2edbf2e5b60ef20f1a4.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-news-tsx-d070edbb2df61b550162.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-news-tsx-d070edbb2df61b550162.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-peeling-the-big-onion-index-md-8a90509e2981696c036f.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-peeling-the-big-onion-index-md-8a90509e2981696c036f.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-432-11025-1713-2105-2301-available-index-md-946f82f054f2f02ba55e.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-432-11025-1713-2105-2301-available-index-md-946f82f054f2f02ba55e.js.map
+  cache-control: public, max-age=31536000, immutable
+/a1d6d3a35fe07b1c7f79719241218d6a92dc9cd7-64678ceb5c2022f4e8ce.js
+  cache-control: public, max-age=31536000, immutable
+/a1d6d3a35fe07b1c7f79719241218d6a92dc9cd7-64678ceb5c2022f4e8ce.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-412-11023-1711-2102-2201-available-index-md-055247ac1b66edf253ab.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-412-11023-1711-2102-2201-available-index-md-055247ac1b66edf253ab.js.map
+  cache-control: public, max-age=31536000, immutable
+/webpack-runtime-0b3f3cc698dd6e6ca23f.js
+  cache-control: public, max-age=31536000, immutable
+/webpack-runtime-0b3f3cc698dd6e6ca23f.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-aqavit-scope-index-md-e47180e4d4996ad0b5ec.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-aqavit-scope-index-md-e47180e4d4996ad0b5ec.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-jlink-to-produce-own-runtime-index-md-adb83fd9297e193b5539.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-jlink-to-produce-own-runtime-index-md-adb83fd9297e193b5539.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-download-tsx-d60f31bafe3c7a4c47a7.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-download-tsx-d60f31bafe3c7a4c47a7.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-reproducible-builds-index-md-de68cdcf847dd39814d8.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-reproducible-builds-index-md-de68cdcf847dd39814d8.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptopenjdk-jfrog-io-has-been-deprecated-index-md-925213c96e0c959d5d4f.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptopenjdk-jfrog-io-has-been-deprecated-index-md-925213c96e0c959d5d4f.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-gpg-signed-releases-index-md-d999a8a473d4b3f99f9f.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-gpg-signed-releases-index-md-d999a8a473d4b3f99f9f.js.map
+  cache-control: public, max-age=31536000, immutable
+/4d3c9b3f6dc0667f46bc322b6db2f0a07db7e6af-86c587ae87a926033a7a.js
+  cache-control: public, max-age=31536000, immutable
+/4d3c9b3f6dc0667f46bc322b6db2f0a07db7e6af-86c587ae87a926033a7a.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-automated-deployment-of-nagios-index-md-08dca8ab1e153678cd3e.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-automated-deployment-of-nagios-index-md-08dca8ab1e153678cd3e.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-early-access-builds-feb-2024-index-md-658e5d6293452546dc23.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-early-access-builds-feb-2024-index-md-658e5d6293452546dc23.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-382-11020-1708-and-2002-available-index-md-7e32e108a9222583573c.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-382-11020-1708-and-2002-available-index-md-7e32e108a9222583573c.js.map
+  cache-control: public, max-age=31536000, immutable
+/cb355538-a0f59822a5b9d3884b99.js
+  cache-control: public, max-age=31536000, immutable
+/cb355538-a0f59822a5b9d3884b99.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-secure-software-development-index-md-23ac6d5b2a251f876a94.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-secure-software-development-index-md-23ac6d5b2a251f876a94.js.map
+  cache-control: public, max-age=31536000, immutable
+/f84603c5b4d9d5eb8db37821e35b7a8c7071b07e-b704a4568f612eb7edd5.js
+  cache-control: public, max-age=31536000, immutable
+/f84603c5b4d9d5eb8db37821e35b7a8c7071b07e-b704a4568f612eb7edd5.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-availability-of-jdk-8-u-352-b-05-ea-index-md-dee846d776a94e3ee1c3.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-availability-of-jdk-8-u-352-b-05-ea-index-md-dee846d776a94e3ee1c3.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-using-jlink-in-dockerfiles-index-md-76495289879ab81b067d.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-using-jlink-in-dockerfiles-index-md-76495289879ab81b067d.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-slsa-2-temurin-index-md-2eeb9cbb33fc4b77125c.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-slsa-2-temurin-index-md-2eeb9cbb33fc4b77125c.js.map
+  cache-control: public, max-age=31536000, immutable
+/5a395f2af29139f35a22ffac816c2917ccf34b54-4bda72ad58c507b48925.js
+  cache-control: public, max-age=31536000, immutable
+/5a395f2af29139f35a22ffac816c2917ccf34b54-4bda72ad58c507b48925.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-aqavit-graduation-ceremony-index-md-d3c59a70ec9329c162f7.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-aqavit-graduation-ceremony-index-md-d3c59a70ec9329c162f7.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-celebrates-first-release-index-md-90884445f67fe331d8a4.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-celebrates-first-release-index-md-90884445f67fe331d8a4.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-linux-installers-available-index-md-6689ac5534d999754e3a.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-linux-installers-available-index-md-6689ac5534d999754e3a.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-slsabuild-3-temurin-index-md-9dff5e601c4189149c0d.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-slsabuild-3-temurin-index-md-9dff5e601c4189149c0d.js.map
+  cache-control: public, max-age=31536000, immutable
+/12648dfd7ef99f166f619447d61fe1c8049b56cc-1b0c2ebaba1154096f98.js
+  cache-control: public, max-age=31536000, immutable
+/12648dfd7ef99f166f619447d61fe1c8049b56cc-1b0c2ebaba1154096f98.js.map
+  cache-control: public, max-age=31536000, immutable
+/e334a9088d65c352f671dc7e87ba4f2e336cd3c5-75a68568b86203dc742f.js
+  cache-control: public, max-age=31536000, immutable
+/e334a9088d65c352f671dc7e87ba4f2e336cd3c5-75a68568b86203dc742f.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-392-11021-1709-and-2101-available-index-md-eac6ecc8ad64f2f8960b.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-392-11021-1709-and-2101-available-index-md-eac6ecc8ad64f2f8960b.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-author-page-tsx-6bb4c1e691f4a840b825.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-author-page-tsx-6bb4c1e691f4a840b825.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-page-tsx-c4eaac4f4121c8200863.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-page-tsx-c4eaac4f4121c8200863.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-sponsors-tsx-0a7d0023e6acda9f1a4d.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-sponsors-tsx-0a7d0023e6acda9f1a4d.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-adopters-tsx-67ea826ddaecf39789f8.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-adopters-tsx-67ea826ddaecf39789f8.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-blog-tsx-ceedba0a9dc3ec93ddfe.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-blog-tsx-ceedba0a9dc3ec93ddfe.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-17-available-index-md-8337a5b06669f70d3994.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-17-available-index-md-8337a5b06669f70d3994.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-tag-page-tsx-8140a261068d4da2a062.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-tag-page-tsx-8140a261068d4da2a062.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-adoptium-announcement-index-md-8aa0fc51f6c1047cb1fe.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-adoptium-announcement-index-md-8aa0fc51f6c1047cb1fe.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-reproducible-verification-builds-index-md-007b4fc1271f68974d78.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-reproducible-verification-builds-index-md-007b4fc1271f68974d78.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-342-11016-1704-and-1802-available-index-md-865947e6522d94a0617b.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-342-11016-1704-and-1802-available-index-md-865947e6522d94a0617b.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-temurin-21-delay-index-md-6509a4d780d683a9ca60.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-temurin-21-delay-index-md-6509a4d780d683a9ca60.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-members-tsx-539804fc2c2eedc9f18c.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-members-tsx-539804fc2c2eedc9f18c.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-early-access-builds-index-md-498762461f106dfa25aa.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-early-access-builds-index-md-498762461f106dfa25aa.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-jres-are-back-index-md-633416e33c6429365cca.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-jres-are-back-index-md-633416e33c6429365cca.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-362-11018-1706-and-1902-available-index-md-54d50cb2b080f0b8bbba.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-362-11018-1706-and-1902-available-index-md-54d50cb2b080f0b8bbba.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-removal-of-centos-7-eclipse-temurin-images-index-md-a0d96a0bf7281c4eb3b0.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-removal-of-centos-7-eclipse-temurin-images-index-md-a0d96a0bf7281c4eb3b0.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-march-2024-jdk-22-release-index-md-2ec6b91bbf168be728a7.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-march-2024-jdk-22-release-index-md-2ec6b91bbf168be728a7.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-welcomes-google-index-md-40c6e7e61e50dcbe338b.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-welcomes-google-index-md-40c6e7e61e50dcbe338b.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-welcomes-rivos-index-md-88d9a20c2751102c0197.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-welcomes-rivos-index-md-88d9a20c2751102c0197.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-23-available-index-md-1ab5ebc66dc830189a41.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-23-available-index-md-1ab5ebc66dc830189a41.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-21-and-22-available-on-riscv-index-md-cb52bfc5103b53af18a7.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-21-and-22-available-on-riscv-index-md-cb52bfc5103b53af18a7.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-312-11013-and-1701-available-index-md-ac07c68ad7e0eed234d1.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-312-11013-and-1701-available-index-md-ac07c68ad7e0eed234d1.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-external-audit-index-md-2e6fa63d99197491c87f.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-external-audit-index-md-2e6fa63d99197491c87f.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-372-11019-1707-and-2001-available-index-md-d6683c1492814d4f1836.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-8-u-372-11019-1707-and-2001-available-index-md-d6683c1492814d4f1836.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-archive-tsx-b346612542614bf48666.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-archive-tsx-b346612542614bf48666.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-releases-tsx-50358284f35de4cad661.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-releases-tsx-50358284f35de4cad661.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-aqavit-tsx-5b9f7888d7f0f35dcc99.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-aqavit-tsx-5b9f7888d7f0f35dcc99.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-marketplace-tsx-952deecc8b41a69886a9.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-marketplace-tsx-952deecc8b41a69886a9.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-to-promote-broad-range-of-compatible-open-jdk-builds-index-md-3c1e464ca8baa271c30c.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-adoptium-to-promote-broad-range-of-compatible-open-jdk-builds-index-md-3c1e464ca8baa271c30c.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-join-tsx-93c1d01f3a17e62a243e.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-join-tsx-93c1d01f3a17e62a243e.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-19-available-index-md-274e3fb3fb504f75df79.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-19-available-index-md-274e3fb3fb504f75df79.js.map
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-adoptium-news-index-tsx-8a8463e9ed9b22c73f85.js
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-adoptium-news-index-tsx-8a8463e9ed9b22c73f85.js.map
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-author-bio-index-tsx-664c54ed7bb79c236322.js
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-author-bio-index-tsx-664c54ed7bb79c236322.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-nightly-tsx-1e92066dcf24748129d3.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-nightly-tsx-1e92066dcf24748129d3.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-11020-1-and-1708-1-index-md-fcb398c4cf365c631d48.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-templates-blog-post-tsx-content-file-path-content-blog-eclipse-temurin-11020-1-and-1708-1-index-md-fcb398c4cf365c631d48.js.map
+  cache-control: public, max-age=31536000, immutable
+/577-0e4e4c6e04eb830a9279.js
+  cache-control: public, max-age=31536000, immutable
+/577-0e4e4c6e04eb830a9279.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-index-tsx-c6bf4357f15f8efa3a5b.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-index-tsx-c6bf4357f15f8efa3a5b.js.map
+  cache-control: public, max-age=31536000, immutable
+/1452-0934737141624150a3b6.js
+  cache-control: public, max-age=31536000, immutable
+/1452-0934737141624150a3b6.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-slack-tsx-871b9493d0a724ef9414.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-slack-tsx-871b9493d0a724ef9414.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-404-tsx-d0b2f55ae747607201e7.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-404-tsx-d0b2f55ae747607201e7.js.map
+  cache-control: public, max-age=31536000, immutable
+/ebc70433-b9126fbfb7e337dcc390.js
+  cache-control: public, max-age=31536000, immutable
+/ebc70433-b9126fbfb7e337dcc390.js.map
+  cache-control: public, max-age=31536000, immutable
+/4577d2ec-e2cddcffe0e523ed9105.js
+  cache-control: public, max-age=31536000, immutable
+/4577d2ec-e2cddcffe0e523ed9105.js.map
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-index-tsx-0843cd03e0ddf69fe2ac.js
+  cache-control: public, max-age=31536000, immutable
+/component---src-pages-temurin-index-tsx-0843cd03e0ddf69fe2ac.js.map
+  cache-control: public, max-age=31536000, immutable
+/3a17f596-c638fa0f9b7ed179671a.js
+  cache-control: public, max-age=31536000, immutable
+/3a17f596-c638fa0f9b7ed179671a.js.map
+  cache-control: public, max-age=31536000, immutable
+/d9067523-0c033270707befbdd262.js
+  cache-control: public, max-age=31536000, immutable
+/d9067523-0c033270707befbdd262.js.map
+  cache-control: public, max-age=31536000, immutable
+/b55cbb4c-36d258228c8adcc17672.js
+  cache-control: public, max-age=31536000, immutable
+/b55cbb4c-36d258228c8adcc17672.js.map
+  cache-control: public, max-age=31536000, immutable
+/019d026b-4d5a34150d5990e11f14.js
+  cache-control: public, max-age=31536000, immutable
+/019d026b-4d5a34150d5990e11f14.js.map
+  cache-control: public, max-age=31536000, immutable
+/fea29d9f-65170b3138731ca88905.js
+  cache-control: public, max-age=31536000, immutable
+/fea29d9f-65170b3138731ca88905.js.map
+  cache-control: public, max-age=31536000, immutable
+/41155975-c794b8348fc2f2795030.js
+  cache-control: public, max-age=31536000, immutable
+/41155975-c794b8348fc2f2795030.js.map
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-banner-index-tsx-d5878b66f57608b856ab.js
+  cache-control: public, max-age=31536000, immutable
+/slice---src-components-banner-index-tsx-d5878b66f57608b856ab.js.map
+  cache-control: public, max-age=31536000, immutable
+
+# gatsby-adapter-netlify end

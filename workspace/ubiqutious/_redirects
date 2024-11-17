@@ -1,0 +1,14 @@
+
+# gatsby-adapter-netlify start
+/page-data/de/de/*  /page-data/de/de/[...]  200
+/page-data/en-GB/en-GB/*  /page-data/en-GB/en-GB/[...]  200
+/page-data/es/es/*  /page-data/es/es/[...]  200
+/page-data/fr/fr/*  /page-data/fr/fr/[...]  200
+/page-data/zh-CN/zh-CN/*  /page-data/zh-CN/zh-CN/[...]  200
+/de/de/*  /de/de/[...].html  200
+/en-GB/en-GB/*  /en-GB/en-GB/[...].html  200
+/es/es/*  /es/es/[...].html  200
+/fr/fr/*  /fr/fr/[...].html  200
+/zh-CN/zh-CN/*  /zh-CN/zh-CN/[...].html  200
+
+# gatsby-adapter-netlify end

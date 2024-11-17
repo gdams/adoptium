@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="292" height="70" viewBox="0,0,292,70">
+  <title>Total Validator Header</title>
+  <metadata>Author: Total Validator</metadata>
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="26" cy="34.5" r="26" />
+    </clipPath>
+  </defs>
+  <circle cx="26" cy="34.5" r="25" fill="#666699" />
+  <path fill="white" d="M9.5 25 L30.5 25 L30.5 30.5 L23 30.5 L23 47 L17 47 L17 30.5 L9.5 30.5 z" /> -->
+  <path fill="white" d="M25 33.5 L31.5 47 L37 47 L49.5 18.5 L45 16.5 L34 40 L30.5 33.5 z" clip-path="url(#circleClip)" />
+  <text fill="#666699" x="66" y="47" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold">Total Validator</text>
+</svg>
