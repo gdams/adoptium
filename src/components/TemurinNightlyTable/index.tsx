@@ -50,7 +50,7 @@ const TemurinNightlyTable = ({results}) => {
                                                             <td>
                                                                 {asset.checksum 
                                                                     ? <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}><Trans>Checksum</Trans></a>
-                                                                    : <></>
+                                                                    : <Trans>Not available</Trans>
                                                                 }
                                                             </td>
                                                         </tr>

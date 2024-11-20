@@ -201,7 +201,9 @@ exports[`TemurinArchiveTable component > renders correctly - Without checksum 1`
                       0 MB
                     </a>
                   </td>
-                  <td />
+                  <td>
+                    Text
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -511,7 +513,9 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
                   </td>
                   <td
                     style="padding-right: 20px;"
-                  />
+                  >
+                    Text
+                  </td>
                   <td
                     style="border-left: 1px solid rgb(221, 221, 221); padding-left: 20px;"
                   >

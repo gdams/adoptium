@@ -88,7 +88,9 @@ exports[`TemurinNightlyTable component > renders correctly - Without checksum 1`
               installer_extension_mock
             </a>
           </td>
-          <td />
+          <td>
+            Text
+          </td>
         </tr>
       </tbody>
     </table>

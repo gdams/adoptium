@@ -114,7 +114,7 @@ const BinaryTable = ({ checksum, link, filename, os, arch, pkgType, javaVersion,
                     <td>
                         {checksum 
                             ? <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}><Trans>Checksum</Trans> (SHA256)</a>
-                            : <></>
+                            : <Trans>Not available</Trans>
                         }
                     </td>
                 </tr>

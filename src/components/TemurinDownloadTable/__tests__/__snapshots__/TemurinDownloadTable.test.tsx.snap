@@ -164,7 +164,9 @@ exports[`TemurinDownloadTable component > renders correctly - Without checksum 1
                         <td>
                           <span
                             class="fw-light"
-                          />
+                          >
+                            Text
+                          </span>
                         </td>
                       </tr>
                     </tbody>

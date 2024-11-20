@@ -117,7 +117,7 @@ const BinaryTable = ({ checksum, link, extension, type, size, os, arch, version 
                         <span className="fw-light">
                             {checksum
                                 ? <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}><small><Trans>Checksum</Trans></small></a>
-                                : <></>
+                                : <Trans>Not available</Trans>
                             }
                         </span>
                     </td>

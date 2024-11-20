@@ -134,7 +134,9 @@ exports[`MarketplaceDownloadTable component > renders correctly - Without checks
                   <table>
                     <tbody>
                       <tr>
-                        <td />
+                        <td>
+                          Text
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -173,7 +175,9 @@ exports[`MarketplaceDownloadTable component > renders correctly - Without checks
                   <table>
                     <tbody>
                       <tr>
-                        <td />
+                        <td>
+                          Text
+                        </td>
                       </tr>
                     </tbody>
                   </table>
