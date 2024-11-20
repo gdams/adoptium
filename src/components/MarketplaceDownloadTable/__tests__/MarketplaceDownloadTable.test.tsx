@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest'
 import { createRandomMarketplaceRelease } from '../../../__fixtures__/hooks';
 import MarketplaceDownloadTable from '..';
@@ -52,5 +52,23 @@ describe('MarketplaceDownloadTable component', () => {
       />
     );
     expect(queryByText('Out of Date')).not.toBeInTheDocument();
+  });
+
+  it('renders correctly - Without checksum', () => {
+    let releases = [
+      createRandomMarketplaceRelease(true, 1),
+    ];
+
+    // erase checksum
+    releases[0].binary.package.sha265sum = undefined;
+    releases[0].binary.installer[0].sha265sum = undefined;
+
+    const { container } = render(
+      <MarketplaceDownloadTable
+        results={releases}
+      />
+    );
+
+    expect(container).toMatchSnapshot();
   });
 });

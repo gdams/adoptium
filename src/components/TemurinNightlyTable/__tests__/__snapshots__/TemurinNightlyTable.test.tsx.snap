@@ -1,5 +1,101 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`TemurinNightlyTable component > renders correctly - Without checksum 1`] = `
+<div>
+  <div
+    id="nightly-list"
+  >
+    <table
+      class="table table-hover text-start table-striped"
+      id="nightly-table"
+    >
+      <thead
+        class="table-dark"
+      >
+        <tr>
+          <td
+            class="fw-bold"
+          >
+            Platform
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Type
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Build/Tag
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Date
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Binary
+          </td>
+          <td
+            class="fw-bold"
+          >
+            Installer
+          </td>
+          <td
+            class="fw-bold"
+          >
+            SHA256
+          </td>
+        </tr>
+      </thead>
+      <tbody
+        class="table-light"
+      >
+        <tr
+          class="nightly-row"
+        >
+          <td>
+            Os_mock
+             
+            architecture_mock
+          </td>
+          <td>
+            type_mock
+          </td>
+          <td>
+            release_name_mock
+          </td>
+          <td>
+            January 1, 2020
+          </td>
+          <td>
+            <a
+              href="/download"
+              state="[object Object]"
+              title=""
+            >
+              extension_mock (0 MB)
+            </a>
+          </td>
+          <td>
+            <a
+              href="/download"
+              state="[object Object]"
+              title=""
+            >
+              installer_extension_mock
+            </a>
+          </td>
+          <td />
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
 exports[`TemurinNightlyTable component > renders correctly - no data 1`] = `
 <div>
   <div
