@@ -563,7 +563,7 @@ exports[`ReleaseNotesRender component > should render correctly - version not de
               <div
                 class="MuiDataGrid-virtualScrollerContent css-aymtem-MuiDataGrid-virtualScrollerContent"
                 role="presentation"
-                style="width: auto; flex-basis: 104px; flex-shrink: 0;"
+                style="width: auto; flex-shrink: 0; flex-basis: 104px;"
               >
                 <div
                   class="MuiDataGrid-virtualScrollerRenderZone css-11dqcl8-MuiDataGrid-virtualScrollerRenderZone"
@@ -1420,7 +1420,7 @@ exports[`ReleaseNotesRender component > should render correctly 1`] = `
               <div
                 class="MuiDataGrid-virtualScrollerContent css-aymtem-MuiDataGrid-virtualScrollerContent"
                 role="presentation"
-                style="width: auto; flex-basis: 104px; flex-shrink: 0;"
+                style="width: auto; flex-shrink: 0; flex-basis: 104px;"
               >
                 <div
                   class="MuiDataGrid-virtualScrollerRenderZone css-11dqcl8-MuiDataGrid-virtualScrollerRenderZone"
