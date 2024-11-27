@@ -122,14 +122,14 @@ exports[`MarketplaceDownloadTable component > renders correctly - Without checks
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -142,7 +142,7 @@ exports[`MarketplaceDownloadTable component > renders correctly - Without checks
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -170,7 +170,7 @@ exports[`MarketplaceDownloadTable component > renders correctly - Without checks
               </tr>
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -183,7 +183,7 @@ exports[`MarketplaceDownloadTable component > renders correctly - Without checks
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -394,21 +394,21 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
                       <tr>
                         <td>
                           <a
-                            data-bs-checksum="sha265sum_mock1"
+                            data-bs-checksum="sha256sum_mock1"
                             data-bs-target="#checksumModal"
                             data-bs-toggle="modal"
                             href=""
@@ -422,7 +422,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -526,21 +526,21 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
                       <tr>
                         <td>
                           <a
-                            data-bs-checksum="installer_sha265sum_mock"
+                            data-bs-checksum="installer_sha256sum_mock"
                             data-bs-target="#checksumModal"
                             data-bs-toggle="modal"
                             href=""
@@ -554,7 +554,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -582,14 +582,14 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
                       <tr>
                         <td>
                           <a
-                            data-bs-checksum="sha265sum_mock2"
+                            data-bs-checksum="sha256sum_mock2"
                             data-bs-target="#checksumModal"
                             data-bs-toggle="modal"
                             href=""
@@ -603,7 +603,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"

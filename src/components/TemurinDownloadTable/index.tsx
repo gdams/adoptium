@@ -56,7 +56,7 @@ const TemurinDownloadTable = ({results}) => {
                                 <td className="align-middle w-20">{capitalize(pkg.os)}</td>
                                 <td className="align-middle w-20">{pkg.architecture === 'x32' ? 'x86' : pkg.architecture}</td>
                                 <td className="align-middle">
-                                    <table className="table parent mb-0 w-auto">
+                                    <table className="table parent mb-0 w-100">
                                         {pkg.binaries.map(
                                             (binary, i): string | JSX.Element =>
                                                 binary && (
@@ -105,7 +105,7 @@ export default TemurinDownloadTable;
 const BinaryTable = ({ checksum, link, extension, type, size, os, arch, version }) => {
     return (
         <tr>
-            <td className="align-middle text-center">
+            <td className="align-middle text-center w-50">
                 <table><tbody>
                 <tr>
                     <td>
@@ -125,7 +125,7 @@ const BinaryTable = ({ checksum, link, extension, type, size, os, arch, version 
 
                 </tbody></table>
             </td>
-            <td className="align-middle">
+            <td className="align-middle w-50">
                 <Link to="/download" state={{ link: link, checksum: checksum, os: os, arch: arch, pkg_type: type, java_version: version }} className="btn btn-primary" style={{width: "6em"}}>
                     <FaDownload /> {extension}
                 </Link>

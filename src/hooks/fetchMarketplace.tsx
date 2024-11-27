@@ -69,14 +69,18 @@ export interface MarketplaceRelease {
         package: {
             name: string;
             link: URL;
+            // Name of previous typo to be removed when vendors update their code to fix the typo
             sha265sum: string;
+            sha256sum: string;
             sha256sum_link: URL;
             signature_link: URL;
         }
         installer?: [{
             name: string;
             link: URL;
+            // Name of previous typo to be removed when vendors update their code to fix the typo
             sha265sum: string;
+            sha256sum: string;
             sha256sum_link: URL;
             signature_link: URL;
         }]

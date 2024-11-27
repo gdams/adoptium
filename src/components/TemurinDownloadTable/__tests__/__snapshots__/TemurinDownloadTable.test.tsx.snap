@@ -85,14 +85,14 @@ exports[`TemurinDownloadTable component > renders correctly - Without checksum 1
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -123,7 +123,7 @@ exports[`TemurinDownloadTable component > renders correctly - Without checksum 1
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -151,7 +151,7 @@ exports[`TemurinDownloadTable component > renders correctly - Without checksum 1
               </tr>
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -173,7 +173,7 @@ exports[`TemurinDownloadTable component > renders correctly - Without checksum 1
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -373,14 +373,14 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -411,7 +411,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -516,14 +516,14 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -554,7 +554,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -582,7 +582,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
               </tr>
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -613,7 +613,7 @@ exports[`TemurinDownloadTable component > renders correctly - with source 1`] = 
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -733,14 +733,14 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -771,7 +771,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -876,14 +876,14 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -914,7 +914,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -942,7 +942,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
@@ -973,7 +973,7 @@ exports[`TemurinDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
