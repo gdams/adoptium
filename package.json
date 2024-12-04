@@ -10,7 +10,7 @@
     "@emotion/styled": "^11.13.5",
     "@fortawesome/fontawesome-free": "^6.7.1",
     "@gatsbyjs/reach-router": "^2.0.1",
-    "@mdx-js/react": "^2.3.0",
+    "@mdx-js/react": "^3.1.0",
     "@mui/lab": "^6.0.0-beta.18",
     "@mui/material": "^6.1.7",
     "@mui/x-data-grid": "^7.23.0",
