@@ -85,7 +85,7 @@
     "gatsby-cli": "^5.14.0",
     "jest-canvas-mock": "^2.5.2",
     "jsdom": "^25.0.1",
-    "prettier": "3.4.1",
+    "prettier": "3.4.2",
     "vitest": "^2.0.2",
     "vitest-axe": "^0.1.0",
     "vitest-canvas-mock": "^0.3.3"
