@@ -81,12 +81,13 @@ icon:check[] - Supported, icon:docker[] - Docker image available, icon:times[] -
 | Ubuntu 20.04 | icon:times[] | icon:times[] | icon:times[] | icon:check[] | icon:check[]
 
 6+h| macOS (x64)
+| macOS 15 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 14 | icon:times[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 13 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 12 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
-| macOS 11 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 
 6+h| macOS (Apple Silicon)
+| macOS 15 | icon:check[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 14 | icon:times[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 13 | icon:times[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
 | macOS 12 | icon:times[] | icon:check[] | icon:check[] | icon:check[] | icon:check[]
