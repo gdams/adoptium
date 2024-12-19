@@ -88,9 +88,9 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                                 }
                                                                             </td>
                                                                             <td style={{paddingRight: "20px"}}>
-                                                                            {asset.installer_link ? (
-                                                                                <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.installer_checksum}><Trans>Checksum</Trans></a>
-                                                                            ): <></>
+                                                                            {asset.installer_link && asset.installer_checksum 
+                                                                                ? <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.installer_checksum}><Trans>Checksum</Trans></a>
+                                                                                : <Trans>Not available</Trans>
                                                                             }
                                                                             </td>
                                                                             <td style={{borderLeft: "1px solid rgb(221, 221, 221)", paddingLeft: "20px"}}>
@@ -105,7 +105,10 @@ const TemurinArchiveTable = ({results, updatePage}) => {
                                                                                 />
                                                                             </td>
                                                                             <td>
-                                                                                <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}><Trans>Checksum</Trans></a>
+                                                                                {asset.checksum
+                                                                                    ? <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}><Trans>Checksum</Trans></a>
+                                                                                    : <Trans>Not available</Trans>
+                                                                                }
                                                                             </td>
                                                                         </tr>
                                                                     )

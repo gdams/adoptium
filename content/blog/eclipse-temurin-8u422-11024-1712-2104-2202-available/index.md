@@ -36,7 +36,7 @@ This release contains the following fixes and updates.
 
 * [Temurin 11.0.24 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-11.0.24+8), including [fixes in OpenJDK 11.0.24](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+11.0.24)
 
-* [Temurin 17.0.11 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-17.0.12+7), including [fixes in OpenJDK 17.0.12](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+17.0.12)
+* [Temurin 17.0.12 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-17.0.12+7), including [fixes in OpenJDK 17.0.12](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+17.0.12)
 
 * [Temurin 21.0.4 release notes](https://adoptium.net/temurin/release-notes/?version=jdk-21.0.4+7), including [fixes in OpenJDK 21.0.4](https://bugs.openjdk.org/issues/?jql=project+%3D+JDK+AND+fixVersion+%3D+21.0.4)
 

@@ -73,6 +73,7 @@ describe('ReleaseNotesRender component', () => {
 
         function mockReleaseNotes(num: number) {
             let releaseNoteDataBag = { releaseNoteAPIResponse :createMockReleaseNotesAPI(num), isValid: true };
+            releaseNoteDataBag.releaseNoteAPIResponse.release_name = 'jdk-20+36';
             releaseNoteDataBag.releaseNoteAPIResponse.release_notes[0].type = 'Enhancement';
             return releaseNoteDataBag;
         }
@@ -92,6 +93,7 @@ describe('ReleaseNotesRender component', () => {
         queryString.parse = vi.fn().mockReturnValue({'version': 'version'});
         function mockReleaseNotes() {
             let releaseNoteDataBag = { releaseNoteAPIResponse :createMockReleaseNotesAPI(1), isValid: true };
+            releaseNoteDataBag.releaseNoteAPIResponse.release_name = 'version';
             releaseNoteDataBag.releaseNoteAPIResponse.release_notes[0].priority = undefined;
             return releaseNoteDataBag;
         }

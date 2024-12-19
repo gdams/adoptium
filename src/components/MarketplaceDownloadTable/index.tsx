@@ -55,11 +55,11 @@ const DownloadTable = ({results}) => {
                                     {pkg.binary.architecture}
                                 </td>
                                 <td className="align-middle">
-                                    <table className="table parent mb-0 w-auto">
+                                    <table className="table parent mb-0 w-100">
                                         <tbody className="table-light">
                                             {pkg.binary.installer && (
                                                 <BinaryTable
-                                                    checksum={pkg.binary.installer[0].sha265sum}
+                                                    checksum={pkg.binary.installer[0].sha256sum||pkg.binary.installer[0].sha265sum}
                                                     filename={pkg.binary.installer[0].name}
                                                     link={pkg.binary.installer[0].link}
                                                     os={pkg.binary.os}
@@ -70,7 +70,7 @@ const DownloadTable = ({results}) => {
                                                 />
                                             )}
                                             <BinaryTable
-                                                checksum={pkg.binary.package.sha265sum}
+                                                checksum={pkg.binary.package.sha256sum||pkg.binary.package.sha265sum}
                                                 filename={pkg.binary.package.name}
                                                 link={pkg.binary.package.link}
                                                 os={pkg.binary.os}
@@ -108,16 +108,19 @@ interface DownloadProps {
 const BinaryTable = ({ checksum, link, filename, os, arch, pkgType, javaVersion, vendor }: DownloadProps): null | JSX.Element => {
     return (
         <tr key={checksum}>
-            <td className="align-middle text-center">
+            <td className="align-middle text-center w-50">
                 <table><tbody>
                 <tr>
                     <td>
-                        <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}><Trans>Checksum</Trans> (SHA256)</a>
+                        {checksum 
+                            ? <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={checksum}><Trans>Checksum</Trans> (SHA256)</a>
+                            : <Trans>Not available</Trans>
+                        }
                     </td>
                 </tr>
                 </tbody></table>
             </td>
-            <td className="align-middle">
+            <td className="align-middle w-50">
                 <Link to="/download" state={{ link: link, checksum: checksum, os: os, arch: arch, pkg_type: pkgType, java_version: javaVersion, vendor: vendor }} className="btn btn-primary" style={{width: "6em"}}>
                     <FaDownload /> {fetchExtension(filename)}
                 </Link>

@@ -47,4 +47,24 @@ describe('TemurinArchiveTable component', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  it('renders correctly - Without checksum', () => {
+    let data = {
+      pagecount: 1,
+      releases : [
+        createRandomTemurinReleases(true),
+      ]
+    };
+
+    // erase checksum
+    data.releases[0].platforms.platform_mock.assets[0].checksum = undefined;
+
+    const { container } = render(
+      <TemurinArchiveTable
+        results={data}
+        updatePage={updatePage}
+      />
+    );
+    expect(container).toMatchSnapshot();
+  });
 });

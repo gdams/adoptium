@@ -47,7 +47,12 @@ const TemurinNightlyTable = ({results}) => {
                                                             ) :
                                                                 <td><Trans i18nKey='download.not.available' defaults='Not Available' /></td>
                                                             }
-                                                            <td><a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}><Trans>Checksum</Trans></a></td>
+                                                            <td>
+                                                                {asset.checksum 
+                                                                    ? <a href="" data-bs-toggle="modal" data-bs-target="#checksumModal" data-bs-checksum={asset.checksum}><Trans>Checksum</Trans></a>
+                                                                    : <Trans>Not available</Trans>
+                                                                }
+                                                            </td>
                                                         </tr>
                                                     )
                                             )

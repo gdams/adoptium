@@ -44,4 +44,20 @@ describe('TemurinDownloadTable component', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  it('renders correctly - Without checksum', () => {
+    let releases = [
+      createRandomTemurinRelease(true),
+    ];
+
+    // erase checksum
+    releases[0].binaries[0].checksum = undefined;
+
+    const { container } = render(
+      <TemurinDownloadTable
+        results={releases}
+      />
+    );
+    expect(container).toMatchSnapshot();
+  });
 });

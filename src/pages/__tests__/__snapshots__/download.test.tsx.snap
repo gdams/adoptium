@@ -46,7 +46,7 @@ exports[`Download page > renders correctly - vendor 1`] = `
         >
           <a
             class="btn btn-lg btn-outline-dark m-2"
-            data-bs-checksum="sha265sum_mock"
+            data-bs-checksum="sha256sum_mock"
             data-bs-target="#checksumModal"
             data-bs-toggle="modal"
             href=""
@@ -300,7 +300,7 @@ exports[`Download page > renders correctly 1`] = `
         >
           <a
             class="btn btn-lg btn-outline-dark m-2"
-            data-bs-checksum="sha265sum_mock"
+            data-bs-checksum="sha256sum_mock"
             data-bs-target="#checksumModal"
             data-bs-toggle="modal"
             href=""

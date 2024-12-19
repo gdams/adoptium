@@ -30,4 +30,23 @@ describe('TemurinNightlyTable component', () => {
     );
     expect(container).toMatchSnapshot();
   });
+
+  it('renders correctly - Without checksum', () => {
+    const data =  {
+      pagecount: null,
+      releases: [
+        createRandomTemurinReleases(true),
+      ]
+    }
+    
+    // erase checksum
+    data.releases[0].platforms.platform_mock.assets[0].checksum = undefined;
+
+    const { container } = render(
+      <TemurinNightlyTable
+        results={data}
+      />
+    );
+    expect(container).toMatchSnapshot();
+  });
 });

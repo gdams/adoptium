@@ -7,7 +7,7 @@ import Download, { Head } from '../download';
 const location = {
   state: {
     link: 'https://fake-download.tar.gz',
-    checksum: 'sha265sum_mock',
+    checksum: 'sha256sum_mock',
     os: 'linux',
     arch: 'x64',
     type: 'jdk',
@@ -44,7 +44,7 @@ describe('Download page', () => {
     const location = {
       state: {
         link: 'https://fake-download.tar.gz',
-        checksum: 'sha265sum_mock',
+        checksum: 'sha256sum_mock',
         os: 'linux',
         arch: 'x64',
         java_version: '1.0.0',

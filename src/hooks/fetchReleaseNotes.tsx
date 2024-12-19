@@ -3,22 +3,32 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const baseUrl = 'https://api.adoptium.net/v3/info/release_notes';
+const releaseNamesUrl = 'https://api.adoptium.net/v3/info/release_names?heap_size=normal&image_type=jdk&lts=true&page=0&page_size=1&project=jdk&release_type=ga&semver=false&sort_method=DEFAULT&sort_order=DESC&vendor=eclipse';
 
 export function fetchReleaseNotesForVersion(
     isVisible: boolean,
     version: any,
     sortReleaseNotesByCallback?: Function,
 ): ReleaseNoteDataBag | null {
-    if (!version) {
-        return null
-    }
 
     const [releaseNotes, setReleaseNotes] = useState<ReleaseNoteDataBag | null>(null);
 
     useEffect(() => {
         if (isVisible) {
         (async () => {
-            const url = `${baseUrl}/${version}`;
+            let versionToDisplay = version;
+
+            if(!versionToDisplay) {
+                // retrieve the last version as default Release notes
+                await axios.get(releaseNamesUrl)
+                    .then(function (response) {
+                        versionToDisplay = response.data.releases[0];
+                    })
+                    .catch(function (error) {
+                    });
+            }
+
+            const url = `${baseUrl}/${versionToDisplay}`;
 
             await axios.get(url.toString())
                 .then(function (response) {

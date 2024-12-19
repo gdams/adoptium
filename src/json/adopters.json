@@ -110,6 +110,12 @@
         "tier": "adopter"
     },
     {
+        "name": "Michelin",
+        "logo": "adopters/logo-michelin.svg",
+        "url": "https://opensource.michelin.io/",
+        "tier": "adopter"
+    },
+    {
         "name": "Microsoft",
         "logo": "microsoft.svg",
         "url": "https://opensource.microsoft.com/",

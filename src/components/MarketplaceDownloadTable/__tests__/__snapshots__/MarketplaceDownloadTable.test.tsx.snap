@@ -1,5 +1,223 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`MarketplaceDownloadTable component > renders correctly - Without checksum 1`] = `
+<div>
+  <table
+    class="table table-bordered releases-table"
+    id="download-table"
+    style="border-spacing: 0 10px; border-collapse: separate;"
+  >
+    <thead
+      class="table-dark"
+    >
+      <tr
+        class="table-head"
+      >
+        <td
+          class="table-head"
+        >
+          Text
+        </td>
+        <td
+          class="table-head"
+        >
+          Text
+        </td>
+        <td
+          class="table-head"
+        >
+          Text
+        </td>
+        <td
+          class="table-head"
+        >
+          Text
+        </td>
+        <td
+          class="table-head"
+        >
+          Text
+        </td>
+        <td
+          class="table-head"
+        >
+          Text
+        </td>
+      </tr>
+    </thead>
+    <tbody
+      class="table-light"
+    >
+      <tr>
+        <td
+          class="table-secondary py-4 text-white align-middle w-20"
+        >
+          <span>
+            release_name_mock
+          </span>
+          <br />
+          <span>
+            JRE
+          </span>
+          <br />
+          <span
+            class="text-white"
+          >
+            January 1, 2020
+          </span>
+          <span>
+            <span
+              class="text-warning"
+            >
+              <br />
+              <svg
+                baseProfile="tiny"
+                data-placement="bottom"
+                data-toggle="tooltip"
+                fill="currentColor"
+                height="25"
+                stroke="currentColor"
+                stroke-width="0"
+                version="1.2"
+                viewBox="0 0 24 24"
+                width="25"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  This build is over 180 days old.
+                </title>
+                <path
+                  d="M21.171 15.398l-5.912-9.854c-.776-1.293-1.963-2.033-3.259-2.033s-2.483.74-3.259 2.031l-5.912 9.856c-.786 1.309-.872 2.705-.235 3.83.636 1.126 1.878 1.772 3.406 1.772h12c1.528 0 2.77-.646 3.406-1.771.637-1.125.551-2.521-.235-3.831zm-9.171 2.151c-.854 0-1.55-.695-1.55-1.549 0-.855.695-1.551 1.55-1.551s1.55.696 1.55 1.551c0 .854-.696 1.549-1.55 1.549zm1.633-7.424c-.011.031-1.401 3.468-1.401 3.468-.038.094-.13.156-.231.156s-.193-.062-.231-.156l-1.391-3.438c-.09-.233-.129-.443-.129-.655 0-.965.785-1.75 1.75-1.75s1.75.785 1.75 1.75c0 .212-.039.422-.117.625z"
+                />
+              </svg>
+              Out of Date
+            </span>
+          </span>
+        </td>
+        <td
+          class="fw-bold align-middle"
+        >
+          Distribution_mock
+        </td>
+        <td
+          class="align-middle"
+        >
+          <img
+            alt="distribution_mock logo"
+            src="/images/distribution_mock-logo.png"
+            width="100px"
+          />
+        </td>
+        <td
+          class="align-middle"
+        >
+          Os_mock
+        </td>
+        <td
+          class="align-middle"
+        >
+          arch_mock
+        </td>
+        <td
+          class="align-middle"
+        >
+          <table
+            class="table parent mb-0 w-100"
+          >
+            <tbody
+              class="table-light"
+            >
+              <tr>
+                <td
+                  class="align-middle text-center w-50"
+                >
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Text
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td
+                  class="align-middle w-50"
+                >
+                  <a
+                    class="btn btn-primary"
+                    href="/download"
+                    state="[object Object]"
+                    style="width: 6em;"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                      />
+                    </svg>
+                     
+                    .msi
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  class="align-middle text-center w-50"
+                >
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Text
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td
+                  class="align-middle w-50"
+                >
+                  <a
+                    class="btn btn-primary"
+                    href="/download"
+                    state="[object Object]"
+                    style="width: 6em;"
+                  >
+                    <svg
+                      fill="currentColor"
+                      height="1em"
+                      stroke="currentColor"
+                      stroke-width="0"
+                      viewBox="0 0 512 512"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                      />
+                    </svg>
+                     
+                    .tar.gz
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`MarketplaceDownloadTable component > renders correctly - no data 1`] = `
 <div>
   <table
@@ -176,21 +394,21 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
                       <tr>
                         <td>
                           <a
-                            data-bs-checksum="sha265sum_mock1"
+                            data-bs-checksum="sha256sum_mock1"
                             data-bs-target="#checksumModal"
                             data-bs-toggle="modal"
                             href=""
@@ -204,7 +422,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -308,21 +526,21 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
           class="align-middle"
         >
           <table
-            class="table parent mb-0 w-auto"
+            class="table parent mb-0 w-100"
           >
             <tbody
               class="table-light"
             >
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
                       <tr>
                         <td>
                           <a
-                            data-bs-checksum="installer_sha265sum_mock"
+                            data-bs-checksum="installer_sha256sum_mock"
                             data-bs-target="#checksumModal"
                             data-bs-toggle="modal"
                             href=""
@@ -336,7 +554,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
@@ -364,14 +582,14 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
               </tr>
               <tr>
                 <td
-                  class="align-middle text-center"
+                  class="align-middle text-center w-50"
                 >
                   <table>
                     <tbody>
                       <tr>
                         <td>
                           <a
-                            data-bs-checksum="sha265sum_mock2"
+                            data-bs-checksum="sha256sum_mock2"
                             data-bs-target="#checksumModal"
                             data-bs-toggle="modal"
                             href=""
@@ -385,7 +603,7 @@ exports[`MarketplaceDownloadTable component > renders correctly 1`] = `
                   </table>
                 </td>
                 <td
-                  class="align-middle"
+                  class="align-middle w-50"
                 >
                   <a
                     class="btn btn-primary"
