@@ -262,7 +262,7 @@ exports[`TemurinArchiveTable component > renders correctly - Without checksum 1`
         </li>
         <li>
           <button
-            aria-current="true"
+            aria-current="page"
             aria-label="page 1"
             class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
             tabindex="0"
@@ -801,7 +801,7 @@ exports[`TemurinArchiveTable component > renders correctly 1`] = `
         </li>
         <li>
           <button
-            aria-current="true"
+            aria-current="page"
             aria-label="page 1"
             class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular Mui-selected MuiPaginationItem-page css-1l5xwdx-MuiButtonBase-root-MuiPaginationItem-root"
             tabindex="0"
