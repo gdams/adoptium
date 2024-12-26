@@ -2,7 +2,7 @@
 
 Most static pages on this site are written as [asciidoc](https://asciidoctor.org/docs/what-is-asciidoc/) pages. These are similar to Markdown in format but give us more flexibility.
 
-The directory layout of these files is very important as it determines the path to the file in the site. For example a documnet in `/foo/bar/index.adoc` will be served up as `/foo/bar` on the site. You could also store the same document as `/foo/bar.adoc` but we generally discourage this as we need a parent folder to store localised versions of the page.
+The directory layout of these files is very important as it determines the path to the file in the site. For example a document in `/foo/bar/index.adoc` will be served up as `/foo/bar` on the site. You could also store the same document as `/foo/bar.adoc` but we generally discourage this as we need a parent folder to store localised versions of the page.
 
 ```tree
 .

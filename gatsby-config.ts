@@ -85,19 +85,19 @@ const config: GatsbyConfig = {
         },
         pages: [
           {
-            matchPath: '/:lang?/docs/:uid',
-            getLanguageFromPath: true
-          },
-          {
-            matchPath: '/:lang?/temurin/commercial-support/',
-            getLanguageFromPath: true
-          },
-          {
             matchPath: '/:lang?/about/',
             getLanguageFromPath: true
           },
           {
+            matchPath: '/:lang?/docs/:uid',
+            getLanguageFromPath: true
+          },
+          {
             matchPath: '/:lang?/installation/:uid',
+            getLanguageFromPath: true
+          },
+          {
+            matchPath: '/:lang?/temurin/:uid',
             getLanguageFromPath: true
           }
         ]
