@@ -1,5 +1,5 @@
 = Temurin(TM) Download-Schaltflächen
-:page-authors: tellison, gdams, jonelo
+:page-authors: tellison, gdams, jonelo, karianna, xavierfacq
 :keywords: buttons
 
 Die Schaltflächenbilder und der dazugehörige Code werden Ihnen zur Verfügung gestellt, damit Sie sie in Ihre eigene Dokumentation, Website usw. einbetten können, um für Eclipse Temurin zu werben. Diese Schaltflächen verweisen auf die Temurin-Download-Seite und stellen sicher, dass die Nutzer einfachen Zugang zu den neuesten Versionen haben.
