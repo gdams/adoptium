@@ -97,7 +97,11 @@ const config: GatsbyConfig = {
             getLanguageFromPath: true
           },
           {
-            matchPath: '/:lang?/temurin/:uid',
+            matchPath: '/:lang?/temurin/commercial-support/',
+            getLanguageFromPath: true
+          },
+          {
+            matchPath: '/:lang?/temurin/buttons',
             getLanguageFromPath: true
           }
         ]
