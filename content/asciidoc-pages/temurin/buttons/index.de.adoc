@@ -1,4 +1,4 @@
-= Temurin(TM) Download-Schaltflächen
+= Temurin(TM) Download Buttons
 :page-authors: tellison, gdams, jonelo, karianna, xavierfacq
 :keywords: buttons
 
