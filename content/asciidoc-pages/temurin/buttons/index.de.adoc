@@ -1,0 +1,90 @@
+= Temurin(TM) Download Buttons
+:page-authors: tellison, gdams, jonelo, karianna, xavierfacq
+:keywords: buttons
+
+Die Schaltflächenbilder und der dazugehörige Code werden Ihnen zur Verfügung gestellt, damit Sie sie in Ihre eigene Dokumentation, Website usw. einbetten können, um für Eclipse Temurin zu werben. Diese Schaltflächen verweisen auf die Temurin-Download-Seite und stellen sicher, dass die Nutzer einfachen Zugang zu den neuesten Versionen haben.
+
+Sie können den HTML-Code ändern, um die Schaltfläche in verschiedenen Größen anzuzeigen, aber ändern Sie nicht den Ziellink. Diese Schaltflächen enthalten Warenzeichen der Eclipse Foundation und unterliegen als solche der https://www.eclipse.org/legal/logo_guidelines.php[Richtlinie der Eclipse Foundation zur Verwendung von Warenzeichen].
+
+[%autowidth,cols="d,l",options="header",stripes=none]
+|===
+^.^|Schaltfläche ^.^|Code
+
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_001.png[Get
+Eclipse Temurin,width=150,height=150]]
+<.^a|
+[source,html]
+----
+<a href="https://adoptium.net/temurin?utm_medium=button">
+  <img src="https://adoptium.net/images/buttons/button_img_001.png"
+     alt="Eclipse Temurin holen" width="150" height="150" />
+</a>
+----
+
+
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_002.png[Get
+Eclipse Temurin,width=120,height=120]]
+<.^a|
+[source,html]
+----
+<a href="https://adoptium.net/temurin?utm_medium=button">
+  <img src="https://adoptium.net/images/buttons/button_img_002.png"
+     alt="Eclipse Temurin holen" width="120" height="120" />
+</a>
+----
+
+
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_003.png[Get
+Eclipse Temurin,width=100,height=100]]
+<.^a|
+[source,html]
+----
+<a href="https://adoptium.net/temurin?utm_medium=button">
+  <img src="https://adoptium.net/images/buttons/button_img_003.png"
+     alt="Eclipse Temurin holen" width="100" height="100" />
+</a>
+----
+
+
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_005.png[Get
+Eclipse Temurin,width=120,height=120]]
+<.^a|
+[source,html]
+----
+<a href="https://adoptium.net/temurin?utm_medium=button">
+  <img src="https://adoptium.net/images/buttons/button_img_005.png"
+     alt="Eclipse Temurin holen" width="120" height="120" />
+</a>
+----
+
+
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_004.png[Get
+Eclipse Temurin,width=200,height=200]]
+<.^a|
+[source,html]
+----
+<a href="https://adoptium.net/temurin?utm_medium=button">
+  <img src="https://adoptium.net/images/buttons/button_img_004.png"
+     alt="Get Eclipse Temurin" width="200" height="200" />
+</a>
+----
+
+
+^.^|
+https://adoptium.net/temurin?utm_medium=button[image:https://adoptium.net/images/buttons/button_img_006.png[Get
+Eclipse Temurin,width=200,height=200]]
+<.^a|
+[source,html]
+----
+<a href="https://adoptium.net/temurin?utm_medium=button">
+  <img src="https://adoptium.net/images/buttons/button_img_006.png"
+     alt="Get Eclipse Temurin" width="200" height="200" />
+</a>
+----
+
+|===
