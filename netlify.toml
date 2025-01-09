@@ -17,6 +17,31 @@ GATSBY_CPU_COUNT = "1"
     preload'''
 
 [[redirects]]
+  from = "/"
+  to = "https://adoptium-rewrite.netlify.app/"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/:locale/"
+  to = "https://adoptium-rewrite.netlify.app/:locale/"
+  status = 200
+  force = true
+
+# Ensure that all other pages stay on the old site
+[[redirects]]
+  from = "/:locale/*"
+  to = "/:locale/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "https://blog.adoptium.net/*"
   to = "https://adoptium.net/blog/:splat"
   status = 301
