@@ -39,7 +39,7 @@ In this release we introduced JSF signing and verification on the SBOM json file
 
 ### SLSA level 3 compliance
 
-Adoptium are proud to announce SLSA level 3 compliance on all of our primary platforms. This includes Linux, Windows and MacOS.
+Adoptium are proud to announce SLSA level 3 compliance on all of our primary platforms. This includes Linux, Windows macOS.
 
 ### Redist DLLs for versions
 
