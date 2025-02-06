@@ -44,5 +44,3 @@ Adoptium are proud to announce SLSA level 3 compliance on all of our primary pla
 ### Redist DLLs for versions
 
 Visual Studio 2022 version 14.40.33807
-
-
