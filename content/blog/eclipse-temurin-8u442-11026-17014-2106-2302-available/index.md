@@ -37,10 +37,13 @@ As of this release cycle new automation has been put in place which allows the L
 
 In this release we introduced JSF signing and verification on the SBOM json files produced with the JDK binaries. Alongside the GPG signtaure, this added JSF signature increases the integrity of our SBOM files.
 
-### SLSA level 3 compliance
+### SLSA level 3 compliance for Windows
 
-Adoptium are proud to announce SLSA level 3 compliance on all of our primary platforms. This includes Linux, Windows macOS.
+In addition to the current SLSA level 3 compliance that was previously available on macOS and Linux platforms, Adoptium is proud to announce SLSA level 3 compliance on Windows too for the first time, which means that all of our primary platforms are now compliant. More information on SLSA levels can be found here https://slsa.dev/spec/v1.0/levels#build-l3
 
 ### Redist DLLs for versions
 
-Visual Studio 2022 version 14.40.33807
+The Temurin Windows binaries now include the very latest Microsoft Visual C++ Redistributables from:
+
+- Visual Studio 2022 version 14.40.33807
+- Windows 11 SDK version 10.0.26100.1742 UCRT
