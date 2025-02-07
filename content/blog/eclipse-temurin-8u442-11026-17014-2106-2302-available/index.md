@@ -45,5 +45,5 @@ In addition to the current SLSA level 3 compliance that was previously available
 
 The Temurin Windows binaries now include the very latest Microsoft Visual C++ Redistributables from:
 
-- Visual Studio 2022 version 14.40.33807
-- Windows 11 SDK version 10.0.26100.1742 UCRT
+* Visual Studio 2022 version 14.40.33807
+* Windows 11 SDK version 10.0.26100.1742 UCRT
