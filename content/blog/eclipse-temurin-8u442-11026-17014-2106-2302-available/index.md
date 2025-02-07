@@ -29,7 +29,7 @@ This release contains the following fixes and updates.
 
 ### Linux installation packages improvements
 
-The process for generating our Linux packages (available using these instructions) has been significantly improved in this release. During previous release cycles, the .deb, .rpm & .apk installer packages have not been produced until all architectures for each of the in-support Temurin versions have been completely tested and shipped as .tar.gz files.
+The process for generating our Linux packages has been significantly improved in this release. During previous release cycles, the .deb, .rpm & .apk installer packages have not been produced until all architectures for each of the in-support Temurin versions have been completely tested and shipped as .tar.gz files.
 
 As of this release cycle new automation has been put in place which allows the Linux packages to be built and published at the same time as the release tarballs are published to GitHub, so they will be available much sooner than before.
 
@@ -37,9 +37,9 @@ As of this release cycle new automation has been put in place which allows the L
 
 In this release we introduced JSF signing and verification on the SBOM json files produced with the JDK binaries. Alongside the GPG signature, this added JSF signature increases the integrity of our SBOM files.
 
-### SLSA level 3 compliance for Windows
+### SLSA build level 3 compliance for Windows
 
-In addition to the current SLSA level 3 compliance that was previously available on macOS and Linux platforms, Adoptium is proud to announce SLSA level 3 compliance on Windows too for the first time, which means that all of our primary platforms are now compliant. More information on SLSA build levels can be found here https://slsa.dev/spec/v1.0/levels#build-l3
+In addition to the current compliance that was previously available on macOS and Linux platforms, Adoptium is proud to announce [SLSA build level 3](https://slsa.dev/spec/v1.0/levels#build-l3) compliance on Windows too for the first time, which means that all of our primary platforms are now compliant.
 
 ### Redist DLLs for versions
 
