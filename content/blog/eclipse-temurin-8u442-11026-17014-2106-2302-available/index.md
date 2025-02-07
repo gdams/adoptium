@@ -35,7 +35,7 @@ As of this release cycle new automation has been put in place which allows the L
 
 ### JSF signing for SBOMs
 
-In this release we introduced JSF signing and verification on the SBOM json files produced with the JDK binaries. Alongside the GPG signtaure, this added JSF signature increases the integrity of our SBOM files.
+In this release we introduced JSF signing and verification on the SBOM json files produced with the JDK binaries. Alongside the GPG signature, this added JSF signature increases the integrity of our SBOM files.
 
 ### SLSA level 3 compliance for Windows
 
