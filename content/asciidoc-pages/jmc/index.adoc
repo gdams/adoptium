@@ -1,7 +1,7 @@
 = Eclipse Mission Control
 :page-authors: reinhapa, thegreystone, gdams, karianna, jiekang, hendrikebbers, ggam, xavierfacq
-:stable: 9.0.0
-:snapshot: 9.1.0-SNAPSHOT
+:stable: 9.1.0
+:snapshot: 10.0.0-SNAPSHOT
 
 Eclipse Mission Control is a low-overhead profiling and diagnostics tools
 suite for the JVM.
@@ -75,6 +75,24 @@ the Eclipse IDE:
 |=======================================================================
 
 == Older Releases
+
+=== Final Eclipse Mission Control 9.0.0
+
+[cols="20%,20%,70%",options="header"]
+|=======================================================================
+|System |Version |Download
+|Windows |9.0.0
+|https://github.com/adoptium/jmc-build/releases/download/9.0.0/org.openjdk.jmc-9.0.0-win32.win32.x86_64.zip[org.openjdk.jmc-9.0.0-win32.win32.x86_64.zip]
+
+|macOS |9.0.0
+|https://github.com/adoptium/jmc-build/releases/download/9.0.0/org.openjdk.jmc-9.0.0-macosx.cocoa.x86_64.tar.gz[org.openjdk.jmc-9.0.0-macosx.cocoa.x86_64.tar.gz]
+
+|Linux |9.0.0
+|https://github.com/adoptium/jmc-build/releases/download/9.0.0/org.openjdk.jmc-9.0.0-linux.gtk.x86_64.tar.gz[org.openjdk.jmc-9.0.0-linux.gtk.x86_64.tar.gz]
+
+|Linux (aarch64)|9.0.0
+|https://github.com/adoptium/jmc-build/releases/download/9.0.0/org.openjdk.jmc-9.0.0-linux.gtk.aarch64.tar.gz[org.openjdk.jmc-9.0.0-linux.gtk.aarch64.tar.gz]
+|=======================================================================
 
 === Final Eclipse Mission Control 8.3.0
 
