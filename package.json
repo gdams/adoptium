@@ -64,7 +64,7 @@
     "react-tabs": "^6.1.0",
     "react-use-flexsearch": "^0.1.1",
     "react-world-flags": "^1.6.0",
-    "remark-gfm": "^1.0.0",
+    "remark-gfm": "^4.0.1",
     "sass": "1.85.1",
     "typescript-plugin-css-modules": "^5.1.0"
   },
