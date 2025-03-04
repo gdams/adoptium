@@ -3,6 +3,18 @@
 
 | Java Version  | First Availability | Latest Release | Next Release Due | End of Availability ^[1]^
 
+| Java 25 (LTS)
+| Expected Sep 2025
+| Not available
+| Expected Sep 2025
+| Expected at least Sep 2031
+
+| Java 24
+| Expected Mar 2025
+| Not available
+| Expected Mar 2025
+| Expected Sep 2025
+
 | Java 23
 | Sep 2024
 | 15 Oct 2024 +
